@@ -47,8 +47,8 @@ Composer requires PHP v5.3.2.
 Optional modules include:
  
  * `php-mbstring`: multi-byte support;
- * `fileinfo`: derive "true" file type from contents;
- * `iconv`: UTF-8 support if you have not installed via Composer or are not running WordPress
+ * `php-fileinfo`: derive "true" file type from contents;
+ * `php-iconv`: UTF-8 support if you have not installed via Composer or are not running WordPress
 
 The standalone build script requires a Unix environment (e.g. Linux, OS X, BSD...) and PHP CLI v7.0+ with the following modules:
 
