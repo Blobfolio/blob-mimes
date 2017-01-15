@@ -2,7 +2,7 @@
 
 The secret to blob-mime's success is using a more complete source database than other software typically integrates. This database is built from multiple sources, as it is too much to ask that any single definitive source should exist:
 
- * [IANA](http://www.iana.org/assignments/media-types)
+ * [IANA](https://www.iana.org/assignments/media-types)
  * [Apache](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
  * [Nginx](http://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
  * [freedesktop.org](https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in)

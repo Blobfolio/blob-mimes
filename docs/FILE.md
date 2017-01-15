@@ -14,7 +14,7 @@ If the magic analysis doesn't work or if `fileinfo` is unavailable, the file ext
  * Methods
   * [is_valid()](#is_valid)
   * [has_incorrect_name()](#has_incorrect_name)
-  * [get()][#get]
+  * [get()](#get)
   * [get_file()](#get_file)
 
 

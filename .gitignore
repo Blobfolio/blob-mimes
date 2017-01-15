@@ -2,4 +2,4 @@
 /vendor/
 /composer.lock
 /Gruntfile.js
-*.json
+/package.json

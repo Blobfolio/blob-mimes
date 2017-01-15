@@ -1,0 +1,28 @@
+{
+    "name": "blobfolio/blob-mimes",
+    "description": "A comprehensive MIME and file extension tool for PHP.",
+    "keywords": [
+        "mimes",
+        "files",
+        "extensions",
+        "suffix"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/Blobfolio/blob-mimes",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Josh Stoik",
+            "email": "josh@blobfolio.com",
+            "homepage": "https://blobfolio.com"
+        }
+    ],
+    "require": {
+        "neitanod/forceutf8": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "blobmimes\\": "src/blobmimes"
+        }
+    }
+}

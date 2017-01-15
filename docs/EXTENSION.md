@@ -10,7 +10,7 @@ Search by file extension.
  * Methods
   * [is_valid()](#is_valid)
   * [has_mime()](#has_extension)
-  * [get()][#get]
+  * [get()](#get)
   * [get_extension()](#get_extension)
   * [get_mime()](#get_mime)
   * [get_mimes()](#get_mimes)

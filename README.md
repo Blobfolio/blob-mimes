@@ -30,7 +30,7 @@ blob-mimes is a PHP library with a comprehensive MIME/ext database and simple he
 
 The database is compiled from the following sources:
 
- * [IANA](http://www.iana.org/assignments/media-types)
+ * [IANA](https://www.iana.org/assignments/media-types)
  * [Apache](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
  * [Nginx](http://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
  * [freedesktop.org](https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in)

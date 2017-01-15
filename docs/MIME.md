@@ -10,7 +10,7 @@ Search by MIME type.
  * Methods
   * [is_valid()](#is_valid)
   * [has_extension()](#has_extension)
-  * [get()][#get]
+  * [get()](#get)
   * [get_mime()](#get_mime)
   * [get_extensions()](#get_extensions)
   * [get_sources()](#get_sources)
