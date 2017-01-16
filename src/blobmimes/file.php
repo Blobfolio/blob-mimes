@@ -51,6 +51,7 @@ class file {
 
 		//basic file info
 		$this->file = pathinfo($path);
+		$this->file['extension'] = \blobmimes\sanitize::extension($this->file['extension']);
 		$this->file['path'] = $path;
 		$this->file['mime'] = \blobmimes\base::MIME_DEFAULT;
 		$this->file['suggested'] = array();
@@ -73,7 +74,7 @@ class file {
 			//lookup magic mime, if possible
 			if (false !== $path && function_exists('finfo_file') && is_file($path)) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
-				$magic_mime = finfo_file($finfo, $path);
+				$magic_mime = \blobmimes\sanitize::mime(finfo_file($finfo, $path));
 
 				if ($magic_mime &&
 					$magic_mime !== \blobmimes\base::MIME_DEFAULT &&

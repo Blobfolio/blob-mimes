@@ -115,8 +115,7 @@ class mime {
 	// @param extension
 	// @return true/false
 	public function has_extension($ext='') {
-		$ext = trim(\blobmimes\sanitize::strtolower($ext));
-		$ext = ltrim($ext, '.*');
+		$ext = trim(\blobmimes\sanitize::extension($ext));
 		return $this->is_valid() && in_array($ext, $this->extensions);
 	}
 }

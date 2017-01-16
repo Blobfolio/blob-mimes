@@ -137,8 +137,8 @@ class extension {
 			return false;
 		}
 
-		$mime = \blobmimes\sanitize::strtolower($mime);
-		$real = array_map('\blobmimes\sanitize::strtolower', $this->mimes);
+		$mime = \blobmimes\sanitize::mime($mime);
+		$real = $this->mimes;
 		$test = array(
 			$mime
 		);

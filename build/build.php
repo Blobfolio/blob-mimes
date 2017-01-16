@@ -226,6 +226,8 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 	global $aliases;
 
 	$ext = mb_strtolower($ext, 'UTF-8');
+	$mime = mb_strtolower($mime, 'UTF-8');
+	$mime = preg_replace('/[^-+*.a-zA-Z0-9\/]/', '', $mime);
 
 	if (!mb_strlen($ext) || !mb_strlen($mime) || !mb_strlen($source)) {
 		return false;

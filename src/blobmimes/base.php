@@ -92,7 +92,7 @@ class base {
 	// @param mime
 	// @return data or false
 	public static function get_mime($mime='') {
-		$mime = \blobmimes\sanitize::string($mime);
+		$mime = \blobmimes\sanitize::mime($mime);
 
 		if (!is_array(static::$by_mime)) {
 			if (false === static::$by_mime = static::load_json(static::BY_MIME_FILE)) {
@@ -127,7 +127,7 @@ class base {
 	// @param ext
 	// @return data or false
 	public static function get_ext($ext='') {
-		$ext = \blobmimes\sanitize::string($ext);
+		$ext = \blobmimes\sanitize::extension($ext);
 
 		if (!is_array(static::$by_ext)) {
 			if (false === static::$by_ext = static::load_json(static::BY_EXT_FILE)) {

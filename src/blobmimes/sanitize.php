@@ -140,6 +140,31 @@ class sanitize {
 		return $str;
 	}
 
+	//-------------------------------------------------
+	// Sanitize Extension
+	//
+	// @param str
+	// @return str
+	protected static function extension($str='') {
+		$str = static::string($str);
+		$str = static::strtolower($str);
+		$str = ltrim($str, '*.');
+		$str = preg_replace('/\s/', '', $str);
+		return $str;
+	}
+
+	//-------------------------------------------------
+	// Sanitize MIME Type
+	//
+	// @param str
+	// @return str
+	protected static function mime($str='') {
+		$str = static::string($str);
+		$str = static::strtolower($str);
+		$str = preg_replace('/[^-+*.a-z0-9\/]/', $str);
+		return $str;
+	}
+
 }
 
 ?>

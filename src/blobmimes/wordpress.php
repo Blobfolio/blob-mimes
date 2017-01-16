@@ -114,6 +114,9 @@ class wordpress {
 				foreach (static::$raw as $k=>$v) {
 					$exts = explode('|', $k);
 					foreach ($exts as $ext) {
+						$ext = \blobmimes\sanitize::extension($ext);
+						$v = \blobmimes\sanitize::mime($v);
+
 						if (!isset(static::$by_ext[$ext])) {
 							static::$by_ext[$ext] = array(
 								'ext'=>$ext,
