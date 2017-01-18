@@ -21,9 +21,7 @@
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-namespace Blobfolio;
-
-class Mime {
+class blobMime {
 
 	//our data
 	protected static $by_mime;
@@ -48,9 +46,9 @@ class Mime {
 	protected static function sanitize_string( $str = '' ) {
 		try {
 			$str = (string) $str;
-		} catch (\Throwable $e) {
+		} catch (Throwable $e) {
 			$str = '';
-		} catch (\Exception $e) {
+		} catch (Exception $e) {
 			$str = '';
 		}
 
@@ -86,9 +84,9 @@ class Mime {
 			if ( $validate && false === $str = realpath( $str ) ) {
 				return false;
 			}
-		} catch (\Throwable $e) {
+		} catch (Throwable $e) {
 			return false;
-		} catch (\Exception $e) {
+		} catch (Exception $e) {
 			return false;
 		}
 
@@ -99,9 +97,9 @@ class Mime {
 			if ( is_dir( $str ) ) {
 				$str .= DIRECTORY_SEPARATOR;
 			}
-		} catch (\Throwable $e) {
+		} catch (Throwable $e) {
 			return $str;
-		} catch (\Exception $e) {
+		} catch (Exception $e) {
 			return $str;
 		}
 
@@ -153,13 +151,13 @@ class Mime {
 		$path = static::sanitize_path( $path, true );
 
 		if ( ! is_file( $path ) ) {
-			throw new \Exception( 'Invalid JSON path: ' . $path );
+			throw new Exception( 'Invalid JSON path: ' . $path );
 		}
 
 		$data = static::sanitize_string( @file_get_contents( $path ) );
 		$data = json_decode( $data, true );
 		if ( ! is_array( $data ) ) {
-			throw new \Exception( 'Invalid JSON data: ' . $path );
+			throw new Exception( 'Invalid JSON data: ' . $path );
 		}
 
 		return $data;
@@ -225,7 +223,7 @@ class Mime {
 
 		if ( ! is_array( static::$by_mime ) ) {
 			if ( false === static::$by_mime = static::load_json( static::BY_MIME_FILE ) ) {
-				throw new \Exception( 'Could not load MIME database.' );
+				throw new Exception( 'Could not load MIME database.' );
 			}
 
 			//add WordPress values
@@ -264,7 +262,7 @@ class Mime {
 
 		if ( ! is_array( static::$by_ext ) ) {
 			if ( false === static::$by_ext = static::load_json( static::BY_EXT_FILE ) ) {
-				throw new \Exception( 'Could not load file extension database.' );
+				throw new Exception( 'Could not load file extension database.' );
 			}
 
 			//add WordPress values
@@ -403,7 +401,12 @@ class Mime {
 			}
 
 			//lookup magic mime, if possible
-			if ( false !== $path && function_exists( 'finfo_file' ) && is_file( $path ) ) {
+			if (
+				false !== $path &&
+				function_exists( 'finfo_file' ) &&
+				defined( 'FILEINFO_MIME_TYPE' ) &&
+				is_file( $path )
+			) {
 				$finfo = finfo_open( FILEINFO_MIME_TYPE );
 				$magic_mime = static::sanitize_mime( finfo_file( $finfo, $path ) );
 				if ( $magic_mime &&
@@ -420,9 +423,9 @@ class Mime {
 					}
 				}
 			}
-		} catch (\Throwable $e) {
+		} catch (Throwable $e) {
 			return $out;
-		} catch (\Exception $e) {
+		} catch (Exception $e) {
 			return $out;
 		}
 
