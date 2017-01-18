@@ -66,7 +66,7 @@ class blobMime {
 	// @param validate (for e.g. local file)
 	// @return path or false
 	protected static function sanitize_path( $str = '', $validate = false ) {
-		$str = static::sanitize_string( $str );
+		$str = self::sanitize_string( $str );
 
 		if ( ! strlen( $str ) ) {
 			return false;
@@ -112,7 +112,7 @@ class blobMime {
 	// @param str
 	// @return str
 	protected static function sanitize_extension( $str = '' ) {
-		$str = static::sanitize_string( $str );
+		$str = self::sanitize_string( $str );
 		$str = strtolower( $str );
 		$str = ltrim( $str, '*.' );
 		$str = preg_replace( '/\s/', '', $str );
@@ -125,7 +125,7 @@ class blobMime {
 	// @param str
 	// @return str
 	protected static function sanitize_mime( $str = '' ) {
-		$str = static::sanitize_string( $str );
+		$str = self::sanitize_string( $str );
 		$str = sanitize_mime_type( $str );
 		$str = strtolower( $str );
 		return $str;
@@ -148,13 +148,13 @@ class blobMime {
 	// @return JSON or Exception
 	protected static function load_json( $path = '' ) {
 		$path = dirname( __FILE__ ) . DIRECTORY_SEPARATOR . "$path";
-		$path = static::sanitize_path( $path, true );
+		$path = self::sanitize_path( $path, true );
 
 		if ( ! is_file( $path ) ) {
 			throw new Exception( 'Invalid JSON path: ' . $path );
 		}
 
-		$data = static::sanitize_string( @file_get_contents( $path ) );
+		$data = self::sanitize_string( @file_get_contents( $path ) );
 		$data = json_decode( $data, true );
 		if ( ! is_array( $data ) ) {
 			throw new Exception( 'Invalid JSON data: ' . $path );
@@ -172,34 +172,34 @@ class blobMime {
 	// @param n/a
 	// @return true
 	protected static function load_wp_mimes() {
-		if ( is_null( static::$wp_mimes ) ) {
+		if ( is_null( self::$wp_mimes ) ) {
 			$raw = wp_get_mime_types();
-			static::$wp_mimes = array();
-			static::get_ext();
+			self::$wp_mimes = array();
+			self::get_ext();
 
 			//run through WordPress MIME types
 			foreach ( $raw as $k => $mime ) {
 				$exts = explode( '|', $k );
-				$mime = static::sanitize_mime( $mime );
+				$mime = self::sanitize_mime( $mime );
 				foreach ( $exts as $ext ) {
-					$ext = static::sanitize_extension( $ext );
+					$ext = self::sanitize_extension( $ext );
 					if ( ! strlen( $ext ) ) {
 						continue;
 					}
 
 					//add the extension if not already present
-					if ( ! isset( static::$wp_mimes[ $ext ] ) ) {
-						static::$wp_mimes[ $ext ] = array();
+					if ( ! isset( self::$wp_mimes[ $ext ] ) ) {
+						self::$wp_mimes[ $ext ] = array();
 					}
 
 					//add the mime if not already present
-					if ( ! in_array( $mime, static::$wp_mimes[ $ext ] ) ) {
-						static::$wp_mimes[ $ext ][] = $mime;
+					if ( ! in_array( $mime, self::$wp_mimes[ $ext ] ) ) {
+						self::$wp_mimes[ $ext ][] = $mime;
 					}
 				}
 			}
 
-			ksort( static::$wp_mimes[ $ext ] );
+			ksort( self::$wp_mimes[ $ext ] );
 		}
 
 		return true;
@@ -219,37 +219,37 @@ class blobMime {
 	// @param mime
 	// @return data or false
 	public static function get_mime( $mime = '' ) {
-		$mime = static::sanitize_mime( $mime );
+		$mime = self::sanitize_mime( $mime );
 
-		if ( ! is_array( static::$by_mime ) ) {
-			if ( false === static::$by_mime = static::load_json( static::BY_MIME_FILE ) ) {
+		if ( ! is_array( self::$by_mime ) ) {
+			if ( false === self::$by_mime = self::load_json( self::BY_MIME_FILE ) ) {
 				throw new Exception( 'Could not load MIME database.' );
 			}
 
 			//add WordPress values
-			static::load_wp_mimes();
+			self::load_wp_mimes();
 
-			foreach ( static::$wp_mimes as $k => $v ) {
+			foreach ( self::$wp_mimes as $k => $v ) {
 				foreach ( $v as $v2 ) {
-					if ( ! isset( static::$by_mime[ $v2 ] ) ) {
-						static::$by_mime[ $v2 ] = array(
+					if ( ! isset( self::$by_mime[ $v2 ] ) ) {
+						self::$by_mime[ $v2 ] = array(
 							'mime' => $v2,
 							'ext' => array( $k ),
 							'source' => array( 'WordPress' ),
 						);
 					} else {
-						if ( ! in_array( $k, static::$by_mime[ $v2 ]['ext'] ) ) {
-							static::$by_mime[ $v2 ]['ext'][] = $k;
+						if ( ! in_array( $k, self::$by_mime[ $v2 ]['ext'] ) ) {
+							self::$by_mime[ $v2 ]['ext'][] = $k;
 						}
-						if ( ! in_array( 'WordPress', static::$by_mime[ $v2 ]['source'] ) ) {
-							static::$by_mime[ $v2 ]['source'][] = 'WordPress';
+						if ( ! in_array( 'WordPress', self::$by_mime[ $v2 ]['source'] ) ) {
+							self::$by_mime[ $v2 ]['source'][] = 'WordPress';
 						}
 					}
 				}
 			}
 		}
 
-		return isset( static::$by_mime[ $mime ] ) ? static::$by_mime[ $mime ] : false;
+		return isset( self::$by_mime[ $mime ] ) ? self::$by_mime[ $mime ] : false;
 	}
 
 	//-------------------------------------------------
@@ -258,18 +258,18 @@ class blobMime {
 	// @param ext
 	// @return data or false
 	public static function get_ext( $ext = '' ) {
-		$ext = static::sanitize_extension( $ext );
+		$ext = self::sanitize_extension( $ext );
 
-		if ( ! is_array( static::$by_ext ) ) {
-			if ( false === static::$by_ext = static::load_json( static::BY_EXT_FILE ) ) {
+		if ( ! is_array( self::$by_ext ) ) {
+			if ( false === self::$by_ext = self::load_json( self::BY_EXT_FILE ) ) {
 				throw new Exception( 'Could not load file extension database.' );
 			}
 
 			//add WordPress values
-			static::load_wp_mimes();
-			foreach ( static::$wp_mimes as $k => $v ) {
-				if ( ! isset( static::$by_ext[ $k ] ) ) {
-					static::$by_ext[ $k ] = array(
+			self::load_wp_mimes();
+			foreach ( self::$wp_mimes as $k => $v ) {
+				if ( ! isset( self::$by_ext[ $k ] ) ) {
+					self::$by_ext[ $k ] = array(
 						'ext' => $k,
 						'mime' => $v,
 						'source' => array( 'WordPress' ),
@@ -279,22 +279,22 @@ class blobMime {
 				} else {
 					foreach ( $v as $v2 ) {
 						//add mime, but prioritize it
-						if ( ! in_array( $v2, static::$by_ext[ $k ]['mime'] ) ) {
-							array_unshift( static::$by_ext[ $k ]['mime'], $v2 );
+						if ( ! in_array( $v2, self::$by_ext[ $k ]['mime'] ) ) {
+							array_unshift( self::$by_ext[ $k ]['mime'], $v2 );
 						}
 
 						//always use WP's MIME as the primary
-						static::$by_ext[ $k ]['primary'] = $v2;
+						self::$by_ext[ $k ]['primary'] = $v2;
 
-						if ( ! in_array( 'WordPress', static::$by_ext[ $k ]['source'] ) ) {
-							static::$by_ext[ $k ]['source'][] = 'WordPress';
+						if ( ! in_array( 'WordPress', self::$by_ext[ $k ]['source'] ) ) {
+							self::$by_ext[ $k ]['source'][] = 'WordPress';
 						}
 					}
 				}
 			}
 		}
 
-		return isset( static::$by_ext[ $ext ] ) ? static::$by_ext[ $ext ] : false;
+		return isset( self::$by_ext[ $ext ] ) ? self::$by_ext[ $ext ] : false;
 	}
 
 	//-------------------------------------------------
@@ -304,19 +304,19 @@ class blobMime {
 	// @param mime
 	// @return true/false
 	public static function check_ext_and_mime( $ext = '', $mime = '' ) {
-		$ext = static::sanitize_extension( $ext );
+		$ext = self::sanitize_extension( $ext );
 		if ( ! strlen( $ext ) ) {
 			return false;
 		}
 
 		//soft pass invalid MIMEs
-		$mime = static::sanitize_mime( $mime );
-		if ( ! strlen( $mime ) || static::MIME_DEFAULT === $mime ) {
+		$mime = self::sanitize_mime( $mime );
+		if ( ! strlen( $mime ) || self::MIME_DEFAULT === $mime ) {
 			return true;
 		}
 
 		//soft pass on extension fail
-		if ( false === $ext = static::get_ext( $ext ) ) {
+		if ( false === $ext = self::get_ext( $ext ) ) {
 			return true;
 		}
 
@@ -351,18 +351,18 @@ class blobMime {
 			'extension' => '',
 			'filename' => '',
 			'path' => '',
-			'mime' => static::MIME_DEFAULT,
+			'mime' => self::MIME_DEFAULT,
 			'suggested_filename' => array(),
 		);
 
 		//path might just be an extension
-		$path = static::sanitize_string( $path );
+		$path = self::sanitize_string( $path );
 		if ( false === strpos( $path, '.' ) &&
 			false === strpos( $path, '/' ) &&
 			false === strpos( $path, '\\' )
 		) {
-			$out['extension'] = static::sanitize_extension( $path );
-			if ( false !== ($ext = static::get_ext( $path )) ) {
+			$out['extension'] = self::sanitize_extension( $path );
+			if ( false !== ($ext = self::get_ext( $path )) ) {
 				$out['mime'] = $ext['primary'];
 			}
 
@@ -370,12 +370,12 @@ class blobMime {
 		}
 
 		//path is something path-like
-		$path = static::sanitize_path( $path );
+		$path = self::sanitize_path( $path );
 		$out['path'] = $path;
 		$pathinfo = pathinfo( $path );
 		foreach ( $pathinfo as $k => $v ) {
 			if ( isset( $out[ $k ] ) ) {
-				$out[ $k ] = static::sanitize_string( $v );
+				$out[ $k ] = self::sanitize_string( $v );
 			}
 		}
 
@@ -385,10 +385,10 @@ class blobMime {
 			$out['extension'] = $pathinfo['extension'];
 		}
 
-		$out['extension'] = static::sanitize_extension( $out['extension'] );
+		$out['extension'] = self::sanitize_extension( $out['extension'] );
 
 		//pull the mimes from the extension
-		if ( false !== ($ext = static::get_ext( $out['extension'] )) ) {
+		if ( false !== ($ext = self::get_ext( $out['extension'] )) ) {
 			$out['mime'] = $ext['primary'];
 		}
 
@@ -408,14 +408,15 @@ class blobMime {
 				is_file( $path )
 			) {
 				$finfo = finfo_open( FILEINFO_MIME_TYPE );
-				$magic_mime = static::sanitize_mime( finfo_file( $finfo, $path ) );
-				if ( $magic_mime &&
-					static::MIME_DEFAULT !== $magic_mime &&
-					! static::check_ext_and_mime( $out['extension'], $magic_mime )
+				$magic_mime = self::sanitize_mime( finfo_file( $finfo, $path ) );
+				if (
+					$magic_mime &&
+					self::MIME_DEFAULT !== $magic_mime &&
+					! self::check_ext_and_mime( $out['extension'], $magic_mime )
 				) {
 					//if we have an alternative magic mime and it is legit,
 					//it should override what we derived from the name
-					if ( false !== ($mime = static::get_mime( $magic_mime )) ) {
+					if ( false !== ($mime = self::get_mime( $magic_mime )) ) {
 						$out['mime'] = $magic_mime;
 						foreach ( $mime['ext'] as $ext ) {
 							$out['suggested_filename'][] = "{$out['filename']}.$ext";
