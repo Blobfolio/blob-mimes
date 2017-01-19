@@ -302,11 +302,21 @@ class blobMime {
 	//
 	// @param ext
 	// @param mime
+	// @param allowed types only
 	// @return true/false
-	public static function check_ext_and_mime( $ext = '', $mime = '' ) {
+	public static function check_ext_and_mime( $ext = '', $mime = '', $allowed_only = false ) {
 		$ext = self::sanitize_extension( $ext );
 		if ( ! strlen( $ext ) ) {
 			return false;
+		}
+
+		//allowed types only? fail if the extension is not allowed by WordPress
+		if ( $allowed_only && ! current_user_can( 'unfiltered_upload' ) ) {
+			$filename = "foobar.$ext";
+			$wp_filetype = wp_check_filetype( $filename );
+			if ( false === $wp_filetype['ext'] || false === $wp_filetype['type'] ) {
+				return false;
+			}
 		}
 
 		//soft pass invalid MIMEs
@@ -343,8 +353,9 @@ class blobMime {
 	//
 	// @param path
 	// @param true name, for e.g. tmp uploads
+	// @param allowed types only
 	// @return info or false
-	public static function finfo( $path = '', $nice = null ) {
+	public static function finfo( $path = '', $nice = null, $allowed_only = false ) {
 		$out = array(
 			'dirname' => '',
 			'basename' => '',
@@ -382,7 +393,7 @@ class blobMime {
 		if ( is_string( $nice ) ) {
 			$pathinfo = pathinfo( $nice );
 			$out['filename'] = $pathinfo['filename'];
-			$out['extension'] = $pathinfo['extension'];
+			$out['extension'] = isset( $pathinfo['extension'] ) ? $pathinfo['extension'] : '';
 		}
 
 		$out['extension'] = self::sanitize_extension( $out['extension'] );
@@ -418,6 +429,7 @@ class blobMime {
 					//it should override what we derived from the name
 					if ( false !== ($mime = self::get_mime( $magic_mime )) ) {
 						$out['mime'] = $magic_mime;
+						$out['extension'] = $mime['ext'][0];
 						foreach ( $mime['ext'] as $ext ) {
 							$out['suggested_filename'][] = "{$out['filename']}.$ext";
 						}
@@ -428,6 +440,12 @@ class blobMime {
 			return $out;
 		} catch (Exception $e) {
 			return $out;
+		}
+
+		//restrict to authorized WordPress types?
+		if ( $allowed_only && ! self::check_ext_and_mime( $out['extension'], $out['mime'], true ) ) {
+			$out['extension'] = '';
+			$out['mime'] = '';
 		}
 
 		return $out;
