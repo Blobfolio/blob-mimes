@@ -20,7 +20,7 @@
     ],
     "require": {
         "neitanod/forceutf8": "dev-master",
-        "blobfolio/blob-common": "dev-master"
+        "blobfolio/blob-common": "^7."
     },
     "config": {
         "vendor-dir": "lib/vendor",
