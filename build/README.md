@@ -20,4 +20,4 @@ The combined data will be output to two different JSON files:
  * `build/extensions_by_mime.json`
  * `build/mimes_by_extension.json`
 
-After a build has completed, copy these two files to the main `src` directory.
+After a build has completed, copy these two files to the main `lib/blobfolio/mimes` directory.

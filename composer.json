@@ -7,6 +7,7 @@
         "extensions",
         "suffix"
     ],
+    "version": "1.0.0",
     "type": "library",
     "homepage": "https://github.com/Blobfolio/blob-mimes",
     "license": "GPLv2",
@@ -18,11 +19,16 @@
         }
     ],
     "require": {
-        "neitanod/forceutf8": "dev-master"
+        "neitanod/forceutf8": "dev-master",
+        "blobfolio/blob-common": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "lib/vendor",
+        "preferred-install": "dist"
     },
     "autoload": {
         "psr-4": {
-            "blobmimes\\": "src/blobmimes"
+            "blobfolio\\mimes\\": "lib/blobfolio/mimes"
         }
     }
 }

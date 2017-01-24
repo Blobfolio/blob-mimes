@@ -1,9 +1,7 @@
 <?php
 
-//test with wordpress?
-//require_once(dirname(dirname(dirname(__FILE__))) . '/wp-load.php');
 //bootstrap
-require_once(dirname(dirname(__FILE__)) . '/vendor/autoload.php');
+require_once(dirname(dirname(__FILE__)) . '/lib/vendor/autoload.php');
 header('Content-type: text/plain');
 
 
@@ -35,8 +33,8 @@ function debug_stdout($line='', bool $dividers=false) {
 
 //by mime
 debug_stdout('LOOKUP BY MIME TYPE', true);
-$mime = new \blobmimes\mime('audio/mp3');
-debug_stdout($mime->get());
+$mime = \blobfolio\mimes\mimes::get_mime('audio/mp3');
+debug_stdout($mime);
 
 
 
@@ -44,8 +42,8 @@ debug_stdout($mime->get());
 debug_stdout();
 debug_stdout();
 debug_stdout('LOOKUP BY FILE EXTENSION', true);
-$ext = new \blobmimes\extension('xls');
-debug_stdout($ext->get());
+$ext = \blobfolio\mimes\mimes::get_extension('xls');
+debug_stdout($ext);
 
 
 
@@ -53,8 +51,8 @@ debug_stdout($ext->get());
 debug_stdout();
 debug_stdout();
 debug_stdout('LOOKUP BY FILE (CORRECTLY NAMED)', true);
-$file = new \blobmimes\file('files/sky.jpg');
-debug_stdout($file->get());
+$file = \blobfolio\mimes\mimes::finfo('files/sky.jpg');
+debug_stdout($file);
 
 
 
@@ -62,8 +60,8 @@ debug_stdout($file->get());
 debug_stdout();
 debug_stdout();
 debug_stdout('LOOKUP BY FILE (INCORRECTLY NAMED)', true);
-$file = new \blobmimes\file('files/sky.png');
-debug_stdout($file->get());
+$file = \blobfolio\mimes\mimes::finfo('files/sky.png');
+debug_stdout($file);
 
 
 
@@ -71,8 +69,8 @@ debug_stdout($file->get());
 debug_stdout();
 debug_stdout();
 debug_stdout('LOOKUP BY FILE (NAME ONLY)', true);
-$file = new \blobmimes\file('pkcs12-test-keystore.tar.gz');
-debug_stdout($file->get());
+$file = \blobfolio\mimes\mimes::finfo('pkcs12-test-keystore.tar.gz');
+debug_stdout($file);
 
 
 
@@ -80,6 +78,6 @@ debug_stdout($file->get());
 debug_stdout();
 debug_stdout();
 debug_stdout('LOOKUP BY FILE (URL)', true);
-$file = new \blobmimes\file('https://upload.wikimedia.org/wikipedia/commons/7/76/Mozilla_Firefox_logo_2013.svg');
-debug_stdout($file->get());
+$file = \blobfolio\mimes\mimes::finfo('https://upload.wikimedia.org/wikipedia/commons/7/76/Mozilla_Firefox_logo_2013.svg');
+debug_stdout($file);
 ?>
