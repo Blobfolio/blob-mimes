@@ -7,7 +7,7 @@
         "extensions",
         "suffix"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "homepage": "https://github.com/Blobfolio/blob-mimes",
     "license": "GPLv2",
@@ -20,7 +20,7 @@
     ],
     "require": {
         "neitanod/forceutf8": "dev-master",
-        "blobfolio/blob-common": "^7."
+        "blobfolio/blob-common": "*"
     },
     "config": {
         "vendor-dir": "lib/vendor",
