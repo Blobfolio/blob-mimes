@@ -26,6 +26,7 @@
         "vendor-dir": "lib/vendor",
         "preferred-install": "dist"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "blobfolio\\mimes\\": "lib/blobfolio/mimes"
