@@ -2,7 +2,7 @@
 //---------------------------------------------------------------------
 // Compile MIME source material
 //---------------------------------------------------------------------
-// blob-mimes v0.5
+// blob-mimes v1.0
 // https://github.com/Blobfolio/blob-mimes
 //
 // This build script will download MIME data from various sources and
