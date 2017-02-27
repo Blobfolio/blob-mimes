@@ -171,7 +171,7 @@ N/A
 
 #### Returns
 
-Returns a MIME database oganized by extension.
+Returns a MIME database organized by extension.
 
 &nbsp;
 
@@ -220,7 +220,7 @@ N/A
 
 #### Returns
 
-Returns a MIME database oganized by type.
+Returns a MIME database organized by type.
 
 &nbsp;
 
