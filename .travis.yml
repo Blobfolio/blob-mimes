@@ -16,6 +16,6 @@ php:
   - 7.1
   - hhvm
 
-install: travis_retry composer install --no-interaction
+install: travis_retry composer install --no-interaction --ignore-platform-reqs
 
 script: lib/vendor/bin/phpunit --configuration phpunit.xml.dist
