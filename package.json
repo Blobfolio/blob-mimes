@@ -1,0 +1,10 @@
+{
+  "name": "blob-mimes",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "grunt-blobfolio": "git+ssh://git@blobfolio.com:3417/grunt-blobfolio"
+  }
+}

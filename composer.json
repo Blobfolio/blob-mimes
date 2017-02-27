@@ -1,35 +1,45 @@
 {
-    "name": "blobfolio/blob-mimes",
-    "description": "A comprehensive MIME and file extension tool for PHP.",
-    "keywords": [
-        "mimes",
-        "files",
-        "extensions",
-        "suffix"
-    ],
-    "version": "1.0.1",
-    "type": "library",
-    "homepage": "https://github.com/Blobfolio/blob-mimes",
-    "license": "GPLv2",
-    "authors": [
-        {
-            "name": "Josh Stoik",
-            "email": "josh@blobfolio.com",
-            "homepage": "https://blobfolio.com"
-        }
-    ],
-    "require": {
-        "neitanod/forceutf8": "dev-master",
-        "blobfolio/blob-common": "*"
-    },
-    "config": {
-        "vendor-dir": "lib/vendor",
-        "preferred-install": "dist"
-    },
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "blobfolio\\mimes\\": "lib/blobfolio/mimes"
-        }
+  "name": "blobfolio\/blob-mimes",
+  "description": "A comprehensive MIME and file extension tool for PHP.",
+  "keywords": [
+    "mimes",
+    "files",
+    "extensions",
+    "suffix"
+  ],
+  "version": "1.0.1",
+  "type": "library",
+  "homepage": "https:\/\/github.com\/Blobfolio\/blob-mimes",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Josh Stoik",
+      "email": "josh@blobfolio.com",
+      "homepage": "https:\/\/blobfolio.com"
     }
+  ],
+  "require": {
+    "php": ">= 7.0",
+    "ext-filter": "*",
+    "ext-dom": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-bcmath": "*",
+    "ext-hash": "*",
+    "neitanod\/forceutf8": "dev-master",
+    "blobfolio\/blob-common": "*"
+  },
+  "require-dev": {
+    "phpunit\/phpunit": "5.7.*"
+  },
+  "config": {
+    "vendor-dir": "lib\/vendor",
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "blobfolio\\mimes\\":"lib\/blobfolio\/mimes"
+    }
+  }
 }

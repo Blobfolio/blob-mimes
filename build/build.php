@@ -112,7 +112,11 @@ function recursive_rm(string $path='') {
 	$path = rtrim($path, '/');
 
 	//this must be below the build directory, and not this script
-	if (mb_substr($path, 0, mb_strlen(BUILD_PATH) + 1) !== BUILD_PATH . '/' || $path === BUILD_PATH || $path === __FILE__) {
+	if (
+		mb_substr($path, 0, mb_strlen(BUILD_PATH) + 1) !== BUILD_PATH . '/' ||
+		BUILD_PATH === $path ||
+		__FILE__ === $path
+	) {
 		return false;
 	}
 
@@ -360,7 +364,10 @@ foreach ($data as $k=>$v) {
 		$exts = array();
 		foreach ($raw as $ext) {
 			$ext = rtrim(ltrim(mb_strtolower($ext), '.*'), '.*');
-			if (preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext) && $ext !== 'none') {
+			if (
+				preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext) &&
+				'none' !== $ext
+			) {
 				$exts[] = $ext;
 			}
 		}
@@ -457,7 +464,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		//first, get the MIME(s)
 		$mimes = array();
 		foreach ($type->attributes() as $k=>$v) {
-			if ($k === 'type') {
+			if ('type' === $k) {
 				$mimes[] = (string) $v;
 			}
 		}
@@ -466,7 +473,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		if (isset($type->alias)) {
 			foreach ($type->alias as $alias) {
 				foreach ($alias->attributes() as $k=>$v) {
-					if ($k === 'type') {
+					if ('type' === $k) {
 						$mimes[] = (string) $v;
 						$aliases[] = (string) $v;
 					}
@@ -479,7 +486,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		if (isset($type->glob)) {
 			foreach ($type->glob as $glob) {
 				foreach ($glob->attributes() as $k=>$v) {
-					if ($k === 'pattern') {
+					if ('pattern' === $k) {
 						$v = ltrim((string) $v, '.*');
 						if (preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
 							$exts[] = $v;
