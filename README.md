@@ -2,9 +2,11 @@
 
 A comprehensive MIME and file extension tool for PHP. Finally!
 
+[![Build Status](https://travis-ci.org/Blobfolio/blob-mimes.svg?branch=master)](https://travis-ci.org/Blobfolio/blob-mimes)
 
+&nbsp;
 
-##### Table of Contents
+## Table of Contents
 
 1. [Features](#features)
 2. [Requirements](#requirements)
@@ -18,7 +20,7 @@ A comprehensive MIME and file extension tool for PHP. Finally!
    * [get_mimes()](#get_mimes)
 4. [License](#license)
 
-
+&nbsp;
 
 ## Features
 
@@ -37,7 +39,7 @@ The database is compiled from the following sources:
  * [Nginx](http://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
  * [freedesktop.org](https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in)
 
-
+&nbsp;
 
 ## Requirements
 
@@ -55,7 +57,7 @@ UTF-8 is used for all string encoding. This could create conflicts on environmen
 
 The build script additionally requires cURL.
 
-
+&nbsp;
 
 ## Installation
 
@@ -64,7 +66,7 @@ Install via Composer:
 composer require "blobfolio/blob-mimes:dev-master"
 ```
 
-
+&nbsp;
 
 ## Reference
 
@@ -89,7 +91,7 @@ $foo = blobfolio\mimes\mimes::check_ext_and_mime('jpeg', 'image/jpeg'); //TRUE
 $foo = blobfolio\mimes\mimes::check_ext_and_mime('jpeg', 'image/gif'); //FALSE
 ```
 
-
+&nbsp;
 
 ### finfo()
 
@@ -121,7 +123,7 @@ array(
 */
 ```
 
-
+&nbsp;
 
 ### get_extension()
 
@@ -157,7 +159,7 @@ array(
 */
 ```
 
-
+&nbsp;
 
 ### get_extensions()
 
@@ -171,7 +173,7 @@ N/A
 
 Returns a MIME database oganized by extension.
 
-
+&nbsp;
 
 ### get_mime()
 
@@ -206,7 +208,7 @@ array(
 */
 ```
 
-
+&nbsp;
 
 ### get_mimes()
 
@@ -220,7 +222,7 @@ N/A
 
 Returns a MIME database oganized by type.
 
-
+&nbsp;
 
 ## License
 
