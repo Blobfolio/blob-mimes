@@ -127,7 +127,7 @@ function recursive_rm(string $path='') {
 	//directories require recursion
 	elseif ($handle = opendir($path)) {
 		while (false !== ($file = readdir($handle))) {
-			if (in_array($file, array('.', '..'))) {
+			if (in_array($file, array('.', '..'), true)) {
 				continue;
 			}
 
@@ -243,15 +243,15 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 		$mimes_by_extension[$ext]['ext'] = $ext;
 	}
 
-	if (!in_array($mime, $mimes_by_extension[$ext]['mime'])) {
+	if (!in_array($mime, $mimes_by_extension[$ext]['mime'], true)) {
 		$mimes_by_extension[$ext]['mime'][] = $mime;
 	}
 
-	if (in_array($mime, $aliases) && !in_array($mime, $mimes_by_extension[$ext]['alias'])) {
+	if (in_array($mime, $aliases, true) && !in_array($mime, $mimes_by_extension[$ext]['alias'], true)) {
 		$mimes_by_extension[$ext]['alias'][] = $mime;
 	}
 
-	if (!in_array($source, $mimes_by_extension[$ext]['source'])) {
+	if (!in_array($source, $mimes_by_extension[$ext]['source'], true)) {
 		$mimes_by_extension[$ext]['source'][] = $source;
 	}
 
@@ -261,11 +261,11 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 		$extensions_by_mime[$mime]['mime'] = $mime;
 	}
 
-	if (!in_array($ext, $extensions_by_mime[$mime]['ext'])) {
+	if (!in_array($ext, $extensions_by_mime[$mime]['ext'], true)) {
 		$extensions_by_mime[$mime]['ext'][] = $ext;
 	}
 
-	if (!in_array($source, $extensions_by_mime[$mime]['source'])) {
+	if (!in_array($source, $extensions_by_mime[$mime]['source'], true)) {
 		$extensions_by_mime[$mime]['source'][] = $source;
 	}
 

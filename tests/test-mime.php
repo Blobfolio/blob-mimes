@@ -14,7 +14,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 		$thing = \blobfolio\mimes\mimes::get_mime('audio/mp3');
 		$this->assertEquals(true, is_array($thing));
 		$this->assertEquals('audio/mp3', $thing['mime']);
-		$this->assertEquals(true, in_array('mp3', $thing['ext']));
+		$this->assertEquals(true, in_array('mp3', $thing['ext'], true));
 	}
 
 	//-------------------------------------------------
@@ -24,7 +24,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 		$thing = \blobfolio\mimes\mimes::get_extension('xls');
 		$this->assertEquals(true, is_array($thing));
 		$this->assertEquals('xls', $thing['ext']);
-		$this->assertEquals(true, in_array('application/vnd.ms-excel', $thing['mime']));
+		$this->assertEquals(true, in_array('application/vnd.ms-excel', $thing['mime'], true));
 	}
 
 	//-------------------------------------------------
@@ -52,7 +52,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 		$this->assertEquals('jpeg', $thing['extension']);
 		$this->assertEquals('space', $thing['filename']);
 		$this->assertEquals('image/jpeg', $thing['mime']);
-		$this->assertEquals(true, in_array('space.jpg', $thing['suggested_filename']));
+		$this->assertEquals(true, in_array('space.jpg', $thing['suggested_filename'], true));
 	}
 
 	//-------------------------------------------------
