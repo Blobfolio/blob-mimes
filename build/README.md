@@ -1,5 +1,7 @@
 # blob-mimes
 
+[![Build Status](https://travis-ci.org/Blobfolio/blob-mimes.svg?branch=master)](https://travis-ci.org/Blobfolio/blob-mimes)
+
 The secret to blob-mime's success is using a more complete source database than other software typically integrates. This database is built from multiple sources, as it is too much to ask that any single definitive source should exist:
 
  * [IANA](https://www.iana.org/assignments/media-types)
