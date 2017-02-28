@@ -13,6 +13,12 @@
  *
  * @since xxx
  *
+ * @see {https://www.iana.org/assignments/media-types}
+ * @see {https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types}
+ * @see {http://hg.nginx.org/nginx/raw-file/default/conf/mime.types}
+ * @see {https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in}
+ * @see {https://github.com/Blobfolio/blob-mimes}
+ *
  * @param string $ext File extension.
  * @return array|bool MIME types. False on failure.
  */
