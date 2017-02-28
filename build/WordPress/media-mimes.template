@@ -1,0 +1,65 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * WordPress media types.
+ *
+ * @package WordPress
+ * @subpackage Media
+ * @since xxx
+ */
+
+/**
+ * Return MIME aliases for a particular file extension.
+ *
+ * @since xxx
+ *
+ * @param string $ext File extension.
+ * @return array|bool MIME types. False on failure.
+ */
+function wp_get_mime_aliases( $ext = '' ) {
+	$mimes = array(
+%MIMES_BY_EXTENSION%
+	);
+
+	$ext = trim( strtolower( $ext ) );
+	$ext = ltrim( $ext, '.' );
+	if ( strlen( $ext ) && isset( $mimes[$ext] ) ) {
+		return $mimes[$ext];
+	}
+
+	return false;
+}
+
+/**
+ * Check extension and MIME pairing.
+ *
+ * @since xxx
+ *
+ * @param string $ext File extension.
+ * @param string $mime MIME type.
+ * @return bool True/false.
+ */
+function wp_check_mime_alias( $ext = '', $mime = '' ) {
+	if ( false === ( $mimes = wp_get_mime_aliases( $ext ) ) ) {
+		return false;
+	}
+
+	$mime = strtolower( sanitize_mime_type( $mime ) );
+	$test = array( $mime );
+
+	// We want to test for both x-subtype and subtype variants.
+	$parts = explode( '/', $mime );
+	$subtype = count( $parts ) - 1;
+	if ( preg_match( '/^x\-/', $parts[$subtype] ) ) {
+		$parts[$subtype] = preg_replace( '/^x\-/', '', $parts[$subtype] );
+	}
+	else {
+		$parts[ $subtype ] = 'x-' . $parts[$subtype];
+	}
+	$test[] = implode( '/', $parts );
+
+	// Overlap is success!
+	$found = array_intersect( $test, $mimes );
+	return count( $found ) > 0;
+}
+

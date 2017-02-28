@@ -1,16 +1,19 @@
 <?php
-//---------------------------------------------------------------------
-// MIME Types
-//---------------------------------------------------------------------
-// handle MIME types and file extensions
-
-
+/**
+ * MIME, Extension, File-handling
+ *
+ * This class contains functions for locating and
+ * parsing MIME type and file extension data.
+ *
+ * @package blobfolio/mimes
+ * @author	Blobfolio, LLC <hello@blobfolio.com>
+ */
 
 namespace blobfolio\mimes;
 
 class mimes {
 
-	//our data
+	// Our data.
 	protected static $by_mime;
 	protected static $by_ext;
 
@@ -20,17 +23,21 @@ class mimes {
 
 
 
-	//---------------------------------------------------------------------
+	// ---------------------------------------------------------------------
 	// Data Population
-	//---------------------------------------------------------------------
+	// ---------------------------------------------------------------------
 
-	//-------------------------------------------------
-	// Load JSON
-	//
-	// load JSON from a file
-	//
-	// @param path
-	// @return JSON or Exception
+	/**
+	 * Load JSON
+	 *
+	 * A wrapper function for parsing the MIME/ext
+	 * data being stored in .JSON files.
+	 *
+	 * @param string $path JSON file path.
+	 * @return array Decoded data.
+	 * @throws \Exception Invalid file path.
+	 * @throws \Exception Invalid file contents.
+	 */
 	protected static function load_json(string $path = '') {
 		$path = dirname(__FILE__) . DIRECTORY_SEPARATOR . "$path";
 		\blobfolio\common\ref\file::path($path, true);
@@ -49,13 +56,14 @@ class mimes {
 		return $data;
 	}
 
-	//-------------------------------------------------
-	// Load MIMEs
-	//
-	// @param n/a
-	// @return true
+	/**
+	 * Load MIME data.
+	 *
+	 * @return bool True.
+	 * @throws \Exception Missing database.
+	 */
 	protected static function load_mimes() {
-		//populate MIME data if needed
+		// Populate MIME data if needed.
 		if (!is_array(static::$by_mime)) {
 			if (false === static::$by_mime = static::load_json(static::BY_MIME_FILE)) {
 				throw new \Exception('Could not load MIME database.');
@@ -65,11 +73,12 @@ class mimes {
 		return true;
 	}
 
-	//-------------------------------------------------
-	// Load Extensions
-	//
-	// @param n/a
-	// @return true
+	/**
+	 * Load Exension Data.
+	 *
+	 * @return bool True.
+	 * @throws \Exception Missing database.
+	 */
 	protected static function load_extensions() {
 		if (!is_array(static::$by_ext)) {
 			if (false === static::$by_ext = static::load_json(static::BY_EXT_FILE)) {
@@ -80,63 +89,74 @@ class mimes {
 		return true;
 	}
 
-	//--------------------------------------------------------------------- end data population
+	// --------------------------------------------------------------------- end data population
 
 
 
-	//---------------------------------------------------------------------
+	// ---------------------------------------------------------------------
 	// Public Data Access
-	//---------------------------------------------------------------------
+	// ---------------------------------------------------------------------
 
-	//-------------------------------------------------
-	// Get All MIMEs
-	//
-	// @param n/a
-	// @return mimes
+	/**
+	 * Get All MIMEs
+	 *
+	 * Return the entire parsed MIME database.
+	 *
+	 * @return array MIME data.
+	 */
 	public static function get_mimes() {
 		static::load_mimes();
 		return static::$by_mime;
 	}
 
-	//-------------------------------------------------
-	// Get MIME entry
-	//
-	// @param mime
-	// @return data or false
+	/**
+	 * Get One MIME
+	 *
+	 * Return information about a single MIME type.
+	 *
+	 * @param string $mime MIME type.
+	 * @return array MIME data.
+	 */
 	public static function get_mime(string $mime = '') {
 		\blobfolio\common\ref\sanitize::mime($mime);
 		static::load_mimes();
 		return isset(static::$by_mime[$mime]) ? static::$by_mime[$mime] : false;
 	}
 
-	//-------------------------------------------------
-	// Get All Extensions
-	//
-	// @param n/a
-	// @return extensions
+	/**
+	 * Get All Extensions
+	 *
+	 * Return the entire file extension database.
+	 *
+	 * @return array Extension data.
+	 */
 	public static function get_extensions() {
 		static::load_extensions();
 		return static::$by_ext;
 	}
 
-	//-------------------------------------------------
-	// Get extension entry
-	//
-	// @param ext
-	// @return data or false
+	/**
+	 * Get One Extension
+	 *
+	 * Return information about a single file extension.
+	 *
+	 * @param string $ext File extension.
+	 * @return array Extension data.
+	 */
 	public static function get_extension(string $ext = '') {
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		static::load_extensions();
 		return isset(static::$by_ext[$ext]) ? static::$by_ext[$ext] : false;
 	}
 
-	//-------------------------------------------------
-	// Verify MIME and Extension pair
-	//
-	// @param ext
-	// @param mime
-	// @param soft pass
-	// @return true/false
+	/**
+	 * Verify a MIME/ext pairing
+	 *
+	 * @param string $ext File extension.
+	 * @param string $mime MIME type.
+	 * @param bool $soft Soft pass not-found.
+	 * @return bool True.
+	 */
 	public static function check_ext_and_mime(string $ext = '', string $mime = '', bool $soft=true) {
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		if (!\blobfolio\common\mb::strlen($ext)) {
@@ -148,16 +168,16 @@ class mimes {
 			return true;
 		}
 
-		//soft pass on extension fail
+		// Soft pass on extension fail.
 		if (false === $ext = static::get_extension($ext)) {
 			return $soft;
 		}
 
-		//loose mime check
+		// Loose mime check.
 		$real = $ext['mime'];
 		$test = array($mime);
 
-		//we want to also look for x-type variants
+		// We want to also look for x-type variants.
 		$parts = explode('/', $mime);
 		if (preg_match('/^x\-/', $parts[count($parts) - 1])) {
 			$parts[count($parts) - 1] = preg_replace('/^x\-/', '', $parts[count($parts) - 1]);
@@ -167,17 +187,20 @@ class mimes {
 		}
 		$test[] = implode('/', $parts);
 
-		//any overlap?
+		// Any overlap?
 		$found = array_intersect($real, $test);
 		return count($found) > 0;
 	}
 
-	//-------------------------------------------------
-	// Get File Info
-	//
-	// @param path
-	// @param true name, for e.g. tmp uploads
-	// @return info or false
+	/**
+	 * Get File Info
+	 *
+	 * This function is a sexier version of finfo_open().
+	 *
+	 * @param string $path File path or name.
+	 * @param string $nice Nice file name (for e.g. tmp uploads).
+	 * @return array File data.
+	 */
 	public static function finfo(string $path = '', string $nice = null) {
 		$out = array(
 			'dirname'=>'',
@@ -189,7 +212,7 @@ class mimes {
 			'suggested_filename'=>array(),
 		);
 
-		//path might just be an extension
+		// Path might just be an extension.
 		\blobfolio\common\ref\cast::string($path);
 		if (false === \blobfolio\common\mb::strpos($path, '.') &&
 			false === \blobfolio\common\mb::strpos($path, '/') &&
@@ -203,7 +226,7 @@ class mimes {
 			return $out;
 		}
 
-		//path is something path-like
+		// Path is something path-like.
 		\blobfolio\common\ref\file::path($path, false);
 		$out['path'] = $path;
 		$out = \blobfolio\common\data::parse_args(pathinfo($path), $out);
@@ -216,20 +239,20 @@ class mimes {
 
 		\blobfolio\common\ref\sanitize::file_extension($out['extension']);
 
-		//pull the mimes from the extension
+		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
 			$out['mime'] = $ext['primary'];
 		}
 
-		//try to read the magic mime, if possible
+		// Try to read the magic mime, if possible.
 		try {
-			//find the real path, if possible
+			// Find the real path, if possible.
 			if (false !== ($path = realpath($path))) {
 				$out['path'] = $path;
 				$out['dirname'] = dirname($path);
 			}
 
-			//lookup magic mime, if possible
+			// Lookup magic mime, if possible.
 			if (
 				false !== $path &&
 				function_exists('finfo_file') &&
@@ -244,8 +267,8 @@ class mimes {
 					(static::MIME_DEFAULT === $out['mime'] || !preg_match('/^text\//', $magic_mime)) &&
 					!static::check_ext_and_mime($out['extension'], $magic_mime)
 				) {
-					//if we have an alternative magic mime and it is legit,
-					//it should override what we derived from the name
+					// If we have an alternative magic mime and it is legit,
+					// it should override what we derived from the name.
 					if (false !== ($mime = static::get_mime($magic_mime))) {
 						$out['mime'] = $magic_mime;
 						$out['extension'] = $mime['ext'][0];
@@ -262,8 +285,8 @@ class mimes {
 		return $out;
 	}
 
-	//--------------------------------------------------------------------- end public data access
+	// --------------------------------------------------------------------- end public data access
 }
 
 
-?>
+

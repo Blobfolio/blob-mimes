@@ -1,41 +1,26 @@
 <?php
-//---------------------------------------------------------------------
-// Compile MIME source material
-//---------------------------------------------------------------------
-// blob-mimes v1.0
-// https://github.com/Blobfolio/blob-mimes
-//
-// This build script will download MIME data from various sources and
-// combine the results into nice and tidy JSON files, one organized by
-// extension and one by MIME type.
-//
-// REQUIREMENTS:
-//   -- PHP 7.0
-//   -- UNIX
-//   -- CURL
-//   -- MBSTRING
-//   -- SIMPLEXML
-//
-// Copyright © 2017  Blobfolio, LLC  (email: hello@blobfolio.com)
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License
-// as published by the Free Software Foundation; either version 2
-// of the License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+/**
+ * Compile MIME source data.
+ *
+ * This build script will download MIME data from various sources
+ * and combine the results into nice and tidy JSON files, one
+ * organized by extension and one by MIME type.
+ *
+ * This script should be run via php-cli.
+ *
+ * Requires:
+ * PHP 7+
+ * UNIX
+ * CURL
+ * MBSTRING
+ * SIMPLEXML
+ *
+ * @package blobfolio/mimes
+ * @author	Blobfolio, LLC <hello@blobfolio.com>
+ */
 
-
-
-//-------------------------------------------------
-// Setup/Env
+// -------------------------------------------------
+// Setup/Env.
 
 define('BUILD_PATH', dirname(__FILE__));
 define('SOURCE_PATH', BUILD_PATH . '/src');
@@ -81,12 +66,15 @@ $start = microtime(true);
 
 
 
-//-------------------------------------------------
-// Debug Stdout
-//
-// @param line
-// @param dividers
-// @return n/a
+/**
+ * STDOUT wrapper.
+ *
+ * Make it easier to print progress to the terminal.
+ *
+ * @param string $line Content.
+ * @param bool $dividers Print dividing lines.
+ * @return void Nothing.
+ */
 function debug_stdout(string $line='', bool $dividers=false) {
 	if ($dividers) {
 		echo str_repeat('-', 50) . "\n";
@@ -99,11 +87,15 @@ function debug_stdout(string $line='', bool $dividers=false) {
 
 
 
-//-------------------------------------------------
-// Recursive Rm
-//
-// @param dir/file
-// @return true
+/**
+ * Recursive rmdir()
+ *
+ * Delete all files within a directory, then
+ * the directory itself.
+ *
+ * @param string $path Path.
+ * @return bool Status.
+ */
 function recursive_rm(string $path='') {
 	if (false === $path = realpath($path)) {
 		return false;
@@ -111,7 +103,7 @@ function recursive_rm(string $path='') {
 
 	$path = rtrim($path, '/');
 
-	//this must be below the build directory, and not this script
+	// This must be below the build directory, and not this script.
 	if (
 		mb_substr($path, 0, mb_strlen(BUILD_PATH) + 1) !== BUILD_PATH . '/' ||
 		BUILD_PATH === $path ||
@@ -120,11 +112,11 @@ function recursive_rm(string $path='') {
 		return false;
 	}
 
-	//files are easy
+	// Files are easy.
 	if (is_file($path)) {
 		@unlink($path);
 	}
-	//directories require recursion
+	// Directories require recursion.
 	elseif ($handle = opendir($path)) {
 		while (false !== ($file = readdir($handle))) {
 			if (in_array($file, array('.', '..'), true)) {
@@ -135,24 +127,30 @@ function recursive_rm(string $path='') {
 		}
 		@rmdir($path);
 	}
+
+	return true;
 }
 
 
 
-//-------------------------------------------------
-// Batch Fetch
-//
-// @param URLs
-// @return data
+/**
+ * Batch CURL URLs
+ *
+ * It is much more efficient to use multi-proc
+ * CURL as there are hundreds of files to get.
+ *
+ * @param array $urls URLs.
+ * @return array Responses.
+ */
 function fetch_urls(array $urls=array()) {
 	$fetched = array();
 
-	//bad start...
+	// Bad start...
 	if (!count($urls)) {
 		return $fetched;
 	}
 
-	//loosely filter URLs
+	// Loosely filter URLs.
 	foreach ($urls as $k=>$v) {
 		$urls[$k] = filter_var($v, FILTER_SANITIZE_URL);
 		if (!preg_match('/^https?:\/\//', $urls[$k])) {
@@ -166,7 +164,7 @@ function fetch_urls(array $urls=array()) {
 		$multi = curl_multi_init();
 		$curls = array();
 
-		//set up curl request for each site
+		// Set up curl request for each site.
 		foreach ($chunk as $url) {
 			$curls[$url] = curl_init($url);
 
@@ -179,13 +177,13 @@ function fetch_urls(array $urls=array()) {
 			curl_multi_add_handle($multi, $curls[$url]);
 		}
 
-		//process requests
+		// Process requests.
 		do {
 			curl_multi_exec($multi, $running);
 			curl_multi_select($multi);
 		} while ($running > 0);
 
-		//update information
+		// Update information.
 		foreach ($chunk as $url) {
 			$fetched[$url] = (int) curl_getinfo($curls[$url], CURLINFO_HTTP_CODE);
 			if ($fetched[$url] >= 200 && $fetched[$url] < 400) {
@@ -202,11 +200,12 @@ function fetch_urls(array $urls=array()) {
 
 
 
-//-------------------------------------------------
-// Explode Lines
-//
-// @param text
-// @return lines
+/**
+ * Explode a string by line.
+ *
+ * @param string $str String.
+ * @return array Lines.
+ */
 function explode_lines(string $str='') {
 	$str = str_replace("\r\n", "\n", $str);
 	$str = preg_replace('/\v/u', "\n", $str);
@@ -217,13 +216,18 @@ function explode_lines(string $str='') {
 
 
 
-//-------------------------------------------------
-// Record MIME/ext pair
-//
-// @param mime
-// @param ext
-// @param source
-// @return true/false
+/**
+ * Record MIME/Ext Data
+ *
+ * Redundant and overlapping data can be recovered from
+ * multiple sources. This keeps track of all of that in
+ * one place, and also sanitizes data, etc.
+ *
+ * @param string $mime MIME type.
+ * @param string $ext File extension.
+ * @param string $source Data source.
+ * @return bool Status.
+ */
 function save_mime_ext_pair(string $mime='', string $ext='', string $source='') {
 	global $mimes_by_extension;
 	global $extensions_by_mime;
@@ -237,7 +241,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 		return false;
 	}
 
-	//mimes by extension
+	// Mimes by extension.
 	if (!isset($mimes_by_extension[$ext])) {
 		$mimes_by_extension[$ext] = EXT_DEFAULT;
 		$mimes_by_extension[$ext]['ext'] = $ext;
@@ -255,7 +259,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 		$mimes_by_extension[$ext]['source'][] = $source;
 	}
 
-	//extensions by mime
+	// Extensions by mime.
 	if (!isset($extensions_by_mime[$mime])) {
 		$extensions_by_mime[$mime] = MIME_DEFAULT;
 		$extensions_by_mime[$mime]['mime'] = $mime;
@@ -274,7 +278,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // Begin!
 
 if (file_exists(SOURCE_PATH)) {
@@ -292,12 +296,12 @@ if (file_exists(MIME_PATH)) {
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // IANA
 
 debug_stdout('IANA', true);
 
-// get categories
+// Get categories.
 $urls = array();
 debug_stdout('   ++ Fetching MIME lists...');
 foreach (IANA_CATEGORIES as $category) {
@@ -315,10 +319,10 @@ foreach ($data as $k=>$v) {
 
 	debug_stdout('      ++ Parsing ' . basename($k) . '...');
 
-	//save file
+	// Save file.
 	@file_put_contents(SOURCE_PATH . '/iana/categories/' . basename($k), $v);
 
-	//parse CSV
+	// Parse CSV.
 	$v = explode_lines($v);
 
 	foreach ($v as $raw) {
@@ -327,8 +331,8 @@ foreach ($data as $k=>$v) {
 			continue;
 		}
 
-		//0 NAME
-		//1 TEMPLATE
+		// 0 NAME.
+		// 1 TEMPLATE.
 
 		if (preg_match('/(deprecated|obsolete)/i', $line[0])) {
 			$aliases[] = $line[1];
@@ -338,7 +342,7 @@ foreach ($data as $k=>$v) {
 	}
 }
 
-// get templates to parse extensions
+// Get templates to parse extensions.
 debug_stdout('   ++ Fetching templates...');
 $data = fetch_urls($urls);
 mkdir(SOURCE_PATH . '/iana/templates', 0755);
@@ -347,7 +351,7 @@ foreach ($data as $k=>$v) {
 		continue;
 	}
 
-	//save file
+	// Save file.
 	$mime = mb_strtolower(mb_substr($k, mb_strlen(IANA_API) + 1));
 	$dirname = SOURCE_PATH . '/iana/templates/' . dirname($mime);
 
@@ -356,7 +360,7 @@ foreach ($data as $k=>$v) {
 	}
 	@file_put_contents("$dirname/" . basename($mime) . '.txt', $v);
 
-	//are there extensions?
+	// Are there extensions?
 	preg_match_all('/\s*File extension\(s\):([\.,\da-z\s\-_]+)/i', $v, $matches);
 	if (count($matches[1])) {
 		$raw = explode(',', $matches[1][0]);
@@ -381,7 +385,7 @@ foreach ($data as $k=>$v) {
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // Apache
 
 debug_stdout('');
@@ -389,10 +393,10 @@ debug_stdout('Apache', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(APACHE_API));
 if (!is_int($data[APACHE_API])) {
-	//save it
+	// Save it.
 	@file_put_contents(SOURCE_PATH . '/apache.txt', $data[APACHE_API]);
 
-	//parse output... much simpler than IANA
+	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[APACHE_API]);
 	foreach ($lines as $line) {
 		if (mb_substr($line, 0, 1) === '#') {
@@ -414,7 +418,7 @@ if (!is_int($data[APACHE_API])) {
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // Nginx
 
 debug_stdout('');
@@ -422,10 +426,10 @@ debug_stdout('Nginx', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(NGINX_API));
 if (!is_int($data[NGINX_API])) {
-	//save it
+	// Save it.
 	@file_put_contents(SOURCE_PATH . '/nginx.txt', $data[NGINX_API]);
 
-	//parse output... much simpler than IANA
+	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[NGINX_API]);
 	foreach ($lines as $line) {
 		if (mb_substr($line, 0, 1) === '#' || false !== mb_strpos($line, '{') || false !== mb_strpos($line, '}')) {
@@ -448,7 +452,7 @@ if (!is_int($data[NGINX_API])) {
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // Free Desktop
 
 debug_stdout('');
@@ -456,12 +460,12 @@ debug_stdout('freedesktop.org', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(FREEDESKTOP_API));
 if (!is_int($data[FREEDESKTOP_API])) {
-	//save it
+	// Save it.
 	@file_put_contents(SOURCE_PATH . '/freedesktop.xml', $data[FREEDESKTOP_API]);
 
 	$data = simplexml_load_string($data[FREEDESKTOP_API]);
 	foreach ($data as $type) {
-		//first, get the MIME(s)
+		// First, get the MIME(s).
 		$mimes = array();
 		foreach ($type->attributes() as $k=>$v) {
 			if ('type' === $k) {
@@ -469,7 +473,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			}
 		}
 
-		//might also be in aliases
+		// Might also be in aliases.
 		if (isset($type->alias)) {
 			foreach ($type->alias as $alias) {
 				foreach ($alias->attributes() as $k=>$v) {
@@ -481,13 +485,13 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			}
 		}
 
-		//extensions are hidden in globs
+		// Extensions are hidden in globs.
 		$exts = array();
 		if (isset($type->glob)) {
 			foreach ($type->glob as $glob) {
 				foreach ($glob->attributes() as $k=>$v) {
 					if ('pattern' === $k) {
-						$v = ltrim((string) $v, '.*');
+						$v = ltrim( (string) $v, '.*');
 						if (preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
 							$exts[] = $v;
 						}
@@ -496,7 +500,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			}
 		}
 
-		//we have something!
+		// We have something!
 		if (count($exts) && count($mimes)) {
 			foreach ($exts as $ext) {
 				foreach ($mimes as $mime) {
@@ -509,14 +513,14 @@ if (!is_int($data[FREEDESKTOP_API])) {
 
 
 
-//-------------------------------------------------
+// -------------------------------------------------
 // Clean Up!
 
 debug_stdout('');
 debug_stdout('Finishing Touches', true);
 debug_stdout('   ++ Cleaning data...');
 
-//calculate primary mime
+// Calculate primary mime.
 foreach ($mimes_by_extension as $k=>$v) {
 	$possible = array_diff($v['mime'], $v['alias']);
 	if (!count($possible)) {
@@ -532,14 +536,37 @@ debug_stdout('   ++ Sorting data...');
 ksort($mimes_by_extension);
 ksort($extensions_by_mime);
 
-//save data!
+// Save data!
 debug_stdout('   ++ Saving data...');
 @file_put_contents(EXT_PATH, json_encode($mimes_by_extension));
 @file_put_contents(MIME_PATH, json_encode($extensions_by_mime));
+
+// Lastly, generate WordPress File
+debug_stdout('   ++ Saving WP media-mimes.php...');
+$wp_data = array();
+foreach($mimes_by_extension as $k=>$v){
+	$v['mime'] = (array) $v['mime'];
+	$wp_data[$k] = array_merge($v['mime'], $v['alias']);
+	$wp_data[$k] = array_unique($wp_data[$k]);
+	sort($wp_data[$k]);
+}
+$wp_data_out = array();
+foreach($wp_data as $k=>$v){
+	$wp_data_out[] = "\t\t'$k'=>array(";
+	foreach($v as $v2){
+		$wp_data_out[] = "\t\t\t'$v2',";
+	}
+	$wp_data_out[] = "\t\t),";
+}
+$wp_data_out = implode("\n", $wp_data_out);
+$wp_file = @file_get_contents(BUILD_PATH . '/WordPress/media-mimes.template');
+$wp_file = str_replace('%MIMES_BY_EXTENSION%', $wp_data_out, $wp_file);
+@file_put_contents(BUILD_PATH . '/WordPress/media-mimes.php', $wp_file);
+
 
 $end = microtime(true);
 debug_stdout('');
 debug_stdout('Done!', true);
 debug_stdout('   ++ Found ' . count($mimes_by_extension) . ' extensions, ' . count($extensions_by_mime) . ' MIME types.');
 debug_stdout('   ++ Finished in ' . round($end - $start, 2) . ' seconds.');
-?>
+
