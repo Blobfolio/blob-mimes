@@ -18,7 +18,7 @@ class MimesTests extends WP_UnitTestCase {
 	 * @return array|bool MIMEs.
 	 */
 	function filter_wp_get_mime_aliases( $mimes, $ext ) {
-		if ( $ext === 'jpg' ) {
+		if ( 'jpg' === $ext ) {
 			if ( ! is_array( $mimes ) ) {
 				$mimes = array();
 			}
@@ -37,11 +37,27 @@ class MimesTests extends WP_UnitTestCase {
 	 * @return bool True or false.
 	 */
 	function filter_wp_check_mime_alias( $match, $ext, $mime ) {
-		if ( $ext === 'jpg' && $mime === 'image/foobar' ) {
+		if ( 'jpg' === $ext && 'image/foobar' === $mime ) {
 			return true;
 		}
 
 		return $match;
+	}
+
+	/**
+	 * Filter Real Type Checking
+	 *
+	 * @param array $checked Previous check.
+	 * @param string $file File path.
+	 * @param string $filename File name.
+	 * @param array $mimes MIMEs.
+	 * @return array Checked.
+	 */
+	function filter_wp_check_real_filetype( $checked, $file, $filename, $mimes ) {
+		return array(
+			'ext'=>'foo',
+			'type'=>'foo/bar'
+		);
 	}
 
 	/**
@@ -107,5 +123,39 @@ class MimesTests extends WP_UnitTestCase {
 		$thing = wp_check_mime_alias( 'jpg', 'image/foobar' );
 		$this->assertEquals( true, $thing );
 		remove_filter ( 'wp_check_mime_alias', array( $this, 'filter_wp_check_mime_alias' ), 10, 3 );
+	}
+
+	/**
+	 * Check Real Type
+	 */
+	function test_wp_check_real_filetype() {
+		$dir = dirname( __FILE__ ) . '/assets/';
+
+		// A real JPEG.
+		$thing = wp_check_real_filetype( "$dir/space.jpg" );
+		$this->assertEquals( 'image/jpeg', $thing['type'] );
+		$this->assertEquals( 'jpg', $thing['ext'] );
+
+		// Actually a JPEG.
+		$thing = wp_check_real_filetype( "$dir/space.png" );
+		$this->assertEquals( 'image/jpeg', $thing['type'] );
+		$this->assertEquals( 'jpg', $thing['ext'] );
+
+		// A real ZIP.
+		$thing = wp_check_real_filetype( "$dir/space.zip" );
+		$this->assertEquals( 'application/zip', $thing['type'] );
+		$this->assertEquals( 'zip', $thing['ext'] );
+
+		// Actually a ZIP.
+		$thing = wp_check_real_filetype( "$dir/space.jpeg" );
+		$this->assertEquals( 'application/zip', $thing['type'] );
+		$this->assertEquals( 'zip', $thing['ext'] );
+
+		// Test the filter.
+		add_filter ( 'wp_check_real_filetype', array( $this, 'filter_wp_check_real_filetype' ), 10, 4 );
+		$thing = wp_check_real_filetype( "$dir/space.jpeg" );
+		$this->assertEquals( 'foo/bar', $thing['type'] );
+		$this->assertEquals( 'foo', $thing['ext'] );
+		remove_filter ( 'wp_check_real_filetype', array( $this, 'filter_wp_check_real_filetype' ), 10, 4 );
 	}
 }

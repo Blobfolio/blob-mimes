@@ -6103,3 +6103,100 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 	return apply_filters( 'wp_check_mime_alias', $match, $ext, $mime );
 }
 
+/**
+ * Retrieve the "real" file type from the file.
+ *
+ * This extends `wp_check_filetype()` to additionally
+ * consider content-based indicators of a file's
+ * true type.
+ *
+ * The content-based type will override the name-based
+ * type if available and included in the $mimes list.
+ *
+ * @since xxx
+ *
+ * @see wp_check_filetype()
+ * @see wp_check_filetype_and_ext()
+ *
+ * @param string $file Full path to the file.
+ * @param string $filename The name of the file (may differ from $file due to $file being in a tmp directory).
+ * @param array $mimes Optional. Key is the file extension with value as the mime type.
+ * @return array Values with extension first and mime type.
+ */
+function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
+	// Default filename.
+	if ( empty( $filename ) ) {
+		$filename = basename( $file );
+	}
+
+	// Default MIMEs.
+	if ( empty( $mimes ) ) {
+		$mimes = get_allowed_mime_types();
+	}
+
+	// Run a name-based check first.
+	$checked = wp_check_filetype( $filename, $mimes );
+
+	// Only dig deeper if we can.
+	if (
+		false !== $checked['ext'] &&
+		false !== $checked['type'] &&
+		file_exists( $file )
+	) {
+		$real_mime = false;
+
+		try {
+			// Try finfo, if available.
+			if (
+				extension_loaded( 'fileinfo' ) &&
+				defined( 'FILEINFO_MIME_TYPE' )
+			) {
+				$finfo = finfo_open( FILEINFO_MIME_TYPE );
+				$real_mime = finfo_file( $finfo, $file );
+				finfo_close( $finfo );
+
+				// Account for inconsistent return values.
+				if ( ! is_string( $real_mime ) || ! strlen( $real_mime ) ) {
+					$real_mime = false;
+				}
+			}
+
+			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
+		} catch(Throwable $e) {
+			$real_mime = false;
+		} catch(Exception $e) {
+			$real_mime = false;
+		}
+
+		// Evaluate our real MIME.
+		if ( false !== $real_mime ) {
+			$real_mime = strtolower( sanitize_mime_type( $real_mime ) );
+			if ( ! wp_check_mime_alias( $checked['ext'], $real_mime ) ) {
+				// If the extension is incorrect but the type is valid,
+				// update the extension.
+				if ( false !== $extensions = array_search( $real_mime, $mimes, true ) ) {
+					$extensions = explode( '|', $extensions );
+					$checked['ext'] = $extensions[0];
+					$checked['type'] = $real_mime;
+				}
+				// Otherwise reject the results.
+				else {
+					$checked['ext'] = false;
+					$checked['type'] = false;
+				}
+			}
+		}
+	}// End content-based type checking.
+
+	/**
+	 * Filters the real check.
+	 *
+	 * @since xxx
+	 *
+	 * @param array Found values with extension first and mime type.
+	 * @param string $file Full path to the file.
+	 * @param string $filename The name of the file (may differ from $file due to $file being in a tmp directory).
+	 * @param array $mimes Optional. Key is the file extension with value as the mime type.
+	 */
+	return apply_filters( 'wp_check_real_filetype', $checked, $file, $filename, $mimes );
+}
