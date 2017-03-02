@@ -31,10 +31,21 @@ function wp_get_mime_aliases( $ext = '' ) {
 	$ext = trim( strtolower( $ext ) );
 	$ext = ltrim( $ext, '.' );
 	if ( strlen( $ext ) && isset( $mimes[$ext] ) ) {
-		return $mimes[$ext];
+		$match = $mimes[$ext];
+	}
+	else {
+		$match = false;
 	}
 
-	return false;
+	/**
+	 * Filters the MIME alias list.
+	 *
+	 * @since xxx
+	 *
+	 * @param array|bool $match The aliases found. False on failure.
+	 * @param string $ext The file extension.
+	 */
+	return apply_filters( 'wp_get_mime_aliases', $match, $ext );
 }
 
 /**
@@ -47,12 +58,24 @@ function wp_get_mime_aliases( $ext = '' ) {
  * @return bool True/false.
  */
 function wp_check_mime_alias( $ext = '', $mime = '' ) {
-	if ( false === ( $mimes = wp_get_mime_aliases( $ext ) ) ) {
-		return false;
-	}
-
+	// Standardize inputs.
 	$mime = strtolower( sanitize_mime_type( $mime ) );
-	$test = array( $mime );
+	$ext = trim( strtolower( $ext ) );
+	$ext = ltrim( $ext, '.' );
+
+	// Can't continue if the extension is not in the database.
+	if ( false === ( $mimes = wp_get_mime_aliases( $ext ) ) ) {
+		/**
+		 * Filters the extension/MIME check.
+		 *
+		 * @since xxx
+		 *
+		 * @param bool $match The result: True or false.
+		 * @param string $ext The file extension.
+		 * @param string $mime The MIME type.
+		 */
+		return apply_filters( 'wp_check_mime_alias', false, $ext, $mime );
+	}
 
 	// We want to test for both x-subtype and subtype variants.
 	$parts = explode( '/', $mime );
@@ -61,12 +84,19 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		$parts[$subtype] = preg_replace( '/^x\-/', '', $parts[$subtype] );
 	}
 	else {
-		$parts[ $subtype ] = 'x-' . $parts[$subtype];
+		$parts[$subtype] = 'x-' . $parts[$subtype];
 	}
-	$test[] = implode( '/', $parts );
+
+	// We now have type/x-subtype and type/subtype.
+	$test = array(
+		$mime,
+		implode( '/', $parts )
+	);
 
 	// Overlap is success!
 	$found = array_intersect( $test, $mimes );
-	return count( $found ) > 0;
+	$match = count( $found ) > 0;
+
+	return apply_filters( 'wp_check_mime_alias', $match, $ext, $mime );
 }
 
