@@ -17,6 +17,7 @@
  * @see {https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types}
  * @see {http://hg.nginx.org/nginx/raw-file/default/conf/mime.types}
  * @see {https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in}
+ * @see {https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml}
  * @see {https://github.com/Blobfolio/blob-mimes}
  *
  * @param string $ext File extension.

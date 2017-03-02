@@ -17,6 +17,13 @@
  *
  * @package blobfolio/mimes
  * @author	Blobfolio, LLC <hello@blobfolio.com>
+ *
+ * @see {https://www.iana.org/assignments/media-types}
+ * @see {https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types}
+ * @see {http://hg.nginx.org/nginx/raw-file/default/conf/mime.types}
+ * @see {https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in}
+ * @see {https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml}
+ * @see {https://github.com/Blobfolio/blob-mimes}
  */
 
 // -------------------------------------------------
@@ -61,6 +68,8 @@ define('APACHE_API', 'https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/co
 define('NGINX_API', 'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types');
 
 define('FREEDESKTOP_API', 'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in');
+
+define('TIKA_API', 'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml');
 
 $start = microtime(true);
 
@@ -514,6 +523,71 @@ if (!is_int($data[FREEDESKTOP_API])) {
 
 
 // -------------------------------------------------
+// Tika
+
+debug_stdout('');
+debug_stdout('Apache Tika', true);
+debug_stdout('   ++ Fetching MIME list...');
+$data = fetch_urls(array(TIKA_API));
+if (!is_int($data[TIKA_API])) {
+	// Save it.
+	@file_put_contents(SOURCE_PATH . '/tika.xml', $data[TIKA_API]);
+
+	// SimpleXML doesn't like Tika's undefined namespaces, so
+	// let's just remove them.
+	$data[TIKA_API] = preg_replace('/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us', '', $data[TIKA_API]);
+
+	$data = simplexml_load_string($data[TIKA_API]);
+	foreach ($data as $type) {
+		// First, get the MIME(s).
+		$mimes = array();
+		foreach ($type->attributes() as $k=>$v) {
+			if ('type' === $k) {
+				$mimes[] = (string) $v;
+			}
+		}
+
+		// Might also be in aliases.
+		if (isset($type->alias)) {
+			foreach ($type->alias as $alias) {
+				foreach ($alias->attributes() as $k=>$v) {
+					if ('type' === $k) {
+						$mimes[] = (string) $v;
+						$aliases[] = (string) $v;
+					}
+				}
+			}
+		}
+
+		// Extensions are hidden in globs.
+		$exts = array();
+		if (isset($type->glob)) {
+			foreach ($type->glob as $glob) {
+				foreach ($glob->attributes() as $k=>$v) {
+					if ('pattern' === $k) {
+						$v = ltrim( (string) $v, '.*');
+						if (preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
+							$exts[] = $v;
+						}
+					}
+				}
+			}
+		}
+
+		// We have something!
+		if (count($exts) && count($mimes)) {
+			foreach ($exts as $ext) {
+				foreach ($mimes as $mime) {
+					save_mime_ext_pair($mime, $ext, 'Tika');
+				}
+			}
+		}
+	}
+}
+
+
+
+// -------------------------------------------------
 // Clean Up!
 
 debug_stdout('');
@@ -541,19 +615,19 @@ debug_stdout('   ++ Saving data...');
 @file_put_contents(EXT_PATH, json_encode($mimes_by_extension));
 @file_put_contents(MIME_PATH, json_encode($extensions_by_mime));
 
-// Lastly, generate WordPress File
+// Lastly, generate WordPress File!
 debug_stdout('   ++ Saving WP media-mimes.php...');
 $wp_data = array();
-foreach($mimes_by_extension as $k=>$v){
+foreach ($mimes_by_extension as $k=>$v) {
 	$v['mime'] = (array) $v['mime'];
 	$wp_data[$k] = array_merge($v['mime'], $v['alias']);
 	$wp_data[$k] = array_unique($wp_data[$k]);
 	sort($wp_data[$k]);
 }
 $wp_data_out = array();
-foreach($wp_data as $k=>$v){
+foreach ($wp_data as $k=>$v) {
 	$wp_data_out[] = "\t\t'$k'=>array(";
-	foreach($v as $v2){
+	foreach ($v as $v2) {
 		$wp_data_out[] = "\t\t\t'$v2',";
 	}
 	$wp_data_out[] = "\t\t),";

@@ -38,6 +38,7 @@ The database is compiled from the following sources:
  * [Apache](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
  * [Nginx](http://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
  * [freedesktop.org](https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in)
+ * [Apache Tika](https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml)
 
 &nbsp;
 
