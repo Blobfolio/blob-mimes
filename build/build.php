@@ -424,6 +424,9 @@ if (!is_int($data[APACHE_API])) {
 		}
 	}
 }
+else {
+	debug_stdout('   ++ Fetch FAILED...');
+}
 
 
 
@@ -457,6 +460,9 @@ if (!is_int($data[NGINX_API])) {
 			save_mime_ext_pair($mime, $ext, 'Nginx');
 		}
 	}
+}
+else {
+	debug_stdout('   ++ Fetch FAILED...');
 }
 
 
@@ -494,6 +500,16 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			}
 		}
 
+		// We should include parent-classes too.
+		if (isset($type->{"sub-class-of"})){
+			foreach ($type->{"sub-class-of"}->attributes() as $k=>$v) {
+				if ('type' === $k) {
+					$mimes[] = (string) $v;
+					$aliases[] = (string) $v;
+				}
+			}
+		}
+
 		// Extensions are hidden in globs.
 		$exts = array();
 		if (isset($type->glob)) {
@@ -518,6 +534,9 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			}
 		}
 	}
+}
+else {
+	debug_stdout('   ++ Fetch FAILED...');
 }
 
 
@@ -559,6 +578,16 @@ if (!is_int($data[TIKA_API])) {
 			}
 		}
 
+		// We should include parent-classes too.
+		if (isset($type->{"sub-class-of"})){
+			foreach ($type->{"sub-class-of"}->attributes() as $k=>$v) {
+				if ('type' === $k) {
+					$mimes[] = (string) $v;
+					$aliases[] = (string) $v;
+				}
+			}
+		}
+
 		// Extensions are hidden in globs.
 		$exts = array();
 		if (isset($type->glob)) {
@@ -583,6 +612,9 @@ if (!is_int($data[TIKA_API])) {
 			}
 		}
 	}
+}
+else {
+	debug_stdout('   ++ Fetch FAILED...');
 }
 
 

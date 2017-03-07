@@ -40,6 +40,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'3g2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
+			'video/mp4',
 		),
 		'3ga'=>array(
 			'audio/3gpp',
@@ -51,6 +52,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
+			'video/mp4',
 		),
 		'3gp'=>array(
 			'audio/3gpp',
@@ -62,10 +64,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
+			'video/mp4',
 		),
 		'3gp2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
+			'video/mp4',
 		),
 		'3gpp'=>array(
 			'audio/3gpp',
@@ -77,12 +81,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
+			'video/mp4',
 		),
 		'3gpp2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
+			'video/mp4',
 		),
 		'4th'=>array(
+			'text/plain',
 			'text/x-forth',
 		),
 		'7z'=>array(
@@ -118,6 +125,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'abw'=>array(
 			'application/x-abiword',
+			'application/xml',
 		),
 		'ac'=>array(
 			'application/pkix-attr-cert',
@@ -143,12 +151,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.acucorp',
 		),
 		'ad'=>array(
+			'text/plain',
 			'text/x-asciidoc',
 		),
 		'ada'=>array(
+			'text/plain',
 			'text/x-ada',
 		),
 		'adb'=>array(
+			'text/plain',
 			'text/x-ada',
 			'text/x-adasrc',
 		),
@@ -156,12 +167,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-amiga-disk-format',
 		),
 		'adoc'=>array(
+			'text/plain',
 			'text/x-asciidoc',
 		),
 		'adp'=>array(
 			'audio/adpcm',
 		),
 		'ads'=>array(
+			'text/plain',
 			'text/x-ada',
 			'text/x-adasrc',
 		),
@@ -194,20 +207,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/postscript',
 		),
 		'aif'=>array(
+			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aiff',
 		),
 		'aifc'=>array(
+			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aifc',
 			'audio/x-aiff',
 			'audio/x-aiffc',
 		),
 		'aiff'=>array(
+			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aiff',
 		),
 		'aiffc'=>array(
+			'application/x-iff',
 			'audio/x-aifc',
 			'audio/x-aiffc',
 		),
@@ -218,10 +235,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.dvb.ait',
 		),
 		'aj'=>array(
+			'text/plain',
 			'text/x-aspectj',
 		),
 		'al'=>array(
+			'application/x-executable',
 			'application/x-perl',
+			'text/plain',
 			'text/x-perl',
 		),
 		'alz'=>array(
@@ -257,15 +277,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-ape',
 		),
 		'apk'=>array(
+			'application/java-archive',
 			'application/vnd.android.package-archive',
+			'application/x-java-archive',
 		),
 		'appcache'=>array(
 			'text/cache-manifest',
 		),
 		'appimage'=>array(
+			'application/x-executable',
 			'application/x-iso9660-appimage',
 		),
 		'applescript'=>array(
+			'text/plain',
 			'text/x-applescript',
 		),
 		'application'=>array(
@@ -286,11 +310,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-arj-compressed',
 		),
 		'arw'=>array(
+			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-arw',
 		),
 		'as'=>array(
 			'application/x-applix-spreadsheet',
+			'text/plain',
 			'text/x-actionscript',
 		),
 		'asc'=>array(
@@ -301,6 +327,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'asciidoc'=>array(
+			'text/plain',
 			'text/x-asciidoc',
 		),
 		'asf'=>array(
@@ -311,11 +338,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'asice'=>array(
 			'application/vnd.etsi.asic-e+zip',
+			'application/zip',
 		),
 		'asics'=>array(
 			'application/vnd.etsi.asic-s+zip',
+			'application/zip',
 		),
 		'asm'=>array(
+			'text/plain',
 			'text/x-asm',
 			'text/x-assembly',
 		),
@@ -328,15 +358,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'asp'=>array(
 			'application/x-asp',
 			'text/asp',
+			'text/plain',
 		),
 		'aspx'=>array(
 			'text/aspdotnet',
+			'text/plain',
 		),
 		'ass'=>array(
+			'text/plain',
 			'text/x-ssa',
 		),
 		'asx'=>array(
 			'application/x-ms-asx',
+			'application/xml',
 			'audio/x-ms-asx',
 			'video/x-ms-asf',
 			'video/x-ms-wax',
@@ -348,6 +382,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'atom'=>array(
 			'application/atom+xml',
+			'application/xml',
 		),
 		'atomcat'=>array(
 			'application/atomcat+xml',
@@ -362,6 +397,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/basic',
 		),
 		'automount'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'avf'=>array(
@@ -390,13 +426,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'awk'=>array(
 			'application/x-awk',
+			'application/x-executable',
+			'text/plain',
 			'text/x-awk',
 		),
 		'axa'=>array(
+			'application/annodex',
 			'audio/annodex',
 			'audio/x-annodex',
 		),
 		'axv'=>array(
+			'application/annodex',
 			'video/annodex',
 			'video/x-annodex',
 		),
@@ -416,10 +456,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-trash',
 		),
 		'bas'=>array(
+			'text/plain',
 			'text/x-basic',
 		),
 		'bash'=>array(
 			'application/x-sh',
+			'text/plain',
 		),
 		'bat'=>array(
 			'application/x-msdownload',
@@ -448,10 +490,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'bib'=>array(
 			'application/x-bibtex-text-file',
+			'text/plain',
 			'text/x-bibtex',
 		),
 		'bibtex'=>array(
 			'application/x-bibtex-text-file',
+			'text/plain',
 		),
 		'bin'=>array(
 			'application/octet-stream',
@@ -485,6 +529,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.previewsystems.box',
 		),
 		'boz'=>array(
+			'application/x-bzip',
 			'application/x-bzip2',
 		),
 		'bpg'=>array(
@@ -495,6 +540,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'bpm'=>array(
 			'application/bizagi-modeler',
+			'application/zip',
 		),
 		'bsdiff'=>array(
 			'application/x-bsdiff',
@@ -556,6 +602,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ms-pki.seccat',
 		),
 		'cb7'=>array(
+			'application/x-7z-compressed',
 			'application/x-cb7',
 			'application/x-cbr',
 		),
@@ -563,6 +610,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-cbr',
 		),
 		'cbl'=>array(
+			'text/plain',
 			'text/x-cobol',
 		),
 		'cbor'=>array(
@@ -572,23 +620,29 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/cose-key-set',
 		),
 		'cbr'=>array(
+			'application/vnd.rar',
 			'application/x-cbr',
 		),
 		'cbt'=>array(
 			'application/x-cbr',
 			'application/x-cbt',
+			'application/x-tar',
 		),
 		'cbz'=>array(
 			'application/vnd.comicbook+zip',
 			'application/x-cbr',
 			'application/x-cbz',
+			'application/zip',
 		),
 		'cc'=>array(
+			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
+			'text/x-csrc',
 		),
 		'ccmx'=>array(
 			'application/x-ccmx',
+			'text/plain',
 		),
 		'cco'=>array(
 			'application/x-cocoa',
@@ -649,15 +703,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-x509-ca-cert',
 		),
 		'cfc'=>array(
+			'text/plain',
 			'text/x-coldfusion',
 		),
 		'cfg'=>array(
 			'text/plain',
 		),
 		'cfm'=>array(
+			'text/plain',
 			'text/x-coldfusion',
 		),
 		'cfml'=>array(
+			'text/plain',
 			'text/x-coldfusion',
 		),
 		'cfs'=>array(
@@ -667,6 +724,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-gameboy-color-rom',
 		),
 		'cgi'=>array(
+			'text/plain',
 			'text/x-cgi',
 		),
 		'cgm'=>array(
@@ -693,6 +751,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ms-artgalry',
 		),
 		'cl'=>array(
+			'text/plain',
 			'text/x-common-lisp',
 		),
 		'cla'=>array(
@@ -710,6 +769,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'clj'=>array(
+			'text/plain',
 			'text/x-clojure',
 		),
 		'clkk'=>array(
@@ -735,6 +795,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'cls'=>array(
 			'application/x-tex',
+			'text/plain',
+			'text/x-basic',
 			'text/x-tex',
 			'text/x-vbasic',
 		),
@@ -742,6 +804,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/clueinfo+xml',
 		),
 		'cmake'=>array(
+			'text/plain',
 			'text/x-cmake',
 		),
 		'cmc'=>array(
@@ -763,6 +826,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-cmx',
 		),
 		'cob'=>array(
+			'text/plain',
 			'text/x-cobol',
 		),
 		'cod'=>array(
@@ -770,6 +834,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'coffee'=>array(
 			'application/vnd.coffeescript',
+			'text/plain',
 			'text/x-coffeescript',
 		),
 		'com'=>array(
@@ -791,14 +856,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-cpio',
 		),
 		'cpp'=>array(
+			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
+			'text/x-csrc',
 		),
 		'cpt'=>array(
 			'application/mac-compactpro',
 		),
 		'cr2'=>array(
 			'image/x-canon-cr2',
+			'image/x-dcraw',
 			'image/x-raw-canon',
 		),
 		'crd'=>array(
@@ -815,6 +883,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'crw'=>array(
 			'image/x-canon-crw',
+			'image/x-dcraw',
 			'image/x-raw-canon',
 		),
 		'crx'=>array(
@@ -824,10 +893,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.rig.cryptonote',
 		),
 		'cs'=>array(
+			'text/plain',
 			'text/x-csharp',
+			'text/x-csrc',
 		),
 		'csh'=>array(
 			'application/x-csh',
+			'application/x-shellscript',
 		),
 		'csml'=>array(
 			'chemical/x-csml',
@@ -837,23 +909,27 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'css'=>array(
 			'text/css',
+			'text/plain',
 		),
 		'cst'=>array(
 			'application/x-director',
 		),
 		'csv'=>array(
 			'text/csv',
+			'text/plain',
 			'text/x-comma-separated-values',
 			'text/x-csv',
 		),
 		'csvs'=>array(
 			'text/csv-schema',
+			'text/plain',
 		),
 		'cu'=>array(
 			'application/cu-seeme',
 		),
 		'cue'=>array(
 			'application/x-cue',
+			'text/plain',
 		),
 		'cur'=>array(
 			'image/x-win-bitmap',
@@ -877,8 +953,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-director',
 		),
 		'cxx'=>array(
+			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
+			'text/x-csrc',
 		),
 		'dae'=>array(
 			'model/vnd.collada+xml',
@@ -917,6 +995,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
+			'application/xml',
 		),
 		'dc'=>array(
 			'application/x-dc-rom',
@@ -930,6 +1009,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'dcr'=>array(
 			'application/x-director',
+			'image/x-dcraw',
 			'image/x-kodak-dcr',
 		),
 		'dcs'=>array(
@@ -950,6 +1030,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'deb'=>array(
 			'application/octet-stream',
 			'application/vnd.debian.binary-package',
+			'application/x-archive',
 			'application/x-deb',
 			'application/x-debian-package',
 		),
@@ -965,8 +1046,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'desktop'=>array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
+			'text/plain',
 		),
 		'device'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'dex'=>array(
@@ -979,10 +1062,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-dgc-compressed',
 		),
 		'di'=>array(
+			'text/x-csrc',
 			'text/x-dsrc',
 		),
 		'dia'=>array(
 			'application/x-dia-diagram',
+			'application/xml',
 		),
 		'dib'=>array(
 			'image/bmp',
@@ -997,8 +1082,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'dif'=>array(
 			'application/dif+xml',
+			'application/xml',
 		),
 		'diff'=>array(
+			'text/plain',
 			'text/x-diff',
 			'text/x-patch',
 		),
@@ -1015,12 +1102,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/octet-stream',
 		),
 		'dita'=>array(
+			'application/dita+xml',
 			'application/dita+xmlformattopic',
 		),
 		'ditamap'=>array(
+			'application/dita+xml',
 			'application/dita+xmlformatmap',
 		),
 		'ditaval'=>array(
+			'application/dita+xml',
 			'application/dita+xmlformatval',
 		),
 		'divx'=>array(
@@ -1064,6 +1154,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'dng'=>array(
 			'image/x-adobe-dng',
+			'image/x-dcraw',
 			'image/x-raw-adobe',
 		),
 		'do'=>array(
@@ -1073,30 +1164,42 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/msword',
 			'application/vnd.ms-word',
 			'application/x-msword',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-doc',
 		),
 		'docbook'=>array(
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
+			'application/xml',
 		),
 		'docm'=>array(
 			'application/vnd.ms-word.document.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+			'application/x-tika-ooxml',
 		),
 		'docx'=>array(
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'dot'=>array(
 			'application/msword',
 			'application/msword-template',
 			'application/vnd.ms-word',
+			'application/x-tika-msoffice',
 			'text/vnd.graphviz',
 		),
 		'dotm'=>array(
 			'application/vnd.ms-word.template.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
+			'application/x-tika-ooxml',
 		),
 		'dotx'=>array(
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'dp'=>array(
 			'application/vnd.osgi.dp',
@@ -1105,12 +1208,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.dpgraph',
 		),
 		'dpr'=>array(
+			'text/plain',
 			'text/x-pascal',
 		),
 		'dra'=>array(
 			'audio/vnd.dra',
 		),
 		'drc'=>array(
+			'video/ogg',
 			'video/x-dirac',
 		),
 		'drf'=>array(
@@ -1120,6 +1225,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/prs.lines.tag',
 		),
 		'dsl'=>array(
+			'text/plain',
 			'text/x-dsl',
 		),
 		'dssc'=>array(
@@ -1133,6 +1239,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'dtd'=>array(
 			'application/xml-dtd',
+			'text/plain',
 			'text/x-dtd',
 		),
 		'dts'=>array(
@@ -1140,11 +1247,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-dts',
 		),
 		'dtshd'=>array(
+			'audio/vnd.dts',
 			'audio/vnd.dts.hd',
 			'audio/x-dtshd',
 		),
 		'dtx'=>array(
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'dump'=>array(
@@ -1164,6 +1273,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'model/vnd.dwf',
 		),
 		'dwfx'=>array(
+			'application/x-tika-ooxml',
 			'model/vnd.dwfx+xps',
 		),
 		'dwg'=>array(
@@ -1224,9 +1334,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.pg.osasli',
 		),
 		'eif'=>array(
+			'text/plain',
 			'text/x-eiffel',
 		),
 		'el'=>array(
+			'text/plain',
 			'text/x-emacs-lisp',
 		),
 		'elc'=>array(
@@ -1242,9 +1354,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'eml'=>array(
 			'message/rfc822',
+			'text/plain',
+			'text/x-tika-text-based-message',
 		),
 		'emlx'=>array(
 			'message/x-emlx',
+			'text/x-tika-text-based-message',
 		),
 		'emm'=>array(
 			'application/vnd.ibm.electronic-media',
@@ -1269,6 +1384,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-endnote-refer',
 		),
 		'ent'=>array(
+			'application/xml',
 			'application/xml-external-parsed-entity',
 			'text/plain',
 			'text/xml-external-parsed-entity',
@@ -1296,15 +1412,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'epub'=>array(
 			'application/epub+zip',
+			'application/zip',
 		),
 		'erf'=>array(
 			'image/x-raw-epson',
 		),
 		'erl'=>array(
+			'text/plain',
 			'text/x-erlang',
 		),
 		'es'=>array(
 			'application/ecmascript',
+			'application/x-executable',
 			'text/ecmascript',
 		),
 		'es3'=>array(
@@ -1323,6 +1442,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-e-theme',
 		),
 		'etx'=>array(
+			'text/plain',
 			'text/x-setext',
 		),
 		'eva'=>array(
@@ -1341,6 +1461,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/exi',
 		),
 		'exp'=>array(
+			'text/plain',
 			'text/x-expect',
 		),
 		'exr'=>array(
@@ -1367,6 +1488,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-m4a',
 		),
 		'f4b'=>array(
+			'audio/mp4',
 			'audio/x-m4b',
 		),
 		'f4v'=>array(
@@ -1376,17 +1498,21 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-m4v',
 		),
 		'f77'=>array(
+			'text/plain',
 			'text/x-fortran',
 		),
 		'f90'=>array(
+			'text/plain',
 			'text/x-fortran',
 		),
 		'f95'=>array(
+			'text/plain',
 			'text/x-fortran',
 		),
 		'fb2'=>array(
 			'application/x-fictionbook',
 			'application/x-fictionbook+xml',
+			'application/xml',
 		),
 		'fbs'=>array(
 			'image/vnd.fastbidsheet',
@@ -1407,6 +1533,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.denovo.fcselayout-link',
 		),
 		'feature'=>array(
+			'text/plain',
 			'text/x-gherkin',
 		),
 		'fff'=>array(
@@ -1468,6 +1595,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'fl'=>array(
 			'application/x-fluid',
+			'text/plain',
 		),
 		'flac'=>array(
 			'audio/flac',
@@ -1479,9 +1607,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'flatpakref'=>array(
 			'application/vnd.flatpak.ref',
+			'text/plain',
 		),
 		'flatpakrepo'=>array(
 			'application/vnd.flatpak.repo',
+			'text/plain',
 		),
 		'flc'=>array(
 			'video/fli',
@@ -1524,23 +1654,29 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.frogans.fnc',
 		),
 		'fo'=>array(
+			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
 			'text/xsl',
 		),
 		'fodg'=>array(
 			'application/vnd.oasis.opendocument.graphics-flat-xml',
+			'application/xml',
 		),
 		'fodp'=>array(
 			'application/vnd.oasis.opendocument.presentation-flat-xml',
+			'application/xml',
 		),
 		'fods'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet-flat-xml',
+			'application/xml',
 		),
 		'fodt'=>array(
 			'application/vnd.oasis.opendocument.text-flat-xml',
+			'application/xml',
 		),
 		'for'=>array(
+			'text/plain',
 			'text/x-fortran',
 		),
 		'fp7'=>array(
@@ -1553,6 +1689,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.framemaker',
 		),
 		'frm'=>array(
+			'text/x-basic',
 			'text/x-vbasic',
 		),
 		'fsc'=>array(
@@ -1598,6 +1735,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/vnd.fvt',
 		),
 		'fxm'=>array(
+			'video/x-flv',
 			'video/x-javafx',
 		),
 		'fxp'=>array(
@@ -1641,10 +1779,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-gca-compressed',
 		),
 		'gcode'=>array(
+			'text/plain',
 			'text/x.gcode',
 		),
 		'gcrd'=>array(
 			'text/directory',
+			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
@@ -1674,6 +1814,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'geojson'=>array(
 			'application/geo+json',
+			'application/json',
 			'application/vnd.geo+json',
 		),
 		'gex'=>array(
@@ -1702,9 +1843,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'glade'=>array(
 			'application/x-glade',
+			'application/xml',
 		),
 		'gml'=>array(
 			'application/gml+xml',
+			'application/xml',
 		),
 		'gmo'=>array(
 			'application/x-gettext-translation',
@@ -1727,30 +1870,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'gnuplot'=>array(
 			'application/x-gnuplot',
+			'text/plain',
 		),
 		'go'=>array(
+			'text/plain',
 			'text/x-go',
 		),
 		'gp'=>array(
 			'application/x-gnuplot',
+			'text/plain',
 		),
 		'gpg'=>array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
+			'text/plain',
 		),
 		'gph'=>array(
 			'application/vnd.flographit',
 		),
 		'gplt'=>array(
 			'application/x-gnuplot',
+			'text/plain',
 		),
 		'gpx'=>array(
 			'application/gpx',
 			'application/gpx+xml',
 			'application/x-gpx',
 			'application/x-gpx+xml',
+			'application/xml',
 		),
 		'gqf'=>array(
 			'application/vnd.grafeq',
@@ -1783,6 +1932,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'groovy'=>array(
+			'text/plain',
 			'text/x-groovy',
 		),
 		'grv'=>array(
@@ -1792,9 +1942,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/srgs+xml',
 		),
 		'gs'=>array(
+			'text/plain',
 			'text/x-genie',
 		),
 		'gsf'=>array(
+			'application/postscript',
 			'application/x-font-ghostscript',
 			'application/x-font-type1',
 		),
@@ -1855,6 +2007,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.hal+xml',
 		),
 		'haml'=>array(
+			'text/plain',
 			'text/x-haml',
 		),
 		'hbci'=>array(
@@ -1882,15 +2035,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-hfe-floppy-image',
 		),
 		'hh'=>array(
+			'text/plain',
 			'text/x-c',
 			'text/x-c++hdr',
+			'text/x-chdr',
 		),
 		'hlp'=>array(
 			'application/winhlp',
 			'zz-application/zz-winassoc-hlp',
 		),
 		'hp'=>array(
+			'text/plain',
 			'text/x-c++hdr',
+			'text/x-chdr',
 		),
 		'hpgl'=>array(
 			'application/vnd.hp-hpgl',
@@ -1902,7 +2059,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.hp-hpid',
 		),
 		'hpp'=>array(
+			'text/plain',
 			'text/x-c++hdr',
+			'text/x-chdr',
 		),
 		'hps'=>array(
 			'application/vnd.hp-hps',
@@ -1913,6 +2072,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/mac-binhex40',
 		),
 		'hs'=>array(
+			'text/plain',
 			'text/x-haskell',
 		),
 		'htaccess'=>array(
@@ -1926,9 +2086,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'htm'=>array(
 			'text/html',
+			'text/plain',
 		),
 		'html'=>array(
 			'text/html',
+			'text/plain',
 		),
 		'hvd'=>array(
 			'application/vnd.yamaha.hv-dic',
@@ -1948,22 +2110,28 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-hwt',
 		),
 		'hx'=>array(
+			'text/plain',
 			'text/x-haxe',
 		),
 		'hxx'=>array(
+			'text/plain',
 			'text/x-c++hdr',
+			'text/x-chdr',
 		),
 		'i2g'=>array(
 			'application/vnd.intergeo',
 		),
 		'i3'=>array(
+			'text/plain',
 			'text/x-modula',
 		),
 		'ibooks'=>array(
+			'application/epub+zip',
 			'application/x-ibooks+zip',
 		),
 		'ica'=>array(
 			'application/x-ica',
+			'text/plain',
 		),
 		'icb'=>array(
 			'image/x-icb',
@@ -1994,9 +2162,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'ics'=>array(
 			'application/ics',
 			'text/calendar',
+			'text/plain',
 			'text/x-vcalendar',
 		),
 		'idl'=>array(
+			'text/plain',
 			'text/x-idl',
 		),
 		'ief'=>array(
@@ -2004,8 +2174,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'ifb'=>array(
 			'text/calendar',
+			'text/plain',
 		),
 		'iff'=>array(
+			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
@@ -2013,10 +2185,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.shana.informed.formdata',
 		),
 		'ig'=>array(
+			'text/plain',
 			'text/x-modula',
 		),
 		'iges'=>array(
 			'model/iges',
+			'text/plain',
 		),
 		'igl'=>array(
 			'application/vnd.igloader',
@@ -2029,6 +2203,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'igs'=>array(
 			'model/iges',
+			'text/plain',
 		),
 		'igx'=>array(
 			'application/vnd.micrografx.igx',
@@ -2043,6 +2218,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-raw-phaseone',
 		),
 		'ilbm'=>array(
+			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
@@ -2073,6 +2249,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-adobe-indesign',
 		),
 		'ini'=>array(
+			'text/plain',
 			'text/x-ini',
 		),
 		'ink'=>array(
@@ -2083,6 +2260,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'ins'=>array(
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'install'=>array(
@@ -2090,12 +2268,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'inx'=>array(
 			'application/x-adobe-indesign-interchange',
+			'application/xml',
 		),
 		'iota'=>array(
 			'application/vnd.astraea-software.iota',
 		),
 		'ipa'=>array(
 			'application/x-itunes-ipa',
+			'application/zip',
 		),
 		'ipfix'=>array(
 			'application/ipfix',
@@ -2104,9 +2284,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.shana.informed.package',
 		),
 		'iptables'=>array(
+			'text/plain',
 			'text/x-iptables',
 		),
 		'ipynb'=>array(
+			'application/json',
 			'application/x-ipynb+json',
 		),
 		'irm'=>array(
@@ -2121,6 +2303,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-gamecube-iso-image',
 			'application/x-gamecube-rom',
 			'application/x-iso9660-image',
+			'application/x-raw-disk-image',
 			'application/x-saturn-rom',
 			'application/x-sega-cd-rom',
 			'application/x-wbfs',
@@ -2129,20 +2312,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-wii-rom',
 		),
 		'iso19139'=>array(
+			'application/xml',
 			'text/iso19139+xml',
 		),
 		'iso9660'=>array(
 			'application/x-cd-image',
 			'application/x-iso9660-image',
+			'application/x-raw-disk-image',
 		),
 		'it'=>array(
 			'audio/x-it',
 		),
 		'it87'=>array(
 			'application/x-it87',
+			'text/plain',
 		),
 		'itk'=>array(
 			'application/x-tcl',
+			'text/plain',
 			'text/x-tcl',
 		),
 		'itp'=>array(
@@ -2167,11 +2354,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/java-archive',
 			'application/x-jar',
 			'application/x-java-archive',
+			'application/zip',
 		),
 		'jardiff'=>array(
 			'application/x-java-archive-diff',
 		),
 		'java'=>array(
+			'text/plain',
+			'text/x-csrc',
 			'text/x-java',
 			'text/x-java-source',
 		),
@@ -2202,6 +2392,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-java-keystore',
 		),
 		'jl'=>array(
+			'text/plain',
 			'text/x-common-lisp',
 		),
 		'jlt'=>array(
@@ -2219,6 +2410,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'jnlp'=>array(
 			'application/x-java-jnlp-file',
+			'application/xml',
 		),
 		'joda'=>array(
 			'application/vnd.joost.joda-archive',
@@ -2228,6 +2420,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/jpeg2000',
 			'image/jpeg2000-image',
 			'image/jpx',
+			'image/x-jp2-container',
 			'image/x-jpeg2000-image',
 		),
 		'jpe'=>array(
@@ -2243,6 +2436,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/jpeg2000',
 			'image/jpeg2000-image',
 			'image/jpx',
+			'image/x-jp2-container',
 			'image/x-jpeg2000-image',
 		),
 		'jpg'=>array(
@@ -2251,6 +2445,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'jpgm'=>array(
 			'image/jpm',
+			'image/x-jp2-container',
 			'video/jpm',
 		),
 		'jpgv'=>array(
@@ -2258,6 +2453,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'jpm'=>array(
 			'image/jpm',
+			'image/x-jp2-container',
 			'video/jpm',
 		),
 		'jpr'=>array(
@@ -2273,25 +2469,32 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'jrd'=>array(
 			'application/jrd+json',
+			'application/json',
 		),
 		'js'=>array(
+			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
+			'text/plain',
 		),
 		'jsm'=>array(
+			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
 		),
 		'json'=>array(
 			'application/geo+json',
+			'application/javascript',
 			'application/json',
 		),
 		'json-patch'=>array(
+			'application/json',
 			'application/json-patch+json',
 		),
 		'jsonld'=>array(
+			'application/json',
 			'application/ld+json',
 		),
 		'jsonml'=>array(
@@ -2299,6 +2502,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'jsp'=>array(
 			'application/x-httpd-jsp',
+			'text/plain',
 			'text/x-jsp',
 		),
 		'junit'=>array(
@@ -2308,6 +2512,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'k25'=>array(
+			'image/x-dcraw',
 			'image/x-kodak-k25',
 			'image/x-raw-kodak',
 		),
@@ -2323,17 +2528,21 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-karbon',
 		),
 		'kdc'=>array(
+			'image/x-dcraw',
 			'image/x-kodak-kdc',
 			'image/x-raw-kodak',
 		),
 		'kdelnk'=>array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
+			'text/plain',
 		),
 		'kexi'=>array(
 			'application/x-kexiproject-sqlite',
 			'application/x-kexiproject-sqlite2',
 			'application/x-kexiproject-sqlite3',
+			'application/x-sqlite2',
+			'application/x-sqlite3',
 			'application/x-vnd.kde.kexi',
 		),
 		'kexic'=>array(
@@ -2343,8 +2552,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-kexiproject-shortcut',
 		),
 		'key'=>array(
+			'application/vnd.apple.iwork',
 			'application/vnd.apple.keynote',
 			'application/x-iwork-keynote-sffkey',
+			'application/zip',
 		),
 		'kfo'=>array(
 			'application/vnd.kde.kformula',
@@ -2359,12 +2570,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'kino'=>array(
 			'application/smil',
 			'application/smil+xml',
+			'application/xml',
 		),
 		'kml'=>array(
 			'application/vnd.google-earth.kml+xml',
+			'application/xml',
 		),
 		'kmz'=>array(
 			'application/vnd.google-earth.kmz',
+			'application/zip',
 		),
 		'kne'=>array(
 			'application/vnd.kinar',
@@ -2422,6 +2636,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'la'=>array(
 			'application/x-shared-library-la',
+			'text/plain',
 		),
 		'lasxml'=>array(
 			'application/vnd.las.las+xml',
@@ -2429,6 +2644,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'latex'=>array(
 			'application/x-latex',
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'lbd'=>array(
@@ -2438,16 +2654,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.llamagraphics.life-balance.exchange+xml',
 		),
 		'lbm'=>array(
+			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
 		'ldif'=>array(
+			'text/plain',
 			'text/x-ldif',
 		),
 		'les'=>array(
 			'application/vnd.hhe.lesson-player',
 		),
 		'less'=>array(
+			'text/plain',
 			'text/x-less',
 		),
 		'lha'=>array(
@@ -2456,6 +2675,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lzh-compressed',
 		),
 		'lhs'=>array(
+			'text/plain',
 			'text/x-haskell',
 			'text/x-literate-haskell',
 		),
@@ -2466,6 +2686,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.route66.link66+xml',
 		),
 		'lisp'=>array(
+			'text/plain',
 			'text/x-common-lisp',
 		),
 		'list'=>array(
@@ -2502,6 +2723,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lrzip',
 		),
 		'lsp'=>array(
+			'text/plain',
 			'text/x-common-lisp',
 		),
 		'ltf'=>array(
@@ -2509,9 +2731,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'ltx'=>array(
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'lua'=>array(
+			'application/x-executable',
+			'text/plain',
 			'text/x-lua',
 		),
 		'lvp'=>array(
@@ -2530,10 +2755,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-lws',
 		),
 		'ly'=>array(
+			'text/plain',
 			'text/x-lilypond',
 		),
 		'lyx'=>array(
 			'application/x-lyx',
+			'text/plain',
 			'text/x-lyx',
 		),
 		'lz'=>array(
@@ -2563,6 +2790,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-mod',
 		),
 		'm1u'=>array(
+			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
@@ -2586,6 +2814,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/mpeg',
 		),
 		'm3'=>array(
+			'text/plain',
 			'text/x-modula',
 		),
 		'm3a'=>array(
@@ -2600,6 +2829,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
+			'text/plain',
 		),
 		'm3u8'=>array(
 			'application/m3u',
@@ -2609,24 +2839,28 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
+			'text/plain',
 		),
 		'm4'=>array(
 			'application/x-m4',
 			'text/plain',
 		),
 		'm4a'=>array(
+			'application/quicktime',
 			'audio/m4a',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-mp4a',
 		),
 		'm4b'=>array(
+			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-m4b',
 			'audio/x-mp4a',
 		),
 		'm4u'=>array(
+			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
@@ -2643,6 +2877,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mab'=>array(
 			'application/x-markaby',
+			'application/x-ruby',
 		),
 		'mads'=>array(
 			'application/mads+xml',
@@ -2651,9 +2886,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ecowin.chart',
 		),
 		'mak'=>array(
+			'text/plain',
 			'text/x-makefile',
 		),
 		'makefile'=>array(
+			'text/plain',
 			'text/x-makefile',
 		),
 		'maker'=>array(
@@ -2664,6 +2901,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
+			'text/plain',
 			'text/troff',
 		),
 		'manifest'=>array(
@@ -2675,6 +2913,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'markdown'=>array(
 			'text/markdown',
+			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
@@ -2693,6 +2932,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mbox'=>array(
 			'application/mbox',
+			'text/plain',
+			'text/x-tika-text-based-message',
 		),
 		'mc1'=>array(
 			'application/vnd.medcalcdata',
@@ -2706,6 +2947,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'md'=>array(
 			'text/markdown',
+			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
@@ -2722,6 +2964,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/vnd.ms-modi',
 		),
 		'mdtext'=>array(
+			'text/plain',
 			'text/x-web-markdown',
 		),
 		'mdx'=>array(
@@ -2732,6 +2975,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
+			'text/plain',
 			'text/troff',
 			'text/x-troff-me',
 		),
@@ -2749,9 +2993,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'meta4'=>array(
 			'application/metalink4+xml',
+			'application/xml',
 		),
 		'metalink'=>array(
 			'application/metalink+xml',
+			'application/xml',
 		),
 		'mets'=>array(
 			'application/mets+xml',
@@ -2766,11 +3012,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/rpki-manifest',
 		),
 		'mg'=>array(
+			'text/plain',
 			'text/x-modula',
 		),
 		'mgp'=>array(
 			'application/vnd.osgeo.mapguide.package',
 			'application/x-magicpoint',
+			'text/plain',
 		),
 		'mgz'=>array(
 			'application/vnd.proteus.magazine',
@@ -2778,10 +3026,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'mht'=>array(
 			'application/x-mimearchive',
 			'message/rfc822',
+			'multipart/related',
+			'text/x-tika-text-based-message',
 		),
 		'mhtml'=>array(
 			'application/x-mimearchive',
 			'message/rfc822',
+			'multipart/related',
+			'text/x-tika-text-based-message',
 		),
 		'mid'=>array(
 			'audio/midi',
@@ -2801,28 +3053,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mime'=>array(
 			'message/rfc822',
+			'text/x-tika-text-based-message',
 		),
 		'minipsf'=>array(
 			'audio/x-minipsf',
+			'audio/x-psf',
 		),
 		'mj2'=>array(
+			'image/x-jp2-container',
 			'video/mj2',
 		),
 		'mjp2'=>array(
+			'image/x-jp2-container',
 			'video/mj2',
 		),
 		'mk'=>array(
+			'text/plain',
 			'text/x-makefile',
 		),
 		'mk3d'=>array(
+			'application/x-matroska',
 			'video/x-matroska',
 			'video/x-matroska-3d',
 		),
 		'mka'=>array(
+			'application/x-matroska',
 			'audio/x-matroska',
 		),
 		'mkd'=>array(
 			'text/markdown',
+			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
@@ -2830,29 +3090,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-matroska',
 		),
 		'mkv'=>array(
+			'application/x-matroska',
 			'video/x-matroska',
 		),
 		'ml'=>array(
+			'text/plain',
 			'text/x-ml',
 			'text/x-ocaml',
 		),
 		'mli'=>array(
+			'text/plain',
 			'text/x-ocaml',
 		),
 		'mlp'=>array(
 			'application/vnd.dolby.mlp',
 		),
 		'mm'=>array(
+			'text/plain',
 			'text/x-troff-mm',
 		),
 		'mmap'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmas'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmat'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmd'=>array(
 			'application/vnd.chipnuts.karaoke-mmd',
@@ -2863,16 +3130,20 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mml'=>array(
 			'application/mathml+xml',
+			'application/xml',
 			'text/mathml',
 		),
 		'mmmp'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmp'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmpt'=>array(
 			'application/vnd.mindjet.mindmanager',
+			'application/zip',
 		),
 		'mmr'=>array(
 			'image/vnd.fujixerox.edmics-mmr',
@@ -2885,15 +3156,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mo'=>array(
 			'application/x-gettext-translation',
+			'text/plain',
 			'text/x-modelica',
 		),
 		'mo3'=>array(
 			'audio/x-mo3',
 		),
 		'mobi'=>array(
+			'application/vnd.palm',
 			'application/x-mobipocket-ebook',
 		),
 		'moc'=>array(
+			'text/plain',
 			'text/x-moc',
 		),
 		'mod'=>array(
@@ -2903,6 +3177,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/mods+xml',
 		),
 		'mof'=>array(
+			'text/x-csrc',
 			'text/x-mof',
 		),
 		'moov'=>array(
@@ -2912,9 +3187,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-raw-leaf',
 		),
 		'mount'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'mov'=>array(
+			'application/quicktime',
 			'video/quicktime',
 		),
 		'movie'=>array(
@@ -2951,18 +3228,22 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'mp4'=>array(
 			'video/mp4',
 			'video/mp4v-es',
+			'video/quicktime',
 			'video/x-m4v',
 		),
 		'mp4a'=>array(
+			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-mp4a',
 		),
 		'mp4s'=>array(
 			'application/mp4',
+			'application/quicktime',
 		),
 		'mp4v'=>array(
 			'video/mp4',
+			'video/quicktime',
 		),
 		'mpc'=>array(
 			'application/vnd.mophun.certificate',
@@ -2991,6 +3272,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mpg4'=>array(
 			'video/mp4',
+			'video/quicktime',
 		),
 		'mpga'=>array(
 			'audio/mp3',
@@ -3016,13 +3298,16 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'mpp'=>array(
 			'application/vnd.ms-project',
+			'application/x-tika-msoffice',
 			'audio/x-musepack',
 		),
 		'mpt'=>array(
 			'application/vnd.ms-project',
+			'application/x-tika-msoffice',
 		),
 		'mpx'=>array(
 			'application/x-project',
+			'text/plain',
 		),
 		'mpy'=>array(
 			'application/vnd.ibm.minipay',
@@ -3043,6 +3328,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-mrml',
 		),
 		'mrw'=>array(
+			'image/x-dcraw',
 			'image/x-minolta-mrw',
 			'image/x-raw-minolta',
 		),
@@ -3051,6 +3337,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
+			'text/plain',
 			'text/troff',
 			'text/x-troff-ms',
 		),
@@ -3068,6 +3355,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'msg'=>array(
 			'application/vnd.ms-outlook',
+			'application/x-tika-msoffice',
 		),
 		'msh'=>array(
 			'model/mesh',
@@ -3077,6 +3365,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-ms-installer',
 			'application/x-msdownload',
 			'application/x-msi',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 			'application/x-windows-installer',
 		),
 		'msl'=>array(
@@ -3092,11 +3382,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/octet-stream',
 			'application/x-ms-installer',
 			'application/x-msi',
+			'application/x-tika-msoffice',
 			'application/x-windows-installer',
 		),
 		'mst'=>array(
 			'application/x-ms-installer',
 			'application/x-msi',
+			'application/x-tika-msoffice',
 			'application/x-windows-installer',
 		),
 		'msty'=>array(
@@ -3113,6 +3405,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/mp2t',
 		),
 		'mup'=>array(
+			'text/plain',
 			'text/x-mup',
 		),
 		'mus'=>array(
@@ -3140,6 +3433,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.triscape.mxs',
 		),
 		'mxu'=>array(
+			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
@@ -3156,6 +3450,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'nb'=>array(
 			'application/mathematica',
 			'application/x-mathematica',
+			'text/plain',
 		),
 		'nbp'=>array(
 			'application/vnd.wolfram.player',
@@ -3170,6 +3465,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-nintendo-ds-rom',
 		),
 		'nef'=>array(
+			'image/x-dcraw',
 			'image/x-nikon-nef',
 			'image/x-raw-nikon',
 		),
@@ -3181,6 +3477,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'nfo'=>array(
 			'text/x-nfo',
+			'text/x-readme',
 		),
 		'ngdat'=>array(
 			'application/vnd.nokia.n-gage.data',
@@ -3209,6 +3506,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.noblenet-web',
 		),
 		'not'=>array(
+			'text/plain',
 			'text/x-mup',
 		),
 		'npx'=>array(
@@ -3218,6 +3516,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-raw-nikon',
 		),
 		'nsc'=>array(
+			'application/vnd.ms-asf',
 			'application/x-conference',
 			'application/x-netshow-channel',
 		),
@@ -3233,10 +3532,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/ntf',
 		),
 		'numbers'=>array(
+			'application/vnd.apple.iwork',
 			'application/vnd.apple.numbers',
 		),
 		'nzb'=>array(
 			'application/x-nzb',
+			'application/xml',
 		),
 		'oa2'=>array(
 			'application/vnd.fujitsu.oasys2',
@@ -3254,9 +3555,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-tgif',
 		),
 		'ocaml'=>array(
+			'text/plain',
 			'text/x-ocaml',
 		),
 		'ocl'=>array(
+			'text/plain',
 			'text/x-ocl',
 		),
 		'oda'=>array(
@@ -3265,14 +3568,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'odb'=>array(
 			'application/vnd.oasis.opendocument.database',
 			'application/vnd.sun.xml.base',
+			'application/zip',
 		),
 		'odc'=>array(
 			'application/vnd.oasis.opendocument.chart',
 			'application/x-vnd.oasis.opendocument.chart',
+			'application/zip',
 		),
 		'odf'=>array(
 			'application/vnd.oasis.opendocument.formula',
 			'application/x-vnd.oasis.opendocument.formula',
+			'application/zip',
 		),
 		'odft'=>array(
 			'application/vnd.oasis.opendocument.formula-template',
@@ -3281,27 +3587,34 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'odg'=>array(
 			'application/vnd.oasis.opendocument.graphics',
 			'application/x-vnd.oasis.opendocument.graphics',
+			'application/zip',
 		),
 		'odi'=>array(
 			'application/vnd.oasis.opendocument.image',
 			'application/x-vnd.oasis.opendocument.image',
+			'application/zip',
 		),
 		'odm'=>array(
 			'application/vnd.oasis.opendocument.text-master',
+			'application/zip',
 		),
 		'odp'=>array(
 			'application/vnd.oasis.opendocument.presentation',
 			'application/x-vnd.oasis.opendocument.presentation',
+			'application/zip',
 		),
 		'ods'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet',
 			'application/x-vnd.oasis.opendocument.spreadsheet',
+			'application/zip',
 		),
 		'odt'=>array(
 			'application/vnd.oasis.opendocument.text',
 			'application/x-vnd.oasis.opendocument.text',
+			'application/zip',
 		),
 		'oga'=>array(
+			'application/ogg',
 			'audio/ogg',
 			'audio/vorbis',
 			'audio/x-flac+ogg',
@@ -3312,6 +3625,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-vorbis+ogg',
 		),
 		'ogg'=>array(
+			'application/ogg',
 			'application/x-ogg',
 			'audio/ogg',
 			'audio/vorbis',
@@ -3327,10 +3641,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-theora+ogg',
 		),
 		'ogm'=>array(
+			'video/ogg',
 			'video/x-ogm',
 			'video/x-ogm+ogg',
 		),
 		'ogv'=>array(
+			'application/ogg',
 			'video/ogg',
 			'video/x-ogg',
 		),
@@ -3348,11 +3664,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/omdoc+xml',
 		),
 		'one'=>array(
+			'application/onenote',
 			'application/onenoteformatone',
 		),
 		'onepkg'=>array(
 			'application/onenote',
 			'application/onenoteformatpackage',
+			'application/vnd.ms-cab-compressed',
 		),
 		'onetmp'=>array(
 			'application/msonenote',
@@ -3367,12 +3685,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/onenoteformatonetoc2',
 		),
 		'ooc'=>array(
+			'text/x-csrc',
 			'text/x-ooc',
 		),
 		'opf'=>array(
 			'application/oebps-package+xml',
 		),
 		'opml'=>array(
+			'application/xml',
 			'text/x-opml',
 			'text/x-opml+xml',
 		),
@@ -3381,15 +3701,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-palm-database',
 		),
 		'opus'=>array(
+			'application/ogg',
 			'audio/ogg',
 			'audio/opus',
 			'audio/x-ogg',
 			'audio/x-opus+ogg',
 		),
 		'ora'=>array(
+			'application/zip',
 			'image/openraster',
 		),
 		'orf'=>array(
+			'image/x-dcraw',
 			'image/x-olympus-orf',
 			'image/x-raw-olympus',
 		),
@@ -3408,19 +3731,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'otc'=>array(
 			'application/vnd.oasis.opendocument.chart-template',
 			'application/x-vnd.oasis.opendocument.chart-template',
+			'application/zip',
 		),
 		'otf'=>array(
 			'application/vnd.oasis.opendocument.formula-template',
 			'application/x-font-otf',
+			'application/zip',
 			'font/otf',
+			'font/ttf',
 		),
 		'otg'=>array(
 			'application/vnd.oasis.opendocument.graphics-template',
 			'application/x-vnd.oasis.opendocument.graphics-template',
+			'application/zip',
 		),
 		'oth'=>array(
 			'application/vnd.oasis.opendocument.text-web',
 			'application/x-vnd.oasis.opendocument.text-web',
+			'application/zip',
 		),
 		'oti'=>array(
 			'application/vnd.oasis.opendocument.image-template',
@@ -3433,28 +3761,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'otp'=>array(
 			'application/vnd.oasis.opendocument.presentation-template',
 			'application/x-vnd.oasis.opendocument.presentation-template',
+			'application/zip',
 		),
 		'ots'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet-template',
 			'application/x-vnd.oasis.opendocument.spreadsheet-template',
+			'application/zip',
 		),
 		'ott'=>array(
 			'application/vnd.oasis.opendocument.text-template',
 			'application/x-vnd.oasis.opendocument.text-template',
+			'application/zip',
 		),
 		'owl'=>array(
 			'application/rdf+xml',
+			'application/xml',
 			'text/rdf',
 		),
 		'owx'=>array(
 			'application/owl+xml',
+			'application/xml',
 		),
 		'oxps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'oxt'=>array(
 			'application/vnd.openofficeorg.extension',
+			'application/zip',
 		),
 		'p'=>array(
 			'text/x-pascal',
@@ -3467,6 +3803,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-pkcs12',
 		),
 		'p65'=>array(
+			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
 		'p7b'=>array(
@@ -3483,6 +3820,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'p7s'=>array(
 			'application/pkcs7-signature',
+			'text/plain',
 		),
 		'p8'=>array(
 			'application/pkcs8',
@@ -3491,6 +3829,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-java-pack200',
 		),
 		'pages'=>array(
+			'application/vnd.apple.iwork',
 			'application/vnd.apple.pages',
 		),
 		'pak'=>array(
@@ -3503,13 +3842,16 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-partial-download',
 		),
 		'pas'=>array(
+			'text/plain',
 			'text/x-pascal',
 		),
 		'patch'=>array(
+			'text/plain',
 			'text/x-diff',
 			'text/x-patch',
 		),
 		'path'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'paw'=>array(
@@ -3519,6 +3861,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.powerbuilder6',
 		),
 		'pbm'=>array(
+			'image/x-portable-anymap',
 			'image/x-portable-bitmap',
 		),
 		'pcap'=>array(
@@ -3560,6 +3903,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'chemical/x-pdb',
 		),
 		'pdc'=>array(
+			'application/vnd.palm',
 			'application/x-aportisdoc',
 		),
 		'pdf'=>array(
@@ -3570,6 +3914,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/pdf',
 		),
 		'pef'=>array(
+			'image/x-dcraw',
 			'image/x-pentax-pef',
 			'image/x-raw-pentax',
 		),
@@ -3580,13 +3925,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'perl'=>array(
+			'application/x-executable',
 			'application/x-perl',
+			'text/plain',
 			'text/x-perl',
 		),
 		'pfa'=>array(
+			'application/postscript',
 			'application/x-font-type1',
 		),
 		'pfb'=>array(
+			'application/postscript',
 			'application/x-font-type1',
 		),
 		'pfm'=>array(
@@ -3601,35 +3950,43 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-pkcs12',
 		),
 		'pgm'=>array(
+			'image/x-portable-anymap',
 			'image/x-portable-graymap',
 		),
 		'pgn'=>array(
 			'application/vnd.chess-pgn',
 			'application/x-chess-pgn',
+			'text/plain',
 		),
 		'pgp'=>array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
+			'text/plain',
 		),
 		'php'=>array(
 			'application/x-php',
+			'text/plain',
 			'text/x-php',
 		),
 		'php3'=>array(
 			'application/x-php',
+			'text/plain',
 			'text/x-php',
 		),
 		'php4'=>array(
 			'application/x-php',
+			'text/plain',
 			'text/x-php',
 		),
 		'php5'=>array(
 			'application/x-php',
+			'text/plain',
 		),
 		'phps'=>array(
 			'application/x-php',
+			'text/plain',
 		),
 		'pic'=>array(
 			'image/vnd.radiance',
@@ -3659,9 +4016,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'pkr'=>array(
 			'application/pgp-keys',
+			'text/plain',
 		),
 		'pl'=>array(
+			'application/x-executable',
 			'application/x-perl',
+			'text/plain',
 			'text/x-perl',
 		),
 		'pla'=>array(
@@ -3686,14 +4046,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-scpls',
 		),
 		'pm'=>array(
+			'application/x-executable',
+			'application/x-ole-storage',
 			'application/x-pagemaker',
 			'application/x-perl',
+			'text/plain',
 			'text/x-perl',
 		),
 		'pm6'=>array(
+			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
 		'pmd'=>array(
+			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
 		'pml'=>array(
@@ -3710,10 +4075,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'po'=>array(
 			'application/x-gettext',
+			'text/plain',
 			'text/x-gettext-translation',
 			'text/x-po',
 		),
 		'pod'=>array(
+			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
 		),
@@ -3731,32 +4098,43 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
+			'application/x-tika-msoffice',
+			'text/plain',
 			'text/x-gettext-translation-template',
 			'text/x-pot',
 		),
 		'potm'=>array(
 			'application/vnd.ms-powerpoint.template.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.presentationml.template',
+			'application/x-tika-ooxml',
 		),
 		'potx'=>array(
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'pp'=>array(
+			'text/plain',
 			'text/x-pascal',
 		),
 		'ppa'=>array(
 			'application/mspowerpoint',
 			'application/vnd.ms-powerpoint',
+			'application/x-tika-msoffice',
 		),
 		'ppam'=>array(
 			'application/vnd.ms-powerpoint.addin.macroenabled.12',
+			'application/x-tika-ooxml',
 		),
 		'ppd'=>array(
 			'application/vnd.cups-ppd',
 		),
 		'ppj'=>array(
+			'application/xml',
 			'image/vnd.adobe.premiere',
 		),
 		'ppm'=>array(
+			'image/x-portable-anymap',
 			'image/x-portable-pixmap',
 		),
 		'pps'=>array(
@@ -3764,30 +4142,41 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
+			'application/x-tika-msoffice',
 		),
 		'ppsm'=>array(
 			'application/vnd.ms-powerpoint.slideshow.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
+			'application/x-tika-ooxml',
 		),
 		'ppsx'=>array(
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'ppt'=>array(
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
+			'application/x-tika-msoffice',
 		),
 		'pptm'=>array(
 			'application/vnd.ms-powerpoint.presentation.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+			'application/x-tika-ooxml',
 		),
 		'pptx'=>array(
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'ppz'=>array(
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
+			'application/x-tika-msoffice',
 		),
 		'pqa'=>array(
 			'application/vnd.palm',
@@ -3806,12 +4195,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/pics-rules',
 		),
 		'pro'=>array(
+			'text/plain',
 			'text/x-prolog',
 		),
 		'project'=>array(
 			'text/plain',
 		),
 		'properties'=>array(
+			'text/plain',
 			'text/properties',
 			'text/x-java-properties',
 			'text/x-properties',
@@ -3821,6 +4212,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'ps'=>array(
 			'application/postscript',
+			'text/plain',
 		),
 		'psb'=>array(
 			'application/vnd.3gpp.pic-bw-small',
@@ -3839,6 +4231,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-psf',
 		),
 		'psflib'=>array(
+			'audio/x-psf',
 			'audio/x-psflib',
 		),
 		'psid'=>array(
@@ -3862,6 +4255,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'pub'=>array(
 			'application/vnd.ms-publisher',
 			'application/x-mspublisher',
+			'application/x-ole-storage',
 		),
 		'pvb'=>array(
 			'application/vnd.3gpp.pic-bw-var',
@@ -3876,6 +4270,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-raw-logitech',
 		),
 		'py'=>array(
+			'application/x-executable',
+			'text/plain',
 			'text/x-python',
 		),
 		'pya'=>array(
@@ -3891,6 +4287,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/vnd.ms-playready.media.pyv',
 		),
 		'pyx'=>array(
+			'application/x-executable',
 			'text/x-python',
 		),
 		'qam'=>array(
@@ -3928,10 +4325,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-quattro-pro',
 		),
 		'qt'=>array(
+			'application/quicktime',
 			'video/quicktime',
 		),
 		'qti'=>array(
 			'application/x-qtiplot',
+			'text/plain',
 		),
 		'qtif'=>array(
 			'image/x-quicktime',
@@ -3939,6 +4338,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'qtl'=>array(
 			'application/x-quicktime-media-link',
 			'application/x-quicktimeplayer',
+			'video/quicktime',
 		),
 		'qtvr'=>array(
 			'video/quicktime',
@@ -3971,6 +4371,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-realaudio',
 		),
 		'raf'=>array(
+			'image/x-dcraw',
 			'image/x-fuji-raf',
 			'image/x-raw-fuji',
 		),
@@ -3981,6 +4382,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'raml'=>array(
 			'application/raml+yaml',
+			'application/x-yaml',
 		),
 		'rar'=>array(
 			'application/vnd.rar',
@@ -3991,7 +4393,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-cmu-raster',
 		),
 		'raw'=>array(
+			'image/x-dcraw',
 			'image/x-panasonic-raw',
+			'image/x-panasonic-rw',
 			'image/x-raw-panasonic',
 		),
 		'raw-disk-image'=>array(
@@ -4003,7 +4407,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-pn-realaudio',
 		),
 		'rb'=>array(
+			'application/x-executable',
 			'application/x-ruby',
+			'text/plain',
 			'text/x-ruby',
 		),
 		'rcprofile'=>array(
@@ -4011,20 +4417,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'rdf'=>array(
 			'application/rdf+xml',
+			'application/xml',
 			'text/rdf',
 		),
 		'rdfs'=>array(
 			'application/rdf+xml',
+			'application/xml',
 			'text/rdf',
 		),
 		'rdz'=>array(
 			'application/vnd.data-vision.rdz',
 		),
 		'reg'=>array(
+			'text/plain',
 			'text/x-ms-regedit',
 		),
 		'rej'=>array(
 			'application/x-reject',
+			'text/plain',
 			'text/x-reject',
 		),
 		'rep'=>array(
@@ -4034,12 +4444,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-dtbresource+xml',
 		),
 		'rest'=>array(
+			'text/plain',
 			'text/x-rst',
 		),
 		'restx'=>array(
+			'text/plain',
 			'text/x-rst',
 		),
 		'rexx'=>array(
+			'text/plain',
 			'text/x-rexx',
 		),
 		'rgb'=>array(
@@ -4103,6 +4516,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'rnc'=>array(
 			'application/relax-ng-compact-syntax',
 			'application/x-rnc',
+			'text/plain',
 		),
 		'rng'=>array(
 			'application/xml',
@@ -4120,6 +4534,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
+			'text/plain',
 			'text/troff',
 			'text/x-troff',
 		),
@@ -4147,6 +4562,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'rs'=>array(
 			'application/rls-services+xml',
+			'text/plain',
 			'text/rust',
 		),
 		'rsd'=>array(
@@ -4154,9 +4570,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'rss'=>array(
 			'application/rss+xml',
+			'application/xml',
 			'text/rss',
 		),
 		'rst'=>array(
+			'text/plain',
 			'text/x-rst',
 		),
 		'rt'=>array(
@@ -4164,9 +4582,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'rtf'=>array(
 			'application/rtf',
+			'text/plain',
 			'text/rtf',
 		),
 		'rtx'=>array(
+			'text/plain',
 			'text/richtext',
 		),
 		'run'=>array(
@@ -4181,7 +4601,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-real-video',
 		),
 		'rw2'=>array(
+			'image/x-dcraw',
 			'image/x-panasonic-raw2',
+			'image/x-panasonic-rw2',
 			'image/x-raw-panasonic',
 		),
 		'rwz'=>array(
@@ -4208,12 +4630,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sami'=>array(
 			'application/x-sami',
+			'text/plain',
 		),
 		'sap'=>array(
 			'application/x-thomson-sap-image',
 		),
 		'sas'=>array(
 			'application/x-sas',
+			'text/plain',
 		),
 		'sas7bacs'=>array(
 			'application/x-sas-access',
@@ -4258,6 +4682,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-sas-view',
 		),
 		'sass'=>array(
+			'text/plain',
 			'text/x-sass',
 		),
 		'sav'=>array(
@@ -4274,6 +4699,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-sas-catalog',
 		),
 		'scala'=>array(
+			'text/plain',
 			'text/x-scala',
 		),
 		'scd'=>array(
@@ -4281,9 +4707,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'scm'=>array(
 			'application/vnd.lotus-screencam',
+			'text/plain',
 			'text/x-scheme',
 		),
 		'scope'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'scq'=>array(
@@ -4293,6 +4721,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/scvp-cv-response',
 		),
 		'scss'=>array(
+			'text/plain',
 			'text/x-scss',
 		),
 		'scurl'=>array(
@@ -4306,12 +4735,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sda'=>array(
 			'application/vnd.stardivision.draw',
+			'application/x-tika-staroffice',
 		),
 		'sdc'=>array(
 			'application/vnd.stardivision.calc',
+			'application/x-tika-staroffice',
 		),
 		'sdd'=>array(
 			'application/vnd.stardivision.impress',
+			'application/x-tika-staroffice',
 		),
 		'sdkd'=>array(
 			'application/vnd.solent.sdkm+xml',
@@ -4324,6 +4756,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.sdp',
 			'application/vnd.stardivision.impress',
 			'application/x-sdp',
+			'text/plain',
 		),
 		'sds'=>array(
 			'application/vnd.stardivision.chart',
@@ -4331,11 +4764,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'sdw'=>array(
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
+			'application/x-tika-staroffice',
 		),
 		'sea'=>array(
 			'application/x-sea',
 		),
 		'sed'=>array(
+			'text/plain',
 			'text/x-sed',
 		),
 		'see'=>array(
@@ -4357,6 +4792,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/java-serialized-object',
 		),
 		'service'=>array(
+			'text/plain',
 			'text/x-dbus-service',
 			'text/x-systemd-unit',
 		),
@@ -4378,6 +4814,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sfdu'=>array(
 			'application/x-sfdu',
+			'text/plain',
 		),
 		'sfs'=>array(
 			'application/vnd.spotfire.sfs',
@@ -4393,6 +4830,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sgf'=>array(
 			'application/x-go-sgf',
+			'text/plain',
 		),
 		'sgi'=>array(
 			'image/sgi',
@@ -4403,18 +4841,23 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.stardivision.writer-global',
 		),
 		'sgm'=>array(
+			'text/plain',
 			'text/sgml',
 		),
 		'sgml'=>array(
+			'text/plain',
 			'text/sgml',
 		),
 		'sh'=>array(
+			'application/x-executable',
 			'application/x-sh',
 			'application/x-shellscript',
+			'text/plain',
 			'text/x-sh',
 		),
 		'shape'=>array(
 			'application/x-dia-shape',
+			'application/xml',
 		),
 		'shar'=>array(
 			'application/x-shar',
@@ -4434,6 +4877,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'shw'=>array(
 			'application/x-corelpresentations',
+			'application/x-tika-msoffice',
 		),
 		'si7'=>array(
 			'application/x-sas-data-index',
@@ -4447,6 +4891,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sig'=>array(
 			'application/pgp-signature',
+			'text/plain',
 		),
 		'sik'=>array(
 			'application/x-trash',
@@ -4474,6 +4919,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'siv'=>array(
 			'application/sieve',
+			'application/xml',
 		),
 		'sk'=>array(
 			'image/x-skencil',
@@ -4495,6 +4941,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'skr'=>array(
 			'application/pgp-keys',
+			'text/plain',
 		),
 		'skt'=>array(
 			'application/vnd.koan',
@@ -4502,23 +4949,32 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sldasm'=>array(
 			'application/sldworks',
+			'application/x-tika-msoffice',
 		),
 		'slddrw'=>array(
 			'application/sldworks',
+			'application/x-tika-msoffice',
 		),
 		'sldm'=>array(
 			'application/vnd.ms-powerpoint.slide.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.presentationml.slide',
+			'application/x-tika-ooxml',
 		),
 		'sldprt'=>array(
 			'application/sldworks',
+			'application/x-tika-msoffice',
 		),
 		'sldx'=>array(
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'slice'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'slk'=>array(
+			'text/plain',
 			'text/spreadsheet',
 		),
 		'slt'=>array(
@@ -4549,14 +5005,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/smil',
 			'application/smil+xml',
 			'application/x-sami',
+			'application/xml',
+			'text/plain',
 		),
 		'smil'=>array(
 			'application/smil',
 			'application/smil+xml',
+			'application/xml',
 		),
 		'sml'=>array(
 			'application/smil',
 			'application/smil+xml',
+			'application/xml',
 		),
 		'sms'=>array(
 			'application/x-sms-rom',
@@ -4569,6 +5029,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'snap'=>array(
 			'application/vnd.snap',
+			'application/vnd.squashfs',
 		),
 		'snd'=>array(
 			'audio/basic',
@@ -4581,6 +5042,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-sharedlib',
 		),
 		'socket'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'sp7'=>array(
@@ -4593,6 +5055,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-font-speedo',
 		),
 		'spec'=>array(
+			'text/plain',
 			'text/x-rpm-spec',
 		),
 		'spf'=>array(
@@ -4605,6 +5068,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-shockwave-flash',
 		),
 		'spm'=>array(
+			'application/x-rpm',
 			'application/x-source-rpm',
 		),
 		'spot'=>array(
@@ -4625,12 +5089,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'sql'=>array(
 			'application/sql',
 			'application/x-sql',
+			'text/plain',
 			'text/x-sql',
 		),
 		'sqsh'=>array(
 			'application/vnd.squashfs',
 		),
 		'sr2'=>array(
+			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-sr2',
 		),
@@ -4639,8 +5105,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'src'=>array(
 			'application/x-wais-source',
+			'text/plain',
 		),
 		'srf'=>array(
+			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-srf',
 		),
@@ -4650,6 +5118,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'srt'=>array(
 			'application/x-srt',
 			'application/x-subrip',
+			'text/plain',
 		),
 		'sru'=>array(
 			'application/sru+xml',
@@ -4658,12 +5127,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/sparql-results+xml',
 		),
 		'ss'=>array(
+			'text/plain',
 			'text/x-scheme',
 		),
 		'ss7'=>array(
 			'application/x-sas-program-data',
 		),
 		'ssa'=>array(
+			'text/plain',
 			'text/x-ssa',
 		),
 		'ssdl'=>array(
@@ -4680,6 +5151,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'st'=>array(
 			'application/vnd.sailingtracker.track',
+			'text/plain',
 			'text/x-stsrc',
 		),
 		'st7'=>array(
@@ -4687,15 +5159,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'stc'=>array(
 			'application/vnd.sun.xml.calc.template',
+			'application/zip',
 		),
 		'std'=>array(
 			'application/vnd.sun.xml.draw.template',
+			'application/zip',
 		),
 		'stf'=>array(
 			'application/vnd.wt.stf',
 		),
 		'sti'=>array(
 			'application/vnd.sun.xml.impress.template',
+			'application/zip',
 		),
 		'stk'=>array(
 			'application/hyperstudio',
@@ -4704,6 +5179,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ms-pki.stl',
 			'model/x.stl-ascii',
 			'model/x.stl-binary',
+			'text/plain',
 		),
 		'stm'=>array(
 			'audio/x-stm',
@@ -4713,12 +5189,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'stw'=>array(
 			'application/vnd.sun.xml.writer.template',
+			'application/zip',
 		),
 		'stx'=>array(
 			'application/x-sas-transport',
 		),
 		'sty'=>array(
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'su7'=>array(
@@ -4726,6 +5204,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sub'=>array(
 			'image/vnd.dvb.subtitle',
+			'text/plain',
 			'text/vnd.dvb.subtitle',
 			'text/x-microdvd',
 			'text/x-mpsub',
@@ -4742,6 +5221,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sv'=>array(
 			'text/x-svsrc',
+			'text/x-verilog',
 		),
 		'sv4cpio'=>array(
 			'application/x-sv4cpio',
@@ -4759,19 +5239,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.svd',
 		),
 		'svg'=>array(
+			'application/xml',
 			'image/svg+xml',
 		),
 		'svgz'=>array(
+			'application/gzip',
+			'application/xml',
 			'image/svg+xml',
 			'image/svg+xml-compressed',
 		),
 		'svh'=>array(
 			'text/x-svhdr',
+			'text/x-verilog',
 		),
 		'swa'=>array(
 			'application/x-director',
 		),
 		'swap'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'swf'=>array(
@@ -4788,24 +5273,31 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'sxc'=>array(
 			'application/vnd.sun.xml.calc',
+			'application/zip',
 		),
 		'sxd'=>array(
 			'application/vnd.sun.xml.draw',
+			'application/zip',
 		),
 		'sxg'=>array(
 			'application/vnd.sun.xml.writer.global',
+			'application/zip',
 		),
 		'sxi'=>array(
 			'application/vnd.sun.xml.impress',
+			'application/zip',
 		),
 		'sxm'=>array(
 			'application/vnd.sun.xml.math',
+			'application/zip',
 		),
 		'sxw'=>array(
 			'application/vnd.sun.xml.writer',
 			'application/x-vnd.sun.xml.writer',
+			'application/zip',
 		),
 		'sylk'=>array(
+			'text/plain',
 			'text/spreadsheet',
 		),
 		'sz'=>array(
@@ -4815,6 +5307,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/troff',
 		),
 		't2t'=>array(
+			'text/plain',
 			'text/x-txt2tags',
 		),
 		't3'=>array(
@@ -4831,12 +5324,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-tar',
 		),
 		'target'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'taz'=>array(
+			'application/x-compress',
 			'application/x-tarz',
 		),
 		'tb2'=>array(
+			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
 		),
 		'tbz'=>array(
@@ -4844,6 +5340,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-bzip-compressed-tar',
 		),
 		'tbz2'=>array(
+			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
 			'application/x-bzip2',
 		),
@@ -4852,6 +5349,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'tcl'=>array(
 			'application/x-tcl',
+			'text/plain',
 			'text/x-tcl',
 		),
 		'tcsh'=>array(
@@ -4868,14 +5366,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'tex'=>array(
 			'application/x-tex',
+			'text/plain',
 			'text/x-tex',
 		),
 		'texi'=>array(
 			'application/x-texinfo',
+			'text/plain',
 			'text/x-texinfo',
 		),
 		'texinfo'=>array(
 			'application/x-texinfo',
+			'text/plain',
 			'text/x-texinfo',
 		),
 		'text'=>array(
@@ -4902,14 +5403,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'gzip/document',
 		),
 		'theme'=>array(
+			'application/x-desktop',
 			'application/x-theme',
 		),
 		'themepack'=>array(
+			'application/vnd.ms-cab-compressed',
 			'application/x-windows-themepack',
 		),
 		'thmx'=>array(
 			'application/vnd.ms-officetheme',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+			'application/x-tika-ooxml',
 		),
 		'tif'=>array(
 			'image/tiff',
@@ -4918,19 +5422,23 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/tiff',
 		),
 		'timer'=>array(
+			'text/plain',
 			'text/x-systemd-unit',
 		),
 		'tk'=>array(
 			'application/x-tcl',
+			'text/plain',
 			'text/x-tcl',
 		),
 		'tld'=>array(
 			'text/plain',
 		),
 		'tlrz'=>array(
+			'application/x-lrzip',
 			'application/x-lrzip-compressed-tar',
 		),
 		'tlz'=>array(
+			'application/x-lzma',
 			'application/x-lzma-compressed-tar',
 		),
 		'tmo'=>array(
@@ -4945,10 +5453,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ms-tnef',
 		),
 		'toast'=>array(
+			'application/x-iso9660-image',
 			'application/x-roxio-toast',
 		),
 		'toc'=>array(
 			'application/x-cdrdao-toc',
+			'text/plain',
 		),
 		'torrent'=>array(
 			'application/x-bittorrent',
@@ -4968,6 +5478,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
+			'text/plain',
 			'text/troff',
 			'text/x-troff',
 		),
@@ -4976,12 +5487,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'trig'=>array(
 			'application/x-trig',
+			'text/plain',
 		),
 		'trm'=>array(
 			'application/x-msterminal',
 		),
 		'ts'=>array(
 			'application/x-linguist',
+			'application/xml',
 			'text/vnd.trolltech.linguist',
 			'video/mp2t',
 		),
@@ -4989,6 +5502,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/timestamped-data',
 		),
 		'tsv'=>array(
+			'text/plain',
 			'text/tab-separated-values',
 		),
 		'tta'=>array(
@@ -5004,10 +5518,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'font/ttf',
 		),
 		'ttl'=>array(
+			'text/plain',
 			'text/turtle',
 		),
 		'ttx'=>array(
 			'application/x-font-ttx',
+			'application/xml',
 		),
 		'twd'=>array(
 			'application/vnd.simtech-mindmapper',
@@ -5016,6 +5532,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.simtech-mindmapper',
 		),
 		'twig'=>array(
+			'text/plain',
 			'text/x-twig',
 		),
 		'txd'=>array(
@@ -5028,12 +5545,14 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'txz'=>array(
+			'application/x-xz',
 			'application/x-xz-compressed-tar',
 		),
 		'types'=>array(
 			'text/plain',
 		),
 		'tzo'=>array(
+			'application/x-lzop',
 			'application/x-tzo',
 		),
 		'u32'=>array(
@@ -5044,6 +5563,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'udeb'=>array(
 			'application/vnd.debian.binary-package',
+			'application/x-archive',
 			'application/x-deb',
 			'application/x-debian-package',
 		),
@@ -5055,12 +5575,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'ufraw'=>array(
 			'application/x-ufraw',
+			'application/xml',
 		),
 		'ui'=>array(
 			'application/x-designer',
 			'application/x-gtk-builder',
+			'application/xml',
 		),
 		'uil'=>array(
+			'text/plain',
 			'text/x-uil',
 		),
 		'ult'=>array(
@@ -5109,6 +5632,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-uuencode',
 		),
 		'uue'=>array(
+			'text/plain',
 			'text/x-uuencode',
 			'zz-application/zz-winassoc-uu',
 		),
@@ -5200,19 +5724,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-n64-rom',
 		),
 		'vala'=>array(
+			'text/x-csrc',
 			'text/x-vala',
 		),
 		'vapi'=>array(
+			'text/x-csrc',
 			'text/x-vala',
 		),
 		'vb'=>array(
+			'text/x-vbasic',
 			'text/x-vbdotnet',
 		),
 		'vbs'=>array(
+			'text/x-vbasic',
 			'text/x-vbscript',
 		),
 		'vcard'=>array(
 			'text/directory',
+			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
@@ -5221,6 +5750,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'vcf'=>array(
 			'text/directory',
+			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
@@ -5230,10 +5760,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'vcs'=>array(
 			'application/ics',
 			'text/calendar',
+			'text/plain',
 			'text/x-vcalendar',
 		),
 		'vct'=>array(
 			'text/directory',
+			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
@@ -5245,9 +5777,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-tga',
 		),
 		'vhd'=>array(
+			'text/plain',
 			'text/x-vhdl',
 		),
 		'vhdl'=>array(
+			'text/plain',
 			'text/x-vhdl',
 		),
 		'vis'=>array(
@@ -5268,6 +5802,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
+			'text/plain',
 		),
 		'vm'=>array(
 			'text/plain',
@@ -5290,27 +5825,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
 			'application/x-staroffice-template',
+			'application/x-tika-staroffice',
 		),
 		'vox'=>array(
 			'application/x-authorware-bin',
 		),
 		'vrm'=>array(
 			'model/vrml',
+			'text/plain',
 		),
 		'vrml'=>array(
 			'model/vrml',
+			'text/plain',
 		),
 		'vsd'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'vsdm'=>array(
 			'application/vnd.ms-visio.drawing.macroenabled.12',
 			'application/vnd.ms-visio.drawing.macroenabled.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vsdx'=>array(
 			'application/vnd.ms-visio.drawing',
 			'application/vnd.ms-visio.drawing.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vsf'=>array(
 			'application/vnd.vsf',
@@ -5321,34 +5865,49 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'vss'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'vssm'=>array(
 			'application/vnd.ms-visio.stencil.macroenabled.12',
 			'application/vnd.ms-visio.stencil.macroenabled.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vssx'=>array(
 			'application/vnd.ms-visio.stencil',
 			'application/vnd.ms-visio.stencil.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vst'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 			'image/x-icb',
 			'image/x-tga',
 		),
 		'vstm'=>array(
 			'application/vnd.ms-visio.template.macroenabled.12',
 			'application/vnd.ms-visio.template.macroenabled.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vstx'=>array(
 			'application/vnd.ms-visio.template',
 			'application/vnd.ms-visio.template.main+xml',
+			'application/x-tika-visio-ooxml',
+			'application/zip',
 		),
 		'vsw'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'vtt'=>array(
+			'text/plain',
 			'text/vtt',
 		),
 		'vtu'=>array(
@@ -5408,9 +5967,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'wcm'=>array(
 			'application/vnd.ms-works',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'wdb'=>array(
 			'application/vnd.ms-works',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'wdp'=>array(
 			'image/vnd.ms-photo',
@@ -5419,9 +5982,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/webm',
 		),
 		'webarchive'=>array(
+			'application/x-bplist',
 			'application/x-webarchive',
 		),
 		'webm'=>array(
+			'application/x-matroska',
 			'video/webm',
 		),
 		'webp'=>array(
@@ -5470,14 +6035,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-123',
 		),
 		'wm'=>array(
 			'video/x-ms-wm',
 		),
 		'wma'=>array(
+			'application/vnd.ms-asf',
 			'audio/wma',
 			'audio/x-ms-wma',
+			'video/x-ms-asf',
 		),
 		'wmd'=>array(
 			'application/x-ms-wmd',
@@ -5491,6 +6060,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-wmf',
 		),
 		'wml'=>array(
+			'application/xml',
 			'text/vnd.wap.wml',
 		),
 		'wmlc'=>array(
@@ -5503,6 +6073,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.wap.wmlscriptc',
 		),
 		'wmv'=>array(
+			'application/vnd.ms-asf',
+			'video/x-ms-asf',
 			'video/x-ms-wmv',
 		),
 		'wmx'=>array(
@@ -5513,6 +6085,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-ms-wvx',
 		),
 		'wmz'=>array(
+			'application/x-gzip',
 			'application/x-ms-wmz',
 			'application/x-msmetafile',
 		),
@@ -5564,6 +6137,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'wps'=>array(
 			'application/vnd.ms-works',
+			'application/x-ole-storage',
+			'application/x-tika-msoffice',
 		),
 		'wpt'=>array(
 			'application/vnd.wordperfect',
@@ -5576,6 +6151,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'wrl'=>array(
 			'model/vrml',
+			'text/plain',
 		),
 		'wsdd'=>array(
 			'text/plain',
@@ -5584,6 +6160,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/wsdl+xml',
 		),
 		'wsgi'=>array(
+			'application/x-executable',
 			'text/x-python',
 		),
 		'wspolicy'=>array(
@@ -5609,6 +6186,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-ms-wvx',
 		),
 		'wwf'=>array(
+			'application/pdf',
 			'application/wwf',
 			'application/x-wwf',
 		),
@@ -5635,6 +6213,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'model/x3d+xml',
 		),
 		'x3f'=>array(
+			'image/x-dcraw',
 			'image/x-raw-sigma',
 			'image/x-sigma-x3f',
 		),
@@ -5662,13 +6241,16 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xbel'=>array(
 			'application/x-xbel',
+			'application/xml',
 		),
 		'xbl'=>array(
 			'application/xml',
+			'text/plain',
 			'text/xml',
 		),
 		'xbm'=>array(
 			'image/x-xbitmap',
+			'text/x-c',
 		),
 		'xcat'=>array(
 			'text/plain',
@@ -5719,9 +6301,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xht'=>array(
 			'application/xhtml+xml',
+			'application/xml',
 		),
 		'xhtml'=>array(
 			'application/xhtml+xml',
+			'application/xml',
 		),
 		'xhvml'=>array(
 			'application/xv+xml',
@@ -5736,21 +6320,26 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlam'=>array(
 			'application/vnd.ms-excel.addin.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/x-tika-ooxml',
 		),
 		'xlc'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xld'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlex'=>array(
@@ -5759,60 +6348,79 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'xlf'=>array(
 			'application/x-xliff',
 			'application/x-xliff+xml',
+			'application/xml',
 		),
 		'xliff'=>array(
 			'application/x-xliff',
+			'application/xml',
 		),
 		'xll'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlm'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlog'=>array(
 			'text/plain',
 		),
 		'xlr'=>array(
+			'application/vnd.ms-excel',
 			'application/vnd.ms-works',
+			'application/x-ole-storage',
 			'application/x-tika-msworks-spreadsheet',
 		),
 		'xls'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlsb'=>array(
 			'application/vnd.ms-excel.sheet.binary.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/x-tika-ooxml',
 		),
 		'xlsm'=>array(
 			'application/vnd.ms-excel.sheet.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/x-tika-ooxml',
 		),
 		'xlsx'=>array(
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'xlt'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xltm'=>array(
 			'application/vnd.ms-excel.template.macroenabled.12',
+			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
+			'application/x-tika-ooxml',
 		),
 		'xltx'=>array(
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'xlw'=>array(
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/x-tika-msoffice',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xm'=>array(
@@ -5828,18 +6436,22 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/xmf',
 		),
 		'xmi'=>array(
+			'application/xml',
 			'text/x-xmi',
 		),
 		'xmind'=>array(
 			'application/x-xmind',
+			'application/zip',
 		),
 		'xml'=>array(
 			'application/x-xml',
 			'application/xml',
+			'text/plain',
 			'text/xml',
 		),
 		'xmp'=>array(
 			'application/rdf+xml',
+			'application/xml',
 		),
 		'xo'=>array(
 			'application/vnd.olpc-sugar',
@@ -5849,6 +6461,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xpi'=>array(
 			'application/x-xpinstall',
+			'application/zip',
 		),
 		'xpl'=>array(
 			'application/xproc+xml',
@@ -5866,6 +6479,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'xps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
+			'application/x-tika-ooxml',
+			'application/zip',
 		),
 		'xpt'=>array(
 			'application/x-sas-xport',
@@ -5878,9 +6493,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xq'=>array(
 			'application/xquery',
+			'text/plain',
 		),
 		'xquery'=>array(
 			'application/xquery',
+			'text/plain',
 		),
 		'xroles'=>array(
 			'text/plain',
@@ -5891,20 +6508,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'xsd'=>array(
 			'application/x-xml',
 			'application/xml',
+			'text/plain',
 			'text/xml',
 		),
 		'xsl'=>array(
 			'application/x-xml',
 			'application/xml',
 			'application/xslt+xml',
+			'text/plain',
 			'text/xml',
 		),
 		'xslfo'=>array(
+			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
 			'text/xsl',
 		),
 		'xslt'=>array(
+			'application/xml',
 			'application/xslt+xml',
 			'text/xsl',
 		),
@@ -5916,10 +6537,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xspf'=>array(
 			'application/x-xspf+xml',
+			'application/xml',
 			'application/xspf+xml',
 		),
 		'xul'=>array(
 			'application/vnd.mozilla.xul+xml',
+			'application/xml',
 		),
 		'xvm'=>array(
 			'application/xv+xml',
@@ -5944,6 +6567,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'yaml'=>array(
 			'application/x-yaml',
+			'text/plain',
 			'text/x-yaml',
 			'text/yaml',
 		),
@@ -5955,6 +6579,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'yml'=>array(
 			'application/x-yaml',
+			'text/plain',
 			'text/x-yaml',
 			'text/yaml',
 		),
@@ -5987,6 +6612,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'zabw'=>array(
 			'application/x-abiword',
+			'application/xml',
 		),
 		'zaz'=>array(
 			'application/vnd.zzazz.deck+xml',
