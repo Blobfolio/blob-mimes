@@ -19,7 +19,7 @@
  * @author	Blobfolio, LLC <hello@blobfolio.com>
  *
  * @see {https://www.iana.org/assignments/media-types}
- * @see {https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types}
+ * @see {https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types}
  * @see {http://hg.nginx.org/nginx/raw-file/default/conf/mime.types}
  * @see {https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in}
  * @see {https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml}
@@ -31,6 +31,9 @@
 
 define('BUILD_PATH', dirname(__FILE__));
 define('SOURCE_PATH', BUILD_PATH . '/src');
+
+// How long should downloaded files be cached?
+define('DOWNLOAD_CACHE', 7200);
 
 define('EXT_PATH', BUILD_PATH . '/mimes_by_extension.json');
 define('MIME_PATH', BUILD_PATH . '/extensions_by_mime.json');
@@ -63,7 +66,7 @@ define('IANA_CATEGORIES', array(
 	'video'
 ));
 
-define('APACHE_API', 'https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types');
+define('APACHE_API', 'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types');
 
 define('NGINX_API', 'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types');
 
@@ -97,47 +100,79 @@ function debug_stdout(string $line='', bool $dividers=false) {
 
 
 /**
- * Recursive rmdir()
+ * URL to Cache Path
  *
- * Delete all files within a directory, then
- * the directory itself.
+ * The local name to use for a given URL.
  *
- * @param string $path Path.
- * @return bool Status.
+ * @param string $url URL.
+ * @return string Path.
  */
-function recursive_rm(string $path='') {
-	if (false === $path = realpath($path)) {
-		return false;
+function cache_path(string $url) {
+	// Strip and translate a little.
+	$url = strtolower($url);
+	$url = preg_replace('/^https?:\/\//', '', $url);
+	$url = str_replace(array('/','\\','?','#'), '-', $url);
+
+	return SOURCE_PATH . '/' . $url;
+}
+
+
+
+/**
+ * Get Cache
+ *
+ * Return the local content if available.
+ *
+ * @param string $url URL.
+ * @return string|bool Content or false.
+ */
+function get_cache(string $url) {
+	static $limit;
+
+	// Set the limit if we haven't already.
+	if (is_null($limit)) {
+		file_put_contents(SOURCE_PATH . '/limit', 'hi');
+		$limit = filemtime(SOURCE_PATH . '/limit') - DOWNLOAD_CACHE;
+		unlink(SOURCE_PATH . '/limit');
 	}
 
-	$path = rtrim($path, '/');
-
-	// This must be below the build directory, and not this script.
-	if (
-		mb_substr($path, 0, mb_strlen(BUILD_PATH) + 1) !== BUILD_PATH . '/' ||
-		BUILD_PATH === $path ||
-		__FILE__ === $path
-	) {
-		return false;
-	}
-
-	// Files are easy.
-	if (is_file($path)) {
-		@unlink($path);
-	}
-	// Directories require recursion.
-	elseif ($handle = opendir($path)) {
-		while (false !== ($file = readdir($handle))) {
-			if (in_array($file, array('.', '..'), true)) {
-				continue;
+	try {
+		$file = cache_path($url);
+		if (file_exists($file)) {
+			if (filemtime($file) < $limit) {
+				unlink($file);
 			}
-
-			recursive_rm("$path/$file");
+			else {
+				return file_get_contents($file);
+			}
 		}
-		@rmdir($path);
+	} catch (Throwable $e) {
+		return false;
 	}
 
-	return true;
+	return false;
+}
+
+
+
+/**
+ * Save Cache
+ *
+ * Save a fetched URL locally.
+ *
+ * @param string $url URL.
+ * @param string $content Content.
+ * @return bool True/false.
+ */
+function save_cache(string $url, string $content) {
+	try {
+		$file = cache_path($url);
+		return @file_put_contents($file, $content);
+	} catch (Throwable $e) {
+		return false;
+	}
+
+	return false;
 }
 
 
@@ -153,17 +188,25 @@ function recursive_rm(string $path='') {
  */
 function fetch_urls(array $urls=array()) {
 	$fetched = array();
+	$cached = array();
 
 	// Bad start...
 	if (!count($urls)) {
 		return $fetched;
 	}
 
-	// Loosely filter URLs.
+	// Loosely filter URLs, and look for cache.
 	foreach ($urls as $k=>$v) {
 		$urls[$k] = filter_var($v, FILTER_SANITIZE_URL);
 		if (!preg_match('/^https?:\/\//', $urls[$k])) {
 			unset($urls[$k]);
+			continue;
+		}
+
+		if (false !== $cache = get_cache($urls[$k])) {
+			$cached[$urls[$k]] = $cache;
+			unset($urls[$k]);
+			continue;
 		}
 	}
 
@@ -197,11 +240,17 @@ function fetch_urls(array $urls=array()) {
 			$fetched[$url] = (int) curl_getinfo($curls[$url], CURLINFO_HTTP_CODE);
 			if ($fetched[$url] >= 200 && $fetched[$url] < 400) {
 				$fetched[$url] = curl_multi_getcontent($curls[$url]);
+				save_cache($url, $fetched[$url]);
 			}
 			curl_multi_remove_handle($multi, $curls[$url]);
 		}
 
 		curl_multi_close($multi);
+	}
+
+	// Add our cached results back.
+	foreach ($cached as $k=>$v) {
+		$fetched[$k] = $v;
 	}
 
 	return $fetched;
@@ -290,17 +339,16 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 // -------------------------------------------------
 // Begin!
 
-if (file_exists(SOURCE_PATH)) {
-	recursive_rm(SOURCE_PATH);
+if (!file_exists(SOURCE_PATH)) {
+	mkdir(SOURCE_PATH, 0755);
 }
-mkdir(SOURCE_PATH, 0755);
 
 if (file_exists(EXT_PATH)) {
-	recursive_rm(EXT_PATH);
+	unlink(EXT_PATH);
 }
 
 if (file_exists(MIME_PATH)) {
-	recursive_rm(MIME_PATH);
+	unlink(MIME_PATH);
 }
 
 
@@ -319,7 +367,6 @@ foreach (IANA_CATEGORIES as $category) {
 
 $data = fetch_urls($urls);
 $urls = array();
-mkdir(SOURCE_PATH . '/iana/categories', 0755, true);
 foreach ($data as $k=>$v) {
 	if (is_int($v)) {
 		debug_stdout('      ++ ERROR retrieving ' . basename($k));
@@ -327,9 +374,6 @@ foreach ($data as $k=>$v) {
 	}
 
 	debug_stdout('      ++ Parsing ' . basename($k) . '...');
-
-	// Save file.
-	@file_put_contents(SOURCE_PATH . '/iana/categories/' . basename($k), $v);
 
 	// Parse CSV.
 	$v = explode_lines($v);
@@ -354,7 +398,6 @@ foreach ($data as $k=>$v) {
 // Get templates to parse extensions.
 debug_stdout('   ++ Fetching templates...');
 $data = fetch_urls($urls);
-mkdir(SOURCE_PATH . '/iana/templates', 0755);
 foreach ($data as $k=>$v) {
 	if (is_int($v)) {
 		continue;
@@ -362,25 +405,57 @@ foreach ($data as $k=>$v) {
 
 	// Save file.
 	$mime = mb_strtolower(mb_substr($k, mb_strlen(IANA_API) + 1));
-	$dirname = SOURCE_PATH . '/iana/templates/' . dirname($mime);
-
-	if (!file_exists($dirname)) {
-		mkdir($dirname, 0755, true);
-	}
-	@file_put_contents("$dirname/" . basename($mime) . '.txt', $v);
 
 	// Are there extensions?
-	preg_match_all('/\s*File extension\(s\):([\.,\da-z\s\-_]+)/i', $v, $matches);
-	if (count($matches[1])) {
-		$raw = explode(',', $matches[1][0]);
+	preg_match_all('/\s*File extension(\(s\))?:([\.,\da-z\h\-_]+)/ui', $v, $matches);
+	if (count($matches[2])) {
+		$raw = explode(',', $matches[2][0]);
 		$raw = array_map('trim', $raw);
+		$raw = array_map('mb_strtolower', $raw);
+		$raw = array_filter($raw, 'strlen');
+
+		// First pass, clean up and split some more.
+		foreach ($raw as $k=>$v) {
+			$raw[$k] = str_replace(array('.','*'), '', $v);
+			$raw[$k] = preg_replace('/^\s+/u', '', $raw[$k]);
+			$raw[$k] = preg_replace('/\s+$/u', '', $raw[$k]);
+
+			if (false !== mb_strpos($raw[$k], ' or ')) {
+				$tmp = explode(' or ', $raw[$k]);
+				$tmp = array_map('trim', $tmp);
+				$tmp = array_filter($tmp, 'strlen');
+				$tmp = array_values($tmp);
+				if (count($tmp)) {
+					$raw[$k] = $tmp[0];
+					for ($x = 1; $x < count($tmp); $x++) {
+						$raw[] = $tmp[$x];
+					}
+				}
+			}
+
+			if (!preg_match('/^[\da-z\-_]{2,}$/', $raw[$k])) {
+				unset($raw[$k]);
+			}
+		}
+
+		$raw = array_diff(
+			$raw,
+			array(
+				'none',
+				'undefined',
+				'-none-',
+				'na'
+			)
+		);
+
+		if (!count($raw)) {
+			continue;
+		}
+
+		// Second pass, pull out legitimate extensions!
 		$exts = array();
 		foreach ($raw as $ext) {
-			$ext = rtrim(ltrim(mb_strtolower($ext), '.*'), '.*');
-			if (
-				preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext) &&
-				'none' !== $ext
-			) {
+			if (preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext)) {
 				$exts[] = $ext;
 			}
 		}
@@ -402,9 +477,6 @@ debug_stdout('Apache', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(APACHE_API));
 if (!is_int($data[APACHE_API])) {
-	// Save it.
-	@file_put_contents(SOURCE_PATH . '/apache.txt', $data[APACHE_API]);
-
 	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[APACHE_API]);
 	foreach ($lines as $line) {
@@ -438,9 +510,6 @@ debug_stdout('Nginx', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(NGINX_API));
 if (!is_int($data[NGINX_API])) {
-	// Save it.
-	@file_put_contents(SOURCE_PATH . '/nginx.txt', $data[NGINX_API]);
-
 	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[NGINX_API]);
 	foreach ($lines as $line) {
@@ -475,9 +544,6 @@ debug_stdout('freedesktop.org', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(FREEDESKTOP_API));
 if (!is_int($data[FREEDESKTOP_API])) {
-	// Save it.
-	@file_put_contents(SOURCE_PATH . '/freedesktop.xml', $data[FREEDESKTOP_API]);
-
 	$data = simplexml_load_string($data[FREEDESKTOP_API]);
 	foreach ($data as $type) {
 		// First, get the MIME(s).
@@ -501,8 +567,8 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		}
 
 		// We should include parent-classes too.
-		if (isset($type->{"sub-class-of"})){
-			foreach ($type->{"sub-class-of"}->attributes() as $k=>$v) {
+		if (isset($type->{'sub-class-of'})) {
+			foreach ($type->{'sub-class-of'}->attributes() as $k=>$v) {
 				if ('type' === $k) {
 					$mimes[] = (string) $v;
 					$aliases[] = (string) $v;
@@ -549,9 +615,6 @@ debug_stdout('Apache Tika', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(TIKA_API));
 if (!is_int($data[TIKA_API])) {
-	// Save it.
-	@file_put_contents(SOURCE_PATH . '/tika.xml', $data[TIKA_API]);
-
 	// SimpleXML doesn't like Tika's undefined namespaces, so
 	// let's just remove them.
 	$data[TIKA_API] = preg_replace('/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us', '', $data[TIKA_API]);
@@ -579,9 +642,9 @@ if (!is_int($data[TIKA_API])) {
 		}
 
 		// We should include parent-classes too.
-		if (isset($type->{"sub-class-of"})){
-			foreach ($type->{"sub-class-of"}->attributes() as $k=>$v) {
-				if ('type' === $k) {
+		if (isset($type->{'sub-class-of'})) {
+			foreach ($type->{'sub-class-of'}->attributes() as $k=>$v) {
+				if ('type' === $k && !preg_match('/\/x\-tika/', (string) $v)) {
 					$mimes[] = (string) $v;
 					$aliases[] = (string) $v;
 				}
