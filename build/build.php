@@ -74,6 +74,21 @@ define('FREEDESKTOP_API', 'https://cgit.freedesktop.org/xdg/shared-mime-info/pla
 
 define('TIKA_API', 'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml');
 
+// Manual fixes and references. PHP hardcodes some bad data in fileinfo.so.
+define('MAGIC_LIST', array(
+	'application/msword'=>array(
+		'application/ms-office',
+		'application/xml'
+	),
+	'application/vnd.ms-excel'=>array(
+		'application/ms-office',
+		'application/xml'
+	),
+	'application/vnd.ms-powerpoint'=>array(
+		'application/ms-office'
+	)
+));
+
 $start = microtime(true);
 
 
@@ -329,6 +344,14 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 
 	if (!in_array($source, $extensions_by_mime[$mime]['source'], true)) {
 		$extensions_by_mime[$mime]['source'][] = $source;
+	}
+
+	// Are there hardcoded entries?
+	if (isset(MAGIC_LIST[$mime])) {
+		foreach (MAGIC_LIST[$mime] as $m) {
+			$aliases[] = $m;
+			save_mime_ext_pair($m, $ext, $source);
+		}
 	}
 
 	return true;

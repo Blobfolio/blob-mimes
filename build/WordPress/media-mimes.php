@@ -1214,10 +1214,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-stata-do',
 		),
 		'doc'=>array(
+			'application/ms-office',
 			'application/msword',
 			'application/vnd.ms-word',
 			'application/x-msword',
 			'application/x-ole-storage',
+			'application/xml',
 			'zz-application/zz-winassoc-doc',
 		),
 		'docbook'=>array(
@@ -1235,9 +1237,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'dot'=>array(
+			'application/ms-office',
 			'application/msword',
 			'application/msword-template',
 			'application/vnd.ms-word',
+			'application/xml',
 			'text/vnd.graphviz',
 		),
 		'dotm'=>array(
@@ -2720,6 +2724,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-shared-library-la',
 			'text/plain',
 		),
+		'lasjson'=>array(
+			'application/vnd.las.las+json',
+		),
 		'lasxml'=>array(
 			'application/vnd.las.las+xml',
 		),
@@ -4199,6 +4206,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.macports.portpkg',
 		),
 		'pot'=>array(
+			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
@@ -4220,6 +4228,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-pascal',
 		),
 		'ppa'=>array(
+			'application/ms-office',
 			'application/mspowerpoint',
 			'application/vnd.ms-powerpoint',
 		),
@@ -4238,6 +4247,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-portable-pixmap',
 		),
 		'pps'=>array(
+			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
@@ -4252,6 +4262,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'ppt'=>array(
+			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
@@ -4266,6 +4277,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'ppz'=>array(
+			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
@@ -6491,9 +6503,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/vnd.xiff',
 		),
 		'xla'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlam'=>array(
@@ -6501,15 +6515,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 		),
 		'xlc'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xld'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlex'=>array(
@@ -6525,30 +6543,38 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 		),
 		'xll'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlm'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlog'=>array(
 			'text/plain',
 		),
 		'xlr'=>array(
+			'application/ms-office',
 			'application/vnd.ms-excel',
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 			'application/x-tika-msworks-spreadsheet',
+			'application/xml',
 		),
 		'xls'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlsb'=>array(
@@ -6564,9 +6590,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'xlt'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xltm'=>array(
@@ -6578,9 +6606,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'xlw'=>array(
+			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
 			'application/x-msexcel',
+			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xm'=>array(
@@ -6995,9 +7025,9 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 			}
 
 			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
-		} catch(Throwable $e) {
+		} catch( Throwable $e ) {
 			$real_mime = false;
-		} catch(Exception $e) {
+		} catch( Exception $e ) {
 			$real_mime = false;
 		}
 
