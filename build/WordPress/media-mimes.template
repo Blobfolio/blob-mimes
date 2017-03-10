@@ -159,9 +159,9 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 			}
 
 			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
-		} catch(Throwable $e) {
+		} catch( Throwable $e ) {
 			$real_mime = false;
-		} catch(Exception $e) {
+		} catch( Exception $e ) {
 			$real_mime = false;
 		}
 
