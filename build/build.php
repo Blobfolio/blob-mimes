@@ -744,7 +744,7 @@ foreach ($mimes_by_extension as $k=>$v) {
 }
 $wp_data_out = array();
 foreach ($wp_data as $k=>$v) {
-	$wp_data_out[] = "\t\t'$k'=>array(";
+	$wp_data_out[] = "\t\t'$k' => array(";
 	foreach ($v as $v2) {
 		$wp_data_out[] = "\t\t\t'$v2',";
 	}
