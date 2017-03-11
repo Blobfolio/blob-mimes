@@ -30,10 +30,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 
 	$ext = trim( strtolower( $ext ) );
 	$ext = ltrim( $ext, '.' );
-	if ( strlen( $ext ) && isset( $mimes[$ext] ) ) {
-		$match = $mimes[$ext];
-	}
-	else {
+	if ( strlen( $ext ) && isset( $mimes[ $ext ] ) ) {
+		$match = $mimes[ $ext ];
+	} else {
 		$match = false;
 	}
 
@@ -77,20 +76,38 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		return apply_filters( 'wp_check_mime_alias', false, $ext, $mime );
 	}
 
+	if ( 'application/octet-stream' === $mime ) {
+		/**
+		 * Require Checks For application/octet-stream
+		 *
+		 * While application/octet-stream a valid media
+		 * type, it is also fileinfo's version of a shrug.
+		 * In general, it is not authoritative enough a
+		 * result from which to reject a file.
+		 *
+		 * @since xxx
+		 *
+		 * @param bool $enforce_checking Run checks.
+		 */
+		$soft_pass = apply_filters( 'wp_check_application_octet_stream', false );
+		if ( false === $soft_pass ) {
+			return apply_filters( 'wp_check_mime_alias', true, $ext, $mime );
+		}
+	}
+
 	// We want to test for both x-subtype and subtype variants.
 	$parts = explode( '/', $mime );
 	$subtype = count( $parts ) - 1;
-	if ( preg_match( '/^x\-/', $parts[$subtype] ) ) {
-		$parts[$subtype] = preg_replace( '/^x\-/', '', $parts[$subtype] );
-	}
-	else {
-		$parts[$subtype] = 'x-' . $parts[$subtype];
+	if ( preg_match( '/^x\-/', $parts[ $subtype ] ) ) {
+		$parts[ $subtype ] = preg_replace( '/^x\-/', '', $parts[ $subtype ] );
+	} else {
+		$parts[ $subtype ] = 'x-' . $parts[ $subtype ];
 	}
 
 	// We now have type/x-subtype and type/subtype.
 	$test = array(
 		$mime,
-		implode( '/', $parts )
+		implode( '/', $parts ),
 	);
 
 	// Overlap is success!
@@ -110,6 +127,10 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
  * The content-based type will override the name-based
  * type if available and included in the $mimes list.
  *
+ * A false response will be set if the extension is
+ * not allowed, or if a "real MIME" was found and
+ * that MIME is not allowed.
+ *
  * @since xxx
  *
  * @see wp_check_filetype()
@@ -117,7 +138,7 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
  *
  * @param string $file Full path to the file.
  * @param string $filename The name of the file (may differ from $file due to $file being in a tmp directory).
- * @param array $mimes Optional. Key is the file extension with value as the mime type.
+ * @param array  $mimes Optional. Key is the file extension with value as the mime type.
  * @return array Values with extension first and mime type.
  */
 function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
@@ -159,9 +180,9 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 			}
 
 			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
-		} catch( Throwable $e ) {
+		} catch ( Throwable $e ) {
 			$real_mime = false;
-		} catch( Exception $e ) {
+		} catch ( Exception $e ) {
 			$real_mime = false;
 		}
 
@@ -169,14 +190,13 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 		if ( false !== $real_mime ) {
 			$real_mime = strtolower( sanitize_mime_type( $real_mime ) );
 			if ( ! wp_check_mime_alias( $checked['ext'], $real_mime ) ) {
-				// If the extension is incorrect but the type is valid,
-				// update the extension.
+				// If the extension is incorrect but the type is otherwise
+				// valid, update the extension.
 				if ( false !== $extensions = array_search( $real_mime, $mimes, true ) ) {
 					$extensions = explode( '|', $extensions );
 					$checked['ext'] = $extensions[0];
 					$checked['type'] = $real_mime;
-				}
-				// Otherwise reject the results.
+				} // Otherwise reject the results.
 				else {
 					$checked['ext'] = false;
 					$checked['type'] = false;

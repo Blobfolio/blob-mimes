@@ -25,24 +25,24 @@
  */
 function wp_get_mime_aliases( $ext = '' ) {
 	$mimes = array(
-		'32x'=>array(
+		'32x' => array(
 			'application/x-genesis-32x-rom',
 		),
-		'3dml'=>array(
+		'3dml' => array(
 			'text/vnd.in3d.3dml',
 		),
-		'3ds'=>array(
+		'3ds' => array(
 			'image/x-3ds',
 		),
-		'3fr'=>array(
+		'3fr' => array(
 			'image/x-raw-hasselblad',
 		),
-		'3g2'=>array(
+		'3g2' => array(
 			'audio/3gpp2',
 			'video/3gpp2',
 			'video/mp4',
 		),
-		'3ga'=>array(
+		'3ga' => array(
 			'audio/3gpp',
 			'audio/3gpp-encrypted',
 			'audio/x-rn-3gpp-amr',
@@ -54,7 +54,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gpp-encrypted',
 			'video/mp4',
 		),
-		'3gp'=>array(
+		'3gp' => array(
 			'audio/3gpp',
 			'audio/3gpp-encrypted',
 			'audio/x-rn-3gpp-amr',
@@ -66,12 +66,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gpp-encrypted',
 			'video/mp4',
 		),
-		'3gp2'=>array(
+		'3gp2' => array(
 			'audio/3gpp2',
 			'video/3gpp2',
 			'video/mp4',
 		),
-		'3gpp'=>array(
+		'3gpp' => array(
 			'audio/3gpp',
 			'audio/3gpp-encrypted',
 			'audio/x-rn-3gpp-amr',
@@ -83,301 +83,301 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/3gpp-encrypted',
 			'video/mp4',
 		),
-		'3gpp2'=>array(
+		'3gpp2' => array(
 			'audio/3gpp2',
 			'video/3gpp2',
 			'video/mp4',
 		),
-		'4th'=>array(
+		'4th' => array(
 			'text/plain',
 			'text/x-forth',
 		),
-		'7z'=>array(
+		'7z' => array(
 			'application/x-7z-compressed',
 		),
-		'a26'=>array(
+		'a26' => array(
 			'application/x-atari-2600-rom',
 		),
-		'a78'=>array(
+		'a78' => array(
 			'application/x-atari-7800-rom',
 		),
-		'aab'=>array(
+		'aab' => array(
 			'application/x-authorware-bin',
 		),
-		'aac'=>array(
+		'aac' => array(
 			'audio/aac',
 			'audio/x-aac',
 		),
-		'aam'=>array(
+		'aam' => array(
 			'application/x-authorware-map',
 		),
-		'aart'=>array(
+		'aart' => array(
 			'text/plain',
 		),
-		'aas'=>array(
+		'aas' => array(
 			'application/x-authorware-seg',
 		),
-		'abs-linkmap'=>array(
+		'abs-linkmap' => array(
 			'text/plain',
 		),
-		'abs-menulinks'=>array(
+		'abs-menulinks' => array(
 			'text/plain',
 		),
-		'abw'=>array(
+		'abw' => array(
 			'application/x-abiword',
 			'application/xml',
 		),
-		'ac'=>array(
+		'ac' => array(
 			'application/pkix-attr-cert',
 			'text/plain',
 		),
-		'ac3'=>array(
+		'ac3' => array(
 			'audio/ac3',
 		),
-		'acc'=>array(
+		'acc' => array(
 			'application/vnd.americandynamics.acc',
 		),
-		'ace'=>array(
+		'ace' => array(
 			'application/x-ace',
 			'application/x-ace-compressed',
 		),
-		'acfm'=>array(
+		'acfm' => array(
 			'application/x-font-adobe-metric',
 		),
-		'acu'=>array(
+		'acu' => array(
 			'application/vnd.acucobol',
 		),
-		'acutc'=>array(
+		'acutc' => array(
 			'application/vnd.acucorp',
 		),
-		'ad'=>array(
+		'ad' => array(
 			'text/plain',
 			'text/x-asciidoc',
 		),
-		'ada'=>array(
+		'ada' => array(
 			'text/plain',
 			'text/x-ada',
 		),
-		'adb'=>array(
+		'adb' => array(
 			'text/plain',
 			'text/x-ada',
 			'text/x-adasrc',
 		),
-		'adf'=>array(
+		'adf' => array(
 			'application/x-amiga-disk-format',
 		),
-		'adoc'=>array(
+		'adoc' => array(
 			'text/plain',
 			'text/x-asciidoc',
 		),
-		'adp'=>array(
+		'adp' => array(
 			'audio/adpcm',
 		),
-		'ads'=>array(
+		'ads' => array(
 			'text/plain',
 			'text/x-ada',
 			'text/x-adasrc',
 		),
-		'aep'=>array(
+		'aep' => array(
 			'application/vnd.adobe.aftereffects.project',
 			'application/vnd.audiograph',
 		),
-		'aet'=>array(
+		'aet' => array(
 			'application/vnd.adobe.aftereffects.template',
 		),
-		'afm'=>array(
+		'afm' => array(
 			'application/x-font-adobe-metric',
 			'application/x-font-afm',
 			'application/x-font-type1',
 		),
-		'afp'=>array(
+		'afp' => array(
 			'application/vnd.ibm.modcap',
 		),
-		'ag'=>array(
+		'ag' => array(
 			'image/x-applix-graphics',
 		),
-		'agb'=>array(
+		'agb' => array(
 			'application/x-gba-rom',
 		),
-		'ahead'=>array(
+		'ahead' => array(
 			'application/vnd.ahead.space',
 		),
-		'ai'=>array(
+		'ai' => array(
 			'application/illustrator',
 			'application/postscript',
 		),
-		'aif'=>array(
+		'aif' => array(
 			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aiff',
 		),
-		'aifc'=>array(
+		'aifc' => array(
 			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aifc',
 			'audio/x-aiff',
 			'audio/x-aiffc',
 		),
-		'aiff'=>array(
+		'aiff' => array(
 			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aiff',
 		),
-		'aiffc'=>array(
+		'aiffc' => array(
 			'application/x-iff',
 			'audio/x-aifc',
 			'audio/x-aiffc',
 		),
-		'air'=>array(
+		'air' => array(
 			'application/vnd.adobe.air-application-installer-package+zip',
 		),
-		'ait'=>array(
+		'ait' => array(
 			'application/vnd.dvb.ait',
 		),
-		'aj'=>array(
+		'aj' => array(
 			'text/plain',
 			'text/x-aspectj',
 		),
-		'al'=>array(
+		'al' => array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
 			'text/x-perl',
 		),
-		'alz'=>array(
+		'alz' => array(
 			'application/x-alz',
 		),
-		'am'=>array(
+		'am' => array(
 			'text/plain',
 		),
-		'amfm'=>array(
+		'amfm' => array(
 			'application/x-font-adobe-metric',
 		),
-		'ami'=>array(
+		'ami' => array(
 			'application/vnd.amiga.ami',
 		),
-		'amr'=>array(
+		'amr' => array(
 			'audio/amr',
 			'audio/amr-encrypted',
 		),
-		'amz'=>array(
+		'amz' => array(
 			'audio/x-amzxml',
 		),
-		'ani'=>array(
+		'ani' => array(
 			'application/x-navi-animation',
 		),
-		'anpa'=>array(
+		'anpa' => array(
 			'text/vnd.iptc.anpa',
 		),
-		'anx'=>array(
+		'anx' => array(
 			'application/annodex',
 			'application/x-annodex',
 		),
-		'any'=>array(
+		'any' => array(
 			'application/vnd.mitsubishi.misty-guard.trustweb',
 		),
-		'ape'=>array(
+		'ape' => array(
 			'audio/x-ape',
 		),
-		'apk'=>array(
+		'apk' => array(
 			'application/java-archive',
 			'application/vnd.android.package-archive',
 			'application/x-java-archive',
 		),
-		'appcache'=>array(
+		'appcache' => array(
 			'text/cache-manifest',
 		),
-		'appimage'=>array(
+		'appimage' => array(
 			'application/x-executable',
 			'application/x-iso9660-appimage',
 		),
-		'applescript'=>array(
+		'applescript' => array(
 			'text/plain',
 			'text/x-applescript',
 		),
-		'application'=>array(
+		'application' => array(
 			'application/x-ms-application',
 		),
-		'apr'=>array(
+		'apr' => array(
 			'application/vnd.lotus-approach',
 		),
-		'apxml'=>array(
+		'apxml' => array(
 			'application/auth-policy+xml',
 		),
-		'ar'=>array(
+		'ar' => array(
 			'application/x-archive',
 			'application/x-unix-archive',
 		),
-		'arc'=>array(
+		'arc' => array(
 			'application/x-freearc',
 		),
-		'arj'=>array(
+		'arj' => array(
 			'application/x-arj',
 			'application/x-arj-compressed',
 		),
-		'arw'=>array(
+		'arw' => array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-arw',
 		),
-		'as'=>array(
+		'as' => array(
 			'application/x-applix-spreadsheet',
 			'text/plain',
 			'text/x-actionscript',
 		),
-		'asc'=>array(
+		'asc' => array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
 			'text/plain',
 		),
-		'ascii'=>array(
+		'ascii' => array(
 			'text/vnd.ascii-art',
 		),
-		'asciidoc'=>array(
+		'asciidoc' => array(
 			'text/plain',
 			'text/x-asciidoc',
 		),
-		'asf'=>array(
+		'asf' => array(
 			'application/vnd.ms-asf',
 			'video/x-ms-asf',
 			'video/x-ms-asf-plugin',
 			'video/x-ms-wm',
 		),
-		'asice'=>array(
+		'asice' => array(
 			'application/vnd.etsi.asic-e+zip',
 			'application/zip',
 		),
-		'asics'=>array(
+		'asics' => array(
 			'application/vnd.etsi.asic-s+zip',
 			'application/zip',
 		),
-		'asm'=>array(
+		'asm' => array(
 			'text/plain',
 			'text/x-asm',
 			'text/x-assembly',
 		),
-		'asnd'=>array(
+		'asnd' => array(
 			'audio/vnd.adobe.soundbooth',
 		),
-		'aso'=>array(
+		'aso' => array(
 			'application/vnd.accpac.simply.aso',
 		),
-		'asp'=>array(
+		'asp' => array(
 			'application/x-asp',
 			'text/asp',
 			'text/plain',
 		),
-		'aspx'=>array(
+		'aspx' => array(
 			'text/aspdotnet',
 			'text/plain',
 		),
-		'ass'=>array(
+		'ass' => array(
 			'text/plain',
 			'text/x-ssa',
 		),
-		'asx'=>array(
+		'asx' => array(
 			'application/x-ms-asx',
 			'application/xml',
 			'audio/x-ms-asx',
@@ -386,36 +386,36 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-ms-wmx',
 			'video/x-ms-wvx',
 		),
-		'atc'=>array(
+		'atc' => array(
 			'application/vnd.acucorp',
 		),
-		'atom'=>array(
+		'atom' => array(
 			'application/atom+xml',
 			'application/xml',
 		),
-		'atomcat'=>array(
+		'atomcat' => array(
 			'application/atomcat+xml',
 		),
-		'atomdeleted'=>array(
+		'atomdeleted' => array(
 			'application/atomdeleted+xml',
 		),
-		'atomsvc'=>array(
+		'atomsvc' => array(
 			'application/atomsvc+xml',
 		),
-		'atx'=>array(
+		'atx' => array(
 			'application/vnd.antix.game-component',
 		),
-		'au'=>array(
+		'au' => array(
 			'audio/basic',
 		),
-		'auc'=>array(
+		'auc' => array(
 			'application/tamp-apex-update-confirm',
 		),
-		'automount'=>array(
+		'automount' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'avf'=>array(
+		'avf' => array(
 			'video/avi',
 			'video/divx',
 			'video/msvideo',
@@ -423,7 +423,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-avi',
 			'video/x-msvideo',
 		),
-		'avi'=>array(
+		'avi' => array(
 			'video/avi',
 			'video/divx',
 			'video/msvideo',
@@ -431,280 +431,280 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-avi',
 			'video/x-msvideo',
 		),
-		'aw'=>array(
+		'aw' => array(
 			'application/applixware',
 			'application/x-applix-word',
 		),
-		'awb'=>array(
+		'awb' => array(
 			'audio/amr-wb',
 			'audio/amr-wb-encrypted',
 		),
-		'awk'=>array(
+		'awk' => array(
 			'application/x-awk',
 			'application/x-executable',
 			'text/plain',
 			'text/x-awk',
 		),
-		'axa'=>array(
+		'axa' => array(
 			'application/annodex',
 			'audio/annodex',
 			'audio/x-annodex',
 		),
-		'axv'=>array(
+		'axv' => array(
 			'application/annodex',
 			'video/annodex',
 			'video/x-annodex',
 		),
-		'axx'=>array(
+		'axx' => array(
 			'application/x-axcrypt',
 		),
-		'azf'=>array(
+		'azf' => array(
 			'application/vnd.airzip.filesecure.azf',
 		),
-		'azs'=>array(
+		'azs' => array(
 			'application/vnd.airzip.filesecure.azs',
 		),
-		'azw'=>array(
+		'azw' => array(
 			'application/vnd.amazon.ebook',
 		),
-		'azw3'=>array(
+		'azw3' => array(
 			'application/vnd.amazon.mobi8-ebook',
 		),
-		'bak'=>array(
+		'bak' => array(
 			'application/x-trash',
 		),
-		'bas'=>array(
+		'bas' => array(
 			'text/plain',
 			'text/x-basic',
 		),
-		'bash'=>array(
+		'bash' => array(
 			'application/x-sh',
 			'text/plain',
 		),
-		'bat'=>array(
+		'bat' => array(
 			'application/x-msdownload',
 		),
-		'bay'=>array(
+		'bay' => array(
 			'image/x-raw-casio',
 		),
-		'bcpio'=>array(
+		'bcpio' => array(
 			'application/x-bcpio',
 		),
-		'bdf'=>array(
+		'bdf' => array(
 			'application/x-font-bdf',
 		),
-		'bdm'=>array(
+		'bdm' => array(
 			'application/vnd.syncml.dm+wbxml',
 			'video/mp2t',
 		),
-		'bdmv'=>array(
+		'bdmv' => array(
 			'video/mp2t',
 		),
-		'bed'=>array(
+		'bed' => array(
 			'application/vnd.realvnc.bed',
 		),
-		'bh2'=>array(
+		'bh2' => array(
 			'application/vnd.fujitsu.oasysprs',
 		),
-		'bib'=>array(
+		'bib' => array(
 			'application/x-bibtex-text-file',
 			'text/plain',
 			'text/x-bibtex',
 		),
-		'bibtex'=>array(
+		'bibtex' => array(
 			'application/x-bibtex-text-file',
 			'text/plain',
 		),
-		'bin'=>array(
+		'bin' => array(
 			'application/octet-stream',
 			'application/x-saturn-rom',
 			'application/x-sega-cd-rom',
 		),
-		'blb'=>array(
+		'blb' => array(
 			'application/x-blorb',
 		),
-		'blend'=>array(
+		'blend' => array(
 			'application/x-blender',
 		),
-		'blender'=>array(
+		'blender' => array(
 			'application/x-blender',
 		),
-		'blorb'=>array(
+		'blorb' => array(
 			'application/x-blorb',
 		),
-		'bmi'=>array(
+		'bmi' => array(
 			'application/vnd.bmi',
 		),
-		'bmp'=>array(
+		'bmp' => array(
 			'image/bmp',
 			'image/x-bmp',
 			'image/x-ms-bmp',
 		),
-		'book'=>array(
+		'book' => array(
 			'application/vnd.framemaker',
 		),
-		'box'=>array(
+		'box' => array(
 			'application/vnd.previewsystems.box',
 		),
-		'boz'=>array(
+		'boz' => array(
 			'application/x-bzip',
 			'application/x-bzip2',
 		),
-		'bpg'=>array(
+		'bpg' => array(
 			'image/x-bpg',
 		),
-		'bpk'=>array(
+		'bpk' => array(
 			'application/octet-stream',
 		),
-		'bpm'=>array(
+		'bpm' => array(
 			'application/bizagi-modeler',
 			'application/zip',
 		),
-		'bsdiff'=>array(
+		'bsdiff' => array(
 			'application/x-bsdiff',
 		),
-		'btf'=>array(
+		'btf' => array(
 			'image/prs.btif',
 		),
-		'btif'=>array(
+		'btif' => array(
 			'image/prs.btif',
 		),
-		'bz'=>array(
+		'bz' => array(
 			'application/x-bzip',
 			'application/x-bzip2',
 		),
-		'bz2'=>array(
+		'bz2' => array(
 			'application/x-bzip',
 			'application/x-bzip2',
 		),
-		'c'=>array(
+		'c' => array(
 			'text/x-c',
 		),
-		'c11amc'=>array(
+		'c11amc' => array(
 			'application/vnd.cluetrust.cartomobile-config',
 		),
-		'c11amz'=>array(
+		'c11amz' => array(
 			'application/vnd.cluetrust.cartomobile-config-pkg',
 		),
-		'c4d'=>array(
+		'c4d' => array(
 			'application/vnd.clonk.c4group',
 		),
-		'c4f'=>array(
+		'c4f' => array(
 			'application/vnd.clonk.c4group',
 		),
-		'c4g'=>array(
+		'c4g' => array(
 			'application/vnd.clonk.c4group',
 		),
-		'c4p'=>array(
+		'c4p' => array(
 			'application/vnd.clonk.c4group',
 		),
-		'c4u'=>array(
+		'c4u' => array(
 			'application/vnd.clonk.c4group',
 		),
-		'cab'=>array(
+		'cab' => array(
 			'application/vnd.ms-cab-compressed',
 			'zz-application/zz-winassoc-cab',
 		),
-		'cacerts'=>array(
+		'cacerts' => array(
 			'application/x-java-keystore',
 		),
-		'caf'=>array(
+		'caf' => array(
 			'audio/x-caf',
 		),
-		'cap'=>array(
+		'cap' => array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
 			'application/x-pcap',
 		),
-		'car'=>array(
+		'car' => array(
 			'application/vnd.curl.car',
 		),
-		'cat'=>array(
+		'cat' => array(
 			'application/vnd.ms-pki.seccat',
 		),
-		'cb7'=>array(
+		'cb7' => array(
 			'application/x-7z-compressed',
 			'application/x-cb7',
 			'application/x-cbr',
 		),
-		'cba'=>array(
+		'cba' => array(
 			'application/x-cbr',
 		),
-		'cbl'=>array(
+		'cbl' => array(
 			'text/plain',
 			'text/x-cobol',
 		),
-		'cbor'=>array(
+		'cbor' => array(
 			'application/cbor',
 			'application/cose',
 			'application/cose-key',
 			'application/cose-key-set',
 		),
-		'cbr'=>array(
+		'cbr' => array(
 			'application/vnd.rar',
 			'application/x-cbr',
 		),
-		'cbt'=>array(
+		'cbt' => array(
 			'application/x-cbr',
 			'application/x-cbt',
 			'application/x-tar',
 		),
-		'cbz'=>array(
+		'cbz' => array(
 			'application/vnd.comicbook+zip',
 			'application/x-cbr',
 			'application/x-cbz',
 			'application/zip',
 		),
-		'cc'=>array(
+		'cc' => array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
 			'text/x-csrc',
 		),
-		'ccc'=>array(
+		'ccc' => array(
 			'text/vnd.net2phone.commcenter.command',
 		),
-		'ccmp'=>array(
+		'ccmp' => array(
 			'application/ccmp+xml',
 		),
-		'ccmx'=>array(
+		'ccmx' => array(
 			'application/x-ccmx',
 			'text/plain',
 		),
-		'cco'=>array(
+		'cco' => array(
 			'application/x-cocoa',
 		),
-		'cct'=>array(
+		'cct' => array(
 			'application/x-director',
 		),
-		'ccxml'=>array(
+		'ccxml' => array(
 			'application/ccxml+xml',
 		),
-		'cdbcmsg'=>array(
+		'cdbcmsg' => array(
 			'application/vnd.contact.cmsg',
 		),
-		'cdf'=>array(
+		'cdf' => array(
 			'application/x-netcdf',
 		),
-		'cdkey'=>array(
+		'cdkey' => array(
 			'application/vnd.mediastation.cdkey',
 		),
-		'cdmia'=>array(
+		'cdmia' => array(
 			'application/cdmi-capability',
 		),
-		'cdmic'=>array(
+		'cdmic' => array(
 			'application/cdmi-container',
 		),
-		'cdmid'=>array(
+		'cdmid' => array(
 			'application/cdmi-domain',
 		),
-		'cdmio'=>array(
+		'cdmio' => array(
 			'application/cdmi-object',
 		),
-		'cdmiq'=>array(
+		'cdmiq' => array(
 			'application/cdmi-queue',
 		),
-		'cdr'=>array(
+		'cdr' => array(
 			'application/cdr',
 			'application/coreldraw',
 			'application/vnd.corel-draw',
@@ -714,70 +714,70 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-cdr',
 			'zz-application/zz-winassoc-cdr',
 		),
-		'cdx'=>array(
+		'cdx' => array(
 			'chemical/x-cdx',
 		),
-		'cdxml'=>array(
+		'cdxml' => array(
 			'application/vnd.chemdraw+xml',
 		),
-		'cdy'=>array(
+		'cdy' => array(
 			'application/vnd.cinderella',
 		),
-		'cer'=>array(
+		'cer' => array(
 			'application/pkix-cert',
 		),
-		'cert'=>array(
+		'cert' => array(
 			'application/x-x509-ca-cert',
 		),
-		'cfc'=>array(
+		'cfc' => array(
 			'text/plain',
 			'text/x-coldfusion',
 		),
-		'cfg'=>array(
+		'cfg' => array(
 			'text/plain',
 		),
-		'cfm'=>array(
-			'text/plain',
-			'text/x-coldfusion',
-		),
-		'cfml'=>array(
+		'cfm' => array(
 			'text/plain',
 			'text/x-coldfusion',
 		),
-		'cfs'=>array(
+		'cfml' => array(
+			'text/plain',
+			'text/x-coldfusion',
+		),
+		'cfs' => array(
 			'application/x-cfs-compressed',
 		),
-		'cgb'=>array(
+		'cgb' => array(
 			'application/x-gameboy-color-rom',
 		),
-		'cgi'=>array(
+		'cgi' => array(
 			'text/plain',
 			'text/x-cgi',
 		),
-		'cgm'=>array(
+		'cgm' => array(
 			'image/cgm',
 		),
-		'chat'=>array(
+		'chat' => array(
 			'application/x-chat',
 		),
-		'chm'=>array(
+		'chm' => array(
 			'application/vnd.ms-htmlhelp',
 			'application/x-chm',
 		),
-		'chrt'=>array(
+		'chrt' => array(
 			'application/vnd.kde.kchart',
 			'application/x-kchart',
 		),
-		'cif'=>array(
+		'cif' => array(
 			'chemical/x-cif',
 		),
-		'cii'=>array(
+		'cii' => array(
 			'application/vnd.anser-web-certificate-issue-initiation',
 		),
-		'cil'=>array(
+		'cil' => array(
 			'application/vnd.ms-artgalry',
 		),
-		'cl'=>array(
+		'cl' => array(
 			'application/simple-filter+xml',
 			'message/imdn+xml',
 			'text/plain',
@@ -785,10 +785,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-csrc',
 			'text/x-opencl-src',
 		),
-		'cla'=>array(
+		'cla' => array(
 			'application/vnd.claymore',
 		),
-		'class'=>array(
+		'class' => array(
 			'application/java',
 			'application/java-byte-code',
 			'application/java-vm',
@@ -796,377 +796,377 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-java-class',
 			'application/x-java-vm',
 		),
-		'classpath'=>array(
+		'classpath' => array(
 			'text/plain',
 		),
-		'clj'=>array(
+		'clj' => array(
 			'text/plain',
 			'text/x-clojure',
 		),
-		'clkk'=>array(
+		'clkk' => array(
 			'application/vnd.crick.clicker.keyboard',
 		),
-		'clkp'=>array(
+		'clkp' => array(
 			'application/vnd.crick.clicker.palette',
 		),
-		'clkt'=>array(
+		'clkt' => array(
 			'application/vnd.crick.clicker.template',
 		),
-		'clkw'=>array(
+		'clkw' => array(
 			'application/vnd.crick.clicker.wordbank',
 		),
-		'clkx'=>array(
+		'clkx' => array(
 			'application/vnd.crick.clicker',
 		),
-		'clp'=>array(
+		'clp' => array(
 			'application/x-msclip',
 		),
-		'clpi'=>array(
+		'clpi' => array(
 			'video/mp2t',
 		),
-		'cls'=>array(
+		'cls' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-basic',
 			'text/x-tex',
 			'text/x-vbasic',
 		),
-		'clue'=>array(
+		'clue' => array(
 			'application/clueinfo+xml',
 		),
-		'cmake'=>array(
+		'cmake' => array(
 			'text/plain',
 			'text/x-cmake',
 		),
-		'cmc'=>array(
+		'cmc' => array(
 			'application/vnd.cosmocaller',
 		),
-		'cmd'=>array(
+		'cmd' => array(
 			'text/plain',
 		),
-		'cmdf'=>array(
+		'cmdf' => array(
 			'chemical/x-cmdf',
 		),
-		'cml'=>array(
+		'cml' => array(
 			'chemical/x-cml',
 		),
-		'cmp'=>array(
+		'cmp' => array(
 			'application/vnd.yellowriver-custom-menu',
 		),
-		'cmsc'=>array(
+		'cmsc' => array(
 			'application/cms',
 		),
-		'cmx'=>array(
+		'cmx' => array(
 			'image/x-cmx',
 		),
-		'cnd'=>array(
+		'cnd' => array(
 			'text/jcr-cnd',
 		),
-		'cob'=>array(
+		'cob' => array(
 			'text/plain',
 			'text/x-cobol',
 		),
-		'cod'=>array(
+		'cod' => array(
 			'application/vnd.rim.cod',
 		),
-		'coffee'=>array(
+		'coffee' => array(
 			'application/vnd.coffeescript',
 			'text/plain',
 			'text/x-coffeescript',
 		),
-		'com'=>array(
+		'com' => array(
 			'application/x-msdownload',
 		),
-		'conf'=>array(
+		'conf' => array(
 			'text/plain',
 		),
-		'config'=>array(
+		'config' => array(
 			'text/plain',
 		),
-		'core'=>array(
+		'core' => array(
 			'application/x-core',
 		),
-		'cpi'=>array(
+		'cpi' => array(
 			'video/mp2t',
 		),
-		'cpio'=>array(
+		'cpio' => array(
 			'application/x-cpio',
 		),
-		'cpl'=>array(
+		'cpl' => array(
 			'application/cpl+xml',
 		),
-		'cpp'=>array(
+		'cpp' => array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
 			'text/x-csrc',
 		),
-		'cpt'=>array(
+		'cpt' => array(
 			'application/mac-compactpro',
 		),
-		'cr2'=>array(
+		'cr2' => array(
 			'image/x-canon-cr2',
 			'image/x-dcraw',
 			'image/x-raw-canon',
 		),
-		'crd'=>array(
+		'crd' => array(
 			'application/x-mscardfile',
 		),
-		'crdownload'=>array(
+		'crdownload' => array(
 			'application/x-partial-download',
 		),
-		'crl'=>array(
+		'crl' => array(
 			'application/pkix-crl',
 		),
-		'crt'=>array(
+		'crt' => array(
 			'application/x-x509-ca-cert',
 		),
-		'crw'=>array(
+		'crw' => array(
 			'image/x-canon-crw',
 			'image/x-dcraw',
 			'image/x-raw-canon',
 		),
-		'crx'=>array(
+		'crx' => array(
 			'application/x-chrome-package',
 		),
-		'cryptonote'=>array(
+		'cryptonote' => array(
 			'application/vnd.rig.cryptonote',
 		),
-		'cs'=>array(
+		'cs' => array(
 			'text/plain',
 			'text/x-csharp',
 			'text/x-csrc',
 		),
-		'csh'=>array(
+		'csh' => array(
 			'application/x-csh',
 			'application/x-shellscript',
 		),
-		'csml'=>array(
+		'csml' => array(
 			'chemical/x-csml',
 		),
-		'csp'=>array(
+		'csp' => array(
 			'application/vnd.commonspace',
 		),
-		'csrattrs'=>array(
+		'csrattrs' => array(
 			'application/csrattrs',
 		),
-		'css'=>array(
+		'css' => array(
 			'text/css',
 			'text/plain',
 		),
-		'cst'=>array(
+		'cst' => array(
 			'application/x-director',
 		),
-		'csv'=>array(
+		'csv' => array(
 			'text/csv',
 			'text/plain',
 			'text/x-comma-separated-values',
 			'text/x-csv',
 		),
-		'csvs'=>array(
+		'csvs' => array(
 			'text/csv-schema',
 			'text/plain',
 		),
-		'cu'=>array(
+		'cu' => array(
 			'application/cu-seeme',
 		),
-		'cuc'=>array(
+		'cuc' => array(
 			'application/tamp-community-update-confirm',
 		),
-		'cue'=>array(
+		'cue' => array(
 			'application/x-cue',
 			'text/plain',
 		),
-		'cur'=>array(
+		'cur' => array(
 			'image/x-win-bitmap',
 		),
-		'curl'=>array(
+		'curl' => array(
 			'text/vnd.curl',
 		),
-		'cw'=>array(
+		'cw' => array(
 			'application/prs.cww',
 		),
-		'cwiki'=>array(
+		'cwiki' => array(
 			'text/plain',
 		),
-		'cwk'=>array(
+		'cwk' => array(
 			'application/x-appleworks',
 		),
-		'cww'=>array(
+		'cww' => array(
 			'application/prs.cww',
 		),
-		'cxt'=>array(
+		'cxt' => array(
 			'application/x-director',
 		),
-		'cxx'=>array(
+		'cxx' => array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
 			'text/x-csrc',
 		),
-		'dae'=>array(
+		'dae' => array(
 			'model/vnd.collada+xml',
 		),
-		'daf'=>array(
+		'daf' => array(
 			'application/vnd.mobius.daf',
 		),
-		'dar'=>array(
+		'dar' => array(
 			'application/x-dar',
 		),
-		'dart'=>array(
+		'dart' => array(
 			'application/vnd.dart',
 		),
-		'data'=>array(
+		'data' => array(
 			'text/plain',
 		),
-		'dataless'=>array(
+		'dataless' => array(
 			'application/vnd.fdsn.seed',
 		),
-		'davmount'=>array(
+		'davmount' => array(
 			'application/davmount+xml',
 		),
-		'dbase'=>array(
+		'dbase' => array(
 			'application/x-dbf',
 		),
-		'dbase3'=>array(
+		'dbase3' => array(
 			'application/x-dbf',
 		),
-		'dbf'=>array(
+		'dbf' => array(
 			'application/dbase',
 			'application/dbf',
 			'application/x-dbase',
 			'application/x-dbf',
 		),
-		'dbk'=>array(
+		'dbk' => array(
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
 			'application/xml',
 		),
-		'dc'=>array(
+		'dc' => array(
 			'application/x-dc-rom',
 		),
-		'dcl'=>array(
+		'dcl' => array(
 			'text/plain',
 			'text/x-dcl',
 		),
-		'dcm'=>array(
+		'dcm' => array(
 			'application/dicom',
 		),
-		'dcr'=>array(
+		'dcr' => array(
 			'application/x-director',
 			'image/x-dcraw',
 			'image/x-kodak-dcr',
 		),
-		'dcs'=>array(
+		'dcs' => array(
 			'image/x-raw-kodak',
 		),
-		'dcurl'=>array(
+		'dcurl' => array(
 			'text/vnd.curl.dcurl',
 		),
-		'dd2'=>array(
+		'dd2' => array(
 			'application/vnd.oma.dd2+xml',
 		),
-		'ddd'=>array(
+		'ddd' => array(
 			'application/vnd.fujixerox.ddd',
 		),
-		'ddf'=>array(
+		'ddf' => array(
 			'application/vnd.syncml.dmddf+wbxml',
 			'application/vnd.syncml.dmddf+xml',
 		),
-		'dds'=>array(
+		'dds' => array(
 			'image/x-dds',
 		),
-		'deb'=>array(
+		'deb' => array(
 			'application/octet-stream',
 			'application/vnd.debian.binary-package',
 			'application/x-archive',
 			'application/x-deb',
 			'application/x-debian-package',
 		),
-		'def'=>array(
+		'def' => array(
 			'text/plain',
 		),
-		'deploy'=>array(
+		'deploy' => array(
 			'application/octet-stream',
 		),
-		'der'=>array(
+		'der' => array(
 			'application/x-x509-ca-cert',
 		),
-		'desktop'=>array(
+		'desktop' => array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
 			'text/plain',
 		),
-		'device'=>array(
+		'device' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'dex'=>array(
+		'dex' => array(
 			'application/x-dex',
 		),
-		'dfac'=>array(
+		'dfac' => array(
 			'application/vnd.dreamfactory',
 		),
-		'dgc'=>array(
+		'dgc' => array(
 			'application/x-dgc-compressed',
 		),
-		'di'=>array(
+		'di' => array(
 			'text/x-csrc',
 			'text/x-dsrc',
 		),
-		'dia'=>array(
+		'dia' => array(
 			'application/x-dia-diagram',
 			'application/xml',
 		),
-		'dib'=>array(
+		'dib' => array(
 			'image/bmp',
 			'image/x-bmp',
 			'image/x-ms-bmp',
 		),
-		'dic'=>array(
+		'dic' => array(
 			'text/x-c',
 		),
-		'dicomdir'=>array(
+		'dicomdir' => array(
 			'application/dicom',
 		),
-		'dif'=>array(
+		'dif' => array(
 			'application/dif+xml',
 			'application/xml',
 		),
-		'diff'=>array(
+		'diff' => array(
 			'text/plain',
 			'text/x-diff',
 			'text/x-patch',
 		),
-		'dir'=>array(
+		'dir' => array(
 			'application/x-director',
 		),
-		'dis'=>array(
+		'dis' => array(
 			'application/vnd.mobius.dis',
 		),
-		'disposition-notification'=>array(
+		'disposition-notification' => array(
 			'message/disposition-notification',
 		),
-		'dist'=>array(
+		'dist' => array(
 			'application/octet-stream',
 		),
-		'distz'=>array(
+		'distz' => array(
 			'application/octet-stream',
 		),
-		'dita'=>array(
+		'dita' => array(
 			'application/dita+xml',
 			'application/dita+xmlformattopic',
 		),
-		'ditamap'=>array(
+		'ditamap' => array(
 			'application/dita+xml',
 			'application/dita+xmlformatmap',
 		),
-		'ditaval'=>array(
+		'ditaval' => array(
 			'application/dita+xml',
 			'application/dita+xmlformatval',
 		),
-		'divx'=>array(
+		'divx' => array(
 			'video/avi',
 			'video/divx',
 			'video/msvideo',
@@ -1174,46 +1174,46 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-avi',
 			'video/x-msvideo',
 		),
-		'djv'=>array(
+		'djv' => array(
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
 			'image/x.djvu',
 		),
-		'djvu'=>array(
+		'djvu' => array(
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
 			'image/x.djvu',
 		),
-		'dll'=>array(
+		'dll' => array(
 			'application/octet-stream',
 			'application/x-msdownload',
 		),
-		'dmg'=>array(
+		'dmg' => array(
 			'application/octet-stream',
 			'application/x-apple-diskimage',
 		),
-		'dmp'=>array(
+		'dmp' => array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
 			'application/x-pcap',
 		),
-		'dms'=>array(
+		'dms' => array(
 			'application/octet-stream',
 		),
-		'dna'=>array(
+		'dna' => array(
 			'application/vnd.dna',
 		),
-		'dng'=>array(
+		'dng' => array(
 			'image/x-adobe-dng',
 			'image/x-dcraw',
 			'image/x-raw-adobe',
 		),
-		'do'=>array(
+		'do' => array(
 			'application/x-stata-do',
 		),
-		'doc'=>array(
+		'doc' => array(
 			'application/ms-office',
 			'application/msword',
 			'application/vnd.ms-word',
@@ -1222,21 +1222,21 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-doc',
 		),
-		'docbook'=>array(
+		'docbook' => array(
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
 			'application/xml',
 		),
-		'docm'=>array(
+		'docm' => array(
 			'application/vnd.ms-word.document.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 		),
-		'docx'=>array(
+		'docx' => array(
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 			'application/zip',
 		),
-		'dot'=>array(
+		'dot' => array(
 			'application/ms-office',
 			'application/msword',
 			'application/msword-template',
@@ -1244,95 +1244,95 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'text/vnd.graphviz',
 		),
-		'dotm'=>array(
+		'dotm' => array(
 			'application/vnd.ms-word.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 		),
-		'dotx'=>array(
+		'dotx' => array(
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 			'application/zip',
 		),
-		'dp'=>array(
+		'dp' => array(
 			'application/vnd.osgi.dp',
 		),
-		'dpg'=>array(
+		'dpg' => array(
 			'application/vnd.dpgraph',
 		),
-		'dpr'=>array(
+		'dpr' => array(
 			'text/plain',
 			'text/x-pascal',
 		),
-		'dra'=>array(
+		'dra' => array(
 			'audio/vnd.dra',
 		),
-		'drc'=>array(
+		'drc' => array(
 			'video/ogg',
 			'video/x-dirac',
 		),
-		'drf'=>array(
+		'drf' => array(
 			'image/x-raw-kodak',
 		),
-		'drle'=>array(
+		'drle' => array(
 			'image/dicom-rle',
 		),
-		'dsc'=>array(
+		'dsc' => array(
 			'text/prs.lines.tag',
 		),
-		'dsl'=>array(
+		'dsl' => array(
 			'text/plain',
 			'text/x-dsl',
 		),
-		'dssc'=>array(
+		'dssc' => array(
 			'application/dssc+der',
 		),
-		'dta'=>array(
+		'dta' => array(
 			'application/x-stata-dta',
 		),
-		'dtb'=>array(
+		'dtb' => array(
 			'application/x-dtbook+xml',
 		),
-		'dtd'=>array(
+		'dtd' => array(
 			'application/xml-dtd',
 			'text/plain',
 			'text/x-dtd',
 		),
-		'dts'=>array(
+		'dts' => array(
 			'audio/vnd.dts',
 			'audio/x-dts',
 		),
-		'dtshd'=>array(
+		'dtshd' => array(
 			'audio/vnd.dts',
 			'audio/vnd.dts.hd',
 			'audio/x-dtshd',
 		),
-		'dtx'=>array(
+		'dtx' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'dump'=>array(
+		'dump' => array(
 			'application/octet-stream',
 		),
-		'dv'=>array(
+		'dv' => array(
 			'video/dv',
 		),
-		'dvb'=>array(
+		'dvb' => array(
 			'video/vnd.dvb.file',
 		),
-		'dvc'=>array(
+		'dvc' => array(
 			'application/dvcs',
 		),
-		'dvi'=>array(
+		'dvi' => array(
 			'application/x-dvi',
 		),
-		'dwf'=>array(
+		'dwf' => array(
 			'drawing/x-dwf',
 			'model/vnd.dwf',
 		),
-		'dwfx'=>array(
+		'dwfx' => array(
 			'model/vnd.dwfx+xps',
 		),
-		'dwg'=>array(
+		'dwg' => array(
 			'application/acad',
 			'application/autocaddwg',
 			'application/dwg',
@@ -1343,88 +1343,88 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/vnd.dwg',
 			'image/x-dwg',
 		),
-		'dxb'=>array(
+		'dxb' => array(
 			'image/vnd.dxb',
 		),
-		'dxf'=>array(
+		'dxf' => array(
 			'image/vnd.dxf',
 		),
-		'dxp'=>array(
+		'dxp' => array(
 			'application/vnd.spotfire.dxp',
 		),
-		'dxr'=>array(
+		'dxr' => array(
 			'application/x-director',
 		),
-		'ear'=>array(
+		'ear' => array(
 			'application/java-archive',
 			'application/x-tika-java-enterprise-archive',
 		),
-		'ecelp4800'=>array(
+		'ecelp4800' => array(
 			'audio/vnd.nuera.ecelp4800',
 		),
-		'ecelp7470'=>array(
+		'ecelp7470' => array(
 			'audio/vnd.nuera.ecelp7470',
 		),
-		'ecelp9600'=>array(
+		'ecelp9600' => array(
 			'audio/vnd.nuera.ecelp9600',
 		),
-		'ecma'=>array(
+		'ecma' => array(
 			'application/ecmascript',
 		),
-		'edm'=>array(
+		'edm' => array(
 			'application/vnd.novadigm.edm',
 		),
-		'edx'=>array(
+		'edx' => array(
 			'application/vnd.novadigm.edx',
 		),
-		'efif'=>array(
+		'efif' => array(
 			'application/vnd.picsel',
 		),
-		'egon'=>array(
+		'egon' => array(
 			'application/x-egon',
 		),
-		'egrm'=>array(
+		'egrm' => array(
 			'text/plain',
 		),
-		'ei6'=>array(
+		'ei6' => array(
 			'application/vnd.pg.osasli',
 		),
-		'eif'=>array(
+		'eif' => array(
 			'text/plain',
 			'text/x-eiffel',
 		),
-		'el'=>array(
+		'el' => array(
 			'text/plain',
 			'text/x-emacs-lisp',
 		),
-		'elc'=>array(
+		'elc' => array(
 			'application/octet-stream',
 			'application/x-elc',
 		),
-		'emf'=>array(
+		'emf' => array(
 			'application/emf',
 			'application/x-emf',
 			'application/x-msmetafile',
 			'image/emf',
 			'image/x-emf',
 		),
-		'eml'=>array(
+		'eml' => array(
 			'message/rfc822',
 			'text/plain',
 		),
-		'emlx'=>array(
+		'emlx' => array(
 			'message/x-emlx',
 		),
-		'emm'=>array(
+		'emm' => array(
 			'application/vnd.ibm.electronic-media',
 		),
-		'emma'=>array(
+		'emma' => array(
 			'application/emma+xml',
 		),
-		'emp'=>array(
+		'emp' => array(
 			'application/vnd.emusic-emusicpackage',
 		),
-		'emz'=>array(
+		'emz' => array(
 			'application/gzip',
 			'application/gzip-compressed',
 			'application/gzipped',
@@ -1434,610 +1434,610 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-msmetafile',
 			'gzip/document',
 		),
-		'enr'=>array(
+		'enr' => array(
 			'application/x-endnote-refer',
 		),
-		'ent'=>array(
+		'ent' => array(
 			'application/xml',
 			'application/xml-external-parsed-entity',
 			'text/plain',
 			'text/xml-external-parsed-entity',
 		),
-		'enw'=>array(
+		'enw' => array(
 			'application/x-endnote-refer',
 		),
-		'eol'=>array(
+		'eol' => array(
 			'audio/vnd.digital-winds',
 		),
-		'eot'=>array(
+		'eot' => array(
 			'application/vnd.ms-fontobject',
 		),
-		'eps'=>array(
+		'eps' => array(
 			'application/postscript',
 			'image/x-eps',
 		),
-		'epsf'=>array(
+		'epsf' => array(
 			'application/postscript',
 			'image/x-eps',
 		),
-		'epsi'=>array(
+		'epsi' => array(
 			'application/postscript',
 			'image/x-eps',
 		),
-		'epub'=>array(
+		'epub' => array(
 			'application/epub+zip',
 			'application/zip',
 		),
-		'erf'=>array(
+		'erf' => array(
 			'image/x-raw-epson',
 		),
-		'erl'=>array(
+		'erl' => array(
 			'text/plain',
 			'text/x-erlang',
 		),
-		'es'=>array(
+		'es' => array(
 			'application/ecmascript',
 			'application/x-executable',
 			'text/ecmascript',
 		),
-		'es3'=>array(
+		'es3' => array(
 			'application/vnd.eszigno3+xml',
 		),
-		'esa'=>array(
+		'esa' => array(
 			'application/vnd.osgi.subsystem',
 		),
-		'esf'=>array(
+		'esf' => array(
 			'application/vnd.epson.esf',
 		),
-		'espass'=>array(
+		'espass' => array(
 			'application/vnd.espass-espass+zip',
 		),
-		'et3'=>array(
+		'et3' => array(
 			'application/vnd.eszigno3+xml',
 		),
-		'etheme'=>array(
+		'etheme' => array(
 			'application/x-e-theme',
 		),
-		'etx'=>array(
+		'etx' => array(
 			'text/plain',
 			'text/x-setext',
 		),
-		'eva'=>array(
+		'eva' => array(
 			'application/x-eva',
 		),
-		'evy'=>array(
+		'evy' => array(
 			'application/x-envoy',
 		),
-		'exe'=>array(
+		'exe' => array(
 			'application/octet-stream',
 			'application/x-dosexec',
 			'application/x-ms-dos-executable',
 			'application/x-msdownload',
 		),
-		'exi'=>array(
+		'exi' => array(
 			'application/exi',
 		),
-		'exp'=>array(
+		'exp' => array(
 			'text/plain',
 			'text/x-expect',
 		),
-		'exr'=>array(
+		'exr' => array(
 			'image/x-exr',
 		),
-		'ext'=>array(
+		'ext' => array(
 			'application/vnd.novadigm.ext',
 		),
-		'ez'=>array(
+		'ez' => array(
 			'application/andrew-inset',
 		),
-		'ez2'=>array(
+		'ez2' => array(
 			'application/vnd.ezpix-album',
 		),
-		'ez3'=>array(
+		'ez3' => array(
 			'application/vnd.ezpix-package',
 		),
-		'f'=>array(
+		'f' => array(
 			'text/x-fortran',
 		),
-		'f4a'=>array(
+		'f4a' => array(
 			'audio/m4a',
 			'audio/mp4',
 			'audio/x-m4a',
 		),
-		'f4b'=>array(
+		'f4b' => array(
 			'audio/mp4',
 			'audio/x-m4b',
 		),
-		'f4v'=>array(
+		'f4v' => array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/x-f4v',
 			'video/x-m4v',
 		),
-		'f77'=>array(
+		'f77' => array(
 			'text/plain',
 			'text/x-fortran',
 		),
-		'f90'=>array(
+		'f90' => array(
 			'text/plain',
 			'text/x-fortran',
 		),
-		'f95'=>array(
+		'f95' => array(
 			'text/plain',
 			'text/x-fortran',
 		),
-		'fb2'=>array(
+		'fb2' => array(
 			'application/x-fictionbook',
 			'application/x-fictionbook+xml',
 			'application/xml',
 		),
-		'fbs'=>array(
+		'fbs' => array(
 			'image/vnd.fastbidsheet',
 		),
-		'fcdt'=>array(
+		'fcdt' => array(
 			'application/vnd.adobe.formscentral.fcdt',
 		),
-		'fcs'=>array(
+		'fcs' => array(
 			'application/vnd.isac.fcs',
 		),
-		'fdf'=>array(
+		'fdf' => array(
 			'application/vnd.fdf',
 		),
-		'fds'=>array(
+		'fds' => array(
 			'application/x-fds-disk',
 		),
-		'fe_launch'=>array(
+		'fe_launch' => array(
 			'application/vnd.denovo.fcselayout-link',
 		),
-		'feature'=>array(
+		'feature' => array(
 			'text/plain',
 			'text/x-gherkin',
 		),
-		'fff'=>array(
+		'fff' => array(
 			'image/x-raw-imacon',
 		),
-		'fg5'=>array(
+		'fg5' => array(
 			'application/vnd.fujitsu.oasysgp',
 		),
-		'fgd'=>array(
+		'fgd' => array(
 			'application/x-director',
 		),
-		'fh'=>array(
+		'fh' => array(
 			'image/x-freehand',
 		),
-		'fh10'=>array(
+		'fh10' => array(
 			'image/x-freehand',
 		),
-		'fh11'=>array(
+		'fh11' => array(
 			'image/x-freehand',
 		),
-		'fh12'=>array(
+		'fh12' => array(
 			'image/x-freehand',
 		),
-		'fh4'=>array(
+		'fh4' => array(
 			'image/x-freehand',
 		),
-		'fh40'=>array(
+		'fh40' => array(
 			'image/x-freehand',
 		),
-		'fh5'=>array(
+		'fh5' => array(
 			'image/x-freehand',
 		),
-		'fh50'=>array(
+		'fh50' => array(
 			'image/x-freehand',
 		),
-		'fh7'=>array(
+		'fh7' => array(
 			'image/x-freehand',
 		),
-		'fh8'=>array(
+		'fh8' => array(
 			'image/x-freehand',
 		),
-		'fh9'=>array(
+		'fh9' => array(
 			'image/x-freehand',
 		),
-		'fhc'=>array(
+		'fhc' => array(
 			'image/x-freehand',
 		),
-		'fig'=>array(
+		'fig' => array(
 			'application/x-xfig',
 			'image/x-xfig',
 		),
-		'fit'=>array(
+		'fit' => array(
 			'application/fits',
 		),
-		'fits'=>array(
+		'fits' => array(
 			'application/fits',
 			'image/fits',
 			'image/x-fits',
 		),
-		'fl'=>array(
+		'fl' => array(
 			'application/x-fluid',
 			'text/plain',
 		),
-		'flac'=>array(
+		'flac' => array(
 			'audio/flac',
 			'audio/x-flac',
 		),
-		'flatpak'=>array(
+		'flatpak' => array(
 			'application/vnd.flatpak',
 			'application/vnd.xdgapp',
 		),
-		'flatpakref'=>array(
+		'flatpakref' => array(
 			'application/vnd.flatpak.ref',
 			'text/plain',
 		),
-		'flatpakrepo'=>array(
+		'flatpakrepo' => array(
 			'application/vnd.flatpak.repo',
 			'text/plain',
 		),
-		'flc'=>array(
+		'flc' => array(
 			'video/fli',
 			'video/x-flc',
 			'video/x-fli',
 			'video/x-flic',
 		),
-		'fli'=>array(
+		'fli' => array(
 			'video/fli',
 			'video/x-fli',
 			'video/x-flic',
 		),
-		'flo'=>array(
+		'flo' => array(
 			'application/vnd.micrografx.flo',
 		),
-		'flv'=>array(
+		'flv' => array(
 			'application/x-flash-video',
 			'flv-application/octet-stream',
 			'video/flv',
 			'video/x-flv',
 		),
-		'flw'=>array(
+		'flw' => array(
 			'application/vnd.kde.kivio',
 			'application/x-kivio',
 		),
-		'flx'=>array(
+		'flx' => array(
 			'text/vnd.fmi.flexstor',
 		),
-		'fly'=>array(
+		'fly' => array(
 			'text/vnd.fly',
 		),
-		'fm'=>array(
+		'fm' => array(
 			'application/vnd.framemaker',
 			'application/x-frame',
 		),
-		'fn'=>array(
+		'fn' => array(
 			'text/plain',
 		),
-		'fnc'=>array(
+		'fnc' => array(
 			'application/vnd.frogans.fnc',
 		),
-		'fo'=>array(
+		'fo' => array(
 			'application/vnd.software602.filler.form+xml',
 			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
 			'text/xsl',
 		),
-		'fodg'=>array(
+		'fodg' => array(
 			'application/vnd.oasis.opendocument.graphics-flat-xml',
 			'application/xml',
 		),
-		'fodp'=>array(
+		'fodp' => array(
 			'application/vnd.oasis.opendocument.presentation-flat-xml',
 			'application/xml',
 		),
-		'fods'=>array(
+		'fods' => array(
 			'application/vnd.oasis.opendocument.spreadsheet-flat-xml',
 			'application/xml',
 		),
-		'fodt'=>array(
+		'fodt' => array(
 			'application/vnd.oasis.opendocument.text-flat-xml',
 			'application/xml',
 		),
-		'for'=>array(
+		'for' => array(
 			'text/plain',
 			'text/x-fortran',
 		),
-		'fp7'=>array(
+		'fp7' => array(
 			'application/x-filemaker',
 		),
-		'fpx'=>array(
+		'fpx' => array(
 			'image/vnd.fpx',
 		),
-		'frame'=>array(
+		'frame' => array(
 			'application/vnd.framemaker',
 		),
-		'frm'=>array(
+		'frm' => array(
 			'text/x-basic',
 			'text/x-vbasic',
 		),
-		'fsc'=>array(
+		'fsc' => array(
 			'application/vnd.fsc.weblaunch',
 		),
-		'fst'=>array(
+		'fst' => array(
 			'image/vnd.fst',
 		),
-		'ft'=>array(
+		'ft' => array(
 			'text/plain',
 		),
-		'ft10'=>array(
+		'ft10' => array(
 			'image/x-freehand',
 		),
-		'ft11'=>array(
+		'ft11' => array(
 			'image/x-freehand',
 		),
-		'ft12'=>array(
+		'ft12' => array(
 			'image/x-freehand',
 		),
-		'ft7'=>array(
+		'ft7' => array(
 			'image/x-freehand',
 		),
-		'ft8'=>array(
+		'ft8' => array(
 			'image/x-freehand',
 		),
-		'ft9'=>array(
+		'ft9' => array(
 			'image/x-freehand',
 		),
-		'ftc'=>array(
+		'ftc' => array(
 			'application/vnd.fluxtime.clip',
 		),
-		'fti'=>array(
+		'fti' => array(
 			'application/vnd.anser-web-funds-transfer-initiation',
 		),
-		'fts'=>array(
+		'fts' => array(
 			'application/fits',
 		),
-		'fv'=>array(
+		'fv' => array(
 			'text/plain',
 		),
-		'fvt'=>array(
+		'fvt' => array(
 			'video/vnd.fvt',
 		),
-		'fxm'=>array(
+		'fxm' => array(
 			'video/x-flv',
 			'video/x-javafx',
 		),
-		'fxp'=>array(
+		'fxp' => array(
 			'application/vnd.adobe.fxp',
 		),
-		'fxpl'=>array(
+		'fxpl' => array(
 			'application/vnd.adobe.fxp',
 		),
-		'fzs'=>array(
+		'fzs' => array(
 			'application/vnd.fuzzysheet',
 		),
-		'g2w'=>array(
+		'g2w' => array(
 			'application/vnd.geoplan',
 		),
-		'g3'=>array(
+		'g3' => array(
 			'image/fax-g3',
 			'image/g3fax',
 		),
-		'g3w'=>array(
+		'g3w' => array(
 			'application/vnd.geospace',
 		),
-		'gac'=>array(
+		'gac' => array(
 			'application/vnd.groove-account',
 		),
-		'gam'=>array(
+		'gam' => array(
 			'application/x-tads',
 		),
-		'gb'=>array(
+		'gb' => array(
 			'application/x-gameboy-rom',
 		),
-		'gba'=>array(
+		'gba' => array(
 			'application/x-gba-rom',
 		),
-		'gbc'=>array(
+		'gbc' => array(
 			'application/x-gameboy-color-rom',
 		),
-		'gbr'=>array(
+		'gbr' => array(
 			'application/rpki-ghostbusters',
 		),
-		'gca'=>array(
+		'gca' => array(
 			'application/x-gca-compressed',
 		),
-		'gcode'=>array(
+		'gcode' => array(
 			'text/plain',
 			'text/x.gcode',
 		),
-		'gcrd'=>array(
+		'gcrd' => array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
-		'gdl'=>array(
+		'gdl' => array(
 			'model/vnd.gdl',
 		),
-		'ged'=>array(
+		'ged' => array(
 			'application/x-gedcom',
 			'text/gedcom',
 		),
-		'gedcom'=>array(
+		'gedcom' => array(
 			'application/x-gedcom',
 			'text/gedcom',
 		),
-		'gem'=>array(
+		'gem' => array(
 			'application/x-gtar',
 			'application/x-tar',
 		),
-		'gen'=>array(
+		'gen' => array(
 			'application/x-genesis-rom',
 		),
-		'generally'=>array(
+		'generally' => array(
 			'text/vnd.fmi.flexstor',
 		),
-		'geo'=>array(
+		'geo' => array(
 			'application/vnd.dynageo',
 		),
-		'geojson'=>array(
+		'geojson' => array(
 			'application/geo+json',
 			'application/json',
 			'application/vnd.geo+json',
 		),
-		'gex'=>array(
+		'gex' => array(
 			'application/vnd.geometry-explorer',
 		),
-		'gf'=>array(
+		'gf' => array(
 			'application/x-tex-gf',
 		),
-		'gg'=>array(
+		'gg' => array(
 			'application/x-gamegear-rom',
 		),
-		'ggb'=>array(
+		'ggb' => array(
 			'application/vnd.geogebra.file',
 		),
-		'ggt'=>array(
+		'ggt' => array(
 			'application/vnd.geogebra.tool',
 		),
-		'ghf'=>array(
+		'ghf' => array(
 			'application/vnd.groove-help',
 		),
-		'gif'=>array(
+		'gif' => array(
 			'image/gif',
 		),
-		'gim'=>array(
+		'gim' => array(
 			'application/vnd.groove-identity-message',
 		),
-		'glade'=>array(
+		'glade' => array(
 			'application/x-glade',
 			'application/xml',
 		),
-		'gltf'=>array(
+		'gltf' => array(
 			'model/gltf+json',
 		),
-		'gml'=>array(
+		'gml' => array(
 			'application/gml+xml',
 			'application/xml',
 		),
-		'gmo'=>array(
+		'gmo' => array(
 			'application/x-gettext-translation',
 		),
-		'gmx'=>array(
+		'gmx' => array(
 			'application/vnd.gmx',
 		),
-		'gnc'=>array(
+		'gnc' => array(
 			'application/x-gnucash',
 		),
-		'gnd'=>array(
+		'gnd' => array(
 			'application/gnunet-directory',
 		),
-		'gnucash'=>array(
+		'gnucash' => array(
 			'application/x-gnucash',
 		),
-		'gnumeric'=>array(
+		'gnumeric' => array(
 			'application/x-gnumeric',
 			'application/x-gnumeric-spreadsheet',
 		),
-		'gnuplot'=>array(
+		'gnuplot' => array(
 			'application/x-gnuplot',
 			'text/plain',
 		),
-		'go'=>array(
+		'go' => array(
 			'text/plain',
 			'text/x-go',
 		),
-		'gp'=>array(
+		'gp' => array(
 			'application/x-gnuplot',
 			'text/plain',
 		),
-		'gpg'=>array(
+		'gpg' => array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
 			'text/plain',
 		),
-		'gph'=>array(
+		'gph' => array(
 			'application/vnd.flographit',
 		),
-		'gplt'=>array(
+		'gplt' => array(
 			'application/x-gnuplot',
 			'text/plain',
 		),
-		'gpx'=>array(
+		'gpx' => array(
 			'application/gpx',
 			'application/gpx+xml',
 			'application/x-gpx',
 			'application/x-gpx+xml',
 			'application/xml',
 		),
-		'gqf'=>array(
+		'gqf' => array(
 			'application/vnd.grafeq',
 		),
-		'gqs'=>array(
+		'gqs' => array(
 			'application/vnd.grafeq',
 		),
-		'gra'=>array(
+		'gra' => array(
 			'application/x-graphite',
 		),
-		'gram'=>array(
+		'gram' => array(
 			'application/srgs',
 		),
-		'gramps'=>array(
+		'gramps' => array(
 			'application/x-gramps-xml',
 		),
-		'grb'=>array(
+		'grb' => array(
 			'application/x-grib',
 		),
-		'grb1'=>array(
+		'grb1' => array(
 			'application/x-grib',
 		),
-		'grb2'=>array(
+		'grb2' => array(
 			'application/x-grib',
 		),
-		'gre'=>array(
+		'gre' => array(
 			'application/vnd.geometry-explorer',
 		),
-		'grm'=>array(
+		'grm' => array(
 			'text/plain',
 		),
-		'groovy'=>array(
+		'groovy' => array(
 			'text/plain',
 			'text/x-groovy',
 		),
-		'grv'=>array(
+		'grv' => array(
 			'application/vnd.groove-injector',
 		),
-		'grxml'=>array(
+		'grxml' => array(
 			'application/srgs+xml',
 		),
-		'gs'=>array(
+		'gs' => array(
 			'text/plain',
 			'text/x-genie',
 		),
-		'gsf'=>array(
+		'gsf' => array(
 			'application/postscript',
 			'application/x-font-ghostscript',
 			'application/x-font-type1',
 		),
-		'gsm'=>array(
+		'gsm' => array(
 			'audio/x-gsm',
 		),
-		'gtar'=>array(
+		'gtar' => array(
 			'application/x-gtar',
 			'application/x-tar',
 		),
-		'gtm'=>array(
+		'gtm' => array(
 			'application/vnd.groove-tool-message',
 		),
-		'gtw'=>array(
+		'gtw' => array(
 			'model/vnd.gtw',
 		),
-		'gv'=>array(
+		'gv' => array(
 			'text/vnd.graphviz',
 		),
-		'gvp'=>array(
+		'gvp' => array(
 			'text/google-video-pointer',
 			'text/x-google-video-pointer',
 		),
-		'gxf'=>array(
+		'gxf' => array(
 			'application/gxf',
 		),
-		'gxt'=>array(
+		'gxt' => array(
 			'application/vnd.geonext',
 		),
-		'gz'=>array(
+		'gz' => array(
 			'application/gzip',
 			'application/gzip-compressed',
 			'application/gzipped',
@@ -2046,181 +2046,181 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-gzip-compressed',
 			'gzip/document',
 		),
-		'h'=>array(
+		'h' => array(
 			'text/x-c',
 		),
-		'h261'=>array(
+		'h261' => array(
 			'video/h261',
 		),
-		'h263'=>array(
+		'h263' => array(
 			'video/h263',
 		),
-		'h264'=>array(
+		'h264' => array(
 			'video/h264',
 		),
-		'h4'=>array(
+		'h4' => array(
 			'application/x-hdf',
 		),
-		'h5'=>array(
+		'h5' => array(
 			'application/x-hdf',
 		),
-		'hal'=>array(
+		'hal' => array(
 			'application/vnd.hal+xml',
 		),
-		'haml'=>array(
+		'haml' => array(
 			'text/plain',
 			'text/x-haml',
 		),
-		'hbci'=>array(
+		'hbci' => array(
 			'application/vnd.hbci',
 		),
-		'hdf'=>array(
+		'hdf' => array(
 			'application/x-hdf',
 		),
-		'hdf4'=>array(
+		'hdf4' => array(
 			'application/x-hdf',
 		),
-		'hdf5'=>array(
+		'hdf5' => array(
 			'application/x-hdf',
 		),
-		'hdr'=>array(
+		'hdr' => array(
 			'image/vnd.radiance',
 		),
-		'hdt'=>array(
+		'hdt' => array(
 			'application/vnd.hdt',
 		),
-		'he5'=>array(
+		'he5' => array(
 			'application/x-hdf',
 		),
-		'heldxml'=>array(
+		'heldxml' => array(
 			'application/held+xml',
 		),
-		'hfa'=>array(
+		'hfa' => array(
 			'application/x-erdas-hfa',
 		),
-		'hfe'=>array(
+		'hfe' => array(
 			'application/x-hfe-floppy-image',
 		),
-		'hh'=>array(
+		'hh' => array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++hdr',
 			'text/x-chdr',
 		),
-		'hlp'=>array(
+		'hlp' => array(
 			'application/winhlp',
 			'zz-application/zz-winassoc-hlp',
 		),
-		'hp'=>array(
+		'hp' => array(
 			'text/plain',
 			'text/x-c++hdr',
 			'text/x-chdr',
 		),
-		'hpgl'=>array(
+		'hpgl' => array(
 			'application/vnd.hp-hpgl',
 		),
-		'hpi'=>array(
+		'hpi' => array(
 			'application/vnd.hp-hpid',
 		),
-		'hpid'=>array(
+		'hpid' => array(
 			'application/vnd.hp-hpid',
 		),
-		'hpp'=>array(
+		'hpp' => array(
 			'text/plain',
 			'text/x-c++hdr',
 			'text/x-chdr',
 		),
-		'hps'=>array(
+		'hps' => array(
 			'application/vnd.hp-hps',
 		),
-		'hpub'=>array(
+		'hpub' => array(
 			'application/prs.hpub+zip',
 		),
-		'hqx'=>array(
+		'hqx' => array(
 			'application/binhex',
 			'application/mac-binhex',
 			'application/mac-binhex40',
 		),
-		'hs'=>array(
+		'hs' => array(
 			'text/plain',
 			'text/x-haskell',
 		),
-		'htaccess'=>array(
+		'htaccess' => array(
 			'text/plain',
 		),
-		'htc'=>array(
+		'htc' => array(
 			'text/x-component',
 		),
-		'htke'=>array(
+		'htke' => array(
 			'application/vnd.kenameaapp',
 		),
-		'htm'=>array(
+		'htm' => array(
 			'text/html',
 			'text/plain',
 		),
-		'html'=>array(
+		'html' => array(
 			'text/html',
 			'text/plain',
 		),
-		'hvd'=>array(
+		'hvd' => array(
 			'application/vnd.yamaha.hv-dic',
 		),
-		'hvp'=>array(
+		'hvp' => array(
 			'application/vnd.yamaha.hv-voice',
 		),
-		'hvs'=>array(
+		'hvs' => array(
 			'application/vnd.yamaha.hv-script',
 		),
-		'hwp'=>array(
+		'hwp' => array(
 			'application/vnd.haansoft-hwp',
 			'application/x-hwp',
 		),
-		'hwt'=>array(
+		'hwt' => array(
 			'application/vnd.haansoft-hwt',
 			'application/x-hwt',
 		),
-		'hx'=>array(
+		'hx' => array(
 			'text/plain',
 			'text/x-haxe',
 		),
-		'hxx'=>array(
+		'hxx' => array(
 			'text/plain',
 			'text/x-c++hdr',
 			'text/x-chdr',
 		),
-		'i2g'=>array(
+		'i2g' => array(
 			'application/vnd.intergeo',
 		),
-		'i3'=>array(
+		'i3' => array(
 			'text/plain',
 			'text/x-modula',
 		),
-		'ibooks'=>array(
+		'ibooks' => array(
 			'application/epub+zip',
 			'application/x-ibooks+zip',
 		),
-		'ica'=>array(
+		'ica' => array(
 			'application/x-ica',
 			'text/plain',
 		),
-		'icb'=>array(
+		'icb' => array(
 			'image/x-icb',
 			'image/x-tga',
 		),
-		'icc'=>array(
+		'icc' => array(
 			'application/vnd.iccprofile',
 		),
-		'ice'=>array(
+		'ice' => array(
 			'x-conference/x-cooltalk',
 		),
-		'icm'=>array(
+		'icm' => array(
 			'application/vnd.iccprofile',
 		),
-		'icns'=>array(
+		'icns' => array(
 			'image/icns',
 			'image/x-icns',
 		),
-		'ico'=>array(
+		'ico' => array(
 			'application/ico',
 			'image/ico',
 			'image/icon',
@@ -2229,151 +2229,154 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-icon',
 			'text/ico',
 		),
-		'ics'=>array(
+		'ics' => array(
 			'application/ics',
 			'text/calendar',
 			'text/plain',
 			'text/x-vcalendar',
 		),
-		'idl'=>array(
+		'idl' => array(
 			'text/plain',
 			'text/x-idl',
 		),
-		'ief'=>array(
+		'ief' => array(
 			'image/ief',
 		),
-		'ifb'=>array(
+		'ifb' => array(
 			'text/calendar',
 			'text/plain',
 		),
-		'iff'=>array(
+		'iff' => array(
 			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
-		'ifm'=>array(
+		'ifm' => array(
 			'application/vnd.shana.informed.formdata',
 		),
-		'ig'=>array(
+		'ig' => array(
 			'text/plain',
 			'text/x-modula',
 		),
-		'iges'=>array(
+		'iges' => array(
 			'model/iges',
 			'text/plain',
 		),
-		'igl'=>array(
+		'igl' => array(
 			'application/vnd.igloader',
 		),
-		'igm'=>array(
+		'igm' => array(
 			'application/vnd.insors.igm',
 		),
-		'ign'=>array(
+		'ign' => array(
 			'application/vnd.coreos.ignition+json',
 		),
-		'ignition'=>array(
+		'ignition' => array(
 			'application/vnd.coreos.ignition+json',
 		),
-		'igs'=>array(
+		'igs' => array(
 			'model/iges',
 			'text/plain',
 		),
-		'igx'=>array(
+		'igx' => array(
 			'application/vnd.micrografx.igx',
 		),
-		'ihtml'=>array(
+		'ihtml' => array(
 			'text/plain',
 		),
-		'iif'=>array(
+		'iif' => array(
 			'application/vnd.shana.informed.interchange',
 		),
-		'iiq'=>array(
+		'iiq' => array(
 			'image/x-raw-phaseone',
 		),
-		'ilbm'=>array(
+		'ilbm' => array(
 			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
-		'ime'=>array(
+		'ime' => array(
 			'audio/imelody',
 			'audio/x-imelody',
 			'text/x-imelody',
 		),
-		'img'=>array(
+		'img' => array(
 			'application/octet-stream',
 			'application/x-raw-disk-image',
 		),
-		'imgcal'=>array(
+		'imgcal' => array(
 			'application/vnd.3lightssoftware.imagescal',
 		),
-		'imp'=>array(
+		'imi' => array(
+			'application/vnd.imagemeter.image+zip',
+		),
+		'imp' => array(
 			'application/vnd.accpac.simply.imp',
 		),
-		'ims'=>array(
+		'ims' => array(
 			'application/vnd.ms-ims',
 		),
-		'imy'=>array(
+		'imy' => array(
 			'audio/imelody',
 			'audio/x-imelody',
 			'text/x-imelody',
 		),
-		'in'=>array(
+		'in' => array(
 			'text/plain',
 		),
-		'indd'=>array(
+		'indd' => array(
 			'application/x-adobe-indesign',
 		),
-		'ini'=>array(
+		'ini' => array(
 			'text/plain',
 			'text/x-ini',
 		),
-		'ink'=>array(
+		'ink' => array(
 			'application/inkml+xml',
 		),
-		'inkml'=>array(
+		'inkml' => array(
 			'application/inkml+xml',
 		),
-		'ins'=>array(
+		'ins' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'install'=>array(
+		'install' => array(
 			'application/x-install-instructions',
 		),
-		'inx'=>array(
+		'inx' => array(
 			'application/x-adobe-indesign-interchange',
 			'application/xml',
 		),
-		'iota'=>array(
+		'iota' => array(
 			'application/vnd.astraea-software.iota',
 		),
-		'ipa'=>array(
+		'ipa' => array(
 			'application/x-itunes-ipa',
 			'application/zip',
 		),
-		'ipfix'=>array(
+		'ipfix' => array(
 			'application/ipfix',
 		),
-		'ipk'=>array(
+		'ipk' => array(
 			'application/vnd.shana.informed.package',
 		),
-		'iptables'=>array(
+		'iptables' => array(
 			'text/plain',
 			'text/x-iptables',
 		),
-		'ipynb'=>array(
+		'ipynb' => array(
 			'application/json',
 			'application/x-ipynb+json',
 		),
-		'irm'=>array(
+		'irm' => array(
 			'application/vnd.ibm.rights-management',
 		),
-		'irp'=>array(
+		'irp' => array(
 			'application/vnd.irepository.package+xml',
 		),
-		'iso'=>array(
+		'iso' => array(
 			'application/octet-stream',
 			'application/x-cd-image',
 			'application/x-gamecube-iso-image',
@@ -2387,114 +2390,114 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-wii-iso-image',
 			'application/x-wii-rom',
 		),
-		'iso19139'=>array(
+		'iso19139' => array(
 			'application/xml',
 			'text/iso19139+xml',
 		),
-		'iso9660'=>array(
+		'iso9660' => array(
 			'application/x-cd-image',
 			'application/x-iso9660-image',
 			'application/x-raw-disk-image',
 		),
-		'it'=>array(
+		'it' => array(
 			'audio/x-it',
 		),
-		'it87'=>array(
+		'it87' => array(
 			'application/x-it87',
 			'text/plain',
 		),
-		'itk'=>array(
+		'itk' => array(
 			'application/x-tcl',
 			'text/plain',
 			'text/x-tcl',
 		),
-		'itp'=>array(
+		'itp' => array(
 			'application/vnd.shana.informed.formtemplate',
 		),
-		'ivp'=>array(
+		'ivp' => array(
 			'application/vnd.immervision-ivp',
 		),
-		'ivu'=>array(
+		'ivu' => array(
 			'application/vnd.immervision-ivu',
 		),
-		'j2c'=>array(
+		'j2c' => array(
 			'image/x-jp2-codestream',
 		),
-		'jad'=>array(
+		'jad' => array(
 			'text/vnd.sun.j2me.app-descriptor',
 		),
-		'jam'=>array(
+		'jam' => array(
 			'application/vnd.jam',
 		),
-		'jar'=>array(
+		'jar' => array(
 			'application/java-archive',
 			'application/x-jar',
 			'application/x-java-archive',
 			'application/zip',
 		),
-		'jardiff'=>array(
+		'jardiff' => array(
 			'application/x-java-archive-diff',
 		),
-		'java'=>array(
+		'java' => array(
 			'text/plain',
 			'text/x-csrc',
 			'text/x-java',
 			'text/x-java-source',
 		),
-		'jb2'=>array(
+		'jb2' => array(
 			'image/x-jb2',
 			'image/x-jbig2',
 		),
-		'jbig2'=>array(
+		'jbig2' => array(
 			'image/x-jb2',
 			'image/x-jbig2',
 		),
-		'jceks'=>array(
+		'jceks' => array(
 			'application/x-java-jce-keystore',
 		),
-		'jfi'=>array(
+		'jfi' => array(
 			'image/jpeg',
 		),
-		'jfif'=>array(
+		'jfif' => array(
 			'image/jpeg',
 		),
-		'jif'=>array(
+		'jif' => array(
 			'image/jpeg',
 		),
-		'jisp'=>array(
+		'jisp' => array(
 			'application/vnd.jisp',
 		),
-		'jks'=>array(
+		'jks' => array(
 			'application/x-java-keystore',
 		),
-		'jl'=>array(
+		'jl' => array(
 			'text/plain',
 			'text/x-common-lisp',
 		),
-		'jls'=>array(
+		'jls' => array(
 			'image/jls',
 		),
-		'jlt'=>array(
+		'jlt' => array(
 			'application/vnd.hp-jlyt',
 		),
-		'jmx'=>array(
+		'jmx' => array(
 			'text/plain',
 		),
-		'jng'=>array(
+		'jng' => array(
 			'image/x-jng',
 			'video/x-jng',
 		),
-		'jnilib'=>array(
+		'jnilib' => array(
 			'application/x-java-jnilib',
 		),
-		'jnlp'=>array(
+		'jnlp' => array(
 			'application/x-java-jnlp-file',
 			'application/xml',
 		),
-		'joda'=>array(
+		'joda' => array(
 			'application/vnd.joost.joda-archive',
 		),
-		'jp2'=>array(
+		'jp2' => array(
 			'image/jp2',
 			'image/jpeg2000',
 			'image/jpeg2000-image',
@@ -2502,15 +2505,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-jp2-container',
 			'image/x-jpeg2000-image',
 		),
-		'jpe'=>array(
+		'jpe' => array(
 			'image/jpeg',
 			'image/pjpeg',
 		),
-		'jpeg'=>array(
+		'jpeg' => array(
 			'image/jpeg',
 			'image/pjpeg',
 		),
-		'jpf'=>array(
+		'jpf' => array(
 			'image/jp2',
 			'image/jpeg2000',
 			'image/jpeg2000-image',
@@ -2518,27 +2521,27 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-jp2-container',
 			'image/x-jpeg2000-image',
 		),
-		'jpg'=>array(
+		'jpg' => array(
 			'image/jpeg',
 			'image/pjpeg',
 		),
-		'jpgm'=>array(
+		'jpgm' => array(
 			'image/jpm',
 			'image/x-jp2-container',
 			'video/jpm',
 		),
-		'jpgv'=>array(
+		'jpgv' => array(
 			'video/jpeg',
 		),
-		'jpm'=>array(
+		'jpm' => array(
 			'image/jpm',
 			'image/x-jp2-container',
 			'video/jpm',
 		),
-		'jpr'=>array(
+		'jpr' => array(
 			'application/x-jbuilder-project',
 		),
-		'jpx'=>array(
+		'jpx' => array(
 			'application/x-jbuilder-project',
 			'image/jp2',
 			'image/jpeg2000',
@@ -2546,24 +2549,24 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/jpx',
 			'image/x-jpeg2000-image',
 		),
-		'jrd'=>array(
+		'jrd' => array(
 			'application/jrd+json',
 			'application/json',
 		),
-		'js'=>array(
+		'js' => array(
 			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
 			'text/plain',
 		),
-		'jsm'=>array(
+		'jsm' => array(
 			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
 		),
-		'json'=>array(
+		'json' => array(
 			'application/dicom+json',
 			'application/geo+json',
 			'application/javascript',
@@ -2575,55 +2578,55 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.tableschema+json',
 			'application/vnd.vel+json',
 		),
-		'json-patch'=>array(
+		'json-patch' => array(
 			'application/json',
 			'application/json-patch+json',
 		),
-		'jsonld'=>array(
+		'jsonld' => array(
 			'application/json',
 			'application/ld+json',
 		),
-		'jsonml'=>array(
+		'jsonml' => array(
 			'application/jsonml+json',
 		),
-		'jsp'=>array(
+		'jsp' => array(
 			'application/x-httpd-jsp',
 			'text/plain',
 			'text/x-jsp',
 		),
-		'junit'=>array(
+		'junit' => array(
 			'text/plain',
 		),
-		'jx'=>array(
+		'jx' => array(
 			'text/plain',
 		),
-		'k25'=>array(
+		'k25' => array(
 			'image/x-dcraw',
 			'image/x-kodak-k25',
 			'image/x-raw-kodak',
 		),
-		'k7'=>array(
+		'k7' => array(
 			'application/x-thomson-cassette',
 		),
-		'kar'=>array(
+		'kar' => array(
 			'audio/midi',
 			'audio/x-midi',
 		),
-		'karbon'=>array(
+		'karbon' => array(
 			'application/vnd.kde.karbon',
 			'application/x-karbon',
 		),
-		'kdc'=>array(
+		'kdc' => array(
 			'image/x-dcraw',
 			'image/x-kodak-kdc',
 			'image/x-raw-kodak',
 		),
-		'kdelnk'=>array(
+		'kdelnk' => array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
 			'text/plain',
 		),
-		'kexi'=>array(
+		'kexi' => array(
 			'application/x-kexiproject-sqlite',
 			'application/x-kexiproject-sqlite2',
 			'application/x-kexiproject-sqlite3',
@@ -2631,292 +2634,292 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-sqlite3',
 			'application/x-vnd.kde.kexi',
 		),
-		'kexic'=>array(
+		'kexic' => array(
 			'application/x-kexi-connectiondata',
 		),
-		'kexis'=>array(
+		'kexis' => array(
 			'application/x-kexiproject-shortcut',
 		),
-		'key'=>array(
+		'key' => array(
 			'application/vnd.apple.iwork',
 			'application/vnd.apple.keynote',
 			'application/x-iwork-keynote-sffkey',
 			'application/zip',
 		),
-		'kfo'=>array(
+		'kfo' => array(
 			'application/vnd.kde.kformula',
 			'application/x-kformula',
 		),
-		'kia'=>array(
+		'kia' => array(
 			'application/vnd.kidspiration',
 		),
-		'kil'=>array(
+		'kil' => array(
 			'application/x-killustrator',
 		),
-		'kino'=>array(
+		'kino' => array(
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
 		),
-		'kml'=>array(
+		'kml' => array(
 			'application/vnd.google-earth.kml+xml',
 			'application/xml',
 		),
-		'kmz'=>array(
+		'kmz' => array(
 			'application/vnd.google-earth.kmz',
 			'application/zip',
 		),
-		'kne'=>array(
+		'kne' => array(
 			'application/vnd.kinar',
 		),
-		'knp'=>array(
+		'knp' => array(
 			'application/vnd.kinar',
 		),
-		'kon'=>array(
+		'kon' => array(
 			'application/vnd.kde.kontour',
 			'application/x-kontour',
 		),
-		'kpm'=>array(
+		'kpm' => array(
 			'application/x-kpovmodeler',
 		),
-		'kpr'=>array(
+		'kpr' => array(
 			'application/vnd.kde.kpresenter',
 			'application/x-kpresenter',
 		),
-		'kpt'=>array(
+		'kpt' => array(
 			'application/vnd.kde.kpresenter',
 			'application/x-kpresenter',
 		),
-		'kpxx'=>array(
+		'kpxx' => array(
 			'application/vnd.ds-keypoint',
 		),
-		'kra'=>array(
+		'kra' => array(
 			'application/x-krita',
 		),
-		'ks'=>array(
+		'ks' => array(
 			'application/x-java-keystore',
 		),
-		'ksp'=>array(
+		'ksp' => array(
 			'application/vnd.kde.kspread',
 			'application/x-kspread',
 		),
-		'ktr'=>array(
+		'ktr' => array(
 			'application/vnd.kahootz',
 		),
-		'ktx'=>array(
+		'ktx' => array(
 			'image/ktx',
 		),
-		'ktz'=>array(
+		'ktz' => array(
 			'application/vnd.kahootz',
 		),
-		'kud'=>array(
+		'kud' => array(
 			'application/x-kugar',
 		),
-		'kwd'=>array(
+		'kwd' => array(
 			'application/vnd.kde.kword',
 			'application/x-kword',
 		),
-		'kwt'=>array(
+		'kwt' => array(
 			'application/vnd.kde.kword',
 			'application/x-kword',
 		),
-		'la'=>array(
+		'la' => array(
 			'application/x-shared-library-la',
 			'text/plain',
 		),
-		'lasjson'=>array(
+		'lasjson' => array(
 			'application/vnd.las.las+json',
 		),
-		'lasxml'=>array(
+		'lasxml' => array(
 			'application/vnd.las.las+xml',
 		),
-		'latex'=>array(
+		'latex' => array(
 			'application/x-latex',
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'lbd'=>array(
+		'lbd' => array(
 			'application/vnd.llamagraphics.life-balance.desktop',
 		),
-		'lbe'=>array(
+		'lbe' => array(
 			'application/vnd.llamagraphics.life-balance.exchange+xml',
 		),
-		'lbm'=>array(
+		'lbm' => array(
 			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
 		),
-		'ldif'=>array(
+		'ldif' => array(
 			'text/plain',
 			'text/x-ldif',
 		),
-		'les'=>array(
+		'les' => array(
 			'application/vnd.hhe.lesson-player',
 		),
-		'less'=>array(
+		'less' => array(
 			'text/plain',
 			'text/x-less',
 		),
-		'lgr'=>array(
+		'lgr' => array(
 			'application/lgr+xml',
 		),
-		'lha'=>array(
+		'lha' => array(
 			'application/octet-stream',
 			'application/x-lha',
 			'application/x-lzh-compressed',
 		),
-		'lhs'=>array(
+		'lhs' => array(
 			'text/plain',
 			'text/x-haskell',
 			'text/x-literate-haskell',
 		),
-		'lhz'=>array(
+		'lhz' => array(
 			'application/x-lhz',
 		),
-		'link66'=>array(
+		'link66' => array(
 			'application/vnd.route66.link66+xml',
 		),
-		'lisp'=>array(
+		'lisp' => array(
 			'text/plain',
 			'text/x-common-lisp',
 		),
-		'list'=>array(
+		'list' => array(
 			'text/plain',
 		),
-		'list3820'=>array(
+		'list3820' => array(
 			'application/vnd.ibm.modcap',
 		),
-		'listafp'=>array(
+		'listafp' => array(
 			'application/vnd.ibm.modcap',
 		),
-		'lnk'=>array(
+		'lnk' => array(
 			'application/x-ms-shortcut',
 		),
-		'log'=>array(
+		'log' => array(
 			'text/plain',
 			'text/x-log',
 		),
-		'lostsyncxml'=>array(
+		'lostsyncxml' => array(
 			'application/lostsync+xml',
 		),
-		'lostxml'=>array(
+		'lostxml' => array(
 			'application/lost+xml',
 		),
-		'lrf'=>array(
+		'lrf' => array(
 			'application/octet-stream',
 		),
-		'lrm'=>array(
+		'lrm' => array(
 			'application/vnd.ms-lrm',
 		),
-		'lrv'=>array(
+		'lrv' => array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/x-m4v',
 		),
-		'lrz'=>array(
+		'lrz' => array(
 			'application/x-lrzip',
 		),
-		'lsp'=>array(
+		'lsp' => array(
 			'text/plain',
 			'text/x-common-lisp',
 		),
-		'ltf'=>array(
+		'ltf' => array(
 			'application/vnd.frogans.ltf',
 		),
-		'ltx'=>array(
+		'ltx' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'lua'=>array(
+		'lua' => array(
 			'application/x-executable',
 			'text/plain',
 			'text/x-lua',
 		),
-		'lvp'=>array(
+		'lvp' => array(
 			'audio/vnd.lucent.voice',
 		),
-		'lwo'=>array(
+		'lwo' => array(
 			'image/x-lwo',
 		),
-		'lwob'=>array(
+		'lwob' => array(
 			'image/x-lwo',
 		),
-		'lwp'=>array(
+		'lwp' => array(
 			'application/vnd.lotus-wordpro',
 		),
-		'lws'=>array(
+		'lws' => array(
 			'image/x-lws',
 		),
-		'ly'=>array(
+		'ly' => array(
 			'text/plain',
 			'text/x-lilypond',
 		),
-		'lyx'=>array(
+		'lyx' => array(
 			'application/x-lyx',
 			'text/plain',
 			'text/x-lyx',
 		),
-		'lz'=>array(
+		'lz' => array(
 			'application/x-lzip',
 		),
-		'lz4'=>array(
+		'lz4' => array(
 			'application/x-lz4',
 		),
-		'lzh'=>array(
+		'lzh' => array(
 			'application/octet-stream',
 			'application/x-lha',
 			'application/x-lzh-compressed',
 		),
-		'lzma'=>array(
+		'lzma' => array(
 			'application/x-lzma',
 		),
-		'lzo'=>array(
+		'lzo' => array(
 			'application/x-lzop',
 		),
-		'm13'=>array(
+		'm13' => array(
 			'application/x-msmediaview',
 		),
-		'm14'=>array(
+		'm14' => array(
 			'application/x-msmediaview',
 		),
-		'm15'=>array(
+		'm15' => array(
 			'audio/x-mod',
 		),
-		'm1u'=>array(
+		'm1u' => array(
 			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
-		'm1v'=>array(
+		'm1v' => array(
 			'video/mpeg',
 		),
-		'm21'=>array(
+		'm21' => array(
 			'application/mp21',
 		),
-		'm2a'=>array(
+		'm2a' => array(
 			'audio/mpeg',
 			'audio/x-mpeg',
 		),
-		'm2t'=>array(
+		'm2t' => array(
 			'video/mp2t',
 		),
-		'm2ts'=>array(
+		'm2ts' => array(
 			'video/mp2t',
 		),
-		'm2v'=>array(
+		'm2v' => array(
 			'video/mpeg',
 		),
-		'm3'=>array(
+		'm3' => array(
 			'text/plain',
 			'text/x-modula',
 		),
-		'm3a'=>array(
+		'm3a' => array(
 			'audio/mpeg',
 			'audio/x-mpeg',
 		),
-		'm3u'=>array(
+		'm3u' => array(
 			'application/m3u',
 			'application/vnd.apple.mpegurl',
 			'audio/m3u',
@@ -2926,7 +2929,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-mpegurl',
 			'text/plain',
 		),
-		'm3u8'=>array(
+		'm3u8' => array(
 			'application/m3u',
 			'application/vnd.apple.mpegurl',
 			'audio/m3u',
@@ -2936,65 +2939,65 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-mpegurl',
 			'text/plain',
 		),
-		'm4'=>array(
+		'm4' => array(
 			'application/x-m4',
 			'text/plain',
 		),
-		'm4a'=>array(
+		'm4a' => array(
 			'application/quicktime',
 			'audio/m4a',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-mp4a',
 		),
-		'm4b'=>array(
+		'm4b' => array(
 			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-m4b',
 			'audio/x-mp4a',
 		),
-		'm4s'=>array(
+		'm4s' => array(
 			'video/iso.segment',
 		),
-		'm4u'=>array(
+		'm4u' => array(
 			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
-		'm4v'=>array(
+		'm4v' => array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/x-m4v',
 		),
-		'm7'=>array(
+		'm7' => array(
 			'application/x-thomson-cartridge-memo7',
 		),
-		'ma'=>array(
+		'ma' => array(
 			'application/mathematica',
 		),
-		'mab'=>array(
+		'mab' => array(
 			'application/x-markaby',
 			'application/x-ruby',
 		),
-		'mads'=>array(
+		'mads' => array(
 			'application/mads+xml',
 		),
-		'mag'=>array(
+		'mag' => array(
 			'application/vnd.ecowin.chart',
 		),
-		'mak'=>array(
+		'mak' => array(
 			'text/plain',
 			'text/x-makefile',
 		),
-		'makefile'=>array(
+		'makefile' => array(
 			'text/plain',
 			'text/x-makefile',
 		),
-		'maker'=>array(
+		'maker' => array(
 			'application/vnd.framemaker',
 		),
-		'man'=>array(
+		'man' => array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
@@ -3002,53 +3005,53 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 			'text/troff',
 		),
-		'manifest'=>array(
+		'manifest' => array(
 			'text/cache-manifest',
 			'text/plain',
 		),
-		'mar'=>array(
+		'mar' => array(
 			'application/octet-stream',
 		),
-		'markdown'=>array(
+		'markdown' => array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
-		'mat'=>array(
+		'mat' => array(
 			'application/matlab-mat',
 			'application/x-matlab-data',
 		),
-		'mathml'=>array(
+		'mathml' => array(
 			'application/mathml+xml',
 		),
-		'mb'=>array(
+		'mb' => array(
 			'application/mathematica',
 		),
-		'mbk'=>array(
+		'mbk' => array(
 			'application/vnd.mobius.mbk',
 		),
-		'mbox'=>array(
+		'mbox' => array(
 			'application/mbox',
 			'text/plain',
 		),
-		'mc1'=>array(
+		'mc1' => array(
 			'application/vnd.medcalcdata',
 		),
-		'mcd'=>array(
+		'mcd' => array(
 			'application/vnd.mcd',
 			'application/vnd.vectorworks',
 		),
-		'mcurl'=>array(
+		'mcurl' => array(
 			'text/vnd.curl.mcurl',
 		),
-		'md'=>array(
+		'md' => array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
-		'mdb'=>array(
+		'mdb' => array(
 			'application/mdb',
 			'application/msaccess',
 			'application/vnd.ms-access',
@@ -3057,17 +3060,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-msaccess',
 			'zz-application/zz-winassoc-mdb',
 		),
-		'mdi'=>array(
+		'mdi' => array(
 			'image/vnd.ms-modi',
 		),
-		'mdtext'=>array(
+		'mdtext' => array(
 			'text/plain',
 			'text/x-web-markdown',
 		),
-		'mdx'=>array(
+		'mdx' => array(
 			'application/x-genesis-32x-rom',
 		),
-		'me'=>array(
+		'me' => array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
@@ -3076,227 +3079,227 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/troff',
 			'text/x-troff-me',
 		),
-		'med'=>array(
+		'med' => array(
 			'audio/x-mod',
 		),
-		'mef'=>array(
+		'mef' => array(
 			'image/x-raw-mamiya',
 		),
-		'mesh'=>array(
+		'mesh' => array(
 			'model/mesh',
 		),
-		'meta'=>array(
+		'meta' => array(
 			'text/plain',
 		),
-		'meta4'=>array(
+		'meta4' => array(
 			'application/metalink4+xml',
 			'application/xml',
 		),
-		'metalink'=>array(
+		'metalink' => array(
 			'application/metalink+xml',
 			'application/xml',
 		),
-		'mets'=>array(
+		'mets' => array(
 			'application/mets+xml',
 		),
-		'mf'=>array(
+		'mf' => array(
 			'text/plain',
 		),
-		'mfm'=>array(
+		'mfm' => array(
 			'application/vnd.mfmp',
 		),
-		'mft'=>array(
+		'mft' => array(
 			'application/rpki-manifest',
 		),
-		'mg'=>array(
+		'mg' => array(
 			'text/plain',
 			'text/x-modula',
 		),
-		'mgp'=>array(
+		'mgp' => array(
 			'application/vnd.osgeo.mapguide.package',
 			'application/x-magicpoint',
 			'text/plain',
 		),
-		'mgz'=>array(
+		'mgz' => array(
 			'application/vnd.proteus.magazine',
 		),
-		'mht'=>array(
+		'mht' => array(
 			'application/x-mimearchive',
 			'message/rfc822',
 			'multipart/related',
 		),
-		'mhtml'=>array(
+		'mhtml' => array(
 			'application/x-mimearchive',
 			'message/rfc822',
 			'multipart/related',
 		),
-		'mid'=>array(
+		'mid' => array(
 			'audio/midi',
 			'audio/sp-midi',
 			'audio/x-midi',
 		),
-		'midi'=>array(
+		'midi' => array(
 			'audio/midi',
 			'audio/x-midi',
 		),
-		'mie'=>array(
+		'mie' => array(
 			'application/x-mie',
 		),
-		'mif'=>array(
+		'mif' => array(
 			'application/vnd.mif',
 			'application/x-frame',
 			'application/x-mif',
 		),
-		'mime'=>array(
+		'mime' => array(
 			'message/rfc822',
 		),
-		'minipsf'=>array(
+		'minipsf' => array(
 			'audio/x-minipsf',
 			'audio/x-psf',
 		),
-		'mj2'=>array(
+		'mj2' => array(
 			'image/x-jp2-container',
 			'video/mj2',
 		),
-		'mjp2'=>array(
+		'mjp2' => array(
 			'image/x-jp2-container',
 			'video/mj2',
 		),
-		'mk'=>array(
+		'mk' => array(
 			'text/plain',
 			'text/x-makefile',
 		),
-		'mk3d'=>array(
+		'mk3d' => array(
 			'application/x-matroska',
 			'video/x-matroska',
 			'video/x-matroska-3d',
 		),
-		'mka'=>array(
+		'mka' => array(
 			'application/x-matroska',
 			'audio/x-matroska',
 		),
-		'mkd'=>array(
+		'mkd' => array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
 			'text/x-web-markdown',
 		),
-		'mks'=>array(
+		'mks' => array(
 			'video/x-matroska',
 		),
-		'mkv'=>array(
+		'mkv' => array(
 			'application/x-matroska',
 			'video/x-matroska',
 		),
-		'ml'=>array(
+		'ml' => array(
 			'text/plain',
 			'text/x-ml',
 			'text/x-ocaml',
 		),
-		'mli'=>array(
+		'mli' => array(
 			'text/plain',
 			'text/x-ocaml',
 		),
-		'mlp'=>array(
+		'mlp' => array(
 			'application/vnd.dolby.mlp',
 		),
-		'mm'=>array(
+		'mm' => array(
 			'text/plain',
 			'text/x-troff-mm',
 		),
-		'mmap'=>array(
+		'mmap' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmas'=>array(
+		'mmas' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmat'=>array(
+		'mmat' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmd'=>array(
+		'mmd' => array(
 			'application/vnd.chipnuts.karaoke-mmd',
 		),
-		'mmf'=>array(
+		'mmf' => array(
 			'application/vnd.smaf',
 			'application/x-smaf',
 		),
-		'mml'=>array(
+		'mml' => array(
 			'application/mathml+xml',
 			'application/xml',
 			'text/mathml',
 		),
-		'mmmp'=>array(
+		'mmmp' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmp'=>array(
+		'mmp' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmpt'=>array(
+		'mmpt' => array(
 			'application/vnd.mindjet.mindmanager',
 			'application/zip',
 		),
-		'mmr'=>array(
+		'mmr' => array(
 			'image/vnd.fujixerox.edmics-mmr',
 		),
-		'mng'=>array(
+		'mng' => array(
 			'video/x-mng',
 		),
-		'mny'=>array(
+		'mny' => array(
 			'application/x-msmoney',
 		),
-		'mo'=>array(
+		'mo' => array(
 			'application/x-gettext-translation',
 			'text/plain',
 			'text/x-modelica',
 		),
-		'mo3'=>array(
+		'mo3' => array(
 			'audio/x-mo3',
 		),
-		'mobi'=>array(
+		'mobi' => array(
 			'application/vnd.palm',
 			'application/x-mobipocket-ebook',
 		),
-		'moc'=>array(
+		'moc' => array(
 			'text/plain',
 			'text/x-moc',
 		),
-		'mod'=>array(
+		'mod' => array(
 			'application/xml-dtd',
 			'audio/x-mod',
 		),
-		'mods'=>array(
+		'mods' => array(
 			'application/mods+xml',
 		),
-		'mof'=>array(
+		'mof' => array(
 			'text/x-csrc',
 			'text/x-mof',
 		),
-		'moov'=>array(
+		'moov' => array(
 			'video/quicktime',
 		),
-		'mos'=>array(
+		'mos' => array(
 			'image/x-raw-leaf',
 		),
-		'mount'=>array(
+		'mount' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'mov'=>array(
+		'mov' => array(
 			'application/quicktime',
 			'video/quicktime',
 		),
-		'movie'=>array(
+		'movie' => array(
 			'video/x-sgi-movie',
 		),
-		'mp1'=>array(
+		'mp1' => array(
 			'audio/mpeg',
 		),
-		'mp2'=>array(
+		'mp2' => array(
 			'audio/mp2',
 			'audio/mpeg',
 			'audio/x-mp2',
@@ -3307,130 +3310,130 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-mpeg-system',
 			'video/x-mpeg2',
 		),
-		'mp21'=>array(
+		'mp21' => array(
 			'application/mp21',
 		),
-		'mp2a'=>array(
+		'mp2a' => array(
 			'audio/mpeg',
 			'audio/x-mpeg',
 		),
-		'mp3'=>array(
+		'mp3' => array(
 			'audio/mp3',
 			'audio/mpeg',
 			'audio/x-mp3',
 			'audio/x-mpeg',
 			'audio/x-mpg',
 		),
-		'mp4'=>array(
+		'mp4' => array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/quicktime',
 			'video/x-m4v',
 		),
-		'mp4a'=>array(
+		'mp4a' => array(
 			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-mp4a',
 		),
-		'mp4s'=>array(
+		'mp4s' => array(
 			'application/mp4',
 			'application/quicktime',
 		),
-		'mp4v'=>array(
+		'mp4v' => array(
 			'video/mp4',
 			'video/quicktime',
 		),
-		'mpc'=>array(
+		'mpc' => array(
 			'application/vnd.mophun.certificate',
 			'audio/x-musepack',
 		),
-		'mpe'=>array(
+		'mpe' => array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
 			'video/x-mpeg2',
 		),
-		'mpeg'=>array(
+		'mpeg' => array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
 			'video/x-mpeg2',
 		),
-		'mpf'=>array(
+		'mpf' => array(
 			'application/media-policy-dataset+xml',
 			'text/vnd.ms-mediapackage',
 		),
-		'mpg'=>array(
+		'mpg' => array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
 			'video/x-mpeg2',
 		),
-		'mpg4'=>array(
+		'mpg4' => array(
 			'video/mp4',
 			'video/quicktime',
 		),
-		'mpga'=>array(
+		'mpga' => array(
 			'audio/mp3',
 			'audio/mpeg',
 			'audio/x-mp3',
 			'audio/x-mpeg',
 			'audio/x-mpg',
 		),
-		'mpkg'=>array(
+		'mpkg' => array(
 			'application/vnd.apple.installer+xml',
 		),
-		'mpl'=>array(
+		'mpl' => array(
 			'video/mp2t',
 		),
-		'mpls'=>array(
+		'mpls' => array(
 			'video/mp2t',
 		),
-		'mpm'=>array(
+		'mpm' => array(
 			'application/vnd.blueice.multipass',
 		),
-		'mpn'=>array(
+		'mpn' => array(
 			'application/vnd.mophun.application',
 		),
-		'mpp'=>array(
+		'mpp' => array(
 			'application/vnd.ms-project',
 			'audio/x-musepack',
 		),
-		'mpt'=>array(
+		'mpt' => array(
 			'application/vnd.ms-project',
 		),
-		'mpx'=>array(
+		'mpx' => array(
 			'application/x-project',
 			'text/plain',
 		),
-		'mpy'=>array(
+		'mpy' => array(
 			'application/vnd.ibm.minipay',
 		),
-		'mqy'=>array(
+		'mqy' => array(
 			'application/vnd.mobius.mqy',
 		),
-		'mrc'=>array(
+		'mrc' => array(
 			'application/marc',
 		),
-		'mrcx'=>array(
+		'mrcx' => array(
 			'application/marcxml+xml',
 		),
-		'mrl'=>array(
+		'mrl' => array(
 			'text/x-mrml',
 		),
-		'mrml'=>array(
+		'mrml' => array(
 			'text/x-mrml',
 		),
-		'mrw'=>array(
+		'mrw' => array(
 			'image/x-dcraw',
 			'image/x-minolta-mrw',
 			'image/x-raw-minolta',
 		),
-		'ms'=>array(
+		'ms' => array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
@@ -3439,25 +3442,25 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/troff',
 			'text/x-troff-ms',
 		),
-		'mscml'=>array(
+		'mscml' => array(
 			'application/mediaservercontrol+xml',
 		),
-		'mseed'=>array(
+		'mseed' => array(
 			'application/vnd.fdsn.mseed',
 		),
-		'mseq'=>array(
+		'mseq' => array(
 			'application/vnd.mseq',
 		),
-		'msf'=>array(
+		'msf' => array(
 			'application/vnd.epson.msf',
 		),
-		'msg'=>array(
+		'msg' => array(
 			'application/vnd.ms-outlook',
 		),
-		'msh'=>array(
+		'msh' => array(
 			'model/mesh',
 		),
-		'msi'=>array(
+		'msi' => array(
 			'application/octet-stream',
 			'application/x-ms-installer',
 			'application/x-msdownload',
@@ -3465,256 +3468,256 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-ole-storage',
 			'application/x-windows-installer',
 		),
-		'msl'=>array(
+		'msl' => array(
 			'application/vnd.mobius.msl',
 		),
-		'msm'=>array(
+		'msm' => array(
 			'application/octet-stream',
 		),
-		'msod'=>array(
+		'msod' => array(
 			'image/x-msod',
 		),
-		'msp'=>array(
+		'msp' => array(
 			'application/octet-stream',
 			'application/x-ms-installer',
 			'application/x-msi',
 			'application/x-windows-installer',
 		),
-		'mst'=>array(
+		'mst' => array(
 			'application/x-ms-installer',
 			'application/x-msi',
 			'application/x-windows-installer',
 		),
-		'msty'=>array(
+		'msty' => array(
 			'application/vnd.muvee.style',
 		),
-		'msx'=>array(
+		'msx' => array(
 			'application/x-msx-rom',
 		),
-		'mtm'=>array(
+		'mtm' => array(
 			'audio/x-mod',
 		),
-		'mts'=>array(
+		'mts' => array(
 			'model/vnd.mts',
 			'video/mp2t',
 		),
-		'mup'=>array(
+		'mup' => array(
 			'text/plain',
 			'text/x-mup',
 		),
-		'mus'=>array(
+		'mus' => array(
 			'application/vnd.musician',
 		),
-		'musicxml'=>array(
+		'musicxml' => array(
 			'application/vnd.recordare.musicxml+xml',
 		),
-		'mvb'=>array(
+		'mvb' => array(
 			'application/x-msmediaview',
 		),
-		'mvt'=>array(
+		'mvt' => array(
 			'application/vnd.mapbox-vector-tile',
 		),
-		'mwf'=>array(
+		'mwf' => array(
 			'application/vnd.mfer',
 		),
-		'mxf'=>array(
+		'mxf' => array(
 			'application/mxf',
 		),
-		'mxl'=>array(
+		'mxl' => array(
 			'application/vnd.recordare.musicxml',
 		),
-		'mxmf'=>array(
+		'mxmf' => array(
 			'audio/mobile-xmf',
 			'audio/vnd.nokia.mobile-xmf',
 		),
-		'mxml'=>array(
+		'mxml' => array(
 			'application/xv+xml',
 		),
-		'mxs'=>array(
+		'mxs' => array(
 			'application/vnd.triscape.mxs',
 		),
-		'mxu'=>array(
+		'mxu' => array(
 			'text/plain',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
-		'n-gage'=>array(
+		'n-gage' => array(
 			'application/vnd.nokia.n-gage.symbian.install',
 		),
-		'n3'=>array(
+		'n3' => array(
 			'text/n3',
 			'text/plain',
 		),
-		'n64'=>array(
+		'n64' => array(
 			'application/x-n64-rom',
 		),
-		'nb'=>array(
+		'nb' => array(
 			'application/mathematica',
 			'application/x-mathematica',
 			'text/plain',
 		),
-		'nbp'=>array(
+		'nbp' => array(
 			'application/vnd.wolfram.player',
 		),
-		'nc'=>array(
+		'nc' => array(
 			'application/x-netcdf',
 		),
-		'ncx'=>array(
+		'ncx' => array(
 			'application/x-dtbncx+xml',
 		),
-		'nds'=>array(
+		'nds' => array(
 			'application/x-nintendo-ds-rom',
 		),
-		'nef'=>array(
+		'nef' => array(
 			'image/x-dcraw',
 			'image/x-nikon-nef',
 			'image/x-raw-nikon',
 		),
-		'nes'=>array(
+		'nes' => array(
 			'application/x-nes-rom',
 		),
-		'nez'=>array(
+		'nez' => array(
 			'application/x-nes-rom',
 		),
-		'nfo'=>array(
+		'nfo' => array(
 			'text/x-nfo',
 			'text/x-readme',
 		),
-		'ngdat'=>array(
+		'ngdat' => array(
 			'application/vnd.nokia.n-gage.data',
 		),
-		'ngp'=>array(
+		'ngp' => array(
 			'application/x-neo-geo-pocket-rom',
 		),
-		'nitf'=>array(
+		'nitf' => array(
 			'application/vnd.nitf',
 			'image/nitf',
 			'image/ntf',
 		),
-		'nlu'=>array(
+		'nlu' => array(
 			'application/vnd.neurolanguage.nlu',
 		),
-		'nml'=>array(
+		'nml' => array(
 			'application/vnd.enliven',
 		),
-		'nnd'=>array(
+		'nnd' => array(
 			'application/vnd.noblenet-directory',
 		),
-		'nns'=>array(
+		'nns' => array(
 			'application/vnd.noblenet-sealer',
 		),
-		'nnw'=>array(
+		'nnw' => array(
 			'application/vnd.noblenet-web',
 		),
-		'not'=>array(
+		'not' => array(
 			'text/plain',
 			'text/x-mup',
 		),
-		'npx'=>array(
+		'npx' => array(
 			'image/vnd.net-fpx',
 		),
-		'nrw'=>array(
+		'nrw' => array(
 			'image/x-raw-nikon',
 		),
-		'nsc'=>array(
+		'nsc' => array(
 			'application/vnd.ms-asf',
 			'application/x-conference',
 			'application/x-netshow-channel',
 		),
-		'nsf'=>array(
+		'nsf' => array(
 			'application/vnd.lotus-notes',
 		),
-		'nsv'=>array(
+		'nsv' => array(
 			'video/x-nsv',
 		),
-		'ntf'=>array(
+		'ntf' => array(
 			'application/vnd.nitf',
 			'image/nitf',
 			'image/ntf',
 		),
-		'numbers'=>array(
+		'numbers' => array(
 			'application/vnd.apple.iwork',
 			'application/vnd.apple.numbers',
 		),
-		'nzb'=>array(
+		'nzb' => array(
 			'application/x-nzb',
 			'application/xml',
 		),
-		'oa2'=>array(
+		'oa2' => array(
 			'application/vnd.fujitsu.oasys2',
 		),
-		'oa3'=>array(
+		'oa3' => array(
 			'application/vnd.fujitsu.oasys3',
 		),
-		'oas'=>array(
+		'oas' => array(
 			'application/vnd.fujitsu.oasys',
 		),
-		'obd'=>array(
+		'obd' => array(
 			'application/x-msbinder',
 		),
-		'obj'=>array(
+		'obj' => array(
 			'application/x-tgif',
 		),
-		'ocaml'=>array(
+		'ocaml' => array(
 			'text/plain',
 			'text/x-ocaml',
 		),
-		'ocl'=>array(
+		'ocl' => array(
 			'text/plain',
 			'text/x-ocl',
 		),
-		'oda'=>array(
+		'oda' => array(
 			'application/oda',
 		),
-		'odb'=>array(
+		'odb' => array(
 			'application/vnd.oasis.opendocument.database',
 			'application/vnd.sun.xml.base',
 			'application/zip',
 		),
-		'odc'=>array(
+		'odc' => array(
 			'application/vnd.oasis.opendocument.chart',
 			'application/x-vnd.oasis.opendocument.chart',
 			'application/zip',
 		),
-		'odf'=>array(
+		'odf' => array(
 			'application/vnd.oasis.opendocument.formula',
 			'application/x-vnd.oasis.opendocument.formula',
 			'application/zip',
 		),
-		'odft'=>array(
+		'odft' => array(
 			'application/vnd.oasis.opendocument.formula-template',
 			'application/x-vnd.oasis.opendocument.formula-template',
 		),
-		'odg'=>array(
+		'odg' => array(
 			'application/vnd.oasis.opendocument.graphics',
 			'application/x-vnd.oasis.opendocument.graphics',
 			'application/zip',
 		),
-		'odi'=>array(
+		'odi' => array(
 			'application/vnd.oasis.opendocument.image',
 			'application/x-vnd.oasis.opendocument.image',
 			'application/zip',
 		),
-		'odm'=>array(
+		'odm' => array(
 			'application/vnd.oasis.opendocument.text-master',
 			'application/zip',
 		),
-		'odp'=>array(
+		'odp' => array(
 			'application/vnd.oasis.opendocument.presentation',
 			'application/x-vnd.oasis.opendocument.presentation',
 			'application/zip',
 		),
-		'ods'=>array(
+		'ods' => array(
 			'application/vnd.oasis.opendocument.spreadsheet',
 			'application/x-vnd.oasis.opendocument.spreadsheet',
 			'application/zip',
 		),
-		'odt'=>array(
+		'odt' => array(
 			'application/vnd.oasis.opendocument.text',
 			'application/x-vnd.oasis.opendocument.text',
 			'application/zip',
 		),
-		'oga'=>array(
+		'oga' => array(
 			'application/ogg',
 			'audio/ogg',
 			'audio/vorbis',
@@ -3725,7 +3728,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-vorbis',
 			'audio/x-vorbis+ogg',
 		),
-		'ogg'=>array(
+		'ogg' => array(
 			'application/ogg',
 			'application/x-ogg',
 			'audio/ogg',
@@ -3741,423 +3744,423 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-theora',
 			'video/x-theora+ogg',
 		),
-		'ogm'=>array(
+		'ogm' => array(
 			'video/ogg',
 			'video/x-ogm',
 			'video/x-ogm+ogg',
 		),
-		'ogv'=>array(
+		'ogv' => array(
 			'application/ogg',
 			'video/ogg',
 			'video/x-ogg',
 		),
-		'ogx'=>array(
+		'ogx' => array(
 			'application/ogg',
 			'application/x-ogg',
 		),
-		'old'=>array(
+		'old' => array(
 			'application/x-trash',
 		),
-		'oleo'=>array(
+		'oleo' => array(
 			'application/x-oleo',
 		),
-		'omdoc'=>array(
+		'omdoc' => array(
 			'application/omdoc+xml',
 		),
-		'one'=>array(
+		'one' => array(
 			'application/onenote',
 			'application/onenoteformatone',
 		),
-		'onepkg'=>array(
+		'onepkg' => array(
 			'application/onenote',
 			'application/onenoteformatpackage',
 			'application/vnd.ms-cab-compressed',
 		),
-		'onetmp'=>array(
+		'onetmp' => array(
 			'application/msonenote',
 			'application/onenote',
 		),
-		'onetoc'=>array(
+		'onetoc' => array(
 			'application/onenote',
 			'application/onenoteformatonetoc2',
 		),
-		'onetoc2'=>array(
+		'onetoc2' => array(
 			'application/onenote',
 			'application/onenoteformatonetoc2',
 		),
-		'ooc'=>array(
+		'ooc' => array(
 			'text/x-csrc',
 			'text/x-ooc',
 		),
-		'opf'=>array(
+		'opf' => array(
 			'application/oebps-package+xml',
 		),
-		'opml'=>array(
+		'opml' => array(
 			'application/xml',
 			'text/x-opml',
 			'text/x-opml+xml',
 		),
-		'oprc'=>array(
+		'oprc' => array(
 			'application/vnd.palm',
 			'application/x-palm-database',
 		),
-		'opus'=>array(
+		'opus' => array(
 			'application/ogg',
 			'audio/ogg',
 			'audio/opus',
 			'audio/x-ogg',
 			'audio/x-opus+ogg',
 		),
-		'or3'=>array(
+		'or3' => array(
 			'application/vnd.lotus-organizer',
 		),
-		'ora'=>array(
+		'ora' => array(
 			'application/zip',
 			'image/openraster',
 		),
-		'orf'=>array(
+		'orf' => array(
 			'image/x-dcraw',
 			'image/x-olympus-orf',
 			'image/x-raw-olympus',
 		),
-		'org'=>array(
+		'org' => array(
 			'application/vnd.lotus-organizer',
 		),
-		'orq'=>array(
+		'orq' => array(
 			'application/ocsp-request',
 		),
-		'ors'=>array(
+		'ors' => array(
 			'application/ocsp-response',
 		),
-		'osf'=>array(
+		'osf' => array(
 			'application/vnd.yamaha.openscoreformat',
 		),
-		'osfpvg'=>array(
+		'osfpvg' => array(
 			'application/vnd.yamaha.openscoreformat.osfpvg+xml',
 		),
-		'osm'=>array(
+		'osm' => array(
 			'application/vnd.openstreetmap.data+xml',
 		),
-		'ost'=>array(
+		'ost' => array(
 			'application/vnd.ms-outlook-pst',
 		),
-		'otc'=>array(
+		'otc' => array(
 			'application/vnd.oasis.opendocument.chart-template',
 			'application/x-vnd.oasis.opendocument.chart-template',
 			'application/zip',
 		),
-		'otf'=>array(
+		'otf' => array(
 			'application/vnd.oasis.opendocument.formula-template',
 			'application/x-font-otf',
 			'application/zip',
 			'font/otf',
 			'font/ttf',
 		),
-		'otg'=>array(
+		'otg' => array(
 			'application/vnd.oasis.opendocument.graphics-template',
 			'application/x-vnd.oasis.opendocument.graphics-template',
 			'application/zip',
 		),
-		'oth'=>array(
+		'oth' => array(
 			'application/vnd.oasis.opendocument.text-web',
 			'application/x-vnd.oasis.opendocument.text-web',
 			'application/zip',
 		),
-		'oti'=>array(
+		'oti' => array(
 			'application/vnd.oasis.opendocument.image-template',
 			'application/x-vnd.oasis.opendocument.image-template',
 		),
-		'otm'=>array(
+		'otm' => array(
 			'application/vnd.oasis.opendocument.text-master',
 			'application/x-vnd.oasis.opendocument.text-master',
 		),
-		'otp'=>array(
+		'otp' => array(
 			'application/vnd.oasis.opendocument.presentation-template',
 			'application/x-vnd.oasis.opendocument.presentation-template',
 			'application/zip',
 		),
-		'ots'=>array(
+		'ots' => array(
 			'application/vnd.oasis.opendocument.spreadsheet-template',
 			'application/x-vnd.oasis.opendocument.spreadsheet-template',
 			'application/zip',
 		),
-		'ott'=>array(
+		'ott' => array(
 			'application/vnd.oasis.opendocument.text-template',
 			'application/x-vnd.oasis.opendocument.text-template',
 			'application/zip',
 		),
-		'owl'=>array(
+		'owl' => array(
 			'application/rdf+xml',
 			'application/xml',
 			'text/rdf',
 		),
-		'owx'=>array(
+		'owx' => array(
 			'application/owl+xml',
 			'application/xml',
 		),
-		'oxps'=>array(
+		'oxps' => array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
 			'application/zip',
 		),
-		'oxt'=>array(
+		'oxt' => array(
 			'application/vnd.openofficeorg.extension',
 			'application/zip',
 		),
-		'p'=>array(
+		'p' => array(
 			'text/x-pascal',
 		),
-		'p10'=>array(
+		'p10' => array(
 			'application/pkcs10',
 		),
-		'p12'=>array(
+		'p12' => array(
 			'application/pkcs12',
 			'application/x-pkcs12',
 		),
-		'p65'=>array(
+		'p65' => array(
 			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
-		'p7b'=>array(
+		'p7b' => array(
 			'application/x-pkcs7-certificates',
 		),
-		'p7c'=>array(
+		'p7c' => array(
 			'application/pkcs7-mime',
 		),
-		'p7m'=>array(
+		'p7m' => array(
 			'application/pkcs7-mime',
 		),
-		'p7r'=>array(
+		'p7r' => array(
 			'application/x-pkcs7-certreqresp',
 		),
-		'p7s'=>array(
+		'p7s' => array(
 			'application/pkcs7-signature',
 			'text/plain',
 		),
-		'p8'=>array(
+		'p8' => array(
 			'application/pkcs8',
 		),
-		'pack'=>array(
+		'pack' => array(
 			'application/x-java-pack200',
 		),
-		'pages'=>array(
+		'pages' => array(
 			'application/vnd.apple.iwork',
 			'application/vnd.apple.pages',
 		),
-		'pak'=>array(
+		'pak' => array(
 			'application/x-pak',
 		),
-		'par2'=>array(
+		'par2' => array(
 			'application/x-par2',
 		),
-		'part'=>array(
+		'part' => array(
 			'application/x-partial-download',
 		),
-		'pas'=>array(
+		'pas' => array(
 			'text/plain',
 			'text/x-pascal',
 		),
-		'patch'=>array(
+		'patch' => array(
 			'text/plain',
 			'text/x-diff',
 			'text/x-patch',
 		),
-		'path'=>array(
+		'path' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'paw'=>array(
+		'paw' => array(
 			'application/vnd.pawaafile',
 		),
-		'pbd'=>array(
+		'pbd' => array(
 			'application/vnd.powerbuilder6',
 		),
-		'pbm'=>array(
+		'pbm' => array(
 			'image/x-portable-anymap',
 			'image/x-portable-bitmap',
 		),
-		'pcap'=>array(
+		'pcap' => array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
 			'application/x-pcap',
 		),
-		'pcd'=>array(
+		'pcd' => array(
 			'image/x-photo-cd',
 		),
-		'pce'=>array(
+		'pce' => array(
 			'application/x-pc-engine-rom',
 		),
-		'pcf'=>array(
+		'pcf' => array(
 			'application/x-cisco-vpn-settings',
 			'application/x-font-pcf',
 		),
-		'pcl'=>array(
+		'pcl' => array(
 			'application/vnd.hp-pcl',
 		),
-		'pclxl'=>array(
+		'pclxl' => array(
 			'application/vnd.hp-pclxl',
 		),
-		'pct'=>array(
+		'pct' => array(
 			'image/x-pict',
 		),
-		'pcurl'=>array(
+		'pcurl' => array(
 			'application/vnd.curl.pcurl',
 		),
-		'pcx'=>array(
+		'pcx' => array(
 			'image/vnd.zbrush.pcx',
 			'image/x-pcx',
 		),
-		'pdb'=>array(
+		'pdb' => array(
 			'application/vnd.palm',
 			'application/x-aportisdoc',
 			'application/x-palm-database',
 			'application/x-pilot',
 			'chemical/x-pdb',
 		),
-		'pdc'=>array(
+		'pdc' => array(
 			'application/vnd.palm',
 			'application/x-aportisdoc',
 		),
-		'pdf'=>array(
+		'pdf' => array(
 			'application/acrobat',
 			'application/nappdf',
 			'application/pdf',
 			'application/x-pdf',
 			'image/pdf',
 		),
-		'pef'=>array(
+		'pef' => array(
 			'image/x-dcraw',
 			'image/x-pentax-pef',
 			'image/x-raw-pentax',
 		),
-		'pem'=>array(
+		'pem' => array(
 			'application/x-x509-ca-cert',
 		),
-		'pen'=>array(
+		'pen' => array(
 			'text/plain',
 		),
-		'perl'=>array(
+		'perl' => array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
 			'text/x-perl',
 		),
-		'pfa'=>array(
+		'pfa' => array(
 			'application/postscript',
 			'application/x-font-type1',
 		),
-		'pfb'=>array(
+		'pfb' => array(
 			'application/postscript',
 			'application/x-font-type1',
 		),
-		'pfm'=>array(
+		'pfm' => array(
 			'application/x-font-printer-metric',
 			'application/x-font-type1',
 		),
-		'pfr'=>array(
+		'pfr' => array(
 			'application/font-tdpfr',
 		),
-		'pfx'=>array(
+		'pfx' => array(
 			'application/pkcs12',
 			'application/x-pkcs12',
 		),
-		'pgm'=>array(
+		'pgm' => array(
 			'image/x-portable-anymap',
 			'image/x-portable-graymap',
 		),
-		'pgn'=>array(
+		'pgn' => array(
 			'application/vnd.chess-pgn',
 			'application/x-chess-pgn',
 			'text/plain',
 		),
-		'pgp'=>array(
+		'pgp' => array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
 			'text/plain',
 		),
-		'php'=>array(
+		'php' => array(
 			'application/x-php',
 			'text/plain',
 			'text/x-php',
 		),
-		'php3'=>array(
+		'php3' => array(
 			'application/x-php',
 			'text/plain',
 			'text/x-php',
 		),
-		'php4'=>array(
+		'php4' => array(
 			'application/x-php',
 			'text/plain',
 			'text/x-php',
 		),
-		'php5'=>array(
+		'php5' => array(
 			'application/x-php',
 			'text/plain',
 		),
-		'phps'=>array(
+		'phps' => array(
 			'application/x-php',
 			'text/plain',
 		),
-		'pic'=>array(
+		'pic' => array(
 			'image/vnd.radiance',
 			'image/x-pict',
 		),
-		'pict'=>array(
+		'pict' => array(
 			'image/x-pict',
 		),
-		'pict1'=>array(
+		'pict1' => array(
 			'image/x-pict',
 		),
-		'pict2'=>array(
+		'pict2' => array(
 			'image/x-pict',
 		),
-		'pk'=>array(
+		'pk' => array(
 			'application/x-tex-pk',
 		),
-		'pkg'=>array(
+		'pkg' => array(
 			'application/octet-stream',
 			'application/x-xar',
 		),
-		'pki'=>array(
+		'pki' => array(
 			'application/pkixcmp',
 		),
-		'pkipath'=>array(
+		'pkipath' => array(
 			'application/pkix-pkipath',
 		),
-		'pkr'=>array(
+		'pkr' => array(
 			'application/pgp-keys',
 			'text/plain',
 		),
-		'pl'=>array(
+		'pl' => array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
 			'text/x-perl',
 		),
-		'pla'=>array(
+		'pla' => array(
 			'audio/x-iriver-pla',
 		),
-		'plb'=>array(
+		'plb' => array(
 			'application/vnd.3gpp.pic-bw-large',
 		),
-		'plc'=>array(
+		'plc' => array(
 			'application/vnd.mobius.plc',
 		),
-		'plf'=>array(
+		'plf' => array(
 			'application/vnd.pocketlearn',
 		),
-		'pln'=>array(
+		'pln' => array(
 			'application/x-planperfect',
 		),
-		'pls'=>array(
+		'pls' => array(
 			'application/pls',
 			'application/pls+xml',
 			'audio/scpls',
 			'audio/x-scpls',
 		),
-		'pm'=>array(
+		'pm' => array(
 			'application/x-executable',
 			'application/x-ole-storage',
 			'application/x-pagemaker',
@@ -4165,47 +4168,47 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 			'text/x-perl',
 		),
-		'pm6'=>array(
+		'pm6' => array(
 			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
-		'pmd'=>array(
+		'pmd' => array(
 			'application/x-ole-storage',
 			'application/x-pagemaker',
 		),
-		'pml'=>array(
+		'pml' => array(
 			'application/vnd.ctc-posml',
 		),
-		'png'=>array(
+		'png' => array(
 			'image/png',
 		),
-		'pnm'=>array(
+		'pnm' => array(
 			'image/x-portable-anymap',
 		),
-		'pntg'=>array(
+		'pntg' => array(
 			'image/x-macpaint',
 		),
-		'po'=>array(
+		'po' => array(
 			'application/x-gettext',
 			'text/plain',
 			'text/x-gettext-translation',
 			'text/x-po',
 		),
-		'pod'=>array(
+		'pod' => array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
 		),
-		'pom'=>array(
+		'pom' => array(
 			'text/plain',
 		),
-		'por'=>array(
+		'por' => array(
 			'application/x-spss-por',
 		),
-		'portpkg'=>array(
+		'portpkg' => array(
 			'application/vnd.macports.portpkg',
 		),
-		'pot'=>array(
+		'pot' => array(
 			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
@@ -4215,120 +4218,120 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-gettext-translation-template',
 			'text/x-pot',
 		),
-		'potm'=>array(
+		'potm' => array(
 			'application/vnd.ms-powerpoint.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 		),
-		'potx'=>array(
+		'potx' => array(
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 			'application/zip',
 		),
-		'pp'=>array(
+		'pp' => array(
 			'text/plain',
 			'text/x-pascal',
 		),
-		'ppa'=>array(
+		'ppa' => array(
 			'application/ms-office',
 			'application/mspowerpoint',
 			'application/vnd.ms-powerpoint',
 		),
-		'ppam'=>array(
+		'ppam' => array(
 			'application/vnd.ms-powerpoint.addin.macroenabled.12',
 		),
-		'ppd'=>array(
+		'ppd' => array(
 			'application/vnd.cups-ppd',
 		),
-		'ppj'=>array(
+		'ppj' => array(
 			'application/xml',
 			'image/vnd.adobe.premiere',
 		),
-		'ppm'=>array(
+		'ppm' => array(
 			'image/x-portable-anymap',
 			'image/x-portable-pixmap',
 		),
-		'pps'=>array(
+		'pps' => array(
 			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
-		'ppsm'=>array(
+		'ppsm' => array(
 			'application/vnd.ms-powerpoint.slideshow.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
 		),
-		'ppsx'=>array(
+		'ppsx' => array(
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
 			'application/zip',
 		),
-		'ppt'=>array(
+		'ppt' => array(
 			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
-		'pptm'=>array(
+		'pptm' => array(
 			'application/vnd.ms-powerpoint.presentation.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
-		'pptx'=>array(
+		'pptx' => array(
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 			'application/zip',
 		),
-		'ppz'=>array(
+		'ppz' => array(
 			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
-		'pqa'=>array(
+		'pqa' => array(
 			'application/vnd.palm',
 			'application/x-palm-database',
 		),
-		'prc'=>array(
+		'prc' => array(
 			'application/vnd.palm',
 			'application/x-mobipocket-ebook',
 			'application/x-palm-database',
 			'application/x-pilot',
 		),
-		'pre'=>array(
+		'pre' => array(
 			'application/vnd.lotus-freelance',
 		),
-		'prf'=>array(
+		'prf' => array(
 			'application/pics-rules',
 		),
-		'pro'=>array(
+		'pro' => array(
 			'text/plain',
 			'text/x-prolog',
 		),
-		'project'=>array(
+		'project' => array(
 			'text/plain',
 		),
-		'properties'=>array(
+		'properties' => array(
 			'text/plain',
 			'text/properties',
 			'text/x-java-properties',
 			'text/x-properties',
 		),
-		'provx'=>array(
+		'provx' => array(
 			'application/provenance+xml',
 		),
-		'prt'=>array(
+		'prt' => array(
 			'application/x-prt',
 		),
-		'prz'=>array(
+		'prz' => array(
 			'application/vnd.lotus-freelance',
 		),
-		'ps'=>array(
+		'ps' => array(
 			'application/postscript',
 			'text/plain',
 		),
-		'psb'=>array(
+		'psb' => array(
 			'application/vnd.3gpp.pic-bw-small',
 		),
-		'psd'=>array(
+		'psd' => array(
 			'application/photoshop',
 			'application/x-photoshop',
 			'image/photoshop',
@@ -4337,328 +4340,328 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-photoshop',
 			'image/x-psd',
 		),
-		'pseg3820'=>array(
+		'pseg3820' => array(
 			'application/vnd.ibm.modcap',
 		),
-		'psf'=>array(
+		'psf' => array(
 			'application/x-font-linux-psf',
 			'audio/x-psf',
 		),
-		'psflib'=>array(
+		'psflib' => array(
 			'audio/x-psf',
 			'audio/x-psflib',
 		),
-		'psid'=>array(
+		'psid' => array(
 			'audio/prs.sid',
 		),
-		'pskcxml'=>array(
+		'pskcxml' => array(
 			'application/pskc+xml',
 		),
-		'pst'=>array(
+		'pst' => array(
 			'application/vnd.ms-outlook-pst',
 		),
-		'psw'=>array(
+		'psw' => array(
 			'application/x-pocket-word',
 		),
-		'ptid'=>array(
+		'ptid' => array(
 			'application/vnd.pvi.ptid1',
 		),
-		'ptx'=>array(
+		'ptx' => array(
 			'image/x-raw-pentax',
 		),
-		'pub'=>array(
+		'pub' => array(
 			'application/vnd.ms-publisher',
 			'application/x-mspublisher',
 			'application/x-ole-storage',
 		),
-		'pvb'=>array(
+		'pvb' => array(
 			'application/vnd.3gpp.pic-bw-var',
 		),
-		'pw'=>array(
+		'pw' => array(
 			'application/x-pw',
 		),
-		'pwn'=>array(
+		'pwn' => array(
 			'application/vnd.3m.post-it-notes',
 		),
-		'pxn'=>array(
+		'pxn' => array(
 			'image/x-raw-logitech',
 		),
-		'py'=>array(
+		'py' => array(
 			'application/x-executable',
 			'text/plain',
 			'text/x-python',
 			'text/x-python3',
 		),
-		'py3'=>array(
+		'py3' => array(
 			'text/x-python',
 			'text/x-python3',
 		),
-		'py3x'=>array(
+		'py3x' => array(
 			'text/x-python',
 			'text/x-python3',
 		),
-		'pya'=>array(
+		'pya' => array(
 			'audio/vnd.ms-playready.media.pya',
 		),
-		'pyc'=>array(
+		'pyc' => array(
 			'application/x-python-bytecode',
 		),
-		'pyo'=>array(
+		'pyo' => array(
 			'application/x-python-bytecode',
 		),
-		'pyv'=>array(
+		'pyv' => array(
 			'video/vnd.ms-playready.media.pyv',
 		),
-		'pyx'=>array(
+		'pyx' => array(
 			'application/x-executable',
 			'text/x-python',
 		),
-		'qam'=>array(
+		'qam' => array(
 			'application/vnd.epson.quickanime',
 		),
-		'qbo'=>array(
+		'qbo' => array(
 			'application/vnd.intu.qbo',
 		),
-		'qca'=>array(
+		'qca' => array(
 			'application/vnd.ericsson.quickcall',
 		),
-		'qcall'=>array(
+		'qcall' => array(
 			'application/vnd.ericsson.quickcall',
 		),
-		'qfx'=>array(
+		'qfx' => array(
 			'application/vnd.intu.qfx',
 		),
-		'qif'=>array(
+		'qif' => array(
 			'application/x-qw',
 			'image/x-quicktime',
 		),
-		'qml'=>array(
+		'qml' => array(
 			'text/x-qml',
 		),
-		'qmlproject'=>array(
+		'qmlproject' => array(
 			'text/x-qml',
 		),
-		'qmltypes'=>array(
+		'qmltypes' => array(
 			'text/x-qml',
 		),
-		'qp'=>array(
+		'qp' => array(
 			'application/x-qpress',
 		),
-		'qps'=>array(
+		'qps' => array(
 			'application/vnd.publishare-delta-tree',
 		),
-		'qpw'=>array(
+		'qpw' => array(
 			'application/x-quattro-pro',
 		),
-		'qt'=>array(
+		'qt' => array(
 			'application/quicktime',
 			'video/quicktime',
 		),
-		'qti'=>array(
+		'qti' => array(
 			'application/x-qtiplot',
 			'text/plain',
 		),
-		'qtif'=>array(
+		'qtif' => array(
 			'image/x-quicktime',
 		),
-		'qtl'=>array(
+		'qtl' => array(
 			'application/x-quicktime-media-link',
 			'application/x-quicktimeplayer',
 			'video/quicktime',
 		),
-		'qtvr'=>array(
+		'qtvr' => array(
 			'video/quicktime',
 		),
-		'qwd'=>array(
+		'qwd' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'qwt'=>array(
+		'qwt' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'qxb'=>array(
+		'qxb' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'qxd'=>array(
+		'qxd' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'qxl'=>array(
+		'qxl' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'qxt'=>array(
+		'qxt' => array(
 			'application/vnd.quark.quarkxpress',
 		),
-		'r3d'=>array(
+		'r3d' => array(
 			'image/x-raw-red',
 		),
-		'ra'=>array(
+		'ra' => array(
 			'audio/vnd.m-realaudio',
 			'audio/vnd.rn-realaudio',
 			'audio/x-pn-realaudio',
 			'audio/x-realaudio',
 		),
-		'raf'=>array(
+		'raf' => array(
 			'image/x-dcraw',
 			'image/x-fuji-raf',
 			'image/x-raw-fuji',
 		),
-		'ram'=>array(
+		'ram' => array(
 			'application/ram',
 			'audio/x-pn-realaudio',
 			'audio/x-realaudio',
 		),
-		'raml'=>array(
+		'raml' => array(
 			'application/raml+yaml',
 			'application/x-yaml',
 		),
-		'rar'=>array(
+		'rar' => array(
 			'application/vnd.rar',
 			'application/x-rar',
 			'application/x-rar-compressed',
 		),
-		'ras'=>array(
+		'ras' => array(
 			'image/x-cmu-raster',
 		),
-		'raw'=>array(
+		'raw' => array(
 			'image/x-dcraw',
 			'image/x-panasonic-raw',
 			'image/x-panasonic-rw',
 			'image/x-raw-panasonic',
 		),
-		'raw-disk-image'=>array(
+		'raw-disk-image' => array(
 			'application/x-raw-disk-image',
 		),
-		'rax'=>array(
+		'rax' => array(
 			'audio/vnd.m-realaudio',
 			'audio/vnd.rn-realaudio',
 			'audio/x-pn-realaudio',
 		),
-		'rb'=>array(
+		'rb' => array(
 			'application/x-executable',
 			'application/x-ruby',
 			'text/plain',
 			'text/x-ruby',
 		),
-		'rcprofile'=>array(
+		'rcprofile' => array(
 			'application/vnd.ipunplugged.rcprofile',
 		),
-		'rdf'=>array(
+		'rdf' => array(
 			'application/rdf+xml',
 			'application/xml',
 			'text/rdf',
 		),
-		'rdfs'=>array(
+		'rdfs' => array(
 			'application/rdf+xml',
 			'application/xml',
 			'text/rdf',
 		),
-		'rdz'=>array(
+		'rdz' => array(
 			'application/vnd.data-vision.rdz',
 		),
-		'reg'=>array(
+		'reg' => array(
 			'text/plain',
 			'text/x-ms-regedit',
 		),
-		'rej'=>array(
+		'rej' => array(
 			'application/x-reject',
 			'text/plain',
 			'text/x-reject',
 		),
-		'relo'=>array(
+		'relo' => array(
 			'application/p2p-overlay+xml',
 		),
-		'rep'=>array(
+		'rep' => array(
 			'application/vnd.businessobjects',
 		),
-		'res'=>array(
+		'res' => array(
 			'application/x-dtbresource+xml',
 		),
-		'rest'=>array(
+		'rest' => array(
 			'text/plain',
 			'text/x-rst',
 		),
-		'restx'=>array(
+		'restx' => array(
 			'text/plain',
 			'text/x-rst',
 		),
-		'rexx'=>array(
+		'rexx' => array(
 			'text/plain',
 			'text/x-rexx',
 		),
-		'rgb'=>array(
+		'rgb' => array(
 			'image/x-rgb',
 		),
-		'rgbe'=>array(
+		'rgbe' => array(
 			'image/vnd.radiance',
 		),
-		'rif'=>array(
+		'rif' => array(
 			'application/reginfo+xml',
 		),
-		'rip'=>array(
+		'rip' => array(
 			'audio/vnd.rip',
 		),
-		'ris'=>array(
+		'ris' => array(
 			'application/x-research-info-systems',
 		),
-		'rl'=>array(
+		'rl' => array(
 			'application/resource-lists+xml',
 		),
-		'rlc'=>array(
+		'rlc' => array(
 			'image/vnd.fujixerox.edmics-rlc',
 		),
-		'rld'=>array(
+		'rld' => array(
 			'application/resource-lists-diff+xml',
 		),
-		'rle'=>array(
+		'rle' => array(
 			'image/rle',
 		),
-		'rm'=>array(
+		'rm' => array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rmi'=>array(
+		'rmi' => array(
 			'audio/midi',
 		),
-		'rmj'=>array(
+		'rmj' => array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rmm'=>array(
+		'rmm' => array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rmp'=>array(
+		'rmp' => array(
 			'audio/x-pn-realaudio-plugin',
 		),
-		'rms'=>array(
+		'rms' => array(
 			'application/vnd.jcp.javame.midlet-rms',
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rmvb'=>array(
+		'rmvb' => array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rmx'=>array(
+		'rmx' => array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 		),
-		'rnc'=>array(
+		'rnc' => array(
 			'application/relax-ng-compact-syntax',
 			'application/x-rnc',
 			'text/plain',
 		),
-		'rng'=>array(
+		'rng' => array(
 			'application/xml',
 			'text/plain',
 			'text/xml',
 		),
-		'rnx'=>array(
+		'rnx' => array(
 			'text/plain',
 		),
-		'roa'=>array(
+		'roa' => array(
 			'application/rpki-roa',
 		),
-		'roff'=>array(
+		'roff' => array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
@@ -4667,667 +4670,667 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/troff',
 			'text/x-troff',
 		),
-		'roles'=>array(
+		'roles' => array(
 			'text/plain',
 		),
-		'rp'=>array(
+		'rp' => array(
 			'image/vnd.rn-realpix',
 		),
-		'rp9'=>array(
+		'rp9' => array(
 			'application/vnd.cloanto.rp9',
 		),
-		'rpm'=>array(
+		'rpm' => array(
 			'application/x-redhat-package-manager',
 			'application/x-rpm',
 		),
-		'rpss'=>array(
+		'rpss' => array(
 			'application/vnd.nokia.radio-presets',
 		),
-		'rpst'=>array(
+		'rpst' => array(
 			'application/vnd.nokia.radio-preset',
 		),
-		'rq'=>array(
+		'rq' => array(
 			'application/sparql-query',
 		),
-		'rs'=>array(
+		'rs' => array(
 			'application/rls-services+xml',
 			'text/plain',
 			'text/rust',
 		),
-		'rsd'=>array(
+		'rsd' => array(
 			'application/rsd+xml',
 		),
-		'rsheet'=>array(
+		'rsheet' => array(
 			'application/urc-ressheet+xml',
 		),
-		'rss'=>array(
+		'rss' => array(
 			'application/rss+xml',
 			'application/xml',
 			'text/rss',
 		),
-		'rst'=>array(
+		'rst' => array(
 			'text/plain',
 			'text/x-rst',
 		),
-		'rt'=>array(
+		'rt' => array(
 			'text/vnd.rn-realtext',
 		),
-		'rtf'=>array(
+		'rtf' => array(
 			'application/rtf',
 			'text/plain',
 			'text/rtf',
 		),
-		'rtx'=>array(
+		'rtx' => array(
 			'text/plain',
 			'text/richtext',
 		),
-		'run'=>array(
+		'run' => array(
 			'application/x-makeself',
 		),
-		'rv'=>array(
+		'rv' => array(
 			'video/vnd.rn-realvideo',
 			'video/x-real-video',
 		),
-		'rvx'=>array(
+		'rvx' => array(
 			'video/vnd.rn-realvideo',
 			'video/x-real-video',
 		),
-		'rw2'=>array(
+		'rw2' => array(
 			'image/x-dcraw',
 			'image/x-panasonic-raw2',
 			'image/x-panasonic-rw2',
 			'image/x-raw-panasonic',
 		),
-		'rwz'=>array(
+		'rwz' => array(
 			'image/x-raw-rawzor',
 		),
-		's'=>array(
+		's' => array(
 			'text/x-asm',
 		),
-		's3m'=>array(
+		's3m' => array(
 			'audio/s3m',
 			'audio/x-s3m',
 		),
-		's7m'=>array(
+		's7m' => array(
 			'application/x-sas-dmdb',
 		),
-		'sa7'=>array(
+		'sa7' => array(
 			'application/x-sas-access',
 		),
-		'sac'=>array(
+		'sac' => array(
 			'application/tamp-sequence-adjust-confirm',
 		),
-		'saf'=>array(
+		'saf' => array(
 			'application/vnd.yamaha.smaf-audio',
 		),
-		'sam'=>array(
+		'sam' => array(
 			'application/x-amipro',
 		),
-		'sami'=>array(
+		'sami' => array(
 			'application/x-sami',
 			'text/plain',
 		),
-		'sap'=>array(
+		'sap' => array(
 			'application/x-thomson-sap-image',
 		),
-		'sas'=>array(
+		'sas' => array(
 			'application/x-sas',
 			'text/plain',
 		),
-		'sas7bacs'=>array(
+		'sas7bacs' => array(
 			'application/x-sas-access',
 		),
-		'sas7baud'=>array(
+		'sas7baud' => array(
 			'application/x-sas-audit',
 		),
-		'sas7bbak'=>array(
+		'sas7bbak' => array(
 			'application/x-sas-backup',
 		),
-		'sas7bcat'=>array(
+		'sas7bcat' => array(
 			'application/x-sas-catalog',
 		),
-		'sas7bdat'=>array(
+		'sas7bdat' => array(
 			'application/x-sas-data',
 		),
-		'sas7bdmd'=>array(
+		'sas7bdmd' => array(
 			'application/x-sas-dmdb',
 		),
-		'sas7bfdb'=>array(
+		'sas7bfdb' => array(
 			'application/x-sas-fdb',
 		),
-		'sas7bitm'=>array(
+		'sas7bitm' => array(
 			'application/x-sas-itemstor',
 		),
-		'sas7bmdb'=>array(
+		'sas7bmdb' => array(
 			'application/x-sas-mddb',
 		),
-		'sas7bndx'=>array(
+		'sas7bndx' => array(
 			'application/x-sas-data-index',
 		),
-		'sas7bpgm'=>array(
+		'sas7bpgm' => array(
 			'application/x-sas-program-data',
 		),
-		'sas7bput'=>array(
+		'sas7bput' => array(
 			'application/x-sas-putility',
 		),
-		'sas7butl'=>array(
+		'sas7butl' => array(
 			'application/x-sas-utility',
 		),
-		'sas7bvew'=>array(
+		'sas7bvew' => array(
 			'application/x-sas-view',
 		),
-		'sass'=>array(
+		'sass' => array(
 			'text/plain',
 			'text/x-sass',
 		),
-		'sav'=>array(
+		'sav' => array(
 			'application/x-spss-sav',
 			'application/x-spss-savefile',
 		),
-		'sbml'=>array(
+		'sbml' => array(
 			'application/sbml+xml',
 		),
-		'sc'=>array(
+		'sc' => array(
 			'application/vnd.ibm.secure-container',
 		),
-		'sc7'=>array(
+		'sc7' => array(
 			'application/x-sas-catalog',
 		),
-		'scala'=>array(
+		'scala' => array(
 			'text/plain',
 			'text/x-scala',
 		),
-		'scd'=>array(
+		'scd' => array(
 			'application/x-msschedule',
 		),
-		'scm'=>array(
+		'scm' => array(
 			'application/vnd.lotus-screencam',
 			'text/plain',
 			'text/x-scheme',
 		),
-		'scope'=>array(
+		'scope' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'scq'=>array(
+		'scq' => array(
 			'application/scvp-cv-request',
 		),
-		'scs'=>array(
+		'scs' => array(
 			'application/scvp-cv-response',
 		),
-		'scss'=>array(
+		'scss' => array(
 			'text/plain',
 			'text/x-scss',
 		),
-		'scurl'=>array(
+		'scurl' => array(
 			'text/vnd.curl.scurl',
 		),
-		'sd2'=>array(
+		'sd2' => array(
 			'application/x-sas-data-v6',
 		),
-		'sd7'=>array(
+		'sd7' => array(
 			'application/x-sas-data',
 		),
-		'sda'=>array(
+		'sda' => array(
 			'application/vnd.stardivision.draw',
 		),
-		'sdc'=>array(
+		'sdc' => array(
 			'application/vnd.stardivision.calc',
 		),
-		'sdd'=>array(
+		'sdd' => array(
 			'application/vnd.stardivision.impress',
 		),
-		'sdkd'=>array(
+		'sdkd' => array(
 			'application/vnd.solent.sdkm+xml',
 		),
-		'sdkm'=>array(
+		'sdkm' => array(
 			'application/vnd.solent.sdkm+xml',
 		),
-		'sdp'=>array(
+		'sdp' => array(
 			'application/sdp',
 			'application/vnd.sdp',
 			'application/vnd.stardivision.impress',
 			'application/x-sdp',
 			'text/plain',
 		),
-		'sds'=>array(
+		'sds' => array(
 			'application/vnd.stardivision.chart',
 		),
-		'sdw'=>array(
+		'sdw' => array(
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
 		),
-		'sea'=>array(
+		'sea' => array(
 			'application/x-sea',
 		),
-		'sed'=>array(
+		'sed' => array(
 			'text/plain',
 			'text/x-sed',
 		),
-		'see'=>array(
+		'see' => array(
 			'application/vnd.seemail',
 		),
-		'seed'=>array(
+		'seed' => array(
 			'application/vnd.fdsn.seed',
 		),
-		'sema'=>array(
+		'sema' => array(
 			'application/vnd.sema',
 		),
-		'semd'=>array(
+		'semd' => array(
 			'application/vnd.semd',
 		),
-		'semf'=>array(
+		'semf' => array(
 			'application/vnd.semf',
 		),
-		'ser'=>array(
+		'ser' => array(
 			'application/java-serialized-object',
 		),
-		'service'=>array(
+		'service' => array(
 			'text/plain',
 			'text/x-dbus-service',
 			'text/x-systemd-unit',
 		),
-		'setpay'=>array(
+		'setpay' => array(
 			'application/set-payment-initiation',
 		),
-		'setreg'=>array(
+		'setreg' => array(
 			'application/set-registration-initiation',
 		),
-		'sf7'=>array(
+		'sf7' => array(
 			'application/x-sas-fdb',
 		),
-		'sfc'=>array(
+		'sfc' => array(
 			'application/vnd.nintendo.snes.rom',
 			'application/x-snes-rom',
 		),
-		'sfd-hdstx'=>array(
+		'sfd-hdstx' => array(
 			'application/vnd.hydrostatix.sof-data',
 		),
-		'sfdu'=>array(
+		'sfdu' => array(
 			'application/x-sfdu',
 			'text/plain',
 		),
-		'sfs'=>array(
+		'sfs' => array(
 			'application/vnd.spotfire.sfs',
 		),
-		'sfv'=>array(
+		'sfv' => array(
 			'text/x-sfv',
 		),
-		'sg'=>array(
+		'sg' => array(
 			'application/x-sg1000-rom',
 		),
-		'sgb'=>array(
+		'sgb' => array(
 			'application/x-gameboy-rom',
 		),
-		'sgf'=>array(
+		'sgf' => array(
 			'application/x-go-sgf',
 			'text/plain',
 		),
-		'sgi'=>array(
+		'sgi' => array(
 			'image/sgi',
 			'image/x-sgi',
 		),
-		'sgl'=>array(
+		'sgl' => array(
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
 		),
-		'sgm'=>array(
+		'sgm' => array(
 			'text/plain',
 			'text/sgml',
 		),
-		'sgml'=>array(
+		'sgml' => array(
 			'text/plain',
 			'text/sgml',
 		),
-		'sh'=>array(
+		'sh' => array(
 			'application/x-executable',
 			'application/x-sh',
 			'application/x-shellscript',
 			'text/plain',
 			'text/x-sh',
 		),
-		'shape'=>array(
+		'shape' => array(
 			'application/x-dia-shape',
 			'application/xml',
 		),
-		'shar'=>array(
+		'shar' => array(
 			'application/x-shar',
 		),
-		'shf'=>array(
+		'shf' => array(
 			'application/shf+xml',
 		),
-		'shn'=>array(
+		'shn' => array(
 			'application/x-shorten',
 			'audio/x-shorten',
 		),
-		'shp'=>array(
+		'shp' => array(
 			'application/x-shapefile',
 		),
-		'shtml'=>array(
+		'shtml' => array(
 			'text/html',
 		),
-		'shw'=>array(
+		'shw' => array(
 			'application/x-corelpresentations',
 		),
-		'si7'=>array(
+		'si7' => array(
 			'application/x-sas-data-index',
 		),
-		'siag'=>array(
+		'siag' => array(
 			'application/x-siag',
 		),
-		'sid'=>array(
+		'sid' => array(
 			'audio/prs.sid',
 			'image/x-mrsid-image',
 		),
-		'sig'=>array(
+		'sig' => array(
 			'application/pgp-signature',
 			'text/plain',
 		),
-		'sik'=>array(
+		'sik' => array(
 			'application/x-trash',
 		),
-		'sil'=>array(
+		'sil' => array(
 			'audio/silk',
 		),
-		'silo'=>array(
+		'silo' => array(
 			'model/mesh',
 		),
-		'sis'=>array(
+		'sis' => array(
 			'application/vnd.symbian.install',
 		),
-		'sisx'=>array(
+		'sisx' => array(
 			'application/vnd.symbian.install',
 			'x-epoc/x-sisx-app',
 		),
-		'sit'=>array(
+		'sit' => array(
 			'application/stuffit',
 			'application/x-sit',
 			'application/x-stuffit',
 		),
-		'sitx'=>array(
+		'sitx' => array(
 			'application/x-stuffitx',
 		),
-		'siv'=>array(
+		'siv' => array(
 			'application/sieve',
 			'application/xml',
 		),
-		'sk'=>array(
+		'sk' => array(
 			'image/x-skencil',
 		),
-		'sk1'=>array(
+		'sk1' => array(
 			'image/x-skencil',
 		),
-		'skd'=>array(
+		'skd' => array(
 			'application/vnd.koan',
 			'application/x-koan',
 		),
-		'skm'=>array(
+		'skm' => array(
 			'application/vnd.koan',
 			'application/x-koan',
 		),
-		'skp'=>array(
+		'skp' => array(
 			'application/vnd.koan',
 			'application/x-koan',
 		),
-		'skr'=>array(
+		'skr' => array(
 			'application/pgp-keys',
 			'text/plain',
 		),
-		'skt'=>array(
+		'skt' => array(
 			'application/vnd.koan',
 			'application/x-koan',
 		),
-		'sldasm'=>array(
+		'sldasm' => array(
 			'application/sldworks',
 		),
-		'slddrw'=>array(
+		'slddrw' => array(
 			'application/sldworks',
 		),
-		'sldm'=>array(
+		'sldm' => array(
 			'application/vnd.ms-powerpoint.slide.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
 		),
-		'sldprt'=>array(
+		'sldprt' => array(
 			'application/sldworks',
 		),
-		'sldx'=>array(
+		'sldx' => array(
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
 			'application/zip',
 		),
-		'slice'=>array(
+		'slice' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'slk'=>array(
+		'slk' => array(
 			'text/plain',
 			'text/spreadsheet',
 		),
-		'slt'=>array(
+		'slt' => array(
 			'application/vnd.epson.salt',
 		),
-		'sm'=>array(
+		'sm' => array(
 			'application/vnd.stepmania.stepchart',
 		),
-		'sm7'=>array(
+		'sm7' => array(
 			'application/x-sas-mddb',
 		),
-		'smaf'=>array(
+		'smaf' => array(
 			'application/vnd.smaf',
 			'application/x-smaf',
 		),
-		'smc'=>array(
+		'smc' => array(
 			'application/vnd.nintendo.snes.rom',
 			'application/x-snes-rom',
 		),
-		'smd'=>array(
+		'smd' => array(
 			'application/vnd.stardivision.mail',
 			'application/x-genesis-rom',
 		),
-		'smf'=>array(
+		'smf' => array(
 			'application/vnd.stardivision.math',
 		),
-		'smi'=>array(
+		'smi' => array(
 			'application/smil',
 			'application/smil+xml',
 			'application/x-sami',
 			'application/xml',
 			'text/plain',
 		),
-		'smil'=>array(
+		'smil' => array(
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
 		),
-		'sml'=>array(
+		'sml' => array(
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
 		),
-		'sms'=>array(
+		'sms' => array(
 			'application/x-sms-rom',
 		),
-		'smv'=>array(
+		'smv' => array(
 			'video/x-smv',
 		),
-		'smzip'=>array(
+		'smzip' => array(
 			'application/vnd.stepmania.package',
 		),
-		'snap'=>array(
+		'snap' => array(
 			'application/vnd.snap',
 			'application/vnd.squashfs',
 		),
-		'snd'=>array(
+		'snd' => array(
 			'audio/basic',
 		),
-		'snf'=>array(
+		'snf' => array(
 			'application/x-font-snf',
 		),
-		'so'=>array(
+		'so' => array(
 			'application/octet-stream',
 			'application/x-sharedlib',
 		),
-		'socket'=>array(
+		'socket' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'sp7'=>array(
+		'sp7' => array(
 			'application/x-sas-putility',
 		),
-		'spc'=>array(
+		'spc' => array(
 			'application/x-pkcs7-certificates',
 		),
-		'spd'=>array(
+		'spd' => array(
 			'application/x-font-speedo',
 		),
-		'spec'=>array(
+		'spec' => array(
 			'text/plain',
 			'text/x-rpm-spec',
 		),
-		'spf'=>array(
+		'spf' => array(
 			'application/vnd.yamaha.smaf-phrase',
 		),
-		'spl'=>array(
+		'spl' => array(
 			'application/futuresplash',
 			'application/vnd.adobe.flash.movie',
 			'application/x-futuresplash',
 			'application/x-shockwave-flash',
 		),
-		'spm'=>array(
+		'spm' => array(
 			'application/x-rpm',
 			'application/x-source-rpm',
 		),
-		'spot'=>array(
+		'spot' => array(
 			'text/vnd.in3d.spot',
 		),
-		'spp'=>array(
+		'spp' => array(
 			'application/scvp-vp-response',
 		),
-		'spq'=>array(
+		'spq' => array(
 			'application/scvp-vp-request',
 		),
-		'spx'=>array(
+		'spx' => array(
 			'application/x-speex',
 			'audio/ogg',
 			'audio/speex',
 			'audio/x-speex',
 		),
-		'sql'=>array(
+		'sql' => array(
 			'application/sql',
 			'application/x-sql',
 			'text/plain',
 			'text/x-sql',
 		),
-		'sqsh'=>array(
+		'sqsh' => array(
 			'application/vnd.squashfs',
 		),
-		'sr2'=>array(
+		'sr2' => array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-sr2',
 		),
-		'sr7'=>array(
+		'sr7' => array(
 			'application/x-sas-itemstor',
 		),
-		'src'=>array(
+		'src' => array(
 			'application/x-wais-source',
 			'text/plain',
 		),
-		'srf'=>array(
+		'srf' => array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
 			'image/x-sony-srf',
 		),
-		'srl'=>array(
+		'srl' => array(
 			'application/sereal',
 		),
-		'srt'=>array(
+		'srt' => array(
 			'application/x-srt',
 			'application/x-subrip',
 			'text/plain',
 		),
-		'sru'=>array(
+		'sru' => array(
 			'application/sru+xml',
 		),
-		'srx'=>array(
+		'srx' => array(
 			'application/sparql-results+xml',
 		),
-		'ss'=>array(
+		'ss' => array(
 			'text/plain',
 			'text/x-scheme',
 		),
-		'ss7'=>array(
+		'ss7' => array(
 			'application/x-sas-program-data',
 		),
-		'ssa'=>array(
+		'ssa' => array(
 			'text/plain',
 			'text/x-ssa',
 		),
-		'ssdl'=>array(
+		'ssdl' => array(
 			'application/ssdl+xml',
 		),
-		'sse'=>array(
+		'sse' => array(
 			'application/vnd.kodak-descriptor',
 		),
-		'ssf'=>array(
+		'ssf' => array(
 			'application/vnd.epson.ssf',
 		),
-		'ssml'=>array(
+		'ssml' => array(
 			'application/ssml+xml',
 		),
-		'st'=>array(
+		'st' => array(
 			'application/vnd.sailingtracker.track',
 			'text/plain',
 			'text/x-stsrc',
 		),
-		'st7'=>array(
+		'st7' => array(
 			'application/x-sas-audit',
 		),
-		'stc'=>array(
+		'stc' => array(
 			'application/vnd.sun.xml.calc.template',
 			'application/zip',
 		),
-		'std'=>array(
+		'std' => array(
 			'application/vnd.sun.xml.draw.template',
 			'application/zip',
 		),
-		'stf'=>array(
+		'stf' => array(
 			'application/vnd.wt.stf',
 		),
-		'sti'=>array(
+		'sti' => array(
 			'application/vnd.sun.xml.impress.template',
 			'application/zip',
 		),
-		'stk'=>array(
+		'stk' => array(
 			'application/hyperstudio',
 		),
-		'stl'=>array(
+		'stl' => array(
 			'application/vnd.ms-pki.stl',
 			'model/x.stl-ascii',
 			'model/x.stl-binary',
 			'text/plain',
 		),
-		'stm'=>array(
+		'stm' => array(
 			'audio/x-stm',
 		),
-		'str'=>array(
+		'str' => array(
 			'application/vnd.pg.format',
 		),
-		'stw'=>array(
+		'stw' => array(
 			'application/vnd.sun.xml.writer.template',
 			'application/zip',
 		),
-		'stx'=>array(
+		'stx' => array(
 			'application/x-sas-transport',
 		),
-		'sty'=>array(
+		'sty' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'su7'=>array(
+		'su7' => array(
 			'application/x-sas-utility',
 		),
-		'sub'=>array(
+		'sub' => array(
 			'image/vnd.dvb.subtitle',
 			'text/plain',
 			'text/vnd.dvb.subtitle',
@@ -5335,207 +5338,207 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-mpsub',
 			'text/x-subviewer',
 		),
-		'sun'=>array(
+		'sun' => array(
 			'image/x-sun-raster',
 		),
-		'sus'=>array(
+		'sus' => array(
 			'application/vnd.sus-calendar',
 		),
-		'susp'=>array(
+		'susp' => array(
 			'application/vnd.sus-calendar',
 		),
-		'sv'=>array(
+		'sv' => array(
 			'text/x-svsrc',
 			'text/x-verilog',
 		),
-		'sv4cpio'=>array(
+		'sv4cpio' => array(
 			'application/x-sv4cpio',
 		),
-		'sv4crc'=>array(
+		'sv4crc' => array(
 			'application/x-sv4crc',
 		),
-		'sv7'=>array(
+		'sv7' => array(
 			'application/x-sas-view',
 		),
-		'svc'=>array(
+		'svc' => array(
 			'application/vnd.dvb.service',
 		),
-		'svd'=>array(
+		'svd' => array(
 			'application/vnd.svd',
 		),
-		'svg'=>array(
+		'svg' => array(
 			'application/xml',
 			'image/svg+xml',
 		),
-		'svgz'=>array(
+		'svgz' => array(
 			'application/gzip',
 			'application/xml',
 			'image/svg+xml',
 			'image/svg+xml-compressed',
 		),
-		'svh'=>array(
+		'svh' => array(
 			'text/x-svhdr',
 			'text/x-verilog',
 		),
-		'swa'=>array(
+		'swa' => array(
 			'application/x-director',
 		),
-		'swap'=>array(
+		'swap' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'swf'=>array(
+		'swf' => array(
 			'application/futuresplash',
 			'application/vnd.adobe.flash.movie',
 			'application/x-shockwave-flash',
 		),
-		'swi'=>array(
+		'swi' => array(
 			'application/vnd.arastra.swi',
 			'application/vnd.aristanetworks.swi',
 		),
-		'swm'=>array(
+		'swm' => array(
 			'application/x-ms-wim',
 		),
-		'sxc'=>array(
+		'sxc' => array(
 			'application/vnd.sun.xml.calc',
 			'application/zip',
 		),
-		'sxd'=>array(
+		'sxd' => array(
 			'application/vnd.sun.xml.draw',
 			'application/zip',
 		),
-		'sxg'=>array(
+		'sxg' => array(
 			'application/vnd.sun.xml.writer.global',
 			'application/zip',
 		),
-		'sxi'=>array(
+		'sxi' => array(
 			'application/vnd.sun.xml.impress',
 			'application/zip',
 		),
-		'sxm'=>array(
+		'sxm' => array(
 			'application/vnd.sun.xml.math',
 			'application/zip',
 		),
-		'sxw'=>array(
+		'sxw' => array(
 			'application/vnd.sun.xml.writer',
 			'application/x-vnd.sun.xml.writer',
 			'application/zip',
 		),
-		'sylk'=>array(
+		'sylk' => array(
 			'text/plain',
 			'text/spreadsheet',
 		),
-		'sz'=>array(
+		'sz' => array(
 			'application/x-snappy-framed',
 		),
-		't'=>array(
+		't' => array(
 			'text/troff',
 		),
-		't2t'=>array(
+		't2t' => array(
 			'text/plain',
 			'text/x-txt2tags',
 		),
-		't3'=>array(
+		't3' => array(
 			'application/x-t3vm-image',
 		),
-		't38'=>array(
+		't38' => array(
 			'image/t38',
 		),
-		'taglet'=>array(
+		'taglet' => array(
 			'application/vnd.mynfc',
 		),
-		'tam'=>array(
+		'tam' => array(
 			'application/vnd.onepager',
 		),
-		'tao'=>array(
+		'tao' => array(
 			'application/vnd.tao.intent-module-archive',
 		),
-		'tar'=>array(
+		'tar' => array(
 			'application/x-gtar',
 			'application/x-tar',
 		),
-		'target'=>array(
+		'target' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'tau'=>array(
+		'tau' => array(
 			'application/tamp-apex-update',
 		),
-		'taz'=>array(
+		'taz' => array(
 			'application/x-compress',
 			'application/x-tarz',
 		),
-		'tb2'=>array(
+		'tb2' => array(
 			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
 		),
-		'tbz'=>array(
+		'tbz' => array(
 			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
 		),
-		'tbz2'=>array(
+		'tbz2' => array(
 			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
 			'application/x-bzip2',
 		),
-		'tcap'=>array(
+		'tcap' => array(
 			'application/vnd.3gpp2.tcap',
 		),
-		'tcl'=>array(
+		'tcl' => array(
 			'application/x-tcl',
 			'text/plain',
 			'text/x-tcl',
 		),
-		'tcsh'=>array(
+		'tcsh' => array(
 			'application/x-csh',
 		),
-		'tcu'=>array(
+		'tcu' => array(
 			'application/tamp-community-update',
 		),
-		'teacher'=>array(
+		'teacher' => array(
 			'application/vnd.smart.teacher',
 		),
-		'tei'=>array(
+		'tei' => array(
 			'application/tei+xml',
 		),
-		'teicorpus'=>array(
+		'teicorpus' => array(
 			'application/tei+xml',
 		),
-		'ter'=>array(
+		'ter' => array(
 			'application/tamp-error',
 		),
-		'tex'=>array(
+		'tex' => array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
 		),
-		'texi'=>array(
+		'texi' => array(
 			'application/x-texinfo',
 			'text/plain',
 			'text/x-texinfo',
 		),
-		'texinfo'=>array(
+		'texinfo' => array(
 			'application/x-texinfo',
 			'text/plain',
 			'text/x-texinfo',
 		),
-		'text'=>array(
+		'text' => array(
 			'text/plain',
 		),
-		'tfi'=>array(
+		'tfi' => array(
 			'application/thraud+xml',
 		),
-		'tfm'=>array(
+		'tfm' => array(
 			'application/x-tex-tfm',
 		),
-		'tfx'=>array(
+		'tfx' => array(
 			'image/tiff-fx',
 		),
-		'tga'=>array(
+		'tga' => array(
 			'image/x-icb',
 			'image/x-tga',
 		),
-		'tgz'=>array(
+		'tgz' => array(
 			'application/gzip',
 			'application/gzip-compressed',
 			'application/gzipped',
@@ -5545,80 +5548,80 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-gzip-compressed',
 			'gzip/document',
 		),
-		'the'=>array(
+		'the' => array(
 			'message/global-headers',
 		),
-		'theme'=>array(
+		'theme' => array(
 			'application/x-desktop',
 			'application/x-theme',
 		),
-		'themepack'=>array(
+		'themepack' => array(
 			'application/vnd.ms-cab-compressed',
 			'application/x-windows-themepack',
 		),
-		'thmx'=>array(
+		'thmx' => array(
 			'application/vnd.ms-officetheme',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
-		'tif'=>array(
+		'tif' => array(
 			'image/tiff',
 		),
-		'tiff'=>array(
+		'tiff' => array(
 			'image/tiff',
 		),
-		'timer'=>array(
+		'timer' => array(
 			'text/plain',
 			'text/x-systemd-unit',
 		),
-		'tk'=>array(
+		'tk' => array(
 			'application/x-tcl',
 			'text/plain',
 			'text/x-tcl',
 		),
-		'tld'=>array(
+		'tld' => array(
 			'text/plain',
 		),
-		'tlrz'=>array(
+		'tlrz' => array(
 			'application/x-lrzip',
 			'application/x-lrzip-compressed-tar',
 		),
-		'tlz'=>array(
+		'tlz' => array(
 			'application/x-lzma',
 			'application/x-lzma-compressed-tar',
 		),
-		'tmo'=>array(
+		'tmo' => array(
 			'application/vnd.tmobile-livetv',
 		),
-		'tnef'=>array(
+		'tnef' => array(
 			'application/ms-tnef',
 			'application/vnd.ms-tnef',
 		),
-		'tnf'=>array(
+		'tnf' => array(
 			'application/ms-tnef',
 			'application/vnd.ms-tnef',
 		),
-		'toast'=>array(
+		'toast' => array(
 			'application/x-iso9660-image',
 			'application/x-roxio-toast',
 		),
-		'toc'=>array(
+		'toc' => array(
 			'application/x-cdrdao-toc',
 			'text/plain',
 		),
-		'torrent'=>array(
+		'torrent' => array(
 			'application/x-bittorrent',
 		),
-		'tpic'=>array(
+		'tpic' => array(
 			'image/x-icb',
 			'image/x-tga',
 		),
-		'tpl'=>array(
+		'tpl' => array(
 			'application/vnd.groove-tool-template',
 		),
-		'tpt'=>array(
+		'tpt' => array(
 			'application/vnd.trid.tpt',
 		),
-		'tr'=>array(
+		'tr' => array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
@@ -5627,349 +5630,349 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/troff',
 			'text/x-troff',
 		),
-		'tra'=>array(
+		'tra' => array(
 			'application/vnd.trueapp',
 		),
-		'trig'=>array(
+		'trig' => array(
 			'application/trig',
 			'application/x-trig',
 			'text/plain',
 		),
-		'trm'=>array(
+		'trm' => array(
 			'application/x-msterminal',
 		),
-		'ts'=>array(
+		'ts' => array(
 			'application/x-linguist',
 			'application/xml',
 			'text/vnd.trolltech.linguist',
 			'video/mp2t',
 		),
-		'tsa'=>array(
+		'tsa' => array(
 			'application/tamp-sequence-adjust',
 		),
-		'tsd'=>array(
+		'tsd' => array(
 			'application/timestamped-data',
 		),
-		'tsq'=>array(
+		'tsq' => array(
 			'application/tamp-status-query',
 		),
-		'tsr'=>array(
+		'tsr' => array(
 			'application/tamp-status-response',
 		),
-		'tsv'=>array(
+		'tsv' => array(
 			'text/plain',
 			'text/tab-separated-values',
 		),
-		'tta'=>array(
+		'tta' => array(
 			'audio/tta',
 			'audio/x-tta',
 		),
-		'ttc'=>array(
+		'ttc' => array(
 			'application/x-font-ttf',
 			'font/collection',
 		),
-		'ttf'=>array(
+		'ttf' => array(
 			'application/x-font-ttf',
 			'font/ttf',
 		),
-		'ttl'=>array(
+		'ttl' => array(
 			'text/plain',
 			'text/turtle',
 		),
-		'ttml'=>array(
+		'ttml' => array(
 			'application/ttml+xml',
 		),
-		'ttx'=>array(
+		'ttx' => array(
 			'application/x-font-ttx',
 			'application/xml',
 		),
-		'tuc'=>array(
+		'tuc' => array(
 			'application/tamp-update-confirm',
 		),
-		'tur'=>array(
+		'tur' => array(
 			'application/tamp-update',
 		),
-		'twd'=>array(
+		'twd' => array(
 			'application/vnd.simtech-mindmapper',
 		),
-		'twds'=>array(
+		'twds' => array(
 			'application/vnd.simtech-mindmapper',
 		),
-		'twig'=>array(
+		'twig' => array(
 			'text/plain',
 			'text/x-twig',
 		),
-		'txd'=>array(
+		'txd' => array(
 			'application/vnd.genomatix.tuxedo',
 		),
-		'txf'=>array(
+		'txf' => array(
 			'application/vnd.mobius.txf',
 		),
-		'txt'=>array(
+		'txt' => array(
 			'text/plain',
 			'text/prs.prop.logic',
 		),
-		'txz'=>array(
+		'txz' => array(
 			'application/x-xz',
 			'application/x-xz-compressed-tar',
 		),
-		'types'=>array(
+		'types' => array(
 			'text/plain',
 		),
-		'tzo'=>array(
+		'tzo' => array(
 			'application/x-lzop',
 			'application/x-tzo',
 		),
-		'u32'=>array(
+		'u32' => array(
 			'application/x-authorware-bin',
 		),
-		'uc2'=>array(
+		'uc2' => array(
 			'application/x-uc2-compressed',
 		),
-		'udeb'=>array(
+		'udeb' => array(
 			'application/vnd.debian.binary-package',
 			'application/x-archive',
 			'application/x-deb',
 			'application/x-debian-package',
 		),
-		'ufd'=>array(
+		'ufd' => array(
 			'application/vnd.ufdl',
 		),
-		'ufdl'=>array(
+		'ufdl' => array(
 			'application/vnd.ufdl',
 		),
-		'ufraw'=>array(
+		'ufraw' => array(
 			'application/x-ufraw',
 			'application/xml',
 		),
-		'ui'=>array(
+		'ui' => array(
 			'application/x-designer',
 			'application/x-gtk-builder',
 			'application/xml',
 		),
-		'uil'=>array(
+		'uil' => array(
 			'text/plain',
 			'text/x-uil',
 		),
-		'ult'=>array(
+		'ult' => array(
 			'audio/x-mod',
 		),
-		'ulx'=>array(
+		'ulx' => array(
 			'application/x-glulx',
 		),
-		'umj'=>array(
+		'umj' => array(
 			'application/vnd.umajin',
 		),
-		'unf'=>array(
+		'unf' => array(
 			'application/x-nes-rom',
 		),
-		'uni'=>array(
+		'uni' => array(
 			'audio/x-mod',
 		),
-		'unif'=>array(
+		'unif' => array(
 			'application/x-nes-rom',
 		),
-		'unityweb'=>array(
+		'unityweb' => array(
 			'application/vnd.unity',
 		),
-		'unknown'=>array(
+		'unknown' => array(
 			'application/dns',
 		),
-		'uo'=>array(
+		'uo' => array(
 			'application/vnd.uoml+xml',
 		),
-		'uoml'=>array(
+		'uoml' => array(
 			'application/vnd.uoml+xml',
 		),
-		'uri'=>array(
+		'uri' => array(
 			'text/uri-list',
 		),
-		'uric'=>array(
+		'uric' => array(
 			'text/vnd.si.uricatalogue',
 		),
-		'uris'=>array(
+		'uris' => array(
 			'text/uri-list',
 		),
-		'url'=>array(
+		'url' => array(
 			'application/x-mswinurl',
 		),
-		'urls'=>array(
+		'urls' => array(
 			'text/uri-list',
 		),
-		'ustar'=>array(
+		'ustar' => array(
 			'application/x-ustar',
 		),
-		'utz'=>array(
+		'utz' => array(
 			'application/vnd.uiq.theme',
 		),
-		'uu'=>array(
+		'uu' => array(
 			'text/x-uuencode',
 		),
-		'uue'=>array(
+		'uue' => array(
 			'text/plain',
 			'text/x-uuencode',
 			'zz-application/zz-winassoc-uu',
 		),
-		'uva'=>array(
+		'uva' => array(
 			'audio/vnd.dece.audio',
 		),
-		'uvd'=>array(
+		'uvd' => array(
 			'application/vnd.dece.data',
 		),
-		'uvf'=>array(
+		'uvf' => array(
 			'application/vnd.dece.data',
 		),
-		'uvg'=>array(
+		'uvg' => array(
 			'image/vnd.dece.graphic',
 		),
-		'uvh'=>array(
+		'uvh' => array(
 			'video/vnd.dece.hd',
 		),
-		'uvi'=>array(
+		'uvi' => array(
 			'image/vnd.dece.graphic',
 		),
-		'uvm'=>array(
+		'uvm' => array(
 			'video/vnd.dece.mobile',
 		),
-		'uvp'=>array(
+		'uvp' => array(
 			'video/vnd.dece.pd',
 		),
-		'uvs'=>array(
+		'uvs' => array(
 			'video/vnd.dece.sd',
 		),
-		'uvt'=>array(
+		'uvt' => array(
 			'application/vnd.dece.ttml+xml',
 		),
-		'uvu'=>array(
+		'uvu' => array(
 			'video/vnd.uvvu.mp4',
 		),
-		'uvv'=>array(
+		'uvv' => array(
 			'video/vnd.dece.video',
 		),
-		'uvva'=>array(
+		'uvva' => array(
 			'audio/vnd.dece.audio',
 		),
-		'uvvd'=>array(
+		'uvvd' => array(
 			'application/vnd.dece.data',
 		),
-		'uvvf'=>array(
+		'uvvf' => array(
 			'application/vnd.dece.data',
 		),
-		'uvvg'=>array(
+		'uvvg' => array(
 			'image/vnd.dece.graphic',
 		),
-		'uvvh'=>array(
+		'uvvh' => array(
 			'video/vnd.dece.hd',
 		),
-		'uvvi'=>array(
+		'uvvi' => array(
 			'image/vnd.dece.graphic',
 		),
-		'uvvm'=>array(
+		'uvvm' => array(
 			'video/vnd.dece.mobile',
 		),
-		'uvvp'=>array(
+		'uvvp' => array(
 			'video/vnd.dece.pd',
 		),
-		'uvvs'=>array(
+		'uvvs' => array(
 			'video/vnd.dece.sd',
 		),
-		'uvvt'=>array(
+		'uvvt' => array(
 			'application/vnd.dece.ttml+xml',
 		),
-		'uvvu'=>array(
+		'uvvu' => array(
 			'video/vnd.uvvu.mp4',
 		),
-		'uvvv'=>array(
+		'uvvv' => array(
 			'video/vnd.dece.video',
 		),
-		'uvvx'=>array(
+		'uvvx' => array(
 			'application/vnd.dece.unspecified',
 		),
-		'uvvz'=>array(
+		'uvvz' => array(
 			'application/vnd.dece.zip',
 		),
-		'uvx'=>array(
+		'uvx' => array(
 			'application/vnd.dece.unspecified',
 		),
-		'uvz'=>array(
+		'uvz' => array(
 			'application/vnd.dece.zip',
 		),
-		'v64'=>array(
+		'v64' => array(
 			'application/x-n64-rom',
 		),
-		'vala'=>array(
+		'vala' => array(
 			'text/x-csrc',
 			'text/x-vala',
 		),
-		'vapi'=>array(
+		'vapi' => array(
 			'text/x-csrc',
 			'text/x-vala',
 		),
-		'vb'=>array(
+		'vb' => array(
 			'text/x-vbasic',
 			'text/x-vbdotnet',
 		),
-		'vbs'=>array(
+		'vbs' => array(
 			'text/x-vbasic',
 			'text/x-vbscript',
 		),
-		'vcard'=>array(
+		'vcard' => array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
-		'vcd'=>array(
+		'vcd' => array(
 			'application/x-cdlink',
 		),
-		'vcf'=>array(
+		'vcf' => array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
-		'vcg'=>array(
+		'vcg' => array(
 			'application/vnd.groove-vcard',
 		),
-		'vcs'=>array(
+		'vcs' => array(
 			'application/ics',
 			'text/calendar',
 			'text/plain',
 			'text/x-vcalendar',
 		),
-		'vct'=>array(
+		'vct' => array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
 			'text/x-vcard',
 		),
-		'vcx'=>array(
+		'vcx' => array(
 			'application/vnd.vcx',
 		),
-		'vda'=>array(
+		'vda' => array(
 			'image/x-icb',
 			'image/x-tga',
 		),
-		'vhd'=>array(
+		'vhd' => array(
 			'text/plain',
 			'text/x-vhdl',
 		),
-		'vhdl'=>array(
+		'vhdl' => array(
 			'text/plain',
 			'text/x-vhdl',
 		),
-		'vis'=>array(
+		'vis' => array(
 			'application/vnd.visionary',
 		),
-		'viv'=>array(
+		'viv' => array(
 			'video/vivo',
 			'video/vnd.vivo',
 		),
-		'vivo'=>array(
+		'vivo' => array(
 			'video/vivo',
 			'video/vnd.vivo',
 		),
-		'vlc'=>array(
+		'vlc' => array(
 			'application/m3u',
 			'audio/m3u',
 			'audio/mpegurl',
@@ -5978,13 +5981,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/x-mpegurl',
 			'text/plain',
 		),
-		'vm'=>array(
+		'vm' => array(
 			'text/plain',
 		),
-		'vmdk'=>array(
+		'vmdk' => array(
 			'application/x-vmdk',
 		),
-		'vob'=>array(
+		'vob' => array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
@@ -5992,120 +5995,120 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-mpeg2',
 			'video/x-ms-vob',
 		),
-		'voc'=>array(
+		'voc' => array(
 			'audio/x-voc',
 		),
-		'vor'=>array(
+		'vor' => array(
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
 			'application/x-staroffice-template',
 		),
-		'vox'=>array(
+		'vox' => array(
 			'application/x-authorware-bin',
 		),
-		'vpm'=>array(
+		'vpm' => array(
 			'multipart/voice-message',
 		),
-		'vrm'=>array(
+		'vrm' => array(
 			'model/vrml',
 			'text/plain',
 		),
-		'vrml'=>array(
+		'vrml' => array(
 			'model/vrml',
 			'text/plain',
 		),
-		'vsd'=>array(
+		'vsd' => array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
 			'application/x-ole-storage',
 		),
-		'vsdm'=>array(
+		'vsdm' => array(
 			'application/vnd.ms-visio.drawing.macroenabled.12',
 			'application/vnd.ms-visio.drawing.macroenabled.main+xml',
 			'application/zip',
 		),
-		'vsdx'=>array(
+		'vsdx' => array(
 			'application/vnd.ms-visio.drawing',
 			'application/vnd.ms-visio.drawing.main+xml',
 			'application/zip',
 		),
-		'vsf'=>array(
+		'vsf' => array(
 			'application/vnd.vsf',
 		),
-		'vsl'=>array(
+		'vsl' => array(
 			'text/plain',
 		),
-		'vss'=>array(
+		'vss' => array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
 			'application/x-ole-storage',
 		),
-		'vssm'=>array(
+		'vssm' => array(
 			'application/vnd.ms-visio.stencil.macroenabled.12',
 			'application/vnd.ms-visio.stencil.macroenabled.main+xml',
 			'application/zip',
 		),
-		'vssx'=>array(
+		'vssx' => array(
 			'application/vnd.ms-visio.stencil',
 			'application/vnd.ms-visio.stencil.main+xml',
 			'application/zip',
 		),
-		'vst'=>array(
+		'vst' => array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
 			'application/x-ole-storage',
 			'image/x-icb',
 			'image/x-tga',
 		),
-		'vstm'=>array(
+		'vstm' => array(
 			'application/vnd.ms-visio.template.macroenabled.12',
 			'application/vnd.ms-visio.template.macroenabled.main+xml',
 			'application/zip',
 		),
-		'vstx'=>array(
+		'vstx' => array(
 			'application/vnd.ms-visio.template',
 			'application/vnd.ms-visio.template.main+xml',
 			'application/zip',
 		),
-		'vsw'=>array(
+		'vsw' => array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
 			'application/x-ole-storage',
 		),
-		'vtt'=>array(
+		'vtt' => array(
 			'text/plain',
 			'text/vtt',
 		),
-		'vtu'=>array(
+		'vtu' => array(
 			'model/vnd.vtu',
 		),
-		'vwx'=>array(
+		'vwx' => array(
 			'application/vnd.vectorworks',
 		),
-		'vxml'=>array(
+		'vxml' => array(
 			'application/voicexml+xml',
 		),
-		'w3d'=>array(
+		'w3d' => array(
 			'application/x-director',
 		),
-		'w60'=>array(
+		'w60' => array(
 			'application/vnd.wordperfect',
 		),
-		'wad'=>array(
+		'wad' => array(
 			'application/x-doom',
 			'application/x-doom-wad',
 			'application/x-wii-wad',
 		),
-		'war'=>array(
+		'war' => array(
 			'application/java-archive',
 			'application/x-tika-java-web-archive',
 		),
-		'wav'=>array(
+		'wav' => array(
 			'audio/vnd.wave',
 			'audio/wav',
 			'audio/x-wav',
 		),
-		'wax'=>array(
+		'wax' => array(
 			'application/x-ms-asx',
 			'audio/x-ms-asx',
 			'audio/x-ms-wax',
@@ -6113,67 +6116,67 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'video/x-ms-wmx',
 			'video/x-ms-wvx',
 		),
-		'wb1'=>array(
+		'wb1' => array(
 			'application/x-quattro-pro',
 			'application/x-quattropro',
 		),
-		'wb2'=>array(
+		'wb2' => array(
 			'application/x-quattro-pro',
 			'application/x-quattropro',
 		),
-		'wb3'=>array(
+		'wb3' => array(
 			'application/x-quattro-pro',
 			'application/x-quattropro',
 		),
-		'wbmp'=>array(
+		'wbmp' => array(
 			'image/vnd-wap-wbmp',
 			'image/vnd.wap.wbmp',
 		),
-		'wbs'=>array(
+		'wbs' => array(
 			'application/vnd.criticaltools.wbs+xml',
 		),
-		'wbxml'=>array(
+		'wbxml' => array(
 			'application/vnd.wap-wbxml',
 			'application/vnd.wap.wbxml',
 		),
-		'wcm'=>array(
+		'wcm' => array(
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 		),
-		'wdb'=>array(
+		'wdb' => array(
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 		),
-		'wdp'=>array(
+		'wdp' => array(
 			'image/vnd.ms-photo',
 		),
-		'weba'=>array(
+		'weba' => array(
 			'audio/webm',
 		),
-		'webarchive'=>array(
+		'webarchive' => array(
 			'application/x-bplist',
 			'application/x-webarchive',
 		),
-		'webm'=>array(
+		'webm' => array(
 			'application/x-matroska',
 			'video/webm',
 		),
-		'webp'=>array(
+		'webp' => array(
 			'image/webp',
 		),
-		'wg'=>array(
+		'wg' => array(
 			'application/vnd.pmi.widget',
 		),
-		'wgt'=>array(
+		'wgt' => array(
 			'application/widget',
 		),
-		'wif'=>array(
+		'wif' => array(
 			'application/watcherinfo+xml',
 		),
-		'wim'=>array(
+		'wim' => array(
 			'application/x-ms-wim',
 		),
-		'wk1'=>array(
+		'wk1' => array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
 			'application/wk1',
@@ -6181,7 +6184,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lotus123',
 			'zz-application/zz-winassoc-123',
 		),
-		'wk3'=>array(
+		'wk3' => array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
 			'application/wk1',
@@ -6189,7 +6192,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lotus123',
 			'zz-application/zz-winassoc-123',
 		),
-		'wk4'=>array(
+		'wk4' => array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
 			'application/wk1',
@@ -6197,10 +6200,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lotus123',
 			'zz-application/zz-winassoc-123',
 		),
-		'wkdownload'=>array(
+		'wkdownload' => array(
 			'application/x-partial-download',
 		),
-		'wks'=>array(
+		'wks' => array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
 			'application/vnd.ms-works',
@@ -6210,19 +6213,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-ole-storage',
 			'zz-application/zz-winassoc-123',
 		),
-		'wm'=>array(
+		'wm' => array(
 			'video/x-ms-wm',
 		),
-		'wma'=>array(
+		'wma' => array(
 			'application/vnd.ms-asf',
 			'audio/wma',
 			'audio/x-ms-wma',
 			'video/x-ms-asf',
 		),
-		'wmd'=>array(
+		'wmd' => array(
 			'application/x-ms-wmd',
 		),
-		'wmf'=>array(
+		'wmf' => array(
 			'application/wmf',
 			'application/x-msmetafile',
 			'application/x-wmf',
@@ -6230,279 +6233,279 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-win-metafile',
 			'image/x-wmf',
 		),
-		'wml'=>array(
+		'wml' => array(
 			'application/xml',
 			'text/vnd.wap.wml',
 		),
-		'wmlc'=>array(
+		'wmlc' => array(
 			'application/vnd.wap.wmlc',
 		),
-		'wmls'=>array(
+		'wmls' => array(
 			'text/vnd.wap.wmlscript',
 		),
-		'wmlsc'=>array(
+		'wmlsc' => array(
 			'application/vnd.wap.wmlscriptc',
 		),
-		'wmv'=>array(
+		'wmv' => array(
 			'application/vnd.ms-asf',
 			'video/x-ms-asf',
 			'video/x-ms-wmv',
 		),
-		'wmx'=>array(
+		'wmx' => array(
 			'application/x-ms-asx',
 			'audio/x-ms-asx',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
 			'video/x-ms-wvx',
 		),
-		'wmz'=>array(
+		'wmz' => array(
 			'application/x-gzip',
 			'application/x-ms-wmz',
 			'application/x-msmetafile',
 		),
-		'woff'=>array(
+		'woff' => array(
 			'application/font-woff',
 			'font/woff',
 		),
-		'woff2'=>array(
+		'woff2' => array(
 			'font/woff',
 			'font/woff2',
 		),
-		'wp'=>array(
+		'wp' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wp4'=>array(
+		'wp4' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wp5'=>array(
+		'wp5' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wp6'=>array(
+		'wp6' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wp61'=>array(
+		'wp61' => array(
 			'application/vnd.wordperfect',
 		),
-		'wpd'=>array(
+		'wpd' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wpg'=>array(
+		'wpg' => array(
 			'application/x-wpg',
 		),
-		'wpl'=>array(
+		'wpl' => array(
 			'application/vnd.ms-wpl',
 		),
-		'wpp'=>array(
+		'wpp' => array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
 			'application/x-wordperfect',
 		),
-		'wps'=>array(
+		'wps' => array(
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 		),
-		'wpt'=>array(
+		'wpt' => array(
 			'application/vnd.wordperfect',
 		),
-		'wqd'=>array(
+		'wqd' => array(
 			'application/vnd.wqd',
 		),
-		'wri'=>array(
+		'wri' => array(
 			'application/x-mswrite',
 		),
-		'wrl'=>array(
+		'wrl' => array(
 			'model/vrml',
 			'text/plain',
 		),
-		'wsdd'=>array(
+		'wsdd' => array(
 			'text/plain',
 		),
-		'wsdl'=>array(
+		'wsdl' => array(
 			'application/wsdl+xml',
 		),
-		'wsgi'=>array(
+		'wsgi' => array(
 			'application/x-executable',
 			'text/x-python',
 		),
-		'wspolicy'=>array(
+		'wspolicy' => array(
 			'application/wspolicy+xml',
 		),
-		'wtb'=>array(
+		'wtb' => array(
 			'application/vnd.webturbo',
 		),
-		'wv'=>array(
+		'wv' => array(
 			'audio/x-wavpack',
 		),
-		'wvc'=>array(
+		'wvc' => array(
 			'audio/x-wavpack-correction',
 		),
-		'wvp'=>array(
+		'wvp' => array(
 			'audio/x-wavpack',
 		),
-		'wvx'=>array(
+		'wvx' => array(
 			'application/x-ms-asx',
 			'audio/x-ms-asx',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
 			'video/x-ms-wvx',
 		),
-		'wwf'=>array(
+		'wwf' => array(
 			'application/pdf',
 			'application/wwf',
 			'application/x-wwf',
 		),
-		'x32'=>array(
+		'x32' => array(
 			'application/x-authorware-bin',
 		),
-		'x3d'=>array(
+		'x3d' => array(
 			'application/vnd.hzn-3d-crossword',
 			'model/x3d+xml',
 		),
-		'x3db'=>array(
+		'x3db' => array(
 			'model/x3d+binary',
 		),
-		'x3dbz'=>array(
+		'x3dbz' => array(
 			'model/x3d+binary',
 		),
-		'x3dv'=>array(
+		'x3dv' => array(
 			'model/x3d+vrml',
 		),
-		'x3dvz'=>array(
+		'x3dvz' => array(
 			'model/x3d+vrml',
 		),
-		'x3dz'=>array(
+		'x3dz' => array(
 			'model/x3d+xml',
 		),
-		'x3f'=>array(
+		'x3f' => array(
 			'image/x-dcraw',
 			'image/x-raw-sigma',
 			'image/x-sigma-x3f',
 		),
-		'xac'=>array(
+		'xac' => array(
 			'application/x-gnucash',
 		),
-		'xaml'=>array(
+		'xaml' => array(
 			'application/xaml+xml',
 		),
-		'xap'=>array(
+		'xap' => array(
 			'application/x-silverlight-app',
 		),
-		'xar'=>array(
+		'xar' => array(
 			'application/vnd.xara',
 			'application/x-xar',
 		),
-		'xargs'=>array(
+		'xargs' => array(
 			'text/plain',
 		),
-		'xav'=>array(
+		'xav' => array(
 			'application/xcap-att+xml',
 		),
-		'xbap'=>array(
+		'xbap' => array(
 			'application/x-ms-xbap',
 		),
-		'xbd'=>array(
+		'xbd' => array(
 			'application/vnd.fujixerox.docuworks.binder',
 		),
-		'xbel'=>array(
+		'xbel' => array(
 			'application/x-xbel',
 			'application/xml',
 		),
-		'xbl'=>array(
+		'xbl' => array(
 			'application/xml',
 			'text/plain',
 			'text/xml',
 		),
-		'xbm'=>array(
+		'xbm' => array(
 			'image/x-xbitmap',
 			'text/x-c',
 		),
-		'xca'=>array(
+		'xca' => array(
 			'application/xcap-caps+xml',
 		),
-		'xcat'=>array(
+		'xcat' => array(
 			'text/plain',
 		),
-		'xcf'=>array(
+		'xcf' => array(
 			'image/x-xcf',
 			'image/xcf',
 		),
-		'xconf'=>array(
+		'xconf' => array(
 			'text/plain',
 		),
-		'xcs'=>array(
+		'xcs' => array(
 			'application/calendar+xml',
 		),
-		'xdf'=>array(
+		'xdf' => array(
 			'application/mrb-consumer+xml',
 			'application/mrb-publish+xml',
 			'application/xcap-diff+xml',
 		),
-		'xdgapp'=>array(
+		'xdgapp' => array(
 			'application/vnd.flatpak',
 			'application/vnd.xdgapp',
 		),
-		'xdm'=>array(
+		'xdm' => array(
 			'application/vnd.syncml.dm+xml',
 		),
-		'xdp'=>array(
+		'xdp' => array(
 			'application/vnd.adobe.xdp+xml',
 		),
-		'xdssc'=>array(
+		'xdssc' => array(
 			'application/dssc+xml',
 		),
-		'xdw'=>array(
+		'xdw' => array(
 			'application/vnd.fujixerox.docuworks',
 		),
-		'xegrm'=>array(
+		'xegrm' => array(
 			'text/plain',
 		),
-		'xel'=>array(
+		'xel' => array(
 			'application/xcap-el+xml',
 		),
-		'xenc'=>array(
+		'xenc' => array(
 			'application/xenc+xml',
 		),
-		'xer'=>array(
+		'xer' => array(
 			'application/patch-ops-error+xml',
 			'application/xcap-error+xml',
 		),
-		'xfdf'=>array(
+		'xfdf' => array(
 			'application/vnd.adobe.xfdf',
 		),
-		'xfdl'=>array(
+		'xfdl' => array(
 			'application/vnd.xfdl',
 		),
-		'xgrm'=>array(
+		'xgrm' => array(
 			'text/plain',
 		),
-		'xht'=>array(
+		'xht' => array(
 			'application/xhtml+xml',
 			'application/xml',
 		),
-		'xhtml'=>array(
+		'xhtml' => array(
 			'application/xhtml+xml',
 			'application/xml',
 		),
-		'xhvml'=>array(
+		'xhvml' => array(
 			'application/xv+xml',
 		),
-		'xi'=>array(
+		'xi' => array(
 			'audio/x-xi',
 		),
-		'xif'=>array(
+		'xif' => array(
 			'image/vnd.xiff',
 		),
-		'xla'=>array(
+		'xla' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6510,11 +6513,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xlam'=>array(
+		'xlam' => array(
 			'application/vnd.ms-excel.addin.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 		),
-		'xlc'=>array(
+		'xlc' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6522,7 +6525,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xld'=>array(
+		'xld' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6530,19 +6533,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xlex'=>array(
+		'xlex' => array(
 			'text/plain',
 		),
-		'xlf'=>array(
+		'xlf' => array(
 			'application/x-xliff',
 			'application/x-xliff+xml',
 			'application/xml',
 		),
-		'xliff'=>array(
+		'xliff' => array(
 			'application/x-xliff',
 			'application/xml',
 		),
-		'xll'=>array(
+		'xll' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6550,7 +6553,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xlm'=>array(
+		'xlm' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6558,10 +6561,10 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xlog'=>array(
+		'xlog' => array(
 			'text/plain',
 		),
-		'xlr'=>array(
+		'xlr' => array(
 			'application/ms-office',
 			'application/vnd.ms-excel',
 			'application/vnd.ms-works',
@@ -6569,7 +6572,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-tika-msworks-spreadsheet',
 			'application/xml',
 		),
-		'xls'=>array(
+		'xls' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6577,19 +6580,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xlsb'=>array(
+		'xlsb' => array(
 			'application/vnd.ms-excel.sheet.binary.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 		),
-		'xlsm'=>array(
+		'xlsm' => array(
 			'application/vnd.ms-excel.sheet.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 		),
-		'xlsx'=>array(
+		'xlsx' => array(
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/zip',
 		),
-		'xlt'=>array(
+		'xlt' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6597,15 +6600,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xltm'=>array(
+		'xltm' => array(
 			'application/vnd.ms-excel.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 		),
-		'xltx'=>array(
+		'xltx' => array(
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 			'application/zip',
 		),
-		'xlw'=>array(
+		'xlw' => array(
 			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
@@ -6613,27 +6616,27 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
-		'xm'=>array(
+		'xm' => array(
 			'audio/x-xm',
 			'audio/xm',
 		),
-		'xmap'=>array(
+		'xmap' => array(
 			'text/plain',
 		),
-		'xmf'=>array(
+		'xmf' => array(
 			'audio/mobile-xmf',
 			'audio/x-xmf',
 			'audio/xmf',
 		),
-		'xmi'=>array(
+		'xmi' => array(
 			'application/xml',
 			'text/x-xmi',
 		),
-		'xmind'=>array(
+		'xmind' => array(
 			'application/x-xmind',
 			'application/zip',
 		),
-		'xml'=>array(
+		'xml' => array(
 			'application/cea-2018+xml',
 			'application/conference-info+xml',
 			'application/cpl+xml',
@@ -6672,213 +6675,213 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/xml',
 			'text/xml-external-parsed-entity',
 		),
-		'xmls'=>array(
+		'xmls' => array(
 			'application/dskpp+xml',
 		),
-		'xmp'=>array(
+		'xmp' => array(
 			'application/rdf+xml',
 			'application/xml',
 		),
-		'xns'=>array(
+		'xns' => array(
 			'application/xcap-ns+xml',
 		),
-		'xo'=>array(
+		'xo' => array(
 			'application/vnd.olpc-sugar',
 		),
-		'xop'=>array(
+		'xop' => array(
 			'application/xop+xml',
 		),
-		'xpi'=>array(
+		'xpi' => array(
 			'application/x-xpinstall',
 			'application/zip',
 		),
-		'xpl'=>array(
+		'xpl' => array(
 			'application/xproc+xml',
 		),
-		'xpm'=>array(
+		'xpm' => array(
 			'image/x-xpixmap',
 			'image/x-xpm',
 		),
-		'xport'=>array(
+		'xport' => array(
 			'application/x-sas-xport',
 		),
-		'xpr'=>array(
+		'xpr' => array(
 			'application/vnd.is-xpr',
 		),
-		'xps'=>array(
+		'xps' => array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
 			'application/zip',
 		),
-		'xpt'=>array(
+		'xpt' => array(
 			'application/x-sas-xport',
 		),
-		'xpw'=>array(
+		'xpw' => array(
 			'application/vnd.intercon.formnet',
 		),
-		'xpx'=>array(
+		'xpx' => array(
 			'application/vnd.intercon.formnet',
 		),
-		'xq'=>array(
+		'xq' => array(
 			'application/xquery',
 			'text/plain',
 		),
-		'xquery'=>array(
+		'xquery' => array(
 			'application/xquery',
 			'text/plain',
 		),
-		'xroles'=>array(
+		'xroles' => array(
 			'text/plain',
 		),
-		'xsamples'=>array(
+		'xsamples' => array(
 			'text/plain',
 		),
-		'xsd'=>array(
+		'xsd' => array(
 			'application/x-xml',
 			'application/xml',
 			'text/plain',
 			'text/xml',
 		),
-		'xsl'=>array(
+		'xsl' => array(
 			'application/x-xml',
 			'application/xml',
 			'application/xslt+xml',
 			'text/plain',
 			'text/xml',
 		),
-		'xslfo'=>array(
+		'xslfo' => array(
 			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
 			'text/xsl',
 		),
-		'xslt'=>array(
+		'xslt' => array(
 			'application/xml',
 			'application/xslt+xml',
 			'text/xsl',
 		),
-		'xsm'=>array(
+		'xsm' => array(
 			'application/vnd.syncml+xml',
 		),
-		'xsp'=>array(
+		'xsp' => array(
 			'text/plain',
 		),
-		'xspf'=>array(
+		'xspf' => array(
 			'application/x-xspf+xml',
 			'application/xml',
 			'application/xspf+xml',
 		),
-		'xul'=>array(
+		'xul' => array(
 			'application/vnd.mozilla.xul+xml',
 			'application/xml',
 		),
-		'xvm'=>array(
+		'xvm' => array(
 			'application/xv+xml',
 		),
-		'xvml'=>array(
+		'xvml' => array(
 			'application/xv+xml',
 		),
-		'xwd'=>array(
+		'xwd' => array(
 			'image/x-xwindowdump',
 		),
-		'xweb'=>array(
+		'xweb' => array(
 			'text/plain',
 		),
-		'xwelcome'=>array(
+		'xwelcome' => array(
 			'text/plain',
 		),
-		'xyz'=>array(
+		'xyz' => array(
 			'chemical/x-xyz',
 		),
-		'xyze'=>array(
+		'xyze' => array(
 			'image/vnd.radiance',
 		),
-		'xz'=>array(
+		'xz' => array(
 			'application/x-xz',
 		),
-		'yaml'=>array(
+		'yaml' => array(
 			'application/x-yaml',
 			'text/plain',
 			'text/x-yaml',
 			'text/yaml',
 		),
-		'yang'=>array(
+		'yang' => array(
 			'application/yang',
 		),
-		'yin'=>array(
+		'yin' => array(
 			'application/yin+xml',
 		),
-		'yml'=>array(
+		'yml' => array(
 			'application/x-yaml',
 			'text/plain',
 			'text/x-yaml',
 			'text/yaml',
 		),
-		'z1'=>array(
+		'z1' => array(
 			'application/x-zmachine',
 		),
-		'z2'=>array(
+		'z2' => array(
 			'application/x-zmachine',
 		),
-		'z3'=>array(
+		'z3' => array(
 			'application/x-zmachine',
 		),
-		'z4'=>array(
+		'z4' => array(
 			'application/x-zmachine',
 		),
-		'z5'=>array(
+		'z5' => array(
 			'application/x-zmachine',
 		),
-		'z6'=>array(
+		'z6' => array(
 			'application/x-zmachine',
 		),
-		'z64'=>array(
+		'z64' => array(
 			'application/x-n64-rom',
 		),
-		'z7'=>array(
+		'z7' => array(
 			'application/x-zmachine',
 		),
-		'z8'=>array(
+		'z8' => array(
 			'application/x-zmachine',
 		),
-		'zabw'=>array(
+		'zabw' => array(
 			'application/x-abiword',
 			'application/xml',
 		),
-		'zaz'=>array(
+		'zaz' => array(
 			'application/vnd.zzazz.deck+xml',
 		),
-		'zfc'=>array(
+		'zfc' => array(
 			'application/vnd.filmit.zfc',
 		),
-		'zfo'=>array(
+		'zfo' => array(
 			'application/vnd.software602.filler.form-xml-zip',
 		),
-		'zip'=>array(
+		'zip' => array(
 			'application/x-zip',
 			'application/x-zip-compressed',
 			'application/zip',
 		),
-		'zir'=>array(
+		'zir' => array(
 			'application/vnd.zul',
 		),
-		'zirz'=>array(
+		'zirz' => array(
 			'application/vnd.zul',
 		),
-		'zmm'=>array(
+		'zmm' => array(
 			'application/vnd.handheld-entertainment+xml',
 		),
-		'zoo'=>array(
+		'zoo' => array(
 			'application/x-zoo',
 		),
-		'zsav'=>array(
+		'zsav' => array(
 			'application/x-spss-sav',
 			'application/x-spss-savefile',
 		),
-		'zz'=>array(
+		'zz' => array(
 			'application/zlib',
 		),
-		'123'=>array(
+		'123' => array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
 			'application/wk1',
@@ -6886,20 +6889,19 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-lotus123',
 			'zz-application/zz-winassoc-123',
 		),
-		'602'=>array(
+		'602' => array(
 			'application/x-t602',
 		),
-		'669'=>array(
+		'669' => array(
 			'audio/x-mod',
 		),
 	);
 
 	$ext = trim( strtolower( $ext ) );
 	$ext = ltrim( $ext, '.' );
-	if ( strlen( $ext ) && isset( $mimes[$ext] ) ) {
-		$match = $mimes[$ext];
-	}
-	else {
+	if ( strlen( $ext ) && isset( $mimes[ $ext ] ) ) {
+		$match = $mimes[ $ext ];
+	} else {
 		$match = false;
 	}
 
@@ -6943,20 +6945,38 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		return apply_filters( 'wp_check_mime_alias', false, $ext, $mime );
 	}
 
+	if ( 'application/octet-stream' === $mime ) {
+		/**
+		 * Require Checks For application/octet-stream
+		 *
+		 * While application/octet-stream a valid media
+		 * type, it is also fileinfo's version of a shrug.
+		 * In general, it is not authoritative enough a
+		 * result from which to reject a file.
+		 *
+		 * @since xxx
+		 *
+		 * @param bool $enforce_checking Run checks.
+		 */
+		$soft_pass = apply_filters( 'wp_check_application_octet_stream', false );
+		if ( false === $soft_pass ) {
+			return apply_filters( 'wp_check_mime_alias', true, $ext, $mime );
+		}
+	}
+
 	// We want to test for both x-subtype and subtype variants.
 	$parts = explode( '/', $mime );
 	$subtype = count( $parts ) - 1;
-	if ( preg_match( '/^x\-/', $parts[$subtype] ) ) {
-		$parts[$subtype] = preg_replace( '/^x\-/', '', $parts[$subtype] );
-	}
-	else {
-		$parts[$subtype] = 'x-' . $parts[$subtype];
+	if ( preg_match( '/^x\-/', $parts[ $subtype ] ) ) {
+		$parts[ $subtype ] = preg_replace( '/^x\-/', '', $parts[ $subtype ] );
+	} else {
+		$parts[ $subtype ] = 'x-' . $parts[ $subtype ];
 	}
 
 	// We now have type/x-subtype and type/subtype.
 	$test = array(
 		$mime,
-		implode( '/', $parts )
+		implode( '/', $parts ),
 	);
 
 	// Overlap is success!
@@ -6976,6 +6996,10 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
  * The content-based type will override the name-based
  * type if available and included in the $mimes list.
  *
+ * A false response will be set if the extension is
+ * not allowed, or if a "real MIME" was found and
+ * that MIME is not allowed.
+ *
  * @since xxx
  *
  * @see wp_check_filetype()
@@ -6983,7 +7007,7 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
  *
  * @param string $file Full path to the file.
  * @param string $filename The name of the file (may differ from $file due to $file being in a tmp directory).
- * @param array $mimes Optional. Key is the file extension with value as the mime type.
+ * @param array  $mimes Optional. Key is the file extension with value as the mime type.
  * @return array Values with extension first and mime type.
  */
 function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
@@ -7025,9 +7049,9 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 			}
 
 			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
-		} catch( Throwable $e ) {
+		} catch ( Throwable $e ) {
 			$real_mime = false;
-		} catch( Exception $e ) {
+		} catch ( Exception $e ) {
 			$real_mime = false;
 		}
 
@@ -7035,14 +7059,13 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 		if ( false !== $real_mime ) {
 			$real_mime = strtolower( sanitize_mime_type( $real_mime ) );
 			if ( ! wp_check_mime_alias( $checked['ext'], $real_mime ) ) {
-				// If the extension is incorrect but the type is valid,
-				// update the extension.
+				// If the extension is incorrect but the type is otherwise
+				// valid, update the extension.
 				if ( false !== $extensions = array_search( $real_mime, $mimes, true ) ) {
 					$extensions = explode( '|', $extensions );
 					$checked['ext'] = $extensions[0];
 					$checked['type'] = $real_mime;
-				}
-				// Otherwise reject the results.
+				} // Otherwise reject the results.
 				else {
 					$checked['ext'] = false;
 					$checked['type'] = false;
