@@ -89,8 +89,8 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		 *
 		 * @param bool $enforce_checking Run checks.
 		 */
-		$soft_pass = apply_filters( 'wp_check_application_octet_stream', false );
-		if ( false === $soft_pass ) {
+		$validate = apply_filters( 'wp_check_application_octet_stream', false );
+		if ( false === $validate ) {
 			return apply_filters( 'wp_check_mime_alias', true, $ext, $mime );
 		}
 	}
@@ -164,8 +164,14 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 		$real_mime = false;
 
 		try {
-			// Try finfo, if available.
+			// Try exif first. It is commonly applicable and
+			// relatively low in overhead.
+			// TODO requires patch #40017.
+			// $real_mime = wp_get_image_mime( $file );
+
+			// Fall back to fileinfo, if available.
 			if (
+				false === $real_mime &&
 				extension_loaded( 'fileinfo' ) &&
 				defined( 'FILEINFO_MIME_TYPE' )
 			) {
@@ -178,8 +184,6 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 					$real_mime = false;
 				}
 			}
-
-			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
 		} catch ( Throwable $e ) {
 			$real_mime = false;
 		} catch ( Exception $e ) {
