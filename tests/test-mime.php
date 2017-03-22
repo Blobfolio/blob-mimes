@@ -120,7 +120,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 		if (
 			!function_exists('finfo_file') ||
 			!defined('FILEINFO_MIME_TYPE')
-		){
+		) {
 			$this->markTestSkipped('fileinfo.so not installed.');
 		}
 
