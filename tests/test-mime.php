@@ -95,7 +95,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 	/**
 	 * ::finfo()
 	 *
-	 * Test an remote file.
+	 * Test a remote file.
 	 *
 	 * @return void Nothing.
 	 */
@@ -107,6 +107,36 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 		$this->assertEquals('svg', $thing['extension']);
 		$this->assertEquals('Mozilla_Firefox_logo_2013', $thing['filename']);
 		$this->assertEquals('image/svg+xml', $thing['mime']);
+	}
+
+	/**
+	 * ::check_ext_and_mime()
+	 *
+	 * Test various XLS files.
+	 *
+	 * @return void Nothing.
+	 */
+	function test_check_ext_and_mime() {
+		if (
+			!function_exists('finfo_file') ||
+			!defined('FILEINFO_MIME_TYPE')
+		){
+			$this->markTestSkipped('fileinfo.so not installed.');
+		}
+
+		$things = array(
+			'xls-cdfv2.xls',
+			'xls-excel.xls',
+			'xls-msoffice.xls',
+			'xls-xml.xls'
+		);
+
+		$finfo = finfo_open(FILEINFO_MIME_TYPE);
+		foreach ($things as $thing) {
+			$mime = finfo_file($finfo, self::ASSETS . $thing);
+			$this->assertEquals(true, \blobfolio\mimes\mimes::check_ext_and_mime('xls', $mime));
+		}
+		finfo_close($finfo);
 	}
 }
 
