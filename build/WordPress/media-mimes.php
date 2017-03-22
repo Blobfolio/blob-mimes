@@ -1214,8 +1214,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-stata-do',
 		),
 		'doc' => array(
-			'application/ms-office',
 			'application/msword',
+			'application/vnd.ms-office',
 			'application/vnd.ms-word',
 			'application/x-msword',
 			'application/x-ole-storage',
@@ -1237,9 +1237,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'dot' => array(
-			'application/ms-office',
 			'application/msword',
 			'application/msword-template',
+			'application/vnd.ms-office',
 			'application/vnd.ms-word',
 			'application/xml',
 			'text/vnd.graphviz',
@@ -4209,9 +4209,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.macports.portpkg',
 		),
 		'pot' => array(
-			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 			'text/plain',
@@ -4231,8 +4231,8 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-pascal',
 		),
 		'ppa' => array(
-			'application/ms-office',
 			'application/mspowerpoint',
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
 		),
 		'ppam' => array(
@@ -4250,9 +4250,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/x-portable-pixmap',
 		),
 		'pps' => array(
-			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
@@ -4265,9 +4265,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'ppt' => array(
-			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
@@ -4280,9 +4280,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'ppz' => array(
-			'application/ms-office',
 			'application/mspowerpoint',
 			'application/powerpoint',
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
 			'application/x-mspowerpoint',
 		),
@@ -6506,9 +6506,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'image/vnd.xiff',
 		),
 		'xla' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6518,17 +6518,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 		),
 		'xlc' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xld' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6546,17 +6546,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 		),
 		'xll' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlm' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6565,17 +6565,17 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/plain',
 		),
 		'xlr' => array(
-			'application/ms-office',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 			'application/x-tika-msworks-spreadsheet',
 			'application/xml',
 		),
 		'xls' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6593,9 +6593,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'xlt' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6609,9 +6609,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/zip',
 		),
 		'xlw' => array(
-			'application/ms-office',
 			'application/msexcel',
 			'application/vnd.ms-excel',
+			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
 			'zz-application/zz-winassoc-xls',
@@ -6921,6 +6921,8 @@ function wp_get_mime_aliases( $ext = '' ) {
  *
  * @since xxx
  *
+ * @see { https://github.com/php/php-src/blob/3ef069d26c7863b059325b9a0d26cac31c97fe4b/ext/fileinfo/libmagic/readcdf.c }
+ *
  * @param string $ext File extension.
  * @param string $mime MIME type.
  * @return bool True/false.
@@ -6945,6 +6947,12 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		return apply_filters( 'wp_check_mime_alias', false, $ext, $mime );
 	}
 
+	// Before looking for matches, convert any generic CDFV2
+	// types into an equally generic, but less variable type.
+	if ( 0 === strpos( $mime, 'application/cdfv2' ) ) {
+		$mime = 'application/vnd.ms-office';
+	}
+
 	if ( 'application/octet-stream' === $mime ) {
 		/**
 		 * Require Checks For application/octet-stream
@@ -6964,20 +6972,27 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		}
 	}
 
-	// We want to test for both x-subtype and subtype variants.
+	// Test for the literal MIME, but also certain generic
+	// variations like x-subtype and vnd.subtype.
+	$test = array( $mime );
+
 	$parts = explode( '/', $mime );
 	$subtype = count( $parts ) - 1;
-	if ( preg_match( '/^x\-/', $parts[ $subtype ] ) ) {
-		$parts[ $subtype ] = preg_replace( '/^x\-/', '', $parts[ $subtype ] );
+	if ( 'x-' === substr( $parts[ $subtype ], 0, 2 ) ) {
+		$parts[ $subtype ] = substr( $parts[ $subtype ], 2 );
 	} else {
 		$parts[ $subtype ] = 'x-' . $parts[ $subtype ];
 	}
+	$test[] = implode( '/', $parts );
 
-	// We now have type/x-subtype and type/subtype.
-	$test = array(
-		$mime,
-		implode( '/', $parts ),
-	);
+	$parts = explode( '/', $mime );
+	$subtype = count( $parts ) - 1;
+	if ( 'vnd.' === substr( $parts[ $subtype ], 0, 4 ) ) {
+		$parts[ $subtype ] = substr( $parts[ $subtype ], 4 );
+	} else {
+		$parts[ $subtype ] = 'vnd.' . $parts[ $subtype ];
+	}
+	$test[] = implode( '/', $parts );
 
 	// Overlap is success!
 	$found = array_intersect( $test, $mimes );
@@ -7033,8 +7048,14 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 		$real_mime = false;
 
 		try {
-			// Try finfo, if available.
+			// Try exif first. It is commonly applicable and relatively
+			// low in overhead.
+			// TODO requires patch #40017.
+			// $real_mime = wp_get_image_mime( $file );
+
+			// Fall back to fileinfo, if available.
 			if (
+				false === $real_mime &&
 				extension_loaded( 'fileinfo' ) &&
 				defined( 'FILEINFO_MIME_TYPE' )
 			) {
@@ -7047,8 +7068,6 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 					$real_mime = false;
 				}
 			}
-
-			// TODO use wp_get_image_mime() as fallback, pending resolution of #40017.
 		} catch ( Throwable $e ) {
 			$real_mime = false;
 		} catch ( Exception $e ) {
