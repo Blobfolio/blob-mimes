@@ -52,6 +52,8 @@ function wp_get_mime_aliases( $ext = '' ) {
  *
  * @since xxx
  *
+ * @see { https://github.com/php/php-src/blob/3ef069d26c7863b059325b9a0d26cac31c97fe4b/ext/fileinfo/libmagic/readcdf.c }
+ *
  * @param string $ext File extension.
  * @param string $mime MIME type.
  * @return bool True/false.
@@ -76,6 +78,12 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		return apply_filters( 'wp_check_mime_alias', false, $ext, $mime );
 	}
 
+	// Before looking for matches, convert any generic CDFV2
+	// types into an equally generic, but less variable type.
+	if ( 0 === strpos( $mime, 'application/cdfv2' ) ) {
+		$mime = 'application/vnd.ms-office';
+	}
+
 	if ( 'application/octet-stream' === $mime ) {
 		/**
 		 * Require Checks For application/octet-stream
@@ -89,26 +97,33 @@ function wp_check_mime_alias( $ext = '', $mime = '' ) {
 		 *
 		 * @param bool $enforce_checking Run checks.
 		 */
-		$validate = apply_filters( 'wp_check_application_octet_stream', false );
-		if ( false === $validate ) {
+		$soft_pass = apply_filters( 'wp_check_application_octet_stream', false );
+		if ( false === $soft_pass ) {
 			return apply_filters( 'wp_check_mime_alias', true, $ext, $mime );
 		}
 	}
 
-	// We want to test for both x-subtype and subtype variants.
+	// Test for the literal MIME, but also certain generic
+	// variations like x-subtype and vnd.subtype.
+	$test = array( $mime );
+
 	$parts = explode( '/', $mime );
 	$subtype = count( $parts ) - 1;
-	if ( preg_match( '/^x\-/', $parts[ $subtype ] ) ) {
-		$parts[ $subtype ] = preg_replace( '/^x\-/', '', $parts[ $subtype ] );
+	if ( 'x-' === substr( $parts[ $subtype ], 0, 2 ) ) {
+		$parts[ $subtype ] = substr( $parts[ $subtype ], 2 );
 	} else {
 		$parts[ $subtype ] = 'x-' . $parts[ $subtype ];
 	}
+	$test[] = implode( '/', $parts );
 
-	// We now have type/x-subtype and type/subtype.
-	$test = array(
-		$mime,
-		implode( '/', $parts ),
-	);
+	$parts = explode( '/', $mime );
+	$subtype = count( $parts ) - 1;
+	if ( 'vnd.' === substr( $parts[ $subtype ], 0, 4 ) ) {
+		$parts[ $subtype ] = substr( $parts[ $subtype ], 4 );
+	} else {
+		$parts[ $subtype ] = 'vnd.' . $parts[ $subtype ];
+	}
+	$test[] = implode( '/', $parts );
 
 	// Overlap is success!
 	$found = array_intersect( $test, $mimes );
@@ -164,8 +179,8 @@ function wp_check_real_filetype( $file, $filename = null, $mimes = null ) {
 		$real_mime = false;
 
 		try {
-			// Try exif first. It is commonly applicable and
-			// relatively low in overhead.
+			// Try exif first. It is commonly applicable and relatively
+			// low in overhead.
 			// TODO requires patch #40017.
 			// $real_mime = wp_get_image_mime( $file );
 

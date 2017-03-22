@@ -77,15 +77,15 @@ define('TIKA_API', 'https://raw.githubusercontent.com/apache/tika/master/tika-co
 // Manual fixes and references. PHP hardcodes some bad data in fileinfo.so.
 define('MAGIC_LIST', array(
 	'application/msword'=>array(
-		'application/ms-office',
+		'application/vnd.ms-office',
 		'application/xml'
 	),
 	'application/vnd.ms-excel'=>array(
-		'application/ms-office',
+		'application/vnd.ms-office',
 		'application/xml'
 	),
 	'application/vnd.ms-powerpoint'=>array(
-		'application/ms-office'
+		'application/vnd.ms-office'
 	)
 ));
 

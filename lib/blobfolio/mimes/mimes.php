@@ -173,17 +173,31 @@ class mimes {
 			return $soft;
 		}
 
+		// Before looking for matches, convert any generic CDFV2
+		// types into an equally generic, but less variable type.
+		if (0 === strpos($mime, 'application/cdfv2')) {
+			$mime = 'application/vnd.ms-office';
+		}
+
 		// Loose mime check.
 		$real = $ext['mime'];
 		$test = array($mime);
 
-		// We want to also look for x-type variants.
 		$parts = explode('/', $mime);
-		if (preg_match('/^x\-/', $parts[count($parts) - 1])) {
-			$parts[count($parts) - 1] = preg_replace('/^x\-/', '', $parts[count($parts) - 1]);
+		$subtype = count($parts) - 1;
+		if ('x-' === substr($parts[$subtype], 0, 2)) {
+			$parts[$subtype] = substr($parts[$subtype], 2);
+		} else {
+			$parts[$subtype] = 'x-' . $parts[$subtype];
 		}
-		else {
-			$parts[count($parts) - 1] = 'x-' . $parts[count($parts) - 1];
+		$test[] = implode('/', $parts);
+
+		$parts = explode('/', $mime);
+		$subtype = count($parts) - 1;
+		if ('vnd.' === substr($parts[$subtype], 0, 4)) {
+			$parts[$subtype] = substr($parts[$subtype], 4);
+		} else {
+			$parts[$subtype] = 'vnd.' . $parts[$subtype];
 		}
 		$test[] = implode('/', $parts);
 
@@ -261,6 +275,7 @@ class mimes {
 			) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
 				$magic_mime = \blobfolio\common\sanitize::mime(finfo_file($finfo, $path));
+				finfo_close($finfo);
 				if (
 					$magic_mime &&
 					static::MIME_DEFAULT !== $magic_mime &&
