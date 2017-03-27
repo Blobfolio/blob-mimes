@@ -74,9 +74,9 @@ define('FREEDESKTOP_API', 'https://cgit.freedesktop.org/xdg/shared-mime-info/pla
 
 define('TIKA_API', 'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml');
 
-// Manual fixes and references. PHP hardcodes some bad data in fileinfo.so.
-define('MAGIC_LIST', array(
-	'application/msword'=>array(
+// Manual fixes (by MIME) for hardcoded problems.
+define('MAGIC_LIST_BY_MIME', array(
+	'application/vnd.ms-word'=>array(
 		'application/vnd.ms-office',
 		'application/xml'
 	),
@@ -85,6 +85,9 @@ define('MAGIC_LIST', array(
 		'application/xml'
 	),
 	'application/vnd.ms-powerpoint'=>array(
+		'application/vnd.ms-office'
+	),
+	'application/vnd.openxmlformats-officedocument'=>array(
 		'application/vnd.ms-office'
 	)
 ));
@@ -290,6 +293,41 @@ function explode_lines(string $str='') {
 
 
 /**
+ * Get Manual MIME Rules
+ *
+ * Some types of responses are hardcoded in
+ * fileinfo.so and can't be found in any
+ * official database.
+ *
+ * @param string $mime MIME.
+ * @return array|false More MIMEs or false.
+ */
+function get_manual_mime_types(string $mime) {
+	$length = mb_strlen($mime);
+	if (!$length) {
+		return false;
+	}
+
+	// Check for a full match first, which will usually be
+	// the case.
+	if (isset(MAGIC_LIST_BY_MIME[$mime])) {
+		return MAGIC_LIST_BY_MIME[$mime];
+	}
+
+	// Otherwise some formats end up with a ton of offspring,
+	// so we can look for partial matches at the beginning.
+	foreach (MAGIC_LIST_BY_MIME as $k=>$v) {
+		if (0 === mb_strpos($mime, $k)) {
+			return $v;
+		}
+	}
+
+	return false;
+}
+
+
+
+/**
  * Record MIME/Ext Data
  *
  * Redundant and overlapping data can be recovered from
@@ -347,8 +385,8 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 	}
 
 	// Are there hardcoded entries?
-	if (isset(MAGIC_LIST[$mime])) {
-		foreach (MAGIC_LIST[$mime] as $m) {
+	if (false !== ($extra = get_manual_mime_types($mime))) {
+		foreach ($extra as $m) {
 			$aliases[] = $m;
 			save_mime_ext_pair($m, $ext, $source);
 		}
