@@ -4,7 +4,7 @@
  * MIME Alias Handling
  *
  * @package blob-mimes
- * @version 0.1.0
+ * @version 0.1.1
  *
  * @see {https://core.trac.wordpress.org/ticket/39963}
  * @see {https://core.trac.wordpress.org/ticket/40175}
@@ -14,6 +14,7 @@
  * Plugin Name: MIME Alias Handling
  * Plugin URI: https://github.com/Blobfolio/blob-mimes
  * Description: Feature Plugin integrating MIME alias support into the file upload validation process.
+ * Version: 0.1.1
  * Author: Blobfolio, LLC
  * Author URI: https://blobfolio.com/
  * License: WTFPL
@@ -49,7 +50,7 @@ if (
  *
  * @since 0.1.0
  *
- * @return @void Nothing.
+ * @return void Nothing.
  */
 function blob_mimes_deactivate() {
 	require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
@@ -79,12 +80,12 @@ function blob_mimes_check_filetype_and_ext( $checked, $file, $filename, $mimes )
 	// We don't care what WP has already done.
 	$proper_filename = false;
 
-	// Do basic extension validation and MIME mapping
+	// Do basic extension validation and MIME mapping.
 	$wp_filetype = wp_check_real_filetype( $file, $filename, $mimes );
 	$ext = $wp_filetype['ext'];
 	$type = $wp_filetype['type'];
 
-	// We can't do any further validation without a file to work with
+	// We can't do any further validation without a file to work with.
 	if ( ! file_exists( $file ) ) {
 		return compact( 'ext', 'type', 'proper_filename' );
 	}
@@ -108,8 +109,7 @@ add_filter( 'wp_check_filetype_and_ext', 'blob_mimes_check_filetype_and_ext', 10
 
 if ( function_exists( 'wp_check_real_filetype' ) ) {
 	blob_mimes_deactivate();
-}
-else {
+} else {
 	/**
 	 * Retrieve the "real" file type from the file.
 	 *
@@ -161,7 +161,6 @@ else {
 				// relatively low in overhead.
 				// TODO requires patch #40017.
 				// $real_mime = wp_get_image_mime( $file );
-
 				// Fall back to fileinfo, if available.
 				if (
 					false === $real_mime &&
@@ -220,8 +219,7 @@ else {
 
 if ( function_exists( 'wp_check_mime_alias' ) ) {
 	blob_mimes_deactivate();
-}
-else {
+} else {
 	/**
 	 * Check extension and MIME pairing.
 	 *
@@ -309,3 +307,7 @@ else {
 	}
 }
 
+
+
+// Update handler.
+@require_once( dirname( __FILE__ ) . '/functions-updates.php' );

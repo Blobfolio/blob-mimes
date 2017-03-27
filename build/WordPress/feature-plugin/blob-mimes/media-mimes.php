@@ -1228,10 +1228,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/xml',
 		),
 		'docm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-word.document.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+			'application/xml',
 		),
 		'docx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 			'application/zip',
 		),
@@ -1244,10 +1247,13 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/vnd.graphviz',
 		),
 		'dotm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-word.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
+			'application/xml',
 		),
 		'dotx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 			'application/zip',
 		),
@@ -4218,10 +4224,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'text/x-pot',
 		),
 		'potm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 		),
 		'potx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 			'application/zip',
 		),
@@ -4235,6 +4243,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/vnd.ms-powerpoint',
 		),
 		'ppam' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.addin.macroenabled.12',
 		),
 		'ppd' => array(
@@ -4256,10 +4265,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-mspowerpoint',
 		),
 		'ppsm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.slideshow.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
 		),
 		'ppsx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
 			'application/zip',
 		),
@@ -4271,10 +4282,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-mspowerpoint',
 		),
 		'pptm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.presentation.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
 		'pptx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 			'application/zip',
 		),
@@ -5086,6 +5099,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/sldworks',
 		),
 		'sldm' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.slide.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
 		),
@@ -5093,6 +5107,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/sldworks',
 		),
 		'sldx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
 			'application/zip',
 		),
@@ -5559,6 +5574,7 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'application/x-windows-themepack',
 		),
 		'thmx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.ms-officetheme',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
@@ -6514,7 +6530,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xlam' => array(
 			'application/vnd.ms-excel.addin.macroenabled.12',
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/xml',
 		),
 		'xlc' => array(
 			'application/msexcel',
@@ -6581,13 +6599,18 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xlsb' => array(
 			'application/vnd.ms-excel.sheet.binary.macroenabled.12',
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/xml',
 		),
 		'xlsm' => array(
 			'application/vnd.ms-excel.sheet.macroenabled.12',
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+			'application/xml',
 		),
 		'xlsx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/zip',
 		),
@@ -6601,9 +6624,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'xltm' => array(
 			'application/vnd.ms-excel.template.macroenabled.12',
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
+			'application/xml',
 		),
 		'xltx' => array(
+			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 			'application/zip',
 		),
