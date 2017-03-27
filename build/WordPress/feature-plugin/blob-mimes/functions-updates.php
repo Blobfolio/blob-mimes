@@ -28,7 +28,7 @@ function blob_mimes_get_info( $key = null ) {
 	static $info;
 
 	if ( is_null( $info ) ) {
-		require_once( trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php' );
+		require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
 		$info = get_plugin_data( dirname( __FILE__ ) . '/index.php' );
 	}
 
@@ -63,11 +63,13 @@ function blob_mimes_get_remote_info( $key = null ) {
 		if ( is_array( $data ) && array_key_exists( 'body', $data ) ) {
 			try {
 				$response = json_decode( $data['body'], true );
-				foreach ( $response as $k => $v ) {
-					$info[ $k ] = $v;
-				}
+				if ( is_array( $response ) ) {
+					foreach ( $response as $k => $v ) {
+						$info[ $k ] = $v;
+					}
 
-				set_transient( $transient_key, $info, 3600 );
+					set_transient( $transient_key, $info, 3600 );
+				}
 			} catch (Exception $e) {
 				$info = array();
 			}
