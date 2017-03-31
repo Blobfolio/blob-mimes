@@ -1,9 +1,9 @@
 {
   "Name": "MIME Alias Handling",
-  "Version": "0.1.2",
-  "DownloadURI": "https:\/\/github.com\/Blobfolio\/blob-mimes\/raw\/master\/build\/WordPress\/feature-plugin\/blob-mimes.zip",
+  "Version": "0.1.3",
+  "DownloadURI": "https:\/\/downloads.wordpress.org\/plugin\/blob-mimes.zip",
   "Requires": "4.7.1",
   "Tested": "4.7.3",
-  "License": "WTFPL",
+  "License": "GPLv2",
   "Home": "https:\/\/core.trac.wordpress.org\/ticket\/39963"
 }
