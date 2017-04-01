@@ -29,6 +29,9 @@
 // -------------------------------------------------
 // Setup/Env.
 
+// Load the bootstrap.
+@require_once(dirname(dirname(__FILE__)) . '/lib/vendor/autoload.php');
+
 define('BUILD_PATH', dirname(__FILE__));
 define('SOURCE_PATH', BUILD_PATH . '/src');
 
@@ -37,6 +40,9 @@ define('DOWNLOAD_CACHE', 7200);
 
 define('EXT_PATH', BUILD_PATH . '/mimes_by_extension.json');
 define('MIME_PATH', BUILD_PATH . '/extensions_by_mime.json');
+define('DATA_PATH', dirname(BUILD_PATH) . '/lib/blobfolio/mimes/data.php');
+define('DATA_SRC', BUILD_PATH . '/data.template');
+
 define('EXT_DEFAULT', array(
 	'ext'=>'',
 	'mime'=>array(),
@@ -293,6 +299,42 @@ function explode_lines(string $str='') {
 
 
 /**
+ * Array to PHP Code
+ *
+ * Convert a variable into a string
+ * representing PHP code.
+ *
+ * @param array $var Data.
+ * @param int $indents Number of tabs to append.
+ * @return string Code.
+ */
+function array_to_php($var, int $indents=1) {
+	if (!is_array($var) || !count($var)) {
+		return '';
+	}
+
+	$out = array();
+	$array_type = \blobfolio\common\cast::array_type($var);
+	foreach ($var as $k=>$v) {
+		$line = str_repeat("\t", $indents);
+		if ('sequential' !== $array_type) {
+			$line .= "'$k'=>";
+		}
+		if (is_array($v)) {
+			$line .= 'array(' . array_to_php($v, $indents + 1) . ')';
+		}
+		else {
+			$line .= "'$v'";
+		}
+		$out[] = $line;
+	}
+
+	return "\n" . implode(",\n", $out) . "\n" . str_repeat("\t", $indents - 1);
+}
+
+
+
+/**
  * Get Manual MIME Rules
  *
  * Some types of responses are hardcoded in
@@ -303,7 +345,7 @@ function explode_lines(string $str='') {
  * @return array|false More MIMEs or false.
  */
 function get_manual_mime_types(string $mime) {
-	$length = mb_strlen($mime);
+	$length = \blobfolio\common\mb::strlen($mime);
 	if (!$length) {
 		return false;
 	}
@@ -317,7 +359,7 @@ function get_manual_mime_types(string $mime) {
 	// Otherwise some formats end up with a ton of offspring,
 	// so we can look for partial matches at the beginning.
 	foreach (MAGIC_LIST_BY_MIME as $k=>$v) {
-		if (0 === mb_strpos($mime, $k)) {
+		if (0 === \blobfolio\common\mb::strpos($mime, $k)) {
 			return $v;
 		}
 	}
@@ -344,11 +386,10 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 	global $extensions_by_mime;
 	global $aliases;
 
-	$ext = mb_strtolower($ext, 'UTF-8');
-	$mime = mb_strtolower($mime, 'UTF-8');
-	$mime = preg_replace('/[^-+*.a-zA-Z0-9\/]/', '', $mime);
+	\blobfolio\common\ref\sanitize::file_extension($ext);
+	\blobfolio\common\ref\sanitize::mime($mime);
 
-	if (!mb_strlen($ext) || !mb_strlen($mime) || !mb_strlen($source)) {
+	if (!strlen($ext) || !strlen($mime) || !strlen($source)) {
 		return false;
 	}
 
@@ -441,7 +482,7 @@ foreach ($data as $k=>$v) {
 
 	foreach ($v as $raw) {
 		$line = str_getcsv($raw);
-		if (count($line) < 2 || !mb_strlen($line[1])) {
+		if (count($line) < 2 || !strlen($line[1])) {
 			continue;
 		}
 
@@ -465,14 +506,14 @@ foreach ($data as $k=>$v) {
 	}
 
 	// Save file.
-	$mime = mb_strtolower(mb_substr($k, mb_strlen(IANA_API) + 1));
+	$mime = \blobfolio\common\mb::strtolower(\blobfolio\common\mb::substr($k, \blobfolio\common\mb::strlen(IANA_API) + 1));
 
 	// Are there extensions?
 	preg_match_all('/\s*File extension(\(s\))?:([\.,\da-z\h\-_]+)/ui', $v, $matches);
 	if (count($matches[2])) {
 		$raw = explode(',', $matches[2][0]);
 		$raw = array_map('trim', $raw);
-		$raw = array_map('mb_strtolower', $raw);
+		\blobfolio\common\ref\mb::strtolower($raw);
 		$raw = array_filter($raw, 'strlen');
 
 		// First pass, clean up and split some more.
@@ -481,7 +522,7 @@ foreach ($data as $k=>$v) {
 			$raw[$k] = preg_replace('/^\s+/u', '', $raw[$k]);
 			$raw[$k] = preg_replace('/\s+$/u', '', $raw[$k]);
 
-			if (false !== mb_strpos($raw[$k], ' or ')) {
+			if (false !== \blobfolio\common\mb::strpos($raw[$k], ' or ')) {
 				$tmp = explode(' or ', $raw[$k]);
 				$tmp = array_map('trim', $tmp);
 				$tmp = array_filter($tmp, 'strlen');
@@ -541,7 +582,7 @@ if (!is_int($data[APACHE_API])) {
 	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[APACHE_API]);
 	foreach ($lines as $line) {
-		if (mb_substr($line, 0, 1) === '#') {
+		if (\blobfolio\common\mb::substr($line, 0, 1) === '#') {
 			continue;
 		}
 		$line = preg_replace('/\s+/u', ' ', $line);
@@ -574,7 +615,11 @@ if (!is_int($data[NGINX_API])) {
 	// Parse output... much simpler than IANA.
 	$lines = explode_lines($data[NGINX_API]);
 	foreach ($lines as $line) {
-		if (mb_substr($line, 0, 1) === '#' || false !== mb_strpos($line, '{') || false !== mb_strpos($line, '}')) {
+		if (
+			\blobfolio\common\mb::substr($line, 0, 1) === '#' ||
+			false !== \blobfolio\common\mb::strpos($line, '{') ||
+			false !== \blobfolio\common\mb::strpos($line, '}')
+		) {
 			continue;
 		}
 		$line = rtrim($line, ';');
@@ -768,8 +813,19 @@ ksort($extensions_by_mime);
 
 // Save data!
 debug_stdout('   ++ Saving data...');
+// JSON copy.
 @file_put_contents(EXT_PATH, json_encode($mimes_by_extension));
 @file_put_contents(MIME_PATH, json_encode($extensions_by_mime));
+
+// PHP copy.
+$replacements = array(
+	'%GENERATED%'=>date('Y-m-d H:i:s'),
+	'%EXTENSIONS_BY_MIME%'=>array_to_php($extensions_by_mime, 2),
+	'%MIMES_BY_EXTENSION%'=>array_to_php($mimes_by_extension, 2),
+);
+$out = @file_get_contents(DATA_SRC);
+$out = str_replace(array_keys($replacements), array_values($replacements), $out);
+@file_put_contents(DATA_PATH, $out);
 
 // Lastly, generate WordPress File!
 debug_stdout('   ++ Saving WP media-mimes.php...');
@@ -780,6 +836,8 @@ foreach ($mimes_by_extension as $k=>$v) {
 	$wp_data[$k] = array_unique($wp_data[$k]);
 	sort($wp_data[$k]);
 }
+
+// WordPress has different coding standards, so let's just build it from scratch.
 $wp_data_out = array();
 foreach ($wp_data as $k=>$v) {
 	$wp_data_out[] = "\t\t'$k' => array(";

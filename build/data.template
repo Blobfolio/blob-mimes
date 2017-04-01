@@ -1,0 +1,25 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * MIME data.
+ *
+ * This class contains the MIME and file extension
+ * data that will be used. It is automatically
+ * generated as part of the build process.
+ *
+ * Built: %GENERATED%.
+ *
+ * @package blobfolio/mimes
+ * @author	Blobfolio, LLC <hello@blobfolio.com>
+ */
+
+namespace blobfolio\mimes;
+
+class data {
+	// Extensions by MIME type.
+	const BY_MIME = array(%EXTENSIONS_BY_MIME%);
+
+	// MIME Types by extension.
+	const BY_EXT = array(%MIMES_BY_EXTENSION%);
+}
+

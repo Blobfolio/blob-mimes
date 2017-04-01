@@ -13,83 +13,7 @@ namespace blobfolio\mimes;
 
 class mimes {
 
-	// Our data.
-	protected static $by_mime;
-	protected static $by_ext;
-
-	const BY_MIME_FILE = 'extensions_by_mime.json';
-	const BY_EXT_FILE = 'mimes_by_extension.json';
 	const MIME_DEFAULT = 'application/octet-stream';
-
-
-
-	// ---------------------------------------------------------------------
-	// Data Population
-	// ---------------------------------------------------------------------
-
-	/**
-	 * Load JSON
-	 *
-	 * A wrapper function for parsing the MIME/ext
-	 * data being stored in .JSON files.
-	 *
-	 * @param string $path JSON file path.
-	 * @return array Decoded data.
-	 * @throws \Exception Invalid file path.
-	 * @throws \Exception Invalid file contents.
-	 */
-	protected static function load_json(string $path = '') {
-		$path = dirname(__FILE__) . DIRECTORY_SEPARATOR . "$path";
-		\blobfolio\common\ref\file::path($path, true);
-
-		if (false === $path) {
-			throw new \Exception('Invalid JSON path.');
-		}
-
-		$data = \blobfolio\common\cast::string(@file_get_contents($path));
-		$data = json_decode($data, true);
-
-		if (!is_array($data)) {
-			throw new \Exception('Invalid JSON data.');
-		}
-
-		return $data;
-	}
-
-	/**
-	 * Load MIME data.
-	 *
-	 * @return bool True.
-	 * @throws \Exception Missing database.
-	 */
-	protected static function load_mimes() {
-		// Populate MIME data if needed.
-		if (!is_array(static::$by_mime)) {
-			if (false === static::$by_mime = static::load_json(static::BY_MIME_FILE)) {
-				throw new \Exception('Could not load MIME database.');
-			}
-		}
-
-		return true;
-	}
-
-	/**
-	 * Load Exension Data.
-	 *
-	 * @return bool True.
-	 * @throws \Exception Missing database.
-	 */
-	protected static function load_extensions() {
-		if (!is_array(static::$by_ext)) {
-			if (false === static::$by_ext = static::load_json(static::BY_EXT_FILE)) {
-				throw new \Exception('Could not load file extension database.');
-			}
-		}
-
-		return true;
-	}
-
-	// --------------------------------------------------------------------- end data population
 
 
 
@@ -105,8 +29,7 @@ class mimes {
 	 * @return array MIME data.
 	 */
 	public static function get_mimes() {
-		static::load_mimes();
-		return static::$by_mime;
+		return data::BY_MIME;
 	}
 
 	/**
@@ -119,8 +42,7 @@ class mimes {
 	 */
 	public static function get_mime(string $mime = '') {
 		\blobfolio\common\ref\sanitize::mime($mime);
-		static::load_mimes();
-		return isset(static::$by_mime[$mime]) ? static::$by_mime[$mime] : false;
+		return isset(data::BY_MIME[$mime]) ? data::BY_MIME[$mime] : false;
 	}
 
 	/**
@@ -131,8 +53,7 @@ class mimes {
 	 * @return array Extension data.
 	 */
 	public static function get_extensions() {
-		static::load_extensions();
-		return static::$by_ext;
+		return data::BY_EXT;
 	}
 
 	/**
@@ -145,8 +66,7 @@ class mimes {
 	 */
 	public static function get_extension(string $ext = '') {
 		\blobfolio\common\ref\sanitize::file_extension($ext);
-		static::load_extensions();
-		return isset(static::$by_ext[$ext]) ? static::$by_ext[$ext] : false;
+		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
 	}
 
 	/**
