@@ -43,7 +43,7 @@ class mimes {
 	public static function get_mime($mime = '') {
 		\blobfolio\common\ref\cast::to_string($mime, true);
 		\blobfolio\common\ref\sanitize::mime($mime);
-		return isset(data::BY_MIME[$mime]) ? data::BY_MIME[$mime] : false;
+		return array_key_exists($mime, data::BY_MIME) ? data::BY_MIME[$mime] : false;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class mimes {
 	public static function get_extension($ext = '') {
 		\blobfolio\common\ref\cast::to_string($ext, true);
 		\blobfolio\common\ref\sanitize::file_extension($ext);
-		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
+		return array_key_exists($ext, data::BY_EXT) ? data::BY_EXT[$ext] : false;
 	}
 
 	/**
