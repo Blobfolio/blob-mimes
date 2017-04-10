@@ -41,7 +41,7 @@ class mimes {
 	 * @return array MIME data.
 	 */
 	public static function get_mime($mime = '') {
-		\blobfolio\common\ref\cast::string($mime, true);
+		\blobfolio\common\ref\cast::to_string($mime, true);
 		\blobfolio\common\ref\sanitize::mime($mime);
 		return isset(data::BY_MIME[$mime]) ? data::BY_MIME[$mime] : false;
 	}
@@ -66,7 +66,7 @@ class mimes {
 	 * @return array Extension data.
 	 */
 	public static function get_extension($ext = '') {
-		\blobfolio\common\ref\cast::string($ext, true);
+		\blobfolio\common\ref\cast::to_string($ext, true);
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
 	}
@@ -80,9 +80,9 @@ class mimes {
 	 * @return bool True.
 	 */
 	public static function check_ext_and_mime($ext = '', $mime = '', $soft=true) {
-		\blobfolio\common\ref\cast::string($ext, true);
-		\blobfolio\common\ref\cast::string($mime, true);
-		\blobfolio\common\ref\cast::bool($soft, true);
+		\blobfolio\common\ref\cast::to_string($ext, true);
+		\blobfolio\common\ref\cast::to_string($mime, true);
+		\blobfolio\common\ref\cast::to_bool($soft, true);
 
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		if (!\blobfolio\common\mb::strlen($ext)) {
@@ -142,9 +142,9 @@ class mimes {
 	 * @return array File data.
 	 */
 	public static function finfo($path = '', $nice = null) {
-		\blobfolio\common\ref\cast::string($path, true);
+		\blobfolio\common\ref\cast::to_string($path, true);
 		if (!is_null($nice)) {
-			\blobfolio\common\ref\cast::string($nice, true);
+			\blobfolio\common\ref\cast::to_string($nice, true);
 		}
 
 		$out = array(
@@ -158,7 +158,7 @@ class mimes {
 		);
 
 		// Path might just be an extension.
-		\blobfolio\common\ref\cast::string($path);
+		\blobfolio\common\ref\cast::to_string($path);
 		if (false === \blobfolio\common\mb::strpos($path, '.') &&
 			false === \blobfolio\common\mb::strpos($path, '/') &&
 			false === \blobfolio\common\mb::strpos($path, '\\')
