@@ -40,7 +40,8 @@ class mimes {
 	 * @param string $mime MIME type.
 	 * @return array MIME data.
 	 */
-	public static function get_mime(string $mime = '') {
+	public static function get_mime($mime = '') {
+		\blobfolio\common\ref\cast::string($mime, true);
 		\blobfolio\common\ref\sanitize::mime($mime);
 		return isset(data::BY_MIME[$mime]) ? data::BY_MIME[$mime] : false;
 	}
@@ -64,7 +65,8 @@ class mimes {
 	 * @param string $ext File extension.
 	 * @return array Extension data.
 	 */
-	public static function get_extension(string $ext = '') {
+	public static function get_extension($ext = '') {
+		\blobfolio\common\ref\cast::string($ext, true);
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
 	}
@@ -77,7 +79,11 @@ class mimes {
 	 * @param bool $soft Soft pass not-found.
 	 * @return bool True.
 	 */
-	public static function check_ext_and_mime(string $ext = '', string $mime = '', bool $soft=true) {
+	public static function check_ext_and_mime($ext = '', $mime = '', $soft=true) {
+		\blobfolio\common\ref\cast::string($ext, true);
+		\blobfolio\common\ref\cast::string($mime, true);
+		\blobfolio\common\ref\cast::bool($soft, true);
+
 		\blobfolio\common\ref\sanitize::file_extension($ext);
 		if (!\blobfolio\common\mb::strlen($ext)) {
 			return false;
@@ -135,7 +141,12 @@ class mimes {
 	 * @param string $nice Nice file name (for e.g. tmp uploads).
 	 * @return array File data.
 	 */
-	public static function finfo(string $path = '', string $nice = null) {
+	public static function finfo($path = '', $nice = null) {
+		\blobfolio\common\ref\cast::string($path, true);
+		if (!is_null($nice)) {
+			\blobfolio\common\ref\cast::string($nice, true);
+		}
+
 		$out = array(
 			'dirname'=>'',
 			'basename'=>'',
@@ -165,7 +176,7 @@ class mimes {
 		$out['path'] = $path;
 		$out = \blobfolio\common\data::parse_args(pathinfo($path), $out);
 
-		if (is_string($nice)) {
+		if (!is_null($nice)) {
 			$pathinfo = pathinfo($nice);
 			$out['filename'] = isset($pathinfo['filename']) ? $pathinfo['filename'] : '';
 			$out['extension'] = isset($pathinfo['extension']) ? $pathinfo['extension'] : '';
