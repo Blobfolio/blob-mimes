@@ -226,6 +226,8 @@ class mimes {
 			}
 		} catch (\Throwable $e) {
 			return $out;
+		} catch (\Exception $e) {
+			return $out;
 		}
 
 		return $out;
