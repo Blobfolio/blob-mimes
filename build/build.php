@@ -41,7 +41,9 @@ define('DOWNLOAD_CACHE', 7200);
 define('EXT_PATH', BUILD_PATH . '/mimes_by_extension.json');
 define('MIME_PATH', BUILD_PATH . '/extensions_by_mime.json');
 define('DATA_PATH', dirname(BUILD_PATH) . '/lib/blobfolio/mimes/data.php');
-define('DATA_SRC', BUILD_PATH . '/data.template');
+define('DATA_SRC', BUILD_PATH . '/skel/data.template');
+define('WP_SRC', BUILD_PATH . '/skel/wp.template');
+define('WP_PATH', dirname(BUILD_PATH) . '/wp/lib/blobfolio/wp/bm/mime/aliases.php');
 
 define('EXT_DEFAULT', array(
 	'ext'=>'',
@@ -837,19 +839,9 @@ foreach ($mimes_by_extension as $k=>$v) {
 	sort($wp_data[$k]);
 }
 
-// WordPress has different coding standards, so let's just build it from scratch.
-$wp_data_out = array();
-foreach ($wp_data as $k=>$v) {
-	$wp_data_out[] = "\t\t'$k' => array(";
-	foreach ($v as $v2) {
-		$wp_data_out[] = "\t\t\t'$v2',";
-	}
-	$wp_data_out[] = "\t\t),";
-}
-$wp_data_out = implode("\n", $wp_data_out);
-$wp_file = @file_get_contents(BUILD_PATH . '/WordPress/media-mimes.template');
-$wp_file = str_replace('%MIMES_BY_EXTENSION%', $wp_data_out, $wp_file);
-@file_put_contents(BUILD_PATH . '/WordPress/media-mimes.php', $wp_file);
+$wp_file = @file_get_contents(WP_SRC);
+$wp_file = str_replace('%MIMES_BY_EXTENSION%', array_to_php($wp_data, 2), $wp_file);
+@file_put_contents(WP_PATH, $wp_file);
 
 
 $end = microtime(true);
