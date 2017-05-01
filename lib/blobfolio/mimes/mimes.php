@@ -11,6 +11,8 @@
 
 namespace blobfolio\mimes;
 
+use \blobfolio\common;
+
 class mimes {
 
 	const MIME_DEFAULT = 'application/octet-stream';
@@ -41,8 +43,8 @@ class mimes {
 	 * @return array MIME data.
 	 */
 	public static function get_mime($mime = '') {
-		\blobfolio\common\ref\cast::to_string($mime, true);
-		\blobfolio\common\ref\sanitize::mime($mime);
+		common\ref\cast::to_string($mime, true);
+		common\ref\sanitize::mime($mime);
 		return array_key_exists($mime, data::BY_MIME) ? data::BY_MIME[$mime] : false;
 	}
 
@@ -66,8 +68,8 @@ class mimes {
 	 * @return array Extension data.
 	 */
 	public static function get_extension($ext = '') {
-		\blobfolio\common\ref\cast::to_string($ext, true);
-		\blobfolio\common\ref\sanitize::file_extension($ext);
+		common\ref\cast::to_string($ext, true);
+		common\ref\sanitize::file_extension($ext);
 		return array_key_exists($ext, data::BY_EXT) ? data::BY_EXT[$ext] : false;
 	}
 
@@ -80,22 +82,22 @@ class mimes {
 	 * @return bool True.
 	 */
 	public static function check_ext_and_mime($ext = '', $mime = '', $soft=true) {
-		\blobfolio\common\ref\cast::to_string($ext, true);
-		\blobfolio\common\ref\cast::to_string($mime, true);
-		\blobfolio\common\ref\cast::to_bool($soft, true);
+		common\ref\cast::to_string($ext, true);
+		common\ref\cast::to_string($mime, true);
+		common\ref\cast::to_bool($soft, true);
 
-		\blobfolio\common\ref\sanitize::file_extension($ext);
-		if (!\blobfolio\common\mb::strlen($ext)) {
+		common\ref\sanitize::file_extension($ext);
+		if (!common\mb::strlen($ext)) {
 			return false;
 		}
 
-		\blobfolio\common\ref\sanitize::mime($mime);
-		if (!strlen($mime) || ($soft && static::MIME_DEFAULT === $mime)) {
+		common\ref\sanitize::mime($mime);
+		if (!strlen($mime) || ($soft && (static::MIME_DEFAULT === $mime))) {
 			return true;
 		}
 
 		// Soft pass on extension fail.
-		if (false === $ext = static::get_extension($ext)) {
+		if (false === ($ext = static::get_extension($ext))) {
 			return $soft;
 		}
 
@@ -142,9 +144,9 @@ class mimes {
 	 * @return array File data.
 	 */
 	public static function finfo($path = '', $nice = null) {
-		\blobfolio\common\ref\cast::to_string($path, true);
+		common\ref\cast::to_string($path, true);
 		if (!is_null($nice)) {
-			\blobfolio\common\ref\cast::to_string($nice, true);
+			common\ref\cast::to_string($nice, true);
 		}
 
 		$out = array(
@@ -158,12 +160,13 @@ class mimes {
 		);
 
 		// Path might just be an extension.
-		\blobfolio\common\ref\cast::to_string($path);
-		if (false === \blobfolio\common\mb::strpos($path, '.') &&
-			false === \blobfolio\common\mb::strpos($path, '/') &&
-			false === \blobfolio\common\mb::strpos($path, '\\')
+		common\ref\cast::to_string($path);
+		if (
+			(false === common\mb::strpos($path, '.')) &&
+			(false === common\mb::strpos($path, '/')) &&
+			(false === common\mb::strpos($path, '\\'))
 		) {
-			$out['extension'] = \blobfolio\common\sanitize::file_extension($path);
+			$out['extension'] = common\sanitize::file_extension($path);
 			if (false !== ($ext = static::get_extension($path))) {
 				$out['mime'] = $ext['primary'];
 			}
@@ -172,9 +175,9 @@ class mimes {
 		}
 
 		// Path is something path-like.
-		\blobfolio\common\ref\file::path($path, false);
+		common\ref\file::path($path, false);
 		$out['path'] = $path;
-		$out = \blobfolio\common\data::parse_args(pathinfo($path), $out);
+		$out = common\data::parse_args(pathinfo($path), $out);
 
 		if (!is_null($nice)) {
 			$pathinfo = pathinfo($nice);
@@ -182,7 +185,7 @@ class mimes {
 			$out['extension'] = isset($pathinfo['extension']) ? $pathinfo['extension'] : '';
 		}
 
-		\blobfolio\common\ref\sanitize::file_extension($out['extension']);
+		common\ref\sanitize::file_extension($out['extension']);
 
 		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
@@ -199,18 +202,18 @@ class mimes {
 
 			// Lookup magic mime, if possible.
 			if (
-				false !== $path &&
+				(false !== $path) &&
 				function_exists('finfo_file') &&
 				defined('FILEINFO_MIME_TYPE') &&
 				is_file($path)
 			) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
-				$magic_mime = \blobfolio\common\sanitize::mime(finfo_file($finfo, $path));
+				$magic_mime = common\sanitize::mime(finfo_file($finfo, $path));
 				finfo_close($finfo);
 				if (
 					$magic_mime &&
-					static::MIME_DEFAULT !== $magic_mime &&
-					(static::MIME_DEFAULT === $out['mime'] || !preg_match('/^text\//', $magic_mime)) &&
+					(static::MIME_DEFAULT !== $magic_mime) &&
+					((static::MIME_DEFAULT === $out['mime']) || !preg_match('/^text\//', $magic_mime)) &&
 					!static::check_ext_and_mime($out['extension'], $magic_mime)
 				) {
 					// If we have an alternative magic mime and it is legit,
