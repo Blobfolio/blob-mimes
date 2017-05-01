@@ -7,7 +7,7 @@
     "extensions",
     "suffix"
   ],
-  "version": "1.2-0",
+  "version": "1.2.0",
   "type": "library",
   "homepage": "https:\/\/github.com\/Blobfolio\/blob-mimes",
   "license": "GPLv2",
