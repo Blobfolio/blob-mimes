@@ -7,7 +7,7 @@
  * data that will be used. It is automatically
  * generated as part of the build process.
  *
- * Built: 2017-04-01 14:28:49.
+ * Built: 2017-05-01 08:15:08.
  *
  * @package blobfolio/mimes
  * @author	Blobfolio, LLC <hello@blobfolio.com>
@@ -2408,7 +2408,8 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
-				'Apache'
+				'Apache',
+				'Tika'
 			)
 		),
 		'application/trig'=>array(
@@ -4077,6 +4078,15 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
+			)
+		),
+		'application/vnd.imagemeter.folder+zip'=>array(
+			'mime'=>'application/vnd.imagemeter.folder+zip',
+			'ext'=>array(
+				'imf'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.imagemeter.image+zip'=>array(
@@ -5779,6 +5789,51 @@ class data {
 			'mime'=>'application/vnd.onepager',
 			'ext'=>array(
 				'tam'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.onepagertamp'=>array(
+			'mime'=>'application/vnd.onepagertamp',
+			'ext'=>array(
+				'tamp'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.onepagertamx'=>array(
+			'mime'=>'application/vnd.onepagertamx',
+			'ext'=>array(
+				'tamx'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.onepagertat'=>array(
+			'mime'=>'application/vnd.onepagertat',
+			'ext'=>array(
+				'tat'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.onepagertatp'=>array(
+			'mime'=>'application/vnd.onepagertatp',
+			'ext'=>array(
+				'tatp'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.onepagertatx'=>array(
+			'mime'=>'application/vnd.onepagertatx',
+			'ext'=>array(
+				'tatx'
 			),
 			'source'=>array(
 				'IANA'
@@ -12307,6 +12362,26 @@ class data {
 				'Tika'
 			)
 		),
+		'audio/vnd.audible'=>array(
+			'mime'=>'audio/vnd.audible',
+			'ext'=>array(
+				'aa',
+				'aax'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'audio/vnd.audible.aax'=>array(
+			'mime'=>'audio/vnd.audible.aax',
+			'ext'=>array(
+				'aa',
+				'aax'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
 		'audio/vnd.dece.audio'=>array(
 			'mime'=>'audio/vnd.dece.audio',
 			'ext'=>array(
@@ -12888,6 +12963,16 @@ class data {
 			'mime'=>'audio/x-opus+ogg',
 			'ext'=>array(
 				'opus'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'audio/x-pn-audibleaudio'=>array(
+			'mime'=>'audio/x-pn-audibleaudio',
+			'ext'=>array(
+				'aa',
+				'aax'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -18776,6 +18861,22 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-atari-7800-rom'
 		),
+		'aa'=>array(
+			'ext'=>'aa',
+			'mime'=>array(
+				'audio/x-pn-audibleaudio',
+				'audio/vnd.audible',
+				'audio/vnd.audible.aax'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'audio/vnd.audible',
+				'audio/vnd.audible.aax'
+			),
+			'primary'=>'audio/x-pn-audibleaudio'
+		),
 		'aab'=>array(
 			'ext'=>'aab',
 			'mime'=>array(
@@ -18840,6 +18941,22 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-authorware-seg'
+		),
+		'aax'=>array(
+			'ext'=>'aax',
+			'mime'=>array(
+				'audio/x-pn-audibleaudio',
+				'audio/vnd.audible',
+				'audio/vnd.audible.aax'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'audio/vnd.audible',
+				'audio/vnd.audible.aax'
+			),
+			'primary'=>'audio/x-pn-audibleaudio'
 		),
 		'abs-linkmap'=>array(
 			'ext'=>'abs-linkmap',
@@ -26870,6 +26987,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'audio/imelody'
+		),
+		'imf'=>array(
+			'ext'=>'imf',
+			'mime'=>array(
+				'application/vnd.imagemeter.folder+zip'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.imagemeter.folder+zip'
 		),
 		'img'=>array(
 			'ext'=>'img',
@@ -38317,6 +38445,28 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.onepager'
 		),
+		'tamp'=>array(
+			'ext'=>'tamp',
+			'mime'=>array(
+				'application/vnd.onepagertamp'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.onepagertamp'
+		),
+		'tamx'=>array(
+			'ext'=>'tamx',
+			'mime'=>array(
+				'application/vnd.onepagertamx'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.onepagertamx'
+		),
 		'tao'=>array(
 			'ext'=>'tao',
 			'mime'=>array(
@@ -38359,6 +38509,39 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-systemd-unit'
+		),
+		'tat'=>array(
+			'ext'=>'tat',
+			'mime'=>array(
+				'application/vnd.onepagertat'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.onepagertat'
+		),
+		'tatp'=>array(
+			'ext'=>'tatp',
+			'mime'=>array(
+				'application/vnd.onepagertatp'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.onepagertatp'
+		),
+		'tatx'=>array(
+			'ext'=>'tatx',
+			'mime'=>array(
+				'application/vnd.onepagertatx'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.onepagertatx'
 		),
 		'tau'=>array(
 			'ext'=>'tau',
@@ -39058,7 +39241,8 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
-				'Apache'
+				'Apache',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/timestamped-data'

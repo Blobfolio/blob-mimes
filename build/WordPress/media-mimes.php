@@ -101,6 +101,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'a78' => array(
 			'application/x-atari-7800-rom',
 		),
+		'aa' => array(
+			'audio/vnd.audible',
+			'audio/vnd.audible.aax',
+			'audio/x-pn-audibleaudio',
+		),
 		'aab' => array(
 			'application/x-authorware-bin',
 		),
@@ -116,6 +121,11 @@ function wp_get_mime_aliases( $ext = '' ) {
 		),
 		'aas' => array(
 			'application/x-authorware-seg',
+		),
+		'aax' => array(
+			'audio/vnd.audible',
+			'audio/vnd.audible.aax',
+			'audio/x-pn-audibleaudio',
 		),
 		'abs-linkmap' => array(
 			'text/plain',
@@ -2305,6 +2315,9 @@ function wp_get_mime_aliases( $ext = '' ) {
 			'audio/imelody',
 			'audio/x-imelody',
 			'text/x-imelody',
+		),
+		'imf' => array(
+			'application/vnd.imagemeter.folder+zip',
 		),
 		'img' => array(
 			'application/octet-stream',
@@ -5465,6 +5478,12 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'tam' => array(
 			'application/vnd.onepager',
 		),
+		'tamp' => array(
+			'application/vnd.onepagertamp',
+		),
+		'tamx' => array(
+			'application/vnd.onepagertamx',
+		),
 		'tao' => array(
 			'application/vnd.tao.intent-module-archive',
 		),
@@ -5475,6 +5494,15 @@ function wp_get_mime_aliases( $ext = '' ) {
 		'target' => array(
 			'text/plain',
 			'text/x-systemd-unit',
+		),
+		'tat' => array(
+			'application/vnd.onepagertat',
+		),
+		'tatp' => array(
+			'application/vnd.onepagertatp',
+		),
+		'tatx' => array(
+			'application/vnd.onepagertatx',
 		),
 		'tau' => array(
 			'application/tamp-apex-update',
