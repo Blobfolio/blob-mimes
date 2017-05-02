@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="533.334" height="133.333" viewBox="0 0 533.334 133.333"><defs>
+	<style id="style1">
+		/* Thanks XML! Browsers will decode entities in freakin' styles! */
+		.&#109;n389&#123;fill: red}
+	</style>
+	<style>
+		.abc { fill: currentColor }
+	</style>
+	<svg:style id='style2'>
+		/* Thanks XML! Browsers will decode entities in freakin' styles! */
+		.&#109;n389&#123;fill: red}
+	</svg:style>
+</defs><path d="M516.667 0h-500C7.462 0 0 7.462 0 16.667v100c0 9.204 7.462 16.666 16.667 16.666h500c9.204 0 16.667-7.462 16.667-16.666v-100C533.333 7.462 525.871 0 516.667 0z" class="mn389"/></svg>

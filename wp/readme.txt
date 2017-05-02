@@ -1,0 +1,77 @@
+=== Plugin Name ===
+Contributors: blobfolio
+Donate link: https://blobfolio.com/donate.html
+Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG
+Requires at least: 4.7.1
+Tested up to: 4.7.4
+Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This plugin expands file-related security around the upload process.
+
+== Description ==
+
+WordPress relies mostly on name-based validation when deciding whether or not to allow a particular file, leaving the door open for various kinds of attacks.
+
+Lord of the Files adds to this content-based validation and sanitizing, making sure that files are what they say they are and safe for inclusion on your site.
+
+The main features include:
+ * Robust *real* filetype detection;
+ * Full MIME alias mapping;
+ * SVG sanitization (if SVG uploads have been whitelisted);
+ * File upload debugger;
+ * Fixes issues related to [#40175](https://core.trac.wordpress.org/ticket/40175) that have been present since WordPress `4.7.1`.
+
+== Requirements ==
+
+ * WordPress 4.7.1 or later.
+ * PHP 5.3 or later.
+
+== Frequently Asked Questions ==
+
+= Does this require any theme or config changes? =
+
+Nope! The magic is all automatic. Just set and forget.
+
+= This has mostly helped but I am still having trouble with one file... =
+
+While this plugin extends MIME alias handling more than 20-fold, we are still busy tracking down unusual edge cases. Please go to `Tools > Debug File Validation` and post that output in a new support ticket for this plugin.
+
+= Does this plugin enable SVG support? =
+
+No. This plugin does not modify your site's upload whitelist. However if SVGs have been enabled for your site, this will sanitize them at the upload stage to make sure they do not contain any dangerous exploits.
+
+== Screenshots ==
+
+1. Results from the File Validation Debug tool, available to administrators under the `Tools` menu.
+
+== Installation ==
+
+Nothing fancy!  You can use the built-in installer on the Plugins page or extract and upload the `blob-mimes` folder to your plugins directory via FTP.
+
+== Changelog ==
+
+= 0.5.0 =
+
+* [New] SVG sanitizing support.
+* [Change] Disentangle this plugin from the proposed patch #39963; that enhancement is a WONTFIX.
+
+= 0.1.3 =
+* [New] Upload debugging tool to help provide additional information about why a file is failing.
+
+= 0.1.2 =
+* [Improved] Rebuild database to catch additional occurrences of `application/CDFV2-xxx` 
+* [New] Integrate update support.
+
+== Upgrade Notice ==
+
+= 0.5.0 =
+This plugin is now independent of ticket #39963 (unfortunately in WONTFIX limbo), and so will refocus itself to provide broader upload-related security enhancements. Enjoy!
+
+= 0.1.3 =
+An upload debugging tool has been added to the `Tools` menu to provide more specific information about a file.
+
+= 0.1.2 =
+The database has been updated to catch additional occurrences of `application/CDFV2-xxx`.
+
