@@ -26,13 +26,16 @@ The main features include:
 == Requirements ==
 
  * WordPress 4.7.1 or later.
- * PHP 5.3 or later.
+ * PHP 5.4 or later.
+ * DOMDocument extension is optional, but will improve SVG sanitizing.
 
 == Frequently Asked Questions ==
 
 = Does this require any theme or config changes? =
 
-Nope! The magic is all automatic. Just set and forget.
+Nope! The main magic is all automatic.
+
+There are, however, plenty of under-the-hood goodies developers can hook into to modify the default behaviors. Visit the [Github](https://github.com/Blobfolio/blob-mimes/tree/master/wp) page for more detailed reference.
 
 = This has mostly helped but I am still having trouble with one file... =
 
@@ -40,7 +43,9 @@ While this plugin extends MIME alias handling more than 20-fold, we are still bu
 
 = Does this plugin enable SVG support? =
 
-No. This plugin does not modify your site's upload whitelist. However if SVGs have been enabled for your site, this will sanitize them at the upload stage to make sure they do not contain any dangerous exploits.
+No. This plugin does not modify your site's upload whitelist (see e.g. [upload_mimes](https://codex.wordpress.org/Plugin_API/Filter_Reference/upload_mimes) for that). However if SVGs have been enabled for your site, this will sanitize them at the upload stage to make sure they do not contain any dangerous exploits.
+
+There are a number of SVG-related filters that can be used to modify the sanitization behavior. Checkout the [Github](https://github.com/Blobfolio/blob-mimes/tree/master/wp) documentation for more information.
 
 == Screenshots ==
 
@@ -55,6 +60,7 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 = 0.5.0 =
 
 * [New] SVG sanitizing support.
+* [Change] Updated MIME database.
 * [Change] Disentangle this plugin from the proposed patch #39963; that enhancement is a WONTFIX.
 
 = 0.1.3 =
