@@ -97,6 +97,9 @@ define('MAGIC_LIST_BY_MIME', array(
 	),
 	'application/vnd.openxmlformats-officedocument'=>array(
 		'application/vnd.ms-office'
+	),
+	'application/vnd.ms-excel.sheet.macroenabled.12'=>array(
+		'application/zip'
 	)
 ));
 

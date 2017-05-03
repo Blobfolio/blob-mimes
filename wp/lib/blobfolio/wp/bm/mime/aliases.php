@@ -2582,6 +2582,7 @@ class aliases {
 			'application/geo+json',
 			'application/javascript',
 			'application/json',
+			'application/vnd.datapackage+json',
 			'application/vnd.dataresource+json',
 			'application/vnd.hc+json',
 			'application/vnd.nearst.inv+json',
@@ -6628,7 +6629,7 @@ class aliases {
 			'application/vnd.ms-excel.sheet.macroenabled.12',
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-			'application/xml'
+			'application/zip'
 		),
 		'xlsx'=>array(
 			'application/vnd.ms-office',

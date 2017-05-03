@@ -7,7 +7,7 @@
  * data that will be used. It is automatically
  * generated as part of the build process.
  *
- * Built: 2017-05-01 08:15:08.
+ * Built: 2017-05-03 08:57:23.
  *
  * @package blobfolio/mimes
  * @author	Blobfolio, LLC <hello@blobfolio.com>
@@ -3134,6 +3134,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.datapackage+json'=>array(
+			'mime'=>'application/vnd.datapackage+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.dataresource+json'=>array(
 			'mime'=>'application/vnd.dataresource+json',
 			'ext'=>array(
@@ -4956,7 +4965,6 @@ class data {
 				'xlw',
 				'xlam',
 				'xlsb',
-				'xlsm',
 				'xltm',
 				'ppt',
 				'pps',
@@ -4978,6 +4986,7 @@ class data {
 				'dotx',
 				'xll',
 				'xld',
+				'xlsm',
 				'ppz',
 				'doc',
 				'dot',
@@ -11720,7 +11729,6 @@ class data {
 				'xlw',
 				'xlam',
 				'xlsb',
-				'xlsm',
 				'xltm',
 				'docm',
 				'dotm',
@@ -11924,6 +11932,7 @@ class data {
 		'application/zip'=>array(
 			'mime'=>'application/zip',
 			'ext'=>array(
+				'xlsm',
 				'zip',
 				'epub',
 				'vsdx',
@@ -27941,6 +27950,7 @@ class data {
 				'application/dicom+json',
 				'application/geo+json',
 				'application/json',
+				'application/vnd.datapackage+json',
 				'application/vnd.dataresource+json',
 				'application/vnd.hc+json',
 				'application/vnd.nearst.inv+json',
@@ -42605,9 +42615,9 @@ class data {
 			'ext'=>'xlsm',
 			'mime'=>array(
 				'application/vnd.ms-excel.sheet.macroenabled.12',
-				'application/vnd.ms-office',
-				'application/xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+				'application/zip',
+				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+				'application/vnd.ms-office'
 			),
 			'source'=>array(
 				'Apache',
@@ -42615,9 +42625,9 @@ class data {
 				'Tika'
 			),
 			'alias'=>array(
-				'application/vnd.ms-office',
-				'application/xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+				'application/zip',
+				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+				'application/vnd.ms-office'
 			),
 			'primary'=>'application/vnd.ms-excel.sheet.macroenabled.12'
 		),
