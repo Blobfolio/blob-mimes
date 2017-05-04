@@ -8,6 +8,7 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'blobfolio\\wp\\bm\\admin' => '/blobfolio/wp/bm/admin.php',
+                'blobfolio\\wp\\bm\\debug' => '/blobfolio/wp/bm/debug.php',
                 'blobfolio\\wp\\bm\\mb' => '/blobfolio/wp/bm/mb.php',
                 'blobfolio\\wp\\bm\\mime' => '/blobfolio/wp/bm/mime.php',
                 'blobfolio\\wp\\bm\\mime\\aliases' => '/blobfolio/wp/bm/mime/aliases.php',
