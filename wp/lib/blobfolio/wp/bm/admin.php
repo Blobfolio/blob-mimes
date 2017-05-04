@@ -26,6 +26,18 @@ class admin {
 
 		// Override upload file validation (SVG).
 		add_filter('wp_check_filetype_and_ext', array(get_called_class(), 'check_filetype_and_ext_svg'), 15, 4);
+
+		// Set up translations.
+		add_action('plugins_loaded', array(get_called_class(), 'localize'));
+	}
+
+	/**
+	 * Localize
+	 *
+	 * @return void Nothing.
+	 */
+	public static function localize() {
+		load_plugin_textdomain('blob-mimes', false, basename(BM_BASE) . '/languages');
 	}
 
 	/**

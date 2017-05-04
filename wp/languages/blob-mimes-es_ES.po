@@ -1,0 +1,181 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: blob-mimes\n"
+"POT-Creation-Date: 2017-05-04 13:43-0700\n"
+"PO-Revision-Date: \n"
+"Language-Team: Blobfolio, LLC <hello@blobfolio.com>\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: Josh Stoik <josh@blobfolio.com>\n"
+"Language: es_ES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: tests\n"
+"X-Poedit-SearchPathExcluded-1: bin\n"
+
+#: admin/debug.php:25
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tiene suficientes permisos para acceder a esta página."
+
+#: admin/debug.php:29 lib/blobfolio/wp/bm/debug.php:179
+msgid ""
+"The `fileinfo.so` PHP extension is not installed. Detailed file information "
+"is not available."
+msgstr ""
+"Necesita el extensión de PHP `fileinfo.so` por ver informacion specifico "
+"sobre el contento."
+
+#: admin/debug.php:48
+msgid "No file was uploaded, or the upload was corrupt."
+msgstr "No se ha cargado ningún archivo o la subida se ha corrompido."
+
+#: admin/debug.php:60 admin/debug.php:62
+msgid "The file upload could not be processed."
+msgstr "No se pudo procesar la carga del archivo."
+
+#: admin/debug.php:72
+msgid "The form had expired. Please try again."
+msgstr "El formulario había caducado. Vuelve a intentarlo."
+
+#: admin/debug.php:107 lib/blobfolio/wp/bm/admin.php:39
+#: lib/blobfolio/wp/bm/admin.php:40
+msgid "Debug File Validation"
+msgstr "Validación de cargas de archivo"
+
+#: admin/debug.php:109
+msgid ""
+"If a file has been rejected from the Media Library for \"security reasons\", "
+"use the form below to find out more information."
+msgstr ""
+"Si se ha rechazado un archivo de la Biblioteca multimedia por \"razones de "
+"seguridad\", utilice este formulario para obtener más información."
+
+#: admin/debug.php:121
+msgid "Analysis"
+msgstr "Análisis"
+
+#: admin/debug.php:126
+#, php-format
+msgid ""
+"If this file should have been accepted and wasn't, please open an issue with "
+"the following information at %s or, if you aren't comfortable posting there, "
+"email %s for help. Thanks!"
+msgstr ""
+"Si este archivo debe haber sido aceptado y no lo fue, póngase en contacto "
+"con nosotros a través de %s o %s para obtener ayuda. ¡Gracias!"
+
+#: admin/debug.php:140
+msgid "Upload Again"
+msgstr "Subir nuevamente"
+
+#: admin/debug.php:150
+msgid "File"
+msgstr "Archivo de carga"
+
+#: admin/debug.php:154
+msgid ""
+"Please re-upload the problematic file. It will not be saved to the server, "
+"but will be analyzed to provide you with information about why it failed."
+msgstr ""
+"Vuelva a cargar el archivo problemático. No se guardará en el servidor, pero "
+"mostrará más información sobre el error."
+
+#: admin/debug.php:159
+msgid "Upload"
+msgstr "Subir"
+
+#: index.php:58
+#, php-format
+msgid ""
+"%s requires PHP 5.4 or greater. It has been automatically deactivated for "
+"you."
+msgstr ""
+"%s requiere PHP 5.4 o superior. Se ha desactivado automáticamente para usted."
+
+#: lib/blobfolio/wp/bm/debug.php:45 lib/blobfolio/wp/bm/debug.php:49
+#: lib/blobfolio/wp/bm/debug.php:52
+msgid "The file could not be read."
+msgstr "No se pudo leer el archivo."
+
+#: lib/blobfolio/wp/bm/debug.php:103 lib/blobfolio/wp/bm/debug.php:170
+#: lib/blobfolio/wp/bm/debug.php:225
+msgid "[error]"
+msgstr "[error]"
+
+#: lib/blobfolio/wp/bm/debug.php:103 lib/blobfolio/wp/bm/debug.php:104
+msgid "WordPress will not process this file based on its name."
+msgstr "WordPress no procesará este archivo debido a su nombre."
+
+#: lib/blobfolio/wp/bm/debug.php:107 lib/blobfolio/wp/bm/debug.php:159
+#: lib/blobfolio/wp/bm/debug.php:221
+msgid "[pass]"
+msgstr "[éxito]"
+
+#: lib/blobfolio/wp/bm/debug.php:107
+msgid "The file extension is allowed."
+msgstr "Se permite la extensión de archivo."
+
+#: lib/blobfolio/wp/bm/debug.php:143 lib/blobfolio/wp/bm/debug.php:163
+#: lib/blobfolio/wp/bm/debug.php:167 lib/blobfolio/wp/bm/debug.php:218
+msgid "[warning]"
+msgstr "[advertencia]"
+
+#: lib/blobfolio/wp/bm/debug.php:143
+msgid "The type could not be determined."
+msgstr "No se pudo determinar el tipo de archivo."
+
+#: lib/blobfolio/wp/bm/debug.php:159 lib/blobfolio/wp/bm/debug.php:221
+msgid "The file type and extension are both allowed."
+msgstr "El tipo de archivo y la extensión están permitidos."
+
+#: lib/blobfolio/wp/bm/debug.php:163
+msgid ""
+"The file type is not explicitly whitelisted, but is an alias of a "
+"whitelisted type."
+msgstr ""
+"El tipo de archivo no está permitido explícitamente, pero es un alias de un "
+"tipo permitido."
+
+#: lib/blobfolio/wp/bm/debug.php:167
+msgid ""
+"The file extension does not match the type, however the type is allowed."
+msgstr ""
+"La extensión de archivo es incorrecta para este tipo, sin embargo, el tipo "
+"está permitido."
+
+#: lib/blobfolio/wp/bm/debug.php:170 lib/blobfolio/wp/bm/debug.php:171
+#: lib/blobfolio/wp/bm/debug.php:225 lib/blobfolio/wp/bm/debug.php:226
+msgid "The file type is not allowed."
+msgstr "El tipo de archivo no está permitido."
+
+#: lib/blobfolio/wp/bm/debug.php:179
+msgid "[skipped]"
+msgstr "[omitido]"
+
+#: lib/blobfolio/wp/bm/debug.php:218
+msgid "The file extension does not match the type; it will be renamed."
+msgstr "La extensión de archivo es incorrecta para este tipo; será renombrado."
+
+#: lib/blobfolio/wp/bm/debug.php:363
+msgid "The following error(s) were found:"
+msgstr "Se encontraron los siguientes errores:"
+
+#: lib/blobfolio/wp/bm/debug.php:366
+msgid ""
+"You *should* be able to upload this file. If not, a plugin or theme might be "
+"interfering with the process."
+msgstr ""
+"Usted *debería* poder cargar este archivo. Si no, un plugin o tema podría "
+"ser el problema."

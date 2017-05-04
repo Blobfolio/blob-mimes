@@ -38,6 +38,16 @@ define('BM_BASE', dirname(__FILE__) . '/');
 // This requires PHP 5.4+.
 if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 	/**
+	 * Localize Plugin
+	 *
+	 * @return void Nothing.
+	 */
+	function blobmimes_localize() {
+		load_plugin_textdomain('blob-mimes', false, basename(BM_BASE) . '/languages');
+	}
+	add_action('plugins_loaded', 'blobmimes_localize');
+
+	/**
 	 * Deactivate Plugin
 	 *
 	 * @return void Nothing.
