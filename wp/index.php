@@ -55,7 +55,7 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 	 */
 	function blobmimes_notice() {
 		?>
-		<div class="error"><p><strong>Lord of the Files</strong> requires PHP 5.4 or greater. It has been automatically deactivated for you.</p></div>
+		<div class="error"><p><?php echo sprintf(esc_html__('%s requires PHP 5.4 or greater. It has been automatically deactivated for you.', 'blob-mimes'), '<strong>Lord of the Files</strong>'); ?></p></div>
 		<?php
 		if (isset($_GET['activate'])) {
 			unset($_GET['activate']);

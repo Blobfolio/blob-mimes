@@ -42,14 +42,14 @@ class debug {
 		// Make sure the file is readable.
 		try {
 			if (!is_string($file) || !$file || !is_file($file)) {
-				$this->errors[] = 'The file could not be read.';
+				$this->errors[] = __('The file could not be read.', 'blob-mimes');
 				return false;
 			}
 		} catch (\Throwable $e) {
-			$this->errors[] = 'The file could not be read.';
+			$this->errors[] = __('The file could not be read.', 'blob-mimes');
 			return false;
 		} catch (\Exception $e) {
-			$this->errors[] = 'The file could not be read.';
+			$this->errors[] = __('The file could not be read.', 'blob-mimes');
 			return false;
 		}
 
@@ -100,11 +100,11 @@ class debug {
 		);
 
 		if (!$test['pass']) {
-			$test['result'] = '[error] WordPress will not process this file based on its name.';
-			$this->errors[] = 'WordPress will not process this file based on its name.';
+			$test['result'] = __('[error]', 'blob-mimes') . ' ' . __('WordPress will not process this file based on its name.', 'blob-mimes');
+			$this->errors[] = __('WordPress will not process this file based on its name.', 'blob-mimes');
 		}
 		else {
-			$test['result'] = '[pass] The file extension is allowed.';
+			$test['result'] = __('[pass]', 'blob-mimes') . ' ' . __('The file extension is allowed.', 'blob-mimes');
 		}
 
 		$this->tests['WORDPRESS'] = $test;
@@ -140,7 +140,7 @@ class debug {
 			// Couldn't get any info.
 			if (!is_string($test['test']['type']) || !$test['test']['type']) {
 				$test['test']['type'] = false;
-				$test['result'] = '[warning] type could not be determined.';
+				$test['result'] = __('[warning]', 'blob-mimes') . ' ' . __('The type could not be determined.', 'blob-mimes');
 			}
 			// Look deeper.
 			else {
@@ -156,19 +156,19 @@ class debug {
 
 				if ($test['test']['match_alias'] && $test['test']['allowed_explicit']) {
 					$test['pass'] = true;
-					$test['result'] = '[pass] The file type and extension are both allowed.';
+					$test['result'] = __('[pass]', 'blob-mimes') . ' ' . __('The file type and extension are both allowed.', 'blob-mimes');
 				}
 				elseif ($test['test']['match_alias'] && $test['test']['allowed_alias']) {
 					$test['pass'] = true;
-					$test['result'] = '[warning] The file type is not explicitly whitelisted, but is an alias of a whitelisted type.';
+					$test['result'] = __('[warning]', 'blob-mimes') . ' ' . __('The file type is not explicitly whitelisted, but is an alias of a whitelisted type.', 'blob-mimes');
 				}
 				elseif ($test['test']['allowed_alias']) {
 					$test['pass'] = true;
-					$test['result'] = '[warning] The file extension does not match the type, however the type is allowed.';
+					$test['result'] = __('[warning]', 'blob-mimes') . ' ' . __('The file extension does not match the type, however the type is allowed.', 'blob-mimes');
 				}
 				else {
-					$test['result'] = '[error] The file type is not allowed.';
-					$this->errors[] = 'The file type is not allowed.';
+					$test['result'] = __('[error]', 'blob-mimes') . ' ' . __('The file type is not allowed.', 'blob-mimes');
+					$this->errors[] = __('The file type is not allowed.', 'blob-mimes');
 				}
 			}
 
@@ -176,7 +176,7 @@ class debug {
 		}
 		// Skip it.
 		else {
-			$test['result'] = 'Skipped: the fileinfo.so extension is missing.';
+			$test['result'] = __('[skipped]', 'blob-mimes') . ' ' . __('The `fileinfo.so` PHP extension is not installed. Detailed file information is not available.', 'blob-mimes');
 		}
 
 		$this->tests['FILEINFO'] = $test;
@@ -215,15 +215,15 @@ class debug {
 			if ($ext !== $info['ext']) {
 				$test['test']['renamed'] = true;
 				$test['test']['name'] = mime::update_filename_extension($this->filename, $info['ext']);
-				$test['result'] = '[warning] The file extension does not match the type; it will be renamed.';
+				$test['result'] = __('[warning]', 'blob-mimes') . ' ' . __('The file extension does not match the type; it will be renamed.', 'blob-mimes');
 			}
 			else {
-				$test['result'] = '[pass] The file type and extension are both allowed.';
+				$test['result'] = __('[pass]', 'blob-mimes') . ' ' . __('The file type and extension are both allowed.', 'blob-mimes');
 			}
 		}
 		else {
-			$test['result'] = '[error] The file type is not allowed.';
-			$this->errors[] = 'The file type is not allowed.';
+			$test['result'] = __('[error]', 'blob-mimes') . ' ' . __('The file type is not allowed.', 'blob-mimes');
+			$this->errors[] = __('The file type is not allowed.', 'blob-mimes');
 		}
 
 		$this->tests['BLOB-MIMES'] = $test;
@@ -360,10 +360,10 @@ class debug {
 
 		$this->errors = array_values(array_unique($this->errors));
 		if (count($this->errors)) {
-			$results['RESULT'] = "The following error(s) were found:\n— " . implode("\n— ", $this->errors);
+			$results['RESULT'] = __('The following error(s) were found:', 'blob-mimes') . "\n— " . implode("\n— ", $this->errors);
 		}
 		else {
-			$results['RESULT'] = 'You *should* be able to upload this file. If not, a plugin or theme might be interfering with the process.';
+			$results['RESULT'] = __('You *should* be able to upload this file. If not, a plugin or theme might be interfering with the process.', 'blob-mimes');
 		}
 
 		// If we aren't collapsing, we're done.
@@ -442,7 +442,7 @@ class debug {
 									else {
 										$value = $v4;
 									}
-									$tmp[] = "$k4 $value";
+									$tmp[] = __($k4, 'blob-mimes') . " $value";
 								}
 								$out[] = $this->make_results_value(implode("\n", $tmp), true, $key);
 							}
@@ -470,6 +470,8 @@ class debug {
 		if (!$header) {
 			return '';
 		}
+
+		$header = __($header, 'blob-mimes');
 
 		$border = $major ? '=' : '- ';
 
@@ -500,6 +502,7 @@ class debug {
 		}
 
 		if ($key) {
+			$key = __($key, 'blob-mimes');
 			$value = str_pad("$key:", 15, ' ', STR_PAD_RIGHT) . $value;
 		}
 

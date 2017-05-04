@@ -26,7 +26,7 @@ if (!current_user_can('manage_options')) {
 }
 
 if (!extension_loaded('fileinfo') || !defined('FILEINFO_MIME_TYPE')) {
-	echo '<div class="error fade"><p>The `fileinfo` PHP extension is not installed. Detailed file information is not available.</p></div>';
+	echo '<div class="error fade"><p>' . esc_html__('The `fileinfo.so` PHP extension is not installed. Detailed file information is not available.', 'blob-mimes') . '</p></div>';
 	return true;
 }
 
@@ -45,7 +45,7 @@ if ((getenv('REQUEST_METHOD') === 'POST') && wp_verify_nonce($_POST['n'], 'debug
 		}
 
 		if (!isset($_FILES['file']['tmp_name']) || !file_exists($_FILES['file']['tmp_name'])) {
-			$errors[] = 'No file was uploaded, or the upload was corrupt.';
+			$errors[] = __('No file was uploaded, or the upload was corrupt.', 'blob-mimes');
 		}
 		// All the hard work is handled by the class.
 		else {
@@ -57,9 +57,9 @@ if ((getenv('REQUEST_METHOD') === 'POST') && wp_verify_nonce($_POST['n'], 'debug
 			@unlink($_FILES['file']['tmp_name']);
 		}
 	} catch (Throwable $e) {
-		$errors[] = 'The file upload could not be processed.';
+		$errors[] = __('The file upload could not be processed.', 'blob-mimes');
 	} catch (Exception $e) {
-		$errors[] = 'The file upload could not be processed.';
+		$errors[] = __('The file upload could not be processed.', 'blob-mimes');
 	}
 
 	if (count($errors)) {
@@ -69,7 +69,7 @@ if ((getenv('REQUEST_METHOD') === 'POST') && wp_verify_nonce($_POST['n'], 'debug
 	}
 }
 elseif (isset($_POST['n'])) {
-	echo '<div class="error fade"><p>The form had expired. Please try again.</p></div>';
+	echo '<div class="error fade"><p>' . esc_html__('The form had expired. Please try again.', 'blob-mimes') . '</p></div>';
 }
 
 // --------------------------------------------------------------------- End uploading.
@@ -104,10 +104,9 @@ elseif (isset($_POST['n'])) {
 
 	<div id="debug-log-errors"></div>
 
-	<h2>Debug File Validation</h2>
+	<h2><?php echo esc_html__('Debug File Validation', 'blob-mimes'); ?></h2>
 
-	<p>If a file has been rejected from the Media Library for "security reasons",<br>
-	use the form below to find out more information.</p>
+	<p><?php echo esc_html__('If a file has been rejected from the Media Library for "security reasons", use the form below to find out more information.', 'blob-mimes'); ?></p>
 
 	<p>&nbsp;</p>
 
@@ -119,10 +118,16 @@ elseif (isset($_POST['n'])) {
 				<?php if (!is_null($results)) { ?>
 					<!-- upload form -->
 					<div class="postbox">
-						<h3 class="hndle">Analysis</h3>
+						<h3 class="hndle"><?php echo esc_html__('Analysis', 'blob-mimes'); ?></h3>
 						<div class="inside">
 
-							<p>If this file should have been accepted and wasn't, please open an issue with the following information at <a href="https://github.com/Blobfolio/blob-mimes/issues" target="_blank">Github</a> or, if you aren't comfortable posting there, email <a href="mailto:hello@blobfolio.com">hello@blobfolio.com</a> for help. Thanks!</p>
+							<p><?php
+								echo sprintf(
+									esc_html__("If this file should have been accepted and wasn't, please open an issue with the following information at %s or, if you aren't comfortable posting there, email %s for help. Thanks!", 'blob-mimes'),
+									'<a href="https://github.com/Blobfolio/blob-mimes/issues" target="_blank">Github</a>',
+									'<a href="mailto:hello@blobfolio.com">hello@blobfolio.com</a>'
+								);
+								?></p>
 
 							<textarea class="blob-mimes--results" onclick="this.select()"><?php echo esc_textarea(trim($results)); ?></textarea>
 
@@ -132,7 +137,7 @@ elseif (isset($_POST['n'])) {
 
 				<!-- upload form -->
 				<div class="postbox blob-mimes--container">
-					<h3 class="hndle">Upload Again</h3>
+					<h3 class="hndle"><?php echo esc_html__('Upload Again', 'blob-mimes'); ?></h3>
 					<div class="inside">
 
 						<form method="post" action="<?php echo esc_url(admin_url('tools.php?page=blob-mimes-admin')); ?>" enctype="multipart/form-data" name="validationForm">
@@ -142,16 +147,16 @@ elseif (isset($_POST['n'])) {
 
 							<!-- file upload -->
 							<fieldset class="blob-mimes--fieldset">
-								<label for="blob-mimes--file" class="blob-mimes--label">File:</label>
+								<label for="blob-mimes--file" class="blob-mimes--label"><?php echo esc_html__('File', 'blob-mimes'); ?>:</label>
 
 								<input type="file" name="file" id="blob-mimes--file" class="blob-mimes--field" required />
 
-								<p class="description">Please re-upload the problematic file. It will <strong>not</strong> be saved to the server, but will be analyzed to provide you with information about why it failed.</p>
+								<p class="description"><?php echo esc_html__('Please re-upload the problematic file. It will not be saved to the server, but will be analyzed to provide you with information about why it failed.', 'blob-mimes'); ?></p>
 							</fieldset>
 
 							<!-- submit button -->
 							<fieldset class="blob-mimes--fieldset">
-								<button type="submit" class="button button-large button-primary">Upload</button>
+								<button type="submit" class="button button-large button-primary"><?php echo esc_html__('Upload', 'blob-mimes'); ?></button>
 							</fieldset>
 
 						</form>
