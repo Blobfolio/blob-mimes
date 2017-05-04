@@ -36,8 +36,8 @@ class admin {
 	public static function menu_debug() {
 		add_submenu_page(
 			'tools.php',
-			'Debug File Validation',
-			'Debug File Validation',
+			__('Debug File Validation', 'blob-mimes'),
+			__('Debug File Validation', 'blob-mimes'),
 			'manage_options',
 			'blob-mimes-admin',
 			array(get_called_class(), 'page_debug')
