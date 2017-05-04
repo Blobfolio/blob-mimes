@@ -1,12 +1,12 @@
 === Plugin Name ===
 Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
-Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG
+Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG, file sanitizing, file detection
 Requires at least: 4.7.1
 Tested up to: 4.7.4
 Stable tag: trunk
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: WTFPL
+License URI: http://www.wtfpl.net/
 
 This plugin expands file-related security around the upload process.
 
@@ -17,6 +17,7 @@ WordPress relies mostly on name-based validation when deciding whether or not to
 Lord of the Files adds to this content-based validation and sanitizing, making sure that files are what they say they are and safe for inclusion on your site.
 
 The main features include:
+
  * Robust *real* filetype detection;
  * Full MIME alias mapping;
  * SVG sanitization (if SVG uploads have been whitelisted);
@@ -57,8 +58,11 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 
 == Changelog ==
 
-= 0.5.0 =
+= 0.5.1 =
+* [Misc] Update MIME database to improve `XLSM` detection.
+* [Improved] Cleaned file upload debugger.
 
+= 0.5.0 =
 * [New] SVG sanitizing support.
 * [Change] Updated MIME database.
 * [Change] Disentangle this plugin from the proposed patch #39963; that enhancement is a WONTFIX.
@@ -71,6 +75,9 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.5.1 =
+The MIME database has been updated to improve `XLSM` detection and the file upload debug tool has been cleaned up.
 
 = 0.5.0 =
 This plugin is now independent of ticket #39963 (unfortunately in WONTFIX limbo), and so will refocus itself to provide broader upload-related security enhancements. Enjoy!
