@@ -7,7 +7,7 @@
  * data that will be used. It is automatically
  * generated as part of the build process.
  *
- * Built: 2017-05-03 08:57:23.
+ * Built: 2017-05-19 11:38:14.
  *
  * @package blobfolio/mimes
  * @author	Blobfolio, LLC <hello@blobfolio.com>
@@ -1404,13 +1404,15 @@ class data {
 				'msp',
 				'msm',
 				'lha',
-				'lzh'
+				'lzh',
+				'explain'
 			),
 			'source'=>array(
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
-				'Tika'
+				'Tika',
+				'Blobfolio'
 			)
 		),
 		'application/oda'=>array(
@@ -2855,6 +2857,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.capasystems-pg+json'=>array(
+			'mime'=>'application/vnd.capasystems-pg+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.chemdraw+xml'=>array(
 			'mime'=>'application/vnd.chemdraw+xml',
 			'ext'=>array(
@@ -4002,6 +4013,15 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
+			)
+		),
+		'application/vnd.hyper-item+json'=>array(
+			'mime'=>'application/vnd.hyper-item+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.hzn-3d-crossword'=>array(
@@ -11577,11 +11597,13 @@ class data {
 		'application/x-zip-compressed'=>array(
 			'mime'=>'application/x-zip-compressed',
 			'ext'=>array(
-				'zip'
+				'zip',
+				'explain'
 			),
 			'source'=>array(
 				'freedesktop.org',
-				'Tika'
+				'Tika',
+				'Blobfolio'
 			)
 		),
 		'application/x-zmachine'=>array(
@@ -11994,13 +12016,15 @@ class data {
 				'mmmp',
 				'mmas',
 				'ipa',
-				'xmind'
+				'xmind',
+				'explain'
 			),
 			'source'=>array(
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
-				'Tika'
+				'Tika',
+				'Blobfolio'
 			)
 		),
 		'application/zlib'=>array(
@@ -15129,6 +15153,15 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
+			)
+		),
+		'model/3mf'=>array(
+			'mime'=>'model/3mf',
+			'ext'=>array(
+				'3mf'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'model/gltf+json'=>array(
@@ -18817,6 +18850,17 @@ class data {
 				'video/mp4'
 			),
 			'primary'=>'video/3gpp2'
+		),
+		'3mf'=>array(
+			'ext'=>'3mf',
+			'mime'=>array(
+				'model/3mf'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'model/3mf'
 		),
 		'4th'=>array(
 			'ext'=>'4th',
@@ -24120,6 +24164,22 @@ class data {
 			),
 			'primary'=>'text/x-expect'
 		),
+		'explain'=>array(
+			'ext'=>'explain',
+			'mime'=>array(
+				'application/zip',
+				'application/x-zip-compressed',
+				'application/octet-stream'
+			),
+			'source'=>array(
+				'Blobfolio'
+			),
+			'alias'=>array(
+				'application/zip',
+				'application/x-zip-compressed'
+			),
+			'primary'=>'application/octet-stream'
+		),
 		'exr'=>array(
 			'ext'=>'exr',
 			'mime'=>array(
@@ -27950,9 +28010,11 @@ class data {
 				'application/dicom+json',
 				'application/geo+json',
 				'application/json',
+				'application/vnd.capasystems-pg+json',
 				'application/vnd.datapackage+json',
 				'application/vnd.dataresource+json',
 				'application/vnd.hc+json',
+				'application/vnd.hyper-item+json',
 				'application/vnd.nearst.inv+json',
 				'application/vnd.oftn.l10n+json',
 				'application/vnd.tableschema+json',

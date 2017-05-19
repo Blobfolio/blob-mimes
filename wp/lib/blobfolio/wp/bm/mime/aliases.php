@@ -80,6 +80,9 @@ class aliases {
 			'video/3gpp2',
 			'video/mp4'
 		),
+		'3mf'=>array(
+			'model/3mf'
+		),
 		'4th'=>array(
 			'text/plain',
 			'text/x-forth'
@@ -1529,6 +1532,11 @@ class aliases {
 			'text/plain',
 			'text/x-expect'
 		),
+		'explain'=>array(
+			'application/octet-stream',
+			'application/x-zip-compressed',
+			'application/zip'
+		),
 		'exr'=>array(
 			'image/x-exr'
 		),
@@ -2582,9 +2590,11 @@ class aliases {
 			'application/geo+json',
 			'application/javascript',
 			'application/json',
+			'application/vnd.capasystems-pg+json',
 			'application/vnd.datapackage+json',
 			'application/vnd.dataresource+json',
 			'application/vnd.hc+json',
+			'application/vnd.hyper-item+json',
 			'application/vnd.nearst.inv+json',
 			'application/vnd.oftn.l10n+json',
 			'application/vnd.tableschema+json',
