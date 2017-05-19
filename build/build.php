@@ -794,6 +794,15 @@ else {
 
 
 // -------------------------------------------------
+// A few manual entries.
+
+save_mime_ext_pair('application/zip', 'explain', 'Blobfolio');
+save_mime_ext_pair('application/x-zip-compressed', 'explain', 'Blobfolio');
+save_mime_ext_pair('application/octet-stream', 'explain', 'Blobfolio');
+
+
+
+// -------------------------------------------------
 // Clean Up!
 
 debug_stdout('');
