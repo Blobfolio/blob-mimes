@@ -3,7 +3,7 @@ Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
 Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG, file sanitizing, file detection
 Requires at least: 4.7.1
-Tested up to: 4.7.4
+Tested up to: 4.7.5
 Stable tag: trunk
 License: WTFPL
 License URI: http://www.wtfpl.net/
@@ -58,6 +58,12 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 
 == Changelog ==
 
+= 0.5.3-0 =
+* [Misc] Update MIME database.
+
+= 0.5.2 =
+* [Misc] Spanish translation.
+
 = 0.5.1 =
 * [Misc] Update MIME database to improve `XLSM` detection.
 * [Improved] Cleaned file upload debugger.
@@ -75,6 +81,12 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.5.3-0 =
+The MIME database has been updated.
+
+= 0.5.2 =
+The plugin is now available in Spanish.
 
 = 0.5.1 =
 The MIME database has been updated to improve `XLSM` detection and the file upload debug tool has been cleaned up.
