@@ -3,7 +3,7 @@
  * Lord of the Files: Enhanced Upload Security
  *
  * @package blob-mimes
- * @version 0.5.3-0
+ * @version 0.5.3-2
  *
  * @see {https://core.trac.wordpress.org/ticket/39963}
  * @see {https://core.trac.wordpress.org/ticket/40175}
@@ -14,7 +14,9 @@
  * Plugin Name: Lord of the Files: Enhanced Upload Security
  * Plugin URI: https://wordpress.org/plugins/blob-mimes/
  * Description: This plugin expands file-related security during the upload process.
- * Version: 0.5.3-0
+ * Version: 0.5.3-2
+ * Text Domain: blob-mimes
+ * Domain Path: /languages/
  * Author: Blobfolio, LLC
  * Author URI: https://blobfolio.com/
  * License: WTFPL
@@ -31,7 +33,15 @@ if (!defined('ABSPATH')) {
 
 
 // Constants.
-define('BM_BASE', dirname(__FILE__) . '/');
+define('BLOBMIMES_BASE_PATH', dirname(__FILE__) . '/');
+
+// Is this installed as a Must-Use plugin?
+$blobmimes_must_use = (
+	defined('WPMU_PLUGIN_DIR') &&
+	@is_dir(WPMU_PLUGIN_DIR) &&
+	(0 === strpos(BLOBMIMES_BASE_PATH, WPMU_PLUGIN_DIR))
+);
+define('BLOBMIMES_MUST_USE', $blobmimes_must_use);
 
 
 
@@ -43,7 +53,12 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 	 * @return void Nothing.
 	 */
 	function blobmimes_localize() {
-		load_plugin_textdomain('blob-mimes', false, basename(BM_BASE) . '/languages');
+		if (BLOBMIMES_MUST_USE) {
+			load_muplugin_textdomain('blob-mimes', basename(BLOBMIMES_BASE_PATH) . '/languages');
+		}
+		else {
+			load_plugin_textdomain('blob-mimes', false, basename(BLOBMIMES_BASE_PATH) . '/languages');
+		}
 	}
 	add_action('plugins_loaded', 'blobmimes_localize');
 
@@ -80,4 +95,4 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 
 
 // Everyone else gets the goods.
-require_once(BM_BASE . 'bootstrap.php');
+require_once(BLOBMIMES_BASE_PATH . 'bootstrap.php');

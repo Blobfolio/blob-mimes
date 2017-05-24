@@ -37,7 +37,12 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function localize() {
-		load_plugin_textdomain('blob-mimes', false, basename(BM_BASE) . '/languages');
+		if (BLOBMIMES_MUST_USE) {
+			load_muplugin_textdomain('blob-mimes', basename(BLOBMIMES_BASE_PATH) . '/languages');
+		}
+		else {
+			load_plugin_textdomain('blob-mimes', false, basename(BLOBMIMES_BASE_PATH) . '/languages');
+		}
 	}
 
 	/**
@@ -62,7 +67,7 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function page_debug() {
-		require_once(BM_BASE . 'admin/debug.php');
+		require_once(BLOBMIMES_BASE_PATH . 'admin/debug.php');
 	}
 
 	/**

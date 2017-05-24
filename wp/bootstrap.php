@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 
 // Our autoloader.
 // Run from basedir: phpab -n --tolerant -e '**/tests/**' -o ./lib/autoload.php .
-require_once(BM_BASE . 'lib/autoload.php');
+require_once(BLOBMIMES_BASE_PATH . 'lib/autoload.php');
 
 // Register hooks.
 \blobfolio\wp\bm\admin::init();
