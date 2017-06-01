@@ -7,7 +7,7 @@
  * data that will be used. It is automatically
  * generated as part of the build process.
  *
- * Built: 2017-05-19 11:38:14.
+ * Built: 2017-06-01 10:13:27.
  *
  * @package blobfolio/mimes
  * @author	Blobfolio, LLC <hello@blobfolio.com>
@@ -2767,6 +2767,7 @@ class data {
 				'm3u'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org'
@@ -3428,6 +3429,15 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
+			)
+		),
+		'application/vnd.evolv.ecig.theme'=>array(
+			'mime'=>'application/vnd.evolv.ecig.theme',
+			'ext'=>array(
+				'ecigtheme'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.ezpix-album'=>array(
@@ -7524,6 +7534,15 @@ class data {
 				'freedesktop.org'
 			)
 		),
+		'application/x-atari-lynx-rom'=>array(
+			'mime'=>'application/x-atari-lynx-rom',
+			'ext'=>array(
+				'lnx'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
 		'application/x-authorware-bin'=>array(
 			'mime'=>'application/x-authorware-bin',
 			'ext'=>array(
@@ -11412,6 +11431,24 @@ class data {
 			'mime'=>'application/x-wmf',
 			'ext'=>array(
 				'wmf'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'application/x-wonderswan-color-rom'=>array(
+			'mime'=>'application/x-wonderswan-color-rom',
+			'ext'=>array(
+				'wsc'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'application/x-wonderswan-rom'=>array(
+			'mime'=>'application/x-wonderswan-rom',
+			'ext'=>array(
+				'ws'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -23599,6 +23636,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'audio/vnd.nuera.ecelp9600'
 		),
+		'ecigtheme'=>array(
+			'ext'=>'ecigtheme',
+			'mime'=>array(
+				'application/vnd.evolv.ecig.theme'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.evolv.ecig.theme'
+		),
 		'ecma'=>array(
 			'ext'=>'ecma',
 			'mime'=>array(
@@ -28832,6 +28880,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-ms-shortcut'
 		),
+		'lnx'=>array(
+			'ext'=>'lnx',
+			'mime'=>array(
+				'application/x-atari-lynx-rom'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-atari-lynx-rom'
+		),
 		'log'=>array(
 			'ext'=>'log',
 			'mime'=>array(
@@ -29287,16 +29346,17 @@ class data {
 		'm3u'=>array(
 			'ext'=>'m3u',
 			'mime'=>array(
+				'application/vnd.apple.mpegurl',
 				'audio/x-mpegurl',
 				'audio/mpegurl',
 				'application/m3u',
 				'audio/x-mp3-playlist',
 				'audio/m3u',
 				'audio/x-m3u',
-				'text/plain',
-				'application/vnd.apple.mpegurl'
+				'text/plain'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -29324,6 +29384,7 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org'
@@ -41739,6 +41800,28 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'model/vrml'
+		),
+		'ws'=>array(
+			'ext'=>'ws',
+			'mime'=>array(
+				'application/x-wonderswan-rom'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-wonderswan-rom'
+		),
+		'wsc'=>array(
+			'ext'=>'wsc',
+			'mime'=>array(
+				'application/x-wonderswan-color-rom'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-wonderswan-color-rom'
 		),
 		'wsdd'=>array(
 			'ext'=>'wsdd',

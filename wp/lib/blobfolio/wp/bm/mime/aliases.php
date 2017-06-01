@@ -1379,6 +1379,9 @@ class aliases {
 		'ecelp9600'=>array(
 			'audio/vnd.nuera.ecelp9600'
 		),
+		'ecigtheme'=>array(
+			'application/vnd.evolv.ecig.theme'
+		),
 		'ecma'=>array(
 			'application/ecmascript'
 		),
@@ -2817,6 +2820,9 @@ class aliases {
 		),
 		'lnk'=>array(
 			'application/x-ms-shortcut'
+		),
+		'lnx'=>array(
+			'application/x-atari-lynx-rom'
 		),
 		'log'=>array(
 			'text/plain',
@@ -6373,6 +6379,12 @@ class aliases {
 		'wrl'=>array(
 			'model/vrml',
 			'text/plain'
+		),
+		'ws'=>array(
+			'application/x-wonderswan-rom'
+		),
+		'wsc'=>array(
+			'application/x-wonderswan-color-rom'
 		),
 		'wsdd'=>array(
 			'text/plain'
