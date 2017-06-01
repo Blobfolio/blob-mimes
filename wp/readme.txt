@@ -60,6 +60,10 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.5.4 =
+* [Change] Remove build from plugin version to match WP's new standard.
+* [Misc] Update MIME database.
+
 = 0.5.3-2 =
 * [Improved] Must-Use compatibility.
 
@@ -86,6 +90,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.5.4 =
+THe MIME database has been updated.
 
 = 0.5.3-2 =
 Improved Must-Use compatibility.
