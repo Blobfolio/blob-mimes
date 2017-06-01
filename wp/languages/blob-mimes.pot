@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-05-04 13:41-0700\n"
+"2017-05-27 23:28-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -93,8 +93,8 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:107
-#: lib/blobfolio/wp/bm/admin.php:39
-#: lib/blobfolio/wp/bm/admin.php:40
+#: lib/blobfolio/wp/bm/admin.php:56
+#: lib/blobfolio/wp/bm/admin.php:57
 msgid ""
 "Debug File Validation"
 msgstr ""
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: index.php:58
+#: index.php:83
 #, php-format
 msgid ""
 "%s requires PHP 5.4 or "
