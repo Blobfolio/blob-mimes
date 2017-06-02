@@ -205,15 +205,37 @@ class mimes {
 				(false !== $path) &&
 				function_exists('finfo_file') &&
 				defined('FILEINFO_MIME_TYPE') &&
-				is_file($path)
+				@is_file($path)
 			) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
 				$magic_mime = common\sanitize::mime(finfo_file($finfo, $path));
 				finfo_close($finfo);
+
+				// SVGs can be misidentified by fileinfo if they are missing the
+				// XML tag and/or DOCTYPE declarations. Most other applications
+				// don't have that problem, so let's override fileinfo if the
+				// file starts with an opening SVG tag.
+				if (
+					('svg' === $out['extension']) &&
+					('image/svg+xml' !== $magic_mime)
+				) {
+					$tmp = @file_get_contents($path);
+					if (
+						is_string($tmp) &&
+						preg_match('/\s*<svg/iu', $tmp)
+					) {
+						$magic_mime = 'image/svg+xml';
+					}
+				}
+
+				// Okay, now we can look at the magic in closer detail.
 				if (
 					$magic_mime &&
 					(static::MIME_DEFAULT !== $magic_mime) &&
-					((static::MIME_DEFAULT === $out['mime']) || !preg_match('/^text\//', $magic_mime)) &&
+					(
+						(static::MIME_DEFAULT === $out['mime']) ||
+						!preg_match('/^text\//', $magic_mime)
+					) &&
 					!static::check_ext_and_mime($out['extension'], $magic_mime)
 				) {
 					// If we have an alternative magic mime and it is legit,
