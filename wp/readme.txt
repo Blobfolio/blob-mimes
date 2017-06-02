@@ -95,6 +95,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Upgrade Notice ==
 
+= 0.5.5 =
+Minor performance and UX improvements.
+
 = 0.5.4 =
 The MIME database has been updated.
 
