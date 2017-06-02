@@ -168,7 +168,7 @@ class mime {
 		if (
 			false !== $checked['ext'] &&
 			false !== $checked['type'] &&
-			file_exists($file)
+			@file_exists($file)
 		) {
 			$real_mime = false;
 
@@ -197,16 +197,19 @@ class mime {
 				$real_mime = false;
 			}
 
-			// SVGs can get tripped up if they are missing the DOCTYPE or XML header.
+			// SVGs can be misidentified by fileinfo if they are missing the
+			// XML tag and/or DOCTYPE declarations. Most other applications
+			// don't have that problem, so let's override fileinfo if the
+			// file starts with an opening SVG tag.
 			if (
 				('image/svg+xml' === $checked['type']) &&
 				($real_mime !== $checked['type'])
 			) {
-				$contents = file_get_contents($file);
-				$contents = svg::sanitize($contents);
-
-				// If it survived sanitization, it is indeed an SVG.
-				if (is_string($contents) && $contents) {
+				$tmp = @file_get_contents($file);
+				if (
+					is_string($tmp) &&
+					preg_match('/\s*<svg/iu', $tmp)
+				) {
 					$real_mime = 'image/svg+xml';
 				}
 			}
