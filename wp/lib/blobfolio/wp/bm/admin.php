@@ -94,7 +94,7 @@ class admin {
 		$type = $wp_filetype['type'];
 
 		// We can't do any further validation without a file to work with.
-		if (!file_exists($file)) {
+		if (!@file_exists($file)) {
 			return compact('ext', 'type', 'proper_filename');
 		}
 
@@ -128,12 +128,12 @@ class admin {
 		// Only need to do something if the type is SVG.
 		if ('image/svg+xml' === $checked['type']) {
 			try {
-				$contents = file_get_contents($file);
+				$contents = @file_get_contents($file);
 				$contents = svg::sanitize($contents);
 
 				// Overwrite the contents if we're good.
 				if (is_string($contents) && $contents) {
-					file_put_contents($file, $contents);
+					@file_put_contents($file, $contents);
 
 					// In case it got renamed somewhere along the way.
 					if ($checked['proper_filename']) {

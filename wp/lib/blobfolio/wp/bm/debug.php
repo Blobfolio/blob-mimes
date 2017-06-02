@@ -41,7 +41,7 @@ class debug {
 
 		// Make sure the file is readable.
 		try {
-			if (!is_string($file) || !$file || !is_file($file)) {
+			if (!is_string($file) || !$file || !@is_file($file)) {
 				$this->errors[] = __('The file could not be read.', 'blob-mimes');
 				return false;
 			}

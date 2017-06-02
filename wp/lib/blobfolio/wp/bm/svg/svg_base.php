@@ -687,7 +687,7 @@ abstract class svg_base {
 		) {
 			try {
 				// @codingStandardsIgnoreStart
-				$svg = file_get_contents($svg);
+				$svg = @file_get_contents($svg);
 				// @codingStandardsIgnoreEnd
 				if (!is_string($svg) || !strlen($svg)) {
 					return false;
