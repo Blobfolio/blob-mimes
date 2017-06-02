@@ -60,6 +60,10 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.5.5 =
+* [Improved] Lighter-weight SVG type detection.
+* [Fixed] Suppress some filesystem warnings.
+
 = 0.5.4 =
 * [Change] Remove build from plugin version to match WP's new standard.
 * [Misc] Update MIME database.
