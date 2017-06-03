@@ -9,9 +9,9 @@ A WordPress plugin that expands file-related security around the upload process.
 1. [Features](#features)
 2. [Installation](#installation)
 3. [Reference](#reference)
-  * [Filters](#filters)
-  * [Functions](#functions)
-  * [Misc](#misc)
+   * [Filters](#filters)
+   * [Functions](#functions)
+   * [Misc](#misc)
 4. [License](#license)
 
 
