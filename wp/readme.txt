@@ -3,7 +3,7 @@ Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
 Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG, file sanitizing, file detection
 Requires at least: 4.7.1
-Tested up to: 4.7.5
+Tested up to: 4.8
 Stable tag: trunk
 License: WTFPL
 License URI: http://www.wtfpl.net/
@@ -29,6 +29,10 @@ The main features include:
  * WordPress 4.7.1 or later.
  * PHP 5.4 or later.
  * DOMDocument extension is optional, but will improve SVG sanitizing.
+
+Please note: it is **not safe** to run WordPress atop a version of PHP that has reached its [End of Life](http://php.net/supported-versions.php). As of right now, that means your server should only be running **PHP 5.6 or newer**.
+
+Future releases of this plugin might, out of necessity, drop support for old, unmaintained versions of PHP. To ensure you continue to receive plugin updates, <strike>buf</strike> bug fixes, and new features, just make sure PHP is kept up-to-date. :)
 
 == Frequently Asked Questions ==
 
