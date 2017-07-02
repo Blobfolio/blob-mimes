@@ -64,6 +64,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.5.6 =
+* [Misc] Update MIME database.
+
 = 0.5.5 =
 * [Improved] Lighter-weight SVG type detection.
 * [Fixed] Suppress some filesystem warnings.
@@ -98,6 +101,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.5.6 =
+The MIME database has been updated.
 
 = 0.5.5 =
 Minor performance and UX improvements.
