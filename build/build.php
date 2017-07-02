@@ -519,7 +519,7 @@ foreach ($data as $k=>$v) {
 		'/ files: \.([\da-z\-_]{2,})./ui',
 		'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui'
 	);
-	foreach($searches as $s){
+	foreach ($searches as $s) {
 		preg_match($s, $v, $matches);
 		if (count($matches)) {
 			save_mime_ext_pair($mime, $matches[1], 'IANA');
