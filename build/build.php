@@ -2,9 +2,9 @@
 /**
  * Compile MIME source data.
  *
- * This build script will download MIME data from various sources
- * and combine the results into nice and tidy JSON files, one
- * organized by extension and one by MIME type.
+ * This build script will download MIME data from various sources and
+ * combine the results into nice and tidy JSON files, one organized by
+ * extension and one by MIME type.
  *
  * This script should be run via php-cli.
  *
@@ -209,8 +209,8 @@ function save_cache(string $url, string $content) {
 /**
  * Batch CURL URLs
  *
- * It is much more efficient to use multi-proc
- * CURL as there are hundreds of files to get.
+ * It is much more efficient to use multi-proc CURL as there are
+ * hundreds of files to get.
  *
  * @param array $urls URLs.
  * @return array Responses.
@@ -306,8 +306,7 @@ function explode_lines(string $str='') {
 /**
  * Array to PHP Code
  *
- * Convert a variable into a string
- * representing PHP code.
+ * Convert a variable into a string representing PHP code.
  *
  * @param array $var Data.
  * @param int $indents Number of tabs to append.
@@ -340,11 +339,10 @@ function array_to_php($var, int $indents=1) {
 
 
 /**
- * Get Manual MIME Rules
+ * Get Manual MIME Rules (by MIME)
  *
- * Some types of responses are hardcoded in
- * fileinfo.so and can't be found in any
- * official database.
+ * We need to supplement our data to cover random oversights from the
+ * main sources.
  *
  * @param string $mime MIME.
  * @return array|false More MIMEs or false.
@@ -434,7 +432,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 	if (false !== ($extra = get_manual_mime_types($mime))) {
 		foreach ($extra as $m) {
 			$aliases[] = $m;
-			save_mime_ext_pair($m, $ext, $source);
+			save_mime_ext_pair($m, $ext, 'Blobfolio');
 		}
 	}
 
@@ -513,8 +511,23 @@ foreach ($data as $k=>$v) {
 	// Save file.
 	$mime = \blobfolio\common\mb::strtolower(\blobfolio\common\mb::substr($k, \blobfolio\common\mb::strlen(IANA_API) + 1));
 
+	// First some manual crap. I really wish IANA had consistency in
+	// their formatting!
+	$searches = array(
+		'/suffix is "([\da-z\-_]{2,})"/ui',
+		'/saved with the the file suffix ([\da-z\-_]{2,})./ui',
+		'/ files: \.([\da-z\-_]{2,})./ui',
+		'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui'
+	);
+	foreach($searches as $s){
+		preg_match($s, $v, $matches);
+		if (count($matches)) {
+			save_mime_ext_pair($mime, $matches[1], 'IANA');
+		}
+	}
+
 	// Are there extensions?
-	preg_match_all('/\s*File extension(\(s\))?:([\.,\da-z\h\-_]+)/ui', $v, $matches);
+	preg_match_all('/\s*File extension(\(s\))?\s*:\s*([\.,\da-z\h\-_]+)/ui', $v, $matches);
 	if (count($matches[2])) {
 		$raw = explode(',', $matches[2][0]);
 		$raw = array_map('trim', $raw);
@@ -726,8 +739,8 @@ debug_stdout('Apache Tika', true);
 debug_stdout('   ++ Fetching MIME list...');
 $data = fetch_urls(array(TIKA_API));
 if (!is_int($data[TIKA_API])) {
-	// SimpleXML doesn't like Tika's undefined namespaces, so
-	// let's just remove them.
+	// SimpleXML doesn't like Tika's undefined namespaces, so let's just
+	// remove them.
 	$data[TIKA_API] = preg_replace('/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us', '', $data[TIKA_API]);
 
 	$data = simplexml_load_string($data[TIKA_API]);
@@ -795,10 +808,33 @@ else {
 
 // -------------------------------------------------
 // A few manual entries.
-
-save_mime_ext_pair('application/zip', 'explain', 'Blobfolio');
-save_mime_ext_pair('application/x-zip-compressed', 'explain', 'Blobfolio');
-save_mime_ext_pair('application/octet-stream', 'explain', 'Blobfolio');
+$manual = array(
+	'explain'=>array(
+		'application/zip',
+		'application/x-zip-compressed',
+		'application/octet-stream',
+	),
+	'jp2'=>array(
+		'image/jpx',
+	),
+	'jpf'=>array(
+		'image/jp2',
+		'image/jpeg2000',
+		'image/jpeg2000-image',
+		'image/x-jpeg2000-image',
+	),
+	'jpx'=>array(
+		'image/jp2',
+		'image/jpeg2000',
+		'image/jpeg2000-image',
+		'image/x-jpeg2000-image',
+	),
+);
+foreach ($manual as $k=>$v) {
+	foreach ($v as $v2) {
+		save_mime_ext_pair($v2, $k, 'Blobfolio');
+	}
+}
 
 
 
