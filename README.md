@@ -227,18 +227,20 @@ Returns a MIME database organized by type.
 
 ## License
 
-Copyright © 2017  Blobfolio, LLC  (email: hello@blobfolio.com)
+Copyright © 2017 [Blobfolio, LLC](https://blobfolio.com) &lt;hello@blobfolio.com&gt;
 
-    This program is free software; you can redistribute it and/or
-    modify it under the terms of the GNU General Public License
-    as published by the Free Software Foundation; either version 2
-    of the License, or (at your option) any later version.
+This work is free. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2.
+
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+    Version 2, December 2004
     
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+    Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
     
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+    Everyone is permitted to copy and distribute verbatim or modified
+    copies of this license document, and changing it is allowed as long
+    as the name is changed.
+    
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+    
+    0. You just DO WHAT THE FUCK YOU WANT TO.

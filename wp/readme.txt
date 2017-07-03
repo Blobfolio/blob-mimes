@@ -64,6 +64,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.6.0 =
+* [Misc] Rebase to relicened `blob-mimes` source library.
+
 = 0.5.6 =
 * [Misc] Update MIME database.
 
@@ -101,6 +104,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.6.0 =
+The plugin has been rebased to the relicened `blob-mimes` source library. These changes exist in source code and have no outward effect.
 
 = 0.5.6 =
 The MIME database has been updated.
