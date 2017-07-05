@@ -101,7 +101,7 @@ define('MIME_DEFAULT', array(
 ));
 $mimes_by_extension = array();
 $extensions_by_mime = array();
-$aliases = array();
+$consensus_ext = array();
 
 define('IANA_API', 'https://www.iana.org/assignments/media-types');
 define('IANA_CATEGORIES', array(
@@ -424,18 +424,31 @@ function get_manual_mime_types(string $mime) {
  * @param string $mime MIME type.
  * @param string $ext File extension.
  * @param string $source Data source.
+ * @param bool $alias Treat as alias.
  * @return bool Status.
  */
-function save_mime_ext_pair(string $mime='', string $ext='', string $source='') {
+function save_mime_ext_pair(string $mime='', string $ext='', string $source='', bool $alias=false) {
 	global $mimes_by_extension;
 	global $extensions_by_mime;
-	global $aliases;
+	global $consensus_ext;
 
 	\blobfolio\common\ref\sanitize::file_extension($ext);
 	\blobfolio\common\ref\sanitize::mime($mime);
 
 	if (!strlen($ext) || !strlen($mime) || !strlen($source)) {
 		return false;
+	}
+
+	if (!$alias) {
+		if (!isset($consensus_ext[$ext])) {
+			$consensus_ext[$ext] = array();
+		}
+		if (!isset($consensus_ext[$ext][$mime])) {
+			$consensus_ext[$ext][$mime] = 1;
+		}
+		else {
+			$consensus_ext[$ext][$mime]++;
+		}
 	}
 
 	// Mimes by extension.
@@ -448,7 +461,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 		$mimes_by_extension[$ext]['mime'][] = $mime;
 	}
 
-	if (in_array($mime, $aliases, true) && !in_array($mime, $mimes_by_extension[$ext]['alias'], true)) {
+	if ($alias && !in_array($mime, $mimes_by_extension[$ext]['alias'], true)) {
 		$mimes_by_extension[$ext]['alias'][] = $mime;
 	}
 
@@ -473,8 +486,7 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='') 
 	// Are there hardcoded entries?
 	if (false !== ($extra = get_manual_mime_types($mime))) {
 		foreach ($extra as $m) {
-			$aliases[] = $m;
-			save_mime_ext_pair($m, $ext, 'Blobfolio');
+			save_mime_ext_pair($m, $ext, 'Blobfolio', true);
 		}
 	}
 
@@ -533,10 +545,6 @@ foreach ($data as $k=>$v) {
 
 		// 0 NAME.
 		// 1 TEMPLATE.
-
-		if (preg_match('/(deprecated|obsolete)/i', $line[0])) {
-			$aliases[] = $line[1];
-		}
 
 		$urls[] = IANA_API . "/{$line[1]}";
 	}
@@ -716,7 +724,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		$mimes = array();
 		foreach ($type->attributes() as $k=>$v) {
 			if ('type' === $k) {
-				$mimes[] = (string) $v;
+				$mimes[strval($v)] = false;
 			}
 		}
 
@@ -725,8 +733,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 			foreach ($type->alias as $alias) {
 				foreach ($alias->attributes() as $k=>$v) {
 					if ('type' === $k) {
-						$mimes[] = (string) $v;
-						$aliases[] = (string) $v;
+						$mimes[strval($v)] = true;
 					}
 				}
 			}
@@ -736,8 +743,7 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		if (isset($type->{'sub-class-of'})) {
 			foreach ($type->{'sub-class-of'}->attributes() as $k=>$v) {
 				if ('type' === $k) {
-					$mimes[] = (string) $v;
-					$aliases[] = (string) $v;
+					$mimes[strval($v)] = true;
 				}
 			}
 		}
@@ -760,8 +766,8 @@ if (!is_int($data[FREEDESKTOP_API])) {
 		// We have something!
 		if (count($exts) && count($mimes)) {
 			foreach ($exts as $ext) {
-				foreach ($mimes as $mime) {
-					save_mime_ext_pair($mime, $ext, 'freedesktop.org');
+				foreach ($mimes as $mime=>$alias) {
+					save_mime_ext_pair($mime, $ext, 'freedesktop.org', $alias);
 				}
 			}
 		}
@@ -791,7 +797,7 @@ if (!is_int($data[TIKA_API])) {
 		$mimes = array();
 		foreach ($type->attributes() as $k=>$v) {
 			if ('type' === $k) {
-				$mimes[] = (string) $v;
+				$mimes[strval($v)] = false;
 			}
 		}
 
@@ -800,8 +806,7 @@ if (!is_int($data[TIKA_API])) {
 			foreach ($type->alias as $alias) {
 				foreach ($alias->attributes() as $k=>$v) {
 					if ('type' === $k) {
-						$mimes[] = (string) $v;
-						$aliases[] = (string) $v;
+						$mimes[strval($v)] = true;
 					}
 				}
 			}
@@ -811,8 +816,7 @@ if (!is_int($data[TIKA_API])) {
 		if (isset($type->{'sub-class-of'})) {
 			foreach ($type->{'sub-class-of'}->attributes() as $k=>$v) {
 				if ('type' === $k && !preg_match('/\/x\-tika/', (string) $v)) {
-					$mimes[] = (string) $v;
-					$aliases[] = (string) $v;
+					$mimes[strval($v)] = true;
 				}
 			}
 		}
@@ -835,8 +839,8 @@ if (!is_int($data[TIKA_API])) {
 		// We have something!
 		if (count($exts) && count($mimes)) {
 			foreach ($exts as $ext) {
-				foreach ($mimes as $mime) {
-					save_mime_ext_pair($mime, $ext, 'Tika');
+				foreach ($mimes as $mime=>$alias) {
+					save_mime_ext_pair($mime, $ext, 'Tika', $alias);
 				}
 			}
 		}
@@ -889,14 +893,39 @@ debug_stdout('   ++ Cleaning data...');
 
 // Calculate primary mime.
 foreach ($mimes_by_extension as $k=>$v) {
+	// Look for TYPE/EXT.
+	foreach ($v['mime'] as $m) {
+		if (
+			('application/' !== substr($m, 0, 12)) &&
+			preg_match('/^(' . implode('|', IANA_CATEGORIES) . ')\/' . preg_quote($k, '/') . '$/i', $m)
+		) {
+			$mimes_by_extension[$k]['primary'] = $m;
+			break;
+		}
+	}
+
+	// Found one?
+	if ($mimes_by_extension[$k]['primary']) {
+		$mimes_by_extension[$k]['alias'] = array_values(array_diff($v['alias'], array($mimes_by_extension[$k]['primary'])));
+		continue;
+	}
+
+	// Try consensus.
+	if (isset($consensus_ext[$k])) {
+		arsort($consensus_ext[$k]);
+		$mimes_by_extension[$k]['primary'] = array_keys($consensus_ext[$k])[0];
+		$mimes_by_extension[$k]['alias'] = array_values(array_diff($v['alias'], array($mimes_by_extension[$k]['primary'])));
+		continue;
+	}
+
 	$possible = array_diff($v['mime'], $v['alias']);
 	if (!count($possible)) {
 		$possible = $v['mime'];
 	}
-	sort($possible);
+	$possible = array_values($possible);
 
 	$mimes_by_extension[$k]['primary'] = $possible[0];
-	$primaries[$k] = $possible[0];
+	$mimes_by_extension[$k]['alias'] = array_values(array_diff($v['alias'], array($mimes_by_extension[$k]['primary'])));
 }
 
 debug_stdout('   ++ Sorting data...');
