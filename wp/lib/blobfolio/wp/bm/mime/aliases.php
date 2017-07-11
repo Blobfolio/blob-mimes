@@ -376,7 +376,8 @@ class aliases {
 			'application/x-unix-archive'
 		),
 		'arc'=>array(
-			'application/x-freearc'
+			'application/x-freearc',
+			'application/x-internet-archive'
 		),
 		'arj'=>array(
 			'application/x-arj',
@@ -679,6 +680,9 @@ class aliases {
 		),
 		'c11amz'=>array(
 			'application/vnd.cluetrust.cartomobile-config-pkg'
+		),
+		'c3ex'=>array(
+			'application/cccex'
 		),
 		'c4d'=>array(
 			'application/vnd.clonk.c4group'
@@ -2219,6 +2223,7 @@ class aliases {
 			'model/vnd.gtw'
 		),
 		'gv'=>array(
+			'text/plain',
 			'text/vnd.graphviz'
 		),
 		'gvp'=>array(
@@ -6756,6 +6761,9 @@ class aliases {
 		'war'=>array(
 			'application/java-archive',
 			'application/x-tika-java-web-archive'
+		),
+		'warc'=>array(
+			'application/warc'
 		),
 		'wav'=>array(
 			'audio/vnd.dts',

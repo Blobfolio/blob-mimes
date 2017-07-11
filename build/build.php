@@ -928,6 +928,59 @@ foreach ($mimes_by_extension as $k=>$v) {
 	$mimes_by_extension[$k]['alias'] = array_values(array_diff($v['alias'], array($mimes_by_extension[$k]['primary'])));
 }
 
+// Now try to help out the reverse situation, best extension for a MIME.
+// Here, we'll prioritize extensions that consider this MIME to be
+// primary, while also ignoring pairings we manually specified.
+foreach ($extensions_by_mime as $k=>$v) {
+	usort($extensions_by_mime[$k]['ext'], function($a, $b) use($k) {
+		global $mimes_by_extension;
+		global $manual;
+
+		$ext1 = $a;
+		$ext2 = $b;
+
+		$a = (
+			isset($mimes_by_extension[$a]) &&
+			($mimes_by_extension[$a]['primary'] === $k) &&
+			(!isset($manual[$a]) || !in_array($k, $manual[$a], true))
+		);
+		$b = (
+			isset($mimes_by_extension[$b]) &&
+			($mimes_by_extension[$b]['primary'] === $k) &&
+			(!isset($manual[$b]) || !in_array($k, $manual[$b], true))
+		);
+
+		// They are both primary contenders.
+		if ($a === $b) {
+			// Prefer the extension that is actually part of the MIME
+			// type, but only if they're both 3-letter extensions.
+			if (
+				(strlen($ext1) === 3) &&
+				(strlen($ext2) === 3) &&
+				(substr_count($k, '/') === 1)
+			) {
+				list($k1, $k2) = explode('/', $k);
+				$a = (false !== strpos($k2, $ext1));
+				$b = (false !== strpos($k2, $ext2));
+
+				if ($a === $b) {
+					return 0;
+				}
+				elseif ($a) {
+					return -1;
+				}
+				elseif ($b) {
+					return 1;
+				}
+			}
+			return 0;
+		}
+
+		// Prefer the primary match.
+		return $a ? -1 : 1;
+	});
+}
+
 debug_stdout('   ++ Sorting data...');
 ksort($mimes_by_extension);
 ksort($extensions_by_mime);
