@@ -1,7 +1,7 @@
 === Lord of the Files: Enhanced Upload Security ===
 Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
-Tags: file validation, MIME types, media types, security, uploads, Media Library, SVG, file sanitizing, file detection
+Tags: media, mime, upload, file validation, security, SVG, sanitizing, file detection, security plugin, upload security, secure
 Requires at least: 4.7.1
 Tested up to: 4.8
 Stable tag: trunk
@@ -64,6 +64,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.6.1 =
+* [Misc] Update MIME database.
+
 = 0.6.0 =
 * [Misc] Rebase to relicened `blob-mimes` source library.
 
@@ -104,6 +107,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.6.1 =
+The MIME database has been updated.
 
 = 0.6.0 =
 The plugin has been rebased to the relicened `blob-mimes` source library. These changes exist in source code and have no outward effect.
