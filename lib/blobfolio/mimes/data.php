@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-07-11 10:36:36.
+ * Built: 2017-08-02 06:44:17.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -963,6 +963,7 @@ class data {
 				'gz',
 				'tgz',
 				'svgz',
+				'wmz',
 				'emz'
 			),
 			'source'=>array(
@@ -975,8 +976,7 @@ class data {
 			'mime'=>'application/gzip-compressed',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz'
+				'tgz'
 			),
 			'source'=>array(
 				'Tika'
@@ -986,8 +986,7 @@ class data {
 			'mime'=>'application/gzipped',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz'
+				'tgz'
 			),
 			'source'=>array(
 				'Tika'
@@ -2965,6 +2964,15 @@ class data {
 				'Apache'
 			)
 		),
+		'application/vnd.adobe.illustrator'=>array(
+			'mime'=>'application/vnd.adobe.illustrator',
+			'ext'=>array(
+				'ai'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
 		'application/vnd.adobe.xdp+xml'=>array(
 			'mime'=>'application/vnd.adobe.xdp+xml',
 			'ext'=>array(
@@ -4127,6 +4135,24 @@ class data {
 			'mime'=>'application/vnd.etsi.timestamp-token',
 			'ext'=>array(
 				'tst'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.evolv.ecig.profile'=>array(
+			'mime'=>'application/vnd.evolv.ecig.profile',
+			'ext'=>array(
+				'ecigprofile'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.evolv.ecig.settings'=>array(
+			'mime'=>'application/vnd.evolv.ecig.settings',
+			'ext'=>array(
+				'ecig'
 			),
 			'source'=>array(
 				'IANA'
@@ -11158,8 +11184,7 @@ class data {
 			'mime'=>'application/x-gunzip',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz'
+				'tgz'
 			),
 			'source'=>array(
 				'Tika'
@@ -11169,9 +11194,7 @@ class data {
 			'mime'=>'application/x-gzip',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz',
-				'wmz'
+				'tgz'
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -11182,8 +11205,7 @@ class data {
 			'mime'=>'application/x-gzip-compressed',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz'
+				'tgz'
 			),
 			'source'=>array(
 				'Tika'
@@ -11935,6 +11957,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'application/x-ms-emz'=>array(
+			'mime'=>'application/x-ms-emz',
+			'ext'=>array(
+				'emz'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'application/x-ms-installer'=>array(
@@ -15944,8 +15975,7 @@ class data {
 			'mime'=>'gzip/document',
 			'ext'=>array(
 				'gz',
-				'tgz',
-				'emz'
+				'tgz'
 			),
 			'source'=>array(
 				'Tika'
@@ -16874,6 +16904,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org',
+				'Tika'
+			)
+		),
+		'image/x-emf-compressed'=>array(
+			'mime'=>'image/x-emf-compressed',
+			'ext'=>array(
+				'emz'
+			),
+			'source'=>array(
 				'Tika'
 			)
 		),
@@ -22287,7 +22326,8 @@ class data {
 			'ext'=>'ai',
 			'mime'=>array(
 				'application/postscript',
-				'application/illustrator'
+				'application/illustrator',
+				'application/vnd.adobe.illustrator'
 			),
 			'source'=>array(
 				'Apache',
@@ -22295,7 +22335,9 @@ class data {
 				'freedesktop.org',
 				'Tika'
 			),
-			'alias'=>array(),
+			'alias'=>array(
+				'application/vnd.adobe.illustrator'
+			),
 			'primary'=>'application/postscript'
 		),
 		'aif'=>array(
@@ -26893,6 +26935,28 @@ class data {
 			'alias'=>array(),
 			'primary'=>'audio/vnd.nuera.ecelp9600'
 		),
+		'ecig'=>array(
+			'ext'=>'ecig',
+			'mime'=>array(
+				'application/vnd.evolv.ecig.settings'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.evolv.ecig.settings'
+		),
+		'ecigprofile'=>array(
+			'ext'=>'ecigprofile',
+			'mime'=>array(
+				'application/vnd.evolv.ecig.profile'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.evolv.ecig.profile'
+		),
 		'ecigtheme'=>array(
 			'ext'=>'ecigtheme',
 			'mime'=>array(
@@ -27130,25 +27194,17 @@ class data {
 			'ext'=>'emz',
 			'mime'=>array(
 				'application/x-msmetafile',
-				'application/gzip',
-				'application/x-gzip',
-				'application/x-gunzip',
-				'application/gzipped',
-				'application/gzip-compressed',
-				'application/x-gzip-compressed',
-				'gzip/document'
+				'image/x-emf-compressed',
+				'application/x-ms-emz',
+				'application/gzip'
 			),
 			'source'=>array(
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(
-				'application/x-gzip',
-				'application/x-gunzip',
-				'application/gzipped',
-				'application/gzip-compressed',
-				'application/x-gzip-compressed',
-				'gzip/document'
+				'application/x-ms-emz',
+				'application/gzip'
 			),
 			'primary'=>'application/x-msmetafile'
 		),
@@ -46375,14 +46431,14 @@ class data {
 			'mime'=>array(
 				'application/x-ms-wmz',
 				'application/x-msmetafile',
-				'application/x-gzip'
+				'application/gzip'
 			),
 			'source'=>array(
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(
-				'application/x-gzip'
+				'application/gzip'
 			),
 			'primary'=>'application/x-ms-wmz'
 		),

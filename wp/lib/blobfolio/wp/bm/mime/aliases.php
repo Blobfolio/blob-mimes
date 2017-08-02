@@ -262,7 +262,8 @@ class aliases {
 		),
 		'ai'=>array(
 			'application/illustrator',
-			'application/postscript'
+			'application/postscript',
+			'application/vnd.adobe.illustrator'
 		),
 		'aif'=>array(
 			'application/x-iff',
@@ -1530,6 +1531,12 @@ class aliases {
 		'ecelp9600'=>array(
 			'audio/vnd.nuera.ecelp9600'
 		),
+		'ecig'=>array(
+			'application/vnd.evolv.ecig.settings'
+		),
+		'ecigprofile'=>array(
+			'application/vnd.evolv.ecig.profile'
+		),
 		'ecigtheme'=>array(
 			'application/vnd.evolv.ecig.theme'
 		),
@@ -1594,13 +1601,9 @@ class aliases {
 		),
 		'emz'=>array(
 			'application/gzip',
-			'application/gzip-compressed',
-			'application/gzipped',
-			'application/x-gunzip',
-			'application/x-gzip',
-			'application/x-gzip-compressed',
+			'application/x-ms-emz',
 			'application/x-msmetafile',
-			'gzip/document'
+			'image/x-emf-compressed'
 		),
 		'enr'=>array(
 			'application/x-endnote-refer'
@@ -6930,7 +6933,7 @@ class aliases {
 			'video/x-ms-wvx'
 		),
 		'wmz'=>array(
-			'application/x-gzip',
+			'application/gzip',
 			'application/x-ms-wmz',
 			'application/x-msmetafile'
 		),
