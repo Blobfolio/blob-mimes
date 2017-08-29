@@ -4,6 +4,7 @@ Donate link: https://blobfolio.com/donate.html
 Tags: media, mime, upload, file validation, security, SVG, sanitizing, file detection, security plugin, upload security, secure
 Requires at least: 4.7.1
 Tested up to: 4.8
+Requires PHP: 5.4
 Stable tag: trunk
 License: WTFPL
 License URI: http://www.wtfpl.net/
