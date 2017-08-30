@@ -93,12 +93,12 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 			array(
 				'audio/Mp3',
 				'audio/mp3',
-				'mp3'
+				'mp3',
 			),
 			array(
 				'image/jpeg',
 				'image/jpeg',
-				'jpeg'
+				'jpeg',
 			),
 		);
 	}
@@ -113,17 +113,17 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 			array(
 				'mp3',
 				'mp3',
-				'audio/mp3'
+				'audio/mp3',
 			),
 			array(
 				'Xls',
 				'xls',
-				'application/vnd.ms-office'
+				'application/vnd.ms-office',
 			),
 			array(
 				'.XLS',
 				'xls',
-				'application/vnd.ms-excel'
+				'application/vnd.ms-excel',
 			),
 		);
 	}
@@ -145,7 +145,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>static::ASSETS . 'space.jpg',
 					'mime'=>'image/jpeg',
 				),
-				null
+				null,
 			),
 			// SVG w/ headers.
 			array(
@@ -158,7 +158,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>static::ASSETS . 'blobfolio-type.svg',
 					'mime'=>'image/svg+xml',
 				),
-				null
+				null,
 			),
 			// SVG w/o headers.
 			array(
@@ -171,7 +171,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>static::ASSETS . 'blobfolio-no_type.svg',
 					'mime'=>'image/svg+xml',
 				),
-				null
+				null,
 			),
 			// Incorrect name.
 			array(
@@ -184,7 +184,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>static::ASSETS . 'space.png',
 					'mime'=>'image/jpeg',
 				),
-				'space.jpg'
+				'space.jpg',
 			),
 			// Just a file name.
 			array(
@@ -197,7 +197,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>getcwd() . '/pkcs12-test-keystore.tar.gz',
 					'mime'=>'application/gzip',
 				),
-				null
+				null,
 			),
 			// Remote file.
 			array(
@@ -210,7 +210,7 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 					'path'=>'https://upload.wikimedia.org/wikipedia/commons/7/76/Mozilla_Firefox_logo_2013.svg',
 					'mime'=>'image/svg+xml',
 				),
-				null
+				null,
 			),
 		);
 	}

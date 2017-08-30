@@ -123,28 +123,28 @@ class MBTests extends WP_UnitTestCase {
 				'E',
 				0,
 				false,
-				false
+				false,
 			),
 			array(
 				'AöA',
 				'A',
 				0,
 				0,
-				0
+				0,
 			),
 			array(
 				'AöA',
 				'ö',
 				0,
 				1,
-				1
+				1,
 			),
 			array(
 				'AöA',
 				'A',
 				1,
 				2,
-				3
+				3,
 			),
 		);
 	}
@@ -161,28 +161,28 @@ class MBTests extends WP_UnitTestCase {
 				'E',
 				0,
 				false,
-				false
+				false,
 			),
 			array(
 				'Björk',
 				'k',
 				0,
 				4,
-				5
+				5,
 			),
 			array(
 				'Björk',
 				'ö',
 				0,
 				2,
-				2
+				2,
 			),
 			array(
 				'Björk',
 				'j',
 				1,
 				1,
-				1
+				1,
 			),
 		);
 	}
@@ -198,8 +198,8 @@ class MBTests extends WP_UnitTestCase {
 			array(
 				'BJÖRK',
 				'björk',
-				'bjÖrk'
-			)
+				'bjÖrk',
+			),
 		);
 	}
 
@@ -216,14 +216,14 @@ class MBTests extends WP_UnitTestCase {
 				0,
 				4,
 				'Björ',
-				'Bjö'
+				'Bjö',
 			),
 			array(
 				'Björk',
 				4,
 				null,
 				'k',
-				''
+				'',
 			),
 		);
 	}

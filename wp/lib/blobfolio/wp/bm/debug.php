@@ -96,7 +96,7 @@ class debug {
 		$test = array(
 			'pass'=>((false !== $info['ext']) && (false !== $info['type'])),
 			'test'=>$info,
-			'result'=>''
+			'result'=>'',
 		);
 
 		if (!$test['pass']) {
@@ -127,9 +127,9 @@ class debug {
 				'type'=>false,
 				'match_alias'=>false,
 				'allowed_explicit'=>false,
-				'allowed_alias'=>false
+				'allowed_alias'=>false,
 			),
-			'result'=>''
+			'result'=>'',
 		);
 
 		// Test if we can.
@@ -199,9 +199,9 @@ class debug {
 				'name'=>$this->filename,
 				'type'=>false,
 				'ext'=>false,
-				'renamed'=>false
+				'renamed'=>false,
 			),
-			'result'=>''
+			'result'=>'',
 		);
 
 		$info = mime::check_real_filetype($this->file, $this->filename, static::$mimes);
@@ -286,7 +286,7 @@ class debug {
 		static::$wordpress = array(
 			'version'=>get_bloginfo('version'),
 			'plugins'=>array(),
-			'theme'=>''
+			'theme'=>'',
 		);
 
 		// Only include active plugins.
@@ -322,7 +322,7 @@ class debug {
 			static::$php = array(
 				'version'=>phpversion(),
 				'os'=>php_uname('a'),
-				'extensions'=>get_loaded_extensions()
+				'extensions'=>get_loaded_extensions(),
 			);
 			sort(static::$php['extensions']);
 		}
@@ -354,8 +354,8 @@ class debug {
 			'TESTS'=>$this->tests,
 			'ENVIRONMENT'=>array(
 				'WORDPRESS'=>static::$wordpress,
-				'PHP'=>static::$php
-			)
+				'PHP'=>static::$php,
+			),
 		);
 
 		$this->errors = array_values(array_unique($this->errors));

@@ -163,19 +163,19 @@ class MimeTests extends WP_UnitTestCase {
 		return array(
 			array(
 				'jpg',
-				aliases::$data['jpg']
+				aliases::$data['jpg'],
 			),
 			array(
 				'.jpg',
-				aliases::$data['jpg']
+				aliases::$data['jpg'],
 			),
 			array(
 				'JPG',
-				aliases::$data['jpg']
+				aliases::$data['jpg'],
 			),
 			array(
 				'isnotreal',
-				false
+				false,
 			),
 		);
 	}
@@ -190,22 +190,22 @@ class MimeTests extends WP_UnitTestCase {
 			array(
 				'apples.jpg',
 				'jpg',
-				'apples.jpg'
+				'apples.jpg',
 			),
 			array(
 				'apples',
 				'jpg',
-				'apples.jpg'
+				'apples.jpg',
 			),
 			array(
 				'apples.gif',
 				'jpg',
-				'apples.jpg'
+				'apples.jpg',
 			),
 			array(
 				'.apples',
 				'jpg',
-				'.jpg'
+				'.jpg',
 			),
 		);
 	}
@@ -220,37 +220,37 @@ class MimeTests extends WP_UnitTestCase {
 			array(
 				'jpg',
 				'image/jpeg',
-				true
+				true,
 			),
 			array(
 				'jpg',
 				'image/x-jpeg',
-				true
+				true,
 			),
 			array(
 				'jpg',
 				'image/vnd.jpeg',
-				true
+				true,
 			),
 			array(
 				'jpg',
 				'image/gif',
-				false
+				false,
 			),
 			array(
 				'xls',
 				'application/CDFV2-encrypted',
-				true
+				true,
 			),
 			array(
 				'xls',
 				'application/Octet-Stream',
-				true
+				true,
 			),
 			array(
 				'isnotreal',
 				'awesome/sauce',
-				false
+				false,
 			),
 		);
 	}
@@ -270,8 +270,8 @@ class MimeTests extends WP_UnitTestCase {
 				null,
 				array(
 					'ext'=>'jpg',
-					'type'=>'image/jpeg'
-				)
+					'type'=>'image/jpeg',
+				),
 			),
 			array(
 				$dir . 'space.png',
@@ -279,8 +279,8 @@ class MimeTests extends WP_UnitTestCase {
 				null,
 				array(
 					'ext'=>'jpg',
-					'type'=>'image/jpeg'
-				)
+					'type'=>'image/jpeg',
+				),
 			),
 		);
 	}
@@ -297,22 +297,22 @@ class MimeTests extends WP_UnitTestCase {
 			array(
 				$dir . 'xls-cdfv2.xls',
 				'test.xls',
-				true
+				true,
 			),
 			array(
 				$dir . 'xls-excel.xls',
 				'test.xls',
-				true
+				true,
 			),
 			array(
 				$dir . 'xls-msoffice.xls',
 				'test.xls',
-				true
+				true,
 			),
 			array(
 				$dir . 'xls-xml.xls',
 				'test.xls',
-				true
+				true,
 			),
 		);
 	}
@@ -369,7 +369,7 @@ class MimeTests extends WP_UnitTestCase {
 		if ('isnotreal' === $file) {
 			$match = array(
 				'ext'=>'is',
-				'type'=>'real'
+				'type'=>'real',
 			);
 		}
 

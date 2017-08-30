@@ -380,7 +380,7 @@ class SVGTests extends WP_UnitTestCase {
 			array($dir . 'enshrined.svg'),
 			array($dir . 'monogram-inkscape.svg'),
 			array($dir . 'pi.svg'),
-			array($dir . 'minus.svg')
+			array($dir . 'minus.svg'),
 		);
 	}
 
@@ -395,11 +395,11 @@ class SVGTests extends WP_UnitTestCase {
 		return array(
 			array(
 				$dir . 'monogram.svg',
-				array('width'=>330.056, 'height'=>495.558)
+				array('width'=>330.056, 'height'=>495.558),
 			),
 			array(
 				file_get_contents($dir . 'monogram.svg'),
-				array('width'=>330.056, 'height'=>495.558)
+				array('width'=>330.056, 'height'=>495.558),
 			),
 		);
 	}

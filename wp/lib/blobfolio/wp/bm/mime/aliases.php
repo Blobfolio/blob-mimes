@@ -566,7 +566,10 @@ class aliases {
 			'text/plain'
 		),
 		'bat'=>array(
-			'application/x-msdownload'
+			'application/bat',
+			'application/x-bat',
+			'application/x-msdownload',
+			'text/plain'
 		),
 		'bay'=>array(
 			'image/x-raw-casio'
@@ -950,6 +953,8 @@ class aliases {
 			'application/vnd.cosmocaller'
 		),
 		'cmd'=>array(
+			'application/bat',
+			'application/x-bat',
 			'text/plain'
 		),
 		'cmdf'=>array(
@@ -3473,6 +3478,12 @@ class aliases {
 			'image/x-jp2-container',
 			'video/mj2'
 		),
+		'mjs'=>array(
+			'application/ecmascript',
+			'application/javascript',
+			'application/x-javascript',
+			'text/javascript'
+		),
 		'mk'=>array(
 			'text/plain',
 			'text/x-makefile'
@@ -3831,12 +3842,18 @@ class aliases {
 			'model/vnd.mts',
 			'video/mp2t'
 		),
+		'multitrack'=>array(
+			'audio/vnd.presonus.multitrack'
+		),
 		'mup'=>array(
 			'text/plain',
 			'text/x-mup'
 		),
 		'mus'=>array(
 			'application/vnd.musician'
+		),
+		'musd'=>array(
+			'application/mmt-usd+xml'
 		),
 		'musicxml'=>array(
 			'application/vnd.recordare.musicxml+xml'
@@ -4925,6 +4942,9 @@ class aliases {
 			'application/raml+yaml',
 			'application/x-yaml'
 		),
+		'rapd'=>array(
+			'application/route-apd+xml'
+		),
 		'rar'=>array(
 			'application/vnd.rar',
 			'application/x-rar',
@@ -5161,6 +5181,9 @@ class aliases {
 		),
 		'run'=>array(
 			'application/x-makeself'
+		),
+		'rusd'=>array(
+			'application/route-usd+xml'
 		),
 		'rv'=>array(
 			'video/vnd.rn-realvideo',
@@ -5632,6 +5655,9 @@ class aliases {
 		'slk'=>array(
 			'text/plain',
 			'text/spreadsheet'
+		),
+		'sls'=>array(
+			'application/route-s-tsid+xml'
 		),
 		'slt'=>array(
 			'application/vnd.epson.salt'

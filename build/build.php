@@ -92,7 +92,7 @@ define('EXT_DEFAULT', array(
 	'mime'=>array(),
 	'source'=>array(),
 	'alias'=>array(),
-	'primary'=>''
+	'primary'=>'',
 ));
 define('MIME_DEFAULT', array(
 	'mime'=>'',
@@ -113,7 +113,7 @@ define('IANA_CATEGORIES', array(
 	'model',
 	'multipart',
 	'text',
-	'video'
+	'video',
 ));
 
 define('APACHE_API', 'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types');
@@ -128,21 +128,21 @@ define('TIKA_API', 'https://raw.githubusercontent.com/apache/tika/master/tika-co
 define('MAGIC_LIST_BY_MIME', array(
 	'application/vnd.ms-word'=>array(
 		'application/vnd.ms-office',
-		'application/xml'
+		'application/xml',
 	),
 	'application/vnd.ms-excel'=>array(
 		'application/vnd.ms-office',
-		'application/xml'
+		'application/xml',
 	),
 	'application/vnd.ms-powerpoint'=>array(
-		'application/vnd.ms-office'
+		'application/vnd.ms-office',
 	),
 	'application/vnd.openxmlformats-officedocument'=>array(
-		'application/vnd.ms-office'
+		'application/vnd.ms-office',
 	),
 	'application/vnd.ms-excel.sheet.macroenabled.12'=>array(
-		'application/zip'
-	)
+		'application/zip',
+	),
 ));
 
 $start = microtime(true);
@@ -182,7 +182,7 @@ function cache_path(string $url) {
 	// Strip and translate a little.
 	$url = strtolower($url);
 	$url = preg_replace('/^https?:\/\//', '', $url);
-	$url = str_replace(array('/','\\','?','#'), '-', $url);
+	$url = str_replace(array('/', '\\', '?', '#'), '-', $url);
 
 	return SOURCE_PATH . '/' . $url;
 }
@@ -567,7 +567,7 @@ foreach ($data as $k=>$v) {
 		'/suffix is "([\da-z\-_]{2,})"/ui',
 		'/saved with the the file suffix ([\da-z\-_]{2,})./ui',
 		'/ files: \.([\da-z\-_]{2,})./ui',
-		'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui'
+		'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui',
 	);
 	foreach ($searches as $s) {
 		preg_match($s, $v, $matches);
@@ -586,7 +586,7 @@ foreach ($data as $k=>$v) {
 
 		// First pass, clean up and split some more.
 		foreach ($raw as $k=>$v) {
-			$raw[$k] = str_replace(array('.','*'), '', $v);
+			$raw[$k] = str_replace(array('.', '*'), '', $v);
 			$raw[$k] = preg_replace('/^\s+/u', '', $raw[$k]);
 			$raw[$k] = preg_replace('/\s+$/u', '', $raw[$k]);
 
@@ -614,7 +614,7 @@ foreach ($data as $k=>$v) {
 				'none',
 				'undefined',
 				'-none-',
-				'na'
+				'na',
 			)
 		);
 

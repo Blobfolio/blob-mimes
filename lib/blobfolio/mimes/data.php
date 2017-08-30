@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-08-02 06:44:17.
+ * Built: 2017-08-30 09:30:35.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -228,6 +228,16 @@ class data {
 			),
 			'source'=>array(
 				'IANA'
+			)
+		),
+		'application/bat'=>array(
+			'mime'=>'application/bat',
+			'ext'=>array(
+				'bat',
+				'cmd'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'application/binhex'=>array(
@@ -715,7 +725,8 @@ class data {
 				'es',
 				'ecma',
 				'js',
-				'jsm'
+				'jsm',
+				'mjs'
 			),
 			'source'=>array(
 				'IANA',
@@ -1128,6 +1139,7 @@ class data {
 			'ext'=>array(
 				'js',
 				'jsm',
+				'mjs',
 				'json'
 			),
 			'source'=>array(
@@ -1446,6 +1458,15 @@ class data {
 			'mime'=>'application/mf4',
 			'ext'=>array(
 				'mf4'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/mmt-usd+xml'=>array(
+			'mime'=>'application/mmt-usd+xml',
+			'ext'=>array(
+				'musd'
 			),
 			'source'=>array(
 				'IANA'
@@ -2258,6 +2279,33 @@ class data {
 				'Tika'
 			)
 		),
+		'application/route-apd+xml'=>array(
+			'mime'=>'application/route-apd+xml',
+			'ext'=>array(
+				'rapd'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/route-s-tsid+xml'=>array(
+			'mime'=>'application/route-s-tsid+xml',
+			'ext'=>array(
+				'sls'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/route-usd+xml'=>array(
+			'mime'=>'application/route-usd+xml',
+			'ext'=>array(
+				'rusd'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/rpki-ghostbusters'=>array(
 			'mime'=>'application/rpki-ghostbusters',
 			'ext'=>array(
@@ -2714,7 +2762,8 @@ class data {
 				'trig'
 			),
 			'source'=>array(
-				'IANA'
+				'IANA',
+				'freedesktop.org'
 			)
 		),
 		'application/ttml+xml'=>array(
@@ -10023,6 +10072,16 @@ class data {
 				'Tika'
 			)
 		),
+		'application/x-bat'=>array(
+			'mime'=>'application/x-bat',
+			'ext'=>array(
+				'cmd',
+				'bat'
+			),
+			'source'=>array(
+				'Tika'
+			)
+		),
 		'application/x-bcpio'=>array(
 			'mime'=>'application/x-bcpio',
 			'ext'=>array(
@@ -11484,7 +11543,8 @@ class data {
 			'mime'=>'application/x-javascript',
 			'ext'=>array(
 				'js',
-				'jsm'
+				'jsm',
+				'mjs'
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -15063,6 +15123,15 @@ class data {
 				'Tika'
 			)
 		),
+		'audio/vnd.presonus.multitrack'=>array(
+			'mime'=>'audio/vnd.presonus.multitrack',
+			'ext'=>array(
+				'multitrack'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'audio/vnd.rip'=>array(
 			'mime'=>'audio/vnd.rip',
 			'ext'=>array(
@@ -18300,7 +18369,8 @@ class data {
 			'mime'=>'text/javascript',
 			'ext'=>array(
 				'js',
-				'jsm'
+				'jsm',
+				'mjs'
 			),
 			'source'=>array(
 				'IANA',
@@ -18392,7 +18462,6 @@ class data {
 				'aart',
 				'am',
 				'classpath',
-				'cmd',
 				'config',
 				'data',
 				'jx',
@@ -18407,12 +18476,14 @@ class data {
 				'junit',
 				'xweb',
 				'wsdd',
-				'conf',
 				'in',
+				'conf',
 				'list',
 				'def',
-				'cl',
-				'aspx',
+				'jl',
+				'applescript',
+				'xq',
+				'xquery',
 				'sas',
 				'sh',
 				'bash',
@@ -18420,21 +18491,20 @@ class data {
 				'xsl',
 				'as',
 				'ada',
-				'applescript',
-				'ifb',
-				'aj',
 				'asm',
-				'xq',
+				'aspx',
+				'aj',
+				'mpx',
+				'ifb',
 				'haml',
 				'ac',
 				'ad',
 				'adoc',
 				'asciidoc',
 				'mdtext',
-				'itk',
-				'xquery',
-				'mpx',
 				'bibtex',
+				'js',
+				'st',
 				'm1u',
 				'scope',
 				'slice',
@@ -18447,7 +18517,7 @@ class data {
 				'xsd',
 				'rng',
 				'm4u',
-				'sed',
+				'cmd',
 				'mxu',
 				'sdp',
 				'ica',
@@ -18458,11 +18528,11 @@ class data {
 				'flatpakref',
 				'stl',
 				'gcode',
-				'js',
-				'st',
+				'bat',
+				'itk',
 				'ent',
-				'cfc',
-				'bas',
+				'cl',
+				'hpp',
 				'ini',
 				'groovy',
 				'f77',
@@ -18470,12 +18540,11 @@ class data {
 				'exp',
 				'lsp',
 				'lisp',
-				'jl',
 				'gv',
 				'awk',
-				'hpp',
-				'properties',
+				'bas',
 				'hxx',
+				'properties',
 				'hh',
 				'hp',
 				'cpp',
@@ -18486,10 +18555,12 @@ class data {
 				'cs',
 				'cfm',
 				'cfml',
+				'cfc',
 				'java',
 				'jsp',
+				'sed',
+				'pl',
 				'rb',
-				'n3',
 				'rexx',
 				'restx',
 				'rst',
@@ -18499,10 +18570,10 @@ class data {
 				'perl',
 				'al',
 				'pm',
-				'pl',
-				'dpr',
-				'less',
+				'n3',
 				'pod',
+				'less',
+				'dpr',
 				'pp',
 				'mli',
 				'ocaml',
@@ -18510,11 +18581,11 @@ class data {
 				'mg',
 				'i3',
 				'm3',
-				'ml',
 				'mount',
+				'ml',
 				'lua',
 				'path',
-				'iptables',
+				'service',
 				'device',
 				'sami',
 				'man',
@@ -18611,7 +18682,7 @@ class data {
 				'tk',
 				'markdown',
 				'me',
-				'service',
+				'iptables',
 				'uue',
 				'uil',
 				'twig',
@@ -23406,13 +23477,19 @@ class data {
 		'bat'=>array(
 			'ext'=>'bat',
 			'mime'=>array(
-				'application/x-msdownload'
+				'application/x-msdownload',
+				'application/x-bat',
+				'application/bat',
+				'text/plain'
 			),
 			'source'=>array(
 				'Apache',
 				'Tika'
 			),
-			'alias'=>array(),
+			'alias'=>array(
+				'application/bat',
+				'text/plain'
+			),
 			'primary'=>'application/x-msdownload'
 		),
 		'bay'=>array(
@@ -24833,13 +24910,18 @@ class data {
 		'cmd'=>array(
 			'ext'=>'cmd',
 			'mime'=>array(
+				'application/x-bat',
+				'application/bat',
 				'text/plain'
 			),
 			'source'=>array(
 				'Tika'
 			),
-			'alias'=>array(),
-			'primary'=>'text/plain'
+			'alias'=>array(
+				'application/bat',
+				'text/plain'
+			),
+			'primary'=>'application/x-bat'
 		),
 		'cmdf'=>array(
 			'ext'=>'cmdf',
@@ -33889,6 +33971,24 @@ class data {
 			),
 			'primary'=>'video/mj2'
 		),
+		'mjs'=>array(
+			'ext'=>'mjs',
+			'mime'=>array(
+				'application/javascript',
+				'application/x-javascript',
+				'text/javascript',
+				'application/ecmascript'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'application/x-javascript',
+				'text/javascript',
+				'application/ecmascript'
+			),
+			'primary'=>'application/javascript'
+		),
 		'mk'=>array(
 			'ext'=>'mk',
 			'mime'=>array(
@@ -35158,6 +35258,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'model/vnd.mts'
 		),
+		'multitrack'=>array(
+			'ext'=>'multitrack',
+			'mime'=>array(
+				'audio/vnd.presonus.multitrack'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'audio/vnd.presonus.multitrack'
+		),
 		'mup'=>array(
 			'ext'=>'mup',
 			'mime'=>array(
@@ -35183,6 +35294,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.musician'
+		),
+		'musd'=>array(
+			'ext'=>'musd',
+			'mime'=>array(
+				'application/mmt-usd+xml'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/mmt-usd+xml'
 		),
 		'musicxml'=>array(
 			'ext'=>'musicxml',
@@ -39144,6 +39266,17 @@ class data {
 			),
 			'primary'=>'application/raml+yaml'
 		),
+		'rapd'=>array(
+			'ext'=>'rapd',
+			'mime'=>array(
+				'application/route-apd+xml'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/route-apd+xml'
+		),
 		'rar'=>array(
 			'ext'=>'rar',
 			'mime'=>array(
@@ -40005,6 +40138,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-makeself'
+		),
+		'rusd'=>array(
+			'ext'=>'rusd',
+			'mime'=>array(
+				'application/route-usd+xml'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/route-usd+xml'
 		),
 		'rv'=>array(
 			'ext'=>'rv',
@@ -41743,6 +41887,17 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/spreadsheet'
+		),
+		'sls'=>array(
+			'ext'=>'sls',
+			'mime'=>array(
+				'application/route-s-tsid+xml'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/route-s-tsid+xml'
 		),
 		'slt'=>array(
 			'ext'=>'slt',
@@ -44021,6 +44176,7 @@ class data {
 				'freedesktop.org'
 			),
 			'alias'=>array(
+				'application/x-trig',
 				'text/plain'
 			),
 			'primary'=>'application/trig'
