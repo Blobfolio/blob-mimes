@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-08-30 09:30:35.
+ * Built: 2017-09-01 10:32:06.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
