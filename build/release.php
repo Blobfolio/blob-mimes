@@ -22,11 +22,15 @@ echo "+ Copying the source.\n";
 
 // Delete the release base if it already exists.
 if (file_exists(RELEASE_BASE)) {
+	// @codingStandardsIgnoreStart
 	shell_exec('rm -rf ' . escapeshellarg(RELEASE_BASE));
+	// @codingStandardsIgnoreEnd
 }
 
 // Copy the trunk.
+// @codingStandardsIgnoreStart
 shell_exec('cp -aR ' . escapeshellarg(PLUGIN_BASE) . ' ' . escapeshellarg(RELEASE_BASE));
+// @codingStandardsIgnoreEnd
 
 
 
@@ -49,17 +53,23 @@ $tmp = array(
 	'tests',
 );
 foreach ($tmp as $v) {
+	// @codingStandardsIgnoreStart
 	shell_exec('rm -rf ' . escapeshellarg(RELEASE_BASE . $v));
+	// @codingStandardsIgnoreEnd
 }
 
 // Miscellaneous.
+// @codingStandardsIgnoreStart
 shell_exec('find ' . escapeshellarg(RELEASE_BASE) . ' -name ".gitignore" -type f -delete');
+// @codingStandardsIgnoreEnd
 
 
 
 echo "+ Fixing permissions.\n";
+// @codingStandardsIgnoreStart
 shell_exec('find ' . escapeshellarg(RELEASE_BASE) . ' -type d -print0 | xargs -0 chmod 755');
 shell_exec('find ' . escapeshellarg(RELEASE_BASE) . ' -type f -print0 | xargs -0 chmod 644');
+// @codingStandardsIgnoreEnd
 
 
 
