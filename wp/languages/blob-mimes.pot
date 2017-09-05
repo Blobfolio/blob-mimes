@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-05-27 23:28-0700\n"
+"2017-09-05 06:46-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -93,8 +93,8 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:107
-#: lib/blobfolio/wp/bm/admin.php:56
-#: lib/blobfolio/wp/bm/admin.php:57
+#: lib/blobfolio/wp/bm/admin.php:58
+#: lib/blobfolio/wp/bm/admin.php:59
 msgid ""
 "Debug File Validation"
 msgstr ""
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: index.php:83
+#: index.php:84
 #, php-format
 msgid ""
 "%s requires PHP 5.4 or "
@@ -249,13 +249,13 @@ msgid ""
 "will be renamed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:363
+#: lib/blobfolio/wp/bm/debug.php:364
 msgid ""
 "The following error(s) "
 "were found:"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:366
+#: lib/blobfolio/wp/bm/debug.php:367
 msgid ""
 "You *should* be able to "
 "upload this file. If "
