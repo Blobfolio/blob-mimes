@@ -3,7 +3,7 @@
  * Lord of the Files: Enhanced Upload Security
  *
  * @package blob-mimes
- * @version 0.6.3
+ * @version 0.6.4
  *
  * @see {https://core.trac.wordpress.org/ticket/39963}
  * @see {https://core.trac.wordpress.org/ticket/40175}
@@ -14,7 +14,7 @@
  * Plugin Name: Lord of the Files: Enhanced Upload Security
  * Plugin URI: https://wordpress.org/plugins/blob-mimes/
  * Description: This plugin expands file-related security during the upload process.
- * Version: 0.6.3
+ * Version: 0.6.4
  * Text Domain: blob-mimes
  * Domain Path: /languages/
  * Author: Blobfolio, LLC
@@ -34,6 +34,7 @@ if (!defined('ABSPATH')) {
 
 // Constants.
 define('BLOBMIMES_BASE_PATH', dirname(__FILE__) . '/');
+define('BLOBMIMES_INDEX', __FILE__);
 
 // Is this installed as a Must-Use plugin?
 $blobmimes_must_use = (
