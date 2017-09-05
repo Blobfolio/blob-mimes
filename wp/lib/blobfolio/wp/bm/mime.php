@@ -91,11 +91,16 @@ class mime {
 			$mime = 'application/vnd.ms-office';
 		}
 
+		// "Default" MIME might not need to trigger a failure.
 		if ('application/octet-stream' === $mime) {
 			// Filter.
 			if (false === apply_filters('blobmimes_check_application_octet_stream', false)) {
 				return apply_filters('blobmimes_check_mime_alias', true, $ext, $mime);
 			}
+		}
+		// An empty file doesn't really have a type.
+		elseif ('inode/x-empty' === $mime) {
+			return apply_filters('blobmimes_check_mime_alias', true, $ext, $mime);
 		}
 
 		// Test for the literal MIME, but also certain generic
@@ -168,7 +173,8 @@ class mime {
 		if (
 			false !== $checked['ext'] &&
 			false !== $checked['type'] &&
-			@file_exists($file)
+			@file_exists($file) &&
+			@filesize($file) > 0
 		) {
 			$real_mime = false;
 

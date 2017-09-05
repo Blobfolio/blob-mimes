@@ -16,6 +16,7 @@ use \blobfolio\common;
 class mimes {
 
 	const MIME_DEFAULT = 'application/octet-stream';
+	const MIME_EMPTY = 'inode/x-empty';
 
 
 
@@ -92,7 +93,11 @@ class mimes {
 		}
 
 		common\ref\sanitize::mime($mime);
-		if (!strlen($mime) || ($soft && (static::MIME_DEFAULT === $mime))) {
+		if (
+			!strlen($mime) ||
+			(static::MIME_EMPTY === $mime) ||
+			($soft && (static::MIME_DEFAULT === $mime))
+		) {
 			return true;
 		}
 
@@ -205,7 +210,8 @@ class mimes {
 				(false !== $path) &&
 				function_exists('finfo_file') &&
 				defined('FILEINFO_MIME_TYPE') &&
-				@is_file($path)
+				@is_file($path) &&
+				@filesize($path) > 0
 			) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
 				$magic_mime = common\sanitize::mime(finfo_file($finfo, $path));
