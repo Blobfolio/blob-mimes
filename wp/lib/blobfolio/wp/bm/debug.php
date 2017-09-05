@@ -226,7 +226,8 @@ class debug {
 			$this->errors[] = __('The file type is not allowed.', 'blob-mimes');
 		}
 
-		$this->tests['BLOB-MIMES'] = $test;
+		$version = admin::get_version();
+		$this->tests["BLOB-MIMES ($version)"] = $test;
 		return $test['pass'];
 	}
 

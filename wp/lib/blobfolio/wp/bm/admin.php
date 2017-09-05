@@ -12,6 +12,8 @@ namespace blobfolio\wp\bm;
 
 class admin {
 
+	protected static $version;
+
 	/**
 	 * Register Actions and Filters
 	 *
@@ -68,6 +70,25 @@ class admin {
 	 */
 	public static function page_debug() {
 		require_once(BLOBMIMES_BASE_PATH . 'admin/debug.php');
+	}
+
+	/**
+	 * Get Plugin Version
+	 *
+	 * @return string Version.
+	 */
+	public static function get_version() {
+		if (is_null(static::$version)) {
+			$plugin_data = get_plugin_data(BLOBMIMES_INDEX, false, false);
+			if (isset($plugin_data['Version'])) {
+				static::$version = $plugin_data['Version'];
+			}
+			else {
+				static::$version = '0.0';
+			}
+		}
+
+		return static::$version;
 	}
 
 	/**
