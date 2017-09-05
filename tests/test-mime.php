@@ -173,6 +173,32 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 				),
 				null,
 			),
+			// CSV.
+			array(
+				static::ASSETS . 'example.csv',
+				array(
+					'dirname'=>rtrim(static::ASSETS, '/'),
+					'basename'=>'example.csv',
+					'extension'=>'csv',
+					'filename'=>'example',
+					'path'=>static::ASSETS . 'example.csv',
+					'mime'=>'text/csv',
+				),
+				null,
+			),
+			// Empty CSV.
+			array(
+				static::ASSETS . 'empty.csv',
+				array(
+					'dirname'=>rtrim(static::ASSETS, '/'),
+					'basename'=>'empty.csv',
+					'extension'=>'csv',
+					'filename'=>'empty',
+					'path'=>static::ASSETS . 'empty.csv',
+					'mime'=>'text/csv',
+				),
+				null,
+			),
 			// Incorrect name.
 			array(
 				static::ASSETS . 'space.png',
