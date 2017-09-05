@@ -6567,6 +6567,7 @@ class aliases {
 			'text/x-vala'
 		),
 		'vb'=>array(
+			'application/x-virtual-boy-rom',
 			'text/x-vbasic',
 			'text/x-vbdotnet'
 		),

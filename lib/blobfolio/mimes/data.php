@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-09-01 10:32:06.
+ * Built: 2017-09-05 06:48:41.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -13663,6 +13663,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika'
+			)
+		),
+		'application/x-virtual-boy-rom'=>array(
+			'mime'=>'application/x-virtual-boy-rom',
+			'ext'=>array(
+				'vb'
+			),
+			'source'=>array(
+				'freedesktop.org'
 			)
 		),
 		'application/x-vmdk'=>array(
@@ -45244,16 +45253,18 @@ class data {
 		'vb'=>array(
 			'ext'=>'vb',
 			'mime'=>array(
+				'application/x-virtual-boy-rom',
 				'text/x-vbdotnet',
 				'text/x-vbasic'
 			),
 			'source'=>array(
+				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
 				'text/x-vbasic'
 			),
-			'primary'=>'text/x-vbdotnet'
+			'primary'=>'application/x-virtual-boy-rom'
 		),
 		'vbk'=>array(
 			'ext'=>'vbk',
