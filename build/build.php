@@ -553,6 +553,8 @@ foreach ($data as $k=>$v) {
 // Get templates to parse extensions.
 debug_stdout('   ++ Fetching templates...');
 $data = fetch_urls($urls);
+$iana_override = array();
+$iana_used = array();
 foreach ($data as $k=>$v) {
 	if (is_int($v)) {
 		continue;
@@ -630,12 +632,28 @@ foreach ($data as $k=>$v) {
 			}
 		}
 		if (count($exts)) {
+			\blobfolio\common\ref\sanitize::mime($mime);
 			foreach ($exts as $ext) {
-				save_mime_ext_pair($mime, $ext, 'IANA');
+				\blobfolio\common\ref\sanitize::file_extension($ext);
+				if ($ext && $mime) {
+					if (in_array($ext, $iana_used, true)) {
+						if (isset($iana_override[$ext])) {
+							unset($iana_override[$ext]);
+						}
+					}
+					else {
+						$iana_override[$ext] = $mime;
+						$iana_used[] = $ext;
+					}
+					save_mime_ext_pair($mime, $ext, 'IANA');
+				}
 			}
 		}
 	}
 }
+
+// Sort by key to make searching more efficient later.
+ksort($iana_override);
 
 
 
@@ -891,16 +909,30 @@ debug_stdout('');
 debug_stdout('Finishing Touches', true);
 debug_stdout('   ++ Cleaning data...');
 
+// Default MIMEs are increasingly difficult to maintain. Haha.
+$primary_override = array(
+	'mid'=>'audio/midi',
+	'pdf'=>'application/pdf',
+);
+
 // Calculate primary mime.
 foreach ($mimes_by_extension as $k=>$v) {
-	// Look for TYPE/EXT.
-	foreach ($v['mime'] as $m) {
-		if (
-			('application/' !== substr($m, 0, 12)) &&
-			preg_match('/^(' . implode('|', IANA_CATEGORIES) . ')\/' . preg_quote($k, '/') . '$/i', $m)
-		) {
-			$mimes_by_extension[$k]['primary'] = $m;
-			break;
+	if (isset($primary_override[$k])) {
+		$mimes_by_extension[$k]['primary'] = $primary_override[$k];
+	}
+	elseif (isset($iana_override[$k])) {
+		$mimes_by_extension[$k]['primary'] = $iana_override[$k];
+	}
+	else {
+		// Look for TYPE/EXT.
+		foreach ($v['mime'] as $m) {
+			if (
+				('application/' !== substr($m, 0, 12)) &&
+				preg_match('/^(' . implode('|', IANA_CATEGORIES) . ')\/' . preg_quote($k, '/') . '$/i', $m)
+			) {
+				$mimes_by_extension[$k]['primary'] = $m;
+				break;
+			}
 		}
 	}
 
