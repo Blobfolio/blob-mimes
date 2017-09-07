@@ -286,6 +286,7 @@ class debug {
 
 		static::$wordpress = array(
 			'version'=>get_bloginfo('version'),
+			'locale'=>get_locale(),
 			'plugins'=>array(),
 			'theme'=>'',
 		);
@@ -355,13 +356,32 @@ class debug {
 			'TESTS'=>$this->tests,
 			'ENVIRONMENT'=>array(
 				'WORDPRESS'=>static::$wordpress,
+				'WHITELIST'=>array(
+					'EXTENSIONS'=>array(),
+					'MIME TYPES'=>array(),
+				),
 				'PHP'=>static::$php,
 			),
 		);
 
+		// Populate the authorized file types.
+		foreach (static::$mimes as $k=>$v) {
+			$results['ENVIRONMENT']['WHITELIST']['MIME TYPES'][] = strtolower(sanitize_mime_type($v));
+			$exts = explode('|', $k);
+			foreach ($exts as $v2) {
+				$v2 = trim(strtolower($v2));
+				$v2 = ltrim($v2, '.');
+				$results['ENVIRONMENT']['WHITELIST']['EXTENSIONS'][] = $v2;
+			}
+		}
+		foreach ($results['ENVIRONMENT']['WHITELIST'] as $k=>$v) {
+			$results['ENVIRONMENT']['WHITELIST'][$k] = array_unique($results['ENVIRONMENT']['WHITELIST'][$k]);
+			sort($results['ENVIRONMENT']['WHITELIST'][$k]);
+		}
+
 		$this->errors = array_values(array_unique($this->errors));
 		if (count($this->errors)) {
-			$results['RESULT'] = __('The following error(s) were found:', 'blob-mimes') . "\n— " . implode("\n— ", $this->errors);
+			$results['RESULT'] = __('The following error(s) were found:', 'blob-mimes') . "\n * " . implode("\n * ", $this->errors);
 		}
 		else {
 			$results['RESULT'] = __('You *should* be able to upload this file. If not, a plugin or theme might be interfering with the process.', 'blob-mimes');
@@ -400,7 +420,6 @@ class debug {
 
 				// Subsection header.
 				$out[] = '';
-				$out[] = '';
 				$out[] = $this->make_results_header($k2, false);
 
 				foreach ($v2 as $k3=>$v3) {
@@ -424,7 +443,10 @@ class debug {
 							// Keys don't matter, just group everything.
 							if ($indexed) {
 								// PHP extensions don't need separate lines.
-								if ('EXTENSIONS' === $key) {
+								if (
+									('EXTENSIONS' === $key) ||
+									('MIME TYPES' === $key)
+								) {
 									$value = implode('; ', $v3);
 								}
 								else {
@@ -472,11 +494,30 @@ class debug {
 			return '';
 		}
 
-		$header = __($header, 'blob-mimes');
+		if ($major) {
+			if ('TESTS' === $header) {
+				return '
+__   __ _    _     ___  ___    _  _____  ___  ___   _  _
+\ \ / //_\  | |   |_ _||   \  /_\|_   _||_ _|/ _ \ | \| |
+ \ V // _ \ | |__  | | | |) |/ _ \ | |   | || (_) || .` |
+  \_//_/ \_\|____||___||___//_/ \_\|_|  |___|\___/ |_|\_|';
+			}
+			elseif ('ENVIRONMENT' === $header) {
+				return '
+ ___ __   __ ___  _____  ___  __  __
+/ __|\ \ / // __||_   _|| __||  \/  |
+\__ \ \ V / \__ \  | |  | _| | |\/| |
+|___/  |_|  |___/  |_|  |___||_|  |_|';
+			}
+		}
+		else {
+			$header = "  $header  ";
+			$length = strlen($header);
+			$border = str_repeat('-', $length);
+			return "+{$border}+\n|{$header}|\n+{$border}+";
+		}
 
-		$border = $major ? '=' : '- ';
-
-		return str_repeat($border, static::LINE_LENGTH / strlen($border)) . "\n" . str_pad($header, static::LINE_LENGTH, ' ', STR_PAD_BOTH) . "\n" . str_repeat($border, static::LINE_LENGTH / strlen($border));
+		return '';
 	}
 
 	/**
