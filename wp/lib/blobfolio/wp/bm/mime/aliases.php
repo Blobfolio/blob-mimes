@@ -356,6 +356,7 @@ class aliases {
 			'text/cache-manifest'
 		),
 		'appimage'=>array(
+			'application/vnd.appimage',
 			'application/x-executable',
 			'application/x-iso9660-appimage'
 		),

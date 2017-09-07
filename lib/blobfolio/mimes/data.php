@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-09-06 09:53:04.
+ * Built: 2017-09-07 08:32:34.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3185,6 +3185,15 @@ class data {
 			),
 			'source'=>array(
 				'IANA'
+			)
+		),
+		'application/vnd.appimage'=>array(
+			'mime'=>'application/vnd.appimage',
+			'ext'=>array(
+				'appimage'
+			),
+			'source'=>array(
+				'freedesktop.org'
 			)
 		),
 		'application/vnd.apple.installer+xml'=>array(
@@ -22744,7 +22753,8 @@ class data {
 			'ext'=>'appimage',
 			'mime'=>array(
 				'application/x-iso9660-appimage',
-				'application/x-executable'
+				'application/x-executable',
+				'application/vnd.appimage'
 			),
 			'source'=>array(
 				'freedesktop.org'
