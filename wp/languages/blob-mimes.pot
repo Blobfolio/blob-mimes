@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-09-05 06:46-0700\n"
+"2017-09-07 08:25-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:29
-#: lib/blobfolio/wp/bm/debug.php:179
+#: lib/blobfolio/wp/bm/debug.php:190
 msgid ""
 "The `fileinfo.so` PHP "
 "extension is not "
@@ -92,28 +92,19 @@ msgid ""
 "Please try again."
 msgstr ""
 
-#: admin/debug.php:107
-#: lib/blobfolio/wp/bm/admin.php:58
-#: lib/blobfolio/wp/bm/admin.php:59
+#: admin/debug.php:141
+#: lib/blobfolio/wp/bm/admin.php:65
+#: lib/blobfolio/wp/bm/admin.php:66
+#: lib/blobfolio/wp/bm/admin.php:83
 msgid ""
 "Debug File Validation"
 msgstr ""
 
-#: admin/debug.php:109
-msgid ""
-"If a file has been "
-"rejected from the Media "
-"Library for \"security "
-"reasons\", use the form "
-"below to find out more "
-"information."
-msgstr ""
-
-#: admin/debug.php:121
+#: admin/debug.php:153
 msgid "Analysis"
 msgstr ""
 
-#: admin/debug.php:126
+#: admin/debug.php:158
 #, php-format
 msgid ""
 "If this file should have "
@@ -126,15 +117,20 @@ msgid ""
 "for help. Thanks!"
 msgstr ""
 
-#: admin/debug.php:140
-msgid "Upload Again"
+#: admin/debug.php:166
+#: admin/debug.php:268
+msgid "Copy"
 msgstr ""
 
-#: admin/debug.php:150
+#: admin/debug.php:174
+msgid "Test Upload"
+msgstr ""
+
+#: admin/debug.php:184
 msgid "File"
 msgstr ""
 
-#: admin/debug.php:154
+#: admin/debug.php:188
 msgid ""
 "Please re-upload the "
 "problematic file. It "
@@ -145,8 +141,26 @@ msgid ""
 "why it failed."
 msgstr ""
 
-#: admin/debug.php:159
+#: admin/debug.php:193
 msgid "Upload"
+msgstr ""
+
+#: admin/debug.php:215
+#: lib/blobfolio/wp/bm/debug.php:114
+#: lib/blobfolio/wp/bm/debug.php:181
+#: lib/blobfolio/wp/bm/debug.php:236
+msgid "[error]"
+msgstr ""
+
+#: admin/debug.php:218
+#: lib/blobfolio/wp/bm/debug.php:118
+#: lib/blobfolio/wp/bm/debug.php:170
+#: lib/blobfolio/wp/bm/debug.php:232
+msgid "[pass]"
+msgstr ""
+
+#: admin/debug.php:269
+msgid "Copied!"
 msgstr ""
 
 #: index.php:84
@@ -158,62 +172,74 @@ msgid ""
 "deactivated for you."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:45
-#: lib/blobfolio/wp/bm/debug.php:49
-#: lib/blobfolio/wp/bm/debug.php:52
+#: lib/blobfolio/wp/bm/admin.php:154
+#: lib/blobfolio/wp/bm/admin.php:157
+msgid "update"
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:163
+#, php-format
+msgid ""
+"Please %s %s to the "
+"latest release (%s) "
+"before debugging upload-"
+"related issues."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:173
+msgid ""
+"If a file has been "
+"rejected from the Media "
+"Library for \"security "
+"reasons\", use the form "
+"below to find out more "
+"information."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/debug.php:56
+#: lib/blobfolio/wp/bm/debug.php:60
+#: lib/blobfolio/wp/bm/debug.php:63
 msgid ""
 "The file could not be "
 "read."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:103
-#: lib/blobfolio/wp/bm/debug.php:170
-#: lib/blobfolio/wp/bm/debug.php:225
-msgid "[error]"
-msgstr ""
-
-#: lib/blobfolio/wp/bm/debug.php:103
-#: lib/blobfolio/wp/bm/debug.php:104
+#: lib/blobfolio/wp/bm/debug.php:114
+#: lib/blobfolio/wp/bm/debug.php:115
 msgid ""
 "WordPress will not "
 "process this file based "
 "on its name."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:107
-#: lib/blobfolio/wp/bm/debug.php:159
-#: lib/blobfolio/wp/bm/debug.php:221
-msgid "[pass]"
-msgstr ""
-
-#: lib/blobfolio/wp/bm/debug.php:107
+#: lib/blobfolio/wp/bm/debug.php:118
 msgid ""
 "The file extension is "
 "allowed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:143
-#: lib/blobfolio/wp/bm/debug.php:163
-#: lib/blobfolio/wp/bm/debug.php:167
-#: lib/blobfolio/wp/bm/debug.php:218
+#: lib/blobfolio/wp/bm/debug.php:154
+#: lib/blobfolio/wp/bm/debug.php:174
+#: lib/blobfolio/wp/bm/debug.php:178
+#: lib/blobfolio/wp/bm/debug.php:229
 msgid "[warning]"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:143
+#: lib/blobfolio/wp/bm/debug.php:154
 msgid ""
 "The type could not be "
 "determined."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:159
-#: lib/blobfolio/wp/bm/debug.php:221
+#: lib/blobfolio/wp/bm/debug.php:170
+#: lib/blobfolio/wp/bm/debug.php:232
 msgid ""
 "The file type and "
 "extension are both "
 "allowed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:163
+#: lib/blobfolio/wp/bm/debug.php:174
 msgid ""
 "The file type is not "
 "explicitly whitelisted, "
@@ -221,7 +247,7 @@ msgid ""
 "whitelisted type."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:167
+#: lib/blobfolio/wp/bm/debug.php:178
 msgid ""
 "The file extension does "
 "not match the type, "
@@ -229,33 +255,33 @@ msgid ""
 "allowed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:170
-#: lib/blobfolio/wp/bm/debug.php:171
-#: lib/blobfolio/wp/bm/debug.php:225
-#: lib/blobfolio/wp/bm/debug.php:226
+#: lib/blobfolio/wp/bm/debug.php:181
+#: lib/blobfolio/wp/bm/debug.php:182
+#: lib/blobfolio/wp/bm/debug.php:236
+#: lib/blobfolio/wp/bm/debug.php:237
 msgid ""
 "The file type is not "
 "allowed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:179
+#: lib/blobfolio/wp/bm/debug.php:190
 msgid "[skipped]"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:218
+#: lib/blobfolio/wp/bm/debug.php:229
 msgid ""
 "The file extension does "
 "not match the type; it "
 "will be renamed."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:364
+#: lib/blobfolio/wp/bm/debug.php:395
 msgid ""
 "The following error(s) "
 "were found:"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/debug.php:367
+#: lib/blobfolio/wp/bm/debug.php:398
 msgid ""
 "You *should* be able to "
 "upload this file. If "

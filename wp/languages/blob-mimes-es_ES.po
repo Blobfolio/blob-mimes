@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blob-mimes\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-09-05 06:46-0700\n"
+"POT-Creation-Date: 2017-09-07 08:25-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Josh Stoik <josh@blobfolio.com>\n"
 "Language-Team: Blobfolio, LLC <hello@blobfolio.com>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "You do not have sufficient permissions to access this page."
 msgstr "No tiene suficientes permisos para acceder a esta página."
 
-#: admin/debug.php:29 lib/blobfolio/wp/bm/debug.php:179
+#: admin/debug.php:29 lib/blobfolio/wp/bm/debug.php:190
 msgid ""
 "The `fileinfo.so` PHP extension is not installed. Detailed file information "
 "is not available."
@@ -49,24 +49,16 @@ msgstr "No se pudo procesar la carga del archivo."
 msgid "The form had expired. Please try again."
 msgstr "El formulario había caducado. Vuelve a intentarlo."
 
-#: admin/debug.php:107 lib/blobfolio/wp/bm/admin.php:58
-#: lib/blobfolio/wp/bm/admin.php:59
+#: admin/debug.php:141 lib/blobfolio/wp/bm/admin.php:65
+#: lib/blobfolio/wp/bm/admin.php:66 lib/blobfolio/wp/bm/admin.php:83
 msgid "Debug File Validation"
 msgstr "Validación de cargas de archivo"
 
-#: admin/debug.php:109
-msgid ""
-"If a file has been rejected from the Media Library for \"security reasons\", "
-"use the form below to find out more information."
-msgstr ""
-"Si se ha rechazado un archivo de la Biblioteca multimedia por \"razones de "
-"seguridad\", utilice este formulario para obtener más información."
-
-#: admin/debug.php:121
+#: admin/debug.php:153
 msgid "Analysis"
 msgstr "Análisis"
 
-#: admin/debug.php:126
+#: admin/debug.php:158
 #, php-format
 msgid ""
 "If this file should have been accepted and wasn't, please open an issue with "
@@ -76,15 +68,19 @@ msgstr ""
 "Si este archivo debe haber sido aceptado y no lo fue, póngase en contacto "
 "con nosotros a través de %s o %s para obtener ayuda. ¡Gracias!"
 
-#: admin/debug.php:140
-msgid "Upload Again"
-msgstr "Subir nuevamente"
+#: admin/debug.php:166 admin/debug.php:268
+msgid "Copy"
+msgstr "Copiar"
 
-#: admin/debug.php:150
+#: admin/debug.php:174
+msgid "Test Upload"
+msgstr "Subir de prueba"
+
+#: admin/debug.php:184
 msgid "File"
 msgstr "Archivo de carga"
 
-#: admin/debug.php:154
+#: admin/debug.php:188
 msgid ""
 "Please re-upload the problematic file. It will not be saved to the server, "
 "but will be analyzed to provide you with information about why it failed."
@@ -92,9 +88,23 @@ msgstr ""
 "Vuelva a cargar el archivo problemático. No se guardará en el servidor, pero "
 "mostrará más información sobre el error."
 
-#: admin/debug.php:159
+#: admin/debug.php:193
 msgid "Upload"
 msgstr "Subir"
+
+#: admin/debug.php:215 lib/blobfolio/wp/bm/debug.php:114
+#: lib/blobfolio/wp/bm/debug.php:181 lib/blobfolio/wp/bm/debug.php:236
+msgid "[error]"
+msgstr "[error]"
+
+#: admin/debug.php:218 lib/blobfolio/wp/bm/debug.php:118
+#: lib/blobfolio/wp/bm/debug.php:170 lib/blobfolio/wp/bm/debug.php:232
+msgid "[pass]"
+msgstr "[éxito]"
+
+#: admin/debug.php:269
+msgid "Copied!"
+msgstr "¡Copiado!"
 
 #: index.php:84
 #, php-format
@@ -104,43 +114,54 @@ msgid ""
 msgstr ""
 "%s requiere PHP 5.4 o superior. Se ha desactivado automáticamente para usted."
 
-#: lib/blobfolio/wp/bm/debug.php:45 lib/blobfolio/wp/bm/debug.php:49
-#: lib/blobfolio/wp/bm/debug.php:52
+#: lib/blobfolio/wp/bm/admin.php:154 lib/blobfolio/wp/bm/admin.php:157
+msgid "update"
+msgstr "Actualice"
+
+#: lib/blobfolio/wp/bm/admin.php:163
+#, php-format
+msgid ""
+"Please %s %s to the latest release (%s) before debugging upload-related "
+"issues."
+msgstr ""
+"%s %s a la última versión (%s) antes de depurar problemas relacionados con "
+"la carga."
+
+#: lib/blobfolio/wp/bm/admin.php:173
+msgid ""
+"If a file has been rejected from the Media Library for \"security reasons\", "
+"use the form below to find out more information."
+msgstr ""
+"Si se ha rechazado un archivo de la Biblioteca multimedia por \"razones de "
+"seguridad\", utilice este formulario para obtener más información."
+
+#: lib/blobfolio/wp/bm/debug.php:56 lib/blobfolio/wp/bm/debug.php:60
+#: lib/blobfolio/wp/bm/debug.php:63
 msgid "The file could not be read."
 msgstr "No se pudo leer el archivo."
 
-#: lib/blobfolio/wp/bm/debug.php:103 lib/blobfolio/wp/bm/debug.php:170
-#: lib/blobfolio/wp/bm/debug.php:225
-msgid "[error]"
-msgstr "[error]"
-
-#: lib/blobfolio/wp/bm/debug.php:103 lib/blobfolio/wp/bm/debug.php:104
+#: lib/blobfolio/wp/bm/debug.php:114 lib/blobfolio/wp/bm/debug.php:115
 msgid "WordPress will not process this file based on its name."
 msgstr "WordPress no procesará este archivo debido a su nombre."
 
-#: lib/blobfolio/wp/bm/debug.php:107 lib/blobfolio/wp/bm/debug.php:159
-#: lib/blobfolio/wp/bm/debug.php:221
-msgid "[pass]"
-msgstr "[éxito]"
-
-#: lib/blobfolio/wp/bm/debug.php:107
+#: lib/blobfolio/wp/bm/debug.php:118
 msgid "The file extension is allowed."
 msgstr "Se permite la extensión de archivo."
 
-#: lib/blobfolio/wp/bm/debug.php:143 lib/blobfolio/wp/bm/debug.php:163
-#: lib/blobfolio/wp/bm/debug.php:167 lib/blobfolio/wp/bm/debug.php:218
+#: lib/blobfolio/wp/bm/debug.php:154 lib/blobfolio/wp/bm/debug.php:174
+#: lib/blobfolio/wp/bm/debug.php:178 lib/blobfolio/wp/bm/debug.php:229
 msgid "[warning]"
 msgstr "[advertencia]"
 
-#: lib/blobfolio/wp/bm/debug.php:143
+#: lib/blobfolio/wp/bm/debug.php:154
 msgid "The type could not be determined."
 msgstr "No se pudo determinar el tipo de archivo."
 
-#: lib/blobfolio/wp/bm/debug.php:159 lib/blobfolio/wp/bm/debug.php:221
+#: lib/blobfolio/wp/bm/debug.php:170 lib/blobfolio/wp/bm/debug.php:232
 msgid "The file type and extension are both allowed."
 msgstr "El tipo de archivo y la extensión están permitidos."
 
-#: lib/blobfolio/wp/bm/debug.php:163
+#: lib/blobfolio/wp/bm/debug.php:174
 msgid ""
 "The file type is not explicitly whitelisted, but is an alias of a "
 "whitelisted type."
@@ -148,34 +169,37 @@ msgstr ""
 "El tipo de archivo no está permitido explícitamente, pero es un alias de un "
 "tipo permitido."
 
-#: lib/blobfolio/wp/bm/debug.php:167
+#: lib/blobfolio/wp/bm/debug.php:178
 msgid ""
 "The file extension does not match the type, however the type is allowed."
 msgstr ""
 "La extensión de archivo es incorrecta para este tipo, sin embargo, el tipo "
 "está permitido."
 
-#: lib/blobfolio/wp/bm/debug.php:170 lib/blobfolio/wp/bm/debug.php:171
-#: lib/blobfolio/wp/bm/debug.php:225 lib/blobfolio/wp/bm/debug.php:226
+#: lib/blobfolio/wp/bm/debug.php:181 lib/blobfolio/wp/bm/debug.php:182
+#: lib/blobfolio/wp/bm/debug.php:236 lib/blobfolio/wp/bm/debug.php:237
 msgid "The file type is not allowed."
 msgstr "El tipo de archivo no está permitido."
 
-#: lib/blobfolio/wp/bm/debug.php:179
+#: lib/blobfolio/wp/bm/debug.php:190
 msgid "[skipped]"
 msgstr "[omitido]"
 
-#: lib/blobfolio/wp/bm/debug.php:218
+#: lib/blobfolio/wp/bm/debug.php:229
 msgid "The file extension does not match the type; it will be renamed."
 msgstr "La extensión de archivo es incorrecta para este tipo; será renombrado."
 
-#: lib/blobfolio/wp/bm/debug.php:364
+#: lib/blobfolio/wp/bm/debug.php:395
 msgid "The following error(s) were found:"
 msgstr "Se encontraron los siguientes errores:"
 
-#: lib/blobfolio/wp/bm/debug.php:367
+#: lib/blobfolio/wp/bm/debug.php:398
 msgid ""
 "You *should* be able to upload this file. If not, a plugin or theme might be "
 "interfering with the process."
 msgstr ""
 "Usted *debería* poder cargar este archivo. Si no, un plugin o tema podría "
 "ser el problema."
+
+#~ msgid "Upload Again"
+#~ msgstr "Subir nuevamente"
