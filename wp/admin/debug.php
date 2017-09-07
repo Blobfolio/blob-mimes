@@ -74,6 +74,15 @@ elseif (isset($_POST['n'])) {
 
 // --------------------------------------------------------------------- End uploading.
 ?><style type="text/css">
+	.hide-safe {
+		position: fixed;
+		top: -500px;
+		left: -500px;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+	}
+
 	.blob-mimes--container { max-width: 400px!important; }
 
 	.blob-mimes--label,
@@ -90,15 +99,39 @@ elseif (isset($_POST['n'])) {
 		margin-bottom: 5px;
 	}
 
-	.blob-mimes--results {
+	#blob-mimes--results {
 		width: 100%;
 		height: 400px;
 		font-size: 13px;
-		font-family: 'Courier New', monospace;
-		background-color: #32373C!important;
-		border-color: #32373C!important;
-		color: #fff!important;
+		font-family: Consolas, Monaco, monospace;
+		background-color: #32373C;
+		border-color: #32373C;
+		color: #fff;
+		white-space: pre;
+		overflow-y: auto;
+		padding: 20px;
+		box-sizing: border-box;
+		transition: background .3s;
 	}
+
+	#blob-mimes--copy {
+		display: block;
+		margin-top: 1em;
+	}
+
+	@media (min-width: 1080px) {
+		#blob-mimes--copy {
+			margin-top: 0;
+			position: absolute;
+			bottom: 24px;
+			right: 37px;
+		}
+	}
+
+	.blob-mimes_blue { color: #0073AA; }
+	.blob-mimes_orange { color: #D54E21; }
+	.blob-mimes_red { color: #D52121; }
+	.blob-mimes_green { color: #00AA1D; }
 </style>
 <div class="wrap">
 
@@ -129,7 +162,9 @@ elseif (isset($_POST['n'])) {
 								);
 								?></p>
 
-							<textarea class="blob-mimes--results" onclick="this.select()"><?php echo esc_textarea(trim($results)); ?></textarea>
+							<div class="blob-mimes--results" id="blob-mimes--results" contenteditable><?php echo esc_html(trim($results)); ?></div>
+
+							<button type="button" id="blob-mimes--copy" class="button button-large button-primary"><?php echo esc_html__('Copy', 'blob-mimes'); ?></button>
 
 						</div><!--.inside-->
 					</div><!--.postbox-->
@@ -170,3 +205,87 @@ elseif (isset($_POST['n'])) {
 	</div><!--#poststuff-->
 
 </div><!--.wrap-->
+
+<?php if (!is_null($results)) { ?>
+<script>
+(function($){
+	var results = $('#blob-mimes--results'),
+		content = results.html(),
+		colorKeys = {
+			red: [
+				'<?php echo esc_js(__('[error]', 'blob-mimes')); ?>'
+			],
+			green: [
+				'<?php echo esc_js(__('[pass]', 'blob-mimes')); ?>'
+			],
+			blue: [
+				'<?php echo str_replace(
+					array('\\', "\n"),
+					array('\\\\', "','"),
+					trim(debug::ASCII_VALIDATION)
+				); ?>',
+				'<?php echo str_replace(
+					array('\\', "\n"),
+					array('\\\\', "','"),
+					trim(debug::ASCII_SYSTEM)
+				); ?>',
+			],
+		},
+		safeReplace = function(haystack, needle, replacement) {
+			return haystack.replace(
+				new RegExp(needle.replace(/[.^$*+?()[{\|]/g, '\\$&'), 'g'),
+				replacement
+			);
+		},
+		i;
+
+	// Colorize!
+	for (var color of ['red','green']) {
+		for (i=0; i<colorKeys[color].length; i++) {
+			content = safeReplace(content, colorKeys[color][i], '<strong class="blob-mimes_' + color + '">' + colorKeys[color][i] + '</strong>');
+		}
+	}
+
+	// Blue is a little special.
+	for (i=0; i<colorKeys.blue.length; i++) {
+		content = content.replace(colorKeys.blue[i], '<strong class="blob-mimes_blue">' + colorKeys.blue[i] + '</strong>');
+	}
+
+	// And lastly our inner-headers.
+	content = content.replace(
+		/(\+\-+\+)/g,
+		'<strong>$1</strong>'
+	);
+	content = content.replace(
+		/(\|\s\s[A-Z0-9\s\.\(\)\-]+\s\s\|)/g,
+		'<strong>$1</strong>'
+	);
+
+	results.html(content);
+
+	$('#blob-mimes--copy').click(function(e){
+		e.preventDefault;
+
+		var textNormal = '<?php echo esc_js(__('Copy', 'blob-mimes')); ?>',
+			textActive = '<?php echo esc_js(__('Copied!', 'blob-mimes')); ?>',
+			foo = document.createElement('textarea');
+
+		// Copy to clipboard.
+		foo.value = results.text();
+		foo.classList.add('hide-safe');
+		document.body.appendChild(foo);
+		foo.select();
+		document.execCommand('copy');
+		document.body.removeChild(foo);
+
+		// Add some flash so people know it worked.
+		results.css('background', '#000');
+		$(this).text(textActive);
+		setTimeout(function(){
+			results.css('background', '#32373C');
+			$('#blob-mimes--copy').text(textNormal);
+		}, 500);
+	});
+})(jQuery);
+</script>
+<?php } ?>
