@@ -113,6 +113,7 @@ elseif (isset($_POST['n'])) {
 		box-sizing: border-box;
 		transition: background .3s;
 	}
+	#blob-mimes--results.is-active { background-color: #000; }
 
 	#blob-mimes--copy {
 		display: block;
@@ -266,24 +267,48 @@ elseif (isset($_POST['n'])) {
 	$('#blob-mimes--copy').click(function(e){
 		e.preventDefault;
 
-		var textNormal = '<?php echo esc_js(__('Copy', 'blob-mimes')); ?>',
-			textActive = '<?php echo esc_js(__('Copied!', 'blob-mimes')); ?>',
-			foo = document.createElement('textarea');
+		var btnNormal = '<?php echo esc_js(__('Copy', 'blob-mimes')); ?>',
+			btnActive = '<?php echo esc_js(__('Copied!', 'blob-mimes')); ?>',
+			clippy = document.createElement('textarea'),
+			content = results.text();
+
+		// Replace our ASCII delights with plain text. Unfortunately
+		// they aren't super-portable.
+		content = content.replace(
+			'<?php echo str_replace(
+				array('\\', "\n"),
+				array('\\\\', '\n'),
+				trim(debug::ASCII_VALIDATION)
+			); ?>',
+			'##' + "\n" + '# VALIDATION' + "\n" + '##'
+		);
+		content = content.replace(
+			' <?php echo str_replace(
+				array('\\', "\n"),
+				array('\\\\', '\n'),
+				trim(debug::ASCII_SYSTEM)
+			); ?>',
+			'##' + "\n" + '# SYSTEM' + "\n" + '##'
+		);
+
+		// Wrap this in backticks to help Github formatting, in case
+		// that's where they go.
+		content = '```' + "\n" + content + "\n" + '```';
 
 		// Copy to clipboard.
-		foo.value = results.text();
-		foo.classList.add('hide-safe');
-		document.body.appendChild(foo);
-		foo.select();
+		clippy.value = content;
+		clippy.classList.add('hide-safe');
+		document.body.appendChild(clippy);
+		clippy.select();
 		document.execCommand('copy');
-		document.body.removeChild(foo);
+		document.body.removeChild(clippy);
 
 		// Add some flash so people know it worked.
-		results.css('background', '#000');
-		$(this).text(textActive);
+		results.addClass('is-active');
+		$('#blob-mimes--copy').text(btnActive);
 		setTimeout(function(){
-			results.css('background', '#32373C');
-			$('#blob-mimes--copy').text(textNormal);
+			results.removeClass('is-active');
+			$('#blob-mimes--copy').text(btnNormal);
 		}, 500);
 	});
 })(jQuery);
