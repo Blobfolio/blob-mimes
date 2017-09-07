@@ -140,8 +140,6 @@ elseif (isset($_POST['n'])) {
 
 	<h2><?php echo esc_html__('Debug File Validation', 'blob-mimes'); ?></h2>
 
-	<p><?php echo esc_html__('If a file has been rejected from the Media Library for "security reasons", use the form below to find out more information.', 'blob-mimes'); ?></p>
-
 	<p>&nbsp;</p>
 
 	<div id="poststuff">
@@ -173,7 +171,7 @@ elseif (isset($_POST['n'])) {
 
 				<!-- upload form -->
 				<div class="postbox blob-mimes--container">
-					<h3 class="hndle"><?php echo esc_html__('Upload Again', 'blob-mimes'); ?></h3>
+					<h3 class="hndle"><?php echo esc_html__('Test Upload', 'blob-mimes'); ?></h3>
 					<div class="inside">
 
 						<form method="post" action="<?php echo esc_url(admin_url('tools.php?page=blob-mimes-admin')); ?>" enctype="multipart/form-data" name="validationForm">

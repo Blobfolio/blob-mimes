@@ -13,6 +13,8 @@ namespace blobfolio\wp\bm;
 class admin {
 
 	protected static $version;
+	protected static $remote_version;
+	protected static $remote_home;
 
 	/**
 	 * Register Actions and Filters
@@ -20,17 +22,22 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function init() {
+		$class = get_called_class();
+
 		// Admin menu entry for upload debugging.
-		add_action('admin_menu', array(get_called_class(), 'menu_debug'));
+		add_action('admin_menu', array($class, 'menu_debug'));
 
 		// Override upload file validation (general).
-		add_filter('wp_check_filetype_and_ext', array(get_called_class(), 'check_filetype_and_ext'), 10, 4);
+		add_filter('wp_check_filetype_and_ext', array($class, 'check_filetype_and_ext'), 10, 4);
 
 		// Override upload file validation (SVG).
-		add_filter('wp_check_filetype_and_ext', array(get_called_class(), 'check_filetype_and_ext_svg'), 15, 4);
+		add_filter('wp_check_filetype_and_ext', array($class, 'check_filetype_and_ext_svg'), 15, 4);
 
 		// Set up translations.
-		add_action('plugins_loaded', array(get_called_class(), 'localize'));
+		add_action('plugins_loaded', array($class, 'localize'));
+
+		// Update check on debug page.
+		add_action('admin_notices', array($class, 'debug_notice'));
 	}
 
 	/**
@@ -69,7 +76,12 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function page_debug() {
-		require_once(BLOBMIMES_BASE_PATH . 'admin/debug.php');
+		if (!static::has_update()) {
+			require_once(BLOBMIMES_BASE_PATH . 'admin/debug.php');
+		}
+		else {
+			echo '<div class="wrap"><span></span><h2>' . esc_html__('Debug File Validation', 'blob-mimes') . '</h2></div>';
+		}
 	}
 
 	/**
@@ -92,10 +104,99 @@ class admin {
 	}
 
 	/**
+	 * Get Remote Version
+	 *
+	 * @return string Version.
+	 */
+	public static function get_remote_version() {
+		if (is_null(static::$remote_version)) {
+			$response = plugins_api(
+				'plugin_information',
+				array('slug'=>'blob-mimes')
+			);
+			if (
+				!is_wp_error($response) &&
+				is_a($response, 'stdClass') &&
+				isset($response->version)
+			) {
+				static::$remote_version = $response->version;
+				static::$remote_home = $response->homepage;
+			}
+			else {
+				static::$remote_version = '0.0';
+			}
+		}
+
+		return static::$remote_version;
+	}
+
+	/**
+	 * Debug Notice
+	 *
+	 * This adds a notice to the file debug page, either informing users
+	 * that they need to update the plugin, or explaining the page's
+	 * purpose.
+	 *
+	 * @return void Nothing.
+	 */
+	public static function debug_notice() {
+		// We only want to generate a notice if someone is viewing the
+		// file debug page, and then only if they didn't just upload a
+		// file.
+		$screen = get_current_screen();
+		if (
+			('POST' !== getenv('REQUEST_METHOD')) &&
+			('tools_page_blob-mimes-admin' === $screen->id)
+		) {
+			// Update notice takes priority.
+			if (static::has_update()) {
+				if (BLOBMIMES_MUST_USE) {
+					$update_link = '<a href="' . static::$remote_home . '" target="_blank" rel="noopener">' . esc_html__('update', 'blob-mimes') . '</a>';
+				}
+				else {
+					$update_link = '<a href="' . admin_url('update-core.php') . '">' . esc_html__('update', 'blob-mimes') . '</a>';
+				}
+
+				// Update warning.
+				$notice_type = 'warning';
+				$notice = sprintf(
+					esc_html__('Please %s %s to the latest release (%s) before debugging upload-related issues.', 'blob-mimes'),
+					$update_link,
+					'<em>Lord of the Files</em>',
+					'<code>' . static::get_remote_version() . '</code>'
+				);
+
+			}
+			// Otherwise explain the page's purpose.
+			else {
+				$notice_type = 'info';
+				$notice = esc_html__('If a file has been rejected from the Media Library for "security reasons", use the form below to find out more information.', 'blob-mimes');
+			}
+
+			echo '<div class="notice notice-' . $notice_type . '"><p>' . $notice . '</p></div>';
+		}
+	}
+
+	/**
+	 * Has Update?
+	 *
+	 * We need to query the API because WordPress won't check for
+	 * updates if this plugin is installed as Must-Use.
+	 *
+	 * @return bool True/false.
+	 */
+	public static function has_update() {
+		require_once(trailingslashit(ABSPATH) . 'wp-admin/includes/plugin.php');
+		require_once(trailingslashit(ABSPATH) . 'wp-admin/includes/plugin-install.php');
+		return (version_compare(static::get_version(), static::get_remote_version()) < 0);
+	}
+
+
+	/**
 	 * Override Upload File Validation
 	 *
-	 * This hooks into wp_check_filetype_and_ext() to improve
-	 * its determinations.
+	 * This hooks into wp_check_filetype_and_ext() to improve its
+	 * determinations.
 	 *
 	 * @see wp_check_filetype_and_ext()
 	 *
@@ -133,9 +234,9 @@ class admin {
 	/**
 	 * Sanitize SVG Uploads
 	 *
-	 * This is triggered after our general content-based
-	 * fixer, so if something is claiming to be an SVG
-	 * here, it should actually be one.
+	 * This is triggered after our general content-based fixer, so if
+	 * something is claiming to be an SVG here, it should actually be
+	 * one.
 	 *
 	 * @see wp_check_filetype_and_ext()
 	 *
