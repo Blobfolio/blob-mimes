@@ -191,7 +191,6 @@ class admin {
 		return (version_compare(static::get_version(), static::get_remote_version()) < 0);
 	}
 
-
 	/**
 	 * Override Upload File Validation
 	 *
