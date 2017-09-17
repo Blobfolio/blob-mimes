@@ -26,7 +26,7 @@
     "ext-json": "*",
     "ext-bcmath": "*",
     "ext-hash": "*",
-    "neitanod\/forceutf8": "dev-master",
+
     "blobfolio\/blob-common": "*"
   },
   "require-dev": {
