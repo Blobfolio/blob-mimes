@@ -77,7 +77,7 @@ class admin {
 	 */
 	public static function page_debug() {
 		if (!static::has_update()) {
-			require_once(BLOBMIMES_BASE_PATH . 'admin/debug.php');
+			require(BLOBMIMES_BASE_PATH . 'admin/debug.php');
 		}
 		else {
 			echo '<div class="wrap"><span></span><h2>' . esc_html__('Debug File Validation', 'blob-mimes') . '</h2></div>';

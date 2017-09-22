@@ -96,4 +96,4 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 
 
 // Everyone else gets the goods.
-require_once(BLOBMIMES_BASE_PATH . 'bootstrap.php');
+require(BLOBMIMES_BASE_PATH . 'bootstrap.php');
