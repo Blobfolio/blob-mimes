@@ -65,6 +65,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.6.6 =
+* [Misc] Update MIME database.
+
 = 0.6.5 =
 * [Improved] File validation debug output.
 
@@ -120,6 +123,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.6.6 =
+The MIME database has been updated.
 
 = 0.6.5 =
 This release improves the file validation debug output.
