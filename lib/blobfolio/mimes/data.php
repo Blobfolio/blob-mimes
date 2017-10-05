@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-09-07 08:32:34.
+ * Built: 2017-10-04 19:46:11.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -895,7 +895,6 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
-				'Apache',
 				'Nginx',
 				'freedesktop.org'
 			)
@@ -3306,6 +3305,15 @@ class data {
 			'mime'=>'application/vnd.autopackage',
 			'ext'=>array(
 				'package'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.avalon+json'=>array(
+			'mime'=>'application/vnd.avalon+json',
+			'ext'=>array(
+				'json'
 			),
 			'source'=>array(
 				'IANA'
@@ -6880,8 +6888,8 @@ class data {
 		'application/vnd.oasis.opendocument.formula-template'=>array(
 			'mime'=>'application/vnd.oasis.opendocument.formula-template',
 			'ext'=>array(
-				'otf',
-				'odft'
+				'odft',
+				'otf'
 			),
 			'source'=>array(
 				'IANA',
@@ -6898,6 +6906,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -6954,6 +6963,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -6987,6 +6997,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -7020,6 +7031,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -7357,7 +7369,6 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -7637,7 +7648,6 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -7780,7 +7790,6 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -10874,7 +10883,6 @@ class data {
 				'otf'
 			),
 			'source'=>array(
-				'Apache',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -10921,11 +10929,10 @@ class data {
 		'application/x-font-ttf'=>array(
 			'mime'=>'application/x-font-ttf',
 			'ext'=>array(
-				'ttc',
-				'ttf'
+				'ttf',
+				'ttc'
 			),
 			'source'=>array(
-				'Apache',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -16016,6 +16023,7 @@ class data {
 				'ttc'
 			),
 			'source'=>array(
+				'Apache',
 				'freedesktop.org'
 			)
 		),
@@ -16025,6 +16033,7 @@ class data {
 				'otf'
 			),
 			'source'=>array(
+				'Apache',
 				'freedesktop.org'
 			)
 		),
@@ -16035,6 +16044,7 @@ class data {
 				'otf'
 			),
 			'source'=>array(
+				'Apache',
 				'freedesktop.org'
 			)
 		),
@@ -16046,6 +16056,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'Apache',
 				'freedesktop.org'
 			)
 		),
@@ -16055,7 +16066,8 @@ class data {
 				'woff2'
 			),
 			'source'=>array(
-				'IANA'
+				'IANA',
+				'Apache'
 			)
 		),
 		'gzip/document'=>array(
@@ -26492,7 +26504,6 @@ class data {
 				'IANA',
 				'Blobfolio',
 				'Apache',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -31706,6 +31717,7 @@ class data {
 				'application/jf2feed+json',
 				'application/json',
 				'application/vnd.api+json',
+				'application/vnd.avalon+json',
 				'application/vnd.bekitzur-stech+json',
 				'application/vnd.capasystems-pg+json',
 				'application/vnd.collection.doc+json',
@@ -36102,6 +36114,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -36156,6 +36169,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -36175,6 +36189,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -36194,6 +36209,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -36684,9 +36700,9 @@ class data {
 			'ext'=>'otf',
 			'mime'=>array(
 				'application/vnd.oasis.opendocument.formula-template',
-				'application/x-font-otf',
-				'application/zip',
 				'font/otf',
+				'application/zip',
+				'application/x-font-otf',
 				'font/ttf'
 			),
 			'source'=>array(
@@ -36700,7 +36716,7 @@ class data {
 				'application/x-font-otf',
 				'font/ttf'
 			),
-			'primary'=>'application/vnd.oasis.opendocument.formula-template'
+			'primary'=>'font/otf'
 		),
 		'otg'=>array(
 			'ext'=>'otg',
@@ -38401,7 +38417,6 @@ class data {
 				'IANA',
 				'Blobfolio',
 				'Apache',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -44327,8 +44342,8 @@ class data {
 		'ttc'=>array(
 			'ext'=>'ttc',
 			'mime'=>array(
-				'application/x-font-ttf',
-				'font/collection'
+				'font/collection',
+				'application/x-font-ttf'
 			),
 			'source'=>array(
 				'Apache',
@@ -44336,13 +44351,13 @@ class data {
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/x-font-ttf'
+			'primary'=>'font/collection'
 		),
 		'ttf'=>array(
 			'ext'=>'ttf',
 			'mime'=>array(
-				'application/x-font-ttf',
-				'font/ttf'
+				'font/ttf',
+				'application/x-font-ttf'
 			),
 			'source'=>array(
 				'Apache',
@@ -46653,6 +46668,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'Apache',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
@@ -47936,7 +47952,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Blobfolio',
-				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),

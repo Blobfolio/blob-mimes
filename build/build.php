@@ -912,6 +912,7 @@ debug_stdout('   ++ Cleaning data...');
 // Default MIMEs are increasingly difficult to maintain. Haha.
 $primary_override = array(
 	'mid'=>'audio/midi',
+	'otf'=>'font/otf',
 	'pdf'=>'application/pdf',
 );
 

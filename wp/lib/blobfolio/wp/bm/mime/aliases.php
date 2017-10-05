@@ -2822,6 +2822,7 @@ class aliases {
 			'application/jf2feed+json',
 			'application/json',
 			'application/vnd.api+json',
+			'application/vnd.avalon+json',
 			'application/vnd.bekitzur-stech+json',
 			'application/vnd.capasystems-pg+json',
 			'application/vnd.collection+json',
