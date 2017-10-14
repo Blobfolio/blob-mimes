@@ -134,6 +134,56 @@ class mime {
 	}
 
 	/**
+	 * Check Allowed Aliases
+	 *
+	 * This will cycle through each allowed ext/MIME pair to see if an
+	 * alias matches anything.
+	 *
+	 * @param string $alias MIME alias.
+	 * @param array $mimes Allowed MIME types.
+	 * @return array|bool Array containing ext and type keys or false.
+	 */
+	public static function check_allowed_aliases($alias, $mimes=null) {
+		// Default MIMEs.
+		if (empty($mimes)) {
+			$mimes = get_allowed_mime_types();
+		}
+
+		$alias = strtolower(sanitize_mime_type($alias));
+
+		$ext = $type = false;
+
+		// Early bail opportunity.
+		if (!$alias || !count($mimes)) {
+			return false;
+		}
+
+		// Direct hit!
+		if (false !== $extensions = array_search($alias, $mimes, true)) {
+			$extensions = explode('|', $extensions);
+			$ext = $extensions[0];
+			$type = $alias;
+
+			return compact('ext', 'type');
+		}
+
+		// Try all extensions.
+		foreach ($mimes as $extensions=>$mime) {
+			$extensions = explode('|', $extensions);
+			foreach ($extensions as $extension) {
+				if (static::check_alias($extension, $alias)) {
+					$ext = $extension;
+					$type = $mime;
+
+					return compact('ext', 'type');
+				}
+			}
+		}
+
+		return false;
+	}
+
+	/**
 	 * Retrieve the "real" file type from the file.
 	 *
 	 * This extends `wp_check_filetype()` to additionally
@@ -223,12 +273,10 @@ class mime {
 			// Evaluate our real MIME.
 			if (false !== $real_mime) {
 				if (!static::check_alias($checked['ext'], $real_mime)) {
-					// If the extension is incorrect but the type is otherwise
-					// valid, update the extension.
-					if (false !== $extensions = array_search($real_mime, $mimes, true)) {
-						$extensions = explode('|', $extensions);
-						$checked['ext'] = $extensions[0];
-						$checked['type'] = $real_mime;
+					// Maybe this type belongs to another allowed extension.
+					if (false !== $result = static::check_allowed_aliases($real_mime, $mimes)) {
+						$checked['ext'] = $result['ext'];
+						$checked['type'] = $result['type'];
 					}
 					// Otherwise reject the results.
 					else {
