@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-10-04 19:46:11.
+ * Built: 2017-10-14 11:25:58.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -16814,6 +16814,15 @@ class data {
 				'Tika'
 			)
 		),
+		'image/vnd.zbrush.dcx'=>array(
+			'mime'=>'image/vnd.zbrush.dcx',
+			'ext'=>array(
+				'dcx'
+			),
+			'source'=>array(
+				'Tika'
+			)
+		),
 		'image/vnd.zbrush.pcx'=>array(
 			'mime'=>'image/vnd.zbrush.pcx',
 			'ext'=>array(
@@ -16821,7 +16830,8 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'image/webp'=>array(
@@ -16966,6 +16976,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'image/x-dcx'=>array(
+			'mime'=>'image/x-dcx',
+			'ext'=>array(
+				'dcx'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'image/x-dds'=>array(
@@ -17387,6 +17406,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'image/x-pc-paintbrush'=>array(
+			'mime'=>'image/x-pc-paintbrush',
+			'ext'=>array(
+				'pcx'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'image/x-pcx'=>array(
@@ -25833,6 +25861,20 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'text/vnd.curl.dcurl'
+		),
+		'dcx'=>array(
+			'ext'=>'dcx',
+			'mime'=>array(
+				'image/vnd.zbrush.dcx',
+				'image/x-dcx'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(
+				'image/x-dcx'
+			),
+			'primary'=>'image/vnd.zbrush.dcx'
 		),
 		'dd2'=>array(
 			'ext'=>'dd2',
@@ -37350,7 +37392,8 @@ class data {
 			'ext'=>'pcx',
 			'mime'=>array(
 				'image/vnd.zbrush.pcx',
-				'image/x-pcx'
+				'image/x-pcx',
+				'image/x-pc-paintbrush'
 			),
 			'source'=>array(
 				'IANA',
@@ -37359,7 +37402,8 @@ class data {
 				'Tika'
 			),
 			'alias'=>array(
-				'image/x-pcx'
+				'image/x-pcx',
+				'image/x-pc-paintbrush'
 			),
 			'primary'=>'image/vnd.zbrush.pcx'
 		),

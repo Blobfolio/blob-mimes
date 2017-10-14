@@ -1196,6 +1196,10 @@ class aliases {
 		'dcurl'=>array(
 			'text/vnd.curl.dcurl'
 		),
+		'dcx'=>array(
+			'image/vnd.zbrush.dcx',
+			'image/x-dcx'
+		),
 		'dd2'=>array(
 			'application/vnd.oma.dd2+xml'
 		),
@@ -4404,6 +4408,7 @@ class aliases {
 		),
 		'pcx'=>array(
 			'image/vnd.zbrush.pcx',
+			'image/x-pc-paintbrush',
 			'image/x-pcx'
 		),
 		'pdb'=>array(
