@@ -65,6 +65,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.6.7 =
+* [Improved] Aliases are now checked for all allowed types.
+
 = 0.6.6 =
 * [Misc] Update MIME database.
 
@@ -123,6 +126,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.6.7 =
+This release improves file renaming by searching across all allowed extensions for a given MIME alias.
 
 = 0.6.6 =
 The MIME database has been updated.
