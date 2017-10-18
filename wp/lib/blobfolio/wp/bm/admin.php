@@ -15,6 +15,8 @@ class admin {
 	protected static $version;
 	protected static $remote_version;
 	protected static $remote_home;
+	protected static $checked_plugins_contributors;
+	protected static $changed_plugins_contributors;
 
 	/**
 	 * Register Actions and Filters
@@ -38,6 +40,13 @@ class admin {
 
 		// Update check on debug page.
 		add_action('admin_notices', array($class, 'debug_notice'));
+
+		// Pull contributor information during update checks.
+		add_filter('transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
+		add_filter('site_transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
+
+		// And the corresponding warnings.
+		add_filter('admin_notices', array($class, 'contributors_changed_notice'));
 	}
 
 	/**
@@ -274,5 +283,284 @@ class admin {
 		}
 
 		return $checked;
+	}
+
+	/**
+	 * Remote Contributors
+	 *
+	 * Gather a list of contributors that WP.org currently knows about
+	 * for any plugins with updates.
+	 *
+	 * @param string $slug Plugin slug.
+	 * @param string $version Version.
+	 * @return array Contributors.
+	 */
+	protected static function get_remote_contributors($slug, $version) {
+		// Obviously bad data.
+		if (!$slug || !$version || !is_string($slug) || !is_string($version)) {
+			return array();
+		}
+
+		// Cache this for each plugin/version pair.
+		$transient_key = 'remote_contrib_' . md5("$slug|$version");
+		if (false !== ($cache = get_transient($transient_key))) {
+			return $cache;
+		}
+
+		// We need these.
+		require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+		require_once(ABSPATH . 'wp-admin/includes/plugin-install.php');
+
+		$response = plugins_api(
+			'plugin_information',
+			array(
+				'slug'=>$slug,
+				// This option does not seem to work as documented, but
+				// just in case let's make sure contributors come back
+				// in the response.
+				'fields'=>array('contributors'=>true),
+			)
+		);
+		if (
+			is_wp_error($response) ||
+			!isset($response->contributors) ||
+			!is_array($response->contributors) ||
+			!count($response->contributors)
+		) {
+			return array();
+		}
+
+		// Cache for up to one day.
+		$contributors = array_keys($response->contributors);
+		sort($contributors);
+
+		set_transient($transient_key, $contributors, 86400);
+		return $contributors;
+	}
+
+	/**
+	 * Local Contributors
+	 *
+	 * Try to find and parse installed plugins' readme.txt files for
+	 * contributor information.
+	 *
+	 * @param string $slug Plugin slug (index version).
+	 * @param string $version Version.
+	 * @return array Contributors.
+	 */
+	protected static function get_local_contributors($slug, $version) {
+		// Obviously bad data.
+		if (!$slug || !$version || !is_string($slug) || !is_string($version)) {
+			return array();
+		}
+
+		// Cache this for each plugin/version pair.
+		$transient_key = 'local_contrib_' . md5("$slug|$version");
+		if (false !== ($cache = get_transient($transient_key))) {
+			return $cache;
+		}
+
+		// The directory in question.
+		$dir = trailingslashit(WP_PLUGIN_DIR) . dirname($slug);
+		if (!@is_dir($dir)) {
+			return array();
+		}
+
+		// If the readme file isn't named normally, we have to run
+		// through the directory (but just one level).
+		if (
+			!@is_file("$dir/readme.txt") ||
+			(false === ($contributors = static::parse_readme_contributors($slug)))
+		) {
+			$files = list_files($dir, 1);
+			if (is_array($files)) {
+				foreach ($files as $file) {
+					if (
+						preg_match('/^readme\.(txt|md)$/i', basename($file)) &&
+						@is_file($file) &&
+						(false !== ($contributors = static::parse_readme_contributors($file)))
+					) {
+						break;
+					}
+				}
+			}
+		}
+
+		// Looking good!
+		if (is_array($contributors) && count($contributors)) {
+			set_transient($transient_key, $contributors, 86400);
+		}
+		// We should still cache a negative lookup because if we
+		// couldn't get the info this time, we probably won't next time.
+		else {
+			set_transient($transient_key, array(), 86400);
+		}
+
+		return $contributors;
+	}
+
+	/**
+	 * Parse Readme Contributors
+	 *
+	 * @param string $file File.
+	 * @return array|bool Contributors or false.
+	 */
+	protected static function parse_readme_contributors($file) {
+		if (!$file || !@is_file($file)) {
+			return false;
+		}
+
+		require_once (ABSPATH . 'wp-admin/includes/file.php');
+
+		// This can actually be parsed the same way plugin index files
+		// are. Neat!
+		$headers = get_file_data($file, array('Contributors'=>'Contributors'));
+		if (isset($headers['Contributors'])) {
+			// These are comma-separated, so let's array-ize them and
+			// clean it up a bit.
+			$headers['Contributors'] = explode(',', $headers['Contributors']);
+			foreach ($headers['Contributors'] as $k=>$v) {
+				$headers['contributors'][$k] = trim($v);
+				if (!$v) {
+					unset($headers['contributors'][$k]);
+				}
+			}
+
+			// We should have at least one!
+			if (count($headers['contributors'])) {
+				$headers['contributors'] = array_unique($headers['contributors']);
+				sort($headers['contributors']);
+				return $headers['contributors'];
+			}
+		}
+
+		// No go.
+		return false;
+	}
+
+	/**
+	 * Add Contributor Info to Updates Data
+	 *
+	 * @see https://core.trac.wordpress.org/ticket/42255
+	 * @see https://meta.trac.wordpress.org/ticket/3207
+	 *
+	 * @param array $data Data.
+	 * @return array Data.
+	 */
+	public static function update_plugins_contributors($data) {
+		// Make sure the data is good.
+		if (
+			!is_object($data) ||
+			!isset($data->response, $data->last_checked, $data->checked) ||
+			!is_array($data->response) ||
+			!count($data->response) ||
+			!is_array($data->checked) ||
+			!count($data->checked) ||
+			($data->last_checked === static::$checked_plugins_contributors)
+		) {
+			return $data;
+		}
+
+		// The filters unfortunately trigger about 5 million times in a
+		// single run. Haha. We'll use the last-checked timestamp to
+		// prevent meddling unnecessarily.
+		static::$checked_plugins_contributors = $data->last_checked;
+		static::$changed_plugins_contributors = array();
+
+		// Loop through the data to provide contributor data, where
+		// possible.
+		foreach ($data->response as $k=>$v) {
+			// We can skip things we've already done or things that
+			// aren't hosted by WordPress.
+			if (
+				!isset($v->package, $data->checked[$k], $v->slug) ||
+				!$v->slug ||
+				!preg_match('#^https?://downloads.wordpress.org/#i', $v->package)
+			) {
+				continue;
+			}
+
+			// Current version is kept somewhere else.
+			$version = $data->checked[$k];
+
+			// Try to grab remote data.
+			$remote = static::get_remote_contributors($v->slug, $version);
+			if (!count($remote)) {
+				continue;
+			}
+
+			// Try to grab local data.
+			$local = static::get_local_contributors($k, $version);
+			if (!count($local)) {
+				continue;
+			}
+
+			static::$changed_plugins_contributors[$k] = array(
+				'slug'=>$v->slug,
+				'new'=>array_diff($remote, $local),
+				'removed'=>array_diff($local, $remote),
+			);
+		}
+
+		return $data;
+	}
+
+	/**
+	 * Contributor Change Notice
+	 *
+	 * Warn users if a pending plugin update has different contributors
+	 * than the version they currently have installed.
+	 *
+	 * @see https://core.trac.wordpress.org/ticket/42255
+	 * @see https://meta.trac.wordpress.org/ticket/3207
+	 *
+	 * @return void Nothing.
+	 */
+	public static function contributors_changed_notice() {
+		// We only want to display this on the plugins and update pages.
+		$screen = get_current_screen();
+		if (('update-core' !== $screen->id) && ('plugins' !== $screen->id)) {
+			return;
+		}
+
+		// Make sure updates were actually checked.
+		if (!is_array(static::$changed_plugins_contributors)) {
+			wp_update_plugins();
+		}
+
+		// We usually won't need to print a notice.
+		if (!count(static::$changed_plugins_contributors)) {
+			return;
+		}
+
+		// Still might not need to be here, but we have to check each
+		// update to be sure.
+		foreach (static::$changed_plugins_contributors as $v) {
+			if (count($v['new']) || count($v['removed'])) {
+				$tmp = array();
+				foreach ($v['removed'] as $v2) {
+					$tmp[] = '<span class="wp-ui-text-notification">' . esc_html__('Removed', 'blob-mimes') . ':</span> ' . esc_html($v2);
+				}
+				foreach ($v['new'] as $v2) {
+					$tmp[] = '<span class="wp-ui-text-highlight">' . esc_html__('Added', 'blob-mimes') . ':</span> ' . esc_html($v2);
+				}
+				?>
+				<div class="notice notice-warning">
+					<?php
+
+					echo '<p>' . sprintf(
+						esc_html__('%s The list of contributors for %s has changed since you first installed the plugin.'),
+						'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>',
+						'<strong>' . esc_html($v['slug']) . '</strong>'
+					) . '</p>';
+
+					echo '<ul style="list-style: disc; margin-left: 3em;"><li>' . implode('</li><li>', $tmp) . '</li></ul>';
+
+					echo '<p>' . esc_html__('This can potentially pose a security threat if the new author(s) are not nice people. It is recommended you re-review the code before continuing.', 'blob-mimes') . '</p>';
+					?>
+				</div>
+				<?php
+			}
+		}
 	}
 }
