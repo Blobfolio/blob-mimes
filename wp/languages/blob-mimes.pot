@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-10-14 11:29-0700\n"
+"2017-10-18 16:09-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -93,9 +93,9 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:141
-#: lib/blobfolio/wp/bm/admin.php:65
-#: lib/blobfolio/wp/bm/admin.php:66
-#: lib/blobfolio/wp/bm/admin.php:83
+#: lib/blobfolio/wp/bm/admin.php:74
+#: lib/blobfolio/wp/bm/admin.php:75
+#: lib/blobfolio/wp/bm/admin.php:92
 msgid ""
 "Debug File Validation"
 msgstr ""
@@ -172,12 +172,12 @@ msgid ""
 "deactivated for you."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:154
-#: lib/blobfolio/wp/bm/admin.php:157
+#: lib/blobfolio/wp/bm/admin.php:163
+#: lib/blobfolio/wp/bm/admin.php:166
 msgid "update"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:163
+#: lib/blobfolio/wp/bm/admin.php:172
 #, php-format
 msgid ""
 "Please %s %s to the "
@@ -186,7 +186,7 @@ msgid ""
 "related issues."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:173
+#: lib/blobfolio/wp/bm/admin.php:182
 msgid ""
 "If a file has been "
 "rejected from the Media "
@@ -194,6 +194,38 @@ msgid ""
 "reasons\", use the form "
 "below to find out more "
 "information."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:542
+msgid "Removed"
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:545
+msgid "Added"
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:552
+#, php-format
+msgid ""
+"%s The list of "
+"contributors for %s has "
+"changed since you last "
+"updated the plugin."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:553
+msgid "Warning"
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:559
+msgid ""
+"This can potentially "
+"pose a security threat "
+"if the new author(s) are "
+"not nice people. It is "
+"recommended you re-"
+"review the code before "
+"continuing."
 msgstr ""
 
 #: lib/blobfolio/wp/bm/debug.php:56

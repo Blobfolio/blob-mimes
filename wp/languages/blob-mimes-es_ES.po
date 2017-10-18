@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blob-mimes\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-10-14 11:29-0700\n"
+"POT-Creation-Date: 2017-10-18 16:09-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Josh Stoik <josh@blobfolio.com>\n"
 "Language-Team: Blobfolio, LLC <hello@blobfolio.com>\n"
@@ -49,8 +49,8 @@ msgstr "No se pudo procesar la carga del archivo."
 msgid "The form had expired. Please try again."
 msgstr "El formulario había caducado. Vuelve a intentarlo."
 
-#: admin/debug.php:141 lib/blobfolio/wp/bm/admin.php:65
-#: lib/blobfolio/wp/bm/admin.php:66 lib/blobfolio/wp/bm/admin.php:83
+#: admin/debug.php:141 lib/blobfolio/wp/bm/admin.php:74
+#: lib/blobfolio/wp/bm/admin.php:75 lib/blobfolio/wp/bm/admin.php:92
 msgid "Debug File Validation"
 msgstr "Validación de cargas de archivo"
 
@@ -114,11 +114,11 @@ msgid ""
 msgstr ""
 "%s requiere PHP 5.4 o superior. Se ha desactivado automáticamente para usted."
 
-#: lib/blobfolio/wp/bm/admin.php:154 lib/blobfolio/wp/bm/admin.php:157
+#: lib/blobfolio/wp/bm/admin.php:163 lib/blobfolio/wp/bm/admin.php:166
 msgid "update"
 msgstr "Actualice"
 
-#: lib/blobfolio/wp/bm/admin.php:163
+#: lib/blobfolio/wp/bm/admin.php:172
 #, php-format
 msgid ""
 "Please %s %s to the latest release (%s) before debugging upload-related "
@@ -127,13 +127,43 @@ msgstr ""
 "%s %s a la última versión (%s) antes de depurar problemas relacionados con "
 "la carga."
 
-#: lib/blobfolio/wp/bm/admin.php:173
+#: lib/blobfolio/wp/bm/admin.php:182
 msgid ""
 "If a file has been rejected from the Media Library for \"security reasons\", "
 "use the form below to find out more information."
 msgstr ""
 "Si se ha rechazado un archivo de la Biblioteca multimedia por \"razones de "
 "seguridad\", utilice este formulario para obtener más información."
+
+#: lib/blobfolio/wp/bm/admin.php:542
+msgid "Removed"
+msgstr "Eliminado"
+
+#: lib/blobfolio/wp/bm/admin.php:545
+msgid "Added"
+msgstr "Nuevo"
+
+#: lib/blobfolio/wp/bm/admin.php:552
+#, php-format
+msgid ""
+"%s The list of contributors for %s has changed since you last updated the "
+"plugin."
+msgstr ""
+"%s La lista de contribuyentes para %s ha cambiado desde la última vez que "
+"actualizó el complemento."
+
+#: lib/blobfolio/wp/bm/admin.php:553
+msgid "Warning"
+msgstr "Advertencia"
+
+#: lib/blobfolio/wp/bm/admin.php:559
+msgid ""
+"This can potentially pose a security threat if the new author(s) are not "
+"nice people. It is recommended you re-review the code before continuing."
+msgstr ""
+"Esto puede suponer una amenaza para la seguridad si el nuevo autor(es) no "
+"son personas agradables. Se recomienda volver a revisar el código antes de "
+"continuar."
 
 #: lib/blobfolio/wp/bm/debug.php:56 lib/blobfolio/wp/bm/debug.php:60
 #: lib/blobfolio/wp/bm/debug.php:63
