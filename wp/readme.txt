@@ -24,6 +24,7 @@ The main features include:
  * SVG sanitization (if SVG uploads have been whitelisted);
  * File upload debugger;
  * Fixes issues related to [#40175](https://core.trac.wordpress.org/ticket/40175) that have been present since WordPress `4.7.1`.
+ * Admin warnings if plugin contributors have changed since you last updated [#42255](https://core.trac.wordpress.org/ticket/42255);
 
 == Requirements ==
 
@@ -64,6 +65,9 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugins), download, extract, and upload the `blob-mimes` folder to your mu-plugins directory via FTP. Please note: MU Plugins are removed from the usual update-checking process, so you will need to handle future updates manually.
 
 == Changelog ==
+
+= 0.7.0 =
+* [New] Display a warning on the Update and Plugins pages if a plugin's contributors have changed since the last update.
 
 = 0.6.7 =
 * [Improved] Aliases are now checked for all allowed types.
@@ -126,6 +130,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.7.0 =
+A warning is now displayed on the Update and Plugins pages whenever a plugin's contributors have changed.
 
 = 0.6.7 =
 This release improves file renaming by searching across all allowed extensions for a given MIME alias.
