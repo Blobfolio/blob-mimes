@@ -549,7 +549,7 @@ class admin {
 					<?php
 
 					echo '<p>' . sprintf(
-						esc_html__('%s The list of contributors for %s has changed since you first installed the plugin.'),
+						esc_html__('%s The list of contributors for %s has changed since you last updated the plugin.'),
 						'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>',
 						'<strong>' . esc_html($v['slug']) . '</strong>'
 					) . '</p>';
