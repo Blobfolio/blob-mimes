@@ -61,9 +61,6 @@ namespace blobfolio\wp\bm\mime;
 class aliases {
 	// The payload.
 	public static $data = array(
-		'1km'=>array(
-			'application/vnd.1000minds.decision-model+xml'
-		),
 		'32x'=>array(
 			'application/x-genesis-32x-rom'
 		),
@@ -127,10 +124,6 @@ class aliases {
 			'video/3gpp2',
 			'video/mp4'
 		),
-		'3mf'=>array(
-			'application/vnd.ms-3mfdocument',
-			'model/3mf'
-		),
 		'4th'=>array(
 			'text/plain',
 			'text/x-forth'
@@ -140,9 +133,6 @@ class aliases {
 		),
 		'a26'=>array(
 			'application/x-atari-2600-rom'
-		),
-		'a2l'=>array(
-			'application/a2l'
 		),
 		'a78'=>array(
 			'application/x-atari-7800-rom'
@@ -185,7 +175,6 @@ class aliases {
 		),
 		'ac'=>array(
 			'application/pkix-attr-cert',
-			'application/vnd.nokia.n-gage.ac+xml',
 			'text/plain'
 		),
 		'ac3'=>array(
@@ -202,7 +191,6 @@ class aliases {
 			'application/x-font-adobe-metric'
 		),
 		'acu'=>array(
-			'application/vnd-acucobol',
 			'application/vnd.acucobol'
 		),
 		'acutc'=>array(
@@ -315,9 +303,6 @@ class aliases {
 		'ami'=>array(
 			'application/vnd.amiga.ami'
 		),
-		'aml'=>array(
-			'application/aml'
-		),
 		'amr'=>array(
 			'audio/amr',
 			'audio/amr-encrypted'
@@ -335,9 +320,6 @@ class aliases {
 			'application/annodex',
 			'application/x-annodex'
 		),
-		'any'=>array(
-			'application/vnd.mitsubishi.misty-guard.trustweb'
-		),
 		'ape'=>array(
 			'audio/x-ape'
 		),
@@ -345,12 +327,6 @@ class aliases {
 			'application/java-archive',
 			'application/vnd.android.package-archive',
 			'application/x-java-archive'
-		),
-		'apkg'=>array(
-			'application/vnd.anki'
-		),
-		'apng'=>array(
-			'image/vnd.mozilla.apng'
 		),
 		'appcache'=>array(
 			'text/cache-manifest'
@@ -369,9 +345,6 @@ class aliases {
 		),
 		'apr'=>array(
 			'application/vnd.lotus-approach'
-		),
-		'apxml'=>array(
-			'application/auth-policy+xml'
 		),
 		'ar'=>array(
 			'application/x-archive',
@@ -401,9 +374,6 @@ class aliases {
 			'application/pgp-keys',
 			'application/pgp-signature',
 			'text/plain'
-		),
-		'ascii'=>array(
-			'text/vnd.ascii-art'
 		),
 		'asciidoc'=>array(
 			'text/plain',
@@ -459,12 +429,6 @@ class aliases {
 		'atc'=>array(
 			'application/vnd.acucorp'
 		),
-		'atf'=>array(
-			'application/atf'
-		),
-		'atfx'=>array(
-			'application/atfx'
-		),
 		'atom'=>array(
 			'application/atom+xml',
 			'application/xml'
@@ -472,23 +436,14 @@ class aliases {
 		'atomcat'=>array(
 			'application/atomcat+xml'
 		),
-		'atomdeleted'=>array(
-			'application/atomdeleted+xml'
-		),
 		'atomsvc'=>array(
 			'application/atomsvc+xml'
 		),
 		'atx'=>array(
 			'application/vnd.antix.game-component'
 		),
-		'atxml'=>array(
-			'application/atxml'
-		),
 		'au'=>array(
 			'audio/basic'
-		),
-		'auc'=>array(
-			'application/tamp-apex-update-confirm'
 		),
 		'automount'=>array(
 			'text/plain',
@@ -543,20 +498,11 @@ class aliases {
 		'azs'=>array(
 			'application/vnd.airzip.filesecure.azs'
 		),
-		'azv'=>array(
-			'image/vnd.airzip.accelerator.azv'
-		),
 		'azw'=>array(
 			'application/vnd.amazon.ebook'
 		),
-		'azw3'=>array(
-			'application/vnd.amazon.mobi8-ebook'
-		),
 		'bak'=>array(
 			'application/x-trash'
-		),
-		'bar'=>array(
-			'application/vnd.qualcomm.brew-app-res'
 		),
 		'bas'=>array(
 			'text/plain',
@@ -608,9 +554,6 @@ class aliases {
 			'application/x-saturn-rom',
 			'application/x-sega-cd-rom'
 		),
-		'bkm'=>array(
-			'application/vnd.nervana'
-		),
 		'blb'=>array(
 			'application/x-blorb'
 		),
@@ -626,16 +569,10 @@ class aliases {
 		'bmi'=>array(
 			'application/vnd.bmi'
 		),
-		'bmml'=>array(
-			'application/vnd.balsamiq.bmml+xml'
-		),
 		'bmp'=>array(
 			'image/bmp',
 			'image/x-bmp',
 			'image/x-ms-bmp'
-		),
-		'bmpr'=>array(
-			'application/vnd.balsamiq.bmpr'
 		),
 		'book'=>array(
 			'application/vnd.framemaker'
@@ -660,12 +597,6 @@ class aliases {
 		'bsdiff'=>array(
 			'application/x-bsdiff'
 		),
-		'bsp'=>array(
-			'model/vnd.valve.source.compiled-map'
-		),
-		'btf'=>array(
-			'image/prs.btif'
-		),
 		'btif'=>array(
 			'image/prs.btif'
 		),
@@ -686,9 +617,6 @@ class aliases {
 		'c11amz'=>array(
 			'application/vnd.cluetrust.cartomobile-config-pkg'
 		),
-		'c3ex'=>array(
-			'application/cccex'
-		),
 		'c4d'=>array(
 			'application/vnd.clonk.c4group'
 		),
@@ -706,7 +634,6 @@ class aliases {
 		),
 		'cab'=>array(
 			'application/vnd.ms-cab-compressed',
-			'application/vnd.ubisoft.webplayer',
 			'zz-application/zz-winassoc-cab'
 		),
 		'cacerts'=>array(
@@ -739,10 +666,7 @@ class aliases {
 			'text/x-cobol'
 		),
 		'cbor'=>array(
-			'application/cbor',
-			'application/cose',
-			'application/cose-key',
-			'application/cose-key-set'
+			'application/cbor'
 		),
 		'cbr'=>array(
 			'application/vnd.rar',
@@ -765,12 +689,6 @@ class aliases {
 			'text/x-c++src',
 			'text/x-csrc'
 		),
-		'ccc'=>array(
-			'text/vnd.net2phone.commcenter.command'
-		),
-		'ccmp'=>array(
-			'application/ccmp+xml'
-		),
 		'ccmx'=>array(
 			'application/x-ccmx',
 			'text/plain'
@@ -789,9 +707,6 @@ class aliases {
 		),
 		'cdf'=>array(
 			'application/x-netcdf'
-		),
-		'cdfx'=>array(
-			'application/cdfx+xml'
 		),
 		'cdkey'=>array(
 			'application/vnd.mediastation.cdkey'
@@ -829,9 +744,6 @@ class aliases {
 		),
 		'cdy'=>array(
 			'application/vnd.cinderella'
-		),
-		'cea'=>array(
-			'application/cea'
 		),
 		'cer'=>array(
 			'application/pkix-cert'
@@ -879,7 +791,6 @@ class aliases {
 			'application/x-kchart'
 		),
 		'cif'=>array(
-			'application/vnd.multiad.creator.cif',
 			'chemical/x-cif'
 		),
 		'cii'=>array(
@@ -889,8 +800,6 @@ class aliases {
 			'application/vnd.ms-artgalry'
 		),
 		'cl'=>array(
-			'application/simple-filter+xml',
-			'message/imdn+xml',
 			'text/plain',
 			'text/x-common-lisp',
 			'text/x-csrc',
@@ -903,7 +812,6 @@ class aliases {
 			'application/java',
 			'application/java-byte-code',
 			'application/java-vm',
-			'application/vnd.dvb.dvbj',
 			'application/x-java',
 			'application/x-java-class',
 			'application/x-java-vm'
@@ -943,9 +851,6 @@ class aliases {
 			'text/x-tex',
 			'text/x-vbasic'
 		),
-		'clue'=>array(
-			'application/clueinfo+xml'
-		),
 		'cmake'=>array(
 			'text/plain',
 			'text/x-cmake'
@@ -967,14 +872,8 @@ class aliases {
 		'cmp'=>array(
 			'application/vnd.yellowriver-custom-menu'
 		),
-		'cmsc'=>array(
-			'application/cms'
-		),
 		'cmx'=>array(
 			'image/x-cmx'
-		),
-		'cnd'=>array(
-			'text/jcr-cnd'
 		),
 		'cob'=>array(
 			'text/plain',
@@ -1006,12 +905,6 @@ class aliases {
 		'cpio'=>array(
 			'application/x-cpio'
 		),
-		'cpkg'=>array(
-			'application/vnd.xmpie.cpkg'
-		),
-		'cpl'=>array(
-			'application/cpl+xml'
-		),
 		'cpp'=>array(
 			'text/plain',
 			'text/x-c',
@@ -1019,8 +912,7 @@ class aliases {
 			'text/x-csrc'
 		),
 		'cpt'=>array(
-			'application/mac-compactpro',
-			'audio/vnd.dts'
+			'application/mac-compactpro'
 		),
 		'cr2'=>array(
 			'image/x-canon-cr2',
@@ -1038,9 +930,6 @@ class aliases {
 		),
 		'crt'=>array(
 			'application/x-x509-ca-cert'
-		),
-		'crtr'=>array(
-			'application/vnd.multiad.creator'
 		),
 		'crw'=>array(
 			'image/x-canon-crw',
@@ -1062,24 +951,17 @@ class aliases {
 			'application/x-csh',
 			'application/x-shellscript'
 		),
-		'csl'=>array(
-			'application/vnd.citationstyles.style+xml'
-		),
 		'csml'=>array(
 			'chemical/x-csml'
 		),
 		'csp'=>array(
 			'application/vnd.commonspace'
 		),
-		'csrattrs'=>array(
-			'application/csrattrs'
-		),
 		'css'=>array(
 			'text/css',
 			'text/plain'
 		),
 		'cst'=>array(
-			'application/vnd.commonspace',
 			'application/x-director'
 		),
 		'csv'=>array(
@@ -1095,9 +977,6 @@ class aliases {
 		'cu'=>array(
 			'application/cu-seeme'
 		),
-		'cuc'=>array(
-			'application/tamp-community-update-confirm'
-		),
 		'cue'=>array(
 			'application/x-cue',
 			'text/plain'
@@ -1106,12 +985,7 @@ class aliases {
 			'image/x-win-bitmap'
 		),
 		'curl'=>array(
-			'application/vnd-curl',
-			'text/vnd-curl',
 			'text/vnd.curl'
-		),
-		'cw'=>array(
-			'application/prs.cww'
 		),
 		'cwiki'=>array(
 			'text/plain'
@@ -1141,14 +1015,12 @@ class aliases {
 			'application/x-dar'
 		),
 		'dart'=>array(
-			'application/vnd-dart',
 			'application/vnd.dart'
 		),
 		'data'=>array(
 			'text/plain'
 		),
 		'dataless'=>array(
-			'application/vnd.fdsn.mseed',
 			'application/vnd.fdsn.seed'
 		),
 		'davmount'=>array(
@@ -1174,9 +1046,6 @@ class aliases {
 		),
 		'dc'=>array(
 			'application/x-dc-rom'
-		),
-		'dcd'=>array(
-			'application/dcd'
 		),
 		'dcl'=>array(
 			'text/plain',
@@ -1205,10 +1074,6 @@ class aliases {
 		),
 		'ddd'=>array(
 			'application/vnd.fujixerox.ddd'
-		),
-		'ddf'=>array(
-			'application/vnd.syncml.dmddf+wbxml',
-			'application/vnd.syncml.dmddf+xml'
 		),
 		'dds'=>array(
 			'image/x-dds'
@@ -1275,31 +1140,17 @@ class aliases {
 			'text/x-diff',
 			'text/x-patch'
 		),
-		'dii'=>array(
-			'application/dii'
-		),
-		'dim'=>array(
-			'application/vnd.fastcopy-disk-image'
-		),
 		'dir'=>array(
 			'application/x-director'
 		),
 		'dis'=>array(
 			'application/vnd.mobius.dis'
 		),
-		'disposition-notification'=>array(
-			'message/disposition-notification'
-		),
 		'dist'=>array(
-			'application/octet-stream',
-			'application/vnd.apple.installer+xml'
+			'application/octet-stream'
 		),
 		'distz'=>array(
-			'application/octet-stream',
-			'application/vnd.apple.installer+xml'
-		),
-		'dit'=>array(
-			'application/dit'
+			'application/octet-stream'
 		),
 		'dita'=>array(
 			'application/dita+xml',
@@ -1322,14 +1173,12 @@ class aliases {
 			'video/x-msvideo'
 		),
 		'djv'=>array(
-			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
 			'image/x.djvu'
 		),
 		'djvu'=>array(
-			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
@@ -1349,8 +1198,7 @@ class aliases {
 			'application/x-pcap'
 		),
 		'dms'=>array(
-			'application/octet-stream',
-			'text/vnd.dmclientscript'
+			'application/octet-stream'
 		),
 		'dna'=>array(
 			'application/vnd.dna'
@@ -1378,9 +1226,6 @@ class aliases {
 			'application/x-docbook+xml',
 			'application/xml'
 		),
-		'docjson'=>array(
-			'application/vnd.document+json'
-		),
 		'docm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-word.document.macroenabled.12',
@@ -1391,10 +1236,6 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 			'application/zip'
-		),
-		'dor'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
 		),
 		'dot'=>array(
 			'application/msword',
@@ -1412,7 +1253,6 @@ class aliases {
 		),
 		'dotx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml-template',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 			'application/zip'
 		),
@@ -1421,10 +1261,6 @@ class aliases {
 		),
 		'dpg'=>array(
 			'application/vnd.dpgraph'
-		),
-		'dpkg'=>array(
-			'application/vnd.xmpie.dpkg',
-			'application/vnd.xmpie.plan'
 		),
 		'dpr'=>array(
 			'text/plain',
@@ -1439,9 +1275,6 @@ class aliases {
 		),
 		'drf'=>array(
 			'image/x-raw-kodak'
-		),
-		'drle'=>array(
-			'image/dicom-rle'
 		),
 		'dsc'=>array(
 			'text/prs.lines.tag'
@@ -1487,15 +1320,11 @@ class aliases {
 		'dvb'=>array(
 			'video/vnd.dvb.file'
 		),
-		'dvc'=>array(
-			'application/dvcs'
-		),
 		'dvi'=>array(
 			'application/x-dvi'
 		),
 		'dwf'=>array(
 			'drawing/x-dwf',
-			'model/vnd-dwf',
 			'model/vnd.dwf'
 		),
 		'dwfx'=>array(
@@ -1522,11 +1351,7 @@ class aliases {
 			'application/vnd.spotfire.dxp'
 		),
 		'dxr'=>array(
-			'application/vnd-dxr',
 			'application/x-director'
-		),
-		'dzr'=>array(
-			'application/vnd.dzr'
 		),
 		'ear'=>array(
 			'application/java-archive',
@@ -1540,15 +1365,6 @@ class aliases {
 		),
 		'ecelp9600'=>array(
 			'audio/vnd.nuera.ecelp9600'
-		),
-		'ecig'=>array(
-			'application/vnd.evolv.ecig.settings'
-		),
-		'ecigprofile'=>array(
-			'application/vnd.evolv.ecig.profile'
-		),
-		'ecigtheme'=>array(
-			'application/vnd.evolv.ecig.theme'
 		),
 		'ecma'=>array(
 			'application/ecmascript'
@@ -1597,14 +1413,8 @@ class aliases {
 		'emlx'=>array(
 			'message/x-emlx'
 		),
-		'emm'=>array(
-			'application/vnd.ibm.electronic-media'
-		),
 		'emma'=>array(
 			'application/emma+xml'
-		),
-		'emotionml'=>array(
-			'application/emotionml+xml'
 		),
 		'emp'=>array(
 			'application/vnd.emusic-emusicpackage'
@@ -1619,14 +1429,10 @@ class aliases {
 			'application/x-endnote-refer'
 		),
 		'ent'=>array(
-			'application/vnd.nervana',
 			'application/xml',
 			'application/xml-external-parsed-entity',
 			'text/plain',
 			'text/xml-external-parsed-entity'
-		),
-		'entity'=>array(
-			'application/vnd.nervana'
 		),
 		'enw'=>array(
 			'application/x-endnote-refer'
@@ -1636,9 +1442,6 @@ class aliases {
 		),
 		'eot'=>array(
 			'application/vnd.ms-fontobject'
-		),
-		'ep'=>array(
-			'application/vnd.bluetooth.ep.oob'
 		),
 		'eps'=>array(
 			'application/postscript',
@@ -1676,9 +1479,6 @@ class aliases {
 		),
 		'esf'=>array(
 			'application/vnd.epson.esf'
-		),
-		'espass'=>array(
-			'application/vnd.espass-espass+zip'
 		),
 		'et3'=>array(
 			'application/vnd.eszigno3+xml'
@@ -1835,9 +1635,6 @@ class aliases {
 			'application/x-xfig',
 			'image/x-xfig'
 		),
-		'finf'=>array(
-			'application/fastinfoset'
-		),
 		'fit'=>array(
 			'application/fits'
 		),
@@ -1849,9 +1646,6 @@ class aliases {
 		'fl'=>array(
 			'application/x-fluid',
 			'text/plain'
-		),
-		'fla'=>array(
-			'application/vnd.dtg.local.flash'
 		),
 		'flac'=>array(
 			'audio/flac',
@@ -1910,7 +1704,6 @@ class aliases {
 			'application/vnd.frogans.fnc'
 		),
 		'fo'=>array(
-			'application/vnd.software602.filler.form+xml',
 			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
@@ -1946,8 +1739,6 @@ class aliases {
 			'application/vnd.framemaker'
 		),
 		'frm'=>array(
-			'application/vnd.ufdl',
-			'application/vnd.xfdl',
 			'text/x-basic',
 			'text/x-vbasic'
 		),
@@ -2010,7 +1801,6 @@ class aliases {
 			'application/vnd.geoplan'
 		),
 		'g3'=>array(
-			'application/vnd.geocube+xml',
 			'image/fax-g3',
 			'image/g3fax'
 		),
@@ -2034,8 +1824,6 @@ class aliases {
 		),
 		'gbr'=>array(
 			'application/rpki-ghostbusters',
-			'application/vnd.gerber',
-			'application/vnd.rs-274x',
 			'image/x-gimp-gbr'
 		),
 		'gca'=>array(
@@ -2052,8 +1840,7 @@ class aliases {
 			'text/x-vcard'
 		),
 		'gdl'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gdl'
 		),
 		'ged'=>array(
 			'application/x-gedcom',
@@ -2069,9 +1856,6 @@ class aliases {
 		),
 		'gen'=>array(
 			'application/x-genesis-rom'
-		),
-		'generally'=>array(
-			'text/vnd.fmi.flexstor'
 		),
 		'geo'=>array(
 			'application/vnd.dynageo'
@@ -2111,9 +1895,6 @@ class aliases {
 		'glade'=>array(
 			'application/x-glade',
 			'application/xml'
-		),
-		'gltf'=>array(
-			'model/gltf+json'
 		),
 		'gml'=>array(
 			'application/gml+xml',
@@ -2221,9 +2002,7 @@ class aliases {
 			'application/x-font-type1'
 		),
 		'gsm'=>array(
-			'audio/x-gsm',
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'audio/x-gsm'
 		),
 		'gtar'=>array(
 			'application/x-gtar',
@@ -2295,17 +2074,8 @@ class aliases {
 		'hdf5'=>array(
 			'application/x-hdf'
 		),
-		'hdr'=>array(
-			'image/vnd.radiance'
-		),
-		'hdt'=>array(
-			'application/vnd.hdt'
-		),
 		'he5'=>array(
 			'application/x-hdf'
-		),
-		'heldxml'=>array(
-			'application/held+xml'
 		),
 		'hfa'=>array(
 			'application/x-erdas-hfa'
@@ -2331,9 +2101,6 @@ class aliases {
 		'hpgl'=>array(
 			'application/vnd.hp-hpgl'
 		),
-		'hpi'=>array(
-			'application/vnd.hp-hpid'
-		),
 		'hpid'=>array(
 			'application/vnd.hp-hpid'
 		),
@@ -2344,9 +2111,6 @@ class aliases {
 		),
 		'hps'=>array(
 			'application/vnd.hp-hps'
-		),
-		'hpub'=>array(
-			'application/prs.hpub+zip'
 		),
 		'hqx'=>array(
 			'application/binhex',
@@ -2371,7 +2135,6 @@ class aliases {
 			'text/plain'
 		),
 		'html'=>array(
-			'application/vnd.dtg.local-html',
 			'text/html',
 			'text/plain'
 		),
@@ -2412,11 +2175,7 @@ class aliases {
 			'application/epub+zip',
 			'application/x-ibooks+zip'
 		),
-		'ic'=>array(
-			'application/vnd.commerce-battelle'
-		),
 		'ica'=>array(
-			'application/vnd.commerce-battelle',
 			'application/x-ica',
 			'text/plain'
 		),
@@ -2425,17 +2184,10 @@ class aliases {
 			'image/x-tga'
 		),
 		'icc'=>array(
-			'application/vnd.commerce-battelle',
 			'application/vnd.iccprofile'
-		),
-		'icd'=>array(
-			'application/vnd.commerce-battelle'
 		),
 		'ice'=>array(
 			'x-conference/x-cooltalk'
-		),
-		'icf'=>array(
-			'application/vnd.commerce-battelle'
 		),
 		'icm'=>array(
 			'application/vnd.iccprofile'
@@ -2492,18 +2244,11 @@ class aliases {
 		'igm'=>array(
 			'application/vnd.insors.igm'
 		),
-		'ign'=>array(
-			'application/vnd.coreos.ignition+json'
-		),
-		'ignition'=>array(
-			'application/vnd.coreos.ignition+json'
-		),
 		'igs'=>array(
 			'model/iges',
 			'text/plain'
 		),
 		'igx'=>array(
-			'application/vnd.micrografx-igx',
 			'application/vnd.micrografx.igx'
 		),
 		'ihtml'=>array(
@@ -2525,28 +2270,15 @@ class aliases {
 			'audio/x-imelody',
 			'text/x-imelody'
 		),
-		'imf'=>array(
-			'application/vnd.imagemeter.folder+zip'
-		),
 		'img'=>array(
 			'application/octet-stream',
 			'application/x-raw-disk-image'
-		),
-		'imgcal'=>array(
-			'application/vnd.3lightssoftware.imagescal'
-		),
-		'imi'=>array(
-			'application/vnd.imagemeter.image+zip'
 		),
 		'imp'=>array(
 			'application/vnd.accpac.simply.imp'
 		),
 		'ims'=>array(
 			'application/vnd.ms-ims'
-		),
-		'imscc'=>array(
-			'application/vnd.ims.imsccv1p2',
-			'application/vnd.ims.imsccv1p3'
 		),
 		'imy'=>array(
 			'audio/imelody',
@@ -2608,10 +2340,6 @@ class aliases {
 		'irp'=>array(
 			'application/vnd.irepository.package+xml'
 		),
-		'ism'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
-		),
 		'iso'=>array(
 			'application/octet-stream',
 			'application/x-cd-image',
@@ -2650,9 +2378,6 @@ class aliases {
 		'itp'=>array(
 			'application/vnd.shana.informed.formtemplate'
 		),
-		'its'=>array(
-			'application/its+xml'
-		),
 		'ivp'=>array(
 			'application/vnd.immervision-ivp'
 		),
@@ -2673,7 +2398,6 @@ class aliases {
 		),
 		'jar'=>array(
 			'application/java-archive',
-			'application/vnd.osgi.bundle',
 			'application/x-jar',
 			'application/x-java-archive',
 			'application/zip'
@@ -2716,9 +2440,6 @@ class aliases {
 		'jl'=>array(
 			'text/plain',
 			'text/x-common-lisp'
-		),
-		'jls'=>array(
-			'image/jls'
 		),
 		'jlt'=>array(
 			'application/vnd.hp-jlyt'
@@ -2819,45 +2540,8 @@ class aliases {
 			'text/javascript'
 		),
 		'json'=>array(
-			'application/csvm+json',
-			'application/dicom+json',
-			'application/geo+json',
 			'application/javascript',
-			'application/jf2feed+json',
-			'application/json',
-			'application/vnd.api+json',
-			'application/vnd.avalon+json',
-			'application/vnd.bekitzur-stech+json',
-			'application/vnd.capasystems-pg+json',
-			'application/vnd.collection+json',
-			'application/vnd.collection.doc+json',
-			'application/vnd.collection.next+json',
-			'application/vnd.datapackage+json',
-			'application/vnd.dataresource+json',
-			'application/vnd.drive+json',
-			'application/vnd.geo+json',
-			'application/vnd.hal+json',
-			'application/vnd.hc+json',
-			'application/vnd.heroku+json',
-			'application/vnd.hyper-item+json',
-			'application/vnd.hyperdrive+json',
-			'application/vnd.ims.lis.v2.result+json',
-			'application/vnd.ims.lti.v2.toolconsumerprofile+json',
-			'application/vnd.ims.lti.v2.toolproxy+json',
-			'application/vnd.ims.lti.v2.toolproxy.id+json',
-			'application/vnd.ims.lti.v2.toolsettings+json',
-			'application/vnd.ims.lti.v2.toolsettings.simple+json',
-			'application/vnd.infotech.project',
-			'application/vnd.mason+json',
-			'application/vnd.micro+json',
-			'application/vnd.miele+json',
-			'application/vnd.nearst.inv+json',
-			'application/vnd.oftn.l10n+json',
-			'application/vnd.oracle.resource+json',
-			'application/vnd.siren+json',
-			'application/vnd.tableschema+json',
-			'application/vnd.vel+json',
-			'application/vnd.xacml+json'
+			'application/json'
 		),
 		'json-patch'=>array(
 			'application/json',
@@ -2865,13 +2549,7 @@ class aliases {
 		),
 		'jsonld'=>array(
 			'application/json',
-			'application/ld+json',
-			'application/vnd.ims.lis.v2.result+json',
-			'application/vnd.ims.lti.v2.toolconsumerprofile+json',
-			'application/vnd.ims.lti.v2.toolproxy+json',
-			'application/vnd.ims.lti.v2.toolproxy.id+json',
-			'application/vnd.ims.lti.v2.toolsettings+json',
-			'application/vnd.ims.lti.v2.toolsettings.simple+json'
+			'application/ld+json'
 		),
 		'jsonml'=>array(
 			'application/jsonml+json'
@@ -2880,9 +2558,6 @@ class aliases {
 			'application/x-httpd-jsp',
 			'text/plain',
 			'text/x-jsp'
-		),
-		'jtd'=>array(
-			'text/vnd.esmertec.theme-descriptor'
 		),
 		'junit'=>array(
 			'text/plain'
@@ -2905,9 +2580,6 @@ class aliases {
 		'karbon'=>array(
 			'application/vnd.kde.karbon',
 			'application/x-karbon'
-		),
-		'kcm'=>array(
-			'application/vnd.nervana'
 		),
 		'kdc'=>array(
 			'image/x-dcraw',
@@ -2972,9 +2644,6 @@ class aliases {
 			'application/vnd.kde.kontour',
 			'application/x-kontour'
 		),
-		'koz'=>array(
-			'audio/vnd.audiokoz'
-		),
 		'kpm'=>array(
 			'application/x-kpovmodeler'
 		),
@@ -3023,9 +2692,6 @@ class aliases {
 			'application/x-shared-library-la',
 			'text/plain'
 		),
-		'lasjson'=>array(
-			'application/vnd.las.las+json'
-		),
 		'lasxml'=>array(
 			'application/vnd.las.las+xml'
 		),
@@ -3050,18 +2716,12 @@ class aliases {
 			'text/plain',
 			'text/x-ldif'
 		),
-		'le'=>array(
-			'application/vnd.bluetooth.le.oob'
-		),
 		'les'=>array(
 			'application/vnd.hhe.lesson-player'
 		),
 		'less'=>array(
 			'text/plain',
 			'text/x-less'
-		),
-		'lgr'=>array(
-			'application/lgr+xml'
 		),
 		'lha'=>array(
 			'application/octet-stream',
@@ -3092,10 +2752,6 @@ class aliases {
 		'listafp'=>array(
 			'application/vnd.ibm.modcap'
 		),
-		'lmp'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
-		),
 		'lnk'=>array(
 			'application/x-ms-shortcut'
 		),
@@ -3105,9 +2761,6 @@ class aliases {
 		'log'=>array(
 			'text/plain',
 			'text/x-log'
-		),
-		'lostsyncxml'=>array(
-			'application/lostsync+xml'
 		),
 		'lostxml'=>array(
 			'application/lost+xml'
@@ -3157,9 +2810,6 @@ class aliases {
 		),
 		'lws'=>array(
 			'image/x-lws'
-		),
-		'lxf'=>array(
-			'application/lxf'
 		),
 		'ly'=>array(
 			'text/plain',
@@ -3266,12 +2916,8 @@ class aliases {
 			'audio/x-m4b',
 			'audio/x-mp4a'
 		),
-		'm4s'=>array(
-			'video/iso.segment'
-		),
 		'm4u'=>array(
 			'text/plain',
-			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl'
 		),
@@ -3349,8 +2995,7 @@ class aliases {
 			'application/vnd.medcalcdata'
 		),
 		'mcd'=>array(
-			'application/vnd.mcd',
-			'application/vnd.vectorworks'
+			'application/vnd.mcd'
 		),
 		'mcurl'=>array(
 			'text/vnd.curl.mcurl'
@@ -3369,9 +3014,6 @@ class aliases {
 			'application/x-mdb',
 			'application/x-msaccess',
 			'zz-application/zz-winassoc-mdb'
-		),
-		'mdc'=>array(
-			'application/vnd.marlin.drm.mdcf'
 		),
 		'mdi'=>array(
 			'image/vnd.ms-modi'
@@ -3418,9 +3060,6 @@ class aliases {
 		'mf'=>array(
 			'text/plain'
 		),
-		'mf4'=>array(
-			'application/mf4'
-		),
 		'mfm'=>array(
 			'application/vnd.mfmp'
 		),
@@ -3451,7 +3090,6 @@ class aliases {
 		),
 		'mid'=>array(
 			'audio/midi',
-			'audio/sp-midi',
 			'audio/x-midi'
 		),
 		'midi'=>array(
@@ -3472,9 +3110,6 @@ class aliases {
 		'minipsf'=>array(
 			'audio/x-minipsf',
 			'audio/x-psf'
-		),
-		'miz'=>array(
-			'text/mizar'
 		),
 		'mj2'=>array(
 			'image/x-jp2-container',
@@ -3526,8 +3161,7 @@ class aliases {
 			'text/x-ocaml'
 		),
 		'mlp'=>array(
-			'application/vnd.dolby.mlp',
-			'audio/vnd.dolby.mlp'
+			'application/vnd.dolby.mlp'
 		),
 		'mm'=>array(
 			'text/plain',
@@ -3547,9 +3181,6 @@ class aliases {
 		),
 		'mmd'=>array(
 			'application/vnd.chipnuts.karaoke-mmd'
-		),
-		'mmdb'=>array(
-			'application/vnd.maxmind.maxmind-db'
 		),
 		'mmf'=>array(
 			'application/vnd.smaf',
@@ -3598,11 +3229,7 @@ class aliases {
 			'text/x-moc'
 		),
 		'mod'=>array(
-			'application/xml-dtd',
 			'audio/x-mod'
-		),
-		'model-inter'=>array(
-			'application/vnd.vd-study'
 		),
 		'mods'=>array(
 			'application/mods+xml'
@@ -3627,9 +3254,6 @@ class aliases {
 		),
 		'movie'=>array(
 			'video/x-sgi-movie'
-		),
-		'mp1'=>array(
-			'audio/mpeg'
 		),
 		'mp2'=>array(
 			'audio/mp2',
@@ -3660,7 +3284,6 @@ class aliases {
 			'video/mp4',
 			'video/mp4v-es',
 			'video/quicktime',
-			'video/vnd.objectvideo',
 			'video/x-m4v'
 		),
 		'mp4a'=>array(
@@ -3681,12 +3304,6 @@ class aliases {
 			'application/vnd.mophun.certificate',
 			'audio/x-musepack'
 		),
-		'mpd'=>array(
-			'application/dash+xml'
-		),
-		'mpdd'=>array(
-			'application/dashdelta'
-		),
 		'mpe'=>array(
 			'video/mpeg',
 			'video/mpeg-system',
@@ -3700,10 +3317,6 @@ class aliases {
 			'video/x-mpeg',
 			'video/x-mpeg-system',
 			'video/x-mpeg2'
-		),
-		'mpf'=>array(
-			'application/media-policy-dataset+xml',
-			'text/vnd.ms-mediapackage'
 		),
 		'mpg'=>array(
 			'video/mpeg',
@@ -3781,14 +3394,8 @@ class aliases {
 			'text/troff',
 			'text/x-troff-ms'
 		),
-		'msa'=>array(
-			'application/vnd.msa-disk-image'
-		),
 		'mscml'=>array(
 			'application/mediaservercontrol+xml'
-		),
-		'msd'=>array(
-			'application/vnd.fdsn.mseed'
 		),
 		'mseed'=>array(
 			'application/vnd.fdsn.mseed'
@@ -3817,9 +3424,7 @@ class aliases {
 			'application/vnd.mobius.msl'
 		),
 		'msm'=>array(
-			'application/octet-stream',
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'application/octet-stream'
 		),
 		'msod'=>array(
 			'image/x-msod'
@@ -3848,9 +3453,6 @@ class aliases {
 			'model/vnd.mts',
 			'video/mp2t'
 		),
-		'multitrack'=>array(
-			'audio/vnd.presonus.multitrack'
-		),
 		'mup'=>array(
 			'text/plain',
 			'text/x-mup'
@@ -3858,17 +3460,11 @@ class aliases {
 		'mus'=>array(
 			'application/vnd.musician'
 		),
-		'musd'=>array(
-			'application/mmt-usd+xml'
-		),
 		'musicxml'=>array(
 			'application/vnd.recordare.musicxml+xml'
 		),
 		'mvb'=>array(
 			'application/x-msmediaview'
-		),
-		'mvt'=>array(
-			'application/vnd.mapbox-vector-tile'
 		),
 		'mwf'=>array(
 			'application/vnd.mfer'
@@ -3876,15 +3472,8 @@ class aliases {
 		'mxf'=>array(
 			'application/mxf'
 		),
-		'mxi'=>array(
-			'application/vnd.vd-study'
-		),
 		'mxl'=>array(
 			'application/vnd.recordare.musicxml'
-		),
-		'mxmf'=>array(
-			'audio/mobile-xmf',
-			'audio/vnd.nokia.mobile-xmf'
 		),
 		'mxml'=>array(
 			'application/xv+xml'
@@ -3894,7 +3483,6 @@ class aliases {
 		),
 		'mxu'=>array(
 			'text/plain',
-			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl'
 		),
@@ -3910,7 +3498,6 @@ class aliases {
 		),
 		'nb'=>array(
 			'application/mathematica',
-			'application/vnd.wolfram.mathematica',
 			'application/x-mathematica',
 			'text/plain'
 		),
@@ -3922,9 +3509,6 @@ class aliases {
 		),
 		'ncx'=>array(
 			'application/x-dtbncx+xml'
-		),
-		'ndc'=>array(
-			'application/vnd.osa.netdeploy'
 		),
 		'nds'=>array(
 			'application/x-nintendo-ds-rom'
@@ -3950,9 +3534,6 @@ class aliases {
 		'ngp'=>array(
 			'application/x-neo-geo-pocket-rom'
 		),
-		'nim'=>array(
-			'video/vnd.nokia.interleaved-multimedia'
-		),
 		'nitf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
@@ -3976,9 +3557,6 @@ class aliases {
 		'not'=>array(
 			'text/plain',
 			'text/x-mup'
-		),
-		'notebook'=>array(
-			'application/vnd.smart.notebook'
 		),
 		'npx'=>array(
 			'image/vnd.net-fpx'
@@ -4021,12 +3599,6 @@ class aliases {
 		),
 		'obd'=>array(
 			'application/x-msbinder'
-		),
-		'obg'=>array(
-			'application/vnd.openblox.game-binary'
-		),
-		'obgx'=>array(
-			'application/vnd.openblox.game+xml'
 		),
 		'obj'=>array(
 			'application/x-tgif'
@@ -4091,12 +3663,6 @@ class aliases {
 			'application/x-vnd.oasis.opendocument.text',
 			'application/zip'
 		),
-		'odx'=>array(
-			'application/odx'
-		),
-		'oeb'=>array(
-			'application/vnd.openeye.oeb'
-		),
 		'oga'=>array(
 			'application/ogg',
 			'audio/ogg',
@@ -4107,9 +3673,6 @@ class aliases {
 			'audio/x-speex+ogg',
 			'audio/x-vorbis',
 			'audio/x-vorbis+ogg'
-		),
-		'ogex'=>array(
-			'model/vnd.opengex'
 		),
 		'ogg'=>array(
 			'application/ogg',
@@ -4194,9 +3757,6 @@ class aliases {
 			'audio/x-ogg',
 			'audio/x-opus+ogg'
 		),
-		'or3'=>array(
-			'application/vnd.lotus-organizer'
-		),
 		'ora'=>array(
 			'application/zip',
 			'image/openraster'
@@ -4209,20 +3769,11 @@ class aliases {
 		'org'=>array(
 			'application/vnd.lotus-organizer'
 		),
-		'orq'=>array(
-			'application/ocsp-request'
-		),
-		'ors'=>array(
-			'application/ocsp-response'
-		),
 		'osf'=>array(
 			'application/vnd.yamaha.openscoreformat'
 		),
 		'osfpvg'=>array(
 			'application/vnd.yamaha.openscoreformat.osfpvg+xml'
-		),
-		'osm'=>array(
-			'application/vnd.openstreetmap.data+xml'
 		),
 		'ost'=>array(
 			'application/vnd.ms-outlook-pst'
@@ -4281,9 +3832,6 @@ class aliases {
 			'application/owl+xml',
 			'application/xml'
 		),
-		'oxlicg'=>array(
-			'application/vnd.oxli.countgraph'
-		),
 		'oxps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
@@ -4302,9 +3850,6 @@ class aliases {
 		'p12'=>array(
 			'application/pkcs12',
 			'application/x-pkcs12'
-		),
-		'p2p'=>array(
-			'application/vnd.wfa.p2p'
 		),
 		'p65'=>array(
 			'application/x-ole-storage',
@@ -4331,9 +3876,6 @@ class aliases {
 		),
 		'pack'=>array(
 			'application/x-java-pack200'
-		),
-		'package'=>array(
-			'application/vnd.autopackage'
 		),
 		'pages'=>array(
 			'application/vnd.apple.iwork',
@@ -4368,12 +3910,7 @@ class aliases {
 			'application/vnd.pawaafile'
 		),
 		'pbd'=>array(
-			'application/vnd.powerbuilder6',
-			'application/vnd.powerbuilder6-s',
-			'application/vnd.powerbuilder7',
-			'application/vnd.powerbuilder7-s',
-			'application/vnd.powerbuilder75',
-			'application/vnd.powerbuilder75-s'
+			'application/vnd.powerbuilder6'
 		),
 		'pbm'=>array(
 			'image/x-portable-anymap',
@@ -4429,9 +3966,6 @@ class aliases {
 			'application/x-pdf',
 			'image/pdf'
 		),
-		'pdx'=>array(
-			'application/pdx'
-		),
 		'pef'=>array(
 			'image/x-dcraw',
 			'image/x-pentax-pef',
@@ -4462,8 +3996,7 @@ class aliases {
 			'application/x-font-type1'
 		),
 		'pfr'=>array(
-			'application/font-tdpfr',
-			'application/vnd.dvb.pfr'
+			'application/font-tdpfr'
 		),
 		'pfx'=>array(
 			'application/pkcs12',
@@ -4509,7 +4042,6 @@ class aliases {
 			'text/plain'
 		),
 		'pic'=>array(
-			'image/vnd.radiance',
 			'image/x-pict'
 		),
 		'pict'=>array(
@@ -4521,15 +4053,11 @@ class aliases {
 		'pict2'=>array(
 			'image/x-pict'
 		),
-		'pil'=>array(
-			'application/vnd.piaccess.application-licence'
-		),
 		'pk'=>array(
 			'application/x-tex-pk'
 		),
 		'pkg'=>array(
 			'application/octet-stream',
-			'application/vnd.apple.installer+xml',
 			'application/x-xar'
 		),
 		'pki'=>array(
@@ -4560,14 +4088,8 @@ class aliases {
 		'plf'=>array(
 			'application/vnd.pocketlearn'
 		),
-		'plj'=>array(
-			'audio/vnd.everad.plj'
-		),
 		'pln'=>array(
 			'application/x-planperfect'
-		),
-		'plp'=>array(
-			'application/vnd.panoply'
 		),
 		'pls'=>array(
 			'application/pls',
@@ -4595,8 +4117,7 @@ class aliases {
 			'application/vnd.ctc-posml'
 		),
 		'png'=>array(
-			'image/png',
-			'image/vnd.mozilla.apng'
+			'image/png'
 		),
 		'pnm'=>array(
 			'image/x-portable-anymap'
@@ -4641,7 +4162,6 @@ class aliases {
 		),
 		'potx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.presentationml-template',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 			'application/zip'
 		),
@@ -4661,15 +4181,9 @@ class aliases {
 		'ppd'=>array(
 			'application/vnd.cups-ppd'
 		),
-		'ppdgz'=>array(
-			'application/vnd.cups-ppd'
-		),
 		'ppj'=>array(
 			'application/xml',
 			'image/vnd.adobe.premiere'
-		),
-		'ppkg'=>array(
-			'application/vnd.xmpie.ppkg'
 		),
 		'ppm'=>array(
 			'image/x-portable-anymap',
@@ -4729,9 +4243,6 @@ class aliases {
 		'pre'=>array(
 			'application/vnd.lotus-freelance'
 		),
-		'preminet'=>array(
-			'application/vnd.preminet'
-		),
 		'prf'=>array(
 			'application/pics-rules'
 		),
@@ -4748,14 +4259,8 @@ class aliases {
 			'text/x-java-properties',
 			'text/x-properties'
 		),
-		'provx'=>array(
-			'application/provenance+xml'
-		),
 		'prt'=>array(
 			'application/x-prt'
-		),
-		'prz'=>array(
-			'application/vnd.lotus-freelance'
 		),
 		'ps'=>array(
 			'application/postscript',
@@ -4772,9 +4277,6 @@ class aliases {
 			'image/vnd.adobe.photoshop',
 			'image/x-photoshop',
 			'image/x-psd'
-		),
-		'pseg3820'=>array(
-			'application/vnd.ibm.modcap'
 		),
 		'psf'=>array(
 			'application/x-font-linux-psf',
@@ -4795,9 +4297,6 @@ class aliases {
 		),
 		'psw'=>array(
 			'application/x-pocket-word'
-		),
-		'pti'=>array(
-			'image/prs.pti'
 		),
 		'ptid'=>array(
 			'application/vnd.pvi.ptid1'
@@ -4857,12 +4356,6 @@ class aliases {
 		),
 		'qbo'=>array(
 			'application/vnd.intu.qbo'
-		),
-		'qca'=>array(
-			'application/vnd.ericsson.quickcall'
-		),
-		'qcall'=>array(
-			'application/vnd.ericsson.quickcall'
 		),
 		'qfx'=>array(
 			'application/vnd.intu.qfx'
@@ -4949,9 +4442,6 @@ class aliases {
 			'application/raml+yaml',
 			'application/x-yaml'
 		),
-		'rapd'=>array(
-			'application/route-apd+xml'
-		),
 		'rar'=>array(
 			'application/vnd.rar',
 			'application/x-rar',
@@ -4983,16 +4473,10 @@ class aliases {
 		'rcprofile'=>array(
 			'application/vnd.ipunplugged.rcprofile'
 		),
-		'rct'=>array(
-			'application/prs.nprend'
-		),
 		'rdf'=>array(
 			'application/rdf+xml',
 			'application/xml',
 			'text/rdf'
-		),
-		'rdf-crypt'=>array(
-			'application/prs.rdf-xml-crypt'
 		),
 		'rdfs'=>array(
 			'application/rdf+xml',
@@ -5011,18 +4495,8 @@ class aliases {
 			'text/plain',
 			'text/x-reject'
 		),
-		'relo'=>array(
-			'application/p2p-overlay+xml'
-		),
 		'rep'=>array(
-			'application/vnd.businessobjects',
-			'application/vnd.hcl-bireports'
-		),
-		'req'=>array(
-			'application/vnd.nervana'
-		),
-		'request'=>array(
-			'application/vnd.nervana'
+			'application/vnd.businessobjects'
 		),
 		'res'=>array(
 			'application/x-dtbresource+xml'
@@ -5041,9 +4515,6 @@ class aliases {
 		),
 		'rgb'=>array(
 			'image/x-rgb'
-		),
-		'rgbe'=>array(
-			'image/vnd.radiance'
 		),
 		'rif'=>array(
 			'application/reginfo+xml'
@@ -5068,9 +4539,7 @@ class aliases {
 		),
 		'rm'=>array(
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr',
-			'audio/vnd.hns.audio',
-			'video/vnd.hns.video'
+			'application/vnd.rn-realmedia-vbr'
 		),
 		'rmi'=>array(
 			'audio/midi'
@@ -5103,9 +4572,6 @@ class aliases {
 			'application/relax-ng-compact-syntax',
 			'application/x-rnc',
 			'text/plain'
-		),
-		'rnd'=>array(
-			'application/prs.nprend'
 		),
 		'rng'=>array(
 			'application/xml',
@@ -5157,13 +4623,6 @@ class aliases {
 		'rsd'=>array(
 			'application/rsd+xml'
 		),
-		'rsheet'=>array(
-			'application/urc-ressheet+xml'
-		),
-		'rsm'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
-		),
 		'rss'=>array(
 			'application/rss+xml',
 			'application/xml',
@@ -5171,7 +4630,6 @@ class aliases {
 		),
 		'rst'=>array(
 			'text/plain',
-			'text/prs.fallenstein.rst',
 			'text/x-rst'
 		),
 		'rt'=>array(
@@ -5188,9 +4646,6 @@ class aliases {
 		),
 		'run'=>array(
 			'application/x-makeself'
-		),
-		'rusd'=>array(
-			'application/route-usd+xml'
 		),
 		'rv'=>array(
 			'video/vnd.rn-realvideo',
@@ -5212,45 +4667,6 @@ class aliases {
 		's'=>array(
 			'text/x-asm'
 		),
-		's11'=>array(
-			'video/vnd.sealed.mpeg1'
-		),
-		's14'=>array(
-			'video/vnd.sealed.mpeg4'
-		),
-		's1a'=>array(
-			'application/vnd.sealedmedia.softseal-pdf'
-		),
-		's1e'=>array(
-			'application/vnd.sealed-xls'
-		),
-		's1g'=>array(
-			'image/vnd.sealedmedia.softseal-gif'
-		),
-		's1h'=>array(
-			'application/vnd.sealedmedia.softseal-html'
-		),
-		's1j'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
-		),
-		's1m'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		's1n'=>array(
-			'image/vnd.sealed-png'
-		),
-		's1p'=>array(
-			'application/vnd.sealed-ppt'
-		),
-		's1q'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
-		),
-		's1w'=>array(
-			'application/vnd.sealed-doc'
-		),
-		's3df'=>array(
-			'application/vnd.sealed.3df'
-		),
 		's3m'=>array(
 			'audio/s3m',
 			'audio/x-s3m'
@@ -5260,9 +4676,6 @@ class aliases {
 		),
 		'sa7'=>array(
 			'application/x-sas-access'
-		),
-		'sac'=>array(
-			'application/tamp-sequence-adjust-confirm'
 		),
 		'saf'=>array(
 			'application/vnd.yamaha.smaf-audio'
@@ -5345,17 +4758,7 @@ class aliases {
 			'text/x-scala'
 		),
 		'scd'=>array(
-			'application/vnd.scribus',
 			'application/x-msschedule'
-		),
-		'scdgz'=>array(
-			'application/vnd.scribus'
-		),
-		'sce'=>array(
-			'application/vnd.etsi.asic-e+zip'
-		),
-		'scld'=>array(
-			'application/vnd.doremir.scorecloud-binary-document'
 		),
 		'scm'=>array(
 			'application/vnd.lotus-screencam',
@@ -5370,11 +4773,7 @@ class aliases {
 			'application/scvp-cv-request'
 		),
 		'scs'=>array(
-			'application/scvp-cv-response',
-			'application/vnd.etsi.asic-s+zip'
-		),
-		'scsf'=>array(
-			'application/vnd.sealed.csf'
+			'application/scvp-cv-response'
 		),
 		'scss'=>array(
 			'text/plain',
@@ -5398,20 +4797,11 @@ class aliases {
 		'sdd'=>array(
 			'application/vnd.stardivision.impress'
 		),
-		'sdf'=>array(
-			'application/vnd.kinar'
-		),
 		'sdkd'=>array(
 			'application/vnd.solent.sdkm+xml'
 		),
 		'sdkm'=>array(
 			'application/vnd.solent.sdkm+xml'
-		),
-		'sdo'=>array(
-			'application/vnd.sealed-doc'
-		),
-		'sdoc'=>array(
-			'application/vnd.sealed-doc'
 		),
 		'sdp'=>array(
 			'application/sdp',
@@ -5438,11 +4828,7 @@ class aliases {
 			'application/vnd.seemail'
 		),
 		'seed'=>array(
-			'application/vnd.fdsn.mseed',
 			'application/vnd.fdsn.seed'
-		),
-		'sem'=>array(
-			'application/vnd.sealed-eml'
 		),
 		'sema'=>array(
 			'application/vnd.sema'
@@ -5452,9 +4838,6 @@ class aliases {
 		),
 		'semf'=>array(
 			'application/vnd.semf'
-		),
-		'seml'=>array(
-			'application/vnd.sealed-eml'
 		),
 		'ser'=>array(
 			'application/java-serialized-object'
@@ -5476,9 +4859,6 @@ class aliases {
 		'sfc'=>array(
 			'application/vnd.nintendo.snes.rom',
 			'application/x-snes-rom'
-		),
-		'sfd'=>array(
-			'application/vnd.font-fontforge-sfd'
 		),
 		'sfd-hdstx'=>array(
 			'application/vnd.hydrostatix.sof-data'
@@ -5505,11 +4885,7 @@ class aliases {
 		),
 		'sgi'=>array(
 			'image/sgi',
-			'image/vnd.sealedmedia.softseal-gif',
 			'image/x-sgi'
-		),
-		'sgif'=>array(
-			'image/vnd.sealedmedia.softseal-gif'
 		),
 		'sgl'=>array(
 			'application/vnd.stardivision.writer',
@@ -5595,12 +4971,6 @@ class aliases {
 			'application/sieve',
 			'application/xml'
 		),
-		'sjp'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
-		),
-		'sjpg'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
-		),
 		'sk'=>array(
 			'image/x-skencil'
 		),
@@ -5626,15 +4996,6 @@ class aliases {
 		'skt'=>array(
 			'application/vnd.koan',
 			'application/x-koan'
-		),
-		'sla'=>array(
-			'application/vnd.scribus'
-		),
-		'slagz'=>array(
-			'application/vnd.scribus'
-		),
-		'slaz'=>array(
-			'application/vnd.scribus'
 		),
 		'sldasm'=>array(
 			'application/sldworks'
@@ -5663,9 +5024,6 @@ class aliases {
 			'text/plain',
 			'text/spreadsheet'
 		),
-		'sls'=>array(
-			'application/route-s-tsid+xml'
-		),
 		'slt'=>array(
 			'application/vnd.epson.salt'
 		),
@@ -5690,12 +5048,6 @@ class aliases {
 		'smf'=>array(
 			'application/vnd.stardivision.math'
 		),
-		'smh'=>array(
-			'application/vnd.sealed-mht'
-		),
-		'smht'=>array(
-			'application/vnd.sealed-mht'
-		),
 		'smi'=>array(
 			'application/smil',
 			'application/smil+xml',
@@ -5713,25 +5065,7 @@ class aliases {
 			'application/smil+xml',
 			'application/xml'
 		),
-		'smo'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
-		),
-		'smov'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
-		),
-		'smp'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		'smp3'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		'smpg'=>array(
-			'video/vnd.sealed.mpeg1',
-			'video/vnd.sealed.mpeg4'
-		),
 		'sms'=>array(
-			'application/vnd.3gpp.sms',
-			'application/vnd.3gpp2.sms',
 			'application/x-sms-rom'
 		),
 		'smv'=>array(
@@ -5765,11 +5099,7 @@ class aliases {
 			'application/x-pkcs7-certificates'
 		),
 		'spd'=>array(
-			'application/vnd.sealedmedia.softseal-pdf',
 			'application/x-font-speedo'
-		),
-		'spdf'=>array(
-			'application/vnd.sealedmedia.softseal-pdf'
 		),
 		'spec'=>array(
 			'text/plain',
@@ -5788,24 +5118,11 @@ class aliases {
 			'application/x-rpm',
 			'application/x-source-rpm'
 		),
-		'spn'=>array(
-			'image/vnd.sealed-png'
-		),
-		'spng'=>array(
-			'image/vnd.sealed-png'
-		),
-		'spo'=>array(
-			'text/vnd.in3d.spot'
-		),
 		'spot'=>array(
 			'text/vnd.in3d.spot'
 		),
 		'spp'=>array(
-			'application/scvp-vp-response',
-			'application/vnd.sealed-ppt'
-		),
-		'sppt'=>array(
-			'application/vnd.sealed-ppt'
+			'application/scvp-vp-response'
 		),
 		'spq'=>array(
 			'application/scvp-vp-request'
@@ -5824,9 +5141,6 @@ class aliases {
 		),
 		'sqsh'=>array(
 			'application/vnd.squashfs'
-		),
-		'sr'=>array(
-			'application/vnd.sigrok.session'
 		),
 		'sr2'=>array(
 			'image/x-dcraw',
@@ -5882,12 +5196,6 @@ class aliases {
 		'ssml'=>array(
 			'application/ssml+xml'
 		),
-		'ssw'=>array(
-			'video/vnd.sealed-swf'
-		),
-		'sswf'=>array(
-			'video/vnd.sealed-swf'
-		),
 		'st'=>array(
 			'application/vnd.sailingtracker.track',
 			'text/plain',
@@ -5911,9 +5219,6 @@ class aliases {
 			'application/vnd.sun.xml.impress.template',
 			'application/zip'
 		),
-		'stif'=>array(
-			'application/vnd.sealed-tiff'
-		),
 		'stk'=>array(
 			'application/hyperstudio'
 		),
@@ -5924,17 +5229,10 @@ class aliases {
 			'text/plain'
 		),
 		'stm'=>array(
-			'application/vnd.sealedmedia.softseal-html',
 			'audio/x-stm'
-		),
-		'stml'=>array(
-			'application/vnd.sealedmedia.softseal-html'
 		),
 		'str'=>array(
 			'application/vnd.pg.format'
-		),
-		'study-inter'=>array(
-			'application/vnd.vd-study'
 		),
 		'stw'=>array(
 			'application/vnd.sun.xml.writer.template',
@@ -5982,8 +5280,7 @@ class aliases {
 			'application/x-sas-view'
 		),
 		'svc'=>array(
-			'application/vnd.dvb.service',
-			'application/vnd.dvbservice'
+			'application/vnd.dvb.service'
 		),
 		'svd'=>array(
 			'application/vnd.svd'
@@ -6035,14 +5332,7 @@ class aliases {
 		),
 		'sxi'=>array(
 			'application/vnd.sun.xml.impress',
-			'application/vnd.vd-study',
 			'application/zip'
-		),
-		'sxl'=>array(
-			'application/vnd.sealed-xls'
-		),
-		'sxls'=>array(
-			'application/vnd.sealed-xls'
 		),
 		'sxm'=>array(
 			'application/vnd.sun.xml.math',
@@ -6070,26 +5360,11 @@ class aliases {
 		't3'=>array(
 			'application/x-t3vm-image'
 		),
-		't38'=>array(
-			'image/t38'
-		),
 		'taglet'=>array(
 			'application/vnd.mynfc'
 		),
-		'tam'=>array(
-			'application/vnd.onepager'
-		),
-		'tamp'=>array(
-			'application/vnd.onepagertamp'
-		),
-		'tamx'=>array(
-			'application/vnd.onepagertamx'
-		),
 		'tao'=>array(
 			'application/vnd.tao.intent-module-archive'
-		),
-		'tap'=>array(
-			'image/vnd.tencent.tap'
 		),
 		'tar'=>array(
 			'application/x-gtar',
@@ -6098,18 +5373,6 @@ class aliases {
 		'target'=>array(
 			'text/plain',
 			'text/x-systemd-unit'
-		),
-		'tat'=>array(
-			'application/vnd.onepagertat'
-		),
-		'tatp'=>array(
-			'application/vnd.onepagertatp'
-		),
-		'tatx'=>array(
-			'application/vnd.onepagertatx'
-		),
-		'tau'=>array(
-			'application/tamp-apex-update'
 		),
 		'taz'=>array(
 			'application/x-compress',
@@ -6139,9 +5402,6 @@ class aliases {
 		'tcsh'=>array(
 			'application/x-csh'
 		),
-		'tcu'=>array(
-			'application/tamp-community-update'
-		),
 		'teacher'=>array(
 			'application/vnd.smart.teacher'
 		),
@@ -6150,9 +5410,6 @@ class aliases {
 		),
 		'teicorpus'=>array(
 			'application/tei+xml'
-		),
-		'ter'=>array(
-			'application/tamp-error'
 		),
 		'tex'=>array(
 			'application/x-tex',
@@ -6178,9 +5435,6 @@ class aliases {
 		'tfm'=>array(
 			'application/x-tex-tfm'
 		),
-		'tfx'=>array(
-			'image/tiff-fx'
-		),
 		'tga'=>array(
 			'image/x-icb',
 			'image/x-tga'
@@ -6194,9 +5448,6 @@ class aliases {
 			'application/x-gzip',
 			'application/x-gzip-compressed',
 			'gzip/document'
-		),
-		'the'=>array(
-			'message/global-headers'
 		),
 		'theme'=>array(
 			'application/x-desktop',
@@ -6225,9 +5476,6 @@ class aliases {
 			'application/x-tcl',
 			'text/plain',
 			'text/x-tcl'
-		),
-		'tlclient'=>array(
-			'application/vnd.cendio.thinlinc.clientconf'
 		),
 		'tld'=>array(
 			'text/plain'
@@ -6284,9 +5532,6 @@ class aliases {
 		'tra'=>array(
 			'application/vnd.trueapp'
 		),
-		'tree'=>array(
-			'application/vnd.rainstor.data'
-		),
 		'trig'=>array(
 			'application/trig',
 			'application/x-trig',
@@ -6301,20 +5546,8 @@ class aliases {
 			'text/vnd.trolltech.linguist',
 			'video/mp2t'
 		),
-		'tsa'=>array(
-			'application/tamp-sequence-adjust'
-		),
 		'tsd'=>array(
 			'application/timestamped-data'
-		),
-		'tsq'=>array(
-			'application/tamp-status-query'
-		),
-		'tsr'=>array(
-			'application/tamp-status-response'
-		),
-		'tst'=>array(
-			'application/vnd.etsi.timestamp-token'
 		),
 		'tsv'=>array(
 			'text/plain',
@@ -6336,18 +5569,9 @@ class aliases {
 			'text/plain',
 			'text/turtle'
 		),
-		'ttml'=>array(
-			'application/ttml+xml'
-		),
 		'ttx'=>array(
 			'application/x-font-ttx',
 			'application/xml'
-		),
-		'tuc'=>array(
-			'application/tamp-update-confirm'
-		),
-		'tur'=>array(
-			'application/tamp-update'
 		),
 		'twd'=>array(
 			'application/vnd.simtech-mindmapper'
@@ -6366,9 +5590,7 @@ class aliases {
 			'application/vnd.mobius.txf'
 		),
 		'txt'=>array(
-			'text/plain',
-			'text/prs.fallenstein.rst',
-			'text/prs.prop.logic'
+			'text/plain'
 		),
 		'txz'=>array(
 			'application/x-xz',
@@ -6433,23 +5655,11 @@ class aliases {
 		'unityweb'=>array(
 			'application/vnd.unity'
 		),
-		'unknown'=>array(
-			'application/dns'
-		),
-		'uo'=>array(
-			'application/vnd.uoml+xml'
-		),
 		'uoml'=>array(
 			'application/vnd.uoml+xml'
 		),
 		'uri'=>array(
 			'text/uri-list'
-		),
-		'uric'=>array(
-			'text/vnd.si.uricatalogue'
-		),
-		'urim'=>array(
-			'application/vnd.uri-map'
 		),
 		'uris'=>array(
 			'text/uri-list'
@@ -6505,8 +5715,6 @@ class aliases {
 			'application/vnd.dece.ttml+xml'
 		),
 		'uvu'=>array(
-			'video/vnd.dece-mp4',
-			'video/vnd.uvvu-mp4',
 			'video/vnd.uvvu.mp4'
 		),
 		'uvv'=>array(
@@ -6543,8 +5751,6 @@ class aliases {
 			'application/vnd.dece.ttml+xml'
 		),
 		'uvvu'=>array(
-			'video/vnd.dece-mp4',
-			'video/vnd.uvvu-mp4',
 			'video/vnd.uvvu.mp4'
 		),
 		'uvvv'=>array(
@@ -6577,9 +5783,6 @@ class aliases {
 			'application/x-virtual-boy-rom',
 			'text/x-vbasic',
 			'text/x-vbdotnet'
-		),
-		'vbk'=>array(
-			'audio/vnd.nortel.vbk'
 		),
 		'vbs'=>array(
 			'text/x-vbasic',
@@ -6622,9 +5825,6 @@ class aliases {
 			'image/x-icb',
 			'image/x-tga'
 		),
-		'vfr'=>array(
-			'application/vnd.tml'
-		),
 		'vhd'=>array(
 			'text/plain',
 			'text/x-vhdl'
@@ -6633,11 +5833,7 @@ class aliases {
 			'text/plain',
 			'text/x-vhdl'
 		),
-		'viaframe'=>array(
-			'application/vnd.tml'
-		),
 		'vis'=>array(
-			'application/vnd.informix-visionary',
 			'application/vnd.visionary'
 		),
 		'viv'=>array(
@@ -6663,9 +5859,6 @@ class aliases {
 		'vmdk'=>array(
 			'application/x-vmdk'
 		),
-		'vmt'=>array(
-			'application/vnd.valve.source.material'
-		),
 		'vob'=>array(
 			'video/mpeg',
 			'video/mpeg-system',
@@ -6685,9 +5878,6 @@ class aliases {
 		'vox'=>array(
 			'application/x-authorware-bin'
 		),
-		'vpm'=>array(
-			'multipart/voice-message'
-		),
 		'vrm'=>array(
 			'model/vrml',
 			'text/plain'
@@ -6695,10 +5885,6 @@ class aliases {
 		'vrml'=>array(
 			'model/vrml',
 			'text/plain'
-		),
-		'vsc'=>array(
-			'application/vnd.vidsoft.vidconference',
-			'application/vnd.vividence.scriptfile'
 		),
 		'vsd'=>array(
 			'application/vnd.ms-visio',
@@ -6758,25 +5944,12 @@ class aliases {
 			'application/vnd.visio',
 			'application/x-ole-storage'
 		),
-		'vtf'=>array(
-			'image/vnd.valve.source.texture'
-		),
 		'vtt'=>array(
 			'text/plain',
 			'text/vtt'
 		),
 		'vtu'=>array(
 			'model/vnd.vtu'
-		),
-		'vwx'=>array(
-			'application/vnd.vectorworks'
-		),
-		'vxm'=>array(
-			'application/ccxml+xml',
-			'application/pls+xml',
-			'application/srgs+xml',
-			'application/ssml+xml',
-			'application/voicexml+xml'
 		),
 		'vxml'=>array(
 			'application/voicexml+xml'
@@ -6792,9 +5965,6 @@ class aliases {
 			'application/x-doom-wad',
 			'application/x-wii-wad'
 		),
-		'wadl'=>array(
-			'application/vnd.sun.wadl+xml'
-		),
 		'war'=>array(
 			'application/java-archive',
 			'application/x-tika-java-web-archive'
@@ -6803,7 +5973,6 @@ class aliases {
 			'application/warc'
 		),
 		'wav'=>array(
-			'audio/vnd.dts',
 			'audio/vnd.wave',
 			'audio/wav',
 			'audio/wave',
@@ -6830,14 +5999,12 @@ class aliases {
 			'application/x-quattropro'
 		),
 		'wbmp'=>array(
-			'image/vnd-wap-wbmp',
 			'image/vnd.wap.wbmp'
 		),
 		'wbs'=>array(
 			'application/vnd.criticaltools.wbs+xml'
 		),
 		'wbxml'=>array(
-			'application/vnd.wap-wbxml',
 			'application/vnd.wap.wbxml'
 		),
 		'wcm'=>array(
@@ -6871,15 +6038,8 @@ class aliases {
 		'wgt'=>array(
 			'application/widget'
 		),
-		'wif'=>array(
-			'application/watcherinfo+xml'
-		),
 		'wim'=>array(
 			'application/x-ms-wim'
-		),
-		'win'=>array(
-			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
 		),
 		'wk1'=>array(
 			'application/lotus123',
@@ -6926,9 +6086,6 @@ class aliases {
 			'audio/wma',
 			'audio/x-ms-wma',
 			'video/x-ms-asf'
-		),
-		'wmc'=>array(
-			'application/vnd.wmc'
 		),
 		'wmd'=>array(
 			'application/x-ms-wmd'
@@ -7039,9 +6196,7 @@ class aliases {
 			'application/x-wonderswan-rom'
 		),
 		'wsc'=>array(
-			'application/vnd.wfa.wsc',
-			'application/x-wonderswan-color-rom',
-			'message/vnd.wfa.wsc'
+			'application/x-wonderswan-color-rom'
 		),
 		'wsdd'=>array(
 			'text/plain'
@@ -7060,7 +6215,6 @@ class aliases {
 			'application/vnd.webturbo'
 		),
 		'wv'=>array(
-			'application/vnd.wv.csp+wbxml',
 			'audio/x-wavpack'
 		),
 		'wvc'=>array(
@@ -7089,15 +6243,13 @@ class aliases {
 			'model/x3d+xml'
 		),
 		'x3db'=>array(
-			'model/x3d+binary',
-			'model/x3d+fastinfoset'
+			'model/x3d+binary'
 		),
 		'x3dbz'=>array(
 			'model/x3d+binary'
 		),
 		'x3dv'=>array(
-			'model/x3d+vrml',
-			'model/x3d-vrml'
+			'model/x3d+vrml'
 		),
 		'x3dvz'=>array(
 			'model/x3d+vrml'
@@ -7109,12 +6261,6 @@ class aliases {
 			'image/x-dcraw',
 			'image/x-raw-sigma',
 			'image/x-sigma-x3f'
-		),
-		'x_b'=>array(
-			'model/vnd.parasolid.transmit-binary'
-		),
-		'x_t'=>array(
-			'model/vnd.parasolid.transmit-text'
 		),
 		'xac'=>array(
 			'application/x-gnucash'
@@ -7131,9 +6277,6 @@ class aliases {
 		),
 		'xargs'=>array(
 			'text/plain'
-		),
-		'xav'=>array(
-			'application/xcap-att+xml'
 		),
 		'xbap'=>array(
 			'application/x-ms-xbap'
@@ -7154,9 +6297,6 @@ class aliases {
 			'image/x-xbitmap',
 			'text/x-c'
 		),
-		'xca'=>array(
-			'application/xcap-caps+xml'
-		),
 		'xcat'=>array(
 			'text/plain'
 		),
@@ -7167,18 +6307,7 @@ class aliases {
 		'xconf'=>array(
 			'text/plain'
 		),
-		'xcs'=>array(
-			'application/calendar+xml'
-		),
-		'xct'=>array(
-			'application/vnd.fujixerox.docuworks.container'
-		),
-		'xdd'=>array(
-			'application/bacnet-xdd+zip'
-		),
 		'xdf'=>array(
-			'application/mrb-consumer+xml',
-			'application/mrb-publish+xml',
 			'application/xcap-diff+xml'
 		),
 		'xdgapp'=>array(
@@ -7200,18 +6329,11 @@ class aliases {
 		'xegrm'=>array(
 			'text/plain'
 		),
-		'xel'=>array(
-			'application/xcap-el+xml'
-		),
 		'xenc'=>array(
 			'application/xenc+xml'
 		),
 		'xer'=>array(
-			'application/patch-ops-error+xml',
-			'application/xcap-error+xml'
-		),
-		'xfd'=>array(
-			'application/vnd.xfdl'
+			'application/patch-ops-error+xml'
 		),
 		'xfdf'=>array(
 			'application/vnd.adobe.xfdf'
@@ -7226,11 +6348,7 @@ class aliases {
 			'application/xhtml+xml',
 			'application/xml'
 		),
-		'xhtm'=>array(
-			'application/vnd.pwg-xhtml-print+xml'
-		),
 		'xhtml'=>array(
-			'application/vnd.pwg-xhtml-print+xml',
 			'application/xhtml+xml',
 			'application/xml'
 		),
@@ -7284,9 +6402,6 @@ class aliases {
 		'xliff'=>array(
 			'application/x-xliff',
 			'application/xml'
-		),
-		'xlim'=>array(
-			'application/vnd.xmpie.xlim'
 		),
 		'xll'=>array(
 			'application/msexcel',
@@ -7356,8 +6471,6 @@ class aliases {
 		),
 		'xltx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml-template',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 			'application/zip'
 		),
@@ -7390,135 +6503,14 @@ class aliases {
 			'application/zip'
 		),
 		'xml'=>array(
-			'application/cea-2018+xml',
-			'application/conference-info+xml',
-			'application/cpl+xml',
-			'application/dialog-info+xml',
-			'application/dicom+xml',
-			'application/emergencycalldata.comment+xml',
-			'application/emergencycalldata.control+xml',
-			'application/emergencycalldata.deviceinfo+xml',
-			'application/emergencycalldata.providerinfo+xml',
-			'application/emergencycalldata.serviceinfo+xml',
-			'application/emergencycalldata.subscriberinfo+xml',
-			'application/emergencycalldata.veds+xml',
-			'application/epp+xml',
-			'application/load-control+xml',
-			'application/media-policy-dataset+xml',
-			'application/pidf-diff+xml',
-			'application/prs.xsf+xml',
-			'application/reginfo+xml',
-			'application/rfc+xml',
-			'application/simple-filter+xml',
-			'application/vnd.amundsen.maze+xml',
-			'application/vnd.avistar+xml',
-			'application/vnd.cyan.dean.root+xml',
-			'application/vnd.eprints.data+xml',
-			'application/vnd.etsi.pstn+xml',
-			'application/vnd.gov.sk.e-form+xml',
-			'application/vnd.gov.sk.xmldatacontainer+xml',
-			'application/vnd.informedcontrol.rms+xml',
-			'application/vnd.infotech.project+xml',
-			'application/vnd.iptc.g2.catalogitem+xml',
-			'application/vnd.iptc.g2.conceptitem+xml',
-			'application/vnd.iptc.g2.knowledgeitem+xml',
-			'application/vnd.iptc.g2.newsitem+xml',
-			'application/vnd.iptc.g2.newsmessage+xml',
-			'application/vnd.iptc.g2.packageitem+xml',
-			'application/vnd.iptc.g2.planningitem+xml',
-			'application/vnd.ms-office',
-			'application/vnd.oma.dd2+xml',
-			'application/vnd.openxmlformats-officedocument.custom-properties+xml',
-			'application/vnd.openxmlformats-officedocument.customxmlproperties+xml',
-			'application/vnd.openxmlformats-officedocument.drawing+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.chart+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.diagramcolors+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.diagramdata+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.diagramlayout+xml',
-			'application/vnd.openxmlformats-officedocument.drawingml.diagramstyle+xml',
-			'application/vnd.openxmlformats-officedocument.extended-properties+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.comments+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.presprops+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.slide+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.tags+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.template.main+xml',
-			'application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml',
-			'application/vnd.openxmlformats-officedocument.theme+xml',
-			'application/vnd.openxmlformats-officedocument.themeoverride+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml',
-			'application/vnd.openxmlformats-package.core-properties+xml',
-			'application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml',
-			'application/vnd.openxmlformats-package.relationships+xml',
-			'application/vnd.recordare.musicxml+xml',
-			'application/vnd.tmd.mediaflex.api+xml',
-			'application/vnd.yamaha.openscoreformat.osfpvg+xml',
-			'application/watcherinfo+xml',
 			'application/x-xml',
-			'application/xcon-conference-info+xml',
-			'application/xcon-conference-info-diff+xml',
-			'application/xenc+xml',
 			'application/xml',
-			'application/xml-external-parsed-entity',
-			'message/imdn+xml',
 			'text/plain',
-			'text/vnd.iptc.newsml',
-			'text/vnd.iptc.nitf',
-			'text/xml',
-			'text/xml-external-parsed-entity'
-		),
-		'xmls'=>array(
-			'application/dskpp+xml'
+			'text/xml'
 		),
 		'xmp'=>array(
 			'application/rdf+xml',
 			'application/xml'
-		),
-		'xns'=>array(
-			'application/xcap-ns+xml'
 		),
 		'xo'=>array(
 			'application/vnd.olpc-sugar'
@@ -7577,9 +6569,6 @@ class aliases {
 			'text/plain',
 			'text/xml'
 		),
-		'xsf'=>array(
-			'application/prs.xsf+xml'
-		),
 		'xsl'=>array(
 			'application/x-xml',
 			'application/xml',
@@ -7631,9 +6620,6 @@ class aliases {
 		'xyz'=>array(
 			'chemical/x-xyz'
 		),
-		'xyze'=>array(
-			'image/vnd.radiance'
-		),
 		'xz'=>array(
 			'application/x-xz'
 		),
@@ -7648,9 +6634,6 @@ class aliases {
 		),
 		'yin'=>array(
 			'application/yin+xml'
-		),
-		'yme'=>array(
-			'application/vnd.yaoweme'
 		),
 		'yml'=>array(
 			'application/x-yaml',
@@ -7692,15 +6675,7 @@ class aliases {
 		'zaz'=>array(
 			'application/vnd.zzazz.deck+xml'
 		),
-		'zfc'=>array(
-			'application/vnd.filmit.zfc'
-		),
-		'zfo'=>array(
-			'application/vnd.software602.filler.form-xml-zip'
-		),
 		'zip'=>array(
-			'application/vnd.easykaraoke.cdgdownload',
-			'application/vnd.gov.sk.e-form+zip',
 			'application/x-zip',
 			'application/x-zip-compressed',
 			'application/zip'
@@ -7716,9 +6691,6 @@ class aliases {
 		),
 		'zoo'=>array(
 			'application/x-zoo'
-		),
-		'zrp'=>array(
-			'application/vnd.rapid'
 		),
 		'zsav'=>array(
 			'application/x-spss-sav',
@@ -7740,9 +6712,6 @@ class aliases {
 		),
 		'669'=>array(
 			'audio/x-mod'
-		),
-		'19051'=>array(
-			'application/vnd.ieee.1905'
 		)
 	);
 }

@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-10-14 11:25:58.
+ * Built: 2017-10-19 10:37:11.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -64,15 +64,6 @@ namespace blobfolio\mimes;
 class data {
 	// Extensions by MIME type.
 	const BY_MIME = array(
-		'application/a2l'=>array(
-			'mime'=>'application/a2l',
-			'ext'=>array(
-				'a2l'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/acad'=>array(
 			'mime'=>'application/acad',
 			'ext'=>array(
@@ -89,15 +80,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/aml'=>array(
-			'mime'=>'application/aml',
-			'ext'=>array(
-				'aml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/andrew-inset'=>array(
@@ -132,31 +114,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/atf'=>array(
-			'mime'=>'application/atf',
-			'ext'=>array(
-				'atf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/atfx'=>array(
-			'mime'=>'application/atfx',
-			'ext'=>array(
-				'atfx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/atom+xml'=>array(
 			'mime'=>'application/atom+xml',
 			'ext'=>array(
 				'atom'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -169,18 +132,8 @@ class data {
 				'atomcat'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/atomdeleted+xml'=>array(
-			'mime'=>'application/atomdeleted+xml',
-			'ext'=>array(
-				'atomdeleted'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/atomsvc+xml'=>array(
@@ -189,27 +142,8 @@ class data {
 				'atomsvc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/atxml'=>array(
-			'mime'=>'application/atxml',
-			'ext'=>array(
-				'atxml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/auth-policy+xml'=>array(
-			'mime'=>'application/auth-policy+xml',
-			'ext'=>array(
-				'apxml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/autocaddwg'=>array(
@@ -219,15 +153,6 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
-			)
-		),
-		'application/bacnet-xdd+zip'=>array(
-			'mime'=>'application/bacnet-xdd+zip',
-			'ext'=>array(
-				'xdd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/bat'=>array(
@@ -258,62 +183,23 @@ class data {
 				'Tika'
 			)
 		),
-		'application/calendar+xml'=>array(
-			'mime'=>'application/calendar+xml',
-			'ext'=>array(
-				'xcs'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/cbor'=>array(
 			'mime'=>'application/cbor',
 			'ext'=>array(
 				'cbor'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
-			)
-		),
-		'application/cccex'=>array(
-			'mime'=>'application/cccex',
-			'ext'=>array(
-				'c3ex'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/ccmp+xml'=>array(
-			'mime'=>'application/ccmp+xml',
-			'ext'=>array(
-				'ccmp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/ccxml+xml'=>array(
 			'mime'=>'application/ccxml+xml',
 			'ext'=>array(
-				'vxm',
 				'ccxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/cdfx+xml'=>array(
-			'mime'=>'application/cdfx+xml',
-			'ext'=>array(
-				'cdfx'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/cdmi-capability'=>array(
@@ -322,7 +208,6 @@ class data {
 				'cdmia'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -332,7 +217,6 @@ class data {
 				'cdmic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -342,7 +226,6 @@ class data {
 				'cdmid'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -352,7 +235,6 @@ class data {
 				'cdmio'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -362,7 +244,6 @@ class data {
 				'cdmiq'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -375,51 +256,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/cea'=>array(
-			'mime'=>'application/cea',
-			'ext'=>array(
-				'cea'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/cea-2018+xml'=>array(
-			'mime'=>'application/cea-2018+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/clueinfo+xml'=>array(
-			'mime'=>'application/clueinfo+xml',
-			'ext'=>array(
-				'clue'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/cms'=>array(
-			'mime'=>'application/cms',
-			'ext'=>array(
-				'cmsc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/conference-info+xml'=>array(
-			'mime'=>'application/conference-info+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/coreldraw'=>array(
 			'mime'=>'application/coreldraw',
 			'ext'=>array(
@@ -427,61 +263,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/cose'=>array(
-			'mime'=>'application/cose',
-			'ext'=>array(
-				'cbor'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/cose-key'=>array(
-			'mime'=>'application/cose-key',
-			'ext'=>array(
-				'cbor'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/cose-key-set'=>array(
-			'mime'=>'application/cose-key-set',
-			'ext'=>array(
-				'cbor'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/cpl+xml'=>array(
-			'mime'=>'application/cpl+xml',
-			'ext'=>array(
-				'cpl',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/csrattrs'=>array(
-			'mime'=>'application/csrattrs',
-			'ext'=>array(
-				'csrattrs'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/csvm+json'=>array(
-			'mime'=>'application/csvm+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/cu-seeme'=>array(
@@ -494,31 +275,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/dash+xml'=>array(
-			'mime'=>'application/dash+xml',
-			'ext'=>array(
-				'mpd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/dashdelta'=>array(
-			'mime'=>'application/dashdelta',
-			'ext'=>array(
-				'mpdd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/davmount+xml'=>array(
 			'mime'=>'application/davmount+xml',
 			'ext'=>array(
 				'davmount'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -541,24 +303,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/dcd'=>array(
-			'mime'=>'application/dcd',
-			'ext'=>array(
-				'dcd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/dialog-info+xml'=>array(
-			'mime'=>'application/dialog-info+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/dicom'=>array(
 			'mime'=>'application/dicom',
 			'ext'=>array(
@@ -569,24 +313,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/dicom+json'=>array(
-			'mime'=>'application/dicom+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/dicom+xml'=>array(
-			'mime'=>'application/dicom+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/dif+xml'=>array(
 			'mime'=>'application/dif+xml',
 			'ext'=>array(
@@ -594,24 +320,6 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
-			)
-		),
-		'application/dii'=>array(
-			'mime'=>'application/dii',
-			'ext'=>array(
-				'dii'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/dit'=>array(
-			'mime'=>'application/dit',
-			'ext'=>array(
-				'dit'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/dita+xml'=>array(
@@ -652,15 +360,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/dns'=>array(
-			'mime'=>'application/dns',
-			'ext'=>array(
-				'unknown'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/docbook+xml'=>array(
 			'mime'=>'application/docbook+xml',
 			'ext'=>array(
@@ -672,22 +371,12 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/dskpp+xml'=>array(
-			'mime'=>'application/dskpp+xml',
-			'ext'=>array(
-				'xmls'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/dssc+der'=>array(
 			'mime'=>'application/dssc+der',
 			'ext'=>array(
 				'dssc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -697,17 +386,7 @@ class data {
 				'xdssc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/dvcs'=>array(
-			'mime'=>'application/dvcs',
-			'ext'=>array(
-				'dvc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/dwg'=>array(
@@ -722,80 +401,16 @@ class data {
 		'application/ecmascript'=>array(
 			'mime'=>'application/ecmascript',
 			'ext'=>array(
-				'es',
 				'ecma',
+				'es',
 				'js',
 				'jsm',
 				'mjs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/emergencycalldata.comment+xml'=>array(
-			'mime'=>'application/emergencycalldata.comment+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.control+xml'=>array(
-			'mime'=>'application/emergencycalldata.control+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.deviceinfo+xml'=>array(
-			'mime'=>'application/emergencycalldata.deviceinfo+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.providerinfo+xml'=>array(
-			'mime'=>'application/emergencycalldata.providerinfo+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.serviceinfo+xml'=>array(
-			'mime'=>'application/emergencycalldata.serviceinfo+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.subscriberinfo+xml'=>array(
-			'mime'=>'application/emergencycalldata.subscriberinfo+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/emergencycalldata.veds+xml'=>array(
-			'mime'=>'application/emergencycalldata.veds+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/emf'=>array(
@@ -815,24 +430,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/emotionml+xml'=>array(
-			'mime'=>'application/emotionml+xml',
-			'ext'=>array(
-				'emotionml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/epp+xml'=>array(
-			'mime'=>'application/epp+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/epub+zip'=>array(
@@ -856,15 +453,6 @@ class data {
 				'Apache'
 			)
 		),
-		'application/fastinfoset'=>array(
-			'mime'=>'application/fastinfoset',
-			'ext'=>array(
-				'finf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/fits'=>array(
 			'mime'=>'application/fits',
 			'ext'=>array(
@@ -873,7 +461,6 @@ class data {
 				'fits'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			)
 		),
@@ -883,7 +470,6 @@ class data {
 				'pfr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -894,7 +480,6 @@ class data {
 				'woff'
 			),
 			'source'=>array(
-				'IANA',
 				'Nginx',
 				'freedesktop.org'
 			)
@@ -912,11 +497,9 @@ class data {
 		'application/geo+json'=>array(
 			'mime'=>'application/geo+json',
 			'ext'=>array(
-				'geojson',
-				'json'
+				'geojson'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -977,7 +560,6 @@ class data {
 				'emz'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -1000,15 +582,6 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
-			)
-		),
-		'application/held+xml'=>array(
-			'mime'=>'application/held+xml',
-			'ext'=>array(
-				'heldxml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/hyperstudio'=>array(
@@ -1066,17 +639,7 @@ class data {
 				'ipfix'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/its+xml'=>array(
-			'mime'=>'application/its+xml',
-			'ext'=>array(
-				'its'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/java'=>array(
@@ -1091,9 +654,9 @@ class data {
 		'application/java-archive'=>array(
 			'mime'=>'application/java-archive',
 			'ext'=>array(
-				'ear',
-				'war',
 				'jar',
+				'war',
+				'ear',
 				'apk'
 			),
 			'source'=>array(
@@ -1142,20 +705,10 @@ class data {
 				'json'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/jf2feed+json'=>array(
-			'mime'=>'application/jf2feed+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/jrd+json'=>array(
@@ -1164,7 +717,6 @@ class data {
 				'jrd'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -1179,7 +731,6 @@ class data {
 				'geojson'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -1192,7 +743,6 @@ class data {
 				'json-patch'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -1211,26 +761,7 @@ class data {
 				'jsonld'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
-			)
-		),
-		'application/lgr+xml'=>array(
-			'mime'=>'application/lgr+xml',
-			'ext'=>array(
-				'lgr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/load-control+xml'=>array(
-			'mime'=>'application/load-control+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/lost+xml'=>array(
@@ -1239,18 +770,8 @@ class data {
 				'lostxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/lostsync+xml'=>array(
-			'mime'=>'application/lostsync+xml',
-			'ext'=>array(
-				'lostsyncxml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/lotus123'=>array(
@@ -1264,15 +785,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/lxf'=>array(
-			'mime'=>'application/lxf',
-			'ext'=>array(
-				'lxf'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/m3u'=>array(
@@ -1322,7 +834,6 @@ class data {
 				'mads'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -1332,7 +843,6 @@ class data {
 				'mrc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -1343,19 +853,17 @@ class data {
 				'mrcx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
 		'application/mathematica'=>array(
 			'mime'=>'application/mathematica',
 			'ext'=>array(
-				'nb',
 				'ma',
+				'nb',
 				'mb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -1402,16 +910,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/media-policy-dataset+xml'=>array(
-			'mime'=>'application/media-policy-dataset+xml',
-			'ext'=>array(
-				'mpf',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/mediaservercontrol+xml'=>array(
 			'mime'=>'application/mediaservercontrol+xml',
 			'ext'=>array(
@@ -1438,7 +936,6 @@ class data {
 				'meta4'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			)
@@ -1449,26 +946,7 @@ class data {
 				'mets'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/mf4'=>array(
-			'mime'=>'application/mf4',
-			'ext'=>array(
-				'mf4'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/mmt-usd+xml'=>array(
-			'mime'=>'application/mmt-usd+xml',
-			'ext'=>array(
-				'musd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/mods+xml'=>array(
@@ -1477,7 +955,6 @@ class data {
 				'mods'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -1499,24 +976,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/mrb-consumer+xml'=>array(
-			'mime'=>'application/mrb-consumer+xml',
-			'ext'=>array(
-				'xdf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/mrb-publish+xml'=>array(
-			'mime'=>'application/mrb-publish+xml',
-			'ext'=>array(
-				'xdf'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/ms-tnef'=>array(
@@ -1606,7 +1065,6 @@ class data {
 				'mxf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -1621,50 +1079,32 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/ocsp-request'=>array(
-			'mime'=>'application/ocsp-request',
-			'ext'=>array(
-				'orq'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/ocsp-response'=>array(
-			'mime'=>'application/ocsp-response',
-			'ext'=>array(
-				'ors'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/octet-stream'=>array(
 			'mime'=>'application/octet-stream',
 			'ext'=>array(
 				'bin',
-				'lrf',
-				'mar',
-				'so',
-				'bpk',
-				'dump',
-				'elc',
-				'deploy',
-				'msp',
 				'img',
-				'iso',
-				'lzh',
-				'lha',
 				'msm',
-				'msi',
-				'exe',
-				'dmg',
-				'deb',
-				'dll',
 				'dms',
+				'deploy',
+				'elc',
+				'dump',
+				'bpk',
 				'pkg',
 				'distz',
 				'dist',
+				'so',
+				'mar',
+				'lrf',
+				'msp',
+				'lzh',
+				'lha',
+				'exe',
+				'msi',
+				'iso',
+				'dmg',
+				'deb',
+				'dll',
 				'explain'
 			),
 			'source'=>array(
@@ -1686,22 +1126,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/odx'=>array(
-			'mime'=>'application/odx',
-			'ext'=>array(
-				'odx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/oebps-package+xml'=>array(
 			'mime'=>'application/oebps-package+xml',
 			'ext'=>array(
 				'opf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -1716,7 +1146,6 @@ class data {
 				'ogv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -1789,19 +1218,9 @@ class data {
 				'xps'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/p2p-overlay+xml'=>array(
-			'mime'=>'application/p2p-overlay+xml',
-			'ext'=>array(
-				'relo'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/patch-ops-error+xml'=>array(
@@ -1810,7 +1229,6 @@ class data {
 				'xer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -1833,20 +1251,10 @@ class data {
 				'wwf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/pdx'=>array(
-			'mime'=>'application/pdx',
-			'ext'=>array(
-				'pdx'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/pgp'=>array(
@@ -1896,7 +1304,6 @@ class data {
 				'gpg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -1922,22 +1329,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/pidf-diff+xml'=>array(
-			'mime'=>'application/pidf-diff+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/pkcs10'=>array(
 			'mime'=>'application/pkcs10',
 			'ext'=>array(
 				'p10'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -1950,7 +1347,6 @@ class data {
 				'pfx'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -1983,7 +1379,6 @@ class data {
 				'p8'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			)
@@ -1994,7 +1389,6 @@ class data {
 				'ac'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2004,7 +1398,6 @@ class data {
 				'cer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -2016,7 +1409,6 @@ class data {
 				'crl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -2028,7 +1420,6 @@ class data {
 				'pkipath'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -2056,11 +1447,9 @@ class data {
 		'application/pls+xml'=>array(
 			'mime'=>'application/pls+xml',
 			'ext'=>array(
-				'pls',
-				'vxm'
+				'pls'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2096,63 +1485,14 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/provenance+xml'=>array(
-			'mime'=>'application/provenance+xml',
-			'ext'=>array(
-				'provx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/prs.cww'=>array(
 			'mime'=>'application/prs.cww',
 			'ext'=>array(
-				'cw',
 				'cww'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/prs.hpub+zip'=>array(
-			'mime'=>'application/prs.hpub+zip',
-			'ext'=>array(
-				'hpub'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/prs.nprend'=>array(
-			'mime'=>'application/prs.nprend',
-			'ext'=>array(
-				'rnd',
-				'rct'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/prs.rdf-xml-crypt'=>array(
-			'mime'=>'application/prs.rdf-xml-crypt',
-			'ext'=>array(
-				'rdf-crypt'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/prs.xsf+xml'=>array(
-			'mime'=>'application/prs.xsf+xml',
-			'ext'=>array(
-				'xsf',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/pskc+xml'=>array(
@@ -2161,7 +1501,6 @@ class data {
 				'pskcxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2200,13 +1539,12 @@ class data {
 		'application/rdf+xml'=>array(
 			'mime'=>'application/rdf+xml',
 			'ext'=>array(
-				'rdf',
-				'rdfs',
 				'owl',
-				'xmp'
+				'rdfs',
+				'xmp',
+				'rdf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -2215,11 +1553,9 @@ class data {
 		'application/reginfo+xml'=>array(
 			'mime'=>'application/reginfo+xml',
 			'ext'=>array(
-				'rif',
-				'xml'
+				'rif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2230,7 +1566,6 @@ class data {
 				'rnc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -2242,7 +1577,6 @@ class data {
 				'rl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2253,18 +1587,8 @@ class data {
 				'rld'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/rfc+xml'=>array(
-			'mime'=>'application/rfc+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/rls-services+xml'=>array(
@@ -2273,36 +1597,8 @@ class data {
 				'rs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/route-apd+xml'=>array(
-			'mime'=>'application/route-apd+xml',
-			'ext'=>array(
-				'rapd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/route-s-tsid+xml'=>array(
-			'mime'=>'application/route-s-tsid+xml',
-			'ext'=>array(
-				'sls'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/route-usd+xml'=>array(
-			'mime'=>'application/route-usd+xml',
-			'ext'=>array(
-				'rusd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/rpki-ghostbusters'=>array(
@@ -2311,7 +1607,6 @@ class data {
 				'gbr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2321,7 +1616,6 @@ class data {
 				'mft'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2331,7 +1625,6 @@ class data {
 				'roa'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2363,7 +1656,6 @@ class data {
 				'rtf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -2386,7 +1678,6 @@ class data {
 				'scq'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2397,7 +1688,6 @@ class data {
 				'scs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2408,7 +1698,6 @@ class data {
 				'spq'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2419,7 +1708,6 @@ class data {
 				'spp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2470,7 +1758,6 @@ class data {
 				'shf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2482,16 +1769,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/simple-filter+xml'=>array(
-			'mime'=>'application/simple-filter+xml',
-			'ext'=>array(
-				'cl',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/sldworks'=>array(
@@ -2514,7 +1791,6 @@ class data {
 				'kino'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -2522,10 +1798,10 @@ class data {
 		'application/smil+xml'=>array(
 			'mime'=>'application/smil+xml',
 			'ext'=>array(
-				'kino',
 				'smi',
 				'smil',
-				'sml'
+				'sml',
+				'kino'
 			),
 			'source'=>array(
 				'Apache',
@@ -2559,7 +1835,6 @@ class data {
 				'sql'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -2576,11 +1851,9 @@ class data {
 		'application/srgs+xml'=>array(
 			'mime'=>'application/srgs+xml',
 			'ext'=>array(
-				'grxml',
-				'vxm'
+				'grxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2591,7 +1864,6 @@ class data {
 				'sru'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2607,11 +1879,9 @@ class data {
 		'application/ssml+xml'=>array(
 			'mime'=>'application/ssml+xml',
 			'ext'=>array(
-				'ssml',
-				'vxm'
+				'ssml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2623,105 +1893,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/tamp-apex-update'=>array(
-			'mime'=>'application/tamp-apex-update',
-			'ext'=>array(
-				'tau'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-apex-update-confirm'=>array(
-			'mime'=>'application/tamp-apex-update-confirm',
-			'ext'=>array(
-				'auc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-community-update'=>array(
-			'mime'=>'application/tamp-community-update',
-			'ext'=>array(
-				'tcu'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-community-update-confirm'=>array(
-			'mime'=>'application/tamp-community-update-confirm',
-			'ext'=>array(
-				'cuc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-error'=>array(
-			'mime'=>'application/tamp-error',
-			'ext'=>array(
-				'ter'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-sequence-adjust'=>array(
-			'mime'=>'application/tamp-sequence-adjust',
-			'ext'=>array(
-				'tsa'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-sequence-adjust-confirm'=>array(
-			'mime'=>'application/tamp-sequence-adjust-confirm',
-			'ext'=>array(
-				'sac'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-status-query'=>array(
-			'mime'=>'application/tamp-status-query',
-			'ext'=>array(
-				'tsq'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-status-response'=>array(
-			'mime'=>'application/tamp-status-response',
-			'ext'=>array(
-				'tsr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-update'=>array(
-			'mime'=>'application/tamp-update',
-			'ext'=>array(
-				'tur'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/tamp-update-confirm'=>array(
-			'mime'=>'application/tamp-update-confirm',
-			'ext'=>array(
-				'tuc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/tei+xml'=>array(
@@ -2740,7 +1911,6 @@ class data {
 				'tfi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -2750,7 +1920,6 @@ class data {
 				'tsd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2761,71 +1930,7 @@ class data {
 				'trig'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
-			)
-		),
-		'application/ttml+xml'=>array(
-			'mime'=>'application/ttml+xml',
-			'ext'=>array(
-				'ttml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/urc-ressheet+xml'=>array(
-			'mime'=>'application/urc-ressheet+xml',
-			'ext'=>array(
-				'rsheet'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd-acucobol'=>array(
-			'mime'=>'application/vnd-acucobol',
-			'ext'=>array(
-				'acu'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd-curl'=>array(
-			'mime'=>'application/vnd-curl',
-			'ext'=>array(
-				'curl'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd-dart'=>array(
-			'mime'=>'application/vnd-dart',
-			'ext'=>array(
-				'dart'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd-dxr'=>array(
-			'mime'=>'application/vnd-dxr',
-			'ext'=>array(
-				'dxr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.1000minds.decision-model+xml'=>array(
-			'mime'=>'application/vnd.1000minds.decision-model+xml',
-			'ext'=>array(
-				'1km'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.3gpp.pic-bw-large'=>array(
@@ -2834,7 +1939,6 @@ class data {
 				'plb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2845,7 +1949,6 @@ class data {
 				'psb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2856,27 +1959,8 @@ class data {
 				'pvb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.3gpp.sms'=>array(
-			'mime'=>'application/vnd.3gpp.sms',
-			'ext'=>array(
-				'sms'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.3gpp2.sms'=>array(
-			'mime'=>'application/vnd.3gpp2.sms',
-			'ext'=>array(
-				'sms'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.3gpp2.tcap'=>array(
@@ -2885,18 +1969,8 @@ class data {
 				'tcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.3lightssoftware.imagescal'=>array(
-			'mime'=>'application/vnd.3lightssoftware.imagescal',
-			'ext'=>array(
-				'imgcal'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.3m.post-it-notes'=>array(
@@ -2915,7 +1989,6 @@ class data {
 				'aso'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2926,7 +1999,6 @@ class data {
 				'imp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2948,7 +2020,6 @@ class data {
 				'acutc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -2997,7 +2068,6 @@ class data {
 				'fcdt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3008,7 +2078,6 @@ class data {
 				'fxpl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3027,7 +2096,6 @@ class data {
 				'xdp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3038,7 +2106,6 @@ class data {
 				'xfdf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3049,7 +2116,6 @@ class data {
 				'ahead'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3059,7 +2125,6 @@ class data {
 				'azf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3070,7 +2135,6 @@ class data {
 				'azs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3085,22 +2149,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.amazon.mobi8-ebook'=>array(
-			'mime'=>'application/vnd.amazon.mobi8-ebook',
-			'ext'=>array(
-				'azw3'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.americandynamics.acc'=>array(
 			'mime'=>'application/vnd.americandynamics.acc',
 			'ext'=>array(
 				'acc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3111,18 +2165,8 @@ class data {
 				'ami'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.amundsen.maze+xml'=>array(
-			'mime'=>'application/vnd.amundsen.maze+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.android.package-archive'=>array(
@@ -3136,22 +2180,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.anki'=>array(
-			'mime'=>'application/vnd.anki',
-			'ext'=>array(
-				'apkg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.anser-web-certificate-issue-initiation'=>array(
 			'mime'=>'application/vnd.anser-web-certificate-issue-initiation',
 			'ext'=>array(
 				'cii'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3172,18 +2206,8 @@ class data {
 				'atx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.api+json'=>array(
-			'mime'=>'application/vnd.api+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.appimage'=>array(
@@ -3198,13 +2222,9 @@ class data {
 		'application/vnd.apple.installer+xml'=>array(
 			'mime'=>'application/vnd.apple.installer+xml',
 			'ext'=>array(
-				'dist',
-				'distz',
-				'pkg',
 				'mpkg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3237,7 +2257,6 @@ class data {
 				'm3u'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org'
@@ -3267,7 +2286,6 @@ class data {
 				'swi'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			)
 		),
@@ -3277,7 +2295,6 @@ class data {
 				'swi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3287,7 +2304,6 @@ class data {
 				'iota'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3297,62 +2313,7 @@ class data {
 				'aep'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.autopackage'=>array(
-			'mime'=>'application/vnd.autopackage',
-			'ext'=>array(
-				'package'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.avalon+json'=>array(
-			'mime'=>'application/vnd.avalon+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.avistar+xml'=>array(
-			'mime'=>'application/vnd.avistar+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.balsamiq.bmml+xml'=>array(
-			'mime'=>'application/vnd.balsamiq.bmml+xml',
-			'ext'=>array(
-				'bmml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.balsamiq.bmpr'=>array(
-			'mime'=>'application/vnd.balsamiq.bmpr',
-			'ext'=>array(
-				'bmpr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.bekitzur-stech+json'=>array(
-			'mime'=>'application/vnd.bekitzur-stech+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.blueice.multipass'=>array(
@@ -3361,27 +2322,8 @@ class data {
 				'mpm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.bluetooth.ep.oob'=>array(
-			'mime'=>'application/vnd.bluetooth.ep.oob',
-			'ext'=>array(
-				'ep'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.bluetooth.le.oob'=>array(
-			'mime'=>'application/vnd.bluetooth.le.oob',
-			'ext'=>array(
-				'le'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.bmi'=>array(
@@ -3390,7 +2332,6 @@ class data {
 				'bmi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3401,27 +2342,8 @@ class data {
 				'rep'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.capasystems-pg+json'=>array(
-			'mime'=>'application/vnd.capasystems-pg+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.cendio.thinlinc.clientconf'=>array(
-			'mime'=>'application/vnd.cendio.thinlinc.clientconf',
-			'ext'=>array(
-				'tlclient'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.chemdraw+xml'=>array(
@@ -3430,7 +2352,6 @@ class data {
 				'cdxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3441,7 +2362,6 @@ class data {
 				'pgn'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -3451,7 +2371,6 @@ class data {
 				'mmd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3462,18 +2381,8 @@ class data {
 				'cdy'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.citationstyles.style+xml'=>array(
-			'mime'=>'application/vnd.citationstyles.style+xml',
-			'ext'=>array(
-				'csl'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.claymore'=>array(
@@ -3482,7 +2391,6 @@ class data {
 				'cla'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3493,7 +2401,6 @@ class data {
 				'rp9'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3507,7 +2414,6 @@ class data {
 				'c4u'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3518,7 +2424,6 @@ class data {
 				'c11amc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3528,7 +2433,6 @@ class data {
 				'c11amz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3538,35 +2442,7 @@ class data {
 				'coffee'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
-			)
-		),
-		'application/vnd.collection+json'=>array(
-			'mime'=>'application/vnd.collection+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.collection.doc+json'=>array(
-			'mime'=>'application/vnd.collection.doc+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.collection.next+json'=>array(
-			'mime'=>'application/vnd.collection.next+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.comicbook+zip'=>array(
@@ -3575,31 +2451,15 @@ class data {
 				'cbz'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
-			)
-		),
-		'application/vnd.commerce-battelle'=>array(
-			'mime'=>'application/vnd.commerce-battelle',
-			'ext'=>array(
-				'ica',
-				'icf',
-				'icd',
-				'ic',
-				'icc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.commonspace'=>array(
 			'mime'=>'application/vnd.commonspace',
 			'ext'=>array(
-				'csp',
-				'cst'
+				'csp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3610,7 +2470,6 @@ class data {
 				'cdbcmsg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3624,23 +2483,12 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/vnd.coreos.ignition+json'=>array(
-			'mime'=>'application/vnd.coreos.ignition+json',
-			'ext'=>array(
-				'ign',
-				'ignition'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.cosmocaller'=>array(
 			'mime'=>'application/vnd.cosmocaller',
 			'ext'=>array(
 				'cmc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3651,7 +2499,6 @@ class data {
 				'clkx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3662,7 +2509,6 @@ class data {
 				'clkk'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3673,7 +2519,6 @@ class data {
 				'clkp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3684,7 +2529,6 @@ class data {
 				'clkt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3695,7 +2539,6 @@ class data {
 				'clkw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3706,7 +2549,6 @@ class data {
 				'wbs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3717,7 +2559,6 @@ class data {
 				'pml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3725,11 +2566,9 @@ class data {
 		'application/vnd.cups-ppd'=>array(
 			'mime'=>'application/vnd.cups-ppd',
 			'ext'=>array(
-				'ppd',
-				'ppdgz'
+				'ppd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3754,15 +2593,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.cyan.dean.root+xml'=>array(
-			'mime'=>'application/vnd.cyan.dean.root+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.dart'=>array(
 			'mime'=>'application/vnd.dart',
 			'ext'=>array(
@@ -3778,27 +2608,8 @@ class data {
 				'rdz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.datapackage+json'=>array(
-			'mime'=>'application/vnd.datapackage+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.dataresource+json'=>array(
-			'mime'=>'application/vnd.dataresource+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.debian.binary-package'=>array(
@@ -3808,7 +2619,6 @@ class data {
 				'udeb'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -3822,7 +2632,6 @@ class data {
 				'uvvd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3833,7 +2642,6 @@ class data {
 				'uvvt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3844,7 +2652,6 @@ class data {
 				'uvvx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -3864,7 +2671,6 @@ class data {
 				'fe_launch'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -3875,18 +2681,8 @@ class data {
 				'dna'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.document+json'=>array(
-			'mime'=>'application/vnd.document+json',
-			'ext'=>array(
-				'docjson'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.dolby.mlp'=>array(
@@ -3897,15 +2693,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.doremir.scorecloud-binary-document'=>array(
-			'mime'=>'application/vnd.doremir.scorecloud-binary-document',
-			'ext'=>array(
-				'scld'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.dpgraph'=>array(
@@ -3924,18 +2711,8 @@ class data {
 				'dfac'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.drive+json'=>array(
-			'mime'=>'application/vnd.drive+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ds-keypoint'=>array(
@@ -3947,50 +2724,13 @@ class data {
 				'Apache'
 			)
 		),
-		'application/vnd.dtg.local-html'=>array(
-			'mime'=>'application/vnd.dtg.local-html',
-			'ext'=>array(
-				'html'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.dtg.local.flash'=>array(
-			'mime'=>'application/vnd.dtg.local.flash',
-			'ext'=>array(
-				'fla'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.dvb.ait'=>array(
 			'mime'=>'application/vnd.dvb.ait',
 			'ext'=>array(
 				'ait'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.dvb.dvbj'=>array(
-			'mime'=>'application/vnd.dvb.dvbj',
-			'ext'=>array(
-				'class'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.dvb.pfr'=>array(
-			'mime'=>'application/vnd.dvb.pfr',
-			'ext'=>array(
-				'pfr'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.dvb.service'=>array(
@@ -4002,42 +2742,14 @@ class data {
 				'Apache'
 			)
 		),
-		'application/vnd.dvbservice'=>array(
-			'mime'=>'application/vnd.dvbservice',
-			'ext'=>array(
-				'svc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.dynageo'=>array(
 			'mime'=>'application/vnd.dynageo',
 			'ext'=>array(
 				'geo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.dzr'=>array(
-			'mime'=>'application/vnd.dzr',
-			'ext'=>array(
-				'dzr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.easykaraoke.cdgdownload'=>array(
-			'mime'=>'application/vnd.easykaraoke.cdgdownload',
-			'ext'=>array(
-				'zip'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ecowin.chart'=>array(
@@ -4046,7 +2758,6 @@ class data {
 				'mag'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4066,18 +2777,8 @@ class data {
 				'nml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.eprints.data+xml'=>array(
-			'mime'=>'application/vnd.eprints.data+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.epson.esf'=>array(
@@ -4086,7 +2787,6 @@ class data {
 				'esf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4097,7 +2797,6 @@ class data {
 				'msf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4108,7 +2807,6 @@ class data {
 				'qam'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4119,7 +2817,6 @@ class data {
 				'slt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4130,28 +2827,8 @@ class data {
 				'ssf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.ericsson.quickcall'=>array(
-			'mime'=>'application/vnd.ericsson.quickcall',
-			'ext'=>array(
-				'qcall',
-				'qca'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.espass-espass+zip'=>array(
-			'mime'=>'application/vnd.espass-espass+zip',
-			'ext'=>array(
-				'espass'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.eszigno3+xml'=>array(
@@ -4161,7 +2838,6 @@ class data {
 				'et3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4169,68 +2845,19 @@ class data {
 		'application/vnd.etsi.asic-e+zip'=>array(
 			'mime'=>'application/vnd.etsi.asic-e+zip',
 			'ext'=>array(
-				'asice',
-				'sce'
+				'asice'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			)
 		),
 		'application/vnd.etsi.asic-s+zip'=>array(
 			'mime'=>'application/vnd.etsi.asic-s+zip',
 			'ext'=>array(
-				'asics',
-				'scs'
+				'asics'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
-			)
-		),
-		'application/vnd.etsi.pstn+xml'=>array(
-			'mime'=>'application/vnd.etsi.pstn+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.etsi.timestamp-token'=>array(
-			'mime'=>'application/vnd.etsi.timestamp-token',
-			'ext'=>array(
-				'tst'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.evolv.ecig.profile'=>array(
-			'mime'=>'application/vnd.evolv.ecig.profile',
-			'ext'=>array(
-				'ecigprofile'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.evolv.ecig.settings'=>array(
-			'mime'=>'application/vnd.evolv.ecig.settings',
-			'ext'=>array(
-				'ecig'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.evolv.ecig.theme'=>array(
-			'mime'=>'application/vnd.evolv.ecig.theme',
-			'ext'=>array(
-				'ecigtheme'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ezpix-album'=>array(
@@ -4239,7 +2866,6 @@ class data {
 				'ez2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4250,18 +2876,8 @@ class data {
 				'ez3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.fastcopy-disk-image'=>array(
-			'mime'=>'application/vnd.fastcopy-disk-image',
-			'ext'=>array(
-				'dim'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.fdf'=>array(
@@ -4277,13 +2893,9 @@ class data {
 		'application/vnd.fdsn.mseed'=>array(
 			'mime'=>'application/vnd.fdsn.mseed',
 			'ext'=>array(
-				'msd',
-				'mseed',
-				'seed',
-				'dataless'
+				'mseed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4295,18 +2907,8 @@ class data {
 				'dataless'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.filmit.zfc'=>array(
-			'mime'=>'application/vnd.filmit.zfc',
-			'ext'=>array(
-				'zfc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.flatpak'=>array(
@@ -4343,7 +2945,6 @@ class data {
 				'gph'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4354,18 +2955,8 @@ class data {
 				'ftc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.font-fontforge-sfd'=>array(
-			'mime'=>'application/vnd.font-fontforge-sfd',
-			'ext'=>array(
-				'sfd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.framemaker'=>array(
@@ -4388,7 +2979,6 @@ class data {
 				'fnc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4399,7 +2989,6 @@ class data {
 				'ltf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4410,7 +2999,6 @@ class data {
 				'fsc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4421,7 +3009,6 @@ class data {
 				'oas'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4432,7 +3019,6 @@ class data {
 				'oa2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4443,7 +3029,6 @@ class data {
 				'oa3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4454,7 +3039,6 @@ class data {
 				'fg5'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4465,7 +3049,6 @@ class data {
 				'bh2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4476,7 +3059,6 @@ class data {
 				'ddd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4487,7 +3069,6 @@ class data {
 				'xdw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4498,18 +3079,8 @@ class data {
 				'xbd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.fujixerox.docuworks.container'=>array(
-			'mime'=>'application/vnd.fujixerox.docuworks.container',
-			'ext'=>array(
-				'xct'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.fuzzysheet'=>array(
@@ -4518,7 +3089,6 @@ class data {
 				'fzs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4529,7 +3099,6 @@ class data {
 				'txd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4537,21 +3106,10 @@ class data {
 		'application/vnd.geo+json'=>array(
 			'mime'=>'application/vnd.geo+json',
 			'ext'=>array(
-				'json',
 				'geojson'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
-			)
-		),
-		'application/vnd.geocube+xml'=>array(
-			'mime'=>'application/vnd.geocube+xml',
-			'ext'=>array(
-				'g3'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.geogebra.file'=>array(
@@ -4560,7 +3118,6 @@ class data {
 				'ggb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4571,7 +3128,6 @@ class data {
 				'ggt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4583,7 +3139,6 @@ class data {
 				'gre'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4594,7 +3149,6 @@ class data {
 				'gxt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -4604,7 +3158,6 @@ class data {
 				'g2w'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -4614,17 +3167,7 @@ class data {
 				'g3w'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.gerber'=>array(
-			'mime'=>'application/vnd.gerber',
-			'ext'=>array(
-				'gbr'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.gmx'=>array(
@@ -4633,7 +3176,6 @@ class data {
 				'gmx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4644,7 +3186,6 @@ class data {
 				'kml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -4657,38 +3198,10 @@ class data {
 				'kmz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.gov.sk.e-form+xml'=>array(
-			'mime'=>'application/vnd.gov.sk.e-form+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.gov.sk.e-form+zip'=>array(
-			'mime'=>'application/vnd.gov.sk.e-form+zip',
-			'ext'=>array(
-				'zip'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.gov.sk.xmldatacontainer+xml'=>array(
-			'mime'=>'application/vnd.gov.sk.xmldatacontainer+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.grafeq'=>array(
@@ -4708,7 +3221,6 @@ class data {
 				'gac'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4719,7 +3231,6 @@ class data {
 				'ghf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4730,7 +3241,6 @@ class data {
 				'gim'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4741,7 +3251,6 @@ class data {
 				'grv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4752,7 +3261,6 @@ class data {
 				'gtm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4763,7 +3271,6 @@ class data {
 				'tpl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4774,7 +3281,6 @@ class data {
 				'vcg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4797,22 +3303,12 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'application/vnd.hal+json'=>array(
-			'mime'=>'application/vnd.hal+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.hal+xml'=>array(
 			'mime'=>'application/vnd.hal+xml',
 			'ext'=>array(
 				'hal'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -4822,7 +3318,6 @@ class data {
 				'zmm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4837,49 +3332,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.hc+json'=>array(
-			'mime'=>'application/vnd.hc+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.hcl-bireports'=>array(
-			'mime'=>'application/vnd.hcl-bireports',
-			'ext'=>array(
-				'rep'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.hdt'=>array(
-			'mime'=>'application/vnd.hdt',
-			'ext'=>array(
-				'hdt'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.heroku+json'=>array(
-			'mime'=>'application/vnd.heroku+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.hhe.lesson-player'=>array(
 			'mime'=>'application/vnd.hhe.lesson-player',
 			'ext'=>array(
 				'les'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4898,11 +3356,9 @@ class data {
 		'application/vnd.hp-hpid'=>array(
 			'mime'=>'application/vnd.hp-hpid',
 			'ext'=>array(
-				'hpi',
 				'hpid'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4913,7 +3369,6 @@ class data {
 				'hps'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4924,7 +3379,6 @@ class data {
 				'jlt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -4956,27 +3410,8 @@ class data {
 				'sfd-hdstx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.hyper-item+json'=>array(
-			'mime'=>'application/vnd.hyper-item+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.hyperdrive+json'=>array(
-			'mime'=>'application/vnd.hyperdrive+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.hzn-3d-crossword'=>array(
@@ -4985,17 +3420,7 @@ class data {
 				'x3d'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
-			)
-		),
-		'application/vnd.ibm.electronic-media'=>array(
-			'mime'=>'application/vnd.ibm.electronic-media',
-			'ext'=>array(
-				'emm'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ibm.minipay'=>array(
@@ -5004,7 +3429,6 @@ class data {
 				'mpy'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5012,13 +3436,11 @@ class data {
 		'application/vnd.ibm.modcap'=>array(
 			'mime'=>'application/vnd.ibm.modcap',
 			'ext'=>array(
-				'list3820',
-				'listafp',
 				'afp',
-				'pseg3820'
+				'listafp',
+				'list3820'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5029,7 +3451,6 @@ class data {
 				'irm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5040,7 +3461,6 @@ class data {
 				'sc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5052,19 +3472,9 @@ class data {
 				'icm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.ieee.1905'=>array(
-			'mime'=>'application/vnd.ieee.1905',
-			'ext'=>array(
-				'19051'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.igloader'=>array(
@@ -5073,27 +3483,8 @@ class data {
 				'igl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.imagemeter.folder+zip'=>array(
-			'mime'=>'application/vnd.imagemeter.folder+zip',
-			'ext'=>array(
-				'imf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.imagemeter.image+zip'=>array(
-			'mime'=>'application/vnd.imagemeter.image+zip',
-			'ext'=>array(
-				'imi'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.immervision-ivp'=>array(
@@ -5102,7 +3493,6 @@ class data {
 				'ivp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5113,123 +3503,8 @@ class data {
 				'ivu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.ims.imsccv1p2'=>array(
-			'mime'=>'application/vnd.ims.imsccv1p2',
-			'ext'=>array(
-				'imscc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.imsccv1p3'=>array(
-			'mime'=>'application/vnd.ims.imsccv1p3',
-			'ext'=>array(
-				'imscc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lis.v2.result+json'=>array(
-			'mime'=>'application/vnd.ims.lis.v2.result+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lti.v2.toolconsumerprofile+json'=>array(
-			'mime'=>'application/vnd.ims.lti.v2.toolconsumerprofile+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lti.v2.toolproxy+json'=>array(
-			'mime'=>'application/vnd.ims.lti.v2.toolproxy+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lti.v2.toolproxy.id+json'=>array(
-			'mime'=>'application/vnd.ims.lti.v2.toolproxy.id+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lti.v2.toolsettings+json'=>array(
-			'mime'=>'application/vnd.ims.lti.v2.toolsettings+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.ims.lti.v2.toolsettings.simple+json'=>array(
-			'mime'=>'application/vnd.ims.lti.v2.toolsettings.simple+json',
-			'ext'=>array(
-				'jsonld',
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.informedcontrol.rms+xml'=>array(
-			'mime'=>'application/vnd.informedcontrol.rms+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.informix-visionary'=>array(
-			'mime'=>'application/vnd.informix-visionary',
-			'ext'=>array(
-				'vis'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.infotech.project'=>array(
-			'mime'=>'application/vnd.infotech.project',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.infotech.project+xml'=>array(
-			'mime'=>'application/vnd.infotech.project+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.insors.igm'=>array(
@@ -5238,7 +3513,6 @@ class data {
 				'igm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -5259,7 +3533,6 @@ class data {
 				'i2g'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -5269,7 +3542,6 @@ class data {
 				'qbo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5280,72 +3552,8 @@ class data {
 				'qfx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.iptc.g2.catalogitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.catalogitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.conceptitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.conceptitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.knowledgeitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.knowledgeitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.newsitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.newsitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.newsmessage+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.newsmessage+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.packageitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.packageitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.iptc.g2.planningitem+xml'=>array(
-			'mime'=>'application/vnd.iptc.g2.planningitem+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ipunplugged.rcprofile'=>array(
@@ -5354,7 +3562,6 @@ class data {
 				'rcprofile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5365,7 +3572,6 @@ class data {
 				'irp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5376,7 +3582,6 @@ class data {
 				'xpr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5387,7 +3592,6 @@ class data {
 				'fcs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -5397,7 +3601,6 @@ class data {
 				'jam'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5408,7 +3611,6 @@ class data {
 				'rms'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5419,7 +3621,6 @@ class data {
 				'jisp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5430,7 +3631,6 @@ class data {
 				'joda'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5442,7 +3642,6 @@ class data {
 				'ktr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5535,7 +3734,6 @@ class data {
 				'htke'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5546,7 +3744,6 @@ class data {
 				'kia'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5555,11 +3752,9 @@ class data {
 			'mime'=>'application/vnd.kinar',
 			'ext'=>array(
 				'kne',
-				'knp',
-				'sdf'
+				'knp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5583,18 +3778,8 @@ class data {
 				'sse'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.las.las+json'=>array(
-			'mime'=>'application/vnd.las.las+json',
-			'ext'=>array(
-				'lasjson'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.las.las+xml'=>array(
@@ -5603,7 +3788,6 @@ class data {
 				'lasxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -5613,7 +3797,6 @@ class data {
 				'lbd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5624,7 +3807,6 @@ class data {
 				'lbe'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5639,7 +3821,6 @@ class data {
 				'wks'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -5651,7 +3832,6 @@ class data {
 				'apr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5659,11 +3839,9 @@ class data {
 		'application/vnd.lotus-freelance'=>array(
 			'mime'=>'application/vnd.lotus-freelance',
 			'ext'=>array(
-				'prz',
 				'pre'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5674,7 +3852,6 @@ class data {
 				'nsf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5682,11 +3859,9 @@ class data {
 		'application/vnd.lotus-organizer'=>array(
 			'mime'=>'application/vnd.lotus-organizer',
 			'ext'=>array(
-				'org',
-				'or3'
+				'org'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5697,7 +3872,6 @@ class data {
 				'scm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -5707,7 +3881,6 @@ class data {
 				'lwp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -5719,45 +3892,8 @@ class data {
 				'portpkg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.mapbox-vector-tile'=>array(
-			'mime'=>'application/vnd.mapbox-vector-tile',
-			'ext'=>array(
-				'mvt'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.marlin.drm.mdcf'=>array(
-			'mime'=>'application/vnd.marlin.drm.mdcf',
-			'ext'=>array(
-				'mdc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.mason+json'=>array(
-			'mime'=>'application/vnd.mason+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.maxmind.maxmind-db'=>array(
-			'mime'=>'application/vnd.maxmind.maxmind-db',
-			'ext'=>array(
-				'mmdb'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.mcd'=>array(
@@ -5766,7 +3902,6 @@ class data {
 				'mcd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5777,7 +3912,6 @@ class data {
 				'mc1'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5788,7 +3922,6 @@ class data {
 				'cdkey'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5799,7 +3932,6 @@ class data {
 				'mwf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5810,27 +3942,8 @@ class data {
 				'mfm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.micro+json'=>array(
-			'mime'=>'application/vnd.micro+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.micrografx-igx'=>array(
-			'mime'=>'application/vnd.micrografx-igx',
-			'ext'=>array(
-				'igx'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.micrografx.flo'=>array(
@@ -5839,7 +3952,6 @@ class data {
 				'flo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5852,15 +3964,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.miele+json'=>array(
-			'mime'=>'application/vnd.miele+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.mif'=>array(
@@ -5887,22 +3990,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.mitsubishi.misty-guard.trustweb'=>array(
-			'mime'=>'application/vnd.mitsubishi.misty-guard.trustweb',
-			'ext'=>array(
-				'any'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.mobius.daf'=>array(
 			'mime'=>'application/vnd.mobius.daf',
 			'ext'=>array(
 				'daf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5913,7 +4006,6 @@ class data {
 				'dis'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5924,7 +4016,6 @@ class data {
 				'mbk'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5935,7 +4026,6 @@ class data {
 				'mqy'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5946,7 +4036,6 @@ class data {
 				'msl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5957,7 +4046,6 @@ class data {
 				'plc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5968,7 +4056,6 @@ class data {
 				'txf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -5999,19 +4086,9 @@ class data {
 				'xul'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.ms-3mfdocument'=>array(
-			'mime'=>'application/vnd.ms-3mfdocument',
-			'ext'=>array(
-				'3mf'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ms-access'=>array(
@@ -6042,7 +4119,6 @@ class data {
 				'wmv'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -6054,7 +4130,6 @@ class data {
 				'onepkg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6086,7 +4161,6 @@ class data {
 				'xlam'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6098,7 +4172,6 @@ class data {
 				'xlsb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6110,7 +4183,6 @@ class data {
 				'xlsm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6122,7 +4194,6 @@ class data {
 				'xltm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6134,7 +4205,6 @@ class data {
 				'eot'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'Tika'
@@ -6146,7 +4216,6 @@ class data {
 				'chm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6158,7 +4227,6 @@ class data {
 				'ims'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6176,42 +4244,41 @@ class data {
 		'application/vnd.ms-office'=>array(
 			'mime'=>'application/vnd.ms-office',
 			'ext'=>array(
-				'xlam',
-				'xlsx',
-				'xlc',
-				'xlt',
-				'xlw',
-				'ppt',
-				'pps',
-				'pot',
+				'xls',
 				'xll',
-				'xlm',
+				'ppsx',
+				'potx',
+				'xlsx',
+				'xltx',
+				'docx',
+				'dotx',
 				'xld',
+				'pptx',
 				'xlsm',
 				'ppz',
 				'doc',
 				'dot',
 				'ppa',
 				'thmx',
-				'xla',
-				'xls',
-				'xlsb',
-				'docm',
+				'sldx',
+				'dotm',
+				'xlm',
 				'xltm',
+				'xla',
+				'xlc',
+				'xlt',
+				'xlw',
+				'xlam',
+				'xlsb',
+				'ppt',
+				'docm',
+				'pps',
+				'pot',
 				'ppam',
 				'pptm',
 				'sldm',
 				'ppsm',
 				'potm',
-				'dotm',
-				'dotx',
-				'xml',
-				'pptx',
-				'sldx',
-				'ppsx',
-				'potx',
-				'xltx',
-				'docx',
 				'xlr'
 			),
 			'source'=>array(
@@ -6224,7 +4291,6 @@ class data {
 				'thmx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -6289,7 +4355,6 @@ class data {
 				'ppam'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6301,7 +4366,6 @@ class data {
 				'pptm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6313,7 +4377,6 @@ class data {
 				'sldm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6325,7 +4388,6 @@ class data {
 				'ppsm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6337,7 +4399,6 @@ class data {
 				'potm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6510,7 +4571,6 @@ class data {
 				'docm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6522,7 +4582,6 @@ class data {
 				'dotm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6561,19 +4620,9 @@ class data {
 				'oxps'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.msa-disk-image'=>array(
-			'mime'=>'application/vnd.msa-disk-image',
-			'ext'=>array(
-				'msa'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.msaccess'=>array(
@@ -6591,27 +4640,8 @@ class data {
 				'mseq'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.multiad.creator'=>array(
-			'mime'=>'application/vnd.multiad.creator',
-			'ext'=>array(
-				'crtr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.multiad.creator.cif'=>array(
-			'mime'=>'application/vnd.multiad.creator.cif',
-			'ext'=>array(
-				'cif'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.musician'=>array(
@@ -6630,7 +4660,6 @@ class data {
 				'msty'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6641,31 +4670,7 @@ class data {
 				'taglet'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.nearst.inv+json'=>array(
-			'mime'=>'application/vnd.nearst.inv+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.nervana'=>array(
-			'mime'=>'application/vnd.nervana',
-			'ext'=>array(
-				'entity',
-				'req',
-				'request',
-				'bkm',
-				'kcm',
-				'ent'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.neurolanguage.nlu'=>array(
@@ -6674,7 +4679,6 @@ class data {
 				'nlu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6705,7 +4709,6 @@ class data {
 				'nnd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6716,7 +4719,6 @@ class data {
 				'nns'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6727,18 +4729,8 @@ class data {
 				'nnw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.nokia.n-gage.ac+xml'=>array(
-			'mime'=>'application/vnd.nokia.n-gage.ac+xml',
-			'ext'=>array(
-				'ac'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.nokia.n-gage.data'=>array(
@@ -6747,7 +4739,6 @@ class data {
 				'ngdat'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6758,7 +4749,6 @@ class data {
 				'n-gage'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6769,7 +4759,6 @@ class data {
 				'rpst'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6780,7 +4769,6 @@ class data {
 				'rpss'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6791,7 +4779,6 @@ class data {
 				'edm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6802,7 +4789,6 @@ class data {
 				'edx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6813,7 +4799,6 @@ class data {
 				'ext'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6843,7 +4828,6 @@ class data {
 				'odc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6855,7 +4839,6 @@ class data {
 				'otc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6867,7 +4850,6 @@ class data {
 				'odb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6879,7 +4861,6 @@ class data {
 				'odf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6892,7 +4873,6 @@ class data {
 				'otf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6904,7 +4884,6 @@ class data {
 				'odg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -6926,7 +4905,6 @@ class data {
 				'otg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6938,7 +4916,6 @@ class data {
 				'odi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6950,7 +4927,6 @@ class data {
 				'oti'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -6961,7 +4937,6 @@ class data {
 				'odp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -6983,7 +4958,6 @@ class data {
 				'otp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -6995,7 +4969,6 @@ class data {
 				'ods'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -7017,7 +4990,6 @@ class data {
 				'ots'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -7029,7 +5001,6 @@ class data {
 				'odt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -7052,7 +5023,6 @@ class data {
 				'otm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -7064,7 +5034,6 @@ class data {
 				'ott'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -7076,19 +5045,9 @@ class data {
 				'oth'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.oftn.l10n+json'=>array(
-			'mime'=>'application/vnd.oftn.l10n+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.olpc-sugar'=>array(
@@ -7097,7 +5056,6 @@ class data {
 				'xo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -7105,94 +5063,11 @@ class data {
 		'application/vnd.oma.dd2+xml'=>array(
 			'mime'=>'application/vnd.oma.dd2+xml',
 			'ext'=>array(
-				'dd2',
-				'xml'
+				'dd2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.onepager'=>array(
-			'mime'=>'application/vnd.onepager',
-			'ext'=>array(
-				'tam'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.onepagertamp'=>array(
-			'mime'=>'application/vnd.onepagertamp',
-			'ext'=>array(
-				'tamp'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.onepagertamx'=>array(
-			'mime'=>'application/vnd.onepagertamx',
-			'ext'=>array(
-				'tamx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.onepagertat'=>array(
-			'mime'=>'application/vnd.onepagertat',
-			'ext'=>array(
-				'tat'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.onepagertatp'=>array(
-			'mime'=>'application/vnd.onepagertatp',
-			'ext'=>array(
-				'tatp'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.onepagertatx'=>array(
-			'mime'=>'application/vnd.onepagertatx',
-			'ext'=>array(
-				'tatx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openblox.game+xml'=>array(
-			'mime'=>'application/vnd.openblox.game+xml',
-			'ext'=>array(
-				'obgx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openblox.game-binary'=>array(
-			'mime'=>'application/vnd.openblox.game-binary',
-			'ext'=>array(
-				'obg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openeye.oeb'=>array(
-			'mime'=>'application/vnd.openeye.oeb',
-			'ext'=>array(
-				'oeb'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openofficeorg.extension'=>array(
@@ -7206,159 +5081,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.openstreetmap.data+xml'=>array(
-			'mime'=>'application/vnd.openstreetmap.data+xml',
-			'ext'=>array(
-				'osm'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.custom-properties+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.custom-properties+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.customxmlproperties+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.customxmlproperties+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawing+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawing+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.chart+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.chart+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.diagramcolors+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.diagramcolors+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.diagramdata+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.diagramdata+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.diagramlayout+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.diagramlayout+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.drawingml.diagramstyle+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.drawingml.diagramstyle+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.extended-properties+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.extended-properties+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml-template'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml-template',
-			'ext'=>array(
-				'potx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.comments+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.comments+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.openxmlformats-officedocument.presentationml.presentation'=>array(
 			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 			'ext'=>array(
@@ -7367,28 +5089,9 @@ class data {
 				'thmx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.presprops+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.presprops+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openxmlformats-officedocument.presentationml.slide'=>array(
@@ -7398,37 +5101,9 @@ class data {
 				'sldm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.slide+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.slide+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openxmlformats-officedocument.presentationml.slideshow'=>array(
@@ -7438,46 +5113,9 @@ class data {
 				'ppsm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.tags+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.tags+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openxmlformats-officedocument.presentationml.template'=>array(
@@ -7492,209 +5130,18 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.openxmlformats-officedocument.presentationml.template.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.template.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml-template'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml-template',
-			'ext'=>array(
-				'xltx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'=>array(
 			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'ext'=>array(
 				'xlsx',
-				'xltx',
 				'xlam',
 				'xlsb',
 				'xlsm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openxmlformats-officedocument.spreadsheetml.template'=>array(
@@ -7709,78 +5156,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.theme+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.theme+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.themeoverride+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.themeoverride+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml-template'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml-template',
-			'ext'=>array(
-				'dotx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.openxmlformats-officedocument.wordprocessingml.document'=>array(
 			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 			'ext'=>array(
@@ -7788,91 +5163,9 @@ class data {
 				'docm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.openxmlformats-officedocument.wordprocessingml.template'=>array(
@@ -7887,86 +5180,13 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-package.core-properties+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-package.core-properties+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.openxmlformats-package.relationships+xml'=>array(
-			'mime'=>'application/vnd.openxmlformats-package.relationships+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.oracle.resource+json'=>array(
-			'mime'=>'application/vnd.oracle.resource+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.osa.netdeploy'=>array(
-			'mime'=>'application/vnd.osa.netdeploy',
-			'ext'=>array(
-				'ndc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.osgeo.mapguide.package'=>array(
 			'mime'=>'application/vnd.osgeo.mapguide.package',
 			'ext'=>array(
 				'mgp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.osgi.bundle'=>array(
-			'mime'=>'application/vnd.osgi.bundle',
-			'ext'=>array(
-				'jar'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.osgi.dp'=>array(
@@ -7975,7 +5195,6 @@ class data {
 				'dp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -7986,43 +5205,23 @@ class data {
 				'esa'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.oxli.countgraph'=>array(
-			'mime'=>'application/vnd.oxli.countgraph',
-			'ext'=>array(
-				'oxlicg'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.palm'=>array(
 			'mime'=>'application/vnd.palm',
 			'ext'=>array(
-				'prc',
 				'pdb',
 				'pqa',
 				'oprc',
 				'pdc',
-				'mobi'
+				'mobi',
+				'prc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.panoply'=>array(
-			'mime'=>'application/vnd.panoply',
-			'ext'=>array(
-				'plp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.pawaafile'=>array(
@@ -8031,7 +5230,6 @@ class data {
 				'paw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -8041,7 +5239,6 @@ class data {
 				'str'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8052,18 +5249,8 @@ class data {
 				'ei6'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.piaccess.application-licence'=>array(
-			'mime'=>'application/vnd.piaccess.application-licence',
-			'ext'=>array(
-				'pil'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.picsel'=>array(
@@ -8072,7 +5259,6 @@ class data {
 				'efif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8083,7 +5269,6 @@ class data {
 				'wg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -8093,7 +5278,6 @@ class data {
 				'plf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8104,63 +5288,8 @@ class data {
 				'pbd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.powerbuilder6-s'=>array(
-			'mime'=>'application/vnd.powerbuilder6-s',
-			'ext'=>array(
-				'pbd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.powerbuilder7'=>array(
-			'mime'=>'application/vnd.powerbuilder7',
-			'ext'=>array(
-				'pbd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.powerbuilder7-s'=>array(
-			'mime'=>'application/vnd.powerbuilder7-s',
-			'ext'=>array(
-				'pbd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.powerbuilder75'=>array(
-			'mime'=>'application/vnd.powerbuilder75',
-			'ext'=>array(
-				'pbd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.powerbuilder75-s'=>array(
-			'mime'=>'application/vnd.powerbuilder75-s',
-			'ext'=>array(
-				'pbd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.preminet'=>array(
-			'mime'=>'application/vnd.preminet',
-			'ext'=>array(
-				'preminet'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.previewsystems.box'=>array(
@@ -8179,7 +5308,6 @@ class data {
 				'mgz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8190,7 +5318,6 @@ class data {
 				'qps'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8205,25 +5332,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.pwg-xhtml-print+xml'=>array(
-			'mime'=>'application/vnd.pwg-xhtml-print+xml',
-			'ext'=>array(
-				'xhtml',
-				'xhtm'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.qualcomm.brew-app-res'=>array(
-			'mime'=>'application/vnd.qualcomm.brew-app-res',
-			'ext'=>array(
-				'bar'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.quark.quarkxpress'=>array(
 			'mime'=>'application/vnd.quark.quarkxpress',
 			'ext'=>array(
@@ -8235,27 +5343,8 @@ class data {
 				'qxb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.rainstor.data'=>array(
-			'mime'=>'application/vnd.rainstor.data',
-			'ext'=>array(
-				'tree'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.rapid'=>array(
-			'mime'=>'application/vnd.rapid',
-			'ext'=>array(
-				'zrp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.rar'=>array(
@@ -8265,7 +5354,6 @@ class data {
 				'cbr'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -8275,7 +5363,6 @@ class data {
 				'bed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -8285,7 +5372,6 @@ class data {
 				'mxl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8293,11 +5379,9 @@ class data {
 		'application/vnd.recordare.musicxml+xml'=>array(
 			'mime'=>'application/vnd.recordare.musicxml+xml',
 			'ext'=>array(
-				'musicxml',
-				'xml'
+				'musicxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8308,7 +5392,6 @@ class data {
 				'cryptonote'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -8359,18 +5442,8 @@ class data {
 				'link66'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.rs-274x'=>array(
-			'mime'=>'application/vnd.rs-274x',
-			'ext'=>array(
-				'gbr'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.sailingtracker.track'=>array(
@@ -8379,21 +5452,7 @@ class data {
 				'st'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.scribus'=>array(
-			'mime'=>'application/vnd.scribus',
-			'ext'=>array(
-				'scd',
-				'scdgz',
-				'sla',
-				'slagz',
-				'slaz'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.sdp'=>array(
@@ -8403,108 +5462,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/vnd.sealed-doc'=>array(
-			'mime'=>'application/vnd.sealed-doc',
-			'ext'=>array(
-				'sdoc',
-				'sdo',
-				's1w'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed-eml'=>array(
-			'mime'=>'application/vnd.sealed-eml',
-			'ext'=>array(
-				'seml',
-				'sem'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed-mht'=>array(
-			'mime'=>'application/vnd.sealed-mht',
-			'ext'=>array(
-				'smht',
-				'smh'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed-ppt'=>array(
-			'mime'=>'application/vnd.sealed-ppt',
-			'ext'=>array(
-				'sppt',
-				's1p',
-				'spp'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed-tiff'=>array(
-			'mime'=>'application/vnd.sealed-tiff',
-			'ext'=>array(
-				'stif'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed-xls'=>array(
-			'mime'=>'application/vnd.sealed-xls',
-			'ext'=>array(
-				'sxls',
-				'sxl',
-				's1e'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed.3df'=>array(
-			'mime'=>'application/vnd.sealed.3df',
-			'ext'=>array(
-				's3df'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealed.csf'=>array(
-			'mime'=>'application/vnd.sealed.csf',
-			'ext'=>array(
-				'scsf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealedmedia.softseal-html'=>array(
-			'mime'=>'application/vnd.sealedmedia.softseal-html',
-			'ext'=>array(
-				'stml',
-				'stm',
-				's1h'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.sealedmedia.softseal-pdf'=>array(
-			'mime'=>'application/vnd.sealedmedia.softseal-pdf',
-			'ext'=>array(
-				'spdf',
-				'spd',
-				's1a'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.seemail'=>array(
@@ -8533,7 +5490,6 @@ class data {
 				'semd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8544,7 +5500,6 @@ class data {
 				'semf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8589,15 +5544,6 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.sigrok.session'=>array(
-			'mime'=>'application/vnd.sigrok.session',
-			'ext'=>array(
-				'sr'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.simtech-mindmapper'=>array(
 			'mime'=>'application/vnd.simtech-mindmapper',
 			'ext'=>array(
@@ -8605,18 +5551,8 @@ class data {
 				'twds'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.siren+json'=>array(
-			'mime'=>'application/vnd.siren+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.smaf'=>array(
@@ -8626,19 +5562,9 @@ class data {
 				'smaf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.smart.notebook'=>array(
-			'mime'=>'application/vnd.smart.notebook',
-			'ext'=>array(
-				'notebook'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.smart.teacher'=>array(
@@ -8647,7 +5573,6 @@ class data {
 				'teacher'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8659,24 +5584,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'application/vnd.software602.filler.form+xml'=>array(
-			'mime'=>'application/vnd.software602.filler.form+xml',
-			'ext'=>array(
-				'fo'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.software602.filler.form-xml-zip'=>array(
-			'mime'=>'application/vnd.software602.filler.form-xml-zip',
-			'ext'=>array(
-				'zfo'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.solent.sdkm+xml'=>array(
@@ -8696,7 +5603,6 @@ class data {
 				'dxp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8707,7 +5613,6 @@ class data {
 				'sfs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -8817,7 +5722,6 @@ class data {
 				'smzip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -8827,17 +5731,7 @@ class data {
 				'sm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/vnd.sun.wadl+xml'=>array(
-			'mime'=>'application/vnd.sun.wadl+xml',
-			'ext'=>array(
-				'wadl'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.sun.xml.base'=>array(
@@ -8998,7 +5892,6 @@ class data {
 				'xsm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9009,7 +5902,6 @@ class data {
 				'bdm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9020,36 +5912,8 @@ class data {
 				'xdm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.syncml.dmddf+wbxml'=>array(
-			'mime'=>'application/vnd.syncml.dmddf+wbxml',
-			'ext'=>array(
-				'ddf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.syncml.dmddf+xml'=>array(
-			'mime'=>'application/vnd.syncml.dmddf+xml',
-			'ext'=>array(
-				'ddf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.tableschema+json'=>array(
-			'mime'=>'application/vnd.tableschema+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.tao.intent-module-archive'=>array(
@@ -9058,7 +5922,6 @@ class data {
 				'tao'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9071,29 +5934,9 @@ class data {
 				'dmp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'application/vnd.tmd.mediaflex.api+xml'=>array(
-			'mime'=>'application/vnd.tmd.mediaflex.api+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.tml'=>array(
-			'mime'=>'application/vnd.tml',
-			'ext'=>array(
-				'vfr',
-				'viaframe'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.tmobile-livetv'=>array(
@@ -9102,7 +5945,6 @@ class data {
 				'tmo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9113,7 +5955,6 @@ class data {
 				'tpt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9124,7 +5965,6 @@ class data {
 				'mxs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9135,29 +5975,17 @@ class data {
 				'tra'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.ubisoft.webplayer'=>array(
-			'mime'=>'application/vnd.ubisoft.webplayer',
-			'ext'=>array(
-				'cab'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.ufdl'=>array(
 			'mime'=>'application/vnd.ufdl',
 			'ext'=>array(
-				'ufdl',
 				'ufd',
-				'frm'
+				'ufdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9168,7 +5996,6 @@ class data {
 				'utz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9179,7 +6006,6 @@ class data {
 				'umj'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9190,7 +6016,6 @@ class data {
 				'unityweb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9198,31 +6023,11 @@ class data {
 		'application/vnd.uoml+xml'=>array(
 			'mime'=>'application/vnd.uoml+xml',
 			'ext'=>array(
-				'uoml',
-				'uo'
+				'uoml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.uri-map'=>array(
-			'mime'=>'application/vnd.uri-map',
-			'ext'=>array(
-				'urim'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.valve.source.material'=>array(
-			'mime'=>'application/vnd.valve.source.material',
-			'ext'=>array(
-				'vmt'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.vcx'=>array(
@@ -9231,49 +6036,8 @@ class data {
 				'vcx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.vd-study'=>array(
-			'mime'=>'application/vnd.vd-study',
-			'ext'=>array(
-				'sxi',
-				'mxi',
-				'study-inter',
-				'model-inter'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.vectorworks'=>array(
-			'mime'=>'application/vnd.vectorworks',
-			'ext'=>array(
-				'vwx',
-				'mcd'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.vel+json'=>array(
-			'mime'=>'application/vnd.vel+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.vidsoft.vidconference'=>array(
-			'mime'=>'application/vnd.vidsoft.vidconference',
-			'ext'=>array(
-				'vsc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.visio'=>array(
@@ -9296,18 +6060,8 @@ class data {
 				'vis'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.vividence.scriptfile'=>array(
-			'mime'=>'application/vnd.vividence.scriptfile',
-			'ext'=>array(
-				'vsc'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.vsf'=>array(
@@ -9316,18 +6070,8 @@ class data {
 				'vsf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.wap-wbxml'=>array(
-			'mime'=>'application/vnd.wap-wbxml',
-			'ext'=>array(
-				'wbxml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.wap.wbxml'=>array(
@@ -9357,7 +6101,6 @@ class data {
 				'wmlsc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9372,49 +6115,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/vnd.wfa.p2p'=>array(
-			'mime'=>'application/vnd.wfa.p2p',
-			'ext'=>array(
-				'p2p'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.wfa.wsc'=>array(
-			'mime'=>'application/vnd.wfa.wsc',
-			'ext'=>array(
-				'wsc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.wmc'=>array(
-			'mime'=>'application/vnd.wmc',
-			'ext'=>array(
-				'wmc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.wolfram.mathematica'=>array(
-			'mime'=>'application/vnd.wolfram.mathematica',
-			'ext'=>array(
-				'nb'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.wolfram.player'=>array(
 			'mime'=>'application/vnd.wolfram.player',
 			'ext'=>array(
 				'nbp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -9432,7 +6138,6 @@ class data {
 				'wpt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -9454,27 +6159,8 @@ class data {
 				'stf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.wv.csp+wbxml'=>array(
-			'mime'=>'application/vnd.wv.csp+wbxml',
-			'ext'=>array(
-				'wv'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.xacml+json'=>array(
-			'mime'=>'application/vnd.xacml+json',
-			'ext'=>array(
-				'json'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.xara'=>array(
@@ -9483,7 +6169,6 @@ class data {
 				'xar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9501,59 +6186,11 @@ class data {
 		'application/vnd.xfdl'=>array(
 			'mime'=>'application/vnd.xfdl',
 			'ext'=>array(
-				'xfdl',
-				'xfd',
-				'frm'
+				'xfdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.xmpie.cpkg'=>array(
-			'mime'=>'application/vnd.xmpie.cpkg',
-			'ext'=>array(
-				'cpkg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.xmpie.dpkg'=>array(
-			'mime'=>'application/vnd.xmpie.dpkg',
-			'ext'=>array(
-				'dpkg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.xmpie.plan'=>array(
-			'mime'=>'application/vnd.xmpie.plan',
-			'ext'=>array(
-				'dpkg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.xmpie.ppkg'=>array(
-			'mime'=>'application/vnd.xmpie.ppkg',
-			'ext'=>array(
-				'ppkg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/vnd.xmpie.xlim'=>array(
-			'mime'=>'application/vnd.xmpie.xlim',
-			'ext'=>array(
-				'xlim'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.yamaha.hv-dic'=>array(
@@ -9562,7 +6199,6 @@ class data {
 				'hvd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9573,7 +6209,6 @@ class data {
 				'hvs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9584,7 +6219,6 @@ class data {
 				'hvp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9595,7 +6229,6 @@ class data {
 				'osf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9603,11 +6236,9 @@ class data {
 		'application/vnd.yamaha.openscoreformat.osfpvg+xml'=>array(
 			'mime'=>'application/vnd.yamaha.openscoreformat.osfpvg+xml',
 			'ext'=>array(
-				'osfpvg',
-				'xml'
+				'osfpvg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9618,7 +6249,6 @@ class data {
 				'saf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9629,18 +6259,8 @@ class data {
 				'spf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'application/vnd.yaoweme'=>array(
-			'mime'=>'application/vnd.yaoweme',
-			'ext'=>array(
-				'yme'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/vnd.yellowriver-custom-menu'=>array(
@@ -9649,7 +6269,6 @@ class data {
 				'cmp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9671,7 +6290,6 @@ class data {
 				'zaz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9679,11 +6297,9 @@ class data {
 		'application/voicexml+xml'=>array(
 			'mime'=>'application/voicexml+xml',
 			'ext'=>array(
-				'vxml',
-				'vxm'
+				'vxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9697,23 +6313,12 @@ class data {
 				'Tika'
 			)
 		),
-		'application/watcherinfo+xml'=>array(
-			'mime'=>'application/watcherinfo+xml',
-			'ext'=>array(
-				'wif',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/widget'=>array(
 			'mime'=>'application/widget',
 			'ext'=>array(
 				'wgt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -9770,7 +6375,6 @@ class data {
 				'wsdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -9781,7 +6385,6 @@ class data {
 				'wspolicy'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -10226,8 +6829,8 @@ class data {
 				'cbr',
 				'cba',
 				'cbt',
-				'cb7',
-				'cbz'
+				'cbz',
+				'cb7'
 			),
 			'source'=>array(
 				'Apache',
@@ -10573,13 +7176,13 @@ class data {
 			'ext'=>array(
 				'dir',
 				'dcr',
+				'dxr',
+				'cst',
 				'cct',
 				'cxt',
 				'w3d',
 				'fgd',
-				'swa',
-				'dxr',
-				'cst'
+				'swa'
 			),
 			'source'=>array(
 				'Apache',
@@ -11994,8 +8597,8 @@ class data {
 		'application/x-mobipocket-ebook'=>array(
 			'mime'=>'application/x-mobipocket-ebook',
 			'ext'=>array(
-				'mobi',
-				'prc'
+				'prc',
+				'mobi'
 			),
 			'source'=>array(
 				'Apache',
@@ -14197,87 +10800,21 @@ class data {
 				'Apache'
 			)
 		),
-		'application/xcap-att+xml'=>array(
-			'mime'=>'application/xcap-att+xml',
-			'ext'=>array(
-				'xav'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/xcap-caps+xml'=>array(
-			'mime'=>'application/xcap-caps+xml',
-			'ext'=>array(
-				'xca'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/xcap-diff+xml'=>array(
 			'mime'=>'application/xcap-diff+xml',
 			'ext'=>array(
 				'xdf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'application/xcap-el+xml'=>array(
-			'mime'=>'application/xcap-el+xml',
-			'ext'=>array(
-				'xel'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/xcap-error+xml'=>array(
-			'mime'=>'application/xcap-error+xml',
-			'ext'=>array(
-				'xer'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/xcap-ns+xml'=>array(
-			'mime'=>'application/xcap-ns+xml',
-			'ext'=>array(
-				'xns'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/xcon-conference-info+xml'=>array(
-			'mime'=>'application/xcon-conference-info+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/xcon-conference-info-diff+xml'=>array(
-			'mime'=>'application/xcon-conference-info-diff+xml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'application/xenc+xml'=>array(
 			'mime'=>'application/xenc+xml',
 			'ext'=>array(
-				'xenc',
-				'xml'
+				'xenc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -14285,8 +10822,8 @@ class data {
 		'application/xhtml+xml'=>array(
 			'mime'=>'application/xhtml+xml',
 			'ext'=>array(
-				'xht',
-				'xhtml'
+				'xhtml',
+				'xht'
 			),
 			'source'=>array(
 				'Apache',
@@ -14302,7 +10839,7 @@ class data {
 				'xsd',
 				'rng',
 				'xsl',
-				'xlam',
+				'xls',
 				'owl',
 				'opml',
 				'atom',
@@ -14321,16 +10858,16 @@ class data {
 				'wml',
 				'xslt',
 				'fo',
-				'xmp',
+				'dot',
 				'dif',
 				'ppj',
 				'svgz',
-				'xml',
 				'xlr',
 				'inx',
-				'dot',
-				'xslfo',
+				'xmp',
 				'iso19139',
+				'xslfo',
+				'xml',
 				'xul',
 				'gpx',
 				'kml',
@@ -14339,25 +10876,25 @@ class data {
 				'ts',
 				'ttx',
 				'glade',
-				'xlw',
+				'dotm',
 				'smil',
 				'siv',
 				'xspf',
 				'meta4',
 				'metalink',
 				'mml',
-				'xlt',
+				'docm',
 				'sml',
+				'xltm',
+				'xlsb',
+				'xlam',
+				'xlw',
+				'xlt',
 				'xlc',
 				'xla',
-				'xlm',
-				'xls',
-				'dotm',
-				'docm',
-				'xltm',
 				'smi',
 				'kino',
-				'xlsb',
+				'xlm',
 				'fods',
 				'shape',
 				'dia',
@@ -14379,7 +10916,6 @@ class data {
 			),
 			'source'=>array(
 				'Blobfolio',
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -14388,11 +10924,9 @@ class data {
 		'application/xml-dtd'=>array(
 			'mime'=>'application/xml-dtd',
 			'ext'=>array(
-				'dtd',
-				'mod'
+				'dtd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -14401,11 +10935,9 @@ class data {
 		'application/xml-external-parsed-entity'=>array(
 			'mime'=>'application/xml-external-parsed-entity',
 			'ext'=>array(
-				'ent',
-				'xml'
+				'ent'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -14415,7 +10947,6 @@ class data {
 				'xop'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -14482,7 +11013,6 @@ class data {
 				'xvm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -14493,7 +11023,6 @@ class data {
 				'yang'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -14503,7 +11032,6 @@ class data {
 				'yin'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -14780,11 +11308,9 @@ class data {
 		'audio/mobile-xmf'=>array(
 			'mime'=>'audio/mobile-xmf',
 			'ext'=>array(
-				'mxmf',
 				'xmf'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -14825,16 +11351,14 @@ class data {
 		'audio/mpeg'=>array(
 			'mime'=>'audio/mpeg',
 			'ext'=>array(
-				'mp1',
-				'mp2',
-				'mp3',
 				'mpga',
 				'mp2a',
 				'm2a',
-				'm3a'
+				'm3a',
+				'mp2',
+				'mp3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -14861,7 +11385,6 @@ class data {
 				'opus'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -14880,11 +11403,10 @@ class data {
 		'audio/prs.sid'=>array(
 			'mime'=>'audio/prs.sid',
 			'ext'=>array(
-				'sid',
-				'psid'
+				'psid',
+				'sid'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -14913,15 +11435,6 @@ class data {
 			),
 			'source'=>array(
 				'Apache'
-			)
-		),
-		'audio/sp-midi'=>array(
-			'mime'=>'audio/sp-midi',
-			'ext'=>array(
-				'mid'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/speex'=>array(
@@ -14971,15 +11484,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'audio/vnd.audiokoz'=>array(
-			'mime'=>'audio/vnd.audiokoz',
-			'ext'=>array(
-				'koz'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'audio/vnd.dece.audio'=>array(
 			'mime'=>'audio/vnd.dece.audio',
 			'ext'=>array(
@@ -14987,7 +11491,6 @@ class data {
 				'uvva'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -14997,18 +11500,8 @@ class data {
 				'eol'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'audio/vnd.dolby.mlp'=>array(
-			'mime'=>'audio/vnd.dolby.mlp',
-			'ext'=>array(
-				'mlp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/vnd.dra'=>array(
@@ -15024,12 +11517,9 @@ class data {
 			'mime'=>'audio/vnd.dts',
 			'ext'=>array(
 				'dts',
-				'wav',
-				'cpt',
 				'dtshd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -15041,28 +11531,9 @@ class data {
 				'dtshd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'audio/vnd.everad.plj'=>array(
-			'mime'=>'audio/vnd.everad.plj',
-			'ext'=>array(
-				'plj'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'audio/vnd.hns.audio'=>array(
-			'mime'=>'audio/vnd.hns.audio',
-			'ext'=>array(
-				'rm'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/vnd.lucent.voice'=>array(
@@ -15071,7 +11542,6 @@ class data {
 				'lvp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -15092,27 +11562,8 @@ class data {
 				'pya'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'audio/vnd.nokia.mobile-xmf'=>array(
-			'mime'=>'audio/vnd.nokia.mobile-xmf',
-			'ext'=>array(
-				'mxmf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'audio/vnd.nortel.vbk'=>array(
-			'mime'=>'audio/vnd.nortel.vbk',
-			'ext'=>array(
-				'vbk'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/vnd.nuera.ecelp4800'=>array(
@@ -15121,7 +11572,6 @@ class data {
 				'ecelp4800'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -15132,7 +11582,6 @@ class data {
 				'ecelp7470'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -15143,18 +11592,8 @@ class data {
 				'ecelp9600'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'audio/vnd.presonus.multitrack'=>array(
-			'mime'=>'audio/vnd.presonus.multitrack',
-			'ext'=>array(
-				'multitrack'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/vnd.rip'=>array(
@@ -15163,7 +11602,6 @@ class data {
 				'rip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -15175,17 +11613,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'audio/vnd.sealedmedia.softseal-mpeg'=>array(
-			'mime'=>'audio/vnd.sealedmedia.softseal-mpeg',
-			'ext'=>array(
-				'smp3',
-				'smp',
-				's1m'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'audio/vnd.wave'=>array(
@@ -15480,13 +11907,13 @@ class data {
 		'audio/x-mod'=>array(
 			'mime'=>'audio/x-mod',
 			'ext'=>array(
+				'mod',
 				'ult',
 				'uni',
 				'm15',
 				'mtm',
 				'669',
-				'med',
-				'mod'
+				'med'
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -15860,8 +12287,8 @@ class data {
 		'audio/x-wavpack'=>array(
 			'mime'=>'audio/x-wavpack',
 			'ext'=>array(
-				'wvp',
-				'wv'
+				'wv',
+				'wvp'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -16055,7 +12482,6 @@ class data {
 				'woff2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			)
@@ -16066,7 +12492,6 @@ class data {
 				'woff2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -16087,7 +12512,6 @@ class data {
 				'dib'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -16113,22 +12537,12 @@ class data {
 				'Tika'
 			)
 		),
-		'image/dicom-rle'=>array(
-			'mime'=>'image/dicom-rle',
-			'ext'=>array(
-				'drle'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'image/emf'=>array(
 			'mime'=>'image/emf',
 			'ext'=>array(
 				'emf'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -16148,7 +12562,6 @@ class data {
 				'fits'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -16212,15 +12625,6 @@ class data {
 				'Tika'
 			)
 		),
-		'image/jls'=>array(
-			'mime'=>'image/jls',
-			'ext'=>array(
-				'jls'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'image/jp2'=>array(
 			'mime'=>'image/jp2',
 			'ext'=>array(
@@ -16230,7 +12634,6 @@ class data {
 				'jpx'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika',
 				'Blobfolio'
@@ -16282,11 +12685,10 @@ class data {
 		'image/jpm'=>array(
 			'mime'=>'image/jpm',
 			'ext'=>array(
-				'jpm',
-				'jpgm'
+				'jpgm',
+				'jpm'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -16299,7 +12701,6 @@ class data {
 				'jp2'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika',
 				'Blobfolio'
@@ -16388,22 +12789,11 @@ class data {
 		'image/prs.btif'=>array(
 			'mime'=>'image/prs.btif',
 			'ext'=>array(
-				'btif',
-				'btf'
+				'btif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'image/prs.pti'=>array(
-			'mime'=>'image/prs.pti',
-			'ext'=>array(
-				'pti'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'image/psd'=>array(
@@ -16455,55 +12845,17 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'image/t38'=>array(
-			'mime'=>'image/t38',
-			'ext'=>array(
-				't38'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'image/tiff'=>array(
 			'mime'=>'image/tiff',
 			'ext'=>array(
-				'tif',
-				'tiff'
+				'tiff',
+				'tif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'image/tiff-fx'=>array(
-			'mime'=>'image/tiff-fx',
-			'ext'=>array(
-				'tfx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd-djvu'=>array(
-			'mime'=>'image/vnd-djvu',
-			'ext'=>array(
-				'djvu',
-				'djv'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd-wap-wbmp'=>array(
-			'mime'=>'image/vnd-wap-wbmp',
-			'ext'=>array(
-				'wbmp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'image/vnd.adobe.photoshop'=>array(
@@ -16512,7 +12864,6 @@ class data {
 				'psd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -16527,15 +12878,6 @@ class data {
 				'Tika'
 			)
 		),
-		'image/vnd.airzip.accelerator.azv'=>array(
-			'mime'=>'image/vnd.airzip.accelerator.azv',
-			'ext'=>array(
-				'azv'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'image/vnd.dece.graphic'=>array(
 			'mime'=>'image/vnd.dece.graphic',
 			'ext'=>array(
@@ -16545,7 +12887,6 @@ class data {
 				'uvvg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -16577,7 +12918,6 @@ class data {
 				'sub'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -16618,7 +12958,6 @@ class data {
 				'fbs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16629,7 +12968,6 @@ class data {
 				'fpx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16640,7 +12978,6 @@ class data {
 				'fst'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16651,7 +12988,6 @@ class data {
 				'mmr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16662,7 +12998,6 @@ class data {
 				'rlc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16673,19 +13008,8 @@ class data {
 				'ico'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'image/vnd.mozilla.apng'=>array(
-			'mime'=>'image/vnd.mozilla.apng',
-			'ext'=>array(
-				'apng',
-				'png'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'image/vnd.ms-modi'=>array(
@@ -16694,7 +13018,6 @@ class data {
 				'mdi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -16719,18 +13042,6 @@ class data {
 				'Tika'
 			)
 		),
-		'image/vnd.radiance'=>array(
-			'mime'=>'image/vnd.radiance',
-			'ext'=>array(
-				'pic',
-				'hdr',
-				'rgbe',
-				'xyze'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'image/vnd.rn-realpix'=>array(
 			'mime'=>'image/vnd.rn-realpix',
 			'ext'=>array(
@@ -16738,57 +13049,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'image/vnd.sealed-png'=>array(
-			'mime'=>'image/vnd.sealed-png',
-			'ext'=>array(
-				'spng',
-				'spn',
-				's1n'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd.sealedmedia.softseal-gif'=>array(
-			'mime'=>'image/vnd.sealedmedia.softseal-gif',
-			'ext'=>array(
-				'sgif',
-				'sgi',
-				's1g'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd.sealedmedia.softseal-jpg'=>array(
-			'mime'=>'image/vnd.sealedmedia.softseal-jpg',
-			'ext'=>array(
-				'sjpg',
-				'sjp',
-				's1j'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd.tencent.tap'=>array(
-			'mime'=>'image/vnd.tencent.tap',
-			'ext'=>array(
-				'tap'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'image/vnd.valve.source.texture'=>array(
-			'mime'=>'image/vnd.valve.source.texture',
-			'ext'=>array(
-				'vtf'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'image/vnd.wap.wbmp'=>array(
@@ -16809,7 +13069,6 @@ class data {
 				'xif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -16829,7 +13088,6 @@ class data {
 				'pcx'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -16852,7 +13110,6 @@ class data {
 				'wmf'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			)
@@ -17458,11 +13715,11 @@ class data {
 		'image/x-pict'=>array(
 			'mime'=>'image/x-pict',
 			'ext'=>array(
-				'pict',
+				'pic',
 				'pct',
+				'pict',
 				'pict1',
-				'pict2',
-				'pic'
+				'pict2'
 			),
 			'source'=>array(
 				'Apache',
@@ -17932,34 +14189,6 @@ class data {
 				'Tika'
 			)
 		),
-		'message/disposition-notification'=>array(
-			'mime'=>'message/disposition-notification',
-			'ext'=>array(
-				'disposition-notification'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'message/global-headers'=>array(
-			'mime'=>'message/global-headers',
-			'ext'=>array(
-				'the'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'message/imdn+xml'=>array(
-			'mime'=>'message/imdn+xml',
-			'ext'=>array(
-				'cl',
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'message/rfc822'=>array(
 			'mime'=>'message/rfc822',
 			'ext'=>array(
@@ -17974,15 +14203,6 @@ class data {
 				'Tika'
 			)
 		),
-		'message/vnd.wfa.wsc'=>array(
-			'mime'=>'message/vnd.wfa.wsc',
-			'ext'=>array(
-				'wsc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'message/x-emlx'=>array(
 			'mime'=>'message/x-emlx',
 			'ext'=>array(
@@ -17990,24 +14210,6 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
-			)
-		),
-		'model/3mf'=>array(
-			'mime'=>'model/3mf',
-			'ext'=>array(
-				'3mf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'model/gltf+json'=>array(
-			'mime'=>'model/gltf+json',
-			'ext'=>array(
-				'gltf'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'model/iges'=>array(
@@ -18034,22 +14236,12 @@ class data {
 				'Tika'
 			)
 		),
-		'model/vnd-dwf'=>array(
-			'mime'=>'model/vnd-dwf',
-			'ext'=>array(
-				'dwf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'model/vnd.collada+xml'=>array(
 			'mime'=>'model/vnd.collada+xml',
 			'ext'=>array(
 				'dae'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -18075,35 +14267,11 @@ class data {
 		'model/vnd.gdl'=>array(
 			'mime'=>'model/vnd.gdl',
 			'ext'=>array(
-				'gdl',
-				'gsm',
-				'win',
-				'dor',
-				'lmp',
-				'rsm',
-				'msm',
-				'ism'
+				'gdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'model/vnd.gs-gdl'=>array(
-			'mime'=>'model/vnd.gs-gdl',
-			'ext'=>array(
-				'gdl',
-				'gsm',
-				'win',
-				'dor',
-				'lmp',
-				'rsm',
-				'msm',
-				'ism'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'model/vnd.gtw'=>array(
@@ -18112,7 +14280,6 @@ class data {
 				'gtw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -18123,45 +14290,8 @@ class data {
 				'mts'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'model/vnd.opengex'=>array(
-			'mime'=>'model/vnd.opengex',
-			'ext'=>array(
-				'ogex'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'model/vnd.parasolid.transmit-binary'=>array(
-			'mime'=>'model/vnd.parasolid.transmit-binary',
-			'ext'=>array(
-				'x_b'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'model/vnd.parasolid.transmit-text'=>array(
-			'mime'=>'model/vnd.parasolid.transmit-text',
-			'ext'=>array(
-				'x_t'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'model/vnd.valve.source.compiled-map'=>array(
-			'mime'=>'model/vnd.valve.source.compiled-map',
-			'ext'=>array(
-				'bsp'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'model/vnd.vtu'=>array(
@@ -18170,7 +14300,6 @@ class data {
 				'vtu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -18209,27 +14338,18 @@ class data {
 		'model/x3d+binary'=>array(
 			'mime'=>'model/x3d+binary',
 			'ext'=>array(
-				'x3dbz',
-				'x3db'
+				'x3db',
+				'x3dbz'
 			),
 			'source'=>array(
 				'Apache'
 			)
 		),
-		'model/x3d+fastinfoset'=>array(
-			'mime'=>'model/x3d+fastinfoset',
-			'ext'=>array(
-				'x3db'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'model/x3d+vrml'=>array(
 			'mime'=>'model/x3d+vrml',
 			'ext'=>array(
-				'x3dvz',
-				'x3dv'
+				'x3dv',
+				'x3dvz'
 			),
 			'source'=>array(
 				'Apache'
@@ -18238,21 +14358,11 @@ class data {
 		'model/x3d+xml'=>array(
 			'mime'=>'model/x3d+xml',
 			'ext'=>array(
-				'x3dz',
-				'x3d'
+				'x3d',
+				'x3dz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'model/x3d-vrml'=>array(
-			'mime'=>'model/x3d-vrml',
-			'ext'=>array(
-				'x3dv'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'multipart/related'=>array(
@@ -18263,15 +14373,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'multipart/voice-message'=>array(
-			'mime'=>'multipart/voice-message',
-			'ext'=>array(
-				'vpm'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/asp'=>array(
@@ -18322,7 +14423,6 @@ class data {
 				'css'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -18335,7 +14435,6 @@ class data {
 				'csv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -18368,7 +14467,6 @@ class data {
 				'es'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -18394,9 +14492,9 @@ class data {
 		'text/html'=>array(
 			'mime'=>'text/html',
 			'ext'=>array(
-				'shtml',
+				'html',
 				'htm',
-				'html'
+				'shtml'
 			),
 			'source'=>array(
 				'Apache',
@@ -18431,29 +14529,18 @@ class data {
 				'mjs'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
-			)
-		),
-		'text/jcr-cnd'=>array(
-			'mime'=>'text/jcr-cnd',
-			'ext'=>array(
-				'cnd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/markdown'=>array(
 			'mime'=>'text/markdown',
 			'ext'=>array(
 				'md',
-				'markdown',
-				'mkd'
+				'mkd',
+				'markdown'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -18465,15 +14552,6 @@ class data {
 			'source'=>array(
 				'Nginx',
 				'freedesktop.org'
-			)
-		),
-		'text/mizar'=>array(
-			'mime'=>'text/mizar',
-			'ext'=>array(
-				'miz'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/n3'=>array(
@@ -18811,16 +14889,6 @@ class data {
 				'Tika'
 			)
 		),
-		'text/prs.fallenstein.rst'=>array(
-			'mime'=>'text/prs.fallenstein.rst',
-			'ext'=>array(
-				'rst',
-				'txt'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'text/prs.lines.tag'=>array(
 			'mime'=>'text/prs.lines.tag',
 			'ext'=>array(
@@ -18829,15 +14897,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
-			)
-		),
-		'text/prs.prop.logic'=>array(
-			'mime'=>'text/prs.prop.logic',
-			'ext'=>array(
-				'txt'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/rdf'=>array(
@@ -18953,12 +15012,11 @@ class data {
 		'text/uri-list'=>array(
 			'mime'=>'text/uri-list',
 			'ext'=>array(
-				'uris',
 				'uri',
+				'uris',
 				'urls'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -18974,24 +15032,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'freedesktop.org'
-			)
-		),
-		'text/vnd-curl'=>array(
-			'mime'=>'text/vnd-curl',
-			'ext'=>array(
-				'curl'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'text/vnd.ascii-art'=>array(
-			'mime'=>'text/vnd.ascii-art',
-			'ext'=>array(
-				'ascii'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/vnd.curl'=>array(
@@ -19034,32 +15074,13 @@ class data {
 				'Tika'
 			)
 		),
-		'text/vnd.dmclientscript'=>array(
-			'mime'=>'text/vnd.dmclientscript',
-			'ext'=>array(
-				'dms'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'text/vnd.dvb.subtitle'=>array(
 			'mime'=>'text/vnd.dvb.subtitle',
 			'ext'=>array(
 				'sub'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
-			)
-		),
-		'text/vnd.esmertec.theme-descriptor'=>array(
-			'mime'=>'text/vnd.esmertec.theme-descriptor',
-			'ext'=>array(
-				'jtd'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'text/vnd.fly'=>array(
@@ -19068,7 +15089,6 @@ class data {
 				'fly'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -19076,11 +15096,9 @@ class data {
 		'text/vnd.fmi.flexstor'=>array(
 			'mime'=>'text/vnd.fmi.flexstor',
 			'ext'=>array(
-				'generally',
 				'flx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -19110,11 +15128,9 @@ class data {
 		'text/vnd.in3d.spot'=>array(
 			'mime'=>'text/vnd.in3d.spot',
 			'ext'=>array(
-				'spot',
-				'spo'
+				'spot'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			)
@@ -19128,42 +15144,6 @@ class data {
 				'Tika'
 			)
 		),
-		'text/vnd.iptc.newsml'=>array(
-			'mime'=>'text/vnd.iptc.newsml',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'text/vnd.iptc.nitf'=>array(
-			'mime'=>'text/vnd.iptc.nitf',
-			'ext'=>array(
-				'xml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'text/vnd.ms-mediapackage'=>array(
-			'mime'=>'text/vnd.ms-mediapackage',
-			'ext'=>array(
-				'mpf'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'text/vnd.net2phone.commcenter.command'=>array(
-			'mime'=>'text/vnd.net2phone.commcenter.command',
-			'ext'=>array(
-				'ccc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'text/vnd.rn-realtext'=>array(
 			'mime'=>'text/vnd.rn-realtext',
 			'ext'=>array(
@@ -19173,22 +15153,12 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'text/vnd.si.uricatalogue'=>array(
-			'mime'=>'text/vnd.si.uricatalogue',
-			'ext'=>array(
-				'uric'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'text/vnd.sun.j2me.app-descriptor'=>array(
 			'mime'=>'text/vnd.sun.j2me.app-descriptor',
 			'ext'=>array(
 				'jad'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -19201,7 +15171,6 @@ class data {
 				'ts'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -19223,7 +15192,6 @@ class data {
 				'wmls'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -20224,8 +16192,8 @@ class data {
 			'mime'=>'text/x-rst',
 			'ext'=>array(
 				'rest',
-				'restx',
-				'rst'
+				'rst',
+				'restx'
 			),
 			'source'=>array(
 				'Tika'
@@ -20262,8 +16230,8 @@ class data {
 		'text/x-scheme'=>array(
 			'mime'=>'text/x-scheme',
 			'ext'=>array(
-				'ss',
-				'scm'
+				'scm',
+				'ss'
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -20520,8 +16488,8 @@ class data {
 		'text/x-vbasic'=>array(
 			'mime'=>'text/x-vbasic',
 			'ext'=>array(
-				'cls',
 				'frm',
+				'cls',
 				'vb',
 				'vbs'
 			),
@@ -20618,8 +16586,8 @@ class data {
 		'text/x-xslfo'=>array(
 			'mime'=>'text/x-xslfo',
 			'ext'=>array(
-				'xslfo',
-				'fo'
+				'fo',
+				'xslfo'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -20655,7 +16623,6 @@ class data {
 				'xsl'
 			),
 			'source'=>array(
-				'IANA',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
@@ -20664,11 +16631,9 @@ class data {
 		'text/xml-external-parsed-entity'=>array(
 			'mime'=>'text/xml-external-parsed-entity',
 			'ext'=>array(
-				'xml',
 				'ent'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -20832,15 +16797,6 @@ class data {
 				'Tika'
 			)
 		),
-		'video/iso.segment'=>array(
-			'mime'=>'video/iso.segment',
-			'ext'=>array(
-				'm4s'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'video/jpeg'=>array(
 			'mime'=>'video/jpeg',
 			'ext'=>array(
@@ -20877,6 +16833,7 @@ class data {
 		'video/mp2t'=>array(
 			'mime'=>'video/mp2t',
 			'ext'=>array(
+				'ts',
 				'm2t',
 				'm2ts',
 				'cpi',
@@ -20884,7 +16841,6 @@ class data {
 				'mpl',
 				'mpls',
 				'bdmv',
-				'ts',
 				'mts',
 				'bdm'
 			),
@@ -20896,10 +16852,10 @@ class data {
 		'video/mp4'=>array(
 			'mime'=>'video/mp4',
 			'ext'=>array(
+				'mp4',
 				'mp4v',
 				'mpg4',
 				'lrv',
-				'mp4',
 				'm4v',
 				'f4v',
 				'3gp',
@@ -20980,7 +16936,6 @@ class data {
 				'drc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -21015,26 +16970,6 @@ class data {
 				'freedesktop.org'
 			)
 		),
-		'video/vnd-mpegurl'=>array(
-			'mime'=>'video/vnd-mpegurl',
-			'ext'=>array(
-				'mxu',
-				'm4u'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.dece-mp4'=>array(
-			'mime'=>'video/vnd.dece-mp4',
-			'ext'=>array(
-				'uvu',
-				'uvvu'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'video/vnd.dece.hd'=>array(
 			'mime'=>'video/vnd.dece.hd',
 			'ext'=>array(
@@ -21042,7 +16977,6 @@ class data {
 				'uvvh'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -21053,7 +16987,6 @@ class data {
 				'uvvm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -21064,7 +16997,6 @@ class data {
 				'uvvp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -21075,7 +17007,6 @@ class data {
 				'uvvs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -21086,7 +17017,6 @@ class data {
 				'uvvv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			)
 		),
@@ -21116,26 +17046,16 @@ class data {
 				'fvt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'video/vnd.hns.video'=>array(
-			'mime'=>'video/vnd.hns.video',
-			'ext'=>array(
-				'rm'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'video/vnd.mpegurl'=>array(
 			'mime'=>'video/vnd.mpegurl',
 			'ext'=>array(
-				'm1u',
 				'mxu',
-				'm4u'
+				'm4u',
+				'm1u'
 			),
 			'source'=>array(
 				'Apache',
@@ -21149,27 +17069,8 @@ class data {
 				'pyv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			)
-		),
-		'video/vnd.nokia.interleaved-multimedia'=>array(
-			'mime'=>'video/vnd.nokia.interleaved-multimedia',
-			'ext'=>array(
-				'nim'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.objectvideo'=>array(
-			'mime'=>'video/vnd.objectvideo',
-			'ext'=>array(
-				'mp4'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'video/vnd.rn-realvideo'=>array(
@@ -21180,57 +17081,6 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
-			)
-		),
-		'video/vnd.sealed-swf'=>array(
-			'mime'=>'video/vnd.sealed-swf',
-			'ext'=>array(
-				'sswf',
-				'ssw'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.sealed.mpeg1'=>array(
-			'mime'=>'video/vnd.sealed.mpeg1',
-			'ext'=>array(
-				'smpg',
-				's11'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.sealed.mpeg4'=>array(
-			'mime'=>'video/vnd.sealed.mpeg4',
-			'ext'=>array(
-				's14',
-				'smpg'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.sealedmedia.softseal-mov'=>array(
-			'mime'=>'video/vnd.sealedmedia.softseal-mov',
-			'ext'=>array(
-				'smov',
-				'smo',
-				's1q'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'video/vnd.uvvu-mp4'=>array(
-			'mime'=>'video/vnd.uvvu-mp4',
-			'ext'=>array(
-				'uvu',
-				'uvvu'
-			),
-			'source'=>array(
-				'IANA'
 			)
 		),
 		'video/vnd.uvvu.mp4'=>array(
@@ -21470,8 +17320,8 @@ class data {
 		'video/x-ms-asf'=>array(
 			'mime'=>'video/x-ms-asf',
 			'ext'=>array(
-				'asx',
 				'asf',
+				'asx',
 				'wma',
 				'wmv'
 			),
@@ -21770,17 +17620,6 @@ class data {
 
 	// MIME Types by extension.
 	const BY_EXT = array(
-		'1km'=>array(
-			'ext'=>'1km',
-			'mime'=>array(
-				'application/vnd.1000minds.decision-model+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.1000minds.decision-model+xml'
-		),
 		'32x'=>array(
 			'ext'=>'32x',
 			'mime'=>array(
@@ -21970,18 +17809,6 @@ class data {
 			),
 			'primary'=>'video/3gpp2'
 		),
-		'3mf'=>array(
-			'ext'=>'3mf',
-			'mime'=>array(
-				'application/vnd.ms-3mfdocument',
-				'model/3mf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/3mf'
-		),
 		'4th'=>array(
 			'ext'=>'4th',
 			'mime'=>array(
@@ -22020,17 +17847,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-atari-2600-rom'
-		),
-		'a2l'=>array(
-			'ext'=>'a2l',
-			'mime'=>array(
-				'application/a2l'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/a2l'
 		),
 		'a78'=>array(
 			'ext'=>'a78',
@@ -22180,11 +17996,9 @@ class data {
 			'ext'=>'ac',
 			'mime'=>array(
 				'application/pkix-attr-cert',
-				'application/vnd.nokia.n-gage.ac+xml',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -22208,7 +18022,6 @@ class data {
 				'application/vnd.americandynamics.acc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -22243,16 +18056,14 @@ class data {
 		'acu'=>array(
 			'ext'=>'acu',
 			'mime'=>array(
-				'application/vnd-acucobol',
 				'application/vnd.acucobol'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd-acucobol'
+			'primary'=>'application/vnd.acucobol'
 		),
 		'acutc'=>array(
 			'ext'=>'acutc',
@@ -22260,7 +18071,6 @@ class data {
 				'application/vnd.acucorp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -22371,7 +18181,6 @@ class data {
 				'application/vnd.adobe.aftereffects.project'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -22410,7 +18219,6 @@ class data {
 				'application/vnd.ibm.modcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -22445,7 +18253,6 @@ class data {
 				'application/vnd.ahead.space'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -22559,7 +18366,6 @@ class data {
 				'application/vnd.dvb.ait'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -22636,23 +18442,11 @@ class data {
 				'application/vnd.amiga.ami'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.amiga.ami'
-		),
-		'aml'=>array(
-			'ext'=>'aml',
-			'mime'=>array(
-				'application/aml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/aml'
 		),
 		'amr'=>array(
 			'ext'=>'amr',
@@ -22716,17 +18510,6 @@ class data {
 			),
 			'primary'=>'application/annodex'
 		),
-		'any'=>array(
-			'ext'=>'any',
-			'mime'=>array(
-				'application/vnd.mitsubishi.misty-guard.trustweb'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.mitsubishi.misty-guard.trustweb'
-		),
 		'ape'=>array(
 			'ext'=>'ape',
 			'mime'=>array(
@@ -22755,28 +18538,6 @@ class data {
 				'application/java-archive'
 			),
 			'primary'=>'application/vnd.android.package-archive'
-		),
-		'apkg'=>array(
-			'ext'=>'apkg',
-			'mime'=>array(
-				'application/vnd.anki'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.anki'
-		),
-		'apng'=>array(
-			'ext'=>'apng',
-			'mime'=>array(
-				'image/vnd.mozilla.apng'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.mozilla.apng'
 		),
 		'appcache'=>array(
 			'ext'=>'appcache',
@@ -22836,23 +18597,11 @@ class data {
 				'application/vnd.lotus-approach'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.lotus-approach'
-		),
-		'apxml'=>array(
-			'ext'=>'apxml',
-			'mime'=>array(
-				'application/auth-policy+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/auth-policy+xml'
 		),
 		'ar'=>array(
 			'ext'=>'ar',
@@ -22939,7 +18688,6 @@ class data {
 				'application/pgp-keys'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -22949,17 +18697,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'application/pgp-signature'
-		),
-		'ascii'=>array(
-			'ext'=>'ascii',
-			'mime'=>array(
-				'text/vnd.ascii-art'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.ascii-art'
 		),
 		'asciidoc'=>array(
 			'ext'=>'asciidoc',
@@ -22978,13 +18715,12 @@ class data {
 		'asf'=>array(
 			'ext'=>'asf',
 			'mime'=>array(
-				'application/vnd.ms-asf',
 				'video/x-ms-asf',
+				'application/vnd.ms-asf',
 				'video/x-ms-wm',
 				'video/x-ms-asf-plugin'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -22992,10 +18728,9 @@ class data {
 			),
 			'alias'=>array(
 				'video/x-ms-wm',
-				'video/x-ms-asf',
 				'video/x-ms-asf-plugin'
 			),
-			'primary'=>'application/vnd.ms-asf'
+			'primary'=>'video/x-ms-asf'
 		),
 		'asice'=>array(
 			'ext'=>'asice',
@@ -23004,7 +18739,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			),
 			'alias'=>array(
@@ -23019,7 +18753,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			),
 			'alias'=>array(
@@ -23060,7 +18793,6 @@ class data {
 				'application/vnd.accpac.simply.aso'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -23143,34 +18875,11 @@ class data {
 				'application/vnd.acucorp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.acucorp'
-		),
-		'atf'=>array(
-			'ext'=>'atf',
-			'mime'=>array(
-				'application/atf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/atf'
-		),
-		'atfx'=>array(
-			'ext'=>'atfx',
-			'mime'=>array(
-				'application/atfx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/atfx'
 		),
 		'atom'=>array(
 			'ext'=>'atom',
@@ -23179,7 +18888,6 @@ class data {
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -23196,23 +18904,11 @@ class data {
 				'application/atomcat+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/atomcat+xml'
-		),
-		'atomdeleted'=>array(
-			'ext'=>'atomdeleted',
-			'mime'=>array(
-				'application/atomdeleted+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/atomdeleted+xml'
 		),
 		'atomsvc'=>array(
 			'ext'=>'atomsvc',
@@ -23220,7 +18916,6 @@ class data {
 				'application/atomsvc+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -23233,23 +18928,11 @@ class data {
 				'application/vnd.antix.game-component'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.antix.game-component'
-		),
-		'atxml'=>array(
-			'ext'=>'atxml',
-			'mime'=>array(
-				'application/atxml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/atxml'
 		),
 		'au'=>array(
 			'ext'=>'au',
@@ -23263,17 +18946,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'audio/basic'
-		),
-		'auc'=>array(
-			'ext'=>'auc',
-			'mime'=>array(
-				'application/tamp-apex-update-confirm'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-apex-update-confirm'
 		),
 		'automount'=>array(
 			'ext'=>'automount',
@@ -23430,7 +19102,6 @@ class data {
 				'application/vnd.airzip.filesecure.azf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -23443,23 +19114,11 @@ class data {
 				'application/vnd.airzip.filesecure.azs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.airzip.filesecure.azs'
-		),
-		'azv'=>array(
-			'ext'=>'azv',
-			'mime'=>array(
-				'image/vnd.airzip.accelerator.azv'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.airzip.accelerator.azv'
 		),
 		'azw'=>array(
 			'ext'=>'azw',
@@ -23473,17 +19132,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.amazon.ebook'
 		),
-		'azw3'=>array(
-			'ext'=>'azw3',
-			'mime'=>array(
-				'application/vnd.amazon.mobi8-ebook'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.amazon.mobi8-ebook'
-		),
 		'bak'=>array(
 			'ext'=>'bak',
 			'mime'=>array(
@@ -23494,17 +19142,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-trash'
-		),
-		'bar'=>array(
-			'ext'=>'bar',
-			'mime'=>array(
-				'application/vnd.qualcomm.brew-app-res'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.qualcomm.brew-app-res'
 		),
 		'bas'=>array(
 			'ext'=>'bas',
@@ -23596,7 +19233,6 @@ class data {
 				'video/mp2t'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -23621,7 +19257,6 @@ class data {
 				'application/vnd.realvnc.bed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -23633,7 +19268,6 @@ class data {
 				'application/vnd.fujitsu.oasysprs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -23686,17 +19320,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/octet-stream'
 		),
-		'bkm'=>array(
-			'ext'=>'bkm',
-			'mime'=>array(
-				'application/vnd.nervana'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nervana'
-		),
 		'blb'=>array(
 			'ext'=>'blb',
 			'mime'=>array(
@@ -23747,23 +19370,11 @@ class data {
 				'application/vnd.bmi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.bmi'
-		),
-		'bmml'=>array(
-			'ext'=>'bmml',
-			'mime'=>array(
-				'application/vnd.balsamiq.bmml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.balsamiq.bmml+xml'
 		),
 		'bmp'=>array(
 			'ext'=>'bmp',
@@ -23773,7 +19384,6 @@ class data {
 				'image/x-bmp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -23784,17 +19394,6 @@ class data {
 				'image/x-ms-bmp'
 			),
 			'primary'=>'image/bmp'
-		),
-		'bmpr'=>array(
-			'ext'=>'bmpr',
-			'mime'=>array(
-				'application/vnd.balsamiq.bmpr'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.balsamiq.bmpr'
 		),
 		'book'=>array(
 			'ext'=>'book',
@@ -23883,35 +19482,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-bsdiff'
 		),
-		'bsp'=>array(
-			'ext'=>'bsp',
-			'mime'=>array(
-				'model/vnd.valve.source.compiled-map'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.valve.source.compiled-map'
-		),
-		'btf'=>array(
-			'ext'=>'btf',
-			'mime'=>array(
-				'image/prs.btif'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/prs.btif'
-		),
 		'btif'=>array(
 			'ext'=>'btif',
 			'mime'=>array(
 				'image/prs.btif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -23967,7 +19543,6 @@ class data {
 				'application/vnd.cluetrust.cartomobile-config'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -23979,22 +19554,10 @@ class data {
 				'application/vnd.cluetrust.cartomobile-config-pkg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.cluetrust.cartomobile-config-pkg'
-		),
-		'c3ex'=>array(
-			'ext'=>'c3ex',
-			'mime'=>array(
-				'application/cccex'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/cccex'
 		),
 		'c4d'=>array(
 			'ext'=>'c4d',
@@ -24002,7 +19565,6 @@ class data {
 				'application/vnd.clonk.c4group'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24015,7 +19577,6 @@ class data {
 				'application/vnd.clonk.c4group'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24028,7 +19589,6 @@ class data {
 				'application/vnd.clonk.c4group'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24041,7 +19601,6 @@ class data {
 				'application/vnd.clonk.c4group'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24054,7 +19613,6 @@ class data {
 				'application/vnd.clonk.c4group'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24065,11 +19623,9 @@ class data {
 			'ext'=>'cab',
 			'mime'=>array(
 				'application/vnd.ms-cab-compressed',
-				'application/vnd.ubisoft.webplayer',
 				'zz-application/zz-winassoc-cab'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -24109,7 +19665,6 @@ class data {
 				'application/pcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -24189,13 +19744,9 @@ class data {
 		'cbor'=>array(
 			'ext'=>'cbor',
 			'mime'=>array(
-				'application/cbor',
-				'application/cose',
-				'application/cose-key',
-				'application/cose-key-set'
+				'application/cbor'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			),
 			'alias'=>array(),
@@ -24235,13 +19786,12 @@ class data {
 		'cbz'=>array(
 			'ext'=>'cbz',
 			'mime'=>array(
-				'application/vnd.comicbook+zip',
 				'application/x-cbr',
+				'application/vnd.comicbook+zip',
 				'application/x-cbz',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -24249,7 +19799,7 @@ class data {
 				'application/x-cbz',
 				'application/zip'
 			),
-			'primary'=>'application/vnd.comicbook+zip'
+			'primary'=>'application/x-cbr'
 		),
 		'cc'=>array(
 			'ext'=>'cc',
@@ -24269,28 +19819,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-c++src'
-		),
-		'ccc'=>array(
-			'ext'=>'ccc',
-			'mime'=>array(
-				'text/vnd.net2phone.commcenter.command'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.net2phone.commcenter.command'
-		),
-		'ccmp'=>array(
-			'ext'=>'ccmp',
-			'mime'=>array(
-				'application/ccmp+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/ccmp+xml'
 		),
 		'ccmx'=>array(
 			'ext'=>'ccmx',
@@ -24347,7 +19875,6 @@ class data {
 				'application/vnd.contact.cmsg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24367,24 +19894,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-netcdf'
 		),
-		'cdfx'=>array(
-			'ext'=>'cdfx',
-			'mime'=>array(
-				'application/cdfx+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/cdfx+xml'
-		),
 		'cdkey'=>array(
 			'ext'=>'cdkey',
 			'mime'=>array(
 				'application/vnd.mediastation.cdkey'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24397,7 +19912,6 @@ class data {
 				'application/cdmi-capability'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -24409,7 +19923,6 @@ class data {
 				'application/cdmi-container'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -24421,7 +19934,6 @@ class data {
 				'application/cdmi-domain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -24433,7 +19945,6 @@ class data {
 				'application/cdmi-object'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -24445,7 +19956,6 @@ class data {
 				'application/cdmi-queue'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -24494,7 +20004,6 @@ class data {
 				'application/vnd.chemdraw+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24507,23 +20016,11 @@ class data {
 				'application/vnd.cinderella'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.cinderella'
-		),
-		'cea'=>array(
-			'ext'=>'cea',
-			'mime'=>array(
-				'application/cea'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/cea'
 		),
 		'cer'=>array(
 			'ext'=>'cer',
@@ -24531,7 +20028,6 @@ class data {
 				'application/pkix-cert'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -24671,7 +20167,6 @@ class data {
 				'application/x-chm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -24700,16 +20195,14 @@ class data {
 		'cif'=>array(
 			'ext'=>'cif',
 			'mime'=>array(
-				'application/vnd.multiad.creator.cif',
 				'chemical/x-cif'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.multiad.creator.cif'
+			'primary'=>'chemical/x-cif'
 		),
 		'cii'=>array(
 			'ext'=>'cii',
@@ -24717,7 +20210,6 @@ class data {
 				'application/vnd.anser-web-certificate-issue-initiation'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24739,15 +20231,12 @@ class data {
 		'cl'=>array(
 			'ext'=>'cl',
 			'mime'=>array(
-				'application/simple-filter+xml',
-				'message/imdn+xml',
 				'text/x-opencl-src',
 				'text/x-csrc',
 				'text/x-common-lisp',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -24755,7 +20244,7 @@ class data {
 				'text/x-csrc',
 				'text/plain'
 			),
-			'primary'=>'application/simple-filter+xml'
+			'primary'=>'text/x-opencl-src'
 		),
 		'cla'=>array(
 			'ext'=>'cla',
@@ -24763,7 +20252,6 @@ class data {
 				'application/vnd.claymore'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24773,7 +20261,6 @@ class data {
 		'class'=>array(
 			'ext'=>'class',
 			'mime'=>array(
-				'application/vnd.dvb.dvbj',
 				'application/java-vm',
 				'application/x-java',
 				'application/java',
@@ -24782,7 +20269,6 @@ class data {
 				'application/x-java-vm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -24790,12 +20276,11 @@ class data {
 			'alias'=>array(
 				'application/java',
 				'application/java-byte-code',
-				'application/java-vm',
 				'application/x-java-class',
 				'application/x-java-vm',
 				'application/x-java'
 			),
-			'primary'=>'application/vnd.dvb.dvbj'
+			'primary'=>'application/java-vm'
 		),
 		'classpath'=>array(
 			'ext'=>'classpath',
@@ -24828,7 +20313,6 @@ class data {
 				'application/vnd.crick.clicker.keyboard'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24841,7 +20325,6 @@ class data {
 				'application/vnd.crick.clicker.palette'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24854,7 +20337,6 @@ class data {
 				'application/vnd.crick.clicker.template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24867,7 +20349,6 @@ class data {
 				'application/vnd.crick.clicker.wordbank'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24880,7 +20361,6 @@ class data {
 				'application/vnd.crick.clicker'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -24930,17 +20410,6 @@ class data {
 			),
 			'primary'=>'text/x-tex'
 		),
-		'clue'=>array(
-			'ext'=>'clue',
-			'mime'=>array(
-				'application/clueinfo+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/clueinfo+xml'
-		),
 		'cmake'=>array(
 			'ext'=>'cmake',
 			'mime'=>array(
@@ -24961,7 +20430,6 @@ class data {
 				'application/vnd.cosmocaller'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25014,23 +20482,11 @@ class data {
 				'application/vnd.yellowriver-custom-menu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.yellowriver-custom-menu'
-		),
-		'cmsc'=>array(
-			'ext'=>'cmsc',
-			'mime'=>array(
-				'application/cms'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/cms'
 		),
 		'cmx'=>array(
 			'ext'=>'cmx',
@@ -25043,17 +20499,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'image/x-cmx'
-		),
-		'cnd'=>array(
-			'ext'=>'cnd',
-			'mime'=>array(
-				'text/jcr-cnd'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/jcr-cnd'
 		),
 		'cob'=>array(
 			'ext'=>'cob',
@@ -25090,7 +20535,6 @@ class data {
 				'text/x-coffeescript'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -25169,28 +20613,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-cpio'
 		),
-		'cpkg'=>array(
-			'ext'=>'cpkg',
-			'mime'=>array(
-				'application/vnd.xmpie.cpkg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.xmpie.cpkg'
-		),
-		'cpl'=>array(
-			'ext'=>'cpl',
-			'mime'=>array(
-				'application/cpl+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/cpl+xml'
-		),
 		'cpp'=>array(
 			'ext'=>'cpp',
 			'mime'=>array(
@@ -25213,16 +20635,14 @@ class data {
 		'cpt'=>array(
 			'ext'=>'cpt',
 			'mime'=>array(
-				'audio/vnd.dts',
 				'application/mac-compactpro'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'audio/vnd.dts'
+			'primary'=>'application/mac-compactpro'
 		),
 		'cr2'=>array(
 			'ext'=>'cr2',
@@ -25269,7 +20689,6 @@ class data {
 				'application/pkix-crl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -25290,17 +20709,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-x509-ca-cert'
-		),
-		'crtr'=>array(
-			'ext'=>'crtr',
-			'mime'=>array(
-				'application/vnd.multiad.creator'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.multiad.creator'
 		),
 		'crw'=>array(
 			'ext'=>'crw',
@@ -25335,7 +20743,6 @@ class data {
 				'application/vnd.rig.cryptonote'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -25374,17 +20781,6 @@ class data {
 			),
 			'primary'=>'application/x-csh'
 		),
-		'csl'=>array(
-			'ext'=>'csl',
-			'mime'=>array(
-				'application/vnd.citationstyles.style+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.citationstyles.style+xml'
-		),
 		'csml'=>array(
 			'ext'=>'csml',
 			'mime'=>array(
@@ -25403,23 +20799,11 @@ class data {
 				'application/vnd.commonspace'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.commonspace'
-		),
-		'csrattrs'=>array(
-			'ext'=>'csrattrs',
-			'mime'=>array(
-				'application/csrattrs'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/csrattrs'
 		),
 		'css'=>array(
 			'ext'=>'css',
@@ -25428,7 +20812,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -25442,16 +20825,14 @@ class data {
 		'cst'=>array(
 			'ext'=>'cst',
 			'mime'=>array(
-				'application/vnd.commonspace',
 				'application/x-director'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.commonspace'
+			'primary'=>'application/x-director'
 		),
 		'csv'=>array(
 			'ext'=>'csv',
@@ -25462,7 +20843,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -25500,17 +20880,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/cu-seeme'
 		),
-		'cuc'=>array(
-			'ext'=>'cuc',
-			'mime'=>array(
-				'application/tamp-community-update-confirm'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-community-update-confirm'
-		),
 		'cue'=>array(
 			'ext'=>'cue',
 			'mime'=>array(
@@ -25539,28 +20908,14 @@ class data {
 		'curl'=>array(
 			'ext'=>'curl',
 			'mime'=>array(
-				'application/vnd-curl',
-				'text/vnd-curl',
 				'text/vnd.curl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'text/vnd.curl'
-		),
-		'cw'=>array(
-			'ext'=>'cw',
-			'mime'=>array(
-				'application/prs.cww'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.cww'
 		),
 		'cwiki'=>array(
 			'ext'=>'cwiki',
@@ -25590,7 +20945,6 @@ class data {
 				'application/prs.cww'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25634,7 +20988,6 @@ class data {
 				'model/vnd.collada+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -25646,7 +20999,6 @@ class data {
 				'application/vnd.mobius.daf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25667,15 +21019,13 @@ class data {
 		'dart'=>array(
 			'ext'=>'dart',
 			'mime'=>array(
-				'application/vnd-dart',
 				'application/vnd.dart'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd-dart'
+			'primary'=>'application/vnd.dart'
 		),
 		'data'=>array(
 			'ext'=>'data',
@@ -25691,11 +21041,9 @@ class data {
 		'dataless'=>array(
 			'ext'=>'dataless',
 			'mime'=>array(
-				'application/vnd.fdsn.mseed',
 				'application/vnd.fdsn.seed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25708,7 +21056,6 @@ class data {
 				'application/davmount+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25784,17 +21131,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-dc-rom'
-		),
-		'dcd'=>array(
-			'ext'=>'dcd',
-			'mime'=>array(
-				'application/dcd'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dcd'
 		),
 		'dcl'=>array(
 			'ext'=>'dcl',
@@ -25882,7 +21218,6 @@ class data {
 				'application/vnd.oma.dd2+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -25895,24 +21230,11 @@ class data {
 				'application/vnd.fujixerox.ddd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.fujixerox.ddd'
-		),
-		'ddf'=>array(
-			'ext'=>'ddf',
-			'mime'=>array(
-				'application/vnd.syncml.dmddf+xml',
-				'application/vnd.syncml.dmddf+wbxml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.syncml.dmddf+xml'
 		),
 		'dds'=>array(
 			'ext'=>'dds',
@@ -25928,14 +21250,13 @@ class data {
 		'deb'=>array(
 			'ext'=>'deb',
 			'mime'=>array(
-				'application/vnd.debian.binary-package',
 				'application/x-debian-package',
 				'application/octet-stream',
+				'application/vnd.debian.binary-package',
 				'application/x-deb',
 				'application/x-archive'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -25943,10 +21264,10 @@ class data {
 			),
 			'alias'=>array(
 				'application/x-deb',
-				'application/x-debian-package',
+				'application/vnd.debian.binary-package',
 				'application/x-archive'
 			),
-			'primary'=>'application/vnd.debian.binary-package'
+			'primary'=>'application/x-debian-package'
 		),
 		'def'=>array(
 			'ext'=>'def',
@@ -26033,7 +21354,6 @@ class data {
 				'application/vnd.dreamfactory'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -26087,7 +21407,6 @@ class data {
 				'image/x-ms-bmp'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -26150,28 +21469,6 @@ class data {
 			),
 			'primary'=>'text/x-patch'
 		),
-		'dii'=>array(
-			'ext'=>'dii',
-			'mime'=>array(
-				'application/dii'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dii'
-		),
-		'dim'=>array(
-			'ext'=>'dim',
-			'mime'=>array(
-				'application/vnd.fastcopy-disk-image'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.fastcopy-disk-image'
-		),
 		'dir'=>array(
 			'ext'=>'dir',
 			'mime'=>array(
@@ -26190,62 +21487,35 @@ class data {
 				'application/vnd.mobius.dis'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.mobius.dis'
 		),
-		'disposition-notification'=>array(
-			'ext'=>'disposition-notification',
-			'mime'=>array(
-				'message/disposition-notification'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'message/disposition-notification'
-		),
 		'dist'=>array(
 			'ext'=>'dist',
 			'mime'=>array(
-				'application/vnd.apple.installer+xml',
 				'application/octet-stream'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.apple.installer+xml'
+			'primary'=>'application/octet-stream'
 		),
 		'distz'=>array(
 			'ext'=>'distz',
 			'mime'=>array(
-				'application/vnd.apple.installer+xml',
 				'application/octet-stream'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.apple.installer+xml'
-		),
-		'dit'=>array(
-			'ext'=>'dit',
-			'mime'=>array(
-				'application/dit'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dit'
+			'primary'=>'application/octet-stream'
 		),
 		'dita'=>array(
 			'ext'=>'dita',
@@ -26313,46 +21583,40 @@ class data {
 		'djv'=>array(
 			'ext'=>'djv',
 			'mime'=>array(
-				'image/vnd-djvu',
 				'image/vnd.djvu',
 				'image/x-djvu',
 				'image/x.djvu',
 				'image/vnd.djvu+multipage'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
 				'image/x-djvu',
-				'image/x.djvu',
-				'image/vnd.djvu'
+				'image/x.djvu'
 			),
-			'primary'=>'image/vnd-djvu'
+			'primary'=>'image/vnd.djvu'
 		),
 		'djvu'=>array(
 			'ext'=>'djvu',
 			'mime'=>array(
-				'image/vnd-djvu',
 				'image/vnd.djvu',
 				'image/x-djvu',
 				'image/x.djvu',
 				'image/vnd.djvu+multipage'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
 				'image/x-djvu',
-				'image/x.djvu',
-				'image/vnd.djvu'
+				'image/x.djvu'
 			),
-			'primary'=>'image/vnd-djvu'
+			'primary'=>'image/vnd.djvu'
 		),
 		'dll'=>array(
 			'ext'=>'dll',
@@ -26391,7 +21655,6 @@ class data {
 				'application/pcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -26405,16 +21668,14 @@ class data {
 		'dms'=>array(
 			'ext'=>'dms',
 			'mime'=>array(
-				'text/vnd.dmclientscript',
 				'application/octet-stream'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'text/vnd.dmclientscript'
+			'primary'=>'application/octet-stream'
 		),
 		'dna'=>array(
 			'ext'=>'dna',
@@ -26422,7 +21683,6 @@ class data {
 				'application/vnd.dna'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -26502,17 +21762,6 @@ class data {
 			),
 			'primary'=>'application/x-docbook+xml'
 		),
-		'docjson'=>array(
-			'ext'=>'docjson',
-			'mime'=>array(
-				'application/vnd.document+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.document+json'
-		),
 		'docm'=>array(
 			'ext'=>'docm',
 			'mime'=>array(
@@ -26522,9 +21771,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -26543,9 +21791,8 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -26554,18 +21801,6 @@ class data {
 				'application/zip'
 			),
 			'primary'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-		),
-		'dor'=>array(
-			'ext'=>'dor',
-			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
 		),
 		'dot'=>array(
 			'ext'=>'dot',
@@ -26599,9 +21834,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.template'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -26615,15 +21849,13 @@ class data {
 		'dotx'=>array(
 			'ext'=>'dotx',
 			'mime'=>array(
-				'application/vnd.openxmlformats-officedocument.wordprocessingml-template',
-				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
+				'application/vnd.ms-office',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -26631,7 +21863,7 @@ class data {
 				'application/vnd.ms-office',
 				'application/zip'
 			),
-			'primary'=>'application/vnd.openxmlformats-officedocument.wordprocessingml-template'
+			'primary'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.template'
 		),
 		'dp'=>array(
 			'ext'=>'dp',
@@ -26639,7 +21871,6 @@ class data {
 				'application/vnd.osgi.dp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -26657,18 +21888,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.dpgraph'
-		),
-		'dpkg'=>array(
-			'ext'=>'dpkg',
-			'mime'=>array(
-				'application/vnd.xmpie.dpkg',
-				'application/vnd.xmpie.plan'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.xmpie.dpkg'
 		),
 		'dpr'=>array(
 			'ext'=>'dpr',
@@ -26720,17 +21939,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'image/x-raw-kodak'
 		),
-		'drle'=>array(
-			'ext'=>'drle',
-			'mime'=>array(
-				'image/dicom-rle'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/dicom-rle'
-		),
 		'dsc'=>array(
 			'ext'=>'dsc',
 			'mime'=>array(
@@ -26763,7 +21971,6 @@ class data {
 				'application/dssc+der'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -26800,7 +22007,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -26818,7 +22024,6 @@ class data {
 				'audio/x-dts'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -26836,7 +22041,6 @@ class data {
 				'audio/vnd.dts'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -26897,17 +22101,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'video/vnd.dvb.file'
 		),
-		'dvc'=>array(
-			'ext'=>'dvc',
-			'mime'=>array(
-				'application/dvcs'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dvcs'
-		),
 		'dvi'=>array(
 			'ext'=>'dvi',
 			'mime'=>array(
@@ -26924,19 +22117,17 @@ class data {
 		'dwf'=>array(
 			'ext'=>'dwf',
 			'mime'=>array(
-				'model/vnd-dwf',
 				'model/vnd.dwf',
 				'drawing/x-dwf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(
 				'drawing/x-dwf'
 			),
-			'primary'=>'model/vnd-dwf'
+			'primary'=>'model/vnd.dwf'
 		),
 		'dwfx'=>array(
 			'ext'=>'dwfx',
@@ -27009,7 +22200,6 @@ class data {
 				'application/vnd.spotfire.dxp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27019,27 +22209,14 @@ class data {
 		'dxr'=>array(
 			'ext'=>'dxr',
 			'mime'=>array(
-				'application/vnd-dxr',
 				'application/x-director'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd-dxr'
-		),
-		'dzr'=>array(
-			'ext'=>'dzr',
-			'mime'=>array(
-				'application/vnd.dzr'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.dzr'
+			'primary'=>'application/x-director'
 		),
 		'ear'=>array(
 			'ext'=>'ear',
@@ -27060,7 +22237,6 @@ class data {
 				'audio/vnd.nuera.ecelp4800'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27073,7 +22249,6 @@ class data {
 				'audio/vnd.nuera.ecelp7470'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27086,45 +22261,11 @@ class data {
 				'audio/vnd.nuera.ecelp9600'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'audio/vnd.nuera.ecelp9600'
-		),
-		'ecig'=>array(
-			'ext'=>'ecig',
-			'mime'=>array(
-				'application/vnd.evolv.ecig.settings'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.evolv.ecig.settings'
-		),
-		'ecigprofile'=>array(
-			'ext'=>'ecigprofile',
-			'mime'=>array(
-				'application/vnd.evolv.ecig.profile'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.evolv.ecig.profile'
-		),
-		'ecigtheme'=>array(
-			'ext'=>'ecigtheme',
-			'mime'=>array(
-				'application/vnd.evolv.ecig.theme'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.evolv.ecig.theme'
 		),
 		'ecma'=>array(
 			'ext'=>'ecma',
@@ -27144,7 +22285,6 @@ class data {
 				'application/vnd.novadigm.edm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27157,7 +22297,6 @@ class data {
 				'application/vnd.novadigm.edx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27170,7 +22309,6 @@ class data {
 				'application/vnd.picsel'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27205,7 +22343,6 @@ class data {
 				'application/vnd.pg.osasli'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27257,14 +22394,13 @@ class data {
 		'emf'=>array(
 			'ext'=>'emf',
 			'mime'=>array(
-				'image/emf',
 				'application/x-msmetafile',
+				'image/emf',
 				'image/x-emf',
 				'application/x-emf',
 				'application/emf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -27303,17 +22439,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'message/x-emlx'
 		),
-		'emm'=>array(
-			'ext'=>'emm',
-			'mime'=>array(
-				'application/vnd.ibm.electronic-media'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ibm.electronic-media'
-		),
 		'emma'=>array(
 			'ext'=>'emma',
 			'mime'=>array(
@@ -27325,17 +22450,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/emma+xml'
-		),
-		'emotionml'=>array(
-			'ext'=>'emotionml',
-			'mime'=>array(
-				'application/emotionml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/emotionml+xml'
 		),
 		'emp'=>array(
 			'ext'=>'emp',
@@ -27380,14 +22494,12 @@ class data {
 		'ent'=>array(
 			'ext'=>'ent',
 			'mime'=>array(
-				'application/vnd.nervana',
 				'application/xml-external-parsed-entity',
 				'text/xml-external-parsed-entity',
 				'application/xml',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -27396,17 +22508,6 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'application/xml-external-parsed-entity'
-		),
-		'entity'=>array(
-			'ext'=>'entity',
-			'mime'=>array(
-				'application/vnd.nervana'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nervana'
 		),
 		'enw'=>array(
 			'ext'=>'enw',
@@ -27425,7 +22526,6 @@ class data {
 				'audio/vnd.digital-winds'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27438,24 +22538,12 @@ class data {
 				'application/vnd.ms-fontobject'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.ms-fontobject'
-		),
-		'ep'=>array(
-			'ext'=>'ep',
-			'mime'=>array(
-				'application/vnd.bluetooth.ep.oob'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.bluetooth.ep.oob'
 		),
 		'eps'=>array(
 			'ext'=>'eps',
@@ -27552,7 +22640,6 @@ class data {
 				'application/x-executable'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -27567,7 +22654,6 @@ class data {
 				'application/vnd.eszigno3+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27580,7 +22666,6 @@ class data {
 				'application/vnd.osgi.subsystem'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -27592,23 +22677,11 @@ class data {
 				'application/vnd.epson.esf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.epson.esf'
-		),
-		'espass'=>array(
-			'ext'=>'espass',
-			'mime'=>array(
-				'application/vnd.espass-espass+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.espass-espass+zip'
 		),
 		'et3'=>array(
 			'ext'=>'et3',
@@ -27616,7 +22689,6 @@ class data {
 				'application/vnd.eszigno3+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27744,7 +22816,6 @@ class data {
 				'application/vnd.novadigm.ext'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27770,7 +22841,6 @@ class data {
 				'application/vnd.ezpix-album'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27783,7 +22853,6 @@ class data {
 				'application/vnd.ezpix-package'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27918,7 +22987,6 @@ class data {
 				'image/vnd.fastbidsheet'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -27931,7 +22999,6 @@ class data {
 				'application/vnd.adobe.formscentral.fcdt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -27943,7 +23010,6 @@ class data {
 				'application/vnd.isac.fcs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -27978,7 +23044,6 @@ class data {
 				'application/vnd.denovo.fcselayout-link'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28016,7 +23081,6 @@ class data {
 				'application/vnd.fujitsu.oasysgp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28186,17 +23250,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-xfig'
 		),
-		'finf'=>array(
-			'ext'=>'finf',
-			'mime'=>array(
-				'application/fastinfoset'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/fastinfoset'
-		),
 		'fit'=>array(
 			'ext'=>'fit',
 			'mime'=>array(
@@ -28211,12 +23264,11 @@ class data {
 		'fits'=>array(
 			'ext'=>'fits',
 			'mime'=>array(
-				'application/fits',
 				'image/fits',
-				'image/x-fits'
+				'image/x-fits',
+				'application/fits'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -28238,17 +23290,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'application/x-fluid'
-		),
-		'fla'=>array(
-			'ext'=>'fla',
-			'mime'=>array(
-				'application/vnd.dtg.local.flash'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.dtg.local.flash'
 		),
 		'flac'=>array(
 			'ext'=>'flac',
@@ -28349,7 +23390,6 @@ class data {
 				'application/vnd.micrografx.flo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28408,7 +23448,6 @@ class data {
 				'text/vnd.fly'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28448,7 +23487,6 @@ class data {
 				'application/vnd.frogans.fnc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28458,14 +23496,12 @@ class data {
 		'fo'=>array(
 			'ext'=>'fo',
 			'mime'=>array(
-				'application/vnd.software602.filler.form+xml',
 				'text/x-xslfo',
 				'application/xml',
 				'application/xslfo+xml',
 				'text/xsl'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -28473,7 +23509,7 @@ class data {
 				'application/xml',
 				'text/xsl'
 			),
-			'primary'=>'application/vnd.software602.filler.form+xml'
+			'primary'=>'text/x-xslfo'
 		),
 		'fodg'=>array(
 			'ext'=>'fodg',
@@ -28564,7 +23600,6 @@ class data {
 				'image/vnd.fpx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28586,19 +23621,16 @@ class data {
 		'frm'=>array(
 			'ext'=>'frm',
 			'mime'=>array(
-				'application/vnd.ufdl',
-				'application/vnd.xfdl',
 				'text/x-vbasic',
 				'text/x-basic'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			),
 			'alias'=>array(
 				'text/x-basic'
 			),
-			'primary'=>'application/vnd.ufdl'
+			'primary'=>'text/x-vbasic'
 		),
 		'fsc'=>array(
 			'ext'=>'fsc',
@@ -28606,7 +23638,6 @@ class data {
 				'application/vnd.fsc.weblaunch'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28619,7 +23650,6 @@ class data {
 				'image/vnd.fst'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28709,7 +23739,6 @@ class data {
 				'application/vnd.fluxtime.clip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28756,7 +23785,6 @@ class data {
 				'video/vnd.fvt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28783,7 +23811,6 @@ class data {
 				'application/vnd.adobe.fxp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -28795,7 +23822,6 @@ class data {
 				'application/vnd.adobe.fxp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -28807,7 +23833,6 @@ class data {
 				'application/vnd.fuzzysheet'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28820,7 +23845,6 @@ class data {
 				'application/vnd.geoplan'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -28829,18 +23853,16 @@ class data {
 		'g3'=>array(
 			'ext'=>'g3',
 			'mime'=>array(
-				'application/vnd.geocube+xml',
 				'image/g3fax',
 				'image/fax-g3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.geocube+xml'
+			'primary'=>'image/g3fax'
 		),
 		'g3w'=>array(
 			'ext'=>'g3w',
@@ -28848,7 +23870,6 @@ class data {
 				'application/vnd.geospace'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -28860,7 +23881,6 @@ class data {
 				'application/vnd.groove-account'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -28915,12 +23935,9 @@ class data {
 			'ext'=>'gbr',
 			'mime'=>array(
 				'application/rpki-ghostbusters',
-				'application/vnd.gerber',
-				'application/vnd.rs-274x',
 				'image/x-gimp-gbr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -28973,11 +23990,9 @@ class data {
 		'gdl'=>array(
 			'ext'=>'gdl',
 			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
+				'model/vnd.gdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29035,24 +24050,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-genesis-rom'
 		),
-		'generally'=>array(
-			'ext'=>'generally',
-			'mime'=>array(
-				'text/vnd.fmi.flexstor'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.fmi.flexstor'
-		),
 		'geo'=>array(
 			'ext'=>'geo',
 			'mime'=>array(
 				'application/vnd.dynageo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29067,7 +24070,6 @@ class data {
 				'application/json'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -29082,7 +24084,6 @@ class data {
 				'application/vnd.geometry-explorer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29117,7 +24118,6 @@ class data {
 				'application/vnd.geogebra.file'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29130,7 +24130,6 @@ class data {
 				'application/vnd.geogebra.tool'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29143,7 +24142,6 @@ class data {
 				'application/vnd.groove-help'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29181,7 +24179,6 @@ class data {
 				'application/vnd.groove-identity-message'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29201,17 +24198,6 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'application/x-glade'
-		),
-		'gltf'=>array(
-			'ext'=>'gltf',
-			'mime'=>array(
-				'model/gltf+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/gltf+json'
 		),
 		'gml'=>array(
 			'ext'=>'gml',
@@ -29245,7 +24231,6 @@ class data {
 				'application/vnd.gmx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29369,7 +24354,6 @@ class data {
 				'application/vnd.flographit'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29508,7 +24492,6 @@ class data {
 				'application/vnd.geometry-explorer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29546,7 +24529,6 @@ class data {
 				'application/vnd.groove-injector'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29599,16 +24581,13 @@ class data {
 		'gsm'=>array(
 			'ext'=>'gsm',
 			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl',
 				'audio/x-gsm'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
+			'primary'=>'audio/x-gsm'
 		),
 		'gtar'=>array(
 			'ext'=>'gtar',
@@ -29632,7 +24611,6 @@ class data {
 				'application/vnd.groove-tool-message'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29645,7 +24623,6 @@ class data {
 				'model/vnd.gtw'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -29699,7 +24676,6 @@ class data {
 				'application/vnd.geonext'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -29717,7 +24693,6 @@ class data {
 				'gzip/document'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -29807,7 +24782,6 @@ class data {
 				'application/vnd.hal+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -29874,28 +24848,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-hdf'
 		),
-		'hdr'=>array(
-			'ext'=>'hdr',
-			'mime'=>array(
-				'image/vnd.radiance'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.radiance'
-		),
-		'hdt'=>array(
-			'ext'=>'hdt',
-			'mime'=>array(
-				'application/vnd.hdt'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.hdt'
-		),
 		'he5'=>array(
 			'ext'=>'he5',
 			'mime'=>array(
@@ -29906,17 +24858,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-hdf'
-		),
-		'heldxml'=>array(
-			'ext'=>'heldxml',
-			'mime'=>array(
-				'application/held+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/held+xml'
 		),
 		'hfa'=>array(
 			'ext'=>'hfa',
@@ -30005,17 +24946,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.hp-hpgl'
 		),
-		'hpi'=>array(
-			'ext'=>'hpi',
-			'mime'=>array(
-				'application/vnd.hp-hpid'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.hp-hpid'
-		),
 		'hpid'=>array(
 			'ext'=>'hpid',
 			'mime'=>array(
@@ -30051,23 +24981,11 @@ class data {
 				'application/vnd.hp-hps'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.hp-hps'
-		),
-		'hpub'=>array(
-			'ext'=>'hpub',
-			'mime'=>array(
-				'application/prs.hpub+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.hpub+zip'
 		),
 		'hqx'=>array(
 			'ext'=>'hqx',
@@ -30130,7 +25048,6 @@ class data {
 				'application/vnd.kenameaapp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30157,12 +25074,10 @@ class data {
 		'html'=>array(
 			'ext'=>'html',
 			'mime'=>array(
-				'application/vnd.dtg.local-html',
 				'text/html',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -30171,7 +25086,7 @@ class data {
 			'alias'=>array(
 				'text/plain'
 			),
-			'primary'=>'application/vnd.dtg.local-html'
+			'primary'=>'text/html'
 		),
 		'hvd'=>array(
 			'ext'=>'hvd',
@@ -30179,7 +25094,6 @@ class data {
 				'application/vnd.yamaha.hv-dic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30192,7 +25106,6 @@ class data {
 				'application/vnd.yamaha.hv-voice'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30205,7 +25118,6 @@ class data {
 				'application/vnd.yamaha.hv-script'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30277,7 +25189,6 @@ class data {
 				'application/vnd.intergeo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -30311,32 +25222,19 @@ class data {
 			),
 			'primary'=>'application/x-ibooks+zip'
 		),
-		'ic'=>array(
-			'ext'=>'ic',
-			'mime'=>array(
-				'application/vnd.commerce-battelle'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.commerce-battelle'
-		),
 		'ica'=>array(
 			'ext'=>'ica',
 			'mime'=>array(
-				'application/vnd.commerce-battelle',
 				'application/x-ica',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
 				'text/plain'
 			),
-			'primary'=>'application/vnd.commerce-battelle'
+			'primary'=>'application/x-ica'
 		),
 		'icb'=>array(
 			'ext'=>'icb',
@@ -30355,28 +25253,15 @@ class data {
 		'icc'=>array(
 			'ext'=>'icc',
 			'mime'=>array(
-				'application/vnd.commerce-battelle',
 				'application/vnd.iccprofile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.iccprofile'
-		),
-		'icd'=>array(
-			'ext'=>'icd',
-			'mime'=>array(
-				'application/vnd.commerce-battelle'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.commerce-battelle'
 		),
 		'ice'=>array(
 			'ext'=>'ice',
@@ -30390,24 +25275,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'x-conference/x-cooltalk'
 		),
-		'icf'=>array(
-			'ext'=>'icf',
-			'mime'=>array(
-				'application/vnd.commerce-battelle'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.commerce-battelle'
-		),
 		'icm'=>array(
 			'ext'=>'icm',
 			'mime'=>array(
 				'application/vnd.iccprofile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -30431,8 +25304,8 @@ class data {
 		'ico'=>array(
 			'ext'=>'ico',
 			'mime'=>array(
-				'image/vnd.microsoft.icon',
 				'image/x-icon',
+				'image/vnd.microsoft.icon',
 				'application/ico',
 				'image/ico',
 				'image/icon',
@@ -30440,7 +25313,6 @@ class data {
 				'text/ico'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -30448,13 +25320,12 @@ class data {
 			),
 			'alias'=>array(
 				'application/ico',
-				'image/ico',
 				'image/icon',
 				'image/x-ico',
 				'image/x-icon',
 				'text/ico'
 			),
-			'primary'=>'image/vnd.microsoft.icon'
+			'primary'=>'image/ico'
 		),
 		'ics'=>array(
 			'ext'=>'ics',
@@ -30583,7 +25454,6 @@ class data {
 				'application/vnd.igloader'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30596,33 +25466,10 @@ class data {
 				'application/vnd.insors.igm'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.insors.igm'
-		),
-		'ign'=>array(
-			'ext'=>'ign',
-			'mime'=>array(
-				'application/vnd.coreos.ignition+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.coreos.ignition+json'
-		),
-		'ignition'=>array(
-			'ext'=>'ignition',
-			'mime'=>array(
-				'application/vnd.coreos.ignition+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.coreos.ignition+json'
 		),
 		'igs'=>array(
 			'ext'=>'igs',
@@ -30643,16 +25490,14 @@ class data {
 		'igx'=>array(
 			'ext'=>'igx',
 			'mime'=>array(
-				'application/vnd.micrografx-igx',
 				'application/vnd.micrografx.igx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.micrografx-igx'
+			'primary'=>'application/vnd.micrografx.igx'
 		),
 		'ihtml'=>array(
 			'ext'=>'ihtml',
@@ -30720,17 +25565,6 @@ class data {
 			),
 			'primary'=>'text/x-imelody'
 		),
-		'imf'=>array(
-			'ext'=>'imf',
-			'mime'=>array(
-				'application/vnd.imagemeter.folder+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.imagemeter.folder+zip'
-		),
 		'img'=>array(
 			'ext'=>'img',
 			'mime'=>array(
@@ -30744,35 +25578,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/octet-stream'
 		),
-		'imgcal'=>array(
-			'ext'=>'imgcal',
-			'mime'=>array(
-				'application/vnd.3lightssoftware.imagescal'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.3lightssoftware.imagescal'
-		),
-		'imi'=>array(
-			'ext'=>'imi',
-			'mime'=>array(
-				'application/vnd.imagemeter.image+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.imagemeter.image+zip'
-		),
 		'imp'=>array(
 			'ext'=>'imp',
 			'mime'=>array(
 				'application/vnd.accpac.simply.imp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -30785,24 +25596,11 @@ class data {
 				'application/vnd.ms-ims'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.ms-ims'
-		),
-		'imscc'=>array(
-			'ext'=>'imscc',
-			'mime'=>array(
-				'application/vnd.ims.imsccv1p2',
-				'application/vnd.ims.imsccv1p3'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ims.imsccv1p2'
 		),
 		'imy'=>array(
 			'ext'=>'imy',
@@ -30926,7 +25724,6 @@ class data {
 				'application/vnd.astraea-software.iota'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -30952,7 +25749,6 @@ class data {
 				'application/ipfix'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -31004,7 +25800,6 @@ class data {
 				'application/vnd.ibm.rights-management'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31017,24 +25812,11 @@ class data {
 				'application/vnd.irepository.package+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.irepository.package+xml'
-		),
-		'ism'=>array(
-			'ext'=>'ism',
-			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
 		),
 		'iso'=>array(
 			'ext'=>'iso',
@@ -31150,24 +25932,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.shana.informed.formtemplate'
 		),
-		'its'=>array(
-			'ext'=>'its',
-			'mime'=>array(
-				'application/its+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/its+xml'
-		),
 		'ivp'=>array(
 			'ext'=>'ivp',
 			'mime'=>array(
 				'application/vnd.immervision-ivp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31180,7 +25950,6 @@ class data {
 				'application/vnd.immervision-ivu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31216,7 +25985,6 @@ class data {
 				'text/vnd.sun.j2me.app-descriptor'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -31231,7 +25999,6 @@ class data {
 				'application/vnd.jam'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31241,14 +26008,12 @@ class data {
 		'jar'=>array(
 			'ext'=>'jar',
 			'mime'=>array(
-				'application/vnd.osgi.bundle',
 				'application/java-archive',
 				'application/x-java-archive',
 				'application/x-jar',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -31256,10 +26021,9 @@ class data {
 			),
 			'alias'=>array(
 				'application/x-jar',
-				'application/java-archive',
 				'application/zip'
 			),
-			'primary'=>'application/vnd.osgi.bundle'
+			'primary'=>'application/java-archive'
 		),
 		'jardiff'=>array(
 			'ext'=>'jardiff',
@@ -31370,7 +26134,6 @@ class data {
 				'application/vnd.jisp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31402,24 +26165,12 @@ class data {
 			),
 			'primary'=>'text/x-common-lisp'
 		),
-		'jls'=>array(
-			'ext'=>'jls',
-			'mime'=>array(
-				'image/jls'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/jls'
-		),
 		'jlt'=>array(
 			'ext'=>'jlt',
 			'mime'=>array(
 				'application/vnd.hp-jlyt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31485,7 +26236,6 @@ class data {
 				'application/vnd.joost.joda-archive'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -31503,7 +26253,6 @@ class data {
 				'image/jpx'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika',
 				'Blobfolio'
@@ -31571,7 +26320,6 @@ class data {
 				'image/x-jpeg2000-image'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika',
 				'Blobfolio'
@@ -31649,21 +26397,19 @@ class data {
 		'jpm'=>array(
 			'ext'=>'jpm',
 			'mime'=>array(
-				'image/jpm',
 				'video/jpm',
+				'image/jpm',
 				'image/x-jp2-container'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'video/jpm',
 				'image/x-jp2-container'
 			),
-			'primary'=>'image/jpm'
+			'primary'=>'video/jpm'
 		),
 		'jpr'=>array(
 			'ext'=>'jpr',
@@ -31700,7 +26446,6 @@ class data {
 				'application/json'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -31712,13 +26457,12 @@ class data {
 			'ext'=>'js',
 			'mime'=>array(
 				'application/javascript',
-				'text/javascript',
 				'application/x-javascript',
+				'text/javascript',
 				'application/ecmascript',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -31753,48 +26497,10 @@ class data {
 		'json'=>array(
 			'ext'=>'json',
 			'mime'=>array(
-				'application/csvm+json',
-				'application/dicom+json',
-				'application/geo+json',
-				'application/jf2feed+json',
 				'application/json',
-				'application/vnd.api+json',
-				'application/vnd.avalon+json',
-				'application/vnd.bekitzur-stech+json',
-				'application/vnd.capasystems-pg+json',
-				'application/vnd.collection.doc+json',
-				'application/vnd.collection+json',
-				'application/vnd.collection.next+json',
-				'application/vnd.datapackage+json',
-				'application/vnd.dataresource+json',
-				'application/vnd.drive+json',
-				'application/vnd.geo+json',
-				'application/vnd.hal+json',
-				'application/vnd.hc+json',
-				'application/vnd.heroku+json',
-				'application/vnd.hyper-item+json',
-				'application/vnd.hyperdrive+json',
-				'application/vnd.ims.lis.v2.result+json',
-				'application/vnd.ims.lti.v2.toolconsumerprofile+json',
-				'application/vnd.ims.lti.v2.toolproxy.id+json',
-				'application/vnd.ims.lti.v2.toolproxy+json',
-				'application/vnd.ims.lti.v2.toolsettings+json',
-				'application/vnd.ims.lti.v2.toolsettings.simple+json',
-				'application/vnd.infotech.project',
-				'application/vnd.mason+json',
-				'application/vnd.micro+json',
-				'application/vnd.miele+json',
-				'application/vnd.nearst.inv+json',
-				'application/vnd.oftn.l10n+json',
-				'application/vnd.oracle.resource+json',
-				'application/vnd.siren+json',
-				'application/vnd.tableschema+json',
-				'application/vnd.vel+json',
-				'application/vnd.xacml+json',
 				'application/javascript'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -31812,7 +26518,6 @@ class data {
 				'application/json'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -31824,16 +26529,9 @@ class data {
 			'ext'=>'jsonld',
 			'mime'=>array(
 				'application/ld+json',
-				'application/vnd.ims.lis.v2.result+json',
-				'application/vnd.ims.lti.v2.toolconsumerprofile+json',
-				'application/vnd.ims.lti.v2.toolproxy.id+json',
-				'application/vnd.ims.lti.v2.toolproxy+json',
-				'application/vnd.ims.lti.v2.toolsettings+json',
-				'application/vnd.ims.lti.v2.toolsettings.simple+json',
 				'application/json'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -31867,17 +26565,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-jsp'
-		),
-		'jtd'=>array(
-			'ext'=>'jtd',
-			'mime'=>array(
-				'text/vnd.esmertec.theme-descriptor'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.esmertec.theme-descriptor'
 		),
 		'junit'=>array(
 			'ext'=>'junit',
@@ -31958,17 +26645,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.kde.karbon'
-		),
-		'kcm'=>array(
-			'ext'=>'kcm',
-			'mime'=>array(
-				'application/vnd.nervana'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nervana'
 		),
 		'kdc'=>array(
 			'ext'=>'kdc',
@@ -32084,7 +26760,6 @@ class data {
 				'application/vnd.kidspiration'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32126,7 +26801,6 @@ class data {
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -32144,7 +26818,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -32161,7 +26834,6 @@ class data {
 				'application/vnd.kinar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32174,7 +26846,6 @@ class data {
 				'application/vnd.kinar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32194,17 +26865,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.kde.kontour'
-		),
-		'koz'=>array(
-			'ext'=>'koz',
-			'mime'=>array(
-				'audio/vnd.audiokoz'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.audiokoz'
 		),
 		'kpm'=>array(
 			'ext'=>'kpm',
@@ -32304,7 +26964,6 @@ class data {
 				'application/vnd.kahootz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32329,7 +26988,6 @@ class data {
 				'application/vnd.kahootz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32393,24 +27051,12 @@ class data {
 			),
 			'primary'=>'application/x-shared-library-la'
 		),
-		'lasjson'=>array(
-			'ext'=>'lasjson',
-			'mime'=>array(
-				'application/vnd.las.las+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.las.las+json'
-		),
 		'lasxml'=>array(
 			'ext'=>'lasxml',
 			'mime'=>array(
 				'application/vnd.las.las+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -32441,7 +27087,6 @@ class data {
 				'application/vnd.llamagraphics.life-balance.desktop'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32454,7 +27099,6 @@ class data {
 				'application/vnd.llamagraphics.life-balance.exchange+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32491,24 +27135,12 @@ class data {
 			),
 			'primary'=>'text/x-ldif'
 		),
-		'le'=>array(
-			'ext'=>'le',
-			'mime'=>array(
-				'application/vnd.bluetooth.le.oob'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.bluetooth.le.oob'
-		),
 		'les'=>array(
 			'ext'=>'les',
 			'mime'=>array(
 				'application/vnd.hhe.lesson-player'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32528,17 +27160,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-less'
-		),
-		'lgr'=>array(
-			'ext'=>'lgr',
-			'mime'=>array(
-				'application/lgr+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/lgr+xml'
 		),
 		'lha'=>array(
 			'ext'=>'lha',
@@ -32588,7 +27209,6 @@ class data {
 				'application/vnd.route66.link66+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32627,7 +27247,6 @@ class data {
 				'application/vnd.ibm.modcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32640,24 +27259,11 @@ class data {
 				'application/vnd.ibm.modcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.ibm.modcap'
-		),
-		'lmp'=>array(
-			'ext'=>'lmp',
-			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
 		),
 		'lnk'=>array(
 			'ext'=>'lnk',
@@ -32697,24 +27303,12 @@ class data {
 			),
 			'primary'=>'text/x-log'
 		),
-		'lostsyncxml'=>array(
-			'ext'=>'lostsyncxml',
-			'mime'=>array(
-				'application/lostsync+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/lostsync+xml'
-		),
 		'lostxml'=>array(
 			'ext'=>'lostxml',
 			'mime'=>array(
 				'application/lost+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32792,7 +27386,6 @@ class data {
 				'application/vnd.frogans.ltf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32838,7 +27431,6 @@ class data {
 				'audio/vnd.lucent.voice'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -32873,7 +27465,6 @@ class data {
 				'application/vnd.lotus-wordpro'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -32891,17 +27482,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'image/x-lws'
-		),
-		'lxf'=>array(
-			'ext'=>'lxf',
-			'mime'=>array(
-				'application/lxf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/lxf'
 		),
 		'ly'=>array(
 			'ext'=>'ly',
@@ -33147,17 +27727,16 @@ class data {
 		'm3u'=>array(
 			'ext'=>'m3u',
 			'mime'=>array(
-				'application/vnd.apple.mpegurl',
 				'audio/x-mpegurl',
 				'audio/mpegurl',
 				'application/m3u',
 				'audio/x-mp3-playlist',
 				'audio/m3u',
 				'audio/x-m3u',
-				'text/plain'
+				'text/plain',
+				'application/vnd.apple.mpegurl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -33166,11 +27745,10 @@ class data {
 				'audio/mpegurl',
 				'application/m3u',
 				'audio/x-mp3-playlist',
-				'audio/m3u',
 				'audio/x-m3u',
 				'text/plain'
 			),
-			'primary'=>'application/vnd.apple.mpegurl'
+			'primary'=>'audio/m3u'
 		),
 		'm3u8'=>array(
 			'ext'=>'m3u8',
@@ -33185,7 +27763,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org'
@@ -33258,27 +27835,14 @@ class data {
 			),
 			'primary'=>'audio/x-m4b'
 		),
-		'm4s'=>array(
-			'ext'=>'m4s',
-			'mime'=>array(
-				'video/iso.segment'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/iso.segment'
-		),
 		'm4u'=>array(
 			'ext'=>'m4u',
 			'mime'=>array(
-				'video/vnd-mpegurl',
 				'video/vnd.mpegurl',
 				'video/x-mpegurl',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -33287,7 +27851,7 @@ class data {
 				'video/x-mpegurl',
 				'text/plain'
 			),
-			'primary'=>'video/vnd-mpegurl'
+			'primary'=>'video/vnd.mpegurl'
 		),
 		'm4v'=>array(
 			'ext'=>'m4v',
@@ -33325,7 +27889,6 @@ class data {
 				'application/mathematica'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33352,7 +27915,6 @@ class data {
 				'application/mads+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -33364,7 +27926,6 @@ class data {
 				'application/vnd.ecowin.chart'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33470,7 +28031,6 @@ class data {
 				'text/x-web-markdown'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -33512,7 +28072,6 @@ class data {
 				'application/mathematica'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33525,7 +28084,6 @@ class data {
 				'application/vnd.mobius.mbk'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33554,7 +28112,6 @@ class data {
 				'application/vnd.medcalcdata'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33564,11 +28121,9 @@ class data {
 		'mcd'=>array(
 			'ext'=>'mcd',
 			'mime'=>array(
-				'application/vnd.mcd',
-				'application/vnd.vectorworks'
+				'application/vnd.mcd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33596,7 +28151,6 @@ class data {
 				'text/x-web-markdown'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -33631,24 +28185,12 @@ class data {
 			),
 			'primary'=>'application/x-msaccess'
 		),
-		'mdc'=>array(
-			'ext'=>'mdc',
-			'mime'=>array(
-				'application/vnd.marlin.drm.mdcf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.marlin.drm.mdcf'
-		),
 		'mdi'=>array(
 			'ext'=>'mdi',
 			'mime'=>array(
 				'image/vnd.ms-modi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -33758,7 +28300,6 @@ class data {
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -33788,7 +28329,6 @@ class data {
 				'application/mets+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -33805,24 +28345,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'text/plain'
 		),
-		'mf4'=>array(
-			'ext'=>'mf4',
-			'mime'=>array(
-				'application/mf4'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/mf4'
-		),
 		'mfm'=>array(
 			'ext'=>'mfm',
 			'mime'=>array(
 				'application/vnd.mfmp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33835,7 +28363,6 @@ class data {
 				'application/rpki-manifest'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -33863,7 +28390,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -33878,7 +28404,6 @@ class data {
 				'application/vnd.proteus.magazine'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -33920,12 +28445,10 @@ class data {
 		'mid'=>array(
 			'ext'=>'mid',
 			'mime'=>array(
-				'audio/sp-midi',
 				'audio/midi',
 				'audio/x-midi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -34007,17 +28530,6 @@ class data {
 				'audio/x-psf'
 			),
 			'primary'=>'audio/x-minipsf'
-		),
-		'miz'=>array(
-			'ext'=>'miz',
-			'mime'=>array(
-				'text/mizar'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/mizar'
 		),
 		'mj2'=>array(
 			'ext'=>'mj2',
@@ -34194,16 +28706,14 @@ class data {
 		'mlp'=>array(
 			'ext'=>'mlp',
 			'mime'=>array(
-				'audio/vnd.dolby.mlp',
 				'application/vnd.dolby.mlp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'audio/vnd.dolby.mlp'
+			'primary'=>'application/vnd.dolby.mlp'
 		),
 		'mm'=>array(
 			'ext'=>'mm',
@@ -34267,23 +28777,11 @@ class data {
 				'application/vnd.chipnuts.karaoke-mmd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.chipnuts.karaoke-mmd'
-		),
-		'mmdb'=>array(
-			'ext'=>'mmdb',
-			'mime'=>array(
-				'application/vnd.maxmind.maxmind-db'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.maxmind.maxmind-db'
 		),
 		'mmf'=>array(
 			'ext'=>'mmf',
@@ -34292,7 +28790,6 @@ class data {
 				'application/x-smaf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -34364,7 +28861,6 @@ class data {
 				'image/vnd.fujixerox.edmics-mmr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -34456,27 +28952,14 @@ class data {
 		'mod'=>array(
 			'ext'=>'mod',
 			'mime'=>array(
-				'application/xml-dtd',
 				'audio/x-mod'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/xml-dtd'
-		),
-		'model-inter'=>array(
-			'ext'=>'model-inter',
-			'mime'=>array(
-				'application/vnd.vd-study'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.vd-study'
+			'primary'=>'audio/x-mod'
 		),
 		'mods'=>array(
 			'ext'=>'mods',
@@ -34484,7 +28967,6 @@ class data {
 				'application/mods+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -34570,17 +29052,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'video/x-sgi-movie'
 		),
-		'mp1'=>array(
-			'ext'=>'mp1',
-			'mime'=>array(
-				'audio/mpeg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/mpeg'
-		),
 		'mp2'=>array(
 			'ext'=>'mp2',
 			'mime'=>array(
@@ -34595,7 +29066,6 @@ class data {
 				'audio/x-mpeg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -34608,7 +29078,7 @@ class data {
 				'video/x-mpeg2',
 				'audio/x-mpeg'
 			),
-			'primary'=>'audio/mpeg'
+			'primary'=>'audio/mp2'
 		),
 		'mp21'=>array(
 			'ext'=>'mp21',
@@ -34646,7 +29116,6 @@ class data {
 				'audio/mp3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -34655,22 +29124,19 @@ class data {
 			'alias'=>array(
 				'audio/x-mp3',
 				'audio/x-mpg',
-				'audio/x-mpeg',
-				'audio/mp3'
+				'audio/x-mpeg'
 			),
-			'primary'=>'audio/mpeg'
+			'primary'=>'audio/mp3'
 		),
 		'mp4'=>array(
 			'ext'=>'mp4',
 			'mime'=>array(
-				'video/vnd.objectvideo',
 				'video/mp4',
 				'video/mp4v-es',
 				'video/x-m4v',
 				'video/quicktime'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -34681,7 +29147,7 @@ class data {
 				'video/x-m4v',
 				'video/quicktime'
 			),
-			'primary'=>'video/vnd.objectvideo'
+			'primary'=>'video/mp4'
 		),
 		'mp4a'=>array(
 			'ext'=>'mp4a',
@@ -34746,28 +29212,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.mophun.certificate'
 		),
-		'mpd'=>array(
-			'ext'=>'mpd',
-			'mime'=>array(
-				'application/dash+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dash+xml'
-		),
-		'mpdd'=>array(
-			'ext'=>'mpdd',
-			'mime'=>array(
-				'application/dashdelta'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dashdelta'
-		),
 		'mpe'=>array(
 			'ext'=>'mpe',
 			'mime'=>array(
@@ -34812,18 +29256,6 @@ class data {
 				'video/x-mpeg2'
 			),
 			'primary'=>'video/mpeg'
-		),
-		'mpf'=>array(
-			'ext'=>'mpf',
-			'mime'=>array(
-				'application/media-policy-dataset+xml',
-				'text/vnd.ms-mediapackage'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/media-policy-dataset+xml'
 		),
 		'mpg'=>array(
 			'ext'=>'mpg',
@@ -34925,7 +29357,6 @@ class data {
 				'application/vnd.blueice.multipass'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -34990,7 +29421,6 @@ class data {
 				'application/vnd.ibm.minipay'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35003,7 +29433,6 @@ class data {
 				'application/vnd.mobius.mqy'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35016,7 +29445,6 @@ class data {
 				'application/marc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35029,7 +29457,6 @@ class data {
 				'application/marcxml+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -35098,17 +29525,6 @@ class data {
 			),
 			'primary'=>'text/troff'
 		),
-		'msa'=>array(
-			'ext'=>'msa',
-			'mime'=>array(
-				'application/vnd.msa-disk-image'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.msa-disk-image'
-		),
 		'mscml'=>array(
 			'ext'=>'mscml',
 			'mime'=>array(
@@ -35121,24 +29537,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/mediaservercontrol+xml'
 		),
-		'msd'=>array(
-			'ext'=>'msd',
-			'mime'=>array(
-				'application/vnd.fdsn.mseed'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.fdsn.mseed'
-		),
 		'mseed'=>array(
 			'ext'=>'mseed',
 			'mime'=>array(
 				'application/vnd.fdsn.mseed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35151,7 +29555,6 @@ class data {
 				'application/vnd.mseq'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35164,7 +29567,6 @@ class data {
 				'application/vnd.epson.msf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35223,7 +29625,6 @@ class data {
 				'application/vnd.mobius.msl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35233,16 +29634,13 @@ class data {
 		'msm'=>array(
 			'ext'=>'msm',
 			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl',
 				'application/octet-stream'
 			),
 			'source'=>array(
-				'IANA',
 				'Nginx'
 			),
 			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
+			'primary'=>'application/octet-stream'
 		),
 		'msod'=>array(
 			'ext'=>'msod',
@@ -35295,7 +29693,6 @@ class data {
 				'application/vnd.muvee.style'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35331,24 +29728,12 @@ class data {
 				'video/mp2t'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'model/vnd.mts'
-		),
-		'multitrack'=>array(
-			'ext'=>'multitrack',
-			'mime'=>array(
-				'audio/vnd.presonus.multitrack'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.presonus.multitrack'
 		),
 		'mup'=>array(
 			'ext'=>'mup',
@@ -35376,17 +29761,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.musician'
 		),
-		'musd'=>array(
-			'ext'=>'musd',
-			'mime'=>array(
-				'application/mmt-usd+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/mmt-usd+xml'
-		),
 		'musicxml'=>array(
 			'ext'=>'musicxml',
 			'mime'=>array(
@@ -35411,24 +29785,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-msmediaview'
 		),
-		'mvt'=>array(
-			'ext'=>'mvt',
-			'mime'=>array(
-				'application/vnd.mapbox-vector-tile'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.mapbox-vector-tile'
-		),
 		'mwf'=>array(
 			'ext'=>'mwf',
 			'mime'=>array(
 				'application/vnd.mfer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35441,7 +29803,6 @@ class data {
 				'application/mxf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -35449,41 +29810,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/mxf'
 		),
-		'mxi'=>array(
-			'ext'=>'mxi',
-			'mime'=>array(
-				'application/vnd.vd-study'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.vd-study'
-		),
 		'mxl'=>array(
 			'ext'=>'mxl',
 			'mime'=>array(
 				'application/vnd.recordare.musicxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.recordare.musicxml'
-		),
-		'mxmf'=>array(
-			'ext'=>'mxmf',
-			'mime'=>array(
-				'audio/mobile-xmf',
-				'audio/vnd.nokia.mobile-xmf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/mobile-xmf'
 		),
 		'mxml'=>array(
 			'ext'=>'mxml',
@@ -35491,7 +29828,6 @@ class data {
 				'application/xv+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35504,7 +29840,6 @@ class data {
 				'application/vnd.triscape.mxs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35514,13 +29849,11 @@ class data {
 		'mxu'=>array(
 			'ext'=>'mxu',
 			'mime'=>array(
-				'video/vnd-mpegurl',
 				'video/vnd.mpegurl',
 				'video/x-mpegurl',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -35529,7 +29862,7 @@ class data {
 				'video/x-mpegurl',
 				'text/plain'
 			),
-			'primary'=>'video/vnd-mpegurl'
+			'primary'=>'video/vnd.mpegurl'
 		),
 		'n-gage'=>array(
 			'ext'=>'n-gage',
@@ -35537,7 +29870,6 @@ class data {
 				'application/vnd.nokia.n-gage.symbian.install'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35572,12 +29904,10 @@ class data {
 			'ext'=>'nb',
 			'mime'=>array(
 				'application/mathematica',
-				'application/vnd.wolfram.mathematica',
 				'application/x-mathematica',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -35594,7 +29924,6 @@ class data {
 				'application/vnd.wolfram.player'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -35624,17 +29953,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-dtbncx+xml'
-		),
-		'ndc'=>array(
-			'ext'=>'ndc',
-			'mime'=>array(
-				'application/vnd.osa.netdeploy'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.osa.netdeploy'
 		),
 		'nds'=>array(
 			'ext'=>'nds',
@@ -35706,7 +30024,6 @@ class data {
 				'application/vnd.nokia.n-gage.data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35723,17 +30040,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-neo-geo-pocket-rom'
-		),
-		'nim'=>array(
-			'ext'=>'nim',
-			'mime'=>array(
-				'video/vnd.nokia.interleaved-multimedia'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.nokia.interleaved-multimedia'
 		),
 		'nitf'=>array(
 			'ext'=>'nitf',
@@ -35757,7 +30063,6 @@ class data {
 				'application/vnd.neurolanguage.nlu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35770,7 +30075,6 @@ class data {
 				'application/vnd.enliven'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35783,7 +30087,6 @@ class data {
 				'application/vnd.noblenet-directory'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35796,7 +30099,6 @@ class data {
 				'application/vnd.noblenet-sealer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35809,7 +30111,6 @@ class data {
 				'application/vnd.noblenet-web'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35829,17 +30130,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-mup'
-		),
-		'notebook'=>array(
-			'ext'=>'notebook',
-			'mime'=>array(
-				'application/vnd.smart.notebook'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.smart.notebook'
 		),
 		'npx'=>array(
 			'ext'=>'npx',
@@ -35886,7 +30176,6 @@ class data {
 				'application/vnd.lotus-notes'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35953,7 +30242,6 @@ class data {
 				'application/vnd.fujitsu.oasys2'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35966,7 +30254,6 @@ class data {
 				'application/vnd.fujitsu.oasys3'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35979,7 +30266,6 @@ class data {
 				'application/vnd.fujitsu.oasys'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -35997,28 +30283,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-msbinder'
-		),
-		'obg'=>array(
-			'ext'=>'obg',
-			'mime'=>array(
-				'application/vnd.openblox.game-binary'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.openblox.game-binary'
-		),
-		'obgx'=>array(
-			'ext'=>'obgx',
-			'mime'=>array(
-				'application/vnd.openblox.game+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.openblox.game+xml'
 		),
 		'obj'=>array(
 			'ext'=>'obj',
@@ -36082,7 +30346,6 @@ class data {
 				'application/vnd.oasis.opendocument.base'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36101,7 +30364,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.chart'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36120,7 +30382,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.formula'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36154,7 +30415,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.graphics'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -36174,7 +30434,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.image'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36192,7 +30451,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -36209,7 +30467,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.presentation'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -36229,7 +30486,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.spreadsheet'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -36249,7 +30505,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.text'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -36260,28 +30515,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.text'
 			),
 			'primary'=>'application/vnd.oasis.opendocument.text'
-		),
-		'odx'=>array(
-			'ext'=>'odx',
-			'mime'=>array(
-				'application/odx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/odx'
-		),
-		'oeb'=>array(
-			'ext'=>'oeb',
-			'mime'=>array(
-				'application/vnd.openeye.oeb'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.openeye.oeb'
 		),
 		'oga'=>array(
 			'ext'=>'oga',
@@ -36297,7 +30530,6 @@ class data {
 				'audio/x-speex+ogg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36310,17 +30542,6 @@ class data {
 				'audio/x-oggflac'
 			),
 			'primary'=>'audio/ogg'
-		),
-		'ogex'=>array(
-			'ext'=>'ogex',
-			'mime'=>array(
-				'model/vnd.opengex'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.opengex'
 		),
 		'ogg'=>array(
 			'ext'=>'ogg',
@@ -36341,7 +30562,6 @@ class data {
 				'application/x-ogg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -36385,7 +30605,6 @@ class data {
 				'application/ogg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36403,7 +30622,6 @@ class data {
 				'application/x-ogg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36537,7 +30755,6 @@ class data {
 				'application/oebps-package+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -36567,7 +30784,6 @@ class data {
 				'application/x-palm-database'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36587,26 +30803,15 @@ class data {
 				'audio/opus'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
 				'audio/x-ogg',
-				'application/ogg'
+				'application/ogg',
+				'audio/ogg'
 			),
-			'primary'=>'audio/ogg'
-		),
-		'or3'=>array(
-			'ext'=>'or3',
-			'mime'=>array(
-				'application/vnd.lotus-organizer'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.lotus-organizer'
+			'primary'=>'audio/opus'
 		),
 		'ora'=>array(
 			'ext'=>'ora',
@@ -36650,35 +30855,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.lotus-organizer'
 		),
-		'orq'=>array(
-			'ext'=>'orq',
-			'mime'=>array(
-				'application/ocsp-request'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/ocsp-request'
-		),
-		'ors'=>array(
-			'ext'=>'ors',
-			'mime'=>array(
-				'application/ocsp-response'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/ocsp-response'
-		),
 		'osf'=>array(
 			'ext'=>'osf',
 			'mime'=>array(
 				'application/vnd.yamaha.openscoreformat'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -36696,17 +30878,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.yamaha.openscoreformat.osfpvg+xml'
-		),
-		'osm'=>array(
-			'ext'=>'osm',
-			'mime'=>array(
-				'application/vnd.openstreetmap.data+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.openstreetmap.data+xml'
 		),
 		'ost'=>array(
 			'ext'=>'ost',
@@ -36727,7 +30898,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.chart-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36741,14 +30911,13 @@ class data {
 		'otf'=>array(
 			'ext'=>'otf',
 			'mime'=>array(
-				'application/vnd.oasis.opendocument.formula-template',
 				'font/otf',
+				'application/vnd.oasis.opendocument.formula-template',
 				'application/zip',
 				'application/x-font-otf',
 				'font/ttf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36768,7 +30937,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.graphics-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36787,7 +30955,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.text-web'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36805,7 +30972,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.image-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -36836,7 +31002,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.presentation-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36855,7 +31020,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.spreadsheet-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36874,7 +31038,6 @@ class data {
 				'application/x-vnd.oasis.opendocument.text-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36916,17 +31079,6 @@ class data {
 			),
 			'primary'=>'application/owl+xml'
 		),
-		'oxlicg'=>array(
-			'ext'=>'oxlicg',
-			'mime'=>array(
-				'application/vnd.oxli.countgraph'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.oxli.countgraph'
-		),
 		'oxps'=>array(
 			'ext'=>'oxps',
 			'mime'=>array(
@@ -36935,7 +31087,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36979,7 +31130,6 @@ class data {
 				'application/pkcs10'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -36990,30 +31140,16 @@ class data {
 		'p12'=>array(
 			'ext'=>'p12',
 			'mime'=>array(
-				'application/pkcs12',
-				'application/x-pkcs12'
+				'application/x-pkcs12',
+				'application/pkcs12'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
-			'alias'=>array(
-				'application/x-pkcs12'
-			),
-			'primary'=>'application/pkcs12'
-		),
-		'p2p'=>array(
-			'ext'=>'p2p',
-			'mime'=>array(
-				'application/vnd.wfa.p2p'
-			),
-			'source'=>array(
-				'IANA'
-			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.wfa.p2p'
+			'primary'=>'application/x-pkcs12'
 		),
 		'p65'=>array(
 			'ext'=>'p65',
@@ -37102,7 +31238,6 @@ class data {
 				'application/pkcs8'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -37120,17 +31255,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-java-pack200'
-		),
-		'package'=>array(
-			'ext'=>'package',
-			'mime'=>array(
-				'application/vnd.autopackage'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.autopackage'
 		),
 		'pages'=>array(
 			'ext'=>'pages',
@@ -37243,7 +31367,6 @@ class data {
 				'application/vnd.pawaafile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -37252,15 +31375,9 @@ class data {
 		'pbd'=>array(
 			'ext'=>'pbd',
 			'mime'=>array(
-				'application/vnd.powerbuilder6',
-				'application/vnd.powerbuilder6-s',
-				'application/vnd.powerbuilder7',
-				'application/vnd.powerbuilder75',
-				'application/vnd.powerbuilder75-s',
-				'application/vnd.powerbuilder7-s'
+				'application/vnd.powerbuilder6'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -37291,7 +31408,6 @@ class data {
 				'application/pcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -37391,12 +31507,11 @@ class data {
 		'pcx'=>array(
 			'ext'=>'pcx',
 			'mime'=>array(
-				'image/vnd.zbrush.pcx',
 				'image/x-pcx',
+				'image/vnd.zbrush.pcx',
 				'image/x-pc-paintbrush'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -37417,7 +31532,6 @@ class data {
 				'chemical/x-pdb'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -37452,7 +31566,6 @@ class data {
 				'application/nappdf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -37465,17 +31578,6 @@ class data {
 				'application/nappdf'
 			),
 			'primary'=>'application/pdf'
-		),
-		'pdx'=>array(
-			'ext'=>'pdx',
-			'mime'=>array(
-				'application/pdx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/pdx'
 		),
 		'pef'=>array(
 			'ext'=>'pef',
@@ -37582,11 +31684,9 @@ class data {
 		'pfr'=>array(
 			'ext'=>'pfr',
 			'mime'=>array(
-				'application/font-tdpfr',
-				'application/vnd.dvb.pfr'
+				'application/font-tdpfr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -37596,19 +31696,16 @@ class data {
 		'pfx'=>array(
 			'ext'=>'pfx',
 			'mime'=>array(
-				'application/pkcs12',
-				'application/x-pkcs12'
+				'application/x-pkcs12',
+				'application/pkcs12'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
-			'alias'=>array(
-				'application/x-pkcs12'
-			),
-			'primary'=>'application/pkcs12'
+			'alias'=>array(),
+			'primary'=>'application/x-pkcs12'
 		),
 		'pgm'=>array(
 			'ext'=>'pgm',
@@ -37629,21 +31726,19 @@ class data {
 		'pgn'=>array(
 			'ext'=>'pgn',
 			'mime'=>array(
-				'application/vnd.chess-pgn',
 				'application/x-chess-pgn',
+				'application/vnd.chess-pgn',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'application/x-chess-pgn',
 				'text/plain'
 			),
-			'primary'=>'application/vnd.chess-pgn'
+			'primary'=>'application/x-chess-pgn'
 		),
 		'pgp'=>array(
 			'ext'=>'pgp',
@@ -37744,16 +31839,14 @@ class data {
 		'pic'=>array(
 			'ext'=>'pic',
 			'mime'=>array(
-				'image/vnd.radiance',
 				'image/x-pict'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'image/vnd.radiance'
+			'primary'=>'image/x-pict'
 		),
 		'pict'=>array(
 			'ext'=>'pict',
@@ -37789,17 +31882,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'image/x-pict'
 		),
-		'pil'=>array(
-			'ext'=>'pil',
-			'mime'=>array(
-				'application/vnd.piaccess.application-licence'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.piaccess.application-licence'
-		),
 		'pk'=>array(
 			'ext'=>'pk',
 			'mime'=>array(
@@ -37814,18 +31896,16 @@ class data {
 		'pkg'=>array(
 			'ext'=>'pkg',
 			'mime'=>array(
-				'application/vnd.apple.installer+xml',
 				'application/octet-stream',
 				'application/x-xar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.apple.installer+xml'
+			'primary'=>'application/octet-stream'
 		),
 		'pki'=>array(
 			'ext'=>'pki',
@@ -37845,7 +31925,6 @@ class data {
 				'application/pkix-pkipath'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -37903,7 +31982,6 @@ class data {
 				'application/vnd.3gpp.pic-bw-large'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -37916,7 +31994,6 @@ class data {
 				'application/vnd.mobius.plc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -37929,23 +32006,11 @@ class data {
 				'application/vnd.pocketlearn'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.pocketlearn'
-		),
-		'plj'=>array(
-			'ext'=>'plj',
-			'mime'=>array(
-				'audio/vnd.everad.plj'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.everad.plj'
 		),
 		'pln'=>array(
 			'ext'=>'pln',
@@ -37957,17 +32022,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-planperfect'
-		),
-		'plp'=>array(
-			'ext'=>'plp',
-			'mime'=>array(
-				'application/vnd.panoply'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.panoply'
 		),
 		'pls'=>array(
 			'ext'=>'pls',
@@ -38044,7 +32098,6 @@ class data {
 				'application/vnd.ctc-posml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38054,18 +32107,16 @@ class data {
 		'png'=>array(
 			'ext'=>'png',
 			'mime'=>array(
-				'image/vnd.mozilla.apng',
 				'image/png'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'image/vnd.mozilla.apng'
+			'primary'=>'image/png'
 		),
 		'pnm'=>array(
 			'ext'=>'pnm',
@@ -38153,7 +32204,6 @@ class data {
 				'application/vnd.macports.portpkg'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38196,9 +32246,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.presentationml.template'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38211,15 +32260,13 @@ class data {
 		'potx'=>array(
 			'ext'=>'potx',
 			'mime'=>array(
-				'application/vnd.openxmlformats-officedocument.presentationml-template',
-				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.presentationml.template',
+				'application/vnd.ms-office',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38227,7 +32274,7 @@ class data {
 				'application/vnd.ms-office',
 				'application/zip'
 			),
-			'primary'=>'application/vnd.openxmlformats-officedocument.presentationml-template'
+			'primary'=>'application/vnd.openxmlformats-officedocument.presentationml.template'
 		),
 		'pp'=>array(
 			'ext'=>'pp',
@@ -38267,9 +32314,8 @@ class data {
 				'application/vnd.ms-office'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38284,20 +32330,8 @@ class data {
 				'application/vnd.cups-ppd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.cups-ppd'
-		),
-		'ppdgz'=>array(
-			'ext'=>'ppdgz',
-			'mime'=>array(
-				'application/vnd.cups-ppd'
-			),
-			'source'=>array(
-				'IANA'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.cups-ppd'
@@ -38315,17 +32349,6 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'image/vnd.adobe.premiere'
-		),
-		'ppkg'=>array(
-			'ext'=>'ppkg',
-			'mime'=>array(
-				'application/vnd.xmpie.ppkg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.xmpie.ppkg'
 		),
 		'ppm'=>array(
 			'ext'=>'ppm',
@@ -38374,9 +32397,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.presentationml.slideshow'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38394,9 +32416,8 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38438,9 +32459,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38458,9 +32478,8 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -38499,7 +32518,6 @@ class data {
 				'application/x-palm-database'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -38512,22 +32530,22 @@ class data {
 		'prc'=>array(
 			'ext'=>'prc',
 			'mime'=>array(
-				'application/vnd.palm',
 				'application/x-mobipocket-ebook',
 				'application/x-pilot',
+				'application/vnd.palm',
 				'application/x-palm-database'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
+				'application/vnd.palm',
 				'application/x-palm-database'
 			),
-			'primary'=>'application/vnd.palm'
+			'primary'=>'application/x-mobipocket-ebook'
 		),
 		'pre'=>array(
 			'ext'=>'pre',
@@ -38540,17 +32558,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.lotus-freelance'
-		),
-		'preminet'=>array(
-			'ext'=>'preminet',
-			'mime'=>array(
-				'application/vnd.preminet'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.preminet'
 		),
 		'prf'=>array(
 			'ext'=>'prf',
@@ -38606,17 +32613,6 @@ class data {
 			),
 			'primary'=>'text/properties'
 		),
-		'provx'=>array(
-			'ext'=>'provx',
-			'mime'=>array(
-				'application/provenance+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/provenance+xml'
-		),
 		'prt'=>array(
 			'ext'=>'prt',
 			'mime'=>array(
@@ -38627,17 +32623,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-prt'
-		),
-		'prz'=>array(
-			'ext'=>'prz',
-			'mime'=>array(
-				'application/vnd.lotus-freelance'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.lotus-freelance'
 		),
 		'ps'=>array(
 			'ext'=>'ps',
@@ -38662,7 +32647,6 @@ class data {
 				'application/vnd.3gpp.pic-bw-small'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38681,31 +32665,18 @@ class data {
 				'application/x-photoshop'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'image/psd',
 				'image/x-psd',
 				'image/photoshop',
 				'image/x-photoshop',
 				'application/photoshop',
 				'application/x-photoshop'
 			),
-			'primary'=>'image/vnd.adobe.photoshop'
-		),
-		'pseg3820'=>array(
-			'ext'=>'pseg3820',
-			'mime'=>array(
-				'application/vnd.ibm.modcap'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ibm.modcap'
+			'primary'=>'image/psd'
 		),
 		'psf'=>array(
 			'ext'=>'psf',
@@ -38741,7 +32712,6 @@ class data {
 				'audio/prs.sid'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
@@ -38753,7 +32723,6 @@ class data {
 				'application/pskc+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -38780,17 +32749,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-pocket-word'
-		),
-		'pti'=>array(
-			'ext'=>'pti',
-			'mime'=>array(
-				'image/prs.pti'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/prs.pti'
 		),
 		'ptid'=>array(
 			'ext'=>'ptid',
@@ -38838,7 +32796,6 @@ class data {
 				'application/vnd.3gpp.pic-bw-var'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38931,7 +32888,6 @@ class data {
 				'audio/vnd.ms-playready.media.pya'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38966,7 +32922,6 @@ class data {
 				'video/vnd.ms-playready.media.pyv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -38993,7 +32948,6 @@ class data {
 				'application/vnd.epson.quickanime'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39006,34 +32960,11 @@ class data {
 				'application/vnd.intu.qbo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.intu.qbo'
-		),
-		'qca'=>array(
-			'ext'=>'qca',
-			'mime'=>array(
-				'application/vnd.ericsson.quickcall'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ericsson.quickcall'
-		),
-		'qcall'=>array(
-			'ext'=>'qcall',
-			'mime'=>array(
-				'application/vnd.ericsson.quickcall'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ericsson.quickcall'
 		),
 		'qfx'=>array(
 			'ext'=>'qfx',
@@ -39041,7 +32972,6 @@ class data {
 				'application/vnd.intu.qfx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39110,7 +33040,6 @@ class data {
 				'application/vnd.publishare-delta-tree'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39202,7 +33131,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39215,7 +33143,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39228,7 +33155,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39241,7 +33167,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39254,7 +33179,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39267,7 +33191,6 @@ class data {
 				'application/vnd.quark.quarkxpress'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39352,36 +33275,23 @@ class data {
 			),
 			'primary'=>'application/raml+yaml'
 		),
-		'rapd'=>array(
-			'ext'=>'rapd',
-			'mime'=>array(
-				'application/route-apd+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/route-apd+xml'
-		),
 		'rar'=>array(
 			'ext'=>'rar',
 			'mime'=>array(
-				'application/vnd.rar',
 				'application/x-rar-compressed',
+				'application/vnd.rar',
 				'application/x-rar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'application/x-rar',
-				'application/x-rar-compressed'
+				'application/x-rar'
 			),
-			'primary'=>'application/vnd.rar'
+			'primary'=>'application/x-rar-compressed'
 		),
 		'ras'=>array(
 			'ext'=>'ras',
@@ -39465,23 +33375,11 @@ class data {
 				'application/vnd.ipunplugged.rcprofile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.ipunplugged.rcprofile'
-		),
-		'rct'=>array(
-			'ext'=>'rct',
-			'mime'=>array(
-				'application/prs.nprend'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.nprend'
 		),
 		'rdf'=>array(
 			'ext'=>'rdf',
@@ -39491,27 +33389,14 @@ class data {
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'text/rdf',
 				'application/xml'
 			),
-			'primary'=>'application/rdf+xml'
-		),
-		'rdf-crypt'=>array(
-			'ext'=>'rdf-crypt',
-			'mime'=>array(
-				'application/prs.rdf-xml-crypt'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.rdf-xml-crypt'
+			'primary'=>'text/rdf'
 		),
 		'rdfs'=>array(
 			'ext'=>'rdfs',
@@ -39535,7 +33420,6 @@ class data {
 				'application/vnd.data-vision.rdz'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39572,52 +33456,17 @@ class data {
 			),
 			'primary'=>'text/x-reject'
 		),
-		'relo'=>array(
-			'ext'=>'relo',
-			'mime'=>array(
-				'application/p2p-overlay+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/p2p-overlay+xml'
-		),
 		'rep'=>array(
 			'ext'=>'rep',
 			'mime'=>array(
-				'application/vnd.businessobjects',
-				'application/vnd.hcl-bireports'
+				'application/vnd.businessobjects'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.businessobjects'
-		),
-		'req'=>array(
-			'ext'=>'req',
-			'mime'=>array(
-				'application/vnd.nervana'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nervana'
-		),
-		'request'=>array(
-			'ext'=>'request',
-			'mime'=>array(
-				'application/vnd.nervana'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nervana'
 		),
 		'res'=>array(
 			'ext'=>'res',
@@ -39686,24 +33535,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'image/x-rgb'
 		),
-		'rgbe'=>array(
-			'ext'=>'rgbe',
-			'mime'=>array(
-				'image/vnd.radiance'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.radiance'
-		),
 		'rif'=>array(
 			'ext'=>'rif',
 			'mime'=>array(
 				'application/reginfo+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39716,7 +33553,6 @@ class data {
 				'audio/vnd.rip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -39739,7 +33575,6 @@ class data {
 				'application/resource-lists+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39752,7 +33587,6 @@ class data {
 				'image/vnd.fujixerox.edmics-rlc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39765,7 +33599,6 @@ class data {
 				'application/resource-lists-diff+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -39786,13 +33619,10 @@ class data {
 		'rm'=>array(
 			'ext'=>'rm',
 			'mime'=>array(
-				'audio/vnd.hns.audio',
-				'video/vnd.hns.video',
 				'application/vnd.rn-realmedia',
 				'application/vnd.rn-realmedia-vbr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -39862,7 +33692,6 @@ class data {
 				'application/vnd.rn-realmedia-vbr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -39907,7 +33736,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -39917,17 +33745,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'application/relax-ng-compact-syntax'
-		),
-		'rnd'=>array(
-			'ext'=>'rnd',
-			'mime'=>array(
-				'application/prs.nprend'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.nprend'
 		),
 		'rng'=>array(
 			'ext'=>'rng',
@@ -39963,7 +33780,6 @@ class data {
 				'application/rpki-roa'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -40023,7 +33839,6 @@ class data {
 				'application/vnd.cloanto.rp9'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -40051,7 +33866,6 @@ class data {
 				'application/vnd.nokia.radio-presets'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -40064,7 +33878,6 @@ class data {
 				'application/vnd.nokia.radio-preset'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -40091,7 +33904,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -40112,29 +33924,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/rsd+xml'
-		),
-		'rsheet'=>array(
-			'ext'=>'rsheet',
-			'mime'=>array(
-				'application/urc-ressheet+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/urc-ressheet+xml'
-		),
-		'rsm'=>array(
-			'ext'=>'rsm',
-			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
 		),
 		'rss'=>array(
 			'ext'=>'rss',
@@ -40157,18 +33946,16 @@ class data {
 		'rst'=>array(
 			'ext'=>'rst',
 			'mime'=>array(
-				'text/prs.fallenstein.rst',
 				'text/x-rst',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Tika'
 			),
 			'alias'=>array(
 				'text/plain'
 			),
-			'primary'=>'text/prs.fallenstein.rst'
+			'primary'=>'text/x-rst'
 		),
 		'rt'=>array(
 			'ext'=>'rt',
@@ -40189,17 +33976,15 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'text/rtf',
 				'text/plain'
 			),
-			'primary'=>'application/rtf'
+			'primary'=>'text/rtf'
 		),
 		'rtx'=>array(
 			'ext'=>'rtx',
@@ -40227,17 +34012,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-makeself'
-		),
-		'rusd'=>array(
-			'ext'=>'rusd',
-			'mime'=>array(
-				'application/route-usd+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/route-usd+xml'
 		),
 		'rv'=>array(
 			'ext'=>'rv',
@@ -40307,149 +34081,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'text/x-asm'
 		),
-		's11'=>array(
-			'ext'=>'s11',
-			'mime'=>array(
-				'video/vnd.sealed.mpeg1'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealed.mpeg1'
-		),
-		's14'=>array(
-			'ext'=>'s14',
-			'mime'=>array(
-				'video/vnd.sealed.mpeg4'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealed.mpeg4'
-		),
-		's1a'=>array(
-			'ext'=>'s1a',
-			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-pdf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-pdf'
-		),
-		's1e'=>array(
-			'ext'=>'s1e',
-			'mime'=>array(
-				'application/vnd.sealed-xls'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-xls'
-		),
-		's1g'=>array(
-			'ext'=>'s1g',
-			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-gif'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-gif'
-		),
-		's1h'=>array(
-			'ext'=>'s1h',
-			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-html'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-html'
-		),
-		's1j'=>array(
-			'ext'=>'s1j',
-			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-jpg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-jpg'
-		),
-		's1m'=>array(
-			'ext'=>'s1m',
-			'mime'=>array(
-				'audio/vnd.sealedmedia.softseal-mpeg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		's1n'=>array(
-			'ext'=>'s1n',
-			'mime'=>array(
-				'image/vnd.sealed-png'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealed-png'
-		),
-		's1p'=>array(
-			'ext'=>'s1p',
-			'mime'=>array(
-				'application/vnd.sealed-ppt'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-ppt'
-		),
-		's1q'=>array(
-			'ext'=>'s1q',
-			'mime'=>array(
-				'video/vnd.sealedmedia.softseal-mov'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealedmedia.softseal-mov'
-		),
-		's1w'=>array(
-			'ext'=>'s1w',
-			'mime'=>array(
-				'application/vnd.sealed-doc'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-doc'
-		),
-		's3df'=>array(
-			'ext'=>'s3df',
-			'mime'=>array(
-				'application/vnd.sealed.3df'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed.3df'
-		),
 		's3m'=>array(
 			'ext'=>'s3m',
 			'mime'=>array(
@@ -40485,24 +34116,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-sas-access'
 		),
-		'sac'=>array(
-			'ext'=>'sac',
-			'mime'=>array(
-				'application/tamp-sequence-adjust-confirm'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-sequence-adjust-confirm'
-		),
 		'saf'=>array(
 			'ext'=>'saf',
 			'mime'=>array(
 				'application/vnd.yamaha.smaf-audio'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -40759,7 +34378,6 @@ class data {
 				'application/vnd.ibm.secure-container'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -40795,49 +34413,14 @@ class data {
 		'scd'=>array(
 			'ext'=>'scd',
 			'mime'=>array(
-				'application/vnd.scribus',
 				'application/x-msschedule'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.scribus'
-		),
-		'scdgz'=>array(
-			'ext'=>'scdgz',
-			'mime'=>array(
-				'application/vnd.scribus'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.scribus'
-		),
-		'sce'=>array(
-			'ext'=>'sce',
-			'mime'=>array(
-				'application/vnd.etsi.asic-e+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.etsi.asic-e+zip'
-		),
-		'scld'=>array(
-			'ext'=>'scld',
-			'mime'=>array(
-				'application/vnd.doremir.scorecloud-binary-document'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.doremir.scorecloud-binary-document'
+			'primary'=>'application/x-msschedule'
 		),
 		'scm'=>array(
 			'ext'=>'scm',
@@ -40847,7 +34430,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -40855,7 +34437,7 @@ class data {
 			'alias'=>array(
 				'text/plain'
 			),
-			'primary'=>'application/vnd.lotus-screencam'
+			'primary'=>'text/x-scheme'
 		),
 		'scope'=>array(
 			'ext'=>'scope',
@@ -40877,7 +34459,6 @@ class data {
 				'application/scvp-cv-request'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -40887,27 +34468,14 @@ class data {
 		'scs'=>array(
 			'ext'=>'scs',
 			'mime'=>array(
-				'application/scvp-cv-response',
-				'application/vnd.etsi.asic-s+zip'
+				'application/scvp-cv-response'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/scvp-cv-response'
-		),
-		'scsf'=>array(
-			'ext'=>'scsf',
-			'mime'=>array(
-				'application/vnd.sealed.csf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed.csf'
 		),
 		'scss'=>array(
 			'ext'=>'scss',
@@ -40996,17 +34564,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.stardivision.impress'
 		),
-		'sdf'=>array(
-			'ext'=>'sdf',
-			'mime'=>array(
-				'application/vnd.kinar'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.kinar'
-		),
 		'sdkd'=>array(
 			'ext'=>'sdkd',
 			'mime'=>array(
@@ -41030,28 +34587,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.solent.sdkm+xml'
-		),
-		'sdo'=>array(
-			'ext'=>'sdo',
-			'mime'=>array(
-				'application/vnd.sealed-doc'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-doc'
-		),
-		'sdoc'=>array(
-			'ext'=>'sdoc',
-			'mime'=>array(
-				'application/vnd.sealed-doc'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-doc'
 		),
 		'sdp'=>array(
 			'ext'=>'sdp',
@@ -41141,27 +34676,14 @@ class data {
 		'seed'=>array(
 			'ext'=>'seed',
 			'mime'=>array(
-				'application/vnd.fdsn.mseed',
 				'application/vnd.fdsn.seed'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.fdsn.seed'
-		),
-		'sem'=>array(
-			'ext'=>'sem',
-			'mime'=>array(
-				'application/vnd.sealed-eml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-eml'
 		),
 		'sema'=>array(
 			'ext'=>'sema',
@@ -41181,7 +34703,6 @@ class data {
 				'application/vnd.semd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -41194,23 +34715,11 @@ class data {
 				'application/vnd.semf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.semf'
-		),
-		'seml'=>array(
-			'ext'=>'seml',
-			'mime'=>array(
-				'application/vnd.sealed-eml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-eml'
 		),
 		'ser'=>array(
 			'ext'=>'ser',
@@ -41288,24 +34797,12 @@ class data {
 			),
 			'primary'=>'application/vnd.nintendo.snes.rom'
 		),
-		'sfd'=>array(
-			'ext'=>'sfd',
-			'mime'=>array(
-				'application/vnd.font-fontforge-sfd'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.font-fontforge-sfd'
-		),
 		'sfd-hdstx'=>array(
 			'ext'=>'sfd-hdstx',
 			'mime'=>array(
 				'application/vnd.hydrostatix.sof-data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -41332,7 +34829,6 @@ class data {
 				'application/vnd.spotfire.sfs'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -41389,28 +34885,15 @@ class data {
 		'sgi'=>array(
 			'ext'=>'sgi',
 			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-gif',
 				'image/sgi',
 				'image/x-sgi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-gif'
-		),
-		'sgif'=>array(
-			'ext'=>'sgif',
-			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-gif'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-gif'
+			'primary'=>'image/sgi'
 		),
 		'sgl'=>array(
 			'ext'=>'sgl',
@@ -41512,7 +34995,6 @@ class data {
 				'application/shf+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -41591,16 +35073,15 @@ class data {
 		'sid'=>array(
 			'ext'=>'sid',
 			'mime'=>array(
-				'audio/prs.sid',
-				'image/x-mrsid-image'
+				'image/x-mrsid-image',
+				'audio/prs.sid'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'audio/prs.sid'
+			'primary'=>'image/x-mrsid-image'
 		),
 		'sig'=>array(
 			'ext'=>'sig',
@@ -41609,7 +35090,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -41725,28 +35205,6 @@ class data {
 			),
 			'primary'=>'application/sieve'
 		),
-		'sjp'=>array(
-			'ext'=>'sjp',
-			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-jpg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-jpg'
-		),
-		'sjpg'=>array(
-			'ext'=>'sjpg',
-			'mime'=>array(
-				'image/vnd.sealedmedia.softseal-jpg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealedmedia.softseal-jpg'
-		),
 		'sk'=>array(
 			'ext'=>'sk',
 			'mime'=>array(
@@ -41843,39 +35301,6 @@ class data {
 			),
 			'primary'=>'application/vnd.koan'
 		),
-		'sla'=>array(
-			'ext'=>'sla',
-			'mime'=>array(
-				'application/vnd.scribus'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.scribus'
-		),
-		'slagz'=>array(
-			'ext'=>'slagz',
-			'mime'=>array(
-				'application/vnd.scribus'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.scribus'
-		),
-		'slaz'=>array(
-			'ext'=>'slaz',
-			'mime'=>array(
-				'application/vnd.scribus'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.scribus'
-		),
 		'sldasm'=>array(
 			'ext'=>'sldasm',
 			'mime'=>array(
@@ -41906,9 +35331,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.presentationml.slide'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -41937,9 +35361,8 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -41977,24 +35400,12 @@ class data {
 			),
 			'primary'=>'text/spreadsheet'
 		),
-		'sls'=>array(
-			'ext'=>'sls',
-			'mime'=>array(
-				'application/route-s-tsid+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/route-s-tsid+xml'
-		),
 		'slt'=>array(
 			'ext'=>'slt',
 			'mime'=>array(
 				'application/vnd.epson.salt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42007,7 +35418,6 @@ class data {
 				'application/vnd.stepmania.stepchart'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -42077,153 +35487,72 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.stardivision.math'
 		),
-		'smh'=>array(
-			'ext'=>'smh',
-			'mime'=>array(
-				'application/vnd.sealed-mht'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-mht'
-		),
-		'smht'=>array(
-			'ext'=>'smht',
-			'mime'=>array(
-				'application/vnd.sealed-mht'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-mht'
-		),
 		'smi'=>array(
 			'ext'=>'smi',
 			'mime'=>array(
-				'application/smil',
 				'application/smil+xml',
+				'application/smil',
 				'application/xml',
 				'application/x-sami',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
+				'application/smil',
 				'application/xml',
 				'text/plain'
 			),
-			'primary'=>'application/smil'
+			'primary'=>'application/smil+xml'
 		),
 		'smil'=>array(
 			'ext'=>'smil',
 			'mime'=>array(
-				'application/smil',
 				'application/smil+xml',
+				'application/smil',
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
+				'application/smil',
 				'application/xml'
 			),
-			'primary'=>'application/smil'
+			'primary'=>'application/smil+xml'
 		),
 		'sml'=>array(
 			'ext'=>'sml',
 			'mime'=>array(
-				'application/smil',
 				'application/smil+xml',
+				'application/smil',
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
+				'application/smil',
 				'application/xml'
 			),
-			'primary'=>'application/smil'
-		),
-		'smo'=>array(
-			'ext'=>'smo',
-			'mime'=>array(
-				'video/vnd.sealedmedia.softseal-mov'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealedmedia.softseal-mov'
-		),
-		'smov'=>array(
-			'ext'=>'smov',
-			'mime'=>array(
-				'video/vnd.sealedmedia.softseal-mov'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealedmedia.softseal-mov'
-		),
-		'smp'=>array(
-			'ext'=>'smp',
-			'mime'=>array(
-				'audio/vnd.sealedmedia.softseal-mpeg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		'smp3'=>array(
-			'ext'=>'smp3',
-			'mime'=>array(
-				'audio/vnd.sealedmedia.softseal-mpeg'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.sealedmedia.softseal-mpeg'
-		),
-		'smpg'=>array(
-			'ext'=>'smpg',
-			'mime'=>array(
-				'video/vnd.sealed.mpeg1',
-				'video/vnd.sealed.mpeg4'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealed.mpeg1'
+			'primary'=>'application/smil+xml'
 		),
 		'sms'=>array(
 			'ext'=>'sms',
 			'mime'=>array(
-				'application/vnd.3gpp.sms',
-				'application/vnd.3gpp2.sms',
 				'application/x-sms-rom'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.3gpp.sms'
+			'primary'=>'application/x-sms-rom'
 		),
 		'smv'=>array(
 			'ext'=>'smv',
@@ -42242,7 +35571,6 @@ class data {
 				'application/vnd.stepmania.package'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -42342,26 +35670,13 @@ class data {
 		'spd'=>array(
 			'ext'=>'spd',
 			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-pdf',
 				'application/x-font-speedo'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-pdf'
-		),
-		'spdf'=>array(
-			'ext'=>'spdf',
-			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-pdf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-pdf'
+			'primary'=>'application/x-font-speedo'
 		),
 		'spec'=>array(
 			'ext'=>'spec',
@@ -42383,7 +35698,6 @@ class data {
 				'application/vnd.yamaha.smaf-phrase'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42423,46 +35737,12 @@ class data {
 			),
 			'primary'=>'application/x-source-rpm'
 		),
-		'spn'=>array(
-			'ext'=>'spn',
-			'mime'=>array(
-				'image/vnd.sealed-png'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealed-png'
-		),
-		'spng'=>array(
-			'ext'=>'spng',
-			'mime'=>array(
-				'image/vnd.sealed-png'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.sealed-png'
-		),
-		'spo'=>array(
-			'ext'=>'spo',
-			'mime'=>array(
-				'text/vnd.in3d.spot'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.in3d.spot'
-		),
 		'spot'=>array(
 			'ext'=>'spot',
 			'mime'=>array(
 				'text/vnd.in3d.spot'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42472,27 +35752,14 @@ class data {
 		'spp'=>array(
 			'ext'=>'spp',
 			'mime'=>array(
-				'application/scvp-vp-response',
-				'application/vnd.sealed-ppt'
+				'application/scvp-vp-response'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/scvp-vp-response'
-		),
-		'sppt'=>array(
-			'ext'=>'sppt',
-			'mime'=>array(
-				'application/vnd.sealed-ppt'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-ppt'
 		),
 		'spq'=>array(
 			'ext'=>'spq',
@@ -42500,7 +35767,6 @@ class data {
 				'application/scvp-vp-request'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42516,7 +35782,6 @@ class data {
 				'application/x-speex'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -42529,13 +35794,12 @@ class data {
 		'sql'=>array(
 			'ext'=>'sql',
 			'mime'=>array(
-				'application/sql',
 				'application/x-sql',
+				'application/sql',
 				'text/x-sql',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -42544,7 +35808,7 @@ class data {
 				'text/x-sql',
 				'text/plain'
 			),
-			'primary'=>'application/sql'
+			'primary'=>'application/x-sql'
 		),
 		'sqsh'=>array(
 			'ext'=>'sqsh',
@@ -42556,17 +35820,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.squashfs'
-		),
-		'sr'=>array(
-			'ext'=>'sr',
-			'mime'=>array(
-				'application/vnd.sigrok.session'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sigrok.session'
 		),
 		'sr2'=>array(
 			'ext'=>'sr2',
@@ -42661,7 +35914,6 @@ class data {
 				'application/sru+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -42735,7 +35987,6 @@ class data {
 				'application/vnd.kodak-descriptor'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42748,7 +35999,6 @@ class data {
 				'application/vnd.epson.ssf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42767,28 +36017,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/ssml+xml'
 		),
-		'ssw'=>array(
-			'ext'=>'ssw',
-			'mime'=>array(
-				'video/vnd.sealed-swf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealed-swf'
-		),
-		'sswf'=>array(
-			'ext'=>'sswf',
-			'mime'=>array(
-				'video/vnd.sealed-swf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'video/vnd.sealed-swf'
-		),
 		'st'=>array(
 			'ext'=>'st',
 			'mime'=>array(
@@ -42797,7 +36025,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42855,7 +36082,6 @@ class data {
 				'application/vnd.wt.stf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -42877,17 +36103,6 @@ class data {
 				'application/zip'
 			),
 			'primary'=>'application/vnd.sun.xml.impress.template'
-		),
-		'stif'=>array(
-			'ext'=>'stif',
-			'mime'=>array(
-				'application/vnd.sealed-tiff'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-tiff'
 		),
 		'stk'=>array(
 			'ext'=>'stk',
@@ -42922,26 +36137,13 @@ class data {
 		'stm'=>array(
 			'ext'=>'stm',
 			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-html',
 				'audio/x-stm'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-html'
-		),
-		'stml'=>array(
-			'ext'=>'stml',
-			'mime'=>array(
-				'application/vnd.sealedmedia.softseal-html'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealedmedia.softseal-html'
+			'primary'=>'audio/x-stm'
 		),
 		'str'=>array(
 			'ext'=>'str',
@@ -42949,23 +36151,11 @@ class data {
 				'application/vnd.pg.format'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.pg.format'
-		),
-		'study-inter'=>array(
-			'ext'=>'study-inter',
-			'mime'=>array(
-				'application/vnd.vd-study'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.vd-study'
 		),
 		'stw'=>array(
 			'ext'=>'stw',
@@ -43032,7 +36222,6 @@ class data {
 				'text/x-subviewer'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -43130,15 +36319,13 @@ class data {
 		'svc'=>array(
 			'ext'=>'svc',
 			'mime'=>array(
-				'application/vnd.dvbservice',
 				'application/vnd.dvb.service'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.dvbservice'
+			'primary'=>'application/vnd.dvb.service'
 		),
 		'svd'=>array(
 			'ext'=>'svd',
@@ -43250,16 +36437,15 @@ class data {
 		'swi'=>array(
 			'ext'=>'swi',
 			'mime'=>array(
-				'application/vnd.arastra.swi',
-				'application/vnd.aristanetworks.swi'
+				'application/vnd.aristanetworks.swi',
+				'application/vnd.arastra.swi'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.arastra.swi'
+			'primary'=>'application/vnd.aristanetworks.swi'
 		),
 		'swm'=>array(
 			'ext'=>'swm',
@@ -43323,12 +36509,10 @@ class data {
 		'sxi'=>array(
 			'ext'=>'sxi',
 			'mime'=>array(
-				'application/vnd.vd-study',
 				'application/vnd.sun.xml.impress',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -43336,29 +36520,7 @@ class data {
 			'alias'=>array(
 				'application/zip'
 			),
-			'primary'=>'application/vnd.vd-study'
-		),
-		'sxl'=>array(
-			'ext'=>'sxl',
-			'mime'=>array(
-				'application/vnd.sealed-xls'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-xls'
-		),
-		'sxls'=>array(
-			'ext'=>'sxls',
-			'mime'=>array(
-				'application/vnd.sealed-xls'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sealed-xls'
+			'primary'=>'application/vnd.sun.xml.impress'
 		),
 		'sxm'=>array(
 			'ext'=>'sxm',
@@ -43455,61 +36617,16 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-t3vm-image'
 		),
-		't38'=>array(
-			'ext'=>'t38',
-			'mime'=>array(
-				'image/t38'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/t38'
-		),
 		'taglet'=>array(
 			'ext'=>'taglet',
 			'mime'=>array(
 				'application/vnd.mynfc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.mynfc'
-		),
-		'tam'=>array(
-			'ext'=>'tam',
-			'mime'=>array(
-				'application/vnd.onepager'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepager'
-		),
-		'tamp'=>array(
-			'ext'=>'tamp',
-			'mime'=>array(
-				'application/vnd.onepagertamp'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepagertamp'
-		),
-		'tamx'=>array(
-			'ext'=>'tamx',
-			'mime'=>array(
-				'application/vnd.onepagertamx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepagertamx'
 		),
 		'tao'=>array(
 			'ext'=>'tao',
@@ -43517,23 +36634,11 @@ class data {
 				'application/vnd.tao.intent-module-archive'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.tao.intent-module-archive'
-		),
-		'tap'=>array(
-			'ext'=>'tap',
-			'mime'=>array(
-				'image/vnd.tencent.tap'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.tencent.tap'
 		),
 		'tar'=>array(
 			'ext'=>'tar',
@@ -43564,50 +36669,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-systemd-unit'
-		),
-		'tat'=>array(
-			'ext'=>'tat',
-			'mime'=>array(
-				'application/vnd.onepagertat'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepagertat'
-		),
-		'tatp'=>array(
-			'ext'=>'tatp',
-			'mime'=>array(
-				'application/vnd.onepagertatp'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepagertatp'
-		),
-		'tatx'=>array(
-			'ext'=>'tatx',
-			'mime'=>array(
-				'application/vnd.onepagertatx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.onepagertatx'
-		),
-		'tau'=>array(
-			'ext'=>'tau',
-			'mime'=>array(
-				'application/tamp-apex-update'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-apex-update'
 		),
 		'taz'=>array(
 			'ext'=>'taz',
@@ -43674,7 +36735,6 @@ class data {
 				'application/vnd.3gpp2.tcap'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -43710,24 +36770,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-csh'
 		),
-		'tcu'=>array(
-			'ext'=>'tcu',
-			'mime'=>array(
-				'application/tamp-community-update'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-community-update'
-		),
 		'teacher'=>array(
 			'ext'=>'teacher',
 			'mime'=>array(
 				'application/vnd.smart.teacher'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -43755,17 +36803,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/tei+xml'
-		),
-		'ter'=>array(
-			'ext'=>'ter',
-			'mime'=>array(
-				'application/tamp-error'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-error'
 		),
 		'tex'=>array(
 			'ext'=>'tex',
@@ -43839,7 +36876,6 @@ class data {
 				'application/thraud+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -43856,17 +36892,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-tex-tfm'
-		),
-		'tfx'=>array(
-			'ext'=>'tfx',
-			'mime'=>array(
-				'image/tiff-fx'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/tiff-fx'
 		),
 		'tga'=>array(
 			'ext'=>'tga',
@@ -43910,17 +36935,6 @@ class data {
 			),
 			'primary'=>'application/x-compressed-tar'
 		),
-		'the'=>array(
-			'ext'=>'the',
-			'mime'=>array(
-				'message/global-headers'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'message/global-headers'
-		),
 		'theme'=>array(
 			'ext'=>'theme',
 			'mime'=>array(
@@ -43957,7 +36971,6 @@ class data {
 				'application/vnd.ms-office'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika',
 				'Blobfolio'
@@ -43973,7 +36986,6 @@ class data {
 				'image/tiff'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -44028,17 +37040,6 @@ class data {
 			),
 			'primary'=>'text/x-tcl'
 		),
-		'tlclient'=>array(
-			'ext'=>'tlclient',
-			'mime'=>array(
-				'application/vnd.cendio.thinlinc.clientconf'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.cendio.thinlinc.clientconf'
-		),
 		'tld'=>array(
 			'ext'=>'tld',
 			'mime'=>array(
@@ -44084,7 +37085,6 @@ class data {
 				'application/vnd.tmobile-livetv'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44180,7 +37180,6 @@ class data {
 				'application/vnd.groove-tool-template'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44193,7 +37192,6 @@ class data {
 				'application/vnd.trid.tpt'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44232,23 +37230,11 @@ class data {
 				'application/vnd.trueapp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.trueapp'
-		),
-		'tree'=>array(
-			'ext'=>'tree',
-			'mime'=>array(
-				'application/vnd.rainstor.data'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.rainstor.data'
 		),
 		'trig'=>array(
 			'ext'=>'trig',
@@ -44258,7 +37244,6 @@ class data {
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(
@@ -44282,13 +37267,12 @@ class data {
 		'ts'=>array(
 			'ext'=>'ts',
 			'mime'=>array(
-				'text/vnd.trolltech.linguist',
 				'video/mp2t',
+				'text/vnd.trolltech.linguist',
 				'application/x-linguist',
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Nginx',
 				'freedesktop.org'
 			),
@@ -44296,18 +37280,7 @@ class data {
 				'application/x-linguist',
 				'application/xml'
 			),
-			'primary'=>'text/vnd.trolltech.linguist'
-		),
-		'tsa'=>array(
-			'ext'=>'tsa',
-			'mime'=>array(
-				'application/tamp-sequence-adjust'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-sequence-adjust'
+			'primary'=>'video/mp2t'
 		),
 		'tsd'=>array(
 			'ext'=>'tsd',
@@ -44315,45 +37288,11 @@ class data {
 				'application/timestamped-data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/timestamped-data'
-		),
-		'tsq'=>array(
-			'ext'=>'tsq',
-			'mime'=>array(
-				'application/tamp-status-query'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-status-query'
-		),
-		'tsr'=>array(
-			'ext'=>'tsr',
-			'mime'=>array(
-				'application/tamp-status-response'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-status-response'
-		),
-		'tst'=>array(
-			'ext'=>'tst',
-			'mime'=>array(
-				'application/vnd.etsi.timestamp-token'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.etsi.timestamp-token'
 		),
 		'tsv'=>array(
 			'ext'=>'tsv',
@@ -44428,17 +37367,6 @@ class data {
 			),
 			'primary'=>'text/turtle'
 		),
-		'ttml'=>array(
-			'ext'=>'ttml',
-			'mime'=>array(
-				'application/ttml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/ttml+xml'
-		),
 		'ttx'=>array(
 			'ext'=>'ttx',
 			'mime'=>array(
@@ -44453,35 +37381,12 @@ class data {
 			),
 			'primary'=>'application/x-font-ttx'
 		),
-		'tuc'=>array(
-			'ext'=>'tuc',
-			'mime'=>array(
-				'application/tamp-update-confirm'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-update-confirm'
-		),
-		'tur'=>array(
-			'ext'=>'tur',
-			'mime'=>array(
-				'application/tamp-update'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/tamp-update'
-		),
 		'twd'=>array(
 			'ext'=>'twd',
 			'mime'=>array(
 				'application/vnd.simtech-mindmapper'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44494,7 +37399,6 @@ class data {
 				'application/vnd.simtech-mindmapper'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44521,7 +37425,6 @@ class data {
 				'application/vnd.genomatix.tuxedo'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44534,7 +37437,6 @@ class data {
 				'application/vnd.mobius.txf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44544,12 +37446,9 @@ class data {
 		'txt'=>array(
 			'ext'=>'txt',
 			'mime'=>array(
-				'text/prs.fallenstein.rst',
-				'text/prs.prop.logic',
 				'text/plain'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -44623,23 +37522,22 @@ class data {
 		'udeb'=>array(
 			'ext'=>'udeb',
 			'mime'=>array(
-				'application/vnd.debian.binary-package',
 				'application/x-debian-package',
+				'application/vnd.debian.binary-package',
 				'application/x-deb',
 				'application/x-archive'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
 				'application/x-deb',
-				'application/x-debian-package',
+				'application/vnd.debian.binary-package',
 				'application/x-archive'
 			),
-			'primary'=>'application/vnd.debian.binary-package'
+			'primary'=>'application/x-debian-package'
 		),
 		'ufd'=>array(
 			'ext'=>'ufd',
@@ -44647,7 +37545,6 @@ class data {
 				'application/vnd.ufdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44660,7 +37557,6 @@ class data {
 				'application/vnd.ufdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44738,7 +37634,6 @@ class data {
 				'application/vnd.umajin'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44784,34 +37679,11 @@ class data {
 				'application/vnd.unity'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.unity'
-		),
-		'unknown'=>array(
-			'ext'=>'unknown',
-			'mime'=>array(
-				'application/dns'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dns'
-		),
-		'uo'=>array(
-			'ext'=>'uo',
-			'mime'=>array(
-				'application/vnd.uoml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.uoml+xml'
 		),
 		'uoml'=>array(
 			'ext'=>'uoml',
@@ -44819,7 +37691,6 @@ class data {
 				'application/vnd.uoml+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44838,35 +37709,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'text/uri-list'
 		),
-		'uric'=>array(
-			'ext'=>'uric',
-			'mime'=>array(
-				'text/vnd.si.uricatalogue'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'text/vnd.si.uricatalogue'
-		),
-		'urim'=>array(
-			'ext'=>'urim',
-			'mime'=>array(
-				'application/vnd.uri-map'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.uri-map'
-		),
 		'uris'=>array(
 			'ext'=>'uris',
 			'mime'=>array(
 				'text/uri-list'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44915,7 +37763,6 @@ class data {
 				'application/vnd.uiq.theme'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -44956,7 +37803,6 @@ class data {
 				'audio/vnd.dece.audio'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -44968,7 +37814,6 @@ class data {
 				'application/vnd.dece.data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -44980,7 +37825,6 @@ class data {
 				'application/vnd.dece.data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -44992,7 +37836,6 @@ class data {
 				'image/vnd.dece.graphic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45004,7 +37847,6 @@ class data {
 				'video/vnd.dece.hd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45016,7 +37858,6 @@ class data {
 				'image/vnd.dece.graphic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45028,7 +37869,6 @@ class data {
 				'video/vnd.dece.mobile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45040,7 +37880,6 @@ class data {
 				'video/vnd.dece.pd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45052,7 +37891,6 @@ class data {
 				'video/vnd.dece.sd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45064,7 +37902,6 @@ class data {
 				'application/vnd.dece.ttml+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45073,16 +37910,13 @@ class data {
 		'uvu'=>array(
 			'ext'=>'uvu',
 			'mime'=>array(
-				'video/vnd.dece-mp4',
-				'video/vnd.uvvu-mp4',
 				'video/vnd.uvvu.mp4'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'video/vnd.dece-mp4'
+			'primary'=>'video/vnd.uvvu.mp4'
 		),
 		'uvv'=>array(
 			'ext'=>'uvv',
@@ -45090,7 +37924,6 @@ class data {
 				'video/vnd.dece.video'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45102,7 +37935,6 @@ class data {
 				'audio/vnd.dece.audio'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45114,7 +37946,6 @@ class data {
 				'application/vnd.dece.data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45126,7 +37957,6 @@ class data {
 				'application/vnd.dece.data'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45138,7 +37968,6 @@ class data {
 				'image/vnd.dece.graphic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45150,7 +37979,6 @@ class data {
 				'video/vnd.dece.hd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45162,7 +37990,6 @@ class data {
 				'image/vnd.dece.graphic'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45174,7 +38001,6 @@ class data {
 				'video/vnd.dece.mobile'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45186,7 +38012,6 @@ class data {
 				'video/vnd.dece.pd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45198,7 +38023,6 @@ class data {
 				'video/vnd.dece.sd'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45210,7 +38034,6 @@ class data {
 				'application/vnd.dece.ttml+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45219,16 +38042,13 @@ class data {
 		'uvvu'=>array(
 			'ext'=>'uvvu',
 			'mime'=>array(
-				'video/vnd.dece-mp4',
-				'video/vnd.uvvu-mp4',
 				'video/vnd.uvvu.mp4'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'video/vnd.dece-mp4'
+			'primary'=>'video/vnd.uvvu.mp4'
 		),
 		'uvvv'=>array(
 			'ext'=>'uvvv',
@@ -45236,7 +38056,6 @@ class data {
 				'video/vnd.dece.video'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45248,7 +38067,6 @@ class data {
 				'application/vnd.dece.unspecified'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45271,7 +38089,6 @@ class data {
 				'application/vnd.dece.unspecified'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -45343,17 +38160,6 @@ class data {
 			),
 			'primary'=>'application/x-virtual-boy-rom'
 		),
-		'vbk'=>array(
-			'ext'=>'vbk',
-			'mime'=>array(
-				'audio/vnd.nortel.vbk'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'audio/vnd.nortel.vbk'
-		),
 		'vbs'=>array(
 			'ext'=>'vbs',
 			'mime'=>array(
@@ -45424,7 +38230,6 @@ class data {
 				'application/vnd.groove-vcard'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -45474,7 +38279,6 @@ class data {
 				'application/vnd.vcx'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -45494,17 +38298,6 @@ class data {
 				'image/x-icb'
 			),
 			'primary'=>'image/x-tga'
-		),
-		'vfr'=>array(
-			'ext'=>'vfr',
-			'mime'=>array(
-				'application/vnd.tml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.tml'
 		),
 		'vhd'=>array(
 			'ext'=>'vhd',
@@ -45536,25 +38329,12 @@ class data {
 			),
 			'primary'=>'text/x-vhdl'
 		),
-		'viaframe'=>array(
-			'ext'=>'viaframe',
-			'mime'=>array(
-				'application/vnd.tml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.tml'
-		),
 		'vis'=>array(
 			'ext'=>'vis',
 			'mime'=>array(
-				'application/vnd.informix-visionary',
 				'application/vnd.visionary'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -45635,17 +38415,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-vmdk'
 		),
-		'vmt'=>array(
-			'ext'=>'vmt',
-			'mime'=>array(
-				'application/vnd.valve.source.material'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.valve.source.material'
-		),
 		'vob'=>array(
 			'ext'=>'vob',
 			'mime'=>array(
@@ -45708,17 +38477,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-authorware-bin'
 		),
-		'vpm'=>array(
-			'ext'=>'vpm',
-			'mime'=>array(
-				'multipart/voice-message'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'multipart/voice-message'
-		),
 		'vrm'=>array(
 			'ext'=>'vrm',
 			'mime'=>array(
@@ -45748,18 +38506,6 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'model/vrml'
-		),
-		'vsc'=>array(
-			'ext'=>'vsc',
-			'mime'=>array(
-				'application/vnd.vidsoft.vidconference',
-				'application/vnd.vividence.scriptfile'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.vidsoft.vidconference'
 		),
 		'vsd'=>array(
 			'ext'=>'vsd',
@@ -45817,7 +38563,6 @@ class data {
 				'application/vnd.vsf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -45956,17 +38701,6 @@ class data {
 			),
 			'primary'=>'application/vnd.visio'
 		),
-		'vtf'=>array(
-			'ext'=>'vtf',
-			'mime'=>array(
-				'image/vnd.valve.source.texture'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.valve.source.texture'
-		),
 		'vtt'=>array(
 			'ext'=>'vtt',
 			'mime'=>array(
@@ -45988,38 +38722,11 @@ class data {
 				'model/vnd.vtu'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'model/vnd.vtu'
-		),
-		'vwx'=>array(
-			'ext'=>'vwx',
-			'mime'=>array(
-				'application/vnd.vectorworks'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.vectorworks'
-		),
-		'vxm'=>array(
-			'ext'=>'vxm',
-			'mime'=>array(
-				'application/ccxml+xml',
-				'application/pls+xml',
-				'application/srgs+xml',
-				'application/ssml+xml',
-				'application/voicexml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/ccxml+xml'
 		),
 		'vxml'=>array(
 			'ext'=>'vxml',
@@ -46071,17 +38778,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-doom'
 		),
-		'wadl'=>array(
-			'ext'=>'wadl',
-			'mime'=>array(
-				'application/vnd.sun.wadl+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.sun.wadl+xml'
-		),
 		'war'=>array(
 			'ext'=>'war',
 			'mime'=>array(
@@ -46109,25 +38805,22 @@ class data {
 		'wav'=>array(
 			'ext'=>'wav',
 			'mime'=>array(
-				'audio/vnd.dts',
 				'audio/x-wav',
 				'audio/wav',
 				'audio/vnd.wave',
 				'audio/wave'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'audio/wav',
 				'audio/vnd.wave',
 				'audio/x-wav',
 				'audio/wave'
 			),
-			'primary'=>'audio/vnd.dts'
+			'primary'=>'audio/wav'
 		),
 		'wax'=>array(
 			'ext'=>'wax',
@@ -46194,18 +38887,16 @@ class data {
 		'wbmp'=>array(
 			'ext'=>'wbmp',
 			'mime'=>array(
-				'image/vnd-wap-wbmp',
 				'image/vnd.wap.wbmp'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'image/vnd-wap-wbmp'
+			'primary'=>'image/vnd.wap.wbmp'
 		),
 		'wbs'=>array(
 			'ext'=>'wbs',
@@ -46213,7 +38904,6 @@ class data {
 				'application/vnd.criticaltools.wbs+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -46223,16 +38913,14 @@ class data {
 		'wbxml'=>array(
 			'ext'=>'wbxml',
 			'mime'=>array(
-				'application/vnd.wap-wbxml',
 				'application/vnd.wap.wbxml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.wap-wbxml'
+			'primary'=>'application/vnd.wap.wbxml'
 		),
 		'wcm'=>array(
 			'ext'=>'wcm',
@@ -46339,7 +39027,6 @@ class data {
 				'application/vnd.pmi.widget'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -46351,22 +39038,10 @@ class data {
 				'application/widget'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
 			'primary'=>'application/widget'
-		),
-		'wif'=>array(
-			'ext'=>'wif',
-			'mime'=>array(
-				'application/watcherinfo+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/watcherinfo+xml'
 		),
 		'wim'=>array(
 			'ext'=>'wim',
@@ -46378,18 +39053,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-ms-wim'
-		),
-		'win'=>array(
-			'ext'=>'win',
-			'mime'=>array(
-				'model/vnd.gdl',
-				'model/vnd.gs-gdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.gdl'
 		),
 		'wk1'=>array(
 			'ext'=>'wk1',
@@ -46526,17 +39189,6 @@ class data {
 			),
 			'primary'=>'audio/wma'
 		),
-		'wmc'=>array(
-			'ext'=>'wmc',
-			'mime'=>array(
-				'application/vnd.wmc'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.wmc'
-		),
 		'wmd'=>array(
 			'ext'=>'wmd',
 			'mime'=>array(
@@ -46552,15 +39204,14 @@ class data {
 		'wmf'=>array(
 			'ext'=>'wmf',
 			'mime'=>array(
-				'image/wmf',
 				'application/x-msmetafile',
+				'image/wmf',
 				'image/x-wmf',
 				'image/x-win-metafile',
 				'application/x-wmf',
 				'application/wmf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -46610,7 +39261,6 @@ class data {
 				'text/vnd.wap.wmlscript'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -46624,7 +39274,6 @@ class data {
 				'application/vnd.wap.wmlscriptc'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -46690,11 +39339,10 @@ class data {
 		'woff'=>array(
 			'ext'=>'woff',
 			'mime'=>array(
-				'application/font-woff',
-				'font/woff'
+				'font/woff',
+				'application/font-woff'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org'
@@ -46711,7 +39359,6 @@ class data {
 				'font/woff'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
@@ -46804,7 +39451,6 @@ class data {
 				'application/wordperfect'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -46937,16 +39583,13 @@ class data {
 		'wsc'=>array(
 			'ext'=>'wsc',
 			'mime'=>array(
-				'application/vnd.wfa.wsc',
-				'message/vnd.wfa.wsc',
 				'application/x-wonderswan-color-rom'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.wfa.wsc'
+			'primary'=>'application/x-wonderswan-color-rom'
 		),
 		'wsdd'=>array(
 			'ext'=>'wsdd',
@@ -46965,7 +39608,6 @@ class data {
 				'application/wsdl+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -46992,7 +39634,6 @@ class data {
 				'application/wspolicy+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47014,15 +39655,13 @@ class data {
 		'wv'=>array(
 			'ext'=>'wv',
 			'mime'=>array(
-				'application/vnd.wv.csp+wbxml',
 				'audio/x-wavpack'
 			),
 			'source'=>array(
-				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.wv.csp+wbxml'
+			'primary'=>'audio/x-wavpack'
 		),
 		'wvc'=>array(
 			'ext'=>'wvc',
@@ -47098,29 +39737,26 @@ class data {
 		'x3d'=>array(
 			'ext'=>'x3d',
 			'mime'=>array(
-				'application/vnd.hzn-3d-crossword',
-				'model/x3d+xml'
+				'model/x3d+xml',
+				'application/vnd.hzn-3d-crossword'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'application/vnd.hzn-3d-crossword'
+			'primary'=>'model/x3d+xml'
 		),
 		'x3db'=>array(
 			'ext'=>'x3db',
 			'mime'=>array(
-				'model/x3d+fastinfoset',
 				'model/x3d+binary'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'model/x3d+fastinfoset'
+			'primary'=>'model/x3d+binary'
 		),
 		'x3dbz'=>array(
 			'ext'=>'x3dbz',
@@ -47136,15 +39772,13 @@ class data {
 		'x3dv'=>array(
 			'ext'=>'x3dv',
 			'mime'=>array(
-				'model/x3d-vrml',
 				'model/x3d+vrml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
-			'primary'=>'model/x3d-vrml'
+			'primary'=>'model/x3d+vrml'
 		),
 		'x3dvz'=>array(
 			'ext'=>'x3dvz',
@@ -47183,28 +39817,6 @@ class data {
 				'image/x-dcraw'
 			),
 			'primary'=>'image/x-sigma-x3f'
-		),
-		'x_b'=>array(
-			'ext'=>'x_b',
-			'mime'=>array(
-				'model/vnd.parasolid.transmit-binary'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.parasolid.transmit-binary'
-		),
-		'x_t'=>array(
-			'ext'=>'x_t',
-			'mime'=>array(
-				'model/vnd.parasolid.transmit-text'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'model/vnd.parasolid.transmit-text'
 		),
 		'xac'=>array(
 			'ext'=>'xac',
@@ -47247,7 +39859,6 @@ class data {
 				'application/x-xar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -47265,17 +39876,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'text/plain'
-		),
-		'xav'=>array(
-			'ext'=>'xav',
-			'mime'=>array(
-				'application/xcap-att+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/xcap-att+xml'
 		),
 		'xbap'=>array(
 			'ext'=>'xbap',
@@ -47295,7 +39895,6 @@ class data {
 				'application/vnd.fujixerox.docuworks.binder'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47348,17 +39947,6 @@ class data {
 			),
 			'primary'=>'image/x-xbitmap'
 		),
-		'xca'=>array(
-			'ext'=>'xca',
-			'mime'=>array(
-				'application/xcap-caps+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/xcap-caps+xml'
-		),
 		'xcat'=>array(
 			'ext'=>'xcat',
 			'mime'=>array(
@@ -47394,48 +39982,12 @@ class data {
 			'alias'=>array(),
 			'primary'=>'text/plain'
 		),
-		'xcs'=>array(
-			'ext'=>'xcs',
-			'mime'=>array(
-				'application/calendar+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/calendar+xml'
-		),
-		'xct'=>array(
-			'ext'=>'xct',
-			'mime'=>array(
-				'application/vnd.fujixerox.docuworks.container'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.fujixerox.docuworks.container'
-		),
-		'xdd'=>array(
-			'ext'=>'xdd',
-			'mime'=>array(
-				'application/bacnet-xdd+zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/bacnet-xdd+zip'
-		),
 		'xdf'=>array(
 			'ext'=>'xdf',
 			'mime'=>array(
-				'application/mrb-consumer+xml',
-				'application/mrb-publish+xml',
 				'application/xcap-diff+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -47461,7 +40013,6 @@ class data {
 				'application/vnd.syncml.dm+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47474,7 +40025,6 @@ class data {
 				'application/vnd.adobe.xdp+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47487,7 +40037,6 @@ class data {
 				'application/dssc+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -47499,7 +40048,6 @@ class data {
 				'application/vnd.fujixerox.docuworks'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47517,17 +40065,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'text/plain'
 		),
-		'xel'=>array(
-			'ext'=>'xel',
-			'mime'=>array(
-				'application/xcap-el+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/xcap-el+xml'
-		),
 		'xenc'=>array(
 			'ext'=>'xenc',
 			'mime'=>array(
@@ -47543,27 +40080,14 @@ class data {
 		'xer'=>array(
 			'ext'=>'xer',
 			'mime'=>array(
-				'application/patch-ops-error+xml',
-				'application/xcap-error+xml'
+				'application/patch-ops-error+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/patch-ops-error+xml'
-		),
-		'xfd'=>array(
-			'ext'=>'xfd',
-			'mime'=>array(
-				'application/vnd.xfdl'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.xfdl'
 		),
 		'xfdf'=>array(
 			'ext'=>'xfdf',
@@ -47571,7 +40095,6 @@ class data {
 				'application/vnd.adobe.xfdf'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47584,7 +40107,6 @@ class data {
 				'application/vnd.xfdl'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47618,26 +40140,13 @@ class data {
 			),
 			'primary'=>'application/xhtml+xml'
 		),
-		'xhtm'=>array(
-			'ext'=>'xhtm',
-			'mime'=>array(
-				'application/vnd.pwg-xhtml-print+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.pwg-xhtml-print+xml'
-		),
 		'xhtml'=>array(
 			'ext'=>'xhtml',
 			'mime'=>array(
-				'application/vnd.pwg-xhtml-print+xml',
 				'application/xhtml+xml',
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -47646,7 +40155,7 @@ class data {
 			'alias'=>array(
 				'application/xml'
 			),
-			'primary'=>'application/vnd.pwg-xhtml-print+xml'
+			'primary'=>'application/xhtml+xml'
 		),
 		'xhvml'=>array(
 			'ext'=>'xhvml',
@@ -47654,7 +40163,6 @@ class data {
 				'application/xv+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47678,7 +40186,6 @@ class data {
 				'image/vnd.xiff'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -47719,9 +40226,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -47821,17 +40327,6 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'application/x-xliff'
-		),
-		'xlim'=>array(
-			'ext'=>'xlim',
-			'mime'=>array(
-				'application/vnd.xmpie.xlim'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.xmpie.xlim'
 		),
 		'xll'=>array(
 			'ext'=>'xll',
@@ -47951,9 +40446,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -47973,9 +40467,8 @@ class data {
 				'application/vnd.ms-office'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -48039,9 +40532,8 @@ class data {
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.template'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -48055,16 +40547,13 @@ class data {
 		'xltx'=>array(
 			'ext'=>'xltx',
 			'mime'=>array(
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-				'application/vnd.ms-office',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml-template',
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
+				'application/vnd.ms-office',
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
+				'Blobfolio',
 				'freedesktop.org',
 				'Tika'
 			),
@@ -48169,151 +40658,22 @@ class data {
 		'xml'=>array(
 			'ext'=>'xml',
 			'mime'=>array(
-				'application/cea-2018+xml',
-				'application/conference-info+xml',
-				'application/cpl+xml',
-				'application/dialog-info+xml',
-				'application/dicom+xml',
-				'application/emergencycalldata.comment+xml',
-				'application/emergencycalldata.control+xml',
-				'application/emergencycalldata.deviceinfo+xml',
-				'application/emergencycalldata.providerinfo+xml',
-				'application/emergencycalldata.serviceinfo+xml',
-				'application/emergencycalldata.subscriberinfo+xml',
-				'application/emergencycalldata.veds+xml',
-				'application/epp+xml',
-				'application/load-control+xml',
-				'application/media-policy-dataset+xml',
-				'application/pidf-diff+xml',
-				'application/prs.xsf+xml',
-				'application/reginfo+xml',
-				'application/rfc+xml',
-				'application/simple-filter+xml',
-				'application/vnd.amundsen.maze+xml',
-				'application/vnd.avistar+xml',
-				'application/vnd.cyan.dean.root+xml',
-				'application/vnd.eprints.data+xml',
-				'application/vnd.etsi.pstn+xml',
-				'application/vnd.gov.sk.e-form+xml',
-				'application/vnd.gov.sk.xmldatacontainer+xml',
-				'application/vnd.informedcontrol.rms+xml',
-				'application/vnd.infotech.project+xml',
-				'application/vnd.iptc.g2.catalogitem+xml',
-				'application/vnd.iptc.g2.conceptitem+xml',
-				'application/vnd.iptc.g2.knowledgeitem+xml',
-				'application/vnd.iptc.g2.newsitem+xml',
-				'application/vnd.iptc.g2.newsmessage+xml',
-				'application/vnd.iptc.g2.packageitem+xml',
-				'application/vnd.iptc.g2.planningitem+xml',
-				'application/vnd.oma.dd2+xml',
-				'application/vnd.openxmlformats-officedocument.custom-properties+xml',
-				'application/vnd.ms-office',
-				'application/vnd.openxmlformats-officedocument.customxmlproperties+xml',
-				'application/vnd.openxmlformats-officedocument.drawing+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.chart+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.diagramcolors+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.diagramdata+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.diagramlayout+xml',
-				'application/vnd.openxmlformats-officedocument.drawingml.diagramstyle+xml',
-				'application/vnd.openxmlformats-officedocument.extended-properties+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.comments+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.presprops+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.slide+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.tags+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.template.main+xml',
-				'application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml',
-				'application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml',
-				'application/vnd.openxmlformats-officedocument.theme+xml',
-				'application/vnd.openxmlformats-officedocument.themeoverride+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml',
-				'application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml',
-				'application/vnd.openxmlformats-package.core-properties+xml',
-				'application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml',
-				'application/vnd.openxmlformats-package.relationships+xml',
-				'application/vnd.recordare.musicxml+xml',
-				'application/vnd.tmd.mediaflex.api+xml',
-				'application/vnd.yamaha.openscoreformat.osfpvg+xml',
-				'application/watcherinfo+xml',
-				'application/xcon-conference-info-diff+xml',
-				'application/xcon-conference-info+xml',
-				'application/xenc+xml',
 				'application/xml',
-				'application/xml-external-parsed-entity',
-				'message/imdn+xml',
-				'text/vnd.iptc.newsml',
-				'text/vnd.iptc.nitf',
 				'text/xml',
-				'text/xml-external-parsed-entity',
 				'text/plain',
 				'application/x-xml'
 			),
 			'source'=>array(
-				'IANA',
-				'Blobfolio',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
 				'Tika'
 			),
 			'alias'=>array(
-				'application/vnd.ms-office',
 				'text/plain',
 				'application/x-xml'
 			),
 			'primary'=>'text/xml'
-		),
-		'xmls'=>array(
-			'ext'=>'xmls',
-			'mime'=>array(
-				'application/dskpp+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/dskpp+xml'
 		),
 		'xmp'=>array(
 			'ext'=>'xmp',
@@ -48329,24 +40689,12 @@ class data {
 			),
 			'primary'=>'application/rdf+xml'
 		),
-		'xns'=>array(
-			'ext'=>'xns',
-			'mime'=>array(
-				'application/xcap-ns+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/xcap-ns+xml'
-		),
 		'xo'=>array(
 			'ext'=>'xo',
 			'mime'=>array(
 				'application/vnd.olpc-sugar'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48359,7 +40707,6 @@ class data {
 				'application/xop+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48427,7 +40774,6 @@ class data {
 				'application/vnd.is-xpr'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48442,7 +40788,6 @@ class data {
 				'application/zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -48557,17 +40902,6 @@ class data {
 			),
 			'primary'=>'application/xml'
 		),
-		'xsf'=>array(
-			'ext'=>'xsf',
-			'mime'=>array(
-				'application/prs.xsf+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/prs.xsf+xml'
-		),
 		'xsl'=>array(
 			'ext'=>'xsl',
 			'mime'=>array(
@@ -48631,7 +40965,6 @@ class data {
 				'application/vnd.syncml+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48675,7 +41008,6 @@ class data {
 				'application/xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -48691,7 +41023,6 @@ class data {
 				'application/xv+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48704,7 +41035,6 @@ class data {
 				'application/xv+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -48758,17 +41088,6 @@ class data {
 			'alias'=>array(),
 			'primary'=>'chemical/x-xyz'
 		),
-		'xyze'=>array(
-			'ext'=>'xyze',
-			'mime'=>array(
-				'image/vnd.radiance'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'image/vnd.radiance'
-		),
 		'xz'=>array(
 			'ext'=>'xz',
 			'mime'=>array(
@@ -48806,7 +41125,6 @@ class data {
 				'application/yang'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
@@ -48818,22 +41136,10 @@ class data {
 				'application/yin+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache'
 			),
 			'alias'=>array(),
 			'primary'=>'application/yin+xml'
-		),
-		'yme'=>array(
-			'ext'=>'yme',
-			'mime'=>array(
-				'application/vnd.yaoweme'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.yaoweme'
 		),
 		'yml'=>array(
 			'ext'=>'yml',
@@ -48972,46 +41278,20 @@ class data {
 				'application/vnd.zzazz.deck+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.zzazz.deck+xml'
 		),
-		'zfc'=>array(
-			'ext'=>'zfc',
-			'mime'=>array(
-				'application/vnd.filmit.zfc'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.filmit.zfc'
-		),
-		'zfo'=>array(
-			'ext'=>'zfo',
-			'mime'=>array(
-				'application/vnd.software602.filler.form-xml-zip'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.software602.filler.form-xml-zip'
-		),
 		'zip'=>array(
 			'ext'=>'zip',
 			'mime'=>array(
-				'application/vnd.easykaraoke.cdgdownload',
-				'application/vnd.gov.sk.e-form+zip',
 				'application/zip',
 				'application/x-zip-compressed',
 				'application/x-zip'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Nginx',
 				'freedesktop.org',
@@ -49053,7 +41333,6 @@ class data {
 				'application/vnd.handheld-entertainment+xml'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'Tika'
 			),
@@ -49071,17 +41350,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-zoo'
-		),
-		'zrp'=>array(
-			'ext'=>'zrp',
-			'mime'=>array(
-				'application/vnd.rapid'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.rapid'
 		),
 		'zsav'=>array(
 			'ext'=>'zsav',
@@ -49119,7 +41387,6 @@ class data {
 				'zz-application/zz-winassoc-123'
 			),
 			'source'=>array(
-				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -49154,17 +41421,6 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'audio/x-mod'
-		),
-		'19051'=>array(
-			'ext'=>'19051',
-			'mime'=>array(
-				'application/vnd.ieee.1905'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.ieee.1905'
 		)
 	);
 }
