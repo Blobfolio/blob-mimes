@@ -57,6 +57,7 @@ There are a number of SVG-related filters that can be used to modify the sanitiz
 == Screenshots ==
 
 1. Results from the File Validation Debug tool, available to administrators under the `Tools` menu.
+2. The Updates and Plugins screens display a warning if a local copy of a plugin has different contributors listed than an available update.
 
 == Installation ==
 
@@ -68,6 +69,7 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 = 0.7.0 =
 * [New] Display a warning on the Update and Plugins pages if a plugin's contributors have changed since the last update.
+* [Misc] Update MIME database.
 
 = 0.6.7 =
 * [Improved] Aliases are now checked for all allowed types.
@@ -132,7 +134,7 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 == Upgrade Notice ==
 
 = 0.7.0 =
-A warning is now displayed on the Update and Plugins pages whenever a plugin's contributors have changed.
+A warning is now displayed on the Update and Plugins pages whenever a plugin's contributors have changed. This release also updates the MIME database.
 
 = 0.6.7 =
 This release improves file renaming by searching across all allowed extensions for a given MIME alias.
