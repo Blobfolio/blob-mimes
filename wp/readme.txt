@@ -67,6 +67,10 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.7.1 =
+* [New] Improve display of contributor change notices and provide opt-out link.
+* [Misc] Update MIME database.
+
 = 0.7.0 =
 * [New] Display a warning on the Update and Plugins pages if a plugin's contributors have changed since the last update.
 * [Misc] Update MIME database.
@@ -132,6 +136,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.7.1 =
+The display of plugin contributor changes has been improved. The MIME database has also been updated.
 
 = 0.7.0 =
 A warning is now displayed on the Update and Plugins pages whenever a plugin's contributors have changed. This release also updates the MIME database.

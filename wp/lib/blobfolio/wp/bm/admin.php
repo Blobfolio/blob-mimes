@@ -45,6 +45,9 @@ class admin {
 		add_filter('transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
 		add_filter('site_transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
 
+		// AJAX hook for disabling contributor lookups.
+		add_action('wp_ajax_bm_ajax_disable_contributor_notice', array($class, 'disable_contributor_notice'));
+
 		// And the corresponding warnings.
 		add_filter('admin_notices', array($class, 'contributors_changed_notice'));
 	}
@@ -448,7 +451,8 @@ class admin {
 	 * @return array Data.
 	 */
 	public static function update_plugins_contributors($data) {
-		// Make sure the data is good.
+		// Make sure the data is good and that we are supposed to show
+		// this information.
 		if (
 			!is_object($data) ||
 			!isset($data->response, $data->last_checked, $data->checked) ||
@@ -456,7 +460,8 @@ class admin {
 			!count($data->response) ||
 			!is_array($data->checked) ||
 			!count($data->checked) ||
-			($data->last_checked === static::$checked_plugins_contributors)
+			($data->last_checked === static::$checked_plugins_contributors) ||
+			('disabled' === get_option('bm_contributor_notice', false))
 		) {
 			return $data;
 		}
@@ -517,6 +522,11 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function contributors_changed_notice() {
+		// Do not display if disabled.
+		if ('disabled' === get_option('bm_contributor_notice', false)) {
+			return;
+		}
+
 		// We only want to display this on the plugins and update pages.
 		$screen = get_current_screen();
 		if (('update-core' !== $screen->id) && ('plugins' !== $screen->id)) {
@@ -535,32 +545,95 @@ class admin {
 
 		// Still might not need to be here, but we have to check each
 		// update to be sure.
+		$warnings = array();
 		foreach (static::$changed_plugins_contributors as $v) {
-			if (count($v['new']) || count($v['removed'])) {
-				$tmp = array();
-				foreach ($v['removed'] as $v2) {
-					$tmp[] = '<span class="wp-ui-text-notification">' . esc_html__('Removed', 'blob-mimes') . ':</span> ' . esc_html($v2);
-				}
-				foreach ($v['new'] as $v2) {
-					$tmp[] = '<span class="wp-ui-text-highlight">' . esc_html__('Added', 'blob-mimes') . ':</span> ' . esc_html($v2);
-				}
-				?>
-				<div class="notice notice-warning">
-					<?php
-
-					echo '<p>' . sprintf(
-						esc_html__('%s The list of contributors for %s has changed since you last updated the plugin.'),
-						'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>',
-						'<strong>' . esc_html($v['slug']) . '</strong>'
-					) . '</p>';
-
-					echo '<ul style="list-style: disc; margin-left: 3em;"><li>' . implode('</li><li>', $tmp) . '</li></ul>';
-
-					echo '<p>' . esc_html__('This can potentially pose a security threat if the new author(s) are not nice people. It is recommended you re-review the code before continuing.', 'blob-mimes') . '</p>';
-					?>
-				</div>
-				<?php
+			if (!count($v['new']) && !count($v['removed'])) {
+				continue;
 			}
+
+			// Proceed with a warning!
+			$tmp = array();
+			foreach ($v['removed'] as $v2) {
+				$tmp[] = '<span class="wp-ui-text-notification"><span class="dashicons dashicons-minus"></span> ' . esc_html($v2) . '</span>';
+			}
+			foreach ($v['new'] as $v2) {
+				$tmp[] = '<span class="wp-ui-text-highlight"><span class="dashicons dashicons-plus"></span> ' . esc_html($v2) . '</span>';
+			}
+
+			$warnings[] = '<tr>
+				<th scope="row" style="text-align: left; padding-right: 1em; vertical-align: middle;"><a href="' . esc_url("https://wordpress.org/plugins/{$v['slug']}/") . '" target="_blank" rel="noopener">' . esc_html($v['slug']) . '</a>:</th>
+				<td style="vertical-align: middle;">' . implode('&nbsp;&nbsp;&nbsp;&nbsp; ', $tmp) . '</td>
+			</tr>';
+		} // Each update.
+
+		// Provide a way to opt-out of these notices.
+		if (count($warnings)) {
+			?>
+			<div class="notice notice-warning blob-mimes-contributor-notice">
+				<?php
+				echo '<p>' . sprintf(
+					esc_html__('%s The list of contributors for one or more plugins has changed since you last performed updates.', 'blob-mimes'),
+					'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>'
+				) . ' <a href="javascript: alert(\'' . esc_js(esc_attr__('This can potentially pose a security threat if the new author(s) are not nice people. It is recommended you re-review the code before continuing.', 'blob-mimes')) . '\');" class="dashicons dashicons-editor-help"></a></p>';
+
+				echo '<table style="margin: .5em 0 .5em 2em;"><tbody>' . implode('', $warnings) . '</tbody></table>';
+
+				echo '<p class="description">' . sprintf(
+					esc_html__('If you prefer not to receive these notices in the future, click %s.', 'blob-mimes'),
+					'<a href="#" class="blob-mimes-contributor-notice--dismiss">' . esc_html__('here', 'blob-mimes') . '</a>'
+				) . '</p>';
+				?>
+
+				<script>
+					jQuery('.blob-mimes-contributor-notice--dismiss').click(function(e) {
+						e.preventDefault();
+
+						var notice = jQuery('.blob-mimes-contributor-notice'),
+							data = {
+								action: 'bm_ajax_disable_contributor_notice',
+								n: '<?php echo wp_create_nonce('bm_ajax_disable_contributor_notice');?>'
+							};
+
+						notice.css('opacity', .5);
+
+						jQuery.post(
+							ajaxurl,
+							data,
+							function() {
+								notice.remove();
+							}
+						);
+					});
+				</script>
+			</div>
+			<?php
 		}
+	}
+
+	/**
+	 * AJAX: Disable Contributor Notice
+	 *
+	 * Some people may not find the contributor change notices helpful.
+	 * This will prevent them from being calculated or displaying.
+	 *
+	 * @see https://core.trac.wordpress.org/ticket/42255
+	 * @see https://meta.trac.wordpress.org/ticket/3207
+	 *
+	 * @return void Nothing.
+	 */
+	public static function disable_contributor_notice() {
+		if (
+			current_user_can('manage_options') &&
+			isset($_POST['n']) &&
+			wp_verify_nonce($_POST['n'], 'bm_ajax_disable_contributor_notice')
+		) {
+			update_option('bm_contributor_notice', 'disabled');
+			echo 1;
+		}
+		else {
+			echo 0;
+		}
+
+		exit;
 	}
 }

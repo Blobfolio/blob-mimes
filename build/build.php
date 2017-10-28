@@ -435,7 +435,12 @@ function save_mime_ext_pair(string $mime='', string $ext='', string $source='', 
 	\blobfolio\common\ref\sanitize::file_extension($ext);
 	\blobfolio\common\ref\sanitize::mime($mime);
 
-	if (!strlen($ext) || !strlen($mime) || !strlen($source)) {
+	if (
+		!strlen($ext) ||
+		!strlen($mime) ||
+		!strlen($source) ||
+		('unknown' === $ext)
+	) {
 		return false;
 	}
 

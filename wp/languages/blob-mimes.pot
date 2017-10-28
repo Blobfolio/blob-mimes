@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-10-18 16:09-0700\n"
+"2017-10-28 14:59-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -46,7 +46,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Language: en_US\n"
 "X-Generator: Poedit "
-"2.0.1\n"
+"2.0.4\n"
 "X-Poedit-"
 "SearchPath-0: .\n"
 "X-Poedit-"
@@ -93,9 +93,9 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:141
-#: lib/blobfolio/wp/bm/admin.php:74
-#: lib/blobfolio/wp/bm/admin.php:75
-#: lib/blobfolio/wp/bm/admin.php:92
+#: lib/blobfolio/wp/bm/admin.php:77
+#: lib/blobfolio/wp/bm/admin.php:78
+#: lib/blobfolio/wp/bm/admin.php:95
 msgid ""
 "Debug File Validation"
 msgstr ""
@@ -172,12 +172,12 @@ msgid ""
 "deactivated for you."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:163
 #: lib/blobfolio/wp/bm/admin.php:166
+#: lib/blobfolio/wp/bm/admin.php:169
 msgid "update"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:172
+#: lib/blobfolio/wp/bm/admin.php:175
 #, php-format
 msgid ""
 "Please %s %s to the "
@@ -186,7 +186,7 @@ msgid ""
 "related issues."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:182
+#: lib/blobfolio/wp/bm/admin.php:185
 msgid ""
 "If a file has been "
 "rejected from the Media "
@@ -196,28 +196,21 @@ msgid ""
 "information."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:542
-msgid "Removed"
-msgstr ""
-
-#: lib/blobfolio/wp/bm/admin.php:545
-msgid "Added"
-msgstr ""
-
-#: lib/blobfolio/wp/bm/admin.php:552
+#: lib/blobfolio/wp/bm/admin.php:575
 #, php-format
 msgid ""
 "%s The list of "
-"contributors for %s has "
-"changed since you last "
-"updated the plugin."
+"contributors for one or "
+"more plugins has changed "
+"since you last performed "
+"updates."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:553
+#: lib/blobfolio/wp/bm/admin.php:576
 msgid "Warning"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:559
+#: lib/blobfolio/wp/bm/admin.php:577
 msgid ""
 "This can potentially "
 "pose a security threat "
@@ -226,6 +219,18 @@ msgid ""
 "recommended you re-"
 "review the code before "
 "continuing."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:582
+#, php-format
+msgid ""
+"If you prefer not to "
+"receive these notices in "
+"the future, click %s."
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:583
+msgid "here"
 msgstr ""
 
 #: lib/blobfolio/wp/bm/debug.php:56
