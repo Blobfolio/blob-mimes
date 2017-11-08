@@ -28,6 +28,7 @@ The main features include:
  * SVG sanitization (if SVG uploads have been whitelisted);
  * File upload debugger;
  * Fixes issues related to [#40175](https://core.trac.wordpress.org/ticket/40175) that have been present since WordPress `4.7.1`.
+ * Admin warnings if plugin contributors have changed since you last updated [#42255](https://core.trac.wordpress.org/ticket/42255);
 
 
 
