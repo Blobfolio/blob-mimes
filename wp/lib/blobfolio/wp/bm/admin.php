@@ -50,6 +50,12 @@ class admin {
 
 		// And the corresponding warnings.
 		add_filter('admin_notices', array($class, 'contributors_changed_notice'));
+
+		// Register plugins page quick links if we aren't running in
+		// Must-Use mode.
+		if (!BLOBMIMES_MUST_USE) {
+			add_filter('plugin_action_links_' . plugin_basename(BLOBMIMES_INDEX), array($class, 'plugin_action_links'));
+		}
 	}
 
 	/**
@@ -635,5 +641,24 @@ class admin {
 		}
 
 		exit;
+	}
+
+	/**
+	 * Plugin Action Links
+	 *
+	 * Add a few links to the plugins page so people can more easily
+	 * find what they're looking for.
+	 *
+	 * @param array $links Links.
+	 * @return array Links.
+	 */
+	public static function plugin_action_links($links) {
+		if (current_user_can('manage_options')) {
+			$links[] = '<a href="' . esc_url(admin_url('tools.php?page=blob-mimes-admin')) . '">' . __('Debug File Validation', 'blob-mimes') . '</a>';
+		}
+
+		$links[] = '<a href="https://github.com/Blobfolio/blob-mimes/tree/master/wp" target="_blank" rel="noopener">' . esc_html__('Documentation', 'blob-mimes') . '</a>';
+
+		return $links;
 	}
 }
