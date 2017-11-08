@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blob-mimes\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-10-28 15:00-0700\n"
+"POT-Creation-Date: 2017-11-08 09:51-0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Josh Stoik <josh@blobfolio.com>\n"
 "Language-Team: Blobfolio, LLC <hello@blobfolio.com>\n"
@@ -49,8 +49,9 @@ msgstr "No se pudo procesar la carga del archivo."
 msgid "The form had expired. Please try again."
 msgstr "El formulario había caducado. Vuelve a intentarlo."
 
-#: admin/debug.php:141 lib/blobfolio/wp/bm/admin.php:77
-#: lib/blobfolio/wp/bm/admin.php:78 lib/blobfolio/wp/bm/admin.php:95
+#: admin/debug.php:141 lib/blobfolio/wp/bm/admin.php:83
+#: lib/blobfolio/wp/bm/admin.php:84 lib/blobfolio/wp/bm/admin.php:101
+#: lib/blobfolio/wp/bm/admin.php:657
 msgid "Debug File Validation"
 msgstr "Validación de cargas de archivo"
 
@@ -114,11 +115,11 @@ msgid ""
 msgstr ""
 "%s requiere PHP 5.4 o superior. Se ha desactivado automáticamente para usted."
 
-#: lib/blobfolio/wp/bm/admin.php:166 lib/blobfolio/wp/bm/admin.php:169
+#: lib/blobfolio/wp/bm/admin.php:172 lib/blobfolio/wp/bm/admin.php:175
 msgid "update"
 msgstr "Actualice"
 
-#: lib/blobfolio/wp/bm/admin.php:175
+#: lib/blobfolio/wp/bm/admin.php:181
 #, php-format
 msgid ""
 "Please %s %s to the latest release (%s) before debugging upload-related "
@@ -127,7 +128,7 @@ msgstr ""
 "%s %s a la última versión (%s) antes de depurar problemas relacionados con "
 "la carga."
 
-#: lib/blobfolio/wp/bm/admin.php:185
+#: lib/blobfolio/wp/bm/admin.php:191
 msgid ""
 "If a file has been rejected from the Media Library for \"security reasons\", "
 "use the form below to find out more information."
@@ -135,7 +136,7 @@ msgstr ""
 "Si se ha rechazado un archivo de la Biblioteca multimedia por \"razones de "
 "seguridad\", utilice este formulario para obtener más información."
 
-#: lib/blobfolio/wp/bm/admin.php:575
+#: lib/blobfolio/wp/bm/admin.php:581
 #, php-format
 msgid ""
 "%s The list of contributors for one or more plugins has changed since you "
@@ -144,11 +145,11 @@ msgstr ""
 "%s La lista de contribuyentes para uno o más complementos ha cambiado desde "
 "la última vez que realizó las actualizaciones."
 
-#: lib/blobfolio/wp/bm/admin.php:576
+#: lib/blobfolio/wp/bm/admin.php:582
 msgid "Warning"
 msgstr "Advertencia"
 
-#: lib/blobfolio/wp/bm/admin.php:577
+#: lib/blobfolio/wp/bm/admin.php:583
 msgid ""
 "This can potentially pose a security threat if the new author(s) are not "
 "nice people. It is recommended you re-review the code before continuing."
@@ -157,14 +158,18 @@ msgstr ""
 "son personas agradables. Se recomienda volver a revisar el código antes de "
 "continuar."
 
-#: lib/blobfolio/wp/bm/admin.php:582
+#: lib/blobfolio/wp/bm/admin.php:588
 #, php-format
 msgid "If you prefer not to receive these notices in the future, click %s."
 msgstr "Si prefiere no recibir estos avisos en el futuro, haga clic %s."
 
-#: lib/blobfolio/wp/bm/admin.php:583
+#: lib/blobfolio/wp/bm/admin.php:589
 msgid "here"
 msgstr "aquí"
+
+#: lib/blobfolio/wp/bm/admin.php:660
+msgid "Documentation"
+msgstr "Documentación"
 
 #: lib/blobfolio/wp/bm/debug.php:56 lib/blobfolio/wp/bm/debug.php:60
 #: lib/blobfolio/wp/bm/debug.php:63

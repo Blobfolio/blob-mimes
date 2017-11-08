@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: blob-"
 "mimes\n"
 "POT-Creation-Date: "
-"2017-10-28 14:59-0700\n"
+"2017-11-08 09:51-0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -93,9 +93,10 @@ msgid ""
 msgstr ""
 
 #: admin/debug.php:141
-#: lib/blobfolio/wp/bm/admin.php:77
-#: lib/blobfolio/wp/bm/admin.php:78
-#: lib/blobfolio/wp/bm/admin.php:95
+#: lib/blobfolio/wp/bm/admin.php:83
+#: lib/blobfolio/wp/bm/admin.php:84
+#: lib/blobfolio/wp/bm/admin.php:101
+#: lib/blobfolio/wp/bm/admin.php:657
 msgid ""
 "Debug File Validation"
 msgstr ""
@@ -172,12 +173,12 @@ msgid ""
 "deactivated for you."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:166
-#: lib/blobfolio/wp/bm/admin.php:169
+#: lib/blobfolio/wp/bm/admin.php:172
+#: lib/blobfolio/wp/bm/admin.php:175
 msgid "update"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:175
+#: lib/blobfolio/wp/bm/admin.php:181
 #, php-format
 msgid ""
 "Please %s %s to the "
@@ -186,7 +187,7 @@ msgid ""
 "related issues."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:185
+#: lib/blobfolio/wp/bm/admin.php:191
 msgid ""
 "If a file has been "
 "rejected from the Media "
@@ -196,7 +197,7 @@ msgid ""
 "information."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:575
+#: lib/blobfolio/wp/bm/admin.php:581
 #, php-format
 msgid ""
 "%s The list of "
@@ -206,11 +207,11 @@ msgid ""
 "updates."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:576
+#: lib/blobfolio/wp/bm/admin.php:582
 msgid "Warning"
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:577
+#: lib/blobfolio/wp/bm/admin.php:583
 msgid ""
 "This can potentially "
 "pose a security threat "
@@ -221,7 +222,7 @@ msgid ""
 "continuing."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:582
+#: lib/blobfolio/wp/bm/admin.php:588
 #, php-format
 msgid ""
 "If you prefer not to "
@@ -229,8 +230,12 @@ msgid ""
 "the future, click %s."
 msgstr ""
 
-#: lib/blobfolio/wp/bm/admin.php:583
+#: lib/blobfolio/wp/bm/admin.php:589
 msgid "here"
+msgstr ""
+
+#: lib/blobfolio/wp/bm/admin.php:660
+msgid "Documentation"
 msgstr ""
 
 #: lib/blobfolio/wp/bm/debug.php:56
