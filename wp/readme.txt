@@ -67,6 +67,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.7.2 =
+* [Misc] Add links to entry on Plugins page.
+
 = 0.7.1 =
 * [New] Improve display of contributor change notices and provide opt-out link.
 * [Misc] Update MIME database.
@@ -136,6 +139,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.7.2 =
+This release adds quicklinks to the entry on the Plugins page.
 
 = 0.7.1 =
 The display of plugin contributor changes has been improved. The MIME database has also been updated.
