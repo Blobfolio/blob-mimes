@@ -3,7 +3,7 @@ Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
 Tags: mime, SVG, file validation, security plugin, wordpress security, malware, exploit, security, sanitizing, sanitization, file detection, upload security, secure, file uploads, infection, block hackers, protection
 Requires at least: 4.7.1
-Tested up to: 4.8
+Tested up to: 4.9
 Requires PHP: 5.4
 Stable tag: trunk
 License: WTFPL
@@ -66,6 +66,9 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugins), download, extract, and upload the `blob-mimes` folder to your mu-plugins directory via FTP. Please note: MU Plugins are removed from the usual update-checking process, so you will need to handle future updates manually.
 
 == Changelog ==
+
+= 0.7.3 =
+* [Misc] Update MIME database.
 
 = 0.7.2 =
 * [Misc] Add links to entry on Plugins page.
@@ -139,6 +142,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.7.3 =
+The MIME database has been updated.
 
 = 0.7.2 =
 This release adds quicklinks to the entry on the Plugins page.
