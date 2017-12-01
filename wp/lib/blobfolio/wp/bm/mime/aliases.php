@@ -4291,6 +4291,7 @@ class aliases {
 		'oxps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
+			'application/xps',
 			'application/zip'
 		),
 		'oxt'=>array(
@@ -7536,6 +7537,12 @@ class aliases {
 		'xop'=>array(
 			'application/xop+xml'
 		),
+		'xotp'=>array(
+			'application/vnd.collabio.xodocuments.presentation-template'
+		),
+		'xott'=>array(
+			'application/vnd.collabio.xodocuments.document-template'
+		),
 		'xpi'=>array(
 			'application/x-xpinstall',
 			'application/zip'
@@ -7556,6 +7563,7 @@ class aliases {
 		'xps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
+			'application/xps',
 			'application/zip'
 		),
 		'xpt'=>array(

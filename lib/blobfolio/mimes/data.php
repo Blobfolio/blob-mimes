@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-10-28 14:49:50.
+ * Built: 2017-12-01 11:12:50.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3542,10 +3542,28 @@ class data {
 				'IANA'
 			)
 		),
+		'application/vnd.collabio.xodocuments.document-template'=>array(
+			'mime'=>'application/vnd.collabio.xodocuments.document-template',
+			'ext'=>array(
+				'xott'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.collabio.xodocuments.presentation'=>array(
 			'mime'=>'application/vnd.collabio.xodocuments.presentation',
 			'ext'=>array(
 				'xodp'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
+		'application/vnd.collabio.xodocuments.presentation-template'=>array(
+			'mime'=>'application/vnd.collabio.xodocuments.presentation-template',
+			'ext'=>array(
+				'xotp'
 			),
 			'source'=>array(
 				'IANA'
@@ -14463,6 +14481,16 @@ class data {
 			),
 			'source'=>array(
 				'Apache'
+			)
+		),
+		'application/xps'=>array(
+			'mime'=>'application/xps',
+			'ext'=>array(
+				'oxps',
+				'xps'
+			),
+			'source'=>array(
+				'freedesktop.org'
 			)
 		),
 		'application/xquery'=>array(
@@ -36980,6 +37008,7 @@ class data {
 			'mime'=>array(
 				'application/oxps',
 				'application/vnd.ms-xpsdocument',
+				'application/xps',
 				'application/zip'
 			),
 			'source'=>array(
@@ -36990,6 +37019,7 @@ class data {
 			),
 			'alias'=>array(
 				'application/vnd.ms-xpsdocument',
+				'application/xps',
 				'application/zip'
 			),
 			'primary'=>'application/oxps'
@@ -48436,6 +48466,28 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/xop+xml'
 		),
+		'xotp'=>array(
+			'ext'=>'xotp',
+			'mime'=>array(
+				'application/vnd.collabio.xodocuments.presentation-template'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.collabio.xodocuments.presentation-template'
+		),
+		'xott'=>array(
+			'ext'=>'xott',
+			'mime'=>array(
+				'application/vnd.collabio.xodocuments.document-template'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.collabio.xodocuments.document-template'
+		),
 		'xpi'=>array(
 			'ext'=>'xpi',
 			'mime'=>array(
@@ -48509,6 +48561,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-xpsdocument',
 				'application/oxps',
+				'application/xps',
 				'application/zip'
 			),
 			'source'=>array(
@@ -48518,6 +48571,7 @@ class data {
 				'Tika'
 			),
 			'alias'=>array(
+				'application/xps',
 				'application/zip',
 				'application/oxps'
 			),
