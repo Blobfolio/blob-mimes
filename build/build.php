@@ -919,6 +919,7 @@ $primary_override = array(
 	'mid'=>'audio/midi',
 	'otf'=>'font/otf',
 	'pdf'=>'application/pdf',
+	'png'=>'image/png',
 );
 
 // Calculate primary mime.

@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-12-01 11:12:50.
+ * Built: 2017-12-06 07:31:36.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -38143,7 +38143,7 @@ class data {
 				'Tika'
 			),
 			'alias'=>array(),
-			'primary'=>'image/vnd.mozilla.apng'
+			'primary'=>'image/png'
 		),
 		'pnm'=>array(
 			'ext'=>'pnm',
