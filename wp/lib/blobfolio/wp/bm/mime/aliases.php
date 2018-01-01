@@ -745,6 +745,7 @@ class aliases {
 			'application/cose-key-set'
 		),
 		'cbr'=>array(
+			'application/vnd.comicbook-rar',
 			'application/vnd.rar',
 			'application/x-cbr'
 		),
@@ -1718,6 +1719,7 @@ class aliases {
 			'application/zip'
 		),
 		'exr'=>array(
+			'image/aces',
 			'image/x-exr'
 		),
 		'ext'=>array(
@@ -2811,6 +2813,7 @@ class aliases {
 		'js'=>array(
 			'application/ecmascript',
 			'application/javascript',
+			'application/node',
 			'application/x-javascript',
 			'text/javascript',
 			'text/plain'
@@ -4333,6 +4336,9 @@ class aliases {
 		),
 		'p8'=>array(
 			'application/pkcs8'
+		),
+		'p8e'=>array(
+			'application/pkcs8-encrypted'
 		),
 		'pack'=>array(
 			'application/x-java-pack200'
@@ -7540,6 +7546,9 @@ class aliases {
 		'xotp'=>array(
 			'application/vnd.collabio.xodocuments.presentation-template'
 		),
+		'xots'=>array(
+			'application/vnd.collabio.xodocuments.spreadsheet-template'
+		),
 		'xott'=>array(
 			'application/vnd.collabio.xodocuments.document-template'
 		),
@@ -7675,6 +7684,9 @@ class aliases {
 			'text/plain',
 			'text/x-yaml',
 			'text/yaml'
+		),
+		'yt'=>array(
+			'application/vnd.youtube.yt'
 		),
 		'z1'=>array(
 			'application/x-zmachine'

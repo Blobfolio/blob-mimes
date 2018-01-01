@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2017-12-06 07:31:36.
+ * Built: 2018-01-01 07:56:46.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1612,6 +1612,15 @@ class data {
 				'freedesktop.org'
 			)
 		),
+		'application/node'=>array(
+			'mime'=>'application/node',
+			'ext'=>array(
+				'js'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/ocsp-request'=>array(
 			'mime'=>'application/ocsp-request',
 			'ext'=>array(
@@ -1977,6 +1986,15 @@ class data {
 				'IANA',
 				'Apache',
 				'freedesktop.org'
+			)
+		),
+		'application/pkcs8-encrypted'=>array(
+			'mime'=>'application/pkcs8-encrypted',
+			'ext'=>array(
+				'p8e'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/pkix-attr-cert'=>array(
@@ -3578,6 +3596,15 @@ class data {
 				'IANA'
 			)
 		),
+		'application/vnd.collabio.xodocuments.spreadsheet-template'=>array(
+			'mime'=>'application/vnd.collabio.xodocuments.spreadsheet-template',
+			'ext'=>array(
+				'xots'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.collection+json'=>array(
 			'mime'=>'application/vnd.collection+json',
 			'ext'=>array(
@@ -3613,6 +3640,15 @@ class data {
 			'source'=>array(
 				'IANA',
 				'freedesktop.org'
+			)
+		),
+		'application/vnd.comicbook-rar'=>array(
+			'mime'=>'application/vnd.comicbook-rar',
+			'ext'=>array(
+				'cbr'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.commerce-battelle'=>array(
@@ -9699,6 +9735,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.youtube.yt'=>array(
+			'mime'=>'application/vnd.youtube.yt',
+			'ext'=>array(
+				'yt'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.zul'=>array(
 			'mime'=>'application/vnd.zul',
 			'ext'=>array(
@@ -10277,10 +10322,10 @@ class data {
 		'application/x-cbr'=>array(
 			'mime'=>'application/x-cbr',
 			'ext'=>array(
-				'cbr',
-				'cba',
 				'cbt',
+				'cba',
 				'cb7',
+				'cbr',
 				'cbz'
 			),
 			'source'=>array(
@@ -14704,7 +14749,8 @@ class data {
 				'ac3'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'audio/adpcm'=>array(
@@ -16142,6 +16188,15 @@ class data {
 			),
 			'source'=>array(
 				'Tika'
+			)
+		),
+		'image/aces'=>array(
+			'mime'=>'image/aces',
+			'ext'=>array(
+				'exr'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'image/bmp'=>array(
@@ -22261,7 +22316,8 @@ class data {
 				'audio/ac3'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'audio/ac3'
@@ -24268,17 +24324,19 @@ class data {
 		'cbr'=>array(
 			'ext'=>'cbr',
 			'mime'=>array(
+				'application/vnd.comicbook-rar',
 				'application/x-cbr',
 				'application/vnd.rar'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
 			'alias'=>array(
 				'application/vnd.rar'
 			),
-			'primary'=>'application/x-cbr'
+			'primary'=>'application/vnd.comicbook-rar'
 		),
 		'cbt'=>array(
 			'ext'=>'cbt',
@@ -27805,13 +27863,15 @@ class data {
 		'exr'=>array(
 			'ext'=>'exr',
 			'mime'=>array(
+				'image/aces',
 				'image/x-exr'
 			),
 			'source'=>array(
+				'IANA',
 				'freedesktop.org'
 			),
 			'alias'=>array(),
-			'primary'=>'image/x-exr'
+			'primary'=>'image/aces'
 		),
 		'ext'=>array(
 			'ext'=>'ext',
@@ -31787,6 +31847,7 @@ class data {
 			'ext'=>'js',
 			'mime'=>array(
 				'application/javascript',
+				'application/node',
 				'text/javascript',
 				'application/x-javascript',
 				'application/ecmascript',
@@ -37186,6 +37247,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/pkcs8'
+		),
+		'p8e'=>array(
+			'ext'=>'p8e',
+			'mime'=>array(
+				'application/pkcs8-encrypted'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/pkcs8-encrypted'
 		),
 		'pack'=>array(
 			'ext'=>'pack',
@@ -48477,6 +48549,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.collabio.xodocuments.presentation-template'
 		),
+		'xots'=>array(
+			'ext'=>'xots',
+			'mime'=>array(
+				'application/vnd.collabio.xodocuments.spreadsheet-template'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.collabio.xodocuments.spreadsheet-template'
+		),
 		'xott'=>array(
 			'ext'=>'xott',
 			'mime'=>array(
@@ -48976,6 +49059,17 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'application/x-yaml'
+		),
+		'yt'=>array(
+			'ext'=>'yt',
+			'mime'=>array(
+				'application/vnd.youtube.yt'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.youtube.yt'
 		),
 		'z1'=>array(
 			'ext'=>'z1',
