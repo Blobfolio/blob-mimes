@@ -370,6 +370,9 @@ class aliases {
 		'apr'=>array(
 			'application/vnd.lotus-approach'
 		),
+		'apt'=>array(
+			'text/plain'
+		),
 		'apxml'=>array(
 			'application/auth-policy+xml'
 		),
@@ -660,6 +663,9 @@ class aliases {
 		'bsdiff'=>array(
 			'application/x-bsdiff'
 		),
+		'bsh'=>array(
+			'text/plain'
+		),
 		'bsp'=>array(
 			'model/vnd.valve.source.compiled-map'
 		),
@@ -845,7 +851,8 @@ class aliases {
 			'text/x-coldfusion'
 		),
 		'cfg'=>array(
-			'text/plain'
+			'text/plain',
+			'text/x-config'
 		),
 		'cfm'=>array(
 			'text/plain',
@@ -975,7 +982,8 @@ class aliases {
 			'image/x-cmx'
 		),
 		'cnd'=>array(
-			'text/jcr-cnd'
+			'text/jcr-cnd',
+			'text/plain'
 		),
 		'cob'=>array(
 			'text/plain',
@@ -993,10 +1001,12 @@ class aliases {
 			'application/x-msdownload'
 		),
 		'conf'=>array(
-			'text/plain'
+			'text/plain',
+			'text/x-config'
 		),
 		'config'=>array(
-			'text/plain'
+			'text/plain',
+			'text/x-config'
 		),
 		'core'=>array(
 			'application/x-core'
@@ -1454,8 +1464,14 @@ class aliases {
 			'text/plain',
 			'text/x-dsl'
 		),
+		'dsp'=>array(
+			'text/plain'
+		),
 		'dssc'=>array(
 			'application/dssc+der'
+		),
+		'dsw'=>array(
+			'text/plain'
 		),
 		'dta'=>array(
 			'application/x-stata-dta'
@@ -2288,6 +2304,9 @@ class aliases {
 			'text/plain',
 			'text/x-haml'
 		),
+		'handlers'=>array(
+			'text/plain'
+		),
 		'hbci'=>array(
 			'application/vnd.hbci'
 		),
@@ -2366,6 +2385,7 @@ class aliases {
 			'text/plain'
 		),
 		'htc'=>array(
+			'text/plain',
 			'text/x-component'
 		),
 		'htke'=>array(
@@ -2831,6 +2851,7 @@ class aliases {
 			'application/javascript',
 			'application/jf2feed+json',
 			'application/json',
+			'application/vnd.amadeus+json',
 			'application/vnd.api+json',
 			'application/vnd.avalon+json',
 			'application/vnd.bekitzur-stech+json',
@@ -2860,6 +2881,7 @@ class aliases {
 			'application/vnd.nearst.inv+json',
 			'application/vnd.oftn.l10n+json',
 			'application/vnd.oracle.resource+json',
+			'application/vnd.restful+json',
 			'application/vnd.siren+json',
 			'application/vnd.tableschema+json',
 			'application/vnd.vel+json',
@@ -3273,6 +3295,10 @@ class aliases {
 			'audio/x-m4b',
 			'audio/x-mp4a'
 		),
+		'm4r'=>array(
+			'audio/x-m4r',
+			'video/mp4'
+		),
 		'm4s'=>array(
 			'video/iso.segment'
 		),
@@ -3383,6 +3409,9 @@ class aliases {
 		'mdi'=>array(
 			'image/vnd.ms-modi'
 		),
+		'mdo'=>array(
+			'text/plain'
+		),
 		'mdtext'=>array(
 			'text/plain',
 			'text/x-web-markdown'
@@ -3490,6 +3519,14 @@ class aliases {
 		'mjp2'=>array(
 			'image/x-jp2-container',
 			'video/mj2'
+		),
+		'mjpeg'=>array(
+			'image/jpeg',
+			'video/x-mjpeg'
+		),
+		'mjpg'=>array(
+			'image/jpeg',
+			'video/x-mjpeg'
 		),
 		'mjs'=>array(
 			'application/ecmascript',
@@ -3989,6 +4026,13 @@ class aliases {
 		),
 		'npx'=>array(
 			'image/vnd.net-fpx'
+		),
+		'nroff'=>array(
+			'application/x-troff',
+			'application/x-troff-man',
+			'application/x-troff-me',
+			'application/x-troff-ms',
+			'text/troff'
 		),
 		'nrw'=>array(
 			'image/x-raw-nikon'
@@ -5365,6 +5409,9 @@ class aliases {
 		'sce'=>array(
 			'application/vnd.etsi.asic-e+zip'
 		),
+		'schemas'=>array(
+			'text/plain'
+		),
 		'scld'=>array(
 			'application/vnd.doremir.scorecloud-binary-document'
 		),
@@ -6309,6 +6356,7 @@ class aliases {
 		'ts'=>array(
 			'application/x-linguist',
 			'application/xml',
+			'text/vnd.qt.linguist',
 			'text/vnd.trolltech.linguist',
 			'video/mp2t'
 		),
@@ -7173,7 +7221,8 @@ class aliases {
 			'image/xcf'
 		),
 		'xconf'=>array(
-			'text/plain'
+			'text/plain',
+			'text/x-config'
 		),
 		'xcs'=>array(
 			'application/calendar+xml'
@@ -7241,6 +7290,9 @@ class aliases {
 			'application/vnd.pwg-xhtml-print+xml',
 			'application/xhtml+xml',
 			'application/xml'
+		),
+		'xhtml2'=>array(
+			'application/xhtml+xml'
 		),
 		'xhvml'=>array(
 			'application/xv+xml'
@@ -7635,6 +7687,9 @@ class aliases {
 			'application/x-xspf+xml',
 			'application/xml',
 			'application/xspf+xml'
+		),
+		'xtest'=>array(
+			'text/plain'
 		),
 		'xul'=>array(
 			'application/vnd.mozilla.xul+xml',

@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-01-01 07:56:46.
+ * Built: 2018-02-04 09:01:01.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1670,7 +1670,6 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Nginx',
-				'freedesktop.org',
 				'Tika',
 				'Blobfolio'
 			)
@@ -3082,6 +3081,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika'
+			)
+		),
+		'application/vnd.amadeus+json'=>array(
+			'mime'=>'application/vnd.amadeus+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.amazon.ebook'=>array(
@@ -8381,6 +8389,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika'
+			)
+		),
+		'application/vnd.restful+json'=>array(
+			'mime'=>'application/vnd.restful+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.rig.cryptonote'=>array(
@@ -13684,6 +13701,7 @@ class data {
 			'ext'=>array(
 				'tr',
 				'roff',
+				'nroff',
 				'man',
 				'me',
 				'ms'
@@ -13699,6 +13717,7 @@ class data {
 				'man',
 				'tr',
 				'roff',
+				'nroff',
 				'me',
 				'ms'
 			),
@@ -13712,6 +13731,7 @@ class data {
 			'ext'=>array(
 				'tr',
 				'roff',
+				'nroff',
 				'man',
 				'me',
 				'ms'
@@ -13725,6 +13745,7 @@ class data {
 			'ext'=>array(
 				'tr',
 				'roff',
+				'nroff',
 				'man',
 				'me',
 				'ms'
@@ -14384,6 +14405,7 @@ class data {
 		'application/xhtml+xml'=>array(
 			'mime'=>'application/xhtml+xml',
 			'ext'=>array(
+				'xhtml2',
 				'xht',
 				'xhtml'
 			),
@@ -15547,6 +15569,15 @@ class data {
 				'freedesktop.org'
 			)
 		),
+		'audio/x-m4r'=>array(
+			'mime'=>'audio/x-m4r',
+			'ext'=>array(
+				'm4r'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
 		'audio/x-matroska'=>array(
 			'mime'=>'audio/x-matroska',
 			'ext'=>array(
@@ -16363,7 +16394,9 @@ class data {
 				'jpg',
 				'jif',
 				'jfif',
-				'jfi'
+				'jfi',
+				'mjpeg',
+				'mjpg'
 			),
 			'source'=>array(
 				'Apache',
@@ -18608,18 +18641,19 @@ class data {
 			'mime'=>'text/plain',
 			'ext'=>array(
 				'txt',
-				'xargs',
+				'wsdd',
+				'pen',
 				'pom',
 				'project',
 				'rnx',
 				'roles',
+				'schemas',
 				'tld',
-				'types',
 				'vm',
 				'vsl',
-				'xcat',
+				'xargs',
 				'meta',
-				'xconf',
+				'xcat',
 				'xegrm',
 				'xgrm',
 				'xlex',
@@ -18628,19 +18662,22 @@ class data {
 				'xroles',
 				'xsamples',
 				'xsp',
-				'pen',
+				'xtest',
+				'mdo',
 				'mf',
 				'xwelcome',
-				'cwiki',
+				'dsp',
 				'text',
-				'cfg',
 				'abs-linkmap',
 				'abs-menulinks',
 				'aart',
 				'am',
+				'apt',
+				'bsh',
 				'classpath',
-				'config',
+				'cwiki',
 				'data',
+				'dsw',
 				'jx',
 				'egrm',
 				'ft',
@@ -18648,68 +18685,69 @@ class data {
 				'fv',
 				'grm',
 				'htaccess',
+				'handlers',
 				'ihtml',
 				'jmx',
 				'junit',
 				'xweb',
-				'wsdd',
-				'in',
-				'conf',
-				'list',
+				'types',
 				'def',
-				'jl',
-				'applescript',
-				'xq',
-				'xquery',
-				'sas',
-				'sh',
-				'bash',
+				'conf',
+				'in',
+				'list',
+				'config',
 				'sfdu',
 				'xsl',
 				'as',
 				'ada',
-				'asm',
+				'applescript',
 				'aspx',
 				'aj',
-				'mpx',
+				'asm',
 				'ifb',
+				'cs',
+				'cfg',
+				'xconf',
+				'sh',
 				'haml',
 				'ac',
 				'ad',
 				'adoc',
 				'asciidoc',
+				'cnd',
 				'mdtext',
-				'bibtex',
-				'js',
-				'st',
-				'm1u',
-				'scope',
-				'slice',
-				'socket',
-				'swap',
-				'target',
+				'itk',
+				'bash',
+				'sas',
+				'sed',
+				'it87',
 				'timer',
 				'xml',
 				'xbl',
 				'xsd',
 				'rng',
+				'm1u',
 				'm4u',
-				'cmd',
 				'mxu',
 				'sdp',
 				'ica',
-				'it87',
 				'ccmx',
+				'xquery',
 				'trig',
 				'flatpakrepo',
 				'flatpakref',
 				'stl',
 				'gcode',
 				'bat',
-				'itk',
-				'ent',
-				'cl',
-				'hpp',
+				'cmd',
+				'js',
+				'mpx',
+				'bibtex',
+				'xq',
+				'st',
+				'rb',
+				'clj',
+				'cfml',
 				'ini',
 				'groovy',
 				'f77',
@@ -18717,90 +18755,92 @@ class data {
 				'exp',
 				'lsp',
 				'lisp',
+				'jl',
+				'cl',
+				'cfc',
+				'cfm',
+				'properties',
 				'gv',
 				'awk',
 				'bas',
+				'hpp',
 				'hxx',
-				'properties',
 				'hh',
 				'hp',
 				'cpp',
 				'cxx',
 				'cc',
 				'cgi',
-				'clj',
-				'cs',
-				'cfm',
-				'cfml',
-				'cfc',
 				'java',
 				'jsp',
-				'sed',
-				'pl',
-				'rb',
+				'ent',
+				'dpr',
 				'rexx',
 				'restx',
 				'rst',
 				'rest',
 				'py',
 				'pro',
+				'htc',
 				'perl',
 				'al',
 				'pm',
-				'n3',
-				'pod',
-				'less',
-				'dpr',
+				'pl',
 				'pp',
+				'less',
 				'mli',
+				'n3',
 				'ocaml',
+				'pod',
 				'ig',
 				'mg',
 				'i3',
 				'm3',
-				'mount',
 				'ml',
 				'lua',
-				'path',
-				'service',
-				'device',
-				'sami',
+				'swap',
+				'target',
+				'scope',
+				'socket',
+				'ssa',
+				'm3u',
+				'src',
 				'man',
 				'roff',
 				'tr',
 				'ass',
-				'ssa',
 				'sub',
+				'vlc',
+				'sami',
 				'smi',
-				'm3u',
 				'vtt',
 				'srt',
 				'la',
 				'rs',
 				'rej',
-				'qti',
-				'src',
 				'm3u8',
-				'php5',
-				'css',
+				'eml',
+				'phps',
+				'vcf',
+				'rtx',
+				'vhdl',
+				'vhd',
 				't2t',
 				'ttl',
 				'gcrd',
 				'vct',
-				'vcf',
 				'vcard',
+				'igs',
+				'css',
 				'ics',
-				'vlc',
 				'vcs',
 				'wrl',
 				'vrml',
 				'vrm',
 				'iges',
-				'igs',
-				'eml',
-				'phps',
-				'php4',
-				'vhdl',
+				'qti',
+				'php5',
+				'sgm',
 				'sig',
 				'yaml',
 				'sgf',
@@ -18819,8 +18859,9 @@ class data {
 				'log',
 				'yml',
 				'asp',
-				'php3',
+				'php4',
 				'lyx',
+				'php3',
 				'php',
 				'm4',
 				'cob',
@@ -18836,82 +18877,84 @@ class data {
 				'kdelnk',
 				'desktop',
 				'pgn',
-				'vhd',
-				'rtx',
-				'automount',
-				'spec',
+				'sgml',
+				'sylk',
+				'slice',
+				'ss',
+				'tex',
+				'tk',
+				'tcl',
+				'sql',
 				'etx',
 				'scss',
-				'ss',
 				'scm',
+				'sty',
 				'scala',
 				'sass',
+				'spec',
 				'go',
-				'tcl',
 				'patch',
 				'diff',
 				'pas',
-				'mo',
+				'ltx',
+				'cls',
 				'not',
-				'mup',
-				'reg',
-				'sql',
-				'tk',
-				'markdown',
-				'me',
+				'uil',
+				'path',
+				'mount',
+				'device',
+				'automount',
+				'service',
 				'iptables',
 				'uue',
-				'uil',
 				'twig',
+				'dtx',
 				'ms',
 				'mm',
+				'me',
 				'texinfo',
-				'tex',
 				'texi',
 				'latex',
 				'ins',
-				'dtx',
-				'cls',
-				'sty',
-				'ltx',
-				'moc',
-				'mkd',
-				'sgml',
-				'csv',
+				'mo',
+				'mup',
+				'slk',
+				'dsl',
+				'f95',
+				'f90',
+				'erl',
 				'el',
 				'eif',
 				'dtd',
-				'dsl',
 				'dcl',
+				'gs',
 				'csvs',
+				'csv',
 				'cmake',
-				'f90',
 				'bib',
 				'ads',
 				'adb',
 				'tsv',
-				'slk',
-				'sylk',
-				'sgm',
-				'erl',
-				'f95',
+				'for',
+				'po',
+				'reg',
+				'lhs',
+				'moc',
+				'markdown',
+				'mkd',
 				'md',
-				'idl',
 				'mak',
 				'mk',
 				'makefile',
-				'lhs',
 				'ly',
+				'pot',
 				'ldif',
+				'idl',
 				'hs',
-				'for',
 				'manifest',
 				'htm',
 				'html',
 				'feature',
-				'pot',
-				'po',
-				'gs',
 				'hx'
 			),
 			'source'=>array(
@@ -19051,7 +19094,8 @@ class data {
 				'roff',
 				'man',
 				'me',
-				'ms'
+				'ms',
+				'nroff'
 			),
 			'source'=>array(
 				'Apache',
@@ -19281,6 +19325,15 @@ class data {
 			),
 			'source'=>array(
 				'IANA'
+			)
+		),
+		'text/vnd.qt.linguist'=>array(
+			'mime'=>'text/vnd.qt.linguist',
+			'ext'=>array(
+				'ts'
+			),
+			'source'=>array(
+				'freedesktop.org'
 			)
 		),
 		'text/vnd.rn-realtext'=>array(
@@ -19606,6 +19659,18 @@ class data {
 			),
 			'source'=>array(
 				'Nginx'
+			)
+		),
+		'text/x-config'=>array(
+			'mime'=>'text/x-config',
+			'ext'=>array(
+				'config',
+				'cfg',
+				'xconf',
+				'conf'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'text/x-csharp'=>array(
@@ -21019,6 +21084,7 @@ class data {
 				'mpg4',
 				'lrv',
 				'mp4',
+				'm4r',
 				'm4v',
 				'f4v',
 				'3gp',
@@ -21519,6 +21585,16 @@ class data {
 			'mime'=>'video/x-matroska-3d',
 			'ext'=>array(
 				'mk3d'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'video/x-mjpeg'=>array(
+			'mime'=>'video/x-mjpeg',
+			'ext'=>array(
+				'mjpeg',
+				'mjpg'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -22963,6 +23039,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.lotus-approach'
 		),
+		'apt'=>array(
+			'ext'=>'apt',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'apxml'=>array(
 			'ext'=>'apxml',
 			'mime'=>array(
@@ -24003,6 +24090,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-bsdiff'
 		),
+		'bsh'=>array(
+			'ext'=>'bsh',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'bsp'=>array(
 			'ext'=>'bsp',
 			'mime'=>array(
@@ -24689,13 +24787,16 @@ class data {
 		'cfg'=>array(
 			'ext'=>'cfg',
 			'mime'=>array(
+				'text/x-config',
 				'text/plain'
 			),
 			'source'=>array(
 				'Tika'
 			),
-			'alias'=>array(),
-			'primary'=>'text/plain'
+			'alias'=>array(
+				'text/plain'
+			),
+			'primary'=>'text/x-config'
 		),
 		'cfm'=>array(
 			'ext'=>'cfm',
@@ -25169,10 +25270,12 @@ class data {
 		'cnd'=>array(
 			'ext'=>'cnd',
 			'mime'=>array(
-				'text/jcr-cnd'
+				'text/jcr-cnd',
+				'text/plain'
 			),
 			'source'=>array(
-				'IANA'
+				'IANA',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'text/jcr-cnd'
@@ -25236,7 +25339,8 @@ class data {
 		'conf'=>array(
 			'ext'=>'conf',
 			'mime'=>array(
-				'text/plain'
+				'text/plain',
+				'text/x-config'
 			),
 			'source'=>array(
 				'Apache',
@@ -25248,13 +25352,16 @@ class data {
 		'config'=>array(
 			'ext'=>'config',
 			'mime'=>array(
+				'text/x-config',
 				'text/plain'
 			),
 			'source'=>array(
 				'Tika'
 			),
-			'alias'=>array(),
-			'primary'=>'text/plain'
+			'alias'=>array(
+				'text/plain'
+			),
+			'primary'=>'text/x-config'
 		),
 		'core'=>array(
 			'ext'=>'core',
@@ -26890,6 +26997,17 @@ class data {
 			),
 			'primary'=>'text/x-dsl'
 		),
+		'dsp'=>array(
+			'ext'=>'dsp',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'dssc'=>array(
 			'ext'=>'dssc',
 			'mime'=>array(
@@ -26901,6 +27019,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/dssc+der'
+		),
+		'dsw'=>array(
+			'ext'=>'dsw',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
 		),
 		'dta'=>array(
 			'ext'=>'dta',
@@ -29962,6 +30091,17 @@ class data {
 			),
 			'primary'=>'text/x-haml'
 		),
+		'handlers'=>array(
+			'ext'=>'handlers',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'hbci'=>array(
 			'ext'=>'hbci',
 			'mime'=>array(
@@ -30251,10 +30391,12 @@ class data {
 		'htc'=>array(
 			'ext'=>'htc',
 			'mime'=>array(
-				'text/x-component'
+				'text/x-component',
+				'text/plain'
 			),
 			'source'=>array(
-				'Nginx'
+				'Nginx',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'text/x-component'
@@ -31894,6 +32036,7 @@ class data {
 				'application/geo+json',
 				'application/jf2feed+json',
 				'application/json',
+				'application/vnd.amadeus+json',
 				'application/vnd.api+json',
 				'application/vnd.avalon+json',
 				'application/vnd.bekitzur-stech+json',
@@ -31923,6 +32066,7 @@ class data {
 				'application/vnd.nearst.inv+json',
 				'application/vnd.oftn.l10n+json',
 				'application/vnd.oracle.resource+json',
+				'application/vnd.restful+json',
 				'application/vnd.siren+json',
 				'application/vnd.tableschema+json',
 				'application/vnd.vel+json',
@@ -33395,6 +33539,20 @@ class data {
 			),
 			'primary'=>'audio/x-m4b'
 		),
+		'm4r'=>array(
+			'ext'=>'m4r',
+			'mime'=>array(
+				'audio/x-m4r',
+				'video/mp4'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'video/mp4'
+			),
+			'primary'=>'audio/x-m4r'
+		),
 		'm4s'=>array(
 			'ext'=>'m4s',
 			'mime'=>array(
@@ -33793,6 +33951,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'image/vnd.ms-modi'
 		),
+		'mdo'=>array(
+			'ext'=>'mdo',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'mdtext'=>array(
 			'ext'=>'mdtext',
 			'mime'=>array(
@@ -34187,6 +34356,34 @@ class data {
 				'image/x-jp2-container'
 			),
 			'primary'=>'video/mj2'
+		),
+		'mjpeg'=>array(
+			'ext'=>'mjpeg',
+			'mime'=>array(
+				'video/x-mjpeg',
+				'image/jpeg'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'image/jpeg'
+			),
+			'primary'=>'video/x-mjpeg'
+		),
+		'mjpg'=>array(
+			'ext'=>'mjpg',
+			'mime'=>array(
+				'video/x-mjpeg',
+				'image/jpeg'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(
+				'image/jpeg'
+			),
+			'primary'=>'video/x-mjpeg'
 		),
 		'mjs'=>array(
 			'ext'=>'mjs',
@@ -35989,6 +36186,26 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'image/vnd.net-fpx'
+		),
+		'nroff'=>array(
+			'ext'=>'nroff',
+			'mime'=>array(
+				'text/troff',
+				'application/x-troff',
+				'application/x-troff-man',
+				'application/x-troff-me',
+				'application/x-troff-ms'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(
+				'application/x-troff',
+				'application/x-troff-man',
+				'application/x-troff-me',
+				'application/x-troff-ms'
+			),
+			'primary'=>'text/troff'
 		),
 		'nrw'=>array(
 			'ext'=>'nrw',
@@ -40978,6 +41195,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/vnd.etsi.asic-e+zip'
 		),
+		'schemas'=>array(
+			'ext'=>'schemas',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
+		),
 		'scld'=>array(
 			'ext'=>'scld',
 			'mime'=>array(
@@ -44434,6 +44662,7 @@ class data {
 			'mime'=>array(
 				'text/vnd.trolltech.linguist',
 				'video/mp2t',
+				'text/vnd.qt.linguist',
 				'application/x-linguist',
 				'application/xml'
 			),
@@ -47525,13 +47754,16 @@ class data {
 		'xconf'=>array(
 			'ext'=>'xconf',
 			'mime'=>array(
+				'text/x-config',
 				'text/plain'
 			),
 			'source'=>array(
 				'Tika'
 			),
-			'alias'=>array(),
-			'primary'=>'text/plain'
+			'alias'=>array(
+				'text/plain'
+			),
+			'primary'=>'text/x-config'
 		),
 		'xcs'=>array(
 			'ext'=>'xcs',
@@ -47786,6 +48018,17 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'application/vnd.pwg-xhtml-print+xml'
+		),
+		'xhtml2'=>array(
+			'ext'=>'xhtml2',
+			'mime'=>array(
+				'application/xhtml+xml'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'application/xhtml+xml'
 		),
 		'xhvml'=>array(
 			'ext'=>'xhvml',
@@ -48874,6 +49117,17 @@ class data {
 				'application/xml'
 			),
 			'primary'=>'application/xspf+xml'
+		),
+		'xtest'=>array(
+			'ext'=>'xtest',
+			'mime'=>array(
+				'text/plain'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'text/plain'
 		),
 		'xul'=>array(
 			'ext'=>'xul',
