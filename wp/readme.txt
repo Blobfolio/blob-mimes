@@ -67,6 +67,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.7.6 =
+* [Misc] Update MIME database.
+
 = 0.7.5 =
 * [Misc] Update MIME database.
 
@@ -148,6 +151,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.7.6 =
+The MIME database has been updated.
 
 = 0.7.5 =
 The MIME database has been updated.
