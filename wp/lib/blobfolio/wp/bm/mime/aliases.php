@@ -6659,6 +6659,9 @@ class aliases {
 		'vcg'=>array(
 			'application/vnd.groove-vcard'
 		),
+		'vcj'=>array(
+			'application/voucher-cms+json'
+		),
 		'vcs'=>array(
 			'application/ics',
 			'text/calendar',

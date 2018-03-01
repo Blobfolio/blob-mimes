@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-02-04 09:01:01.
+ * Built: 2018-03-01 10:28:30.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -9793,6 +9793,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika'
+			)
+		),
+		'application/voucher-cms+json'=>array(
+			'mime'=>'application/voucher-cms+json',
+			'ext'=>array(
+				'vcj'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/warc'=>array(
@@ -45798,6 +45807,17 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/vnd.groove-vcard'
+		),
+		'vcj'=>array(
+			'ext'=>'vcj',
+			'mime'=>array(
+				'application/voucher-cms+json'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/voucher-cms+json'
 		),
 		'vcs'=>array(
 			'ext'=>'vcs',
