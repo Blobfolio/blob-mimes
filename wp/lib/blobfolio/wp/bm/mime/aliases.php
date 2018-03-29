@@ -157,7 +157,8 @@ class aliases {
 		),
 		'aac'=>array(
 			'audio/aac',
-			'audio/x-aac'
+			'audio/x-aac',
+			'audio/x-hx-aac-adts'
 		),
 		'aam'=>array(
 			'application/x-authorware-map'
@@ -2447,6 +2448,7 @@ class aliases {
 		),
 		'icb'=>array(
 			'image/x-icb',
+			'image/x-targa',
 			'image/x-tga'
 		),
 		'icc'=>array(
@@ -2866,6 +2868,7 @@ class aliases {
 			'application/vnd.hal+json',
 			'application/vnd.hc+json',
 			'application/vnd.heroku+json',
+			'application/vnd.hyper+json',
 			'application/vnd.hyper-item+json',
 			'application/vnd.hyperdrive+json',
 			'application/vnd.ims.lis.v2.result+json',
@@ -3130,6 +3133,9 @@ class aliases {
 		),
 		'lnx'=>array(
 			'application/x-atari-lynx-rom'
+		),
+		'loas'=>array(
+			'audio/usac'
 		),
 		'log'=>array(
 			'text/plain',
@@ -3951,6 +3957,10 @@ class aliases {
 		),
 		'n64'=>array(
 			'application/x-n64-rom'
+		),
+		'nar'=>array(
+			'application/vnd.iptc.g2.newsmessage+xml',
+			'application/xml'
 		),
 		'nb'=>array(
 			'application/mathematica',
@@ -5977,6 +5987,7 @@ class aliases {
 		),
 		'stl'=>array(
 			'application/vnd.ms-pki.stl',
+			'model/stl',
 			'model/x.stl-ascii',
 			'model/x.stl-binary',
 			'text/plain'
@@ -6241,6 +6252,7 @@ class aliases {
 		),
 		'tga'=>array(
 			'image/x-icb',
+			'image/x-targa',
 			'image/x-tga'
 		),
 		'tgz'=>array(
@@ -6679,6 +6691,7 @@ class aliases {
 		),
 		'vda'=>array(
 			'image/x-icb',
+			'image/x-targa',
 			'image/x-tga'
 		),
 		'vfr'=>array(
@@ -7811,6 +7824,9 @@ class aliases {
 		'zsav'=>array(
 			'application/x-spss-sav',
 			'application/x-spss-savefile'
+		),
+		'zstd'=>array(
+			'application/zstd'
 		),
 		'zz'=>array(
 			'application/zlib'

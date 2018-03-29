@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-03-01 10:28:30.
+ * Built: 2018-03-29 08:36:23.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -372,7 +372,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/cea'=>array(
@@ -426,7 +427,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/cose'=>array(
@@ -5041,6 +5043,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.hyper+json'=>array(
+			'mime'=>'application/vnd.hyper+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.hyper-item+json'=>array(
 			'mime'=>'application/vnd.hyper-item+json',
 			'ext'=>array(
@@ -5404,10 +5415,12 @@ class data {
 		'application/vnd.iptc.g2.newsmessage+xml'=>array(
 			'mime'=>'application/vnd.iptc.g2.newsmessage+xml',
 			'ext'=>array(
+				'nar',
 				'xml'
 			),
 			'source'=>array(
-				'IANA'
+				'IANA',
+				'Tika'
 			)
 		),
 		'application/vnd.iptc.g2.packageitem+xml'=>array(
@@ -10412,7 +10425,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/x-cdrdao-toc'=>array(
@@ -10532,7 +10546,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/x-corelpresentations'=>array(
@@ -11959,7 +11974,8 @@ class data {
 				'lz4'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/x-lzh-compressed'=>array(
@@ -11979,7 +11995,8 @@ class data {
 				'lz'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/x-lzma'=>array(
@@ -11989,7 +12006,8 @@ class data {
 				'tlz'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'application/x-lzma-compressed-tar'=>array(
@@ -14451,15 +14469,16 @@ class data {
 				'wml',
 				'xslt',
 				'fo',
-				'xmp',
+				'nar',
 				'dif',
 				'ppj',
 				'svgz',
 				'xml',
 				'xlr',
 				'inx',
-				'dot',
+				'xmp',
 				'xslfo',
+				'dot',
 				'iso19139',
 				'xul',
 				'gpx',
@@ -14730,6 +14749,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'application/zstd'=>array(
+			'mime'=>'application/zstd',
+			'ext'=>array(
+				'zstd'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'audio/3gpp'=>array(
@@ -15081,6 +15109,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'audio/usac'=>array(
+			'mime'=>'audio/usac',
+			'ext'=>array(
+				'loas'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'audio/vnd.adobe.soundbooth'=>array(
@@ -15464,7 +15501,8 @@ class data {
 				'caf'
 			),
 			'source'=>array(
-				'Apache'
+				'Apache',
+				'Tika'
 			)
 		),
 		'audio/x-dts'=>array(
@@ -15513,6 +15551,15 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org'
+			)
+		),
+		'audio/x-hx-aac-adts'=>array(
+			'mime'=>'audio/x-hx-aac-adts',
+			'ext'=>array(
+				'aac'
+			),
+			'source'=>array(
+				'Blobfolio'
 			)
 		),
 		'audio/x-imelody'=>array(
@@ -16258,7 +16305,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'image/cgm'=>array(
@@ -17090,7 +17138,8 @@ class data {
 				'cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'image/x-cmu-raster'=>array(
@@ -17971,6 +18020,17 @@ class data {
 				'freedesktop.org'
 			)
 		),
+		'image/x-targa'=>array(
+			'mime'=>'image/x-targa',
+			'ext'=>array(
+				'tga',
+				'icb',
+				'vda'
+			),
+			'source'=>array(
+				'Tika'
+			)
+		),
 		'image/x-tga'=>array(
 			'mime'=>'image/x-tga',
 			'ext'=>array(
@@ -17982,7 +18042,8 @@ class data {
 			),
 			'source'=>array(
 				'Apache',
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			)
 		),
 		'image/x-win-bitmap'=>array(
@@ -18193,6 +18254,15 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika'
+			)
+		),
+		'model/stl'=>array(
+			'mime'=>'model/stl',
+			'ext'=>array(
+				'stl'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'model/vnd-dwf'=>array(
@@ -22279,12 +22349,14 @@ class data {
 			'ext'=>'aac',
 			'mime'=>array(
 				'audio/x-aac',
-				'audio/aac'
+				'audio/aac',
+				'audio/x-hx-aac-adts'
 			),
 			'source'=>array(
 				'Apache',
 				'freedesktop.org',
-				'Tika'
+				'Tika',
+				'Blobfolio'
 			),
 			'alias'=>array(
 				'audio/x-aac'
@@ -24323,7 +24395,8 @@ class data {
 				'audio/x-caf'
 			),
 			'source'=>array(
-				'Apache'
+				'Apache',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'audio/x-caf'
@@ -24693,7 +24766,8 @@ class data {
 				'zz-application/zz-winassoc-cdr'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(
 				'application/cdr',
@@ -30628,13 +30702,16 @@ class data {
 			'ext'=>'icb',
 			'mime'=>array(
 				'image/x-tga',
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'primary'=>'image/x-tga'
 		),
@@ -32061,6 +32138,7 @@ class data {
 				'application/vnd.hc+json',
 				'application/vnd.heroku+json',
 				'application/vnd.hyper-item+json',
+				'application/vnd.hyper+json',
 				'application/vnd.hyperdrive+json',
 				'application/vnd.ims.lis.v2.result+json',
 				'application/vnd.ims.lti.v2.toolconsumerprofile+json',
@@ -32971,6 +33049,17 @@ class data {
 			'alias'=>array(),
 			'primary'=>'application/x-atari-lynx-rom'
 		),
+		'loas'=>array(
+			'ext'=>'loas',
+			'mime'=>array(
+				'audio/usac'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'audio/usac'
+		),
 		'log'=>array(
 			'ext'=>'log',
 			'mime'=>array(
@@ -33229,7 +33318,8 @@ class data {
 				'application/x-lzip'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-lzip'
@@ -33240,7 +33330,8 @@ class data {
 				'application/x-lz4'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-lz4'
@@ -33266,7 +33357,8 @@ class data {
 				'application/x-lzma'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-lzma'
@@ -35910,6 +36002,20 @@ class data {
 			),
 			'alias'=>array(),
 			'primary'=>'application/x-n64-rom'
+		),
+		'nar'=>array(
+			'ext'=>'nar',
+			'mime'=>array(
+				'application/vnd.iptc.g2.newsmessage+xml',
+				'application/xml'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(
+				'application/xml'
+			),
+			'primary'=>'application/vnd.iptc.g2.newsmessage+xml'
 		),
 		'nb'=>array(
 			'ext'=>'nb',
@@ -43291,12 +43397,14 @@ class data {
 		'stl'=>array(
 			'ext'=>'stl',
 			'mime'=>array(
+				'model/stl',
 				'application/vnd.ms-pki.stl',
 				'model/x.stl-binary',
 				'model/x.stl-ascii',
 				'text/plain'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika'
@@ -43304,7 +43412,7 @@ class data {
 			'alias'=>array(
 				'text/plain'
 			),
-			'primary'=>'application/vnd.ms-pki.stl'
+			'primary'=>'model/stl'
 		),
 		'stm'=>array(
 			'ext'=>'stm',
@@ -44259,14 +44367,17 @@ class data {
 			'ext'=>'tga',
 			'mime'=>array(
 				'image/x-tga',
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'source'=>array(
 				'Apache',
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'primary'=>'image/x-tga'
 		),
@@ -45873,13 +45984,16 @@ class data {
 			'ext'=>'vda',
 			'mime'=>array(
 				'image/x-tga',
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'source'=>array(
-				'freedesktop.org'
+				'freedesktop.org',
+				'Tika'
 			),
 			'alias'=>array(
-				'image/x-icb'
+				'image/x-icb',
+				'image/x-targa'
 			),
 			'primary'=>'image/x-tga'
 		),
@@ -49588,6 +49702,17 @@ class data {
 				'application/x-spss-savefile'
 			),
 			'primary'=>'application/x-spss-sav'
+		),
+		'zstd'=>array(
+			'ext'=>'zstd',
+			'mime'=>array(
+				'application/zstd'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'application/zstd'
 		),
 		'zz'=>array(
 			'ext'=>'zz',
