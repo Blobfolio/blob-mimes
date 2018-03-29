@@ -878,6 +878,9 @@ else {
 // -------------------------------------------------
 // A few manual entries.
 $manual = array(
+	'aac'=>array(
+		'audio/x-hx-aac-adts',
+	),
 	'explain'=>array(
 		'application/zip',
 		'application/x-zip-compressed',
