@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-03-29 08:36:23.
+ * Built: 2018-04-02 07:42:48.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -10294,6 +10294,16 @@ class data {
 			'mime'=>'application/x-bplist',
 			'ext'=>array(
 				'webarchive'
+			),
+			'source'=>array(
+				'Tika'
+			)
+		),
+		'application/x-brotli'=>array(
+			'mime'=>'application/x-brotli',
+			'ext'=>array(
+				'br',
+				'brotli'
 			),
 			'source'=>array(
 				'Tika'
@@ -24159,6 +24169,28 @@ class data {
 				'application/zip'
 			),
 			'primary'=>'application/bizagi-modeler'
+		),
+		'br'=>array(
+			'ext'=>'br',
+			'mime'=>array(
+				'application/x-brotli'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-brotli'
+		),
+		'brotli'=>array(
+			'ext'=>'brotli',
+			'mime'=>array(
+				'application/x-brotli'
+			),
+			'source'=>array(
+				'Tika'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-brotli'
 		),
 		'bsdiff'=>array(
 			'ext'=>'bsdiff',

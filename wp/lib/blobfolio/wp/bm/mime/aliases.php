@@ -661,6 +661,12 @@ class aliases {
 			'application/bizagi-modeler',
 			'application/zip'
 		),
+		'br'=>array(
+			'application/x-brotli'
+		),
+		'brotli'=>array(
+			'application/x-brotli'
+		),
 		'bsdiff'=>array(
 			'application/x-bsdiff'
 		),
