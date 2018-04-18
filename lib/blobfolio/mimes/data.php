@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-04-02 07:42:48.
+ * Built: 2018-04-18 10:33:51.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -8700,6 +8700,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.shootproof+json'=>array(
+			'mime'=>'application/vnd.shootproof+json',
+			'ext'=>array(
+				'json'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.sigrok.session'=>array(
 			'mime'=>'application/vnd.sigrok.session',
 			'ext'=>array(
@@ -9186,6 +9195,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika'
+			)
+		),
+		'application/vnd.think-cell.ppttc+json'=>array(
+			'mime'=>'application/vnd.think-cell.ppttc+json',
+			'ext'=>array(
+				'ppttc'
+			),
+			'source'=>array(
+				'IANA'
 			)
 		),
 		'application/vnd.tmd.mediaflex.api+xml'=>array(
@@ -14453,6 +14471,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/xliff+xml'=>array(
+			'mime'=>'application/xliff+xml',
+			'ext'=>array(
+				'xlf'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/xml'=>array(
 			'mime'=>'application/xml',
 			'ext'=>array(
@@ -14806,9 +14833,11 @@ class data {
 		'audio/aac'=>array(
 			'mime'=>'audio/aac',
 			'ext'=>array(
+				'adts',
 				'aac'
 			),
 			'source'=>array(
+				'IANA',
 				'freedesktop.org'
 			)
 		),
@@ -22358,11 +22387,12 @@ class data {
 		'aac'=>array(
 			'ext'=>'aac',
 			'mime'=>array(
-				'audio/x-aac',
 				'audio/aac',
+				'audio/x-aac',
 				'audio/x-hx-aac-adts'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika',
@@ -22650,6 +22680,17 @@ class data {
 				'text/plain'
 			),
 			'primary'=>'text/x-adasrc'
+		),
+		'adts'=>array(
+			'ext'=>'adts',
+			'mime'=>array(
+				'audio/aac'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'audio/aac'
 		),
 		'aep'=>array(
 			'ext'=>'aep',
@@ -32186,6 +32227,7 @@ class data {
 				'application/vnd.oftn.l10n+json',
 				'application/vnd.oracle.resource+json',
 				'application/vnd.restful+json',
+				'application/vnd.shootproof+json',
 				'application/vnd.siren+json',
 				'application/vnd.tableschema+json',
 				'application/vnd.vel+json',
@@ -38963,6 +39005,17 @@ class data {
 				'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 			),
 			'primary'=>'application/vnd.ms-powerpoint.presentation.macroenabled.12'
+		),
+		'ppttc'=>array(
+			'ext'=>'ppttc',
+			'mime'=>array(
+				'application/vnd.think-cell.ppttc+json'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.think-cell.ppttc+json'
 		),
 		'pptx'=>array(
 			'ext'=>'pptx',
@@ -48343,18 +48396,20 @@ class data {
 		'xlf'=>array(
 			'ext'=>'xlf',
 			'mime'=>array(
+				'application/xliff+xml',
 				'application/x-xliff+xml',
 				'application/x-xliff',
 				'application/xml'
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org'
 			),
 			'alias'=>array(
 				'application/xml'
 			),
-			'primary'=>'application/x-xliff+xml'
+			'primary'=>'application/xliff+xml'
 		),
 		'xliff'=>array(
 			'ext'=>'xliff',

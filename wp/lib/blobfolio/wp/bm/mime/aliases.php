@@ -237,6 +237,9 @@ class aliases {
 			'text/x-ada',
 			'text/x-adasrc'
 		),
+		'adts'=>array(
+			'audio/aac'
+		),
 		'aep'=>array(
 			'application/vnd.adobe.aftereffects.project',
 			'application/vnd.audiograph'
@@ -2891,6 +2894,7 @@ class aliases {
 			'application/vnd.oftn.l10n+json',
 			'application/vnd.oracle.resource+json',
 			'application/vnd.restful+json',
+			'application/vnd.shootproof+json',
 			'application/vnd.siren+json',
 			'application/vnd.tableschema+json',
 			'application/vnd.vel+json',
@@ -4774,6 +4778,9 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.presentation.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+		),
+		'ppttc'=>array(
+			'application/vnd.think-cell.ppttc+json'
 		),
 		'pptx'=>array(
 			'application/vnd.ms-office',
@@ -7361,6 +7368,7 @@ class aliases {
 		'xlf'=>array(
 			'application/x-xliff',
 			'application/x-xliff+xml',
+			'application/xliff+xml',
 			'application/xml'
 		),
 		'xliff'=>array(
