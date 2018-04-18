@@ -17,3 +17,10 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 
 // Don't leave any settings behind.
 delete_option('bm_contributor_notice');
+delete_option('bm_remote_contributors');
+
+// Unhook the remote contributor cronjob if necessary.
+$next = wp_next_scheduled('cron_get_remote_contributors');
+if ($next) {
+	wp_unschedule_event($next, 'cron_get_remote_contributors');
+}
