@@ -67,6 +67,10 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.8.0 =
+* [Improved] Plugin contributor change monitoring is now handled more efficiently.
+* [Misc] Update MIME database.
+
 = 0.7.7 =
 * [Misc] Update MIME database.
 
@@ -154,6 +158,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.8.0 =
+This release improves the efficiency of the plugin contributor monitoring functionality. The MIME database has also been updated.
 
 = 0.7.7 =
 The MIME database has been updated.
