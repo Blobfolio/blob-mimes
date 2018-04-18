@@ -12,11 +12,18 @@ namespace blobfolio\wp\bm;
 
 class admin {
 
+	// The WP.org API URL for getting contributor information.
+	const PLUGIN_API = 'https://api.wordpress.org/plugins/info/1.0/%s.json?fields[contributors]=1&fields[sections]=0&fields[downloaded]=0&fields[downloadlink]=0&fields[last_updated]=0&fields[tags]=0&fields[tested]=0&fields[homepage]=0&fields[rating]=0&fields[ratings]=0&fields[requires]=0';
+
 	protected static $version;
 	protected static $remote_version;
 	protected static $remote_home;
-	protected static $checked_plugins_contributors;
-	protected static $changed_plugins_contributors;
+
+
+
+	// -----------------------------------------------------------------
+	// Init
+	// -----------------------------------------------------------------
 
 	/**
 	 * Register Actions and Filters
@@ -41,15 +48,26 @@ class admin {
 		// Update check on debug page.
 		add_action('admin_notices', array($class, 'debug_notice'));
 
-		// Pull contributor information during update checks.
-		add_filter('transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
-		add_filter('site_transient_update_plugins', array($class, 'update_plugins_contributors'), PHP_INT_MAX);
-
 		// AJAX hook for disabling contributor lookups.
 		add_action('wp_ajax_bm_ajax_disable_contributor_notice', array($class, 'disable_contributor_notice'));
 
 		// And the corresponding warnings.
 		add_filter('admin_notices', array($class, 'contributors_changed_notice'));
+
+		// Pull remote contributor information.
+		$next = wp_next_scheduled('cron_get_remote_contributors');
+		if ('disabled' === get_option('bm_contributor_notice', false)) {
+			// Make sure the CRON job is disabled.
+			if ($next) {
+				wp_unschedule_event($next, 'cron_get_remote_contributors');
+			}
+		}
+		else {
+			add_action('cron_get_remote_contributors', array($class, 'cron_get_remote_contributors'));
+			if (!$next) {
+				wp_schedule_event(time(), 'hourly', 'cron_get_remote_contributors');
+			}
+		}
 
 		// Register plugins page quick links if we aren't running in
 		// Must-Use mode.
@@ -71,6 +89,33 @@ class admin {
 			load_plugin_textdomain('blob-mimes', false, basename(BLOBMIMES_BASE_PATH) . '/languages');
 		}
 	}
+
+	/**
+	 * Plugin Action Links
+	 *
+	 * Add a few links to the plugins page so people can more easily
+	 * find what they're looking for.
+	 *
+	 * @param array $links Links.
+	 * @return array Links.
+	 */
+	public static function plugin_action_links($links) {
+		if (current_user_can('manage_options')) {
+			$links[] = '<a href="' . esc_url(admin_url('tools.php?page=blob-mimes-admin')) . '">' . __('Debug File Validation', 'blob-mimes') . '</a>';
+		}
+
+		$links[] = '<a href="https://github.com/Blobfolio/blob-mimes/tree/master/wp" target="_blank" rel="noopener">' . esc_html__('Documentation', 'blob-mimes') . '</a>';
+
+		return $links;
+	}
+
+	// ----------------------------------------------------------------- end init
+
+
+
+	// -----------------------------------------------------------------
+	// Upload Debugger
+	// -----------------------------------------------------------------
 
 	/**
 	 * Menu: Upload Debugger
@@ -101,6 +146,14 @@ class admin {
 			echo '<div class="wrap"><span></span><h2>' . esc_html__('Debug File Validation', 'blob-mimes') . '</h2></div>';
 		}
 	}
+
+	// ----------------------------------------------------------------- end upload debugger
+
+
+
+	// -----------------------------------------------------------------
+	// Update Checking (MU)
+	// -----------------------------------------------------------------
 
 	/**
 	 * Get Plugin Version
@@ -209,6 +262,14 @@ class admin {
 		return (version_compare(static::get_version(), static::get_remote_version()) < 0);
 	}
 
+	// ----------------------------------------------------------------- end self updates
+
+
+
+	// -----------------------------------------------------------------
+	// File Validation
+	// -----------------------------------------------------------------
+
 	/**
 	 * Override Upload File Validation
 	 *
@@ -294,58 +355,13 @@ class admin {
 		return $checked;
 	}
 
-	/**
-	 * Remote Contributors
-	 *
-	 * Gather a list of contributors that WP.org currently knows about
-	 * for any plugins with updates.
-	 *
-	 * @param string $slug Plugin slug.
-	 * @param string $version Version.
-	 * @return array Contributors.
-	 */
-	protected static function get_remote_contributors($slug, $version) {
-		// Obviously bad data.
-		if (!$slug || !$version || !is_string($slug) || !is_string($version)) {
-			return array();
-		}
+	// ----------------------------------------------------------------- end files
 
-		// Cache this for each plugin/version pair.
-		$transient_key = 'remote_contrib_' . md5("$slug|$version");
-		if (false !== ($cache = get_transient($transient_key))) {
-			return $cache;
-		}
 
-		// We need these.
-		require_once(ABSPATH . 'wp-admin/includes/plugin.php');
-		require_once(ABSPATH . 'wp-admin/includes/plugin-install.php');
 
-		$response = plugins_api(
-			'plugin_information',
-			array(
-				'slug'=>$slug,
-				// This option does not seem to work as documented, but
-				// just in case let's make sure contributors come back
-				// in the response.
-				'fields'=>array('contributors'=>true),
-			)
-		);
-		if (
-			is_wp_error($response) ||
-			!isset($response->contributors) ||
-			!is_array($response->contributors) ||
-			!count($response->contributors)
-		) {
-			return array();
-		}
-
-		// Cache for up to one day.
-		$contributors = array_keys($response->contributors);
-		sort($contributors);
-
-		set_transient($transient_key, $contributors, 86400);
-		return $contributors;
-	}
+	// -----------------------------------------------------------------
+	// Plugin Contributor Monitoring
+	// -----------------------------------------------------------------
 
 	/**
 	 * Local Contributors
@@ -364,13 +380,13 @@ class admin {
 		}
 
 		// Cache this for each plugin/version pair.
-		$transient_key = 'local_contrib_' . md5("$slug|$version");
-		if (false !== ($cache = get_transient($transient_key))) {
-			return $cache;
+		$transient_key = 'bm_local_contrib_' . md5("$slug|$version");
+		if (false !== ($contributors = get_transient($transient_key))) {
+			return $contributors;
 		}
 
 		// The directory in question.
-		$dir = trailingslashit(WP_PLUGIN_DIR) . dirname($slug);
+		$dir = trailingslashit(WP_PLUGIN_DIR) . $slug;
 		if (!@is_dir($dir)) {
 			return array();
 		}
@@ -397,12 +413,12 @@ class admin {
 
 		// Looking good!
 		if (is_array($contributors) && count($contributors)) {
-			set_transient($transient_key, $contributors, 86400);
+			set_transient($transient_key, $contributors, WEEK_IN_SECONDS);
 		}
 		// We should still cache a negative lookup because if we
 		// couldn't get the info this time, we probably won't next time.
 		else {
-			set_transient($transient_key, array(), 86400);
+			set_transient($transient_key, array(), WEEK_IN_SECONDS);
 		}
 
 		return $contributors;
@@ -448,75 +464,6 @@ class admin {
 	}
 
 	/**
-	 * Add Contributor Info to Updates Data
-	 *
-	 * @see https://core.trac.wordpress.org/ticket/42255
-	 * @see https://meta.trac.wordpress.org/ticket/3207
-	 *
-	 * @param array $data Data.
-	 * @return array Data.
-	 */
-	public static function update_plugins_contributors($data) {
-		// Make sure the data is good and that we are supposed to show
-		// this information.
-		if (
-			!is_object($data) ||
-			!isset($data->response, $data->last_checked, $data->checked) ||
-			!is_array($data->response) ||
-			!count($data->response) ||
-			!is_array($data->checked) ||
-			!count($data->checked) ||
-			($data->last_checked === static::$checked_plugins_contributors) ||
-			('disabled' === get_option('bm_contributor_notice', false))
-		) {
-			return $data;
-		}
-
-		// The filters unfortunately trigger about 5 million times in a
-		// single run. Haha. We'll use the last-checked timestamp to
-		// prevent meddling unnecessarily.
-		static::$checked_plugins_contributors = $data->last_checked;
-		static::$changed_plugins_contributors = array();
-
-		// Loop through the data to provide contributor data, where
-		// possible.
-		foreach ($data->response as $k=>$v) {
-			// We can skip things we've already done or things that
-			// aren't hosted by WordPress.
-			if (
-				!isset($v->package, $data->checked[$k], $v->slug) ||
-				!$v->slug ||
-				!preg_match('#^https?://downloads.wordpress.org/#i', $v->package)
-			) {
-				continue;
-			}
-
-			// Current version is kept somewhere else.
-			$version = $data->checked[$k];
-
-			// Try to grab remote data.
-			$remote = static::get_remote_contributors($v->slug, $version);
-			if (!count($remote)) {
-				continue;
-			}
-
-			// Try to grab local data.
-			$local = static::get_local_contributors($k, $version);
-			if (!count($local)) {
-				continue;
-			}
-
-			static::$changed_plugins_contributors[$k] = array(
-				'slug'=>$v->slug,
-				'new'=>array_diff($remote, $local),
-				'removed'=>array_diff($local, $remote),
-			);
-		}
-
-		return $data;
-	}
-
-	/**
 	 * Contributor Change Notice
 	 *
 	 * Warn users if a pending plugin update has different contributors
@@ -539,81 +486,116 @@ class admin {
 			return;
 		}
 
-		// Make sure updates were actually checked.
-		if (!is_array(static::$changed_plugins_contributors)) {
-			wp_update_plugins();
-		}
-
-		// We usually won't need to print a notice.
-		if (!count(static::$changed_plugins_contributors)) {
+		// Make sure we've run remote checks before.
+		if (
+			(false === ($remote = get_option('bm_remote_contributors', false))) ||
+			!count($remote)
+		) {
 			return;
 		}
 
-		// Still might not need to be here, but we have to check each
-		// update to be sure.
+		// Make sure updates are checked.
+		wp_update_plugins();
+		$updates = get_site_transient('update_plugins');
+		if (
+			!isset($updates->response, $updates->checked) ||
+			!is_array($updates->response) ||
+			!count($updates->response)
+		) {
+			return;
+		}
+
+		// Look for any local/remote changes.
 		$warnings = array();
-		foreach (static::$changed_plugins_contributors as $v) {
-			if (!count($v['new']) && !count($v['removed'])) {
+		foreach ($updates->response as $k=>$v) {
+			$slug = $v->slug;
+
+			// Skip this plugin if there were no updates or remote data.
+			if (!isset($updates->checked[$k], $remote[$slug])) {
 				continue;
 			}
 
-			// Proceed with a warning!
+			// Pull the local contributor data.
+			$version = $updates->checked[$k];
+			$local = static::get_local_contributors($slug, $version);
+			if (!count($local)) {
+				continue;
+			}
+
+			// Note the differences.
+			$added = array_diff($remote[$slug], $local);
+			$removed = array_diff($local, $remote[$slug]);
+			if (count($added) || count($removed)) {
+				$warnings[$slug] = array(
+					'new'=>$added,
+					'removed'=>$removed,
+				);
+			}
+		}
+
+		// Nothing to do?
+		if (!count($warnings)) {
+			return;
+		}
+
+		// Let's build some HTML for the output.
+		foreach ($warnings as $k=>$v) {
 			$tmp = array();
+
 			foreach ($v['removed'] as $v2) {
 				$tmp[] = '<span class="wp-ui-text-notification"><span class="dashicons dashicons-minus"></span> ' . esc_html($v2) . '</span>';
 			}
+
 			foreach ($v['new'] as $v2) {
 				$tmp[] = '<span class="wp-ui-text-highlight"><span class="dashicons dashicons-plus"></span> ' . esc_html($v2) . '</span>';
 			}
 
-			$warnings[] = '<tr>
-				<th scope="row" style="text-align: left; padding-right: 1em; vertical-align: middle;"><a href="' . esc_url("https://wordpress.org/plugins/{$v['slug']}/") . '" target="_blank" rel="noopener">' . esc_html($v['slug']) . '</a>:</th>
+			$warnings[$k] = '<tr>
+				<th scope="row" style="text-align: left; padding-right: 1em; vertical-align: middle;"><a href="' . esc_url("https://wordpress.org/plugins/{$k}/") . '" target="_blank" rel="noopener">' . esc_html($k) . '</a>:</th>
 				<td style="vertical-align: middle;">' . implode('&nbsp;&nbsp;&nbsp;&nbsp; ', $tmp) . '</td>
 			</tr>';
-		} // Each update.
-
-		// Provide a way to opt-out of these notices.
-		if (count($warnings)) {
-			?>
-			<div class="notice notice-warning blob-mimes-contributor-notice">
-				<?php
-				echo '<p>' . sprintf(
-					esc_html__('%s The list of contributors for one or more plugins has changed since you last performed updates.', 'blob-mimes'),
-					'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>'
-				) . ' <a href="javascript: alert(\'' . esc_js(esc_attr__('This can potentially pose a security threat if the new author(s) are not nice people. It is recommended you re-review the code before continuing.', 'blob-mimes')) . '\');" class="dashicons dashicons-editor-help"></a></p>';
-
-				echo '<table style="margin: .5em 0 .5em 2em;"><tbody>' . implode('', $warnings) . '</tbody></table>';
-
-				echo '<p class="description">' . sprintf(
-					esc_html__('If you prefer not to receive these notices in the future, click %s.', 'blob-mimes'),
-					'<a href="#" class="blob-mimes-contributor-notice--dismiss">' . esc_html__('here', 'blob-mimes') . '</a>'
-				) . '</p>';
-				?>
-
-				<script>
-					jQuery('.blob-mimes-contributor-notice--dismiss').click(function(e) {
-						e.preventDefault();
-
-						var notice = jQuery('.blob-mimes-contributor-notice'),
-							data = {
-								action: 'bm_ajax_disable_contributor_notice',
-								n: '<?php echo wp_create_nonce('bm_ajax_disable_contributor_notice');?>'
-							};
-
-						notice.css('opacity', .5);
-
-						jQuery.post(
-							ajaxurl,
-							data,
-							function() {
-								notice.remove();
-							}
-						);
-					});
-				</script>
-			</div>
-			<?php
 		}
+
+		// Print the notice!
+		?>
+		<div class="notice notice-warning blob-mimes-contributor-notice">
+			<?php
+			echo '<p>' . sprintf(
+				esc_html__('%s The list of contributors for one or more plugins has changed since you last performed updates.', 'blob-mimes'),
+				'<strong>' . esc_html__('Warning', 'blob-mimes') . ':</strong>'
+			) . ' <a href="javascript: alert(\'' . esc_js(esc_attr__('This can potentially pose a security threat if the new author(s) are not nice people. It is recommended you re-review the code before continuing.', 'blob-mimes')) . '\');" class="dashicons dashicons-editor-help"></a></p>';
+
+			echo '<table style="margin: .5em 0 .5em 2em;"><tbody>' . implode('', $warnings) . '</tbody></table>';
+
+			echo '<p class="description">' . sprintf(
+				esc_html__('If you prefer not to receive these notices in the future, click %s.', 'blob-mimes'),
+				'<a href="#" class="blob-mimes-contributor-notice--dismiss">' . esc_html__('here', 'blob-mimes') . '</a>'
+			) . '</p>';
+			?>
+
+			<script>
+				jQuery('.blob-mimes-contributor-notice--dismiss').click(function(e) {
+					e.preventDefault();
+
+					var notice = jQuery('.blob-mimes-contributor-notice'),
+						data = {
+							action: 'bm_ajax_disable_contributor_notice',
+							n: '<?php echo wp_create_nonce('bm_ajax_disable_contributor_notice');?>'
+						};
+
+					notice.css('opacity', .5);
+
+					jQuery.post(
+						ajaxurl,
+						data,
+						function() {
+							notice.remove();
+						}
+					);
+				});
+			</script>
+		</div>
+		<?php
 	}
 
 	/**
@@ -644,21 +626,97 @@ class admin {
 	}
 
 	/**
-	 * Plugin Action Links
+	 * Extract Plugin Slug From Path
 	 *
-	 * Add a few links to the plugins page so people can more easily
-	 * find what they're looking for.
-	 *
-	 * @param array $links Links.
-	 * @return array Links.
+	 * @param string $path Path.
+	 * @return string|bool Slug or false.
 	 */
-	public static function plugin_action_links($links) {
-		if (current_user_can('manage_options')) {
-			$links[] = '<a href="' . esc_url(admin_url('tools.php?page=blob-mimes-admin')) . '">' . __('Debug File Validation', 'blob-mimes') . '</a>';
+	public static function get_plugin_slug_by_path($path) {
+		if (is_string($path) && $path) {
+			$slug = $path;
+			while (false !== strpos($slug, '/')) {
+				$slug = dirname($slug);
+			}
+			$slug = preg_replace('/\.php$/i', '', $slug);
+
+			return $slug ? $slug : false;
 		}
 
-		$links[] = '<a href="https://github.com/Blobfolio/blob-mimes/tree/master/wp" target="_blank" rel="noopener">' . esc_html__('Documentation', 'blob-mimes') . '</a>';
-
-		return $links;
+		return false;
 	}
+
+	/**
+	 * Pull Plugin Contributors
+	 *
+	 * This is a simple CRON job that will pull contributor information
+	 * for any installed plugins so we have that data for later
+	 * reference.
+	 *
+	 * @return void Nothing.
+	 */
+	public static function cron_get_remote_contributors() {
+		$plugins = get_plugins();
+		$out = array();
+
+		// We'll also keep track of plugins that aren't hosted on
+		// WP.org. This might change, so we'll periodically rebuild the
+		// list.
+		$save_invalid = false;
+		if (false === ($invalid = get_transient('bm_external_plugins'))) {
+			$save_invalid = true;
+			$invalid = array();
+		}
+
+		foreach ($plugins as $k=>$v) {
+			// Can't check it.
+			if (
+				false === ($slug = static::get_plugin_slug_by_path($k)) ||
+				isset($invalid[$slug])
+			) {
+				continue;
+			}
+
+			// The plugins_api() function does not fully support the
+			// API spec, so we have to do this manually.
+			$url = sprintf(static::PLUGIN_API, $slug);
+			$response = wp_remote_get(
+				$url,
+				array(
+					'timeout'=>3,
+				)
+			);
+			if (200 === wp_remote_retrieve_response_code($response)) {
+				$body = wp_remote_retrieve_body($response);
+				$body = json_decode($body, true);
+				if ($body) {
+					// If WP returned an error, note the slug so we can
+					// avoid checking it in the future.
+					if (isset($body['error'])) {
+						$invalid[$slug] = true;
+						$save_invalid = true;
+						continue;
+					}
+
+					if (
+						isset($body['contributors']) &&
+						is_array($body['contributors']) &&
+						count($body['contributors'])
+					) {
+						ksort($body['contributors']);
+						$out[$slug] = array_keys($body['contributors']);
+					}
+				}
+			}
+		}
+
+		// Save the contributors.
+		update_option('bm_remote_contributors', $out);
+
+		// Save the invalid plugins.
+		if ($save_invalid) {
+			set_transient('bm_external_plugins', $invalid, DAY_IN_SECONDS);
+		}
+	}
+
+	// ----------------------------------------------------------------- end contributors
 }
