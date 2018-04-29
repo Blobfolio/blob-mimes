@@ -655,6 +655,7 @@ class admin {
 	 * @return void Nothing.
 	 */
 	public static function cron_get_remote_contributors() {
+		require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 		$plugins = get_plugins();
 		$out = array();
 
