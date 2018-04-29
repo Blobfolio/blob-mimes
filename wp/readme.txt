@@ -67,6 +67,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 
 == Changelog ==
 
+= 0.8.1 =
+* [Fix] Core `wp-admin/includes/plugin.php` is not always loaded for CRON jobs.
+
 = 0.8.0 =
 * [Improved] Plugin contributor change monitoring is now handled more efficiently.
 * [Misc] Update MIME database.
@@ -158,6 +161,9 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 * [New] Integrate update support.
 
 == Upgrade Notice ==
+
+= 0.8.1 =
+This release fixes an issue with CRON jobs on certain systems.
 
 = 0.8.0 =
 This release improves the efficiency of the plugin contributor monitoring functionality. The MIME database has also been updated.
