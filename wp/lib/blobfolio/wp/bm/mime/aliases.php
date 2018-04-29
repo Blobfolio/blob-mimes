@@ -4008,6 +4008,9 @@ class aliases {
 			'text/x-nfo',
 			'text/x-readme'
 		),
+		'ngc'=>array(
+			'application/x-neo-geo-pocket-color-rom'
+		),
 		'ngdat'=>array(
 			'application/vnd.nokia.n-gage.data'
 		),
@@ -4861,6 +4864,9 @@ class aliases {
 		'psflib'=>array(
 			'audio/x-psf',
 			'audio/x-psflib'
+		),
+		'psfs'=>array(
+			'application/vnd.psfs'
 		),
 		'psid'=>array(
 			'audio/prs.sid'

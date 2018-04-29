@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-04-18 10:33:51.
+ * Built: 2018-04-29 12:22:32.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -8286,6 +8286,15 @@ class data {
 				'Tika'
 			)
 		),
+		'application/vnd.psfs'=>array(
+			'mime'=>'application/vnd.psfs',
+			'ext'=>array(
+				'psfs'
+			),
+			'source'=>array(
+				'IANA'
+			)
+		),
 		'application/vnd.publishare-delta-tree'=>array(
 			'mime'=>'application/vnd.publishare-delta-tree',
 			'ext'=>array(
@@ -12489,6 +12498,15 @@ class data {
 			'mime'=>'application/x-navi-animation',
 			'ext'=>array(
 				'ani'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			)
+		),
+		'application/x-neo-geo-pocket-color-rom'=>array(
+			'mime'=>'application/x-neo-geo-pocket-color-rom',
+			'ext'=>array(
+				'ngc'
 			),
 			'source'=>array(
 				'freedesktop.org'
@@ -36223,6 +36241,17 @@ class data {
 			),
 			'primary'=>'text/x-nfo'
 		),
+		'ngc'=>array(
+			'ext'=>'ngc',
+			'mime'=>array(
+				'application/x-neo-geo-pocket-color-rom'
+			),
+			'source'=>array(
+				'freedesktop.org'
+			),
+			'alias'=>array(),
+			'primary'=>'application/x-neo-geo-pocket-color-rom'
+		),
 		'ngdat'=>array(
 			'ext'=>'ngdat',
 			'mime'=>array(
@@ -39301,6 +39330,17 @@ class data {
 				'audio/x-psf'
 			),
 			'primary'=>'audio/x-psflib'
+		),
+		'psfs'=>array(
+			'ext'=>'psfs',
+			'mime'=>array(
+				'application/vnd.psfs'
+			),
+			'source'=>array(
+				'IANA'
+			),
+			'alias'=>array(),
+			'primary'=>'application/vnd.psfs'
 		),
 		'psid'=>array(
 			'ext'=>'psid',
