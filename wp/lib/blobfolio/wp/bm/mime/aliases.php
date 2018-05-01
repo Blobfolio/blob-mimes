@@ -2330,6 +2330,7 @@ class aliases {
 			'application/x-hdf'
 		),
 		'hdr'=>array(
+			'application/envi.hdr',
 			'image/vnd.radiance'
 		),
 		'hdt'=>array(

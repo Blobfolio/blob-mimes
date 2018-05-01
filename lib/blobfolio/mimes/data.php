@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-04-29 12:22:32.
+ * Built: 2018-05-01 15:19:33.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -817,6 +817,15 @@ class data {
 			),
 			'source'=>array(
 				'IANA'
+			)
+		),
+		'application/envi.hdr'=>array(
+			'mime'=>'application/envi.hdr',
+			'ext'=>array(
+				'hdr'
+			),
+			'source'=>array(
+				'Tika'
 			)
 		),
 		'application/epp+xml'=>array(
@@ -30326,10 +30335,12 @@ class data {
 		'hdr'=>array(
 			'ext'=>'hdr',
 			'mime'=>array(
-				'image/vnd.radiance'
+				'image/vnd.radiance',
+				'application/envi.hdr'
 			),
 			'source'=>array(
-				'IANA'
+				'IANA',
+				'Tika'
 			),
 			'alias'=>array(),
 			'primary'=>'image/vnd.radiance'
