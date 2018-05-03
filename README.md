@@ -44,7 +44,7 @@ The database is compiled from the following sources:
 
 ## Requirements
 
-blob-mimes requires PHP 5.6+ with the following modules:
+blob-mimes requires PHP 7.0+ with the following modules:
 
  * BCMath
  * DOM
