@@ -11,18 +11,22 @@
 
 namespace blobfolio\mimes;
 
-use \blobfolio\common;
+use \blobfolio\common\constants;
+use \blobfolio\common\data as c_data;
+use \blobfolio\common\ref\cast as r_cast;
+use \blobfolio\common\ref\file as r_file;
+use \blobfolio\common\ref\sanitize as r_sanitize;
+use \blobfolio\common\sanitize as v_sanitize;
 
 class mimes {
-
 	const MIME_DEFAULT = 'application/octet-stream';
 	const MIME_EMPTY = 'inode/x-empty';
 
 
 
-	// ---------------------------------------------------------------------
+	// -----------------------------------------------------------------
 	// Public Data Access
-	// ---------------------------------------------------------------------
+	// -----------------------------------------------------------------
 
 	/**
 	 * Get All MIMEs
@@ -43,10 +47,32 @@ class mimes {
 	 * @param string $mime MIME type.
 	 * @return array MIME data.
 	 */
-	public static function get_mime($mime = '') {
-		common\ref\cast::to_string($mime, true);
-		common\ref\sanitize::mime($mime);
-		return array_key_exists($mime, data::BY_MIME) ? data::BY_MIME[$mime] : false;
+	public static function get_mime($mime='') {
+		r_cast::string($mime, true);
+
+		// Lock UTF-8 Casting.
+		$lock = constants::$str_lock;
+		constants::$str_lock = true;
+
+		r_sanitize::mime($mime);
+
+		// Try the real MIME first.
+		if (isset(data::BY_MIME[$mime])) {
+			constants::$str_lock = false;
+			return data::BY_MIME[$mime];
+		}
+
+		// Try aliases.
+		$loose = array_diff(static::get_loose_mimes($mime), array($mime));
+		foreach ($loose as $v) {
+			if (isset(data::BY_MIME[$v])) {
+				constants::$str_lock = false;
+				return data::BY_MIME[$v];
+			}
+		}
+
+		constants::$str_lock = false;
+		return false;
 	}
 
 	/**
@@ -68,10 +94,18 @@ class mimes {
 	 * @param string $ext File extension.
 	 * @return array Extension data.
 	 */
-	public static function get_extension($ext = '') {
-		common\ref\cast::to_string($ext, true);
-		common\ref\sanitize::file_extension($ext);
-		return array_key_exists($ext, data::BY_EXT) ? data::BY_EXT[$ext] : false;
+	public static function get_extension($ext='') {
+		r_cast::string($ext, true);
+
+		// Lock UTF-8 Casting.
+		$lock = constants::$str_lock;
+		constants::$str_lock = true;
+
+		r_sanitize::file_extension($ext);
+
+		constants::$str_lock = false;
+
+		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
 	}
 
 	/**
@@ -82,61 +116,96 @@ class mimes {
 	 * @param bool $soft Soft pass not-found.
 	 * @return bool True.
 	 */
-	public static function check_ext_and_mime($ext = '', $mime = '', $soft=true) {
-		common\ref\cast::to_string($ext, true);
-		common\ref\cast::to_string($mime, true);
-		common\ref\cast::to_bool($soft, true);
+	public static function check_ext_and_mime($ext='', $mime='', bool $soft=true) {
+		r_cast::string($ext, true);
+		r_cast::string($mime, true);
 
-		common\ref\sanitize::file_extension($ext);
-		if (!common\mb::strlen($ext)) {
+		// Lock UTF-8 Casting.
+		$lock = constants::$str_lock;
+		constants::$str_lock = true;
+
+		// Check the extension.
+		r_sanitize::file_extension($ext);
+		if (!$ext) {
+			constants::$str_lock = false;
 			return false;
 		}
 
-		common\ref\sanitize::mime($mime);
+		// Check the MIME.
+		r_sanitize::mime($mime);
 		if (
-			!strlen($mime) ||
+			!$mime ||
 			(static::MIME_EMPTY === $mime) ||
 			($soft && (static::MIME_DEFAULT === $mime))
 		) {
+			constants::$str_lock = false;
 			return true;
 		}
 
 		// Soft pass on extension fail.
 		if (false === ($ext = static::get_extension($ext))) {
+			constants::$str_lock = false;
 			return $soft;
 		}
 
-		// Before looking for matches, convert any generic CDFV2
-		// types into an equally generic, but less variable type.
-		if (0 === strpos($mime, 'application/cdfv2')) {
-			$mime = 'application/vnd.ms-office';
-		}
+		constants::$str_lock = false;
 
 		// Loose mime check.
 		$real = $ext['mime'];
-		$test = array($mime);
+		$found = array_intersect($real, static::get_loose_mimes($mime));
 
-		$parts = explode('/', $mime);
-		$subtype = count($parts) - 1;
-		if ('x-' === substr($parts[$subtype], 0, 2)) {
-			$parts[$subtype] = substr($parts[$subtype], 2);
-		} else {
-			$parts[$subtype] = 'x-' . $parts[$subtype];
-		}
-		$test[] = implode('/', $parts);
-
-		$parts = explode('/', $mime);
-		$subtype = count($parts) - 1;
-		if ('vnd.' === substr($parts[$subtype], 0, 4)) {
-			$parts[$subtype] = substr($parts[$subtype], 4);
-		} else {
-			$parts[$subtype] = 'vnd.' . $parts[$subtype];
-		}
-		$test[] = implode('/', $parts);
-
-		// Any overlap?
-		$found = array_intersect($real, $test);
+		// If we found something, hurray!
 		return count($found) > 0;
+	}
+
+	/**
+	 * Get Loose MIMEs
+	 *
+	 * Build a list of test MIMEs with x- and vnd. prefixes. These do
+	 * not necessarily exist; this method is called prior to such
+	 * checks.
+	 *
+	 * @param string $mime MIME.
+	 * @return array MIMEs.
+	 */
+	protected static function get_loose_mimes(string $mime) {
+		r_sanitize::mime($mime);
+
+		$out = array();
+
+		if (!$mime) {
+			return $out;
+		}
+
+		$out[] = $mime;
+		if ((static::MIME_EMPTY === $mime) || (static::MIME_DEFAULT === $mime)) {
+			return $out;
+		}
+
+		// Weird Microsoft MIME.
+		if (0 === strpos($mime, 'application/cdfv2')) {
+			$out[] = 'application/vnd.ms-office';
+		}
+
+		// Split it up.
+		list($type, $subtype) = explode('/', $mime);
+		if ($type && $subtype) {
+			$subtype = preg_replace('/^(x\-|vnd.)/', '', $subtype);
+			$out[] = "$type/x-$subtype";
+			$out[] = "$type/vnd.$subtype";
+			$out[] = "$type/$subtype";
+		}
+
+		// Sort our results, preferring non-prefixed types.
+		$out = array_unique($out);
+		usort($out, function($a, $b) {
+			$a_key = (!preg_match('#/(x\-|vnd\.)#', $a) ? '0_' : '1_') . $a;
+			$b_key = (!preg_match('#/(x\-|vnd\.)#', $b) ? '0_' : '1_') . $b;
+
+			return $a_key < $b_key ? -1 : 1;
+		});
+
+		return $out;
 	}
 
 	/**
@@ -148,11 +217,15 @@ class mimes {
 	 * @param string $nice Nice file name (for e.g. tmp uploads).
 	 * @return array File data.
 	 */
-	public static function finfo($path = '', $nice = null) {
-		common\ref\cast::to_string($path, true);
+	public static function finfo($path='', $nice=null) {
+		r_cast::string($path, true);
 		if (!is_null($nice)) {
-			common\ref\cast::to_string($nice, true);
+			r_cast::string($nice, true);
 		}
+
+		// Lock UTF-8 Casting.
+		$lock = constants::$str_lock;
+		constants::$str_lock = true;
 
 		$out = array(
 			'dirname'=>'',
@@ -165,24 +238,24 @@ class mimes {
 		);
 
 		// Path might just be an extension.
-		common\ref\cast::to_string($path);
 		if (
-			(false === common\mb::strpos($path, '.')) &&
-			(false === common\mb::strpos($path, '/')) &&
-			(false === common\mb::strpos($path, '\\'))
+			(false === strpos($path, '.')) &&
+			(false === strpos($path, '/')) &&
+			(false === strpos($path, '\\'))
 		) {
-			$out['extension'] = common\sanitize::file_extension($path);
+			$out['extension'] = v_sanitize::file_extension($path);
 			if (false !== ($ext = static::get_extension($path))) {
 				$out['mime'] = $ext['primary'];
 			}
 
+			constants::$str_lock = false;
 			return $out;
 		}
 
 		// Path is something path-like.
-		common\ref\file::path($path, false);
+		r_file::path($path, false);
 		$out['path'] = $path;
-		$out = common\data::parse_args(pathinfo($path), $out);
+		$out = c_data::parse_args(pathinfo($path), $out);
 
 		if (!is_null($nice)) {
 			$pathinfo = pathinfo($nice);
@@ -190,7 +263,7 @@ class mimes {
 			$out['extension'] = isset($pathinfo['extension']) ? $pathinfo['extension'] : '';
 		}
 
-		common\ref\sanitize::file_extension($out['extension']);
+		r_sanitize::file_extension($out['extension']);
 
 		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
@@ -200,7 +273,7 @@ class mimes {
 		// Try to read the magic mime, if possible.
 		try {
 			// Find the real path, if possible.
-			if (false !== ($path = realpath($path))) {
+			if (false !== ($path = @realpath($path))) {
 				$out['path'] = $path;
 				$out['dirname'] = dirname($path);
 			}
@@ -214,13 +287,14 @@ class mimes {
 				@filesize($path) > 0
 			) {
 				$finfo = finfo_open(FILEINFO_MIME_TYPE);
-				$magic_mime = common\sanitize::mime(finfo_file($finfo, $path));
+				$magic_mime = v_sanitize::mime(finfo_file($finfo, $path));
 				finfo_close($finfo);
 
-				// SVGs can be misidentified by fileinfo if they are missing the
-				// XML tag and/or DOCTYPE declarations. Most other applications
-				// don't have that problem, so let's override fileinfo if the
-				// file starts with an opening SVG tag.
+				// SVGs can be misidentified by fileinfo if they are
+				// missing the XML tag and/or DOCTYPE declarations. Most
+				// other applications don't have that problem, so let's
+				// override fileinfo if the file starts with an opening
+				// SVG tag.
 				if (
 					('svg' === $out['extension']) &&
 					('image/svg+xml' !== $magic_mime)
@@ -228,7 +302,7 @@ class mimes {
 					$tmp = @file_get_contents($path);
 					if (
 						is_string($tmp) &&
-						preg_match('/\s*<svg/iu', $tmp)
+						(false !== strpos(strtolower($tmp), '<svg'))
 					) {
 						$magic_mime = 'image/svg+xml';
 					}
@@ -240,12 +314,13 @@ class mimes {
 					(static::MIME_DEFAULT !== $magic_mime) &&
 					(
 						(static::MIME_DEFAULT === $out['mime']) ||
-						!preg_match('/^text\//', $magic_mime)
+						(0 !== strpos($magic_mime, 'text/'))
 					) &&
 					!static::check_ext_and_mime($out['extension'], $magic_mime)
 				) {
-					// If we have an alternative magic mime and it is legit,
-					// it should override what we derived from the name.
+					// If we have an alternative magic mime and it is
+					// legit, it should override what we derived from
+					// the name.
 					if (false !== ($mime = static::get_mime($magic_mime))) {
 						$out['mime'] = $magic_mime;
 						$out['extension'] = $mime['ext'][0];
@@ -256,15 +331,15 @@ class mimes {
 				}
 			}
 		} catch (\Throwable $e) {
-			return $out;
-		} catch (\Exception $e) {
+			constants::$str_lock = false;
 			return $out;
 		}
 
+		constants::$str_lock = false;
 		return $out;
 	}
 
-	// --------------------------------------------------------------------- end public data access
+	// ----------------------------------------------------------------- end public data access
 }
 
 
