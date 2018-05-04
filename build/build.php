@@ -375,7 +375,7 @@ function array_to_php($var, int $indents=1) {
 		$out[] = $line;
 	}
 
-	return "\n" . implode(",\n", $out) . "\n" . str_repeat("\t", $indents - 1);
+	return "\n" . implode(",\n", $out) . ",\n" . str_repeat("\t", $indents - 1);
 }
 
 
@@ -1027,6 +1027,25 @@ debug_stdout('   ++ Sorting data...');
 ksort($mimes_by_extension);
 ksort($extensions_by_mime);
 
+// Tighten up extension data for saving.
+foreach ($mimes_by_extension as $k=>$v) {
+	$out = array(
+		'ext'=>$k,
+		'mime'=>array(),
+	);
+
+	$data = array_unique(array_merge($v['mime'], $v['alias']));
+	foreach ($v['mime'] as $v2) {
+		if ($v2 !== $v['primary']) {
+			$out['mime'][] = $v2;
+		}
+	}
+	sort($out['mime']);
+
+	array_unshift($out['mime'], $v['primary']);
+	$mimes_by_extension[$k] = $out;
+}
+
 // Save data!
 debug_stdout('   ++ Saving data...');
 // JSON copy.
@@ -1047,9 +1066,7 @@ $out = str_replace(array_keys($replacements), array_values($replacements), $out)
 debug_stdout('   ++ Saving WP media-mimes.php...');
 $wp_data = array();
 foreach ($mimes_by_extension as $k=>$v) {
-	$v['mime'] = (array) $v['mime'];
-	$wp_data[$k] = array_merge($v['mime'], $v['alias']);
-	$wp_data[$k] = array_unique($wp_data[$k]);
+	$wp_data[$k] = $v['mime'];
 	sort($wp_data[$k]);
 }
 
