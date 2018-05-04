@@ -136,7 +136,7 @@ Retrieve information about a file extension.
 
 #### Returns
 
-Returns the information or `FALSE`.
+Returns the information or `FALSE`. Note: The first MIME entry will always be the official (or most conventional) media type.
 
 ```php
 print_r(blobfolio\mimes\mimes::get_extension('jpeg'));
@@ -147,15 +147,6 @@ array(
         0 => image/jpeg
         1 => image/pjpeg
     )
-    [source] => array(
-        0 => Apache
-        1 => Nginx
-        2 => freedesktop.org
-    )
-    [alias] => array(
-        ] => image/pjpeg
-    )
-    [primary] => image/jpeg
 )
 */
 ```
@@ -221,7 +212,7 @@ N/A
 
 #### Returns
 
-Returns a MIME database organized by type.
+Returns a MIME database organized by type. Note: The first extension should be the most common for the type.
 
 &nbsp;
 
