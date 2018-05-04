@@ -245,7 +245,7 @@ class mimes {
 		) {
 			$out['extension'] = v_sanitize::file_extension($path);
 			if (false !== ($ext = static::get_extension($path))) {
-				$out['mime'] = $ext['primary'];
+				$out['mime'] = $ext['mime'][0];
 			}
 
 			constants::$str_lock = false;
@@ -267,7 +267,7 @@ class mimes {
 
 		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
-			$out['mime'] = $ext['primary'];
+			$out['mime'] = $ext['mime'][0];
 		}
 
 		// Try to read the magic mime, if possible.
