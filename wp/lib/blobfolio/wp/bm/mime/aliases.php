@@ -62,24 +62,24 @@ class aliases {
 	// The payload.
 	public static $data = array(
 		'1km'=>array(
-			'application/vnd.1000minds.decision-model+xml'
+			'application/vnd.1000minds.decision-model+xml',
 		),
 		'32x'=>array(
-			'application/x-genesis-32x-rom'
+			'application/x-genesis-32x-rom',
 		),
 		'3dml'=>array(
-			'text/vnd.in3d.3dml'
+			'text/vnd.in3d.3dml',
 		),
 		'3ds'=>array(
-			'image/x-3ds'
+			'image/x-3ds',
 		),
 		'3fr'=>array(
-			'image/x-raw-hasselblad'
+			'image/x-raw-hasselblad',
 		),
 		'3g2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3ga'=>array(
 			'audio/3gpp',
@@ -91,7 +91,7 @@ class aliases {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3gp'=>array(
 			'audio/3gpp',
@@ -103,12 +103,12 @@ class aliases {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3gp2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3gpp'=>array(
 			'audio/3gpp',
@@ -120,339 +120,340 @@ class aliases {
 			'video/3gp',
 			'video/3gpp',
 			'video/3gpp-encrypted',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3gpp2'=>array(
 			'audio/3gpp2',
 			'video/3gpp2',
-			'video/mp4'
+			'video/mp4',
 		),
 		'3mf'=>array(
 			'application/vnd.ms-3mfdocument',
-			'model/3mf'
+			'model/3mf',
 		),
 		'4th'=>array(
 			'text/plain',
-			'text/x-forth'
+			'text/x-forth',
 		),
 		'7z'=>array(
-			'application/x-7z-compressed'
+			'application/x-7z-compressed',
 		),
 		'a26'=>array(
-			'application/x-atari-2600-rom'
+			'application/x-atari-2600-rom',
 		),
 		'a2l'=>array(
-			'application/a2l'
+			'application/a2l',
 		),
 		'a78'=>array(
-			'application/x-atari-7800-rom'
+			'application/x-atari-7800-rom',
 		),
 		'aa'=>array(
 			'audio/vnd.audible',
 			'audio/vnd.audible.aax',
-			'audio/x-pn-audibleaudio'
+			'audio/x-pn-audibleaudio',
 		),
 		'aab'=>array(
-			'application/x-authorware-bin'
+			'application/x-authorware-bin',
 		),
 		'aac'=>array(
 			'audio/aac',
 			'audio/x-aac',
-			'audio/x-hx-aac-adts'
+			'audio/x-hx-aac-adts',
 		),
 		'aam'=>array(
-			'application/x-authorware-map'
+			'application/x-authorware-map',
 		),
 		'aart'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'aas'=>array(
-			'application/x-authorware-seg'
+			'application/x-authorware-seg',
 		),
 		'aax'=>array(
 			'audio/vnd.audible',
 			'audio/vnd.audible.aax',
-			'audio/x-pn-audibleaudio'
+			'audio/x-pn-audibleaudio',
 		),
 		'abs-linkmap'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'abs-menulinks'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'abw'=>array(
 			'application/x-abiword',
-			'application/xml'
+			'application/xml',
 		),
 		'ac'=>array(
 			'application/pkix-attr-cert',
 			'application/vnd.nokia.n-gage.ac+xml',
-			'text/plain'
+			'text/plain',
 		),
 		'ac3'=>array(
-			'audio/ac3'
+			'audio/ac3',
 		),
 		'acc'=>array(
-			'application/vnd.americandynamics.acc'
+			'application/vnd.americandynamics.acc',
 		),
 		'ace'=>array(
 			'application/x-ace',
-			'application/x-ace-compressed'
+			'application/x-ace-compressed',
 		),
 		'acfm'=>array(
-			'application/x-font-adobe-metric'
+			'application/x-font-adobe-metric',
 		),
 		'acu'=>array(
 			'application/vnd-acucobol',
-			'application/vnd.acucobol'
+			'application/vnd.acucobol',
 		),
 		'acutc'=>array(
-			'application/vnd.acucorp'
+			'application/vnd.acucorp',
 		),
 		'ad'=>array(
 			'text/plain',
-			'text/x-asciidoc'
+			'text/x-asciidoc',
 		),
 		'ada'=>array(
 			'text/plain',
-			'text/x-ada'
+			'text/x-ada',
 		),
 		'adb'=>array(
 			'text/plain',
 			'text/x-ada',
-			'text/x-adasrc'
+			'text/x-adasrc',
 		),
 		'adf'=>array(
-			'application/x-amiga-disk-format'
+			'application/x-amiga-disk-format',
 		),
 		'adoc'=>array(
 			'text/plain',
-			'text/x-asciidoc'
+			'text/x-asciidoc',
 		),
 		'adp'=>array(
-			'audio/adpcm'
+			'audio/adpcm',
 		),
 		'ads'=>array(
 			'text/plain',
 			'text/x-ada',
-			'text/x-adasrc'
+			'text/x-adasrc',
 		),
 		'adts'=>array(
-			'audio/aac'
+			'audio/aac',
 		),
 		'aep'=>array(
 			'application/vnd.adobe.aftereffects.project',
-			'application/vnd.audiograph'
+			'application/vnd.audiograph',
 		),
 		'aet'=>array(
-			'application/vnd.adobe.aftereffects.template'
+			'application/vnd.adobe.aftereffects.template',
 		),
 		'afm'=>array(
 			'application/x-font-adobe-metric',
 			'application/x-font-afm',
-			'application/x-font-type1'
+			'application/x-font-type1',
 		),
 		'afp'=>array(
-			'application/vnd.ibm.modcap'
+			'application/vnd.afpc.modca',
+			'application/vnd.ibm.modcap',
 		),
 		'ag'=>array(
-			'image/x-applix-graphics'
+			'image/x-applix-graphics',
 		),
 		'agb'=>array(
-			'application/x-gba-rom'
+			'application/x-gba-rom',
 		),
 		'ahead'=>array(
-			'application/vnd.ahead.space'
+			'application/vnd.ahead.space',
 		),
 		'ai'=>array(
 			'application/illustrator',
 			'application/postscript',
-			'application/vnd.adobe.illustrator'
+			'application/vnd.adobe.illustrator',
 		),
 		'aif'=>array(
 			'application/x-iff',
 			'audio/aiff',
-			'audio/x-aiff'
+			'audio/x-aiff',
 		),
 		'aifc'=>array(
 			'application/x-iff',
 			'audio/aiff',
 			'audio/x-aifc',
 			'audio/x-aiff',
-			'audio/x-aiffc'
+			'audio/x-aiffc',
 		),
 		'aiff'=>array(
 			'application/x-iff',
 			'audio/aiff',
-			'audio/x-aiff'
+			'audio/x-aiff',
 		),
 		'aiffc'=>array(
 			'application/x-iff',
 			'audio/x-aifc',
-			'audio/x-aiffc'
+			'audio/x-aiffc',
 		),
 		'air'=>array(
-			'application/vnd.adobe.air-application-installer-package+zip'
+			'application/vnd.adobe.air-application-installer-package+zip',
 		),
 		'ait'=>array(
-			'application/vnd.dvb.ait'
+			'application/vnd.dvb.ait',
 		),
 		'aj'=>array(
 			'text/plain',
-			'text/x-aspectj'
+			'text/x-aspectj',
 		),
 		'al'=>array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
-			'text/x-perl'
+			'text/x-perl',
 		),
 		'alz'=>array(
-			'application/x-alz'
+			'application/x-alz',
 		),
 		'am'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'amfm'=>array(
-			'application/x-font-adobe-metric'
+			'application/x-font-adobe-metric',
 		),
 		'ami'=>array(
-			'application/vnd.amiga.ami'
+			'application/vnd.amiga.ami',
 		),
 		'aml'=>array(
-			'application/aml'
+			'application/aml',
 		),
 		'amr'=>array(
 			'audio/amr',
-			'audio/amr-encrypted'
+			'audio/amr-encrypted',
 		),
 		'amz'=>array(
-			'audio/x-amzxml'
+			'audio/x-amzxml',
 		),
 		'ani'=>array(
-			'application/x-navi-animation'
+			'application/x-navi-animation',
 		),
 		'anpa'=>array(
-			'text/vnd.iptc.anpa'
+			'text/vnd.iptc.anpa',
 		),
 		'anx'=>array(
 			'application/annodex',
-			'application/x-annodex'
+			'application/x-annodex',
 		),
 		'any'=>array(
-			'application/vnd.mitsubishi.misty-guard.trustweb'
+			'application/vnd.mitsubishi.misty-guard.trustweb',
 		),
 		'ape'=>array(
-			'audio/x-ape'
+			'audio/x-ape',
 		),
 		'apk'=>array(
 			'application/java-archive',
 			'application/vnd.android.package-archive',
-			'application/x-java-archive'
+			'application/x-java-archive',
 		),
 		'apkg'=>array(
-			'application/vnd.anki'
+			'application/vnd.anki',
 		),
 		'apng'=>array(
-			'image/vnd.mozilla.apng'
+			'image/vnd.mozilla.apng',
 		),
 		'appcache'=>array(
-			'text/cache-manifest'
+			'text/cache-manifest',
 		),
 		'appimage'=>array(
 			'application/vnd.appimage',
 			'application/x-executable',
-			'application/x-iso9660-appimage'
+			'application/x-iso9660-appimage',
 		),
 		'applescript'=>array(
 			'text/plain',
-			'text/x-applescript'
+			'text/x-applescript',
 		),
 		'application'=>array(
-			'application/x-ms-application'
+			'application/x-ms-application',
 		),
 		'apr'=>array(
-			'application/vnd.lotus-approach'
+			'application/vnd.lotus-approach',
 		),
 		'apt'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'apxml'=>array(
-			'application/auth-policy+xml'
+			'application/auth-policy+xml',
 		),
 		'ar'=>array(
 			'application/x-archive',
-			'application/x-unix-archive'
+			'application/x-unix-archive',
 		),
 		'arc'=>array(
 			'application/x-freearc',
-			'application/x-internet-archive'
+			'application/x-internet-archive',
 		),
 		'arj'=>array(
 			'application/x-arj',
-			'application/x-arj-compressed'
+			'application/x-arj-compressed',
 		),
 		'arw'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
-			'image/x-sony-arw'
+			'image/x-sony-arw',
 		),
 		'as'=>array(
 			'application/x-applix-spreadsheet',
 			'text/plain',
-			'text/x-actionscript'
+			'text/x-actionscript',
 		),
 		'asc'=>array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
-			'text/plain'
+			'text/plain',
 		),
 		'ascii'=>array(
-			'text/vnd.ascii-art'
+			'text/vnd.ascii-art',
 		),
 		'asciidoc'=>array(
 			'text/plain',
-			'text/x-asciidoc'
+			'text/x-asciidoc',
 		),
 		'asf'=>array(
 			'application/vnd.ms-asf',
 			'video/x-ms-asf',
 			'video/x-ms-asf-plugin',
-			'video/x-ms-wm'
+			'video/x-ms-wm',
 		),
 		'asice'=>array(
 			'application/vnd.etsi.asic-e+zip',
-			'application/zip'
+			'application/zip',
 		),
 		'asics'=>array(
 			'application/vnd.etsi.asic-s+zip',
-			'application/zip'
+			'application/zip',
 		),
 		'asm'=>array(
 			'text/plain',
 			'text/x-asm',
-			'text/x-assembly'
+			'text/x-assembly',
 		),
 		'asnd'=>array(
-			'audio/vnd.adobe.soundbooth'
+			'audio/vnd.adobe.soundbooth',
 		),
 		'aso'=>array(
-			'application/vnd.accpac.simply.aso'
+			'application/vnd.accpac.simply.aso',
 		),
 		'asp'=>array(
 			'application/x-asp',
 			'text/asp',
-			'text/plain'
+			'text/plain',
 		),
 		'aspx'=>array(
 			'text/aspdotnet',
-			'text/plain'
+			'text/plain',
 		),
 		'ass'=>array(
 			'text/plain',
-			'text/x-ssa'
+			'text/x-ssa',
 		),
 		'asx'=>array(
 			'application/x-ms-asx',
@@ -461,45 +462,45 @@ class aliases {
 			'video/x-ms-asf',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
-			'video/x-ms-wvx'
+			'video/x-ms-wvx',
 		),
 		'atc'=>array(
-			'application/vnd.acucorp'
+			'application/vnd.acucorp',
 		),
 		'atf'=>array(
-			'application/atf'
+			'application/atf',
 		),
 		'atfx'=>array(
-			'application/atfx'
+			'application/atfx',
 		),
 		'atom'=>array(
 			'application/atom+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'atomcat'=>array(
-			'application/atomcat+xml'
+			'application/atomcat+xml',
 		),
 		'atomdeleted'=>array(
-			'application/atomdeleted+xml'
+			'application/atomdeleted+xml',
 		),
 		'atomsvc'=>array(
-			'application/atomsvc+xml'
+			'application/atomsvc+xml',
 		),
 		'atx'=>array(
-			'application/vnd.antix.game-component'
+			'application/vnd.antix.game-component',
 		),
 		'atxml'=>array(
-			'application/atxml'
+			'application/atxml',
 		),
 		'au'=>array(
-			'audio/basic'
+			'audio/basic',
 		),
 		'auc'=>array(
-			'application/tamp-apex-update-confirm'
+			'application/tamp-apex-update-confirm',
 		),
 		'automount'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'avf'=>array(
 			'video/avi',
@@ -507,7 +508,7 @@ class aliases {
 			'video/msvideo',
 			'video/vnd.divx',
 			'video/x-avi',
-			'video/x-msvideo'
+			'video/x-msvideo',
 		),
 		'avi'=>array(
 			'video/avi',
@@ -515,318 +516,318 @@ class aliases {
 			'video/msvideo',
 			'video/vnd.divx',
 			'video/x-avi',
-			'video/x-msvideo'
+			'video/x-msvideo',
 		),
 		'aw'=>array(
 			'application/applixware',
-			'application/x-applix-word'
+			'application/x-applix-word',
 		),
 		'awb'=>array(
 			'audio/amr-wb',
-			'audio/amr-wb-encrypted'
+			'audio/amr-wb-encrypted',
 		),
 		'awk'=>array(
 			'application/x-awk',
 			'application/x-executable',
 			'text/plain',
-			'text/x-awk'
+			'text/x-awk',
 		),
 		'axa'=>array(
 			'application/annodex',
 			'audio/annodex',
-			'audio/x-annodex'
+			'audio/x-annodex',
 		),
 		'axv'=>array(
 			'application/annodex',
 			'video/annodex',
-			'video/x-annodex'
+			'video/x-annodex',
 		),
 		'axx'=>array(
-			'application/x-axcrypt'
+			'application/x-axcrypt',
 		),
 		'azf'=>array(
-			'application/vnd.airzip.filesecure.azf'
+			'application/vnd.airzip.filesecure.azf',
 		),
 		'azs'=>array(
-			'application/vnd.airzip.filesecure.azs'
+			'application/vnd.airzip.filesecure.azs',
 		),
 		'azv'=>array(
-			'image/vnd.airzip.accelerator.azv'
+			'image/vnd.airzip.accelerator.azv',
 		),
 		'azw'=>array(
-			'application/vnd.amazon.ebook'
+			'application/vnd.amazon.ebook',
 		),
 		'azw3'=>array(
-			'application/vnd.amazon.mobi8-ebook'
+			'application/vnd.amazon.mobi8-ebook',
 		),
 		'bak'=>array(
-			'application/x-trash'
+			'application/x-trash',
 		),
 		'bar'=>array(
-			'application/vnd.qualcomm.brew-app-res'
+			'application/vnd.qualcomm.brew-app-res',
 		),
 		'bas'=>array(
 			'text/plain',
-			'text/x-basic'
+			'text/x-basic',
 		),
 		'bash'=>array(
 			'application/x-sh',
-			'text/plain'
+			'text/plain',
 		),
 		'bat'=>array(
 			'application/bat',
 			'application/x-bat',
 			'application/x-msdownload',
-			'text/plain'
+			'text/plain',
 		),
 		'bay'=>array(
-			'image/x-raw-casio'
+			'image/x-raw-casio',
 		),
 		'bcpio'=>array(
-			'application/x-bcpio'
+			'application/x-bcpio',
 		),
 		'bdf'=>array(
-			'application/x-font-bdf'
+			'application/x-font-bdf',
 		),
 		'bdm'=>array(
 			'application/vnd.syncml.dm+wbxml',
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'bdmv'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'bed'=>array(
-			'application/vnd.realvnc.bed'
+			'application/vnd.realvnc.bed',
 		),
 		'bh2'=>array(
-			'application/vnd.fujitsu.oasysprs'
+			'application/vnd.fujitsu.oasysprs',
 		),
 		'bib'=>array(
 			'application/x-bibtex-text-file',
 			'text/plain',
-			'text/x-bibtex'
+			'text/x-bibtex',
 		),
 		'bibtex'=>array(
 			'application/x-bibtex-text-file',
-			'text/plain'
+			'text/plain',
 		),
 		'bin'=>array(
 			'application/octet-stream',
 			'application/x-saturn-rom',
-			'application/x-sega-cd-rom'
+			'application/x-sega-cd-rom',
 		),
 		'bkm'=>array(
-			'application/vnd.nervana'
+			'application/vnd.nervana',
 		),
 		'blb'=>array(
-			'application/x-blorb'
+			'application/x-blorb',
 		),
 		'blend'=>array(
-			'application/x-blender'
+			'application/x-blender',
 		),
 		'blender'=>array(
-			'application/x-blender'
+			'application/x-blender',
 		),
 		'blorb'=>array(
-			'application/x-blorb'
+			'application/x-blorb',
 		),
 		'bmi'=>array(
-			'application/vnd.bmi'
+			'application/vnd.bmi',
 		),
 		'bmml'=>array(
-			'application/vnd.balsamiq.bmml+xml'
+			'application/vnd.balsamiq.bmml+xml',
 		),
 		'bmp'=>array(
 			'image/bmp',
 			'image/x-bmp',
-			'image/x-ms-bmp'
+			'image/x-ms-bmp',
 		),
 		'bmpr'=>array(
-			'application/vnd.balsamiq.bmpr'
+			'application/vnd.balsamiq.bmpr',
 		),
 		'book'=>array(
-			'application/vnd.framemaker'
+			'application/vnd.framemaker',
 		),
 		'box'=>array(
-			'application/vnd.previewsystems.box'
+			'application/vnd.previewsystems.box',
 		),
 		'boz'=>array(
 			'application/x-bzip',
-			'application/x-bzip2'
+			'application/x-bzip2',
 		),
 		'bpg'=>array(
-			'image/x-bpg'
+			'image/x-bpg',
 		),
 		'bpk'=>array(
-			'application/octet-stream'
+			'application/octet-stream',
 		),
 		'bpm'=>array(
 			'application/bizagi-modeler',
-			'application/zip'
+			'application/zip',
 		),
 		'br'=>array(
-			'application/x-brotli'
+			'application/x-brotli',
 		),
 		'brotli'=>array(
-			'application/x-brotli'
+			'application/x-brotli',
 		),
 		'bsdiff'=>array(
-			'application/x-bsdiff'
+			'application/x-bsdiff',
 		),
 		'bsh'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'bsp'=>array(
-			'model/vnd.valve.source.compiled-map'
+			'model/vnd.valve.source.compiled-map',
 		),
 		'btf'=>array(
-			'image/prs.btif'
+			'image/prs.btif',
 		),
 		'btif'=>array(
-			'image/prs.btif'
+			'image/prs.btif',
 		),
 		'bz'=>array(
 			'application/x-bzip',
-			'application/x-bzip2'
+			'application/x-bzip2',
 		),
 		'bz2'=>array(
 			'application/x-bzip',
-			'application/x-bzip2'
+			'application/x-bzip2',
 		),
 		'c'=>array(
-			'text/x-c'
+			'text/x-c',
 		),
 		'c11amc'=>array(
-			'application/vnd.cluetrust.cartomobile-config'
+			'application/vnd.cluetrust.cartomobile-config',
 		),
 		'c11amz'=>array(
-			'application/vnd.cluetrust.cartomobile-config-pkg'
+			'application/vnd.cluetrust.cartomobile-config-pkg',
 		),
 		'c3ex'=>array(
-			'application/cccex'
+			'application/cccex',
 		),
 		'c4d'=>array(
-			'application/vnd.clonk.c4group'
+			'application/vnd.clonk.c4group',
 		),
 		'c4f'=>array(
-			'application/vnd.clonk.c4group'
+			'application/vnd.clonk.c4group',
 		),
 		'c4g'=>array(
-			'application/vnd.clonk.c4group'
+			'application/vnd.clonk.c4group',
 		),
 		'c4p'=>array(
-			'application/vnd.clonk.c4group'
+			'application/vnd.clonk.c4group',
 		),
 		'c4u'=>array(
-			'application/vnd.clonk.c4group'
+			'application/vnd.clonk.c4group',
 		),
 		'cab'=>array(
 			'application/vnd.ms-cab-compressed',
 			'application/vnd.ubisoft.webplayer',
-			'zz-application/zz-winassoc-cab'
+			'zz-application/zz-winassoc-cab',
 		),
 		'cacerts'=>array(
-			'application/x-java-keystore'
+			'application/x-java-keystore',
 		),
 		'caf'=>array(
-			'audio/x-caf'
+			'audio/x-caf',
 		),
 		'cap'=>array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
-			'application/x-pcap'
+			'application/x-pcap',
 		),
 		'car'=>array(
-			'application/vnd.curl.car'
+			'application/vnd.curl.car',
 		),
 		'cat'=>array(
-			'application/vnd.ms-pki.seccat'
+			'application/vnd.ms-pki.seccat',
 		),
 		'cb7'=>array(
 			'application/x-7z-compressed',
 			'application/x-cb7',
-			'application/x-cbr'
+			'application/x-cbr',
 		),
 		'cba'=>array(
-			'application/x-cbr'
+			'application/x-cbr',
 		),
 		'cbl'=>array(
 			'text/plain',
-			'text/x-cobol'
+			'text/x-cobol',
 		),
 		'cbor'=>array(
 			'application/cbor',
 			'application/cose',
 			'application/cose-key',
-			'application/cose-key-set'
+			'application/cose-key-set',
 		),
 		'cbr'=>array(
 			'application/vnd.comicbook-rar',
 			'application/vnd.rar',
-			'application/x-cbr'
+			'application/x-cbr',
 		),
 		'cbt'=>array(
 			'application/x-cbr',
 			'application/x-cbt',
-			'application/x-tar'
+			'application/x-tar',
 		),
 		'cbz'=>array(
 			'application/vnd.comicbook+zip',
 			'application/x-cbr',
 			'application/x-cbz',
-			'application/zip'
+			'application/zip',
 		),
 		'cc'=>array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
-			'text/x-csrc'
+			'text/x-csrc',
 		),
 		'ccc'=>array(
-			'text/vnd.net2phone.commcenter.command'
+			'text/vnd.net2phone.commcenter.command',
 		),
 		'ccmp'=>array(
-			'application/ccmp+xml'
+			'application/ccmp+xml',
 		),
 		'ccmx'=>array(
 			'application/x-ccmx',
-			'text/plain'
+			'text/plain',
 		),
 		'cco'=>array(
-			'application/x-cocoa'
+			'application/x-cocoa',
 		),
 		'cct'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'ccxml'=>array(
-			'application/ccxml+xml'
+			'application/ccxml+xml',
 		),
 		'cdbcmsg'=>array(
-			'application/vnd.contact.cmsg'
+			'application/vnd.contact.cmsg',
 		),
 		'cdf'=>array(
-			'application/x-netcdf'
+			'application/x-netcdf',
 		),
 		'cdfx'=>array(
-			'application/cdfx+xml'
+			'application/cdfx+xml',
 		),
 		'cdkey'=>array(
-			'application/vnd.mediastation.cdkey'
+			'application/vnd.mediastation.cdkey',
 		),
 		'cdmia'=>array(
-			'application/cdmi-capability'
+			'application/cdmi-capability',
 		),
 		'cdmic'=>array(
-			'application/cdmi-container'
+			'application/cdmi-container',
 		),
 		'cdmid'=>array(
-			'application/cdmi-domain'
+			'application/cdmi-domain',
 		),
 		'cdmio'=>array(
-			'application/cdmi-object'
+			'application/cdmi-object',
 		),
 		'cdmiq'=>array(
-			'application/cdmi-queue'
+			'application/cdmi-queue',
 		),
 		'cdr'=>array(
 			'application/cdr',
@@ -836,75 +837,75 @@ class aliases {
 			'application/x-coreldraw',
 			'image/cdr',
 			'image/x-cdr',
-			'zz-application/zz-winassoc-cdr'
+			'zz-application/zz-winassoc-cdr',
 		),
 		'cdx'=>array(
-			'chemical/x-cdx'
+			'chemical/x-cdx',
 		),
 		'cdxml'=>array(
-			'application/vnd.chemdraw+xml'
+			'application/vnd.chemdraw+xml',
 		),
 		'cdy'=>array(
-			'application/vnd.cinderella'
+			'application/vnd.cinderella',
 		),
 		'cea'=>array(
-			'application/cea'
+			'application/cea',
 		),
 		'cer'=>array(
-			'application/pkix-cert'
+			'application/pkix-cert',
 		),
 		'cert'=>array(
-			'application/x-x509-ca-cert'
+			'application/x-x509-ca-cert',
 		),
 		'cfc'=>array(
 			'text/plain',
-			'text/x-coldfusion'
+			'text/x-coldfusion',
 		),
 		'cfg'=>array(
 			'text/plain',
-			'text/x-config'
+			'text/x-config',
 		),
 		'cfm'=>array(
 			'text/plain',
-			'text/x-coldfusion'
+			'text/x-coldfusion',
 		),
 		'cfml'=>array(
 			'text/plain',
-			'text/x-coldfusion'
+			'text/x-coldfusion',
 		),
 		'cfs'=>array(
-			'application/x-cfs-compressed'
+			'application/x-cfs-compressed',
 		),
 		'cgb'=>array(
-			'application/x-gameboy-color-rom'
+			'application/x-gameboy-color-rom',
 		),
 		'cgi'=>array(
 			'text/plain',
-			'text/x-cgi'
+			'text/x-cgi',
 		),
 		'cgm'=>array(
-			'image/cgm'
+			'image/cgm',
 		),
 		'chat'=>array(
-			'application/x-chat'
+			'application/x-chat',
 		),
 		'chm'=>array(
 			'application/vnd.ms-htmlhelp',
-			'application/x-chm'
+			'application/x-chm',
 		),
 		'chrt'=>array(
 			'application/vnd.kde.kchart',
-			'application/x-kchart'
+			'application/x-kchart',
 		),
 		'cif'=>array(
 			'application/vnd.multiad.creator.cif',
-			'chemical/x-cif'
+			'chemical/x-cif',
 		),
 		'cii'=>array(
-			'application/vnd.anser-web-certificate-issue-initiation'
+			'application/vnd.anser-web-certificate-issue-initiation',
 		),
 		'cil'=>array(
-			'application/vnd.ms-artgalry'
+			'application/vnd.ms-artgalry',
 		),
 		'cl'=>array(
 			'application/simple-filter+xml',
@@ -912,10 +913,10 @@ class aliases {
 			'text/plain',
 			'text/x-common-lisp',
 			'text/x-csrc',
-			'text/x-opencl-src'
+			'text/x-opencl-src',
 		),
 		'cla'=>array(
-			'application/vnd.claymore'
+			'application/vnd.claymore',
 		),
 		'class'=>array(
 			'application/java',
@@ -924,418 +925,418 @@ class aliases {
 			'application/vnd.dvb.dvbj',
 			'application/x-java',
 			'application/x-java-class',
-			'application/x-java-vm'
+			'application/x-java-vm',
 		),
 		'classpath'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'clj'=>array(
 			'text/plain',
-			'text/x-clojure'
+			'text/x-clojure',
 		),
 		'clkk'=>array(
-			'application/vnd.crick.clicker.keyboard'
+			'application/vnd.crick.clicker.keyboard',
 		),
 		'clkp'=>array(
-			'application/vnd.crick.clicker.palette'
+			'application/vnd.crick.clicker.palette',
 		),
 		'clkt'=>array(
-			'application/vnd.crick.clicker.template'
+			'application/vnd.crick.clicker.template',
 		),
 		'clkw'=>array(
-			'application/vnd.crick.clicker.wordbank'
+			'application/vnd.crick.clicker.wordbank',
 		),
 		'clkx'=>array(
-			'application/vnd.crick.clicker'
+			'application/vnd.crick.clicker',
 		),
 		'clp'=>array(
-			'application/x-msclip'
+			'application/x-msclip',
 		),
 		'clpi'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'cls'=>array(
 			'application/x-tex',
 			'text/plain',
 			'text/x-basic',
 			'text/x-tex',
-			'text/x-vbasic'
+			'text/x-vbasic',
 		),
 		'clue'=>array(
-			'application/clueinfo+xml'
+			'application/clueinfo+xml',
 		),
 		'cmake'=>array(
 			'text/plain',
-			'text/x-cmake'
+			'text/x-cmake',
 		),
 		'cmc'=>array(
-			'application/vnd.cosmocaller'
+			'application/vnd.cosmocaller',
 		),
 		'cmd'=>array(
 			'application/bat',
 			'application/x-bat',
-			'text/plain'
+			'text/plain',
 		),
 		'cmdf'=>array(
-			'chemical/x-cmdf'
+			'chemical/x-cmdf',
 		),
 		'cml'=>array(
-			'chemical/x-cml'
+			'chemical/x-cml',
 		),
 		'cmp'=>array(
-			'application/vnd.yellowriver-custom-menu'
+			'application/vnd.yellowriver-custom-menu',
 		),
 		'cmsc'=>array(
-			'application/cms'
+			'application/cms',
 		),
 		'cmx'=>array(
-			'image/x-cmx'
+			'image/x-cmx',
 		),
 		'cnd'=>array(
 			'text/jcr-cnd',
-			'text/plain'
+			'text/plain',
 		),
 		'cob'=>array(
 			'text/plain',
-			'text/x-cobol'
+			'text/x-cobol',
 		),
 		'cod'=>array(
-			'application/vnd.rim.cod'
+			'application/vnd.rim.cod',
 		),
 		'coffee'=>array(
 			'application/vnd.coffeescript',
 			'text/plain',
-			'text/x-coffeescript'
+			'text/x-coffeescript',
 		),
 		'com'=>array(
-			'application/x-msdownload'
+			'application/x-msdownload',
 		),
 		'conf'=>array(
 			'text/plain',
-			'text/x-config'
+			'text/x-config',
 		),
 		'config'=>array(
 			'text/plain',
-			'text/x-config'
+			'text/x-config',
 		),
 		'core'=>array(
-			'application/x-core'
+			'application/x-core',
 		),
 		'cpi'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'cpio'=>array(
-			'application/x-cpio'
+			'application/x-cpio',
 		),
 		'cpkg'=>array(
-			'application/vnd.xmpie.cpkg'
+			'application/vnd.xmpie.cpkg',
 		),
 		'cpl'=>array(
-			'application/cpl+xml'
+			'application/cpl+xml',
 		),
 		'cpp'=>array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
-			'text/x-csrc'
+			'text/x-csrc',
 		),
 		'cpt'=>array(
 			'application/mac-compactpro',
-			'audio/vnd.dts'
+			'audio/vnd.dts',
 		),
 		'cr2'=>array(
 			'image/x-canon-cr2',
 			'image/x-dcraw',
-			'image/x-raw-canon'
+			'image/x-raw-canon',
 		),
 		'crd'=>array(
-			'application/x-mscardfile'
+			'application/x-mscardfile',
 		),
 		'crdownload'=>array(
-			'application/x-partial-download'
+			'application/x-partial-download',
 		),
 		'crl'=>array(
-			'application/pkix-crl'
+			'application/pkix-crl',
 		),
 		'crt'=>array(
-			'application/x-x509-ca-cert'
+			'application/x-x509-ca-cert',
 		),
 		'crtr'=>array(
-			'application/vnd.multiad.creator'
+			'application/vnd.multiad.creator',
 		),
 		'crw'=>array(
 			'image/x-canon-crw',
 			'image/x-dcraw',
-			'image/x-raw-canon'
+			'image/x-raw-canon',
 		),
 		'crx'=>array(
-			'application/x-chrome-package'
+			'application/x-chrome-package',
 		),
 		'cryptonote'=>array(
-			'application/vnd.rig.cryptonote'
+			'application/vnd.rig.cryptonote',
 		),
 		'cs'=>array(
 			'text/plain',
 			'text/x-csharp',
-			'text/x-csrc'
+			'text/x-csrc',
 		),
 		'csh'=>array(
 			'application/x-csh',
-			'application/x-shellscript'
+			'application/x-shellscript',
 		),
 		'csl'=>array(
-			'application/vnd.citationstyles.style+xml'
+			'application/vnd.citationstyles.style+xml',
 		),
 		'csml'=>array(
-			'chemical/x-csml'
+			'chemical/x-csml',
 		),
 		'csp'=>array(
-			'application/vnd.commonspace'
+			'application/vnd.commonspace',
 		),
 		'csrattrs'=>array(
-			'application/csrattrs'
+			'application/csrattrs',
 		),
 		'css'=>array(
 			'text/css',
-			'text/plain'
+			'text/plain',
 		),
 		'cst'=>array(
 			'application/vnd.commonspace',
-			'application/x-director'
+			'application/x-director',
 		),
 		'csv'=>array(
 			'text/csv',
 			'text/plain',
 			'text/x-comma-separated-values',
-			'text/x-csv'
+			'text/x-csv',
 		),
 		'csvs'=>array(
 			'text/csv-schema',
-			'text/plain'
+			'text/plain',
 		),
 		'cu'=>array(
-			'application/cu-seeme'
+			'application/cu-seeme',
 		),
 		'cuc'=>array(
-			'application/tamp-community-update-confirm'
+			'application/tamp-community-update-confirm',
 		),
 		'cue'=>array(
 			'application/x-cue',
-			'text/plain'
+			'text/plain',
 		),
 		'cur'=>array(
-			'image/x-win-bitmap'
+			'image/x-win-bitmap',
 		),
 		'curl'=>array(
 			'application/vnd-curl',
 			'text/vnd-curl',
-			'text/vnd.curl'
+			'text/vnd.curl',
 		),
 		'cw'=>array(
-			'application/prs.cww'
+			'application/prs.cww',
 		),
 		'cwiki'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'cwk'=>array(
-			'application/x-appleworks'
+			'application/x-appleworks',
 		),
 		'cww'=>array(
-			'application/prs.cww'
+			'application/prs.cww',
 		),
 		'cxt'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'cxx'=>array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++src',
-			'text/x-csrc'
+			'text/x-csrc',
 		),
 		'dae'=>array(
-			'model/vnd.collada+xml'
+			'model/vnd.collada+xml',
 		),
 		'daf'=>array(
-			'application/vnd.mobius.daf'
+			'application/vnd.mobius.daf',
 		),
 		'dar'=>array(
-			'application/x-dar'
+			'application/x-dar',
 		),
 		'dart'=>array(
 			'application/vnd-dart',
-			'application/vnd.dart'
+			'application/vnd.dart',
 		),
 		'data'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'dataless'=>array(
 			'application/vnd.fdsn.mseed',
-			'application/vnd.fdsn.seed'
+			'application/vnd.fdsn.seed',
 		),
 		'davmount'=>array(
-			'application/davmount+xml'
+			'application/davmount+xml',
 		),
 		'dbase'=>array(
-			'application/x-dbf'
+			'application/x-dbf',
 		),
 		'dbase3'=>array(
-			'application/x-dbf'
+			'application/x-dbf',
 		),
 		'dbf'=>array(
 			'application/dbase',
 			'application/dbf',
 			'application/x-dbase',
-			'application/x-dbf'
+			'application/x-dbf',
 		),
 		'dbk'=>array(
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'dc'=>array(
-			'application/x-dc-rom'
+			'application/x-dc-rom',
 		),
 		'dcd'=>array(
-			'application/dcd'
+			'application/dcd',
 		),
 		'dcl'=>array(
 			'text/plain',
-			'text/x-dcl'
+			'text/x-dcl',
 		),
 		'dcm'=>array(
-			'application/dicom'
+			'application/dicom',
 		),
 		'dcr'=>array(
 			'application/x-director',
 			'image/x-dcraw',
-			'image/x-kodak-dcr'
+			'image/x-kodak-dcr',
 		),
 		'dcs'=>array(
-			'image/x-raw-kodak'
+			'image/x-raw-kodak',
 		),
 		'dcurl'=>array(
-			'text/vnd.curl.dcurl'
+			'text/vnd.curl.dcurl',
 		),
 		'dcx'=>array(
 			'image/vnd.zbrush.dcx',
-			'image/x-dcx'
+			'image/x-dcx',
 		),
 		'dd2'=>array(
-			'application/vnd.oma.dd2+xml'
+			'application/vnd.oma.dd2+xml',
 		),
 		'ddd'=>array(
-			'application/vnd.fujixerox.ddd'
+			'application/vnd.fujixerox.ddd',
 		),
 		'ddf'=>array(
 			'application/vnd.syncml.dmddf+wbxml',
-			'application/vnd.syncml.dmddf+xml'
+			'application/vnd.syncml.dmddf+xml',
 		),
 		'dds'=>array(
-			'image/x-dds'
+			'image/x-dds',
 		),
 		'deb'=>array(
 			'application/octet-stream',
 			'application/vnd.debian.binary-package',
 			'application/x-archive',
 			'application/x-deb',
-			'application/x-debian-package'
+			'application/x-debian-package',
 		),
 		'def'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'deploy'=>array(
-			'application/octet-stream'
+			'application/octet-stream',
 		),
 		'der'=>array(
-			'application/x-x509-ca-cert'
+			'application/x-x509-ca-cert',
 		),
 		'desktop'=>array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
-			'text/plain'
+			'text/plain',
 		),
 		'device'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'dex'=>array(
-			'application/x-dex'
+			'application/x-dex',
 		),
 		'dfac'=>array(
-			'application/vnd.dreamfactory'
+			'application/vnd.dreamfactory',
 		),
 		'dgc'=>array(
-			'application/x-dgc-compressed'
+			'application/x-dgc-compressed',
 		),
 		'di'=>array(
 			'text/x-csrc',
-			'text/x-dsrc'
+			'text/x-dsrc',
 		),
 		'dia'=>array(
 			'application/x-dia-diagram',
-			'application/xml'
+			'application/xml',
 		),
 		'dib'=>array(
 			'image/bmp',
 			'image/x-bmp',
-			'image/x-ms-bmp'
+			'image/x-ms-bmp',
 		),
 		'dic'=>array(
-			'text/x-c'
+			'text/x-c',
 		),
 		'dicomdir'=>array(
-			'application/dicom'
+			'application/dicom',
 		),
 		'dif'=>array(
 			'application/dif+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'diff'=>array(
 			'text/plain',
 			'text/x-diff',
-			'text/x-patch'
+			'text/x-patch',
 		),
 		'dii'=>array(
-			'application/dii'
+			'application/dii',
 		),
 		'dim'=>array(
-			'application/vnd.fastcopy-disk-image'
+			'application/vnd.fastcopy-disk-image',
 		),
 		'dir'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'dis'=>array(
-			'application/vnd.mobius.dis'
+			'application/vnd.mobius.dis',
 		),
 		'disposition-notification'=>array(
-			'message/disposition-notification'
+			'message/disposition-notification',
 		),
 		'dist'=>array(
 			'application/octet-stream',
-			'application/vnd.apple.installer+xml'
+			'application/vnd.apple.installer+xml',
 		),
 		'distz'=>array(
 			'application/octet-stream',
-			'application/vnd.apple.installer+xml'
+			'application/vnd.apple.installer+xml',
 		),
 		'dit'=>array(
-			'application/dit'
+			'application/dit',
 		),
 		'dita'=>array(
 			'application/dita+xml',
-			'application/dita+xmlformattopic'
+			'application/dita+xmlformattopic',
 		),
 		'ditamap'=>array(
 			'application/dita+xml',
-			'application/dita+xmlformatmap'
+			'application/dita+xmlformatmap',
 		),
 		'ditaval'=>array(
 			'application/dita+xml',
-			'application/dita+xmlformatval'
+			'application/dita+xmlformatval',
 		),
 		'dive'=>array(
-			'application/vnd.patentdive'
+			'application/vnd.patentdive',
 		),
 		'divx'=>array(
 			'video/avi',
@@ -1343,49 +1344,49 @@ class aliases {
 			'video/msvideo',
 			'video/vnd.divx',
 			'video/x-avi',
-			'video/x-msvideo'
+			'video/x-msvideo',
 		),
 		'djv'=>array(
 			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
-			'image/x.djvu'
+			'image/x.djvu',
 		),
 		'djvu'=>array(
 			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
-			'image/x.djvu'
+			'image/x.djvu',
 		),
 		'dll'=>array(
 			'application/octet-stream',
-			'application/x-msdownload'
+			'application/x-msdownload',
 		),
 		'dmg'=>array(
 			'application/octet-stream',
-			'application/x-apple-diskimage'
+			'application/x-apple-diskimage',
 		),
 		'dmp'=>array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
-			'application/x-pcap'
+			'application/x-pcap',
 		),
 		'dms'=>array(
 			'application/octet-stream',
-			'text/vnd.dmclientscript'
+			'text/vnd.dmclientscript',
 		),
 		'dna'=>array(
-			'application/vnd.dna'
+			'application/vnd.dna',
 		),
 		'dng'=>array(
 			'image/x-adobe-dng',
 			'image/x-dcraw',
-			'image/x-raw-adobe'
+			'image/x-raw-adobe',
 		),
 		'do'=>array(
-			'application/x-stata-do'
+			'application/x-stata-do',
 		),
 		'doc'=>array(
 			'application/msword',
@@ -1394,31 +1395,31 @@ class aliases {
 			'application/x-msword',
 			'application/x-ole-storage',
 			'application/xml',
-			'zz-application/zz-winassoc-doc'
+			'zz-application/zz-winassoc-doc',
 		),
 		'docbook'=>array(
 			'application/docbook+xml',
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'docjson'=>array(
-			'application/vnd.document+json'
+			'application/vnd.document+json',
 		),
 		'docm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-word.document.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-			'application/xml'
+			'application/xml',
 		),
 		'docx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-			'application/zip'
+			'application/zip',
 		),
 		'dor'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'dot'=>array(
 			'application/msword',
@@ -1426,110 +1427,110 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.ms-word',
 			'application/xml',
-			'text/vnd.graphviz'
+			'text/vnd.graphviz',
 		),
 		'dotm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-word.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
-			'application/xml'
+			'application/xml',
 		),
 		'dotx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml-template',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
-			'application/zip'
+			'application/zip',
 		),
 		'dp'=>array(
-			'application/vnd.osgi.dp'
+			'application/vnd.osgi.dp',
 		),
 		'dpg'=>array(
-			'application/vnd.dpgraph'
+			'application/vnd.dpgraph',
 		),
 		'dpkg'=>array(
 			'application/vnd.xmpie.dpkg',
-			'application/vnd.xmpie.plan'
+			'application/vnd.xmpie.plan',
 		),
 		'dpr'=>array(
 			'text/plain',
-			'text/x-pascal'
+			'text/x-pascal',
 		),
 		'dra'=>array(
-			'audio/vnd.dra'
+			'audio/vnd.dra',
 		),
 		'drc'=>array(
 			'video/ogg',
-			'video/x-dirac'
+			'video/x-dirac',
 		),
 		'drf'=>array(
-			'image/x-raw-kodak'
+			'image/x-raw-kodak',
 		),
 		'drle'=>array(
-			'image/dicom-rle'
+			'image/dicom-rle',
 		),
 		'dsc'=>array(
-			'text/prs.lines.tag'
+			'text/prs.lines.tag',
 		),
 		'dsl'=>array(
 			'text/plain',
-			'text/x-dsl'
+			'text/x-dsl',
 		),
 		'dsp'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'dssc'=>array(
-			'application/dssc+der'
+			'application/dssc+der',
 		),
 		'dsw'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'dta'=>array(
-			'application/x-stata-dta'
+			'application/x-stata-dta',
 		),
 		'dtb'=>array(
-			'application/x-dtbook+xml'
+			'application/x-dtbook+xml',
 		),
 		'dtd'=>array(
 			'application/xml-dtd',
 			'text/plain',
-			'text/x-dtd'
+			'text/x-dtd',
 		),
 		'dts'=>array(
 			'audio/vnd.dts',
-			'audio/x-dts'
+			'audio/x-dts',
 		),
 		'dtshd'=>array(
 			'audio/vnd.dts',
 			'audio/vnd.dts.hd',
-			'audio/x-dtshd'
+			'audio/x-dtshd',
 		),
 		'dtx'=>array(
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'dump'=>array(
-			'application/octet-stream'
+			'application/octet-stream',
 		),
 		'dv'=>array(
-			'video/dv'
+			'video/dv',
 		),
 		'dvb'=>array(
-			'video/vnd.dvb.file'
+			'video/vnd.dvb.file',
 		),
 		'dvc'=>array(
-			'application/dvcs'
+			'application/dvcs',
 		),
 		'dvi'=>array(
-			'application/x-dvi'
+			'application/x-dvi',
 		),
 		'dwf'=>array(
 			'drawing/x-dwf',
 			'model/vnd-dwf',
-			'model/vnd.dwf'
+			'model/vnd.dwf',
 		),
 		'dwfx'=>array(
-			'model/vnd.dwfx+xps'
+			'model/vnd.dwfx+xps',
 		),
 		'dwg'=>array(
 			'application/acad',
@@ -1540,745 +1541,745 @@ class aliases {
 			'application/x-dwg',
 			'drawing/dwg',
 			'image/vnd.dwg',
-			'image/x-dwg'
+			'image/x-dwg',
 		),
 		'dxb'=>array(
-			'image/vnd.dxb'
+			'image/vnd.dxb',
 		),
 		'dxf'=>array(
-			'image/vnd.dxf'
+			'image/vnd.dxf',
 		),
 		'dxp'=>array(
-			'application/vnd.spotfire.dxp'
+			'application/vnd.spotfire.dxp',
 		),
 		'dxr'=>array(
 			'application/vnd-dxr',
-			'application/x-director'
+			'application/x-director',
 		),
 		'dzr'=>array(
-			'application/vnd.dzr'
+			'application/vnd.dzr',
 		),
 		'ear'=>array(
 			'application/java-archive',
-			'application/x-tika-java-enterprise-archive'
+			'application/x-tika-java-enterprise-archive',
 		),
 		'ecelp4800'=>array(
-			'audio/vnd.nuera.ecelp4800'
+			'audio/vnd.nuera.ecelp4800',
 		),
 		'ecelp7470'=>array(
-			'audio/vnd.nuera.ecelp7470'
+			'audio/vnd.nuera.ecelp7470',
 		),
 		'ecelp9600'=>array(
-			'audio/vnd.nuera.ecelp9600'
+			'audio/vnd.nuera.ecelp9600',
 		),
 		'ecig'=>array(
-			'application/vnd.evolv.ecig.settings'
+			'application/vnd.evolv.ecig.settings',
 		),
 		'ecigprofile'=>array(
-			'application/vnd.evolv.ecig.profile'
+			'application/vnd.evolv.ecig.profile',
 		),
 		'ecigtheme'=>array(
-			'application/vnd.evolv.ecig.theme'
+			'application/vnd.evolv.ecig.theme',
 		),
 		'ecma'=>array(
-			'application/ecmascript'
+			'application/ecmascript',
 		),
 		'edm'=>array(
-			'application/vnd.novadigm.edm'
+			'application/vnd.novadigm.edm',
 		),
 		'edx'=>array(
-			'application/vnd.novadigm.edx'
+			'application/vnd.novadigm.edx',
 		),
 		'efif'=>array(
-			'application/vnd.picsel'
+			'application/vnd.picsel',
 		),
 		'egon'=>array(
-			'application/x-egon'
+			'application/x-egon',
 		),
 		'egrm'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'ei6'=>array(
-			'application/vnd.pg.osasli'
+			'application/vnd.pg.osasli',
 		),
 		'eif'=>array(
 			'text/plain',
-			'text/x-eiffel'
+			'text/x-eiffel',
 		),
 		'el'=>array(
 			'text/plain',
-			'text/x-emacs-lisp'
+			'text/x-emacs-lisp',
 		),
 		'elc'=>array(
 			'application/octet-stream',
-			'application/x-elc'
+			'application/x-elc',
 		),
 		'emf'=>array(
 			'application/emf',
 			'application/x-emf',
 			'application/x-msmetafile',
 			'image/emf',
-			'image/x-emf'
+			'image/x-emf',
 		),
 		'eml'=>array(
 			'message/rfc822',
-			'text/plain'
+			'text/plain',
 		),
 		'emlx'=>array(
-			'message/x-emlx'
+			'message/x-emlx',
 		),
 		'emm'=>array(
-			'application/vnd.ibm.electronic-media'
+			'application/vnd.ibm.electronic-media',
 		),
 		'emma'=>array(
-			'application/emma+xml'
+			'application/emma+xml',
 		),
 		'emotionml'=>array(
-			'application/emotionml+xml'
+			'application/emotionml+xml',
 		),
 		'emp'=>array(
-			'application/vnd.emusic-emusicpackage'
+			'application/vnd.emusic-emusicpackage',
 		),
 		'emz'=>array(
 			'application/gzip',
 			'application/x-ms-emz',
 			'application/x-msmetafile',
-			'image/x-emf-compressed'
+			'image/x-emf-compressed',
 		),
 		'enr'=>array(
-			'application/x-endnote-refer'
+			'application/x-endnote-refer',
 		),
 		'ent'=>array(
 			'application/vnd.nervana',
 			'application/xml',
 			'application/xml-external-parsed-entity',
 			'text/plain',
-			'text/xml-external-parsed-entity'
+			'text/xml-external-parsed-entity',
 		),
 		'entity'=>array(
-			'application/vnd.nervana'
+			'application/vnd.nervana',
 		),
 		'enw'=>array(
-			'application/x-endnote-refer'
+			'application/x-endnote-refer',
 		),
 		'eol'=>array(
-			'audio/vnd.digital-winds'
+			'audio/vnd.digital-winds',
 		),
 		'eot'=>array(
-			'application/vnd.ms-fontobject'
+			'application/vnd.ms-fontobject',
 		),
 		'ep'=>array(
-			'application/vnd.bluetooth.ep.oob'
+			'application/vnd.bluetooth.ep.oob',
 		),
 		'eps'=>array(
 			'application/postscript',
-			'image/x-eps'
+			'image/x-eps',
 		),
 		'epsf'=>array(
 			'application/postscript',
-			'image/x-eps'
+			'image/x-eps',
 		),
 		'epsi'=>array(
 			'application/postscript',
-			'image/x-eps'
+			'image/x-eps',
 		),
 		'epub'=>array(
 			'application/epub+zip',
-			'application/zip'
+			'application/zip',
 		),
 		'erf'=>array(
-			'image/x-raw-epson'
+			'image/x-raw-epson',
 		),
 		'erl'=>array(
 			'text/plain',
-			'text/x-erlang'
+			'text/x-erlang',
 		),
 		'es'=>array(
 			'application/ecmascript',
 			'application/x-executable',
-			'text/ecmascript'
+			'text/ecmascript',
 		),
 		'es3'=>array(
-			'application/vnd.eszigno3+xml'
+			'application/vnd.eszigno3+xml',
 		),
 		'esa'=>array(
-			'application/vnd.osgi.subsystem'
+			'application/vnd.osgi.subsystem',
 		),
 		'esf'=>array(
-			'application/vnd.epson.esf'
+			'application/vnd.epson.esf',
 		),
 		'espass'=>array(
-			'application/vnd.espass-espass+zip'
+			'application/vnd.espass-espass+zip',
 		),
 		'et3'=>array(
-			'application/vnd.eszigno3+xml'
+			'application/vnd.eszigno3+xml',
 		),
 		'etheme'=>array(
-			'application/x-e-theme'
+			'application/x-e-theme',
 		),
 		'etx'=>array(
 			'text/plain',
-			'text/x-setext'
+			'text/x-setext',
 		),
 		'eva'=>array(
-			'application/x-eva'
+			'application/x-eva',
 		),
 		'evy'=>array(
-			'application/x-envoy'
+			'application/x-envoy',
 		),
 		'exe'=>array(
 			'application/octet-stream',
 			'application/x-dosexec',
 			'application/x-ms-dos-executable',
-			'application/x-msdownload'
+			'application/x-msdownload',
 		),
 		'exi'=>array(
-			'application/exi'
+			'application/exi',
 		),
 		'exp'=>array(
 			'text/plain',
-			'text/x-expect'
+			'text/x-expect',
 		),
 		'explain'=>array(
 			'application/octet-stream',
 			'application/x-zip-compressed',
-			'application/zip'
+			'application/zip',
 		),
 		'exr'=>array(
 			'image/aces',
-			'image/x-exr'
+			'image/x-exr',
 		),
 		'ext'=>array(
-			'application/vnd.novadigm.ext'
+			'application/vnd.novadigm.ext',
 		),
 		'ez'=>array(
-			'application/andrew-inset'
+			'application/andrew-inset',
 		),
 		'ez2'=>array(
-			'application/vnd.ezpix-album'
+			'application/vnd.ezpix-album',
 		),
 		'ez3'=>array(
-			'application/vnd.ezpix-package'
+			'application/vnd.ezpix-package',
 		),
 		'f'=>array(
-			'text/x-fortran'
+			'text/x-fortran',
 		),
 		'f4a'=>array(
 			'audio/m4a',
 			'audio/mp4',
-			'audio/x-m4a'
+			'audio/x-m4a',
 		),
 		'f4b'=>array(
 			'audio/mp4',
-			'audio/x-m4b'
+			'audio/x-m4b',
 		),
 		'f4v'=>array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/x-f4v',
-			'video/x-m4v'
+			'video/x-m4v',
 		),
 		'f77'=>array(
 			'text/plain',
-			'text/x-fortran'
+			'text/x-fortran',
 		),
 		'f90'=>array(
 			'text/plain',
-			'text/x-fortran'
+			'text/x-fortran',
 		),
 		'f95'=>array(
 			'text/plain',
-			'text/x-fortran'
+			'text/x-fortran',
 		),
 		'fb2'=>array(
 			'application/x-fictionbook',
 			'application/x-fictionbook+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'fbs'=>array(
-			'image/vnd.fastbidsheet'
+			'image/vnd.fastbidsheet',
 		),
 		'fcdt'=>array(
-			'application/vnd.adobe.formscentral.fcdt'
+			'application/vnd.adobe.formscentral.fcdt',
 		),
 		'fcs'=>array(
-			'application/vnd.isac.fcs'
+			'application/vnd.isac.fcs',
 		),
 		'fdf'=>array(
-			'application/vnd.fdf'
+			'application/vnd.fdf',
 		),
 		'fds'=>array(
-			'application/x-fds-disk'
+			'application/x-fds-disk',
 		),
 		'fe_launch'=>array(
-			'application/vnd.denovo.fcselayout-link'
+			'application/vnd.denovo.fcselayout-link',
 		),
 		'feature'=>array(
 			'text/plain',
-			'text/x-gherkin'
+			'text/x-gherkin',
 		),
 		'fff'=>array(
-			'image/x-raw-imacon'
+			'image/x-raw-imacon',
 		),
 		'fg5'=>array(
-			'application/vnd.fujitsu.oasysgp'
+			'application/vnd.fujitsu.oasysgp',
 		),
 		'fgd'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'fh'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh10'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh11'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh12'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh4'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh40'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh5'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh50'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh7'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh8'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fh9'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fhc'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'fig'=>array(
 			'application/x-xfig',
-			'image/x-xfig'
+			'image/x-xfig',
 		),
 		'finf'=>array(
-			'application/fastinfoset'
+			'application/fastinfoset',
 		),
 		'fit'=>array(
-			'application/fits'
+			'application/fits',
 		),
 		'fits'=>array(
 			'application/fits',
 			'image/fits',
-			'image/x-fits'
+			'image/x-fits',
 		),
 		'fl'=>array(
 			'application/x-fluid',
-			'text/plain'
+			'text/plain',
 		),
 		'fla'=>array(
-			'application/vnd.dtg.local.flash'
+			'application/vnd.dtg.local.flash',
 		),
 		'flac'=>array(
 			'audio/flac',
-			'audio/x-flac'
+			'audio/x-flac',
 		),
 		'flatpak'=>array(
 			'application/vnd.flatpak',
-			'application/vnd.xdgapp'
+			'application/vnd.xdgapp',
 		),
 		'flatpakref'=>array(
 			'application/vnd.flatpak.ref',
-			'text/plain'
+			'text/plain',
 		),
 		'flatpakrepo'=>array(
 			'application/vnd.flatpak.repo',
-			'text/plain'
+			'text/plain',
 		),
 		'flc'=>array(
 			'video/fli',
 			'video/x-flc',
 			'video/x-fli',
-			'video/x-flic'
+			'video/x-flic',
 		),
 		'fli'=>array(
 			'video/fli',
 			'video/x-fli',
-			'video/x-flic'
+			'video/x-flic',
 		),
 		'flo'=>array(
-			'application/vnd.micrografx.flo'
+			'application/vnd.micrografx.flo',
 		),
 		'flv'=>array(
 			'application/x-flash-video',
 			'flv-application/octet-stream',
 			'video/flv',
-			'video/x-flv'
+			'video/x-flv',
 		),
 		'flw'=>array(
 			'application/vnd.kde.kivio',
-			'application/x-kivio'
+			'application/x-kivio',
 		),
 		'flx'=>array(
-			'text/vnd.fmi.flexstor'
+			'text/vnd.fmi.flexstor',
 		),
 		'fly'=>array(
-			'text/vnd.fly'
+			'text/vnd.fly',
 		),
 		'fm'=>array(
 			'application/vnd.framemaker',
-			'application/x-frame'
+			'application/x-frame',
 		),
 		'fn'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'fnc'=>array(
-			'application/vnd.frogans.fnc'
+			'application/vnd.frogans.fnc',
 		),
 		'fo'=>array(
 			'application/vnd.software602.filler.form+xml',
 			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
-			'text/xsl'
+			'text/xsl',
 		),
 		'fodg'=>array(
 			'application/vnd.oasis.opendocument.graphics-flat-xml',
-			'application/xml'
+			'application/xml',
 		),
 		'fodp'=>array(
 			'application/vnd.oasis.opendocument.presentation-flat-xml',
-			'application/xml'
+			'application/xml',
 		),
 		'fods'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet-flat-xml',
-			'application/xml'
+			'application/xml',
 		),
 		'fodt'=>array(
 			'application/vnd.oasis.opendocument.text-flat-xml',
-			'application/xml'
+			'application/xml',
 		),
 		'for'=>array(
 			'text/plain',
-			'text/x-fortran'
+			'text/x-fortran',
 		),
 		'fp7'=>array(
-			'application/x-filemaker'
+			'application/x-filemaker',
 		),
 		'fpx'=>array(
-			'image/vnd.fpx'
+			'image/vnd.fpx',
 		),
 		'frame'=>array(
-			'application/vnd.framemaker'
+			'application/vnd.framemaker',
 		),
 		'frm'=>array(
 			'application/vnd.ufdl',
 			'application/vnd.xfdl',
 			'text/x-basic',
-			'text/x-vbasic'
+			'text/x-vbasic',
 		),
 		'fsc'=>array(
-			'application/vnd.fsc.weblaunch'
+			'application/vnd.fsc.weblaunch',
 		),
 		'fst'=>array(
-			'image/vnd.fst'
+			'image/vnd.fst',
 		),
 		'ft'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'ft10'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ft11'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ft12'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ft7'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ft8'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ft9'=>array(
-			'image/x-freehand'
+			'image/x-freehand',
 		),
 		'ftc'=>array(
-			'application/vnd.fluxtime.clip'
+			'application/vnd.fluxtime.clip',
 		),
 		'fti'=>array(
-			'application/vnd.anser-web-funds-transfer-initiation'
+			'application/vnd.anser-web-funds-transfer-initiation',
 		),
 		'fts'=>array(
-			'application/fits'
+			'application/fits',
 		),
 		'fv'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'fvt'=>array(
-			'video/vnd.fvt'
+			'video/vnd.fvt',
 		),
 		'fxm'=>array(
 			'video/x-flv',
-			'video/x-javafx'
+			'video/x-javafx',
 		),
 		'fxp'=>array(
-			'application/vnd.adobe.fxp'
+			'application/vnd.adobe.fxp',
 		),
 		'fxpl'=>array(
-			'application/vnd.adobe.fxp'
+			'application/vnd.adobe.fxp',
 		),
 		'fzs'=>array(
-			'application/vnd.fuzzysheet'
+			'application/vnd.fuzzysheet',
 		),
 		'g2w'=>array(
-			'application/vnd.geoplan'
+			'application/vnd.geoplan',
 		),
 		'g3'=>array(
 			'application/vnd.geocube+xml',
 			'image/fax-g3',
-			'image/g3fax'
+			'image/g3fax',
 		),
 		'g3w'=>array(
-			'application/vnd.geospace'
+			'application/vnd.geospace',
 		),
 		'gac'=>array(
-			'application/vnd.groove-account'
+			'application/vnd.groove-account',
 		),
 		'gam'=>array(
-			'application/x-tads'
+			'application/x-tads',
 		),
 		'gb'=>array(
-			'application/x-gameboy-rom'
+			'application/x-gameboy-rom',
 		),
 		'gba'=>array(
-			'application/x-gba-rom'
+			'application/x-gba-rom',
 		),
 		'gbc'=>array(
-			'application/x-gameboy-color-rom'
+			'application/x-gameboy-color-rom',
 		),
 		'gbr'=>array(
 			'application/rpki-ghostbusters',
 			'application/vnd.gerber',
 			'application/vnd.rs-274x',
-			'image/x-gimp-gbr'
+			'image/x-gimp-gbr',
 		),
 		'gca'=>array(
-			'application/x-gca-compressed'
+			'application/x-gca-compressed',
 		),
 		'gcode'=>array(
 			'text/plain',
-			'text/x.gcode'
+			'text/x.gcode',
 		),
 		'gcrd'=>array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
-			'text/x-vcard'
+			'text/x-vcard',
 		),
 		'gdl'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'ged'=>array(
 			'application/x-gedcom',
-			'text/gedcom'
+			'text/gedcom',
 		),
 		'gedcom'=>array(
 			'application/x-gedcom',
-			'text/gedcom'
+			'text/gedcom',
 		),
 		'gem'=>array(
 			'application/x-gtar',
-			'application/x-tar'
+			'application/x-tar',
 		),
 		'gen'=>array(
-			'application/x-genesis-rom'
+			'application/x-genesis-rom',
 		),
 		'generally'=>array(
-			'text/vnd.fmi.flexstor'
+			'text/vnd.fmi.flexstor',
 		),
 		'geo'=>array(
-			'application/vnd.dynageo'
+			'application/vnd.dynageo',
 		),
 		'geojson'=>array(
 			'application/geo+json',
 			'application/json',
-			'application/vnd.geo+json'
+			'application/vnd.geo+json',
 		),
 		'gex'=>array(
-			'application/vnd.geometry-explorer'
+			'application/vnd.geometry-explorer',
 		),
 		'gf'=>array(
-			'application/x-tex-gf'
+			'application/x-tex-gf',
 		),
 		'gg'=>array(
-			'application/x-gamegear-rom'
+			'application/x-gamegear-rom',
 		),
 		'ggb'=>array(
-			'application/vnd.geogebra.file'
+			'application/vnd.geogebra.file',
 		),
 		'ggt'=>array(
-			'application/vnd.geogebra.tool'
+			'application/vnd.geogebra.tool',
 		),
 		'ghf'=>array(
-			'application/vnd.groove-help'
+			'application/vnd.groove-help',
 		),
 		'gif'=>array(
-			'image/gif'
+			'image/gif',
 		),
 		'gih'=>array(
-			'image/x-gimp-gih'
+			'image/x-gimp-gih',
 		),
 		'gim'=>array(
-			'application/vnd.groove-identity-message'
+			'application/vnd.groove-identity-message',
 		),
 		'glade'=>array(
 			'application/x-glade',
-			'application/xml'
+			'application/xml',
 		),
 		'gltf'=>array(
-			'model/gltf+json'
+			'model/gltf+json',
 		),
 		'gml'=>array(
 			'application/gml+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'gmo'=>array(
-			'application/x-gettext-translation'
+			'application/x-gettext-translation',
 		),
 		'gmx'=>array(
-			'application/vnd.gmx'
+			'application/vnd.gmx',
 		),
 		'gnc'=>array(
-			'application/x-gnucash'
+			'application/x-gnucash',
 		),
 		'gnd'=>array(
-			'application/gnunet-directory'
+			'application/gnunet-directory',
 		),
 		'gnucash'=>array(
-			'application/x-gnucash'
+			'application/x-gnucash',
 		),
 		'gnumeric'=>array(
 			'application/x-gnumeric',
-			'application/x-gnumeric-spreadsheet'
+			'application/x-gnumeric-spreadsheet',
 		),
 		'gnuplot'=>array(
 			'application/x-gnuplot',
-			'text/plain'
+			'text/plain',
 		),
 		'go'=>array(
 			'text/plain',
-			'text/x-go'
+			'text/x-go',
 		),
 		'gp'=>array(
 			'application/x-gnuplot',
-			'text/plain'
+			'text/plain',
 		),
 		'gpg'=>array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
-			'text/plain'
+			'text/plain',
 		),
 		'gph'=>array(
-			'application/vnd.flographit'
+			'application/vnd.flographit',
 		),
 		'gplt'=>array(
 			'application/x-gnuplot',
-			'text/plain'
+			'text/plain',
 		),
 		'gpx'=>array(
 			'application/gpx',
 			'application/gpx+xml',
 			'application/x-gpx',
 			'application/x-gpx+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'gqf'=>array(
-			'application/vnd.grafeq'
+			'application/vnd.grafeq',
 		),
 		'gqs'=>array(
-			'application/vnd.grafeq'
+			'application/vnd.grafeq',
 		),
 		'gra'=>array(
-			'application/x-graphite'
+			'application/x-graphite',
 		),
 		'gram'=>array(
-			'application/srgs'
+			'application/srgs',
 		),
 		'gramps'=>array(
-			'application/x-gramps-xml'
+			'application/x-gramps-xml',
 		),
 		'grb'=>array(
-			'application/x-grib'
+			'application/x-grib',
 		),
 		'grb1'=>array(
-			'application/x-grib'
+			'application/x-grib',
 		),
 		'grb2'=>array(
-			'application/x-grib'
+			'application/x-grib',
 		),
 		'gre'=>array(
-			'application/vnd.geometry-explorer'
+			'application/vnd.geometry-explorer',
 		),
 		'grm'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'groovy'=>array(
 			'text/plain',
-			'text/x-groovy'
+			'text/x-groovy',
 		),
 		'grv'=>array(
-			'application/vnd.groove-injector'
+			'application/vnd.groove-injector',
 		),
 		'grxml'=>array(
-			'application/srgs+xml'
+			'application/srgs+xml',
 		),
 		'gs'=>array(
 			'text/plain',
-			'text/x-genie'
+			'text/x-genie',
 		),
 		'gsf'=>array(
 			'application/postscript',
 			'application/x-font-ghostscript',
-			'application/x-font-type1'
+			'application/x-font-type1',
 		),
 		'gsm'=>array(
 			'audio/x-gsm',
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'gtar'=>array(
 			'application/x-gtar',
-			'application/x-tar'
+			'application/x-tar',
 		),
 		'gtm'=>array(
-			'application/vnd.groove-tool-message'
+			'application/vnd.groove-tool-message',
 		),
 		'gtw'=>array(
-			'model/vnd.gtw'
+			'model/vnd.gtw',
 		),
 		'gv'=>array(
 			'text/plain',
-			'text/vnd.graphviz'
+			'text/vnd.graphviz',
 		),
 		'gvp'=>array(
 			'text/google-video-pointer',
-			'text/x-google-video-pointer'
+			'text/x-google-video-pointer',
 		),
 		'gxf'=>array(
-			'application/gxf'
+			'application/gxf',
 		),
 		'gxt'=>array(
-			'application/vnd.geonext'
+			'application/vnd.geonext',
 		),
 		'gz'=>array(
 			'application/gzip',
@@ -2287,199 +2288,199 @@ class aliases {
 			'application/x-gunzip',
 			'application/x-gzip',
 			'application/x-gzip-compressed',
-			'gzip/document'
+			'gzip/document',
 		),
 		'h'=>array(
-			'text/x-c'
+			'text/x-c',
 		),
 		'h261'=>array(
-			'video/h261'
+			'video/h261',
 		),
 		'h263'=>array(
-			'video/h263'
+			'video/h263',
 		),
 		'h264'=>array(
-			'video/h264'
+			'video/h264',
 		),
 		'h4'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'h5'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'hal'=>array(
-			'application/vnd.hal+xml'
+			'application/vnd.hal+xml',
 		),
 		'haml'=>array(
 			'text/plain',
-			'text/x-haml'
+			'text/x-haml',
 		),
 		'handlers'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'hbci'=>array(
-			'application/vnd.hbci'
+			'application/vnd.hbci',
 		),
 		'hdf'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'hdf4'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'hdf5'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'hdr'=>array(
 			'application/envi.hdr',
-			'image/vnd.radiance'
+			'image/vnd.radiance',
 		),
 		'hdt'=>array(
-			'application/vnd.hdt'
+			'application/vnd.hdt',
 		),
 		'he5'=>array(
-			'application/x-hdf'
+			'application/x-hdf',
 		),
 		'heldxml'=>array(
-			'application/held+xml'
+			'application/held+xml',
 		),
 		'hfa'=>array(
-			'application/x-erdas-hfa'
+			'application/x-erdas-hfa',
 		),
 		'hfe'=>array(
-			'application/x-hfe-floppy-image'
+			'application/x-hfe-floppy-image',
 		),
 		'hh'=>array(
 			'text/plain',
 			'text/x-c',
 			'text/x-c++hdr',
-			'text/x-chdr'
+			'text/x-chdr',
 		),
 		'hlp'=>array(
 			'application/winhlp',
-			'zz-application/zz-winassoc-hlp'
+			'zz-application/zz-winassoc-hlp',
 		),
 		'hp'=>array(
 			'text/plain',
 			'text/x-c++hdr',
-			'text/x-chdr'
+			'text/x-chdr',
 		),
 		'hpgl'=>array(
-			'application/vnd.hp-hpgl'
+			'application/vnd.hp-hpgl',
 		),
 		'hpi'=>array(
-			'application/vnd.hp-hpid'
+			'application/vnd.hp-hpid',
 		),
 		'hpid'=>array(
-			'application/vnd.hp-hpid'
+			'application/vnd.hp-hpid',
 		),
 		'hpp'=>array(
 			'text/plain',
 			'text/x-c++hdr',
-			'text/x-chdr'
+			'text/x-chdr',
 		),
 		'hps'=>array(
-			'application/vnd.hp-hps'
+			'application/vnd.hp-hps',
 		),
 		'hpub'=>array(
-			'application/prs.hpub+zip'
+			'application/prs.hpub+zip',
 		),
 		'hqx'=>array(
 			'application/binhex',
 			'application/mac-binhex',
-			'application/mac-binhex40'
+			'application/mac-binhex40',
 		),
 		'hs'=>array(
 			'text/plain',
-			'text/x-haskell'
+			'text/x-haskell',
 		),
 		'htaccess'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'htc'=>array(
 			'text/plain',
-			'text/x-component'
+			'text/x-component',
 		),
 		'htke'=>array(
-			'application/vnd.kenameaapp'
+			'application/vnd.kenameaapp',
 		),
 		'htm'=>array(
 			'text/html',
-			'text/plain'
+			'text/plain',
 		),
 		'html'=>array(
 			'application/vnd.dtg.local-html',
 			'text/html',
-			'text/plain'
+			'text/plain',
 		),
 		'hvd'=>array(
-			'application/vnd.yamaha.hv-dic'
+			'application/vnd.yamaha.hv-dic',
 		),
 		'hvp'=>array(
-			'application/vnd.yamaha.hv-voice'
+			'application/vnd.yamaha.hv-voice',
 		),
 		'hvs'=>array(
-			'application/vnd.yamaha.hv-script'
+			'application/vnd.yamaha.hv-script',
 		),
 		'hwp'=>array(
 			'application/vnd.haansoft-hwp',
-			'application/x-hwp'
+			'application/x-hwp',
 		),
 		'hwt'=>array(
 			'application/vnd.haansoft-hwt',
-			'application/x-hwt'
+			'application/x-hwt',
 		),
 		'hx'=>array(
 			'text/plain',
-			'text/x-haxe'
+			'text/x-haxe',
 		),
 		'hxx'=>array(
 			'text/plain',
 			'text/x-c++hdr',
-			'text/x-chdr'
+			'text/x-chdr',
 		),
 		'i2g'=>array(
-			'application/vnd.intergeo'
+			'application/vnd.intergeo',
 		),
 		'i3'=>array(
 			'text/plain',
-			'text/x-modula'
+			'text/x-modula',
 		),
 		'ibooks'=>array(
 			'application/epub+zip',
-			'application/x-ibooks+zip'
+			'application/x-ibooks+zip',
 		),
 		'ic'=>array(
-			'application/vnd.commerce-battelle'
+			'application/vnd.commerce-battelle',
 		),
 		'ica'=>array(
 			'application/vnd.commerce-battelle',
 			'application/x-ica',
-			'text/plain'
+			'text/plain',
 		),
 		'icb'=>array(
 			'image/x-icb',
 			'image/x-targa',
-			'image/x-tga'
+			'image/x-tga',
 		),
 		'icc'=>array(
 			'application/vnd.commerce-battelle',
-			'application/vnd.iccprofile'
+			'application/vnd.iccprofile',
 		),
 		'icd'=>array(
-			'application/vnd.commerce-battelle'
+			'application/vnd.commerce-battelle',
 		),
 		'ice'=>array(
-			'x-conference/x-cooltalk'
+			'x-conference/x-cooltalk',
 		),
 		'icf'=>array(
-			'application/vnd.commerce-battelle'
+			'application/vnd.commerce-battelle',
 		),
 		'icm'=>array(
-			'application/vnd.iccprofile'
+			'application/vnd.iccprofile',
 		),
 		'icns'=>array(
 			'image/icns',
-			'image/x-icns'
+			'image/x-icns',
 		),
 		'ico'=>array(
 			'application/ico',
@@ -2488,166 +2489,166 @@ class aliases {
 			'image/vnd.microsoft.icon',
 			'image/x-ico',
 			'image/x-icon',
-			'text/ico'
+			'text/ico',
 		),
 		'ics'=>array(
 			'application/ics',
 			'text/calendar',
 			'text/plain',
-			'text/x-vcalendar'
+			'text/x-vcalendar',
 		),
 		'idl'=>array(
 			'text/plain',
-			'text/x-idl'
+			'text/x-idl',
 		),
 		'ief'=>array(
-			'image/ief'
+			'image/ief',
 		),
 		'ifb'=>array(
 			'text/calendar',
-			'text/plain'
+			'text/plain',
 		),
 		'iff'=>array(
 			'application/x-iff',
 			'image/x-iff',
-			'image/x-ilbm'
+			'image/x-ilbm',
 		),
 		'ifm'=>array(
-			'application/vnd.shana.informed.formdata'
+			'application/vnd.shana.informed.formdata',
 		),
 		'ig'=>array(
 			'text/plain',
-			'text/x-modula'
+			'text/x-modula',
 		),
 		'iges'=>array(
 			'model/iges',
-			'text/plain'
+			'text/plain',
 		),
 		'igl'=>array(
-			'application/vnd.igloader'
+			'application/vnd.igloader',
 		),
 		'igm'=>array(
-			'application/vnd.insors.igm'
+			'application/vnd.insors.igm',
 		),
 		'ign'=>array(
-			'application/vnd.coreos.ignition+json'
+			'application/vnd.coreos.ignition+json',
 		),
 		'ignition'=>array(
-			'application/vnd.coreos.ignition+json'
+			'application/vnd.coreos.ignition+json',
 		),
 		'igs'=>array(
 			'model/iges',
-			'text/plain'
+			'text/plain',
 		),
 		'igx'=>array(
 			'application/vnd.micrografx-igx',
-			'application/vnd.micrografx.igx'
+			'application/vnd.micrografx.igx',
 		),
 		'ihtml'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'iif'=>array(
-			'application/vnd.shana.informed.interchange'
+			'application/vnd.shana.informed.interchange',
 		),
 		'iiq'=>array(
-			'image/x-raw-phaseone'
+			'image/x-raw-phaseone',
 		),
 		'ilbm'=>array(
 			'application/x-iff',
 			'image/x-iff',
-			'image/x-ilbm'
+			'image/x-ilbm',
 		),
 		'ime'=>array(
 			'audio/imelody',
 			'audio/x-imelody',
-			'text/x-imelody'
+			'text/x-imelody',
 		),
 		'imf'=>array(
-			'application/vnd.imagemeter.folder+zip'
+			'application/vnd.imagemeter.folder+zip',
 		),
 		'img'=>array(
 			'application/octet-stream',
-			'application/x-raw-disk-image'
+			'application/x-raw-disk-image',
 		),
 		'imgcal'=>array(
-			'application/vnd.3lightssoftware.imagescal'
+			'application/vnd.3lightssoftware.imagescal',
 		),
 		'imi'=>array(
-			'application/vnd.imagemeter.image+zip'
+			'application/vnd.imagemeter.image+zip',
 		),
 		'imp'=>array(
-			'application/vnd.accpac.simply.imp'
+			'application/vnd.accpac.simply.imp',
 		),
 		'ims'=>array(
-			'application/vnd.ms-ims'
+			'application/vnd.ms-ims',
 		),
 		'imscc'=>array(
 			'application/vnd.ims.imsccv1p2',
-			'application/vnd.ims.imsccv1p3'
+			'application/vnd.ims.imsccv1p3',
 		),
 		'imy'=>array(
 			'audio/imelody',
 			'audio/x-imelody',
-			'text/x-imelody'
+			'text/x-imelody',
 		),
 		'in'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'indd'=>array(
-			'application/x-adobe-indesign'
+			'application/x-adobe-indesign',
 		),
 		'ini'=>array(
 			'text/plain',
-			'text/x-ini'
+			'text/x-ini',
 		),
 		'ink'=>array(
-			'application/inkml+xml'
+			'application/inkml+xml',
 		),
 		'inkml'=>array(
-			'application/inkml+xml'
+			'application/inkml+xml',
 		),
 		'ins'=>array(
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'install'=>array(
-			'application/x-install-instructions'
+			'application/x-install-instructions',
 		),
 		'inx'=>array(
 			'application/x-adobe-indesign-interchange',
-			'application/xml'
+			'application/xml',
 		),
 		'iota'=>array(
-			'application/vnd.astraea-software.iota'
+			'application/vnd.astraea-software.iota',
 		),
 		'ipa'=>array(
 			'application/x-itunes-ipa',
-			'application/zip'
+			'application/zip',
 		),
 		'ipfix'=>array(
-			'application/ipfix'
+			'application/ipfix',
 		),
 		'ipk'=>array(
-			'application/vnd.shana.informed.package'
+			'application/vnd.shana.informed.package',
 		),
 		'iptables'=>array(
 			'text/plain',
-			'text/x-iptables'
+			'text/x-iptables',
 		),
 		'ipynb'=>array(
 			'application/json',
-			'application/x-ipynb+json'
+			'application/x-ipynb+json',
 		),
 		'irm'=>array(
-			'application/vnd.ibm.rights-management'
+			'application/vnd.ibm.rights-management',
 		),
 		'irp'=>array(
-			'application/vnd.irepository.package+xml'
+			'application/vnd.irepository.package+xml',
 		),
 		'ism'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'iso'=>array(
 			'application/octet-stream',
@@ -2661,121 +2662,121 @@ class aliases {
 			'application/x-wbfs',
 			'application/x-wia',
 			'application/x-wii-iso-image',
-			'application/x-wii-rom'
+			'application/x-wii-rom',
 		),
 		'iso19139'=>array(
 			'application/xml',
-			'text/iso19139+xml'
+			'text/iso19139+xml',
 		),
 		'iso9660'=>array(
 			'application/x-cd-image',
 			'application/x-iso9660-image',
-			'application/x-raw-disk-image'
+			'application/x-raw-disk-image',
 		),
 		'it'=>array(
-			'audio/x-it'
+			'audio/x-it',
 		),
 		'it87'=>array(
 			'application/x-it87',
-			'text/plain'
+			'text/plain',
 		),
 		'itk'=>array(
 			'application/x-tcl',
 			'text/plain',
-			'text/x-tcl'
+			'text/x-tcl',
 		),
 		'itp'=>array(
-			'application/vnd.shana.informed.formtemplate'
+			'application/vnd.shana.informed.formtemplate',
 		),
 		'its'=>array(
-			'application/its+xml'
+			'application/its+xml',
 		),
 		'ivp'=>array(
-			'application/vnd.immervision-ivp'
+			'application/vnd.immervision-ivp',
 		),
 		'ivu'=>array(
-			'application/vnd.immervision-ivu'
+			'application/vnd.immervision-ivu',
 		),
 		'j2c'=>array(
-			'image/x-jp2-codestream'
+			'image/x-jp2-codestream',
 		),
 		'j2k'=>array(
-			'image/x-jp2-codestream'
+			'image/x-jp2-codestream',
 		),
 		'jad'=>array(
-			'text/vnd.sun.j2me.app-descriptor'
+			'text/vnd.sun.j2me.app-descriptor',
 		),
 		'jam'=>array(
-			'application/vnd.jam'
+			'application/vnd.jam',
 		),
 		'jar'=>array(
 			'application/java-archive',
 			'application/vnd.osgi.bundle',
 			'application/x-jar',
 			'application/x-java-archive',
-			'application/zip'
+			'application/zip',
 		),
 		'jardiff'=>array(
-			'application/x-java-archive-diff'
+			'application/x-java-archive-diff',
 		),
 		'java'=>array(
 			'text/plain',
 			'text/x-csrc',
 			'text/x-java',
-			'text/x-java-source'
+			'text/x-java-source',
 		),
 		'jb2'=>array(
 			'image/x-jb2',
-			'image/x-jbig2'
+			'image/x-jbig2',
 		),
 		'jbig2'=>array(
 			'image/x-jb2',
-			'image/x-jbig2'
+			'image/x-jbig2',
 		),
 		'jceks'=>array(
-			'application/x-java-jce-keystore'
+			'application/x-java-jce-keystore',
 		),
 		'jfi'=>array(
-			'image/jpeg'
+			'image/jpeg',
 		),
 		'jfif'=>array(
-			'image/jpeg'
+			'image/jpeg',
 		),
 		'jif'=>array(
-			'image/jpeg'
+			'image/jpeg',
 		),
 		'jisp'=>array(
-			'application/vnd.jisp'
+			'application/vnd.jisp',
 		),
 		'jks'=>array(
-			'application/x-java-keystore'
+			'application/x-java-keystore',
 		),
 		'jl'=>array(
 			'text/plain',
-			'text/x-common-lisp'
+			'text/x-common-lisp',
 		),
 		'jls'=>array(
-			'image/jls'
+			'image/jls',
 		),
 		'jlt'=>array(
-			'application/vnd.hp-jlyt'
+			'application/vnd.hp-jlyt',
 		),
 		'jmx'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'jng'=>array(
 			'image/x-jng',
-			'video/x-jng'
+			'video/x-jng',
 		),
 		'jnilib'=>array(
-			'application/x-java-jnilib'
+			'application/x-java-jnilib',
 		),
 		'jnlp'=>array(
 			'application/x-java-jnlp-file',
-			'application/xml'
+			'application/xml',
 		),
 		'joda'=>array(
-			'application/vnd.joost.joda-archive'
+			'application/vnd.joost.joda-archive',
 		),
 		'jp2'=>array(
 			'image/jp2',
@@ -2783,18 +2784,18 @@ class aliases {
 			'image/jpeg2000-image',
 			'image/jpx',
 			'image/x-jp2-container',
-			'image/x-jpeg2000-image'
+			'image/x-jpeg2000-image',
 		),
 		'jpc'=>array(
-			'image/x-jp2-codestream'
+			'image/x-jp2-codestream',
 		),
 		'jpe'=>array(
 			'image/jpeg',
-			'image/pjpeg'
+			'image/pjpeg',
 		),
 		'jpeg'=>array(
 			'image/jpeg',
-			'image/pjpeg'
+			'image/pjpeg',
 		),
 		'jpf'=>array(
 			'image/jp2',
@@ -2802,33 +2803,33 @@ class aliases {
 			'image/jpeg2000-image',
 			'image/jpx',
 			'image/x-jp2-container',
-			'image/x-jpeg2000-image'
+			'image/x-jpeg2000-image',
 		),
 		'jpg'=>array(
 			'image/jpeg',
-			'image/pjpeg'
+			'image/pjpeg',
 		),
 		'jpg2'=>array(
 			'image/jp2',
 			'image/jpeg2000',
 			'image/jpeg2000-image',
-			'image/x-jpeg2000-image'
+			'image/x-jpeg2000-image',
 		),
 		'jpgm'=>array(
 			'image/jpm',
 			'image/x-jp2-container',
-			'video/jpm'
+			'video/jpm',
 		),
 		'jpgv'=>array(
-			'video/jpeg'
+			'video/jpeg',
 		),
 		'jpm'=>array(
 			'image/jpm',
 			'image/x-jp2-container',
-			'video/jpm'
+			'video/jpm',
 		),
 		'jpr'=>array(
-			'application/x-jbuilder-project'
+			'application/x-jbuilder-project',
 		),
 		'jpx'=>array(
 			'application/x-jbuilder-project',
@@ -2836,11 +2837,11 @@ class aliases {
 			'image/jpeg2000',
 			'image/jpeg2000-image',
 			'image/jpx',
-			'image/x-jpeg2000-image'
+			'image/x-jpeg2000-image',
 		),
 		'jrd'=>array(
 			'application/jrd+json',
-			'application/json'
+			'application/json',
 		),
 		'js'=>array(
 			'application/ecmascript',
@@ -2848,13 +2849,13 @@ class aliases {
 			'application/node',
 			'application/x-javascript',
 			'text/javascript',
-			'text/plain'
+			'text/plain',
 		),
 		'jsm'=>array(
 			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
-			'text/javascript'
+			'text/javascript',
 		),
 		'json'=>array(
 			'application/csvm+json',
@@ -2900,11 +2901,11 @@ class aliases {
 			'application/vnd.tableschema+json',
 			'application/vnd.vel+json',
 			'application/vnd.xacml+json',
-			'application/webpush-options+json'
+			'application/webpush-options+json',
 		),
 		'json-patch'=>array(
 			'application/json',
-			'application/json-patch+json'
+			'application/json-patch+json',
 		),
 		'jsonld'=>array(
 			'application/json',
@@ -2914,53 +2915,53 @@ class aliases {
 			'application/vnd.ims.lti.v2.toolproxy+json',
 			'application/vnd.ims.lti.v2.toolproxy.id+json',
 			'application/vnd.ims.lti.v2.toolsettings+json',
-			'application/vnd.ims.lti.v2.toolsettings.simple+json'
+			'application/vnd.ims.lti.v2.toolsettings.simple+json',
 		),
 		'jsonml'=>array(
-			'application/jsonml+json'
+			'application/jsonml+json',
 		),
 		'jsp'=>array(
 			'application/x-httpd-jsp',
 			'text/plain',
-			'text/x-jsp'
+			'text/x-jsp',
 		),
 		'jtd'=>array(
-			'text/vnd.esmertec.theme-descriptor'
+			'text/vnd.esmertec.theme-descriptor',
 		),
 		'junit'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'jx'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'k25'=>array(
 			'image/x-dcraw',
 			'image/x-kodak-k25',
-			'image/x-raw-kodak'
+			'image/x-raw-kodak',
 		),
 		'k7'=>array(
-			'application/x-thomson-cassette'
+			'application/x-thomson-cassette',
 		),
 		'kar'=>array(
 			'audio/midi',
-			'audio/x-midi'
+			'audio/x-midi',
 		),
 		'karbon'=>array(
 			'application/vnd.kde.karbon',
-			'application/x-karbon'
+			'application/x-karbon',
 		),
 		'kcm'=>array(
-			'application/vnd.nervana'
+			'application/vnd.nervana',
 		),
 		'kdc'=>array(
 			'image/x-dcraw',
 			'image/x-kodak-kdc',
-			'image/x-raw-kodak'
+			'image/x-raw-kodak',
 		),
 		'kdelnk'=>array(
 			'application/x-desktop',
 			'application/x-gnome-app-info',
-			'text/plain'
+			'text/plain',
 		),
 		'kexi'=>array(
 			'application/x-kexiproject-sqlite',
@@ -2968,311 +2969,313 @@ class aliases {
 			'application/x-kexiproject-sqlite3',
 			'application/x-sqlite2',
 			'application/x-sqlite3',
-			'application/x-vnd.kde.kexi'
+			'application/x-vnd.kde.kexi',
 		),
 		'kexic'=>array(
-			'application/x-kexi-connectiondata'
+			'application/x-kexi-connectiondata',
 		),
 		'kexis'=>array(
-			'application/x-kexiproject-shortcut'
+			'application/x-kexiproject-shortcut',
 		),
 		'key'=>array(
 			'application/vnd.apple.iwork',
 			'application/vnd.apple.keynote',
 			'application/x-iwork-keynote-sffkey',
-			'application/zip'
+			'application/zip',
 		),
 		'kfo'=>array(
 			'application/vnd.kde.kformula',
-			'application/x-kformula'
+			'application/x-kformula',
 		),
 		'kia'=>array(
-			'application/vnd.kidspiration'
+			'application/vnd.kidspiration',
 		),
 		'kil'=>array(
-			'application/x-killustrator'
+			'application/x-killustrator',
 		),
 		'kino'=>array(
 			'application/smil',
 			'application/smil+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'kml'=>array(
 			'application/vnd.google-earth.kml+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'kmz'=>array(
 			'application/vnd.google-earth.kmz',
-			'application/zip'
+			'application/zip',
 		),
 		'kne'=>array(
-			'application/vnd.kinar'
+			'application/vnd.kinar',
 		),
 		'knp'=>array(
-			'application/vnd.kinar'
+			'application/vnd.kinar',
 		),
 		'kon'=>array(
 			'application/vnd.kde.kontour',
-			'application/x-kontour'
+			'application/x-kontour',
 		),
 		'koz'=>array(
-			'audio/vnd.audiokoz'
+			'audio/vnd.audiokoz',
 		),
 		'kpm'=>array(
-			'application/x-kpovmodeler'
+			'application/x-kpovmodeler',
 		),
 		'kpr'=>array(
 			'application/vnd.kde.kpresenter',
-			'application/x-kpresenter'
+			'application/x-kpresenter',
 		),
 		'kpt'=>array(
 			'application/vnd.kde.kpresenter',
-			'application/x-kpresenter'
+			'application/x-kpresenter',
 		),
 		'kpxx'=>array(
-			'application/vnd.ds-keypoint'
+			'application/vnd.ds-keypoint',
 		),
 		'kra'=>array(
-			'application/x-krita'
+			'application/x-krita',
 		),
 		'ks'=>array(
-			'application/x-java-keystore'
+			'application/x-java-keystore',
 		),
 		'ksp'=>array(
 			'application/vnd.kde.kspread',
-			'application/x-kspread'
+			'application/x-kspread',
 		),
 		'ktr'=>array(
-			'application/vnd.kahootz'
+			'application/vnd.kahootz',
 		),
 		'ktx'=>array(
-			'image/ktx'
+			'image/ktx',
 		),
 		'ktz'=>array(
-			'application/vnd.kahootz'
+			'application/vnd.kahootz',
 		),
 		'kud'=>array(
-			'application/x-kugar'
+			'application/x-kugar',
 		),
 		'kwd'=>array(
 			'application/vnd.kde.kword',
-			'application/x-kword'
+			'application/x-kword',
 		),
 		'kwt'=>array(
 			'application/vnd.kde.kword',
-			'application/x-kword'
+			'application/x-kword',
 		),
 		'la'=>array(
 			'application/x-shared-library-la',
-			'text/plain'
+			'text/plain',
 		),
 		'lasjson'=>array(
-			'application/vnd.las.las+json'
+			'application/vnd.las.las+json',
 		),
 		'lasxml'=>array(
-			'application/vnd.las.las+xml'
+			'application/vnd.las.las+xml',
 		),
 		'latex'=>array(
 			'application/x-latex',
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'lbd'=>array(
-			'application/vnd.llamagraphics.life-balance.desktop'
+			'application/vnd.llamagraphics.life-balance.desktop',
 		),
 		'lbe'=>array(
-			'application/vnd.llamagraphics.life-balance.exchange+xml'
+			'application/vnd.llamagraphics.life-balance.exchange+xml',
 		),
 		'lbm'=>array(
 			'application/x-iff',
 			'image/x-iff',
-			'image/x-ilbm'
+			'image/x-ilbm',
 		),
 		'ldif'=>array(
 			'text/plain',
-			'text/x-ldif'
+			'text/x-ldif',
 		),
 		'le'=>array(
-			'application/vnd.bluetooth.le.oob'
+			'application/vnd.bluetooth.le.oob',
 		),
 		'les'=>array(
-			'application/vnd.hhe.lesson-player'
+			'application/vnd.hhe.lesson-player',
 		),
 		'less'=>array(
 			'text/plain',
-			'text/x-less'
+			'text/x-less',
 		),
 		'lgr'=>array(
-			'application/lgr+xml'
+			'application/lgr+xml',
 		),
 		'lha'=>array(
 			'application/octet-stream',
 			'application/x-lha',
-			'application/x-lzh-compressed'
+			'application/x-lzh-compressed',
 		),
 		'lhs'=>array(
 			'text/plain',
 			'text/x-haskell',
-			'text/x-literate-haskell'
+			'text/x-literate-haskell',
 		),
 		'lhz'=>array(
-			'application/x-lhz'
+			'application/x-lhz',
 		),
 		'link66'=>array(
-			'application/vnd.route66.link66+xml'
+			'application/vnd.route66.link66+xml',
 		),
 		'lisp'=>array(
 			'text/plain',
-			'text/x-common-lisp'
+			'text/x-common-lisp',
 		),
 		'list'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'list3820'=>array(
-			'application/vnd.ibm.modcap'
+			'application/vnd.afpc.modca',
+			'application/vnd.ibm.modcap',
 		),
 		'listafp'=>array(
-			'application/vnd.ibm.modcap'
+			'application/vnd.afpc.modca',
+			'application/vnd.ibm.modcap',
 		),
 		'lmp'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'lnk'=>array(
-			'application/x-ms-shortcut'
+			'application/x-ms-shortcut',
 		),
 		'lnx'=>array(
-			'application/x-atari-lynx-rom'
+			'application/x-atari-lynx-rom',
 		),
 		'loas'=>array(
-			'audio/usac'
+			'audio/usac',
 		),
 		'log'=>array(
 			'text/plain',
-			'text/x-log'
+			'text/x-log',
 		),
 		'lostsyncxml'=>array(
-			'application/lostsync+xml'
+			'application/lostsync+xml',
 		),
 		'lostxml'=>array(
-			'application/lost+xml'
+			'application/lost+xml',
 		),
 		'lrf'=>array(
-			'application/octet-stream'
+			'application/octet-stream',
 		),
 		'lrm'=>array(
-			'application/vnd.ms-lrm'
+			'application/vnd.ms-lrm',
 		),
 		'lrv'=>array(
 			'video/mp4',
 			'video/mp4v-es',
-			'video/x-m4v'
+			'video/x-m4v',
 		),
 		'lrz'=>array(
-			'application/x-lrzip'
+			'application/x-lrzip',
 		),
 		'lsp'=>array(
 			'text/plain',
-			'text/x-common-lisp'
+			'text/x-common-lisp',
 		),
 		'ltf'=>array(
-			'application/vnd.frogans.ltf'
+			'application/vnd.frogans.ltf',
 		),
 		'ltx'=>array(
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'lua'=>array(
 			'application/x-executable',
 			'text/plain',
-			'text/x-lua'
+			'text/x-lua',
 		),
 		'lvp'=>array(
-			'audio/vnd.lucent.voice'
+			'audio/vnd.lucent.voice',
 		),
 		'lwo'=>array(
-			'image/x-lwo'
+			'image/x-lwo',
 		),
 		'lwob'=>array(
-			'image/x-lwo'
+			'image/x-lwo',
 		),
 		'lwp'=>array(
-			'application/vnd.lotus-wordpro'
+			'application/vnd.lotus-wordpro',
 		),
 		'lws'=>array(
-			'image/x-lws'
+			'image/x-lws',
 		),
 		'lxf'=>array(
-			'application/lxf'
+			'application/lxf',
 		),
 		'ly'=>array(
 			'text/plain',
-			'text/x-lilypond'
+			'text/x-lilypond',
 		),
 		'lyx'=>array(
 			'application/x-lyx',
 			'text/plain',
-			'text/x-lyx'
+			'text/x-lyx',
 		),
 		'lz'=>array(
-			'application/x-lzip'
+			'application/x-lzip',
 		),
 		'lz4'=>array(
-			'application/x-lz4'
+			'application/x-lz4',
 		),
 		'lzh'=>array(
 			'application/octet-stream',
 			'application/x-lha',
-			'application/x-lzh-compressed'
+			'application/x-lzh-compressed',
 		),
 		'lzma'=>array(
-			'application/x-lzma'
+			'application/x-lzma',
 		),
 		'lzo'=>array(
-			'application/x-lzop'
+			'application/x-lzop',
 		),
 		'm13'=>array(
-			'application/x-msmediaview'
+			'application/x-msmediaview',
 		),
 		'm14'=>array(
-			'application/x-msmediaview'
+			'application/x-msmediaview',
 		),
 		'm15'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'm1u'=>array(
 			'text/plain',
 			'video/vnd.mpegurl',
-			'video/x-mpegurl'
+			'video/x-mpegurl',
 		),
 		'm1v'=>array(
-			'video/mpeg'
+			'video/mpeg',
 		),
 		'm21'=>array(
-			'application/mp21'
+			'application/mp21',
 		),
 		'm2a'=>array(
 			'audio/mpeg',
-			'audio/x-mpeg'
+			'audio/x-mpeg',
 		),
 		'm2t'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'm2ts'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'm2v'=>array(
-			'video/mpeg'
+			'video/mpeg',
 		),
 		'm3'=>array(
 			'text/plain',
-			'text/x-modula'
+			'text/x-modula',
 		),
 		'm3a'=>array(
 			'audio/mpeg',
-			'audio/x-mpeg'
+			'audio/x-mpeg',
 		),
 		'm3u'=>array(
 			'application/m3u',
@@ -3282,7 +3285,7 @@ class aliases {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
-			'text/plain'
+			'text/plain',
 		),
 		'm3u8'=>array(
 			'application/m3u',
@@ -3292,70 +3295,70 @@ class aliases {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
-			'text/plain'
+			'text/plain',
 		),
 		'm4'=>array(
 			'application/x-m4',
-			'text/plain'
+			'text/plain',
 		),
 		'm4a'=>array(
 			'application/quicktime',
 			'audio/m4a',
 			'audio/mp4',
 			'audio/x-m4a',
-			'audio/x-mp4a'
+			'audio/x-mp4a',
 		),
 		'm4b'=>array(
 			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
 			'audio/x-m4b',
-			'audio/x-mp4a'
+			'audio/x-mp4a',
 		),
 		'm4r'=>array(
 			'audio/x-m4r',
-			'video/mp4'
+			'video/mp4',
 		),
 		'm4s'=>array(
-			'video/iso.segment'
+			'video/iso.segment',
 		),
 		'm4u'=>array(
 			'text/plain',
 			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
-			'video/x-mpegurl'
+			'video/x-mpegurl',
 		),
 		'm4v'=>array(
 			'video/mp4',
 			'video/mp4v-es',
-			'video/x-m4v'
+			'video/x-m4v',
 		),
 		'm7'=>array(
-			'application/x-thomson-cartridge-memo7'
+			'application/x-thomson-cartridge-memo7',
 		),
 		'ma'=>array(
-			'application/mathematica'
+			'application/mathematica',
 		),
 		'mab'=>array(
 			'application/x-markaby',
-			'application/x-ruby'
+			'application/x-ruby',
 		),
 		'mads'=>array(
-			'application/mads+xml'
+			'application/mads+xml',
 		),
 		'mag'=>array(
-			'application/vnd.ecowin.chart'
+			'application/vnd.ecowin.chart',
 		),
 		'mak'=>array(
 			'text/plain',
-			'text/x-makefile'
+			'text/x-makefile',
 		),
 		'makefile'=>array(
 			'text/plain',
-			'text/x-makefile'
+			'text/x-makefile',
 		),
 		'maker'=>array(
-			'application/vnd.framemaker'
+			'application/vnd.framemaker',
 		),
 		'man'=>array(
 			'application/x-troff',
@@ -3363,53 +3366,53 @@ class aliases {
 			'application/x-troff-me',
 			'application/x-troff-ms',
 			'text/plain',
-			'text/troff'
+			'text/troff',
 		),
 		'manifest'=>array(
 			'text/cache-manifest',
-			'text/plain'
+			'text/plain',
 		),
 		'mar'=>array(
-			'application/octet-stream'
+			'application/octet-stream',
 		),
 		'markdown'=>array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
-			'text/x-web-markdown'
+			'text/x-web-markdown',
 		),
 		'mat'=>array(
 			'application/matlab-mat',
-			'application/x-matlab-data'
+			'application/x-matlab-data',
 		),
 		'mathml'=>array(
-			'application/mathml+xml'
+			'application/mathml+xml',
 		),
 		'mb'=>array(
-			'application/mathematica'
+			'application/mathematica',
 		),
 		'mbk'=>array(
-			'application/vnd.mobius.mbk'
+			'application/vnd.mobius.mbk',
 		),
 		'mbox'=>array(
 			'application/mbox',
-			'text/plain'
+			'text/plain',
 		),
 		'mc1'=>array(
-			'application/vnd.medcalcdata'
+			'application/vnd.medcalcdata',
 		),
 		'mcd'=>array(
 			'application/vnd.mcd',
-			'application/vnd.vectorworks'
+			'application/vnd.vectorworks',
 		),
 		'mcurl'=>array(
-			'text/vnd.curl.mcurl'
+			'text/vnd.curl.mcurl',
 		),
 		'md'=>array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
-			'text/x-web-markdown'
+			'text/x-web-markdown',
 		),
 		'mdb'=>array(
 			'application/mdb',
@@ -3418,23 +3421,23 @@ class aliases {
 			'application/vnd.msaccess',
 			'application/x-mdb',
 			'application/x-msaccess',
-			'zz-application/zz-winassoc-mdb'
+			'zz-application/zz-winassoc-mdb',
 		),
 		'mdc'=>array(
-			'application/vnd.marlin.drm.mdcf'
+			'application/vnd.marlin.drm.mdcf',
 		),
 		'mdi'=>array(
-			'image/vnd.ms-modi'
+			'image/vnd.ms-modi',
 		),
 		'mdo'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'mdtext'=>array(
 			'text/plain',
-			'text/x-web-markdown'
+			'text/x-web-markdown',
 		),
 		'mdx'=>array(
-			'application/x-genesis-32x-rom'
+			'application/x-genesis-32x-rom',
 		),
 		'me'=>array(
 			'application/x-troff',
@@ -3443,254 +3446,254 @@ class aliases {
 			'application/x-troff-ms',
 			'text/plain',
 			'text/troff',
-			'text/x-troff-me'
+			'text/x-troff-me',
 		),
 		'med'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'mef'=>array(
-			'image/x-raw-mamiya'
+			'image/x-raw-mamiya',
 		),
 		'mesh'=>array(
-			'model/mesh'
+			'model/mesh',
 		),
 		'meta'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'meta4'=>array(
 			'application/metalink4+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'metalink'=>array(
 			'application/metalink+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'mets'=>array(
-			'application/mets+xml'
+			'application/mets+xml',
 		),
 		'mf'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'mf4'=>array(
-			'application/mf4'
+			'application/mf4',
 		),
 		'mfm'=>array(
-			'application/vnd.mfmp'
+			'application/vnd.mfmp',
 		),
 		'mft'=>array(
-			'application/rpki-manifest'
+			'application/rpki-manifest',
 		),
 		'mg'=>array(
 			'text/plain',
-			'text/x-modula'
+			'text/x-modula',
 		),
 		'mgp'=>array(
 			'application/vnd.osgeo.mapguide.package',
 			'application/x-magicpoint',
-			'text/plain'
+			'text/plain',
 		),
 		'mgz'=>array(
-			'application/vnd.proteus.magazine'
+			'application/vnd.proteus.magazine',
 		),
 		'mht'=>array(
 			'application/x-mimearchive',
 			'message/rfc822',
-			'multipart/related'
+			'multipart/related',
 		),
 		'mhtml'=>array(
 			'application/x-mimearchive',
 			'message/rfc822',
-			'multipart/related'
+			'multipart/related',
 		),
 		'mid'=>array(
 			'audio/midi',
 			'audio/sp-midi',
-			'audio/x-midi'
+			'audio/x-midi',
 		),
 		'midi'=>array(
 			'audio/midi',
-			'audio/x-midi'
+			'audio/x-midi',
 		),
 		'mie'=>array(
-			'application/x-mie'
+			'application/x-mie',
 		),
 		'mif'=>array(
 			'application/vnd.mif',
 			'application/x-frame',
-			'application/x-mif'
+			'application/x-mif',
 		),
 		'mime'=>array(
-			'message/rfc822'
+			'message/rfc822',
 		),
 		'minipsf'=>array(
 			'audio/x-minipsf',
-			'audio/x-psf'
+			'audio/x-psf',
 		),
 		'miz'=>array(
-			'text/mizar'
+			'text/mizar',
 		),
 		'mj2'=>array(
 			'image/x-jp2-container',
-			'video/mj2'
+			'video/mj2',
 		),
 		'mjp2'=>array(
 			'image/x-jp2-container',
-			'video/mj2'
+			'video/mj2',
 		),
 		'mjpeg'=>array(
 			'image/jpeg',
-			'video/x-mjpeg'
+			'video/x-mjpeg',
 		),
 		'mjpg'=>array(
 			'image/jpeg',
-			'video/x-mjpeg'
+			'video/x-mjpeg',
 		),
 		'mjs'=>array(
 			'application/ecmascript',
 			'application/javascript',
 			'application/x-javascript',
-			'text/javascript'
+			'text/javascript',
 		),
 		'mk'=>array(
 			'text/plain',
-			'text/x-makefile'
+			'text/x-makefile',
 		),
 		'mk3d'=>array(
 			'application/x-matroska',
 			'video/x-matroska',
-			'video/x-matroska-3d'
+			'video/x-matroska-3d',
 		),
 		'mka'=>array(
 			'application/x-matroska',
-			'audio/x-matroska'
+			'audio/x-matroska',
 		),
 		'mkd'=>array(
 			'text/markdown',
 			'text/plain',
 			'text/x-markdown',
-			'text/x-web-markdown'
+			'text/x-web-markdown',
 		),
 		'mks'=>array(
-			'video/x-matroska'
+			'video/x-matroska',
 		),
 		'mkv'=>array(
 			'application/x-matroska',
-			'video/x-matroska'
+			'video/x-matroska',
 		),
 		'ml'=>array(
 			'text/plain',
 			'text/x-ml',
-			'text/x-ocaml'
+			'text/x-ocaml',
 		),
 		'mli'=>array(
 			'text/plain',
-			'text/x-ocaml'
+			'text/x-ocaml',
 		),
 		'mlp'=>array(
 			'application/vnd.dolby.mlp',
-			'audio/vnd.dolby.mlp'
+			'audio/vnd.dolby.mlp',
 		),
 		'mm'=>array(
 			'text/plain',
-			'text/x-troff-mm'
+			'text/x-troff-mm',
 		),
 		'mmap'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmas'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmat'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmd'=>array(
-			'application/vnd.chipnuts.karaoke-mmd'
+			'application/vnd.chipnuts.karaoke-mmd',
 		),
 		'mmdb'=>array(
-			'application/vnd.maxmind.maxmind-db'
+			'application/vnd.maxmind.maxmind-db',
 		),
 		'mmf'=>array(
 			'application/vnd.smaf',
-			'application/x-smaf'
+			'application/x-smaf',
 		),
 		'mml'=>array(
 			'application/mathml+xml',
 			'application/xml',
-			'text/mathml'
+			'text/mathml',
 		),
 		'mmmp'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmp'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmpt'=>array(
 			'application/vnd.mindjet.mindmanager',
-			'application/zip'
+			'application/zip',
 		),
 		'mmr'=>array(
-			'image/vnd.fujixerox.edmics-mmr'
+			'image/vnd.fujixerox.edmics-mmr',
 		),
 		'mng'=>array(
-			'video/x-mng'
+			'video/x-mng',
 		),
 		'mny'=>array(
-			'application/x-msmoney'
+			'application/x-msmoney',
 		),
 		'mo'=>array(
 			'application/x-gettext-translation',
 			'text/plain',
-			'text/x-modelica'
+			'text/x-modelica',
 		),
 		'mo3'=>array(
-			'audio/x-mo3'
+			'audio/x-mo3',
 		),
 		'mobi'=>array(
 			'application/vnd.palm',
-			'application/x-mobipocket-ebook'
+			'application/x-mobipocket-ebook',
 		),
 		'moc'=>array(
 			'text/plain',
-			'text/x-moc'
+			'text/x-moc',
 		),
 		'mod'=>array(
 			'application/xml-dtd',
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'model-inter'=>array(
-			'application/vnd.vd-study'
+			'application/vnd.vd-study',
 		),
 		'mods'=>array(
-			'application/mods+xml'
+			'application/mods+xml',
 		),
 		'mof'=>array(
 			'text/x-csrc',
-			'text/x-mof'
+			'text/x-mof',
 		),
 		'moov'=>array(
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'mos'=>array(
-			'image/x-raw-leaf'
+			'image/x-raw-leaf',
 		),
 		'mount'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'mov'=>array(
 			'application/quicktime',
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'movie'=>array(
-			'video/x-sgi-movie'
+			'video/x-sgi-movie',
 		),
 		'mp1'=>array(
-			'audio/mpeg'
+			'audio/mpeg',
 		),
 		'mp2'=>array(
 			'audio/mp2',
@@ -3701,137 +3704,137 @@ class aliases {
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
-			'video/x-mpeg2'
+			'video/x-mpeg2',
 		),
 		'mp21'=>array(
-			'application/mp21'
+			'application/mp21',
 		),
 		'mp2a'=>array(
 			'audio/mpeg',
-			'audio/x-mpeg'
+			'audio/x-mpeg',
 		),
 		'mp3'=>array(
 			'audio/mp3',
 			'audio/mpeg',
 			'audio/x-mp3',
 			'audio/x-mpeg',
-			'audio/x-mpg'
+			'audio/x-mpg',
 		),
 		'mp4'=>array(
 			'video/mp4',
 			'video/mp4v-es',
 			'video/quicktime',
 			'video/vnd.objectvideo',
-			'video/x-m4v'
+			'video/x-m4v',
 		),
 		'mp4a'=>array(
 			'application/quicktime',
 			'audio/mp4',
 			'audio/x-m4a',
-			'audio/x-mp4a'
+			'audio/x-mp4a',
 		),
 		'mp4s'=>array(
 			'application/mp4',
-			'application/quicktime'
+			'application/quicktime',
 		),
 		'mp4v'=>array(
 			'video/mp4',
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'mpc'=>array(
 			'application/vnd.mophun.certificate',
-			'audio/x-musepack'
+			'audio/x-musepack',
 		),
 		'mpd'=>array(
-			'application/dash+xml'
+			'application/dash+xml',
 		),
 		'mpdd'=>array(
-			'application/dashdelta'
+			'application/dashdelta',
 		),
 		'mpe'=>array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
-			'video/x-mpeg2'
+			'video/x-mpeg2',
 		),
 		'mpeg'=>array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
-			'video/x-mpeg2'
+			'video/x-mpeg2',
 		),
 		'mpf'=>array(
 			'application/media-policy-dataset+xml',
-			'text/vnd.ms-mediapackage'
+			'text/vnd.ms-mediapackage',
 		),
 		'mpg'=>array(
 			'video/mpeg',
 			'video/mpeg-system',
 			'video/x-mpeg',
 			'video/x-mpeg-system',
-			'video/x-mpeg2'
+			'video/x-mpeg2',
 		),
 		'mpg4'=>array(
 			'video/mp4',
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'mpga'=>array(
 			'audio/mp3',
 			'audio/mpeg',
 			'audio/x-mp3',
 			'audio/x-mpeg',
-			'audio/x-mpg'
+			'audio/x-mpg',
 		),
 		'mpkg'=>array(
-			'application/vnd.apple.installer+xml'
+			'application/vnd.apple.installer+xml',
 		),
 		'mpl'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'mpls'=>array(
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'mpm'=>array(
-			'application/vnd.blueice.multipass'
+			'application/vnd.blueice.multipass',
 		),
 		'mpn'=>array(
-			'application/vnd.mophun.application'
+			'application/vnd.mophun.application',
 		),
 		'mpp'=>array(
 			'application/vnd.ms-project',
-			'audio/x-musepack'
+			'audio/x-musepack',
 		),
 		'mpt'=>array(
-			'application/vnd.ms-project'
+			'application/vnd.ms-project',
 		),
 		'mpx'=>array(
 			'application/x-project',
-			'text/plain'
+			'text/plain',
 		),
 		'mpy'=>array(
-			'application/vnd.ibm.minipay'
+			'application/vnd.ibm.minipay',
 		),
 		'mqy'=>array(
-			'application/vnd.mobius.mqy'
+			'application/vnd.mobius.mqy',
 		),
 		'mrc'=>array(
-			'application/marc'
+			'application/marc',
 		),
 		'mrcx'=>array(
-			'application/marcxml+xml'
+			'application/marcxml+xml',
 		),
 		'mrl'=>array(
-			'text/x-mrml'
+			'text/x-mrml',
 		),
 		'mrml'=>array(
-			'text/x-mrml'
+			'text/x-mrml',
 		),
 		'mrw'=>array(
 			'image/x-dcraw',
 			'image/x-minolta-mrw',
-			'image/x-raw-minolta'
+			'image/x-raw-minolta',
 		),
 		'ms'=>array(
 			'application/x-troff',
@@ -3840,31 +3843,31 @@ class aliases {
 			'application/x-troff-ms',
 			'text/plain',
 			'text/troff',
-			'text/x-troff-ms'
+			'text/x-troff-ms',
 		),
 		'msa'=>array(
-			'application/vnd.msa-disk-image'
+			'application/vnd.msa-disk-image',
 		),
 		'mscml'=>array(
-			'application/mediaservercontrol+xml'
+			'application/mediaservercontrol+xml',
 		),
 		'msd'=>array(
-			'application/vnd.fdsn.mseed'
+			'application/vnd.fdsn.mseed',
 		),
 		'mseed'=>array(
-			'application/vnd.fdsn.mseed'
+			'application/vnd.fdsn.mseed',
 		),
 		'mseq'=>array(
-			'application/vnd.mseq'
+			'application/vnd.mseq',
 		),
 		'msf'=>array(
-			'application/vnd.epson.msf'
+			'application/vnd.epson.msf',
 		),
 		'msg'=>array(
-			'application/vnd.ms-outlook'
+			'application/vnd.ms-outlook',
 		),
 		'msh'=>array(
-			'model/mesh'
+			'model/mesh',
 		),
 		'msi'=>array(
 			'application/octet-stream',
@@ -3872,305 +3875,305 @@ class aliases {
 			'application/x-msdownload',
 			'application/x-msi',
 			'application/x-ole-storage',
-			'application/x-windows-installer'
+			'application/x-windows-installer',
 		),
 		'msl'=>array(
-			'application/vnd.mobius.msl'
+			'application/vnd.mobius.msl',
 		),
 		'msm'=>array(
 			'application/octet-stream',
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'msod'=>array(
-			'image/x-msod'
+			'image/x-msod',
 		),
 		'msp'=>array(
 			'application/octet-stream',
 			'application/x-ms-installer',
 			'application/x-msi',
-			'application/x-windows-installer'
+			'application/x-windows-installer',
 		),
 		'mst'=>array(
 			'application/x-ms-installer',
 			'application/x-msi',
-			'application/x-windows-installer'
+			'application/x-windows-installer',
 		),
 		'msty'=>array(
-			'application/vnd.muvee.style'
+			'application/vnd.muvee.style',
 		),
 		'msx'=>array(
-			'application/x-msx-rom'
+			'application/x-msx-rom',
 		),
 		'mtm'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'mts'=>array(
 			'model/vnd.mts',
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'multitrack'=>array(
-			'audio/vnd.presonus.multitrack'
+			'audio/vnd.presonus.multitrack',
 		),
 		'mup'=>array(
 			'text/plain',
-			'text/x-mup'
+			'text/x-mup',
 		),
 		'mus'=>array(
-			'application/vnd.musician'
+			'application/vnd.musician',
 		),
 		'musd'=>array(
-			'application/mmt-usd+xml'
+			'application/mmt-usd+xml',
 		),
 		'musicxml'=>array(
-			'application/vnd.recordare.musicxml+xml'
+			'application/vnd.recordare.musicxml+xml',
 		),
 		'mvb'=>array(
-			'application/x-msmediaview'
+			'application/x-msmediaview',
 		),
 		'mvt'=>array(
-			'application/vnd.mapbox-vector-tile'
+			'application/vnd.mapbox-vector-tile',
 		),
 		'mwf'=>array(
-			'application/vnd.mfer'
+			'application/vnd.mfer',
 		),
 		'mxf'=>array(
-			'application/mxf'
+			'application/mxf',
 		),
 		'mxi'=>array(
-			'application/vnd.vd-study'
+			'application/vnd.vd-study',
 		),
 		'mxl'=>array(
-			'application/vnd.recordare.musicxml'
+			'application/vnd.recordare.musicxml',
 		),
 		'mxmf'=>array(
 			'audio/mobile-xmf',
-			'audio/vnd.nokia.mobile-xmf'
+			'audio/vnd.nokia.mobile-xmf',
 		),
 		'mxml'=>array(
-			'application/xv+xml'
+			'application/xv+xml',
 		),
 		'mxs'=>array(
-			'application/vnd.triscape.mxs'
+			'application/vnd.triscape.mxs',
 		),
 		'mxu'=>array(
 			'text/plain',
 			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
-			'video/x-mpegurl'
+			'video/x-mpegurl',
 		),
 		'n-gage'=>array(
-			'application/vnd.nokia.n-gage.symbian.install'
+			'application/vnd.nokia.n-gage.symbian.install',
 		),
 		'n3'=>array(
 			'text/n3',
-			'text/plain'
+			'text/plain',
 		),
 		'n64'=>array(
-			'application/x-n64-rom'
+			'application/x-n64-rom',
 		),
 		'nar'=>array(
 			'application/vnd.iptc.g2.newsmessage+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'nb'=>array(
 			'application/mathematica',
 			'application/vnd.wolfram.mathematica',
 			'application/x-mathematica',
-			'text/plain'
+			'text/plain',
 		),
 		'nbp'=>array(
-			'application/vnd.wolfram.player'
+			'application/vnd.wolfram.player',
 		),
 		'nc'=>array(
-			'application/x-netcdf'
+			'application/x-netcdf',
 		),
 		'ncx'=>array(
-			'application/x-dtbncx+xml'
+			'application/x-dtbncx+xml',
 		),
 		'ndc'=>array(
-			'application/vnd.osa.netdeploy'
+			'application/vnd.osa.netdeploy',
 		),
 		'nds'=>array(
-			'application/x-nintendo-ds-rom'
+			'application/x-nintendo-ds-rom',
 		),
 		'nef'=>array(
 			'image/x-dcraw',
 			'image/x-nikon-nef',
-			'image/x-raw-nikon'
+			'image/x-raw-nikon',
 		),
 		'nes'=>array(
-			'application/x-nes-rom'
+			'application/x-nes-rom',
 		),
 		'nez'=>array(
-			'application/x-nes-rom'
+			'application/x-nes-rom',
 		),
 		'nfo'=>array(
 			'text/x-nfo',
-			'text/x-readme'
+			'text/x-readme',
 		),
 		'ngc'=>array(
-			'application/x-neo-geo-pocket-color-rom'
+			'application/x-neo-geo-pocket-color-rom',
 		),
 		'ngdat'=>array(
-			'application/vnd.nokia.n-gage.data'
+			'application/vnd.nokia.n-gage.data',
 		),
 		'ngp'=>array(
-			'application/x-neo-geo-pocket-rom'
+			'application/x-neo-geo-pocket-rom',
 		),
 		'nim'=>array(
-			'video/vnd.nokia.interleaved-multimedia'
+			'video/vnd.nokia.interleaved-multimedia',
 		),
 		'nitf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
-			'image/ntf'
+			'image/ntf',
 		),
 		'nlu'=>array(
-			'application/vnd.neurolanguage.nlu'
+			'application/vnd.neurolanguage.nlu',
 		),
 		'nml'=>array(
-			'application/vnd.enliven'
+			'application/vnd.enliven',
 		),
 		'nnd'=>array(
-			'application/vnd.noblenet-directory'
+			'application/vnd.noblenet-directory',
 		),
 		'nns'=>array(
-			'application/vnd.noblenet-sealer'
+			'application/vnd.noblenet-sealer',
 		),
 		'nnw'=>array(
-			'application/vnd.noblenet-web'
+			'application/vnd.noblenet-web',
 		),
 		'not'=>array(
 			'text/plain',
-			'text/x-mup'
+			'text/x-mup',
 		),
 		'notebook'=>array(
-			'application/vnd.smart.notebook'
+			'application/vnd.smart.notebook',
 		),
 		'npx'=>array(
-			'image/vnd.net-fpx'
+			'image/vnd.net-fpx',
 		),
 		'nroff'=>array(
 			'application/x-troff',
 			'application/x-troff-man',
 			'application/x-troff-me',
 			'application/x-troff-ms',
-			'text/troff'
+			'text/troff',
 		),
 		'nrw'=>array(
-			'image/x-raw-nikon'
+			'image/x-raw-nikon',
 		),
 		'nsc'=>array(
 			'application/vnd.ms-asf',
 			'application/x-conference',
-			'application/x-netshow-channel'
+			'application/x-netshow-channel',
 		),
 		'nsf'=>array(
-			'application/vnd.lotus-notes'
+			'application/vnd.lotus-notes',
 		),
 		'nsv'=>array(
-			'video/x-nsv'
+			'video/x-nsv',
 		),
 		'ntf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
-			'image/ntf'
+			'image/ntf',
 		),
 		'numbers'=>array(
 			'application/vnd.apple.iwork',
-			'application/vnd.apple.numbers'
+			'application/vnd.apple.numbers',
 		),
 		'nzb'=>array(
 			'application/x-nzb',
-			'application/xml'
+			'application/xml',
 		),
 		'oa2'=>array(
-			'application/vnd.fujitsu.oasys2'
+			'application/vnd.fujitsu.oasys2',
 		),
 		'oa3'=>array(
-			'application/vnd.fujitsu.oasys3'
+			'application/vnd.fujitsu.oasys3',
 		),
 		'oas'=>array(
-			'application/vnd.fujitsu.oasys'
+			'application/vnd.fujitsu.oasys',
 		),
 		'obd'=>array(
-			'application/x-msbinder'
+			'application/x-msbinder',
 		),
 		'obg'=>array(
-			'application/vnd.openblox.game-binary'
+			'application/vnd.openblox.game-binary',
 		),
 		'obgx'=>array(
-			'application/vnd.openblox.game+xml'
+			'application/vnd.openblox.game+xml',
 		),
 		'obj'=>array(
-			'application/x-tgif'
+			'application/x-tgif',
 		),
 		'ocaml'=>array(
 			'text/plain',
-			'text/x-ocaml'
+			'text/x-ocaml',
 		),
 		'ocl'=>array(
 			'text/plain',
-			'text/x-ocl'
+			'text/x-ocl',
 		),
 		'oda'=>array(
-			'application/oda'
+			'application/oda',
 		),
 		'odb'=>array(
 			'application/vnd.oasis.opendocument.base',
 			'application/vnd.oasis.opendocument.database',
 			'application/vnd.sun.xml.base',
-			'application/zip'
+			'application/zip',
 		),
 		'odc'=>array(
 			'application/vnd.oasis.opendocument.chart',
 			'application/x-vnd.oasis.opendocument.chart',
-			'application/zip'
+			'application/zip',
 		),
 		'odf'=>array(
 			'application/vnd.oasis.opendocument.formula',
 			'application/x-vnd.oasis.opendocument.formula',
-			'application/zip'
+			'application/zip',
 		),
 		'odft'=>array(
 			'application/vnd.oasis.opendocument.formula-template',
-			'application/x-vnd.oasis.opendocument.formula-template'
+			'application/x-vnd.oasis.opendocument.formula-template',
 		),
 		'odg'=>array(
 			'application/vnd.oasis.opendocument.graphics',
 			'application/x-vnd.oasis.opendocument.graphics',
-			'application/zip'
+			'application/zip',
 		),
 		'odi'=>array(
 			'application/vnd.oasis.opendocument.image',
 			'application/x-vnd.oasis.opendocument.image',
-			'application/zip'
+			'application/zip',
 		),
 		'odm'=>array(
 			'application/vnd.oasis.opendocument.text-master',
-			'application/zip'
+			'application/zip',
 		),
 		'odp'=>array(
 			'application/vnd.oasis.opendocument.presentation',
 			'application/x-vnd.oasis.opendocument.presentation',
-			'application/zip'
+			'application/zip',
 		),
 		'ods'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet',
 			'application/x-vnd.oasis.opendocument.spreadsheet',
-			'application/zip'
+			'application/zip',
 		),
 		'odt'=>array(
 			'application/vnd.oasis.opendocument.text',
 			'application/x-vnd.oasis.opendocument.text',
-			'application/zip'
+			'application/zip',
 		),
 		'odx'=>array(
-			'application/odx'
+			'application/odx',
 		),
 		'oeb'=>array(
-			'application/vnd.openeye.oeb'
+			'application/vnd.openeye.oeb',
 		),
 		'oga'=>array(
 			'application/ogg',
@@ -4181,10 +4184,10 @@ class aliases {
 			'audio/x-oggflac',
 			'audio/x-speex+ogg',
 			'audio/x-vorbis',
-			'audio/x-vorbis+ogg'
+			'audio/x-vorbis+ogg',
 		),
 		'ogex'=>array(
-			'model/vnd.opengex'
+			'model/vnd.opengex',
 		),
 		'ogg'=>array(
 			'application/ogg',
@@ -4200,251 +4203,251 @@ class aliases {
 			'video/ogg',
 			'video/x-ogg',
 			'video/x-theora',
-			'video/x-theora+ogg'
+			'video/x-theora+ogg',
 		),
 		'ogm'=>array(
 			'video/ogg',
 			'video/x-ogm',
-			'video/x-ogm+ogg'
+			'video/x-ogm+ogg',
 		),
 		'ogv'=>array(
 			'application/ogg',
 			'video/ogg',
-			'video/x-ogg'
+			'video/x-ogg',
 		),
 		'ogx'=>array(
 			'application/ogg',
-			'application/x-ogg'
+			'application/x-ogg',
 		),
 		'old'=>array(
-			'application/x-trash'
+			'application/x-trash',
 		),
 		'oleo'=>array(
-			'application/x-oleo'
+			'application/x-oleo',
 		),
 		'omdoc'=>array(
-			'application/omdoc+xml'
+			'application/omdoc+xml',
 		),
 		'one'=>array(
 			'application/onenote',
-			'application/onenoteformatone'
+			'application/onenoteformatone',
 		),
 		'onepkg'=>array(
 			'application/onenote',
 			'application/onenoteformatpackage',
-			'application/vnd.ms-cab-compressed'
+			'application/vnd.ms-cab-compressed',
 		),
 		'onetmp'=>array(
 			'application/msonenote',
-			'application/onenote'
+			'application/onenote',
 		),
 		'onetoc'=>array(
 			'application/onenote',
-			'application/onenoteformatonetoc2'
+			'application/onenoteformatonetoc2',
 		),
 		'onetoc2'=>array(
 			'application/onenote',
-			'application/onenoteformatonetoc2'
+			'application/onenoteformatonetoc2',
 		),
 		'ooc'=>array(
 			'text/x-csrc',
-			'text/x-ooc'
+			'text/x-ooc',
 		),
 		'opf'=>array(
-			'application/oebps-package+xml'
+			'application/oebps-package+xml',
 		),
 		'opml'=>array(
 			'application/xml',
 			'text/x-opml',
-			'text/x-opml+xml'
+			'text/x-opml+xml',
 		),
 		'oprc'=>array(
 			'application/vnd.palm',
-			'application/x-palm-database'
+			'application/x-palm-database',
 		),
 		'opus'=>array(
 			'application/ogg',
 			'audio/ogg',
 			'audio/opus',
 			'audio/x-ogg',
-			'audio/x-opus+ogg'
+			'audio/x-opus+ogg',
 		),
 		'or3'=>array(
-			'application/vnd.lotus-organizer'
+			'application/vnd.lotus-organizer',
 		),
 		'ora'=>array(
 			'application/zip',
-			'image/openraster'
+			'image/openraster',
 		),
 		'orf'=>array(
 			'image/x-dcraw',
 			'image/x-olympus-orf',
-			'image/x-raw-olympus'
+			'image/x-raw-olympus',
 		),
 		'org'=>array(
-			'application/vnd.lotus-organizer'
+			'application/vnd.lotus-organizer',
 		),
 		'orq'=>array(
-			'application/ocsp-request'
+			'application/ocsp-request',
 		),
 		'ors'=>array(
-			'application/ocsp-response'
+			'application/ocsp-response',
 		),
 		'osf'=>array(
-			'application/vnd.yamaha.openscoreformat'
+			'application/vnd.yamaha.openscoreformat',
 		),
 		'osfpvg'=>array(
-			'application/vnd.yamaha.openscoreformat.osfpvg+xml'
+			'application/vnd.yamaha.openscoreformat.osfpvg+xml',
 		),
 		'osm'=>array(
-			'application/vnd.openstreetmap.data+xml'
+			'application/vnd.openstreetmap.data+xml',
 		),
 		'ost'=>array(
-			'application/vnd.ms-outlook-pst'
+			'application/vnd.ms-outlook-pst',
 		),
 		'otc'=>array(
 			'application/vnd.oasis.opendocument.chart-template',
 			'application/x-vnd.oasis.opendocument.chart-template',
-			'application/zip'
+			'application/zip',
 		),
 		'otf'=>array(
 			'application/vnd.oasis.opendocument.formula-template',
 			'application/x-font-otf',
 			'application/zip',
 			'font/otf',
-			'font/ttf'
+			'font/ttf',
 		),
 		'otg'=>array(
 			'application/vnd.oasis.opendocument.graphics-template',
 			'application/x-vnd.oasis.opendocument.graphics-template',
-			'application/zip'
+			'application/zip',
 		),
 		'oth'=>array(
 			'application/vnd.oasis.opendocument.text-web',
 			'application/x-vnd.oasis.opendocument.text-web',
-			'application/zip'
+			'application/zip',
 		),
 		'oti'=>array(
 			'application/vnd.oasis.opendocument.image-template',
-			'application/x-vnd.oasis.opendocument.image-template'
+			'application/x-vnd.oasis.opendocument.image-template',
 		),
 		'otm'=>array(
 			'application/vnd.oasis.opendocument.text-master',
-			'application/x-vnd.oasis.opendocument.text-master'
+			'application/x-vnd.oasis.opendocument.text-master',
 		),
 		'otp'=>array(
 			'application/vnd.oasis.opendocument.presentation-template',
 			'application/x-vnd.oasis.opendocument.presentation-template',
-			'application/zip'
+			'application/zip',
 		),
 		'ots'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet-template',
 			'application/x-vnd.oasis.opendocument.spreadsheet-template',
-			'application/zip'
+			'application/zip',
 		),
 		'ott'=>array(
 			'application/vnd.oasis.opendocument.text-template',
 			'application/x-vnd.oasis.opendocument.text-template',
-			'application/zip'
+			'application/zip',
 		),
 		'owl'=>array(
 			'application/rdf+xml',
 			'application/xml',
-			'text/rdf'
+			'text/rdf',
 		),
 		'owx'=>array(
 			'application/owl+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'oxlicg'=>array(
-			'application/vnd.oxli.countgraph'
+			'application/vnd.oxli.countgraph',
 		),
 		'oxps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
 			'application/xps',
-			'application/zip'
+			'application/zip',
 		),
 		'oxt'=>array(
 			'application/vnd.openofficeorg.extension',
-			'application/zip'
+			'application/zip',
 		),
 		'p'=>array(
-			'text/x-pascal'
+			'text/x-pascal',
 		),
 		'p10'=>array(
-			'application/pkcs10'
+			'application/pkcs10',
 		),
 		'p12'=>array(
 			'application/pkcs12',
-			'application/x-pkcs12'
+			'application/x-pkcs12',
 		),
 		'p2p'=>array(
-			'application/vnd.wfa.p2p'
+			'application/vnd.wfa.p2p',
 		),
 		'p65'=>array(
 			'application/x-ole-storage',
-			'application/x-pagemaker'
+			'application/x-pagemaker',
 		),
 		'p7b'=>array(
-			'application/x-pkcs7-certificates'
+			'application/x-pkcs7-certificates',
 		),
 		'p7c'=>array(
-			'application/pkcs7-mime'
+			'application/pkcs7-mime',
 		),
 		'p7m'=>array(
-			'application/pkcs7-mime'
+			'application/pkcs7-mime',
 		),
 		'p7r'=>array(
-			'application/x-pkcs7-certreqresp'
+			'application/x-pkcs7-certreqresp',
 		),
 		'p7s'=>array(
 			'application/pkcs7-signature',
-			'text/plain'
+			'text/plain',
 		),
 		'p8'=>array(
-			'application/pkcs8'
+			'application/pkcs8',
 		),
 		'p8e'=>array(
-			'application/pkcs8-encrypted'
+			'application/pkcs8-encrypted',
 		),
 		'pack'=>array(
-			'application/x-java-pack200'
+			'application/x-java-pack200',
 		),
 		'package'=>array(
-			'application/vnd.autopackage'
+			'application/vnd.autopackage',
 		),
 		'pages'=>array(
 			'application/vnd.apple.iwork',
-			'application/vnd.apple.pages'
+			'application/vnd.apple.pages',
 		),
 		'pak'=>array(
-			'application/x-pak'
+			'application/x-pak',
 		),
 		'par2'=>array(
-			'application/x-par2'
+			'application/x-par2',
 		),
 		'part'=>array(
-			'application/x-partial-download'
+			'application/x-partial-download',
 		),
 		'pas'=>array(
 			'text/plain',
-			'text/x-pascal'
+			'text/x-pascal',
 		),
 		'pat'=>array(
-			'image/x-gimp-pat'
+			'image/x-gimp-pat',
 		),
 		'patch'=>array(
 			'text/plain',
 			'text/x-diff',
-			'text/x-patch'
+			'text/x-patch',
 		),
 		'path'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'paw'=>array(
-			'application/vnd.pawaafile'
+			'application/vnd.pawaafile',
 		),
 		'pbd'=>array(
 			'application/vnd.powerbuilder6',
@@ -4452,207 +4455,204 @@ class aliases {
 			'application/vnd.powerbuilder7',
 			'application/vnd.powerbuilder7-s',
 			'application/vnd.powerbuilder75',
-			'application/vnd.powerbuilder75-s'
+			'application/vnd.powerbuilder75-s',
 		),
 		'pbm'=>array(
 			'image/x-portable-anymap',
-			'image/x-portable-bitmap'
+			'image/x-portable-bitmap',
 		),
 		'pcap'=>array(
 			'application/pcap',
 			'application/vnd.tcpdump.pcap',
-			'application/x-pcap'
+			'application/x-pcap',
 		),
 		'pcd'=>array(
-			'image/x-photo-cd'
+			'image/x-photo-cd',
 		),
 		'pce'=>array(
-			'application/x-pc-engine-rom'
+			'application/x-pc-engine-rom',
 		),
 		'pcf'=>array(
 			'application/x-cisco-vpn-settings',
-			'application/x-font-pcf'
+			'application/x-font-pcf',
 		),
 		'pcl'=>array(
-			'application/vnd.hp-pcl'
+			'application/vnd.hp-pcl',
 		),
 		'pclxl'=>array(
-			'application/vnd.hp-pclxl'
+			'application/vnd.hp-pclxl',
 		),
 		'pct'=>array(
-			'image/x-pict'
+			'image/x-pict',
 		),
 		'pcurl'=>array(
-			'application/vnd.curl.pcurl'
+			'application/vnd.curl.pcurl',
 		),
 		'pcx'=>array(
 			'image/vnd.zbrush.pcx',
 			'image/x-pc-paintbrush',
-			'image/x-pcx'
+			'image/x-pcx',
 		),
 		'pdb'=>array(
 			'application/vnd.palm',
 			'application/x-aportisdoc',
 			'application/x-palm-database',
 			'application/x-pilot',
-			'chemical/x-pdb'
+			'chemical/x-pdb',
 		),
 		'pdc'=>array(
 			'application/vnd.palm',
-			'application/x-aportisdoc'
+			'application/x-aportisdoc',
 		),
 		'pdf'=>array(
 			'application/acrobat',
 			'application/nappdf',
 			'application/pdf',
 			'application/x-pdf',
-			'image/pdf'
-		),
-		'pdx'=>array(
-			'application/pdx'
+			'image/pdf',
 		),
 		'pef'=>array(
 			'image/x-dcraw',
 			'image/x-pentax-pef',
-			'image/x-raw-pentax'
+			'image/x-raw-pentax',
 		),
 		'pem'=>array(
-			'application/x-x509-ca-cert'
+			'application/x-x509-ca-cert',
 		),
 		'pen'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'perl'=>array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
-			'text/x-perl'
+			'text/x-perl',
 		),
 		'pfa'=>array(
 			'application/postscript',
-			'application/x-font-type1'
+			'application/x-font-type1',
 		),
 		'pfb'=>array(
 			'application/postscript',
-			'application/x-font-type1'
+			'application/x-font-type1',
 		),
 		'pfm'=>array(
 			'application/x-font-printer-metric',
-			'application/x-font-type1'
+			'application/x-font-type1',
 		),
 		'pfr'=>array(
 			'application/font-tdpfr',
-			'application/vnd.dvb.pfr'
+			'application/vnd.dvb.pfr',
 		),
 		'pfx'=>array(
 			'application/pkcs12',
-			'application/x-pkcs12'
+			'application/x-pkcs12',
 		),
 		'pgm'=>array(
 			'image/x-portable-anymap',
-			'image/x-portable-graymap'
+			'image/x-portable-graymap',
 		),
 		'pgn'=>array(
 			'application/vnd.chess-pgn',
 			'application/x-chess-pgn',
-			'text/plain'
+			'text/plain',
 		),
 		'pgp'=>array(
 			'application/pgp',
 			'application/pgp-encrypted',
 			'application/pgp-keys',
 			'application/pgp-signature',
-			'text/plain'
+			'text/plain',
 		),
 		'php'=>array(
 			'application/x-php',
 			'text/plain',
-			'text/x-php'
+			'text/x-php',
 		),
 		'php3'=>array(
 			'application/x-php',
 			'text/plain',
-			'text/x-php'
+			'text/x-php',
 		),
 		'php4'=>array(
 			'application/x-php',
 			'text/plain',
-			'text/x-php'
+			'text/x-php',
 		),
 		'php5'=>array(
 			'application/x-php',
-			'text/plain'
+			'text/plain',
 		),
 		'phps'=>array(
 			'application/x-php',
-			'text/plain'
+			'text/plain',
 		),
 		'pic'=>array(
 			'image/vnd.radiance',
-			'image/x-pict'
+			'image/x-pict',
 		),
 		'pict'=>array(
-			'image/x-pict'
+			'image/x-pict',
 		),
 		'pict1'=>array(
-			'image/x-pict'
+			'image/x-pict',
 		),
 		'pict2'=>array(
-			'image/x-pict'
+			'image/x-pict',
 		),
 		'pil'=>array(
-			'application/vnd.piaccess.application-licence'
+			'application/vnd.piaccess.application-licence',
 		),
 		'pk'=>array(
-			'application/x-tex-pk'
+			'application/x-tex-pk',
 		),
 		'pkg'=>array(
 			'application/octet-stream',
 			'application/vnd.apple.installer+xml',
-			'application/x-xar'
+			'application/x-xar',
 		),
 		'pki'=>array(
-			'application/pkixcmp'
+			'application/pkixcmp',
 		),
 		'pkipath'=>array(
-			'application/pkix-pkipath'
+			'application/pkix-pkipath',
 		),
 		'pkr'=>array(
 			'application/pgp-keys',
-			'text/plain'
+			'text/plain',
 		),
 		'pl'=>array(
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
-			'text/x-perl'
+			'text/x-perl',
 		),
 		'pla'=>array(
-			'audio/x-iriver-pla'
+			'audio/x-iriver-pla',
 		),
 		'plb'=>array(
-			'application/vnd.3gpp.pic-bw-large'
+			'application/vnd.3gpp.pic-bw-large',
 		),
 		'plc'=>array(
-			'application/vnd.mobius.plc'
+			'application/vnd.mobius.plc',
 		),
 		'plf'=>array(
-			'application/vnd.pocketlearn'
+			'application/vnd.pocketlearn',
 		),
 		'plj'=>array(
-			'audio/vnd.everad.plj'
+			'audio/vnd.everad.plj',
 		),
 		'pln'=>array(
-			'application/x-planperfect'
+			'application/x-planperfect',
 		),
 		'plp'=>array(
-			'application/vnd.panoply'
+			'application/vnd.panoply',
 		),
 		'pls'=>array(
 			'application/pls',
 			'application/pls+xml',
 			'audio/scpls',
-			'audio/x-scpls'
+			'audio/x-scpls',
 		),
 		'pm'=>array(
 			'application/x-executable',
@@ -4660,48 +4660,48 @@ class aliases {
 			'application/x-pagemaker',
 			'application/x-perl',
 			'text/plain',
-			'text/x-perl'
+			'text/x-perl',
 		),
 		'pm6'=>array(
 			'application/x-ole-storage',
-			'application/x-pagemaker'
+			'application/x-pagemaker',
 		),
 		'pmd'=>array(
 			'application/x-ole-storage',
-			'application/x-pagemaker'
+			'application/x-pagemaker',
 		),
 		'pml'=>array(
-			'application/vnd.ctc-posml'
+			'application/vnd.ctc-posml',
 		),
 		'png'=>array(
 			'image/png',
-			'image/vnd.mozilla.apng'
+			'image/vnd.mozilla.apng',
 		),
 		'pnm'=>array(
-			'image/x-portable-anymap'
+			'image/x-portable-anymap',
 		),
 		'pntg'=>array(
-			'image/x-macpaint'
+			'image/x-macpaint',
 		),
 		'po'=>array(
 			'application/x-gettext',
 			'text/plain',
 			'text/x-gettext-translation',
-			'text/x-po'
+			'text/x-po',
 		),
 		'pod'=>array(
 			'application/x-executable',
 			'application/x-perl',
-			'text/plain'
+			'text/plain',
 		),
 		'pom'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'por'=>array(
-			'application/x-spss-por'
+			'application/x-spss-por',
 		),
 		'portpkg'=>array(
-			'application/vnd.macports.portpkg'
+			'application/vnd.macports.portpkg',
 		),
 		'pot'=>array(
 			'application/mspowerpoint',
@@ -4711,140 +4711,140 @@ class aliases {
 			'application/x-mspowerpoint',
 			'text/plain',
 			'text/x-gettext-translation-template',
-			'text/x-pot'
+			'text/x-pot',
 		),
 		'potm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.template.macroenabled.12',
-			'application/vnd.openxmlformats-officedocument.presentationml.template'
+			'application/vnd.openxmlformats-officedocument.presentationml.template',
 		),
 		'potx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml-template',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
-			'application/zip'
+			'application/zip',
 		),
 		'pp'=>array(
 			'text/plain',
-			'text/x-pascal'
+			'text/x-pascal',
 		),
 		'ppa'=>array(
 			'application/mspowerpoint',
 			'application/vnd.ms-office',
-			'application/vnd.ms-powerpoint'
+			'application/vnd.ms-powerpoint',
 		),
 		'ppam'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.ms-powerpoint.addin.macroenabled.12'
+			'application/vnd.ms-powerpoint.addin.macroenabled.12',
 		),
 		'ppd'=>array(
-			'application/vnd.cups-ppd'
+			'application/vnd.cups-ppd',
 		),
 		'ppdgz'=>array(
-			'application/vnd.cups-ppd'
+			'application/vnd.cups-ppd',
 		),
 		'ppj'=>array(
 			'application/xml',
-			'image/vnd.adobe.premiere'
+			'image/vnd.adobe.premiere',
 		),
 		'ppkg'=>array(
-			'application/vnd.xmpie.ppkg'
+			'application/vnd.xmpie.ppkg',
 		),
 		'ppm'=>array(
 			'image/x-portable-anymap',
-			'image/x-portable-pixmap'
+			'image/x-portable-pixmap',
 		),
 		'pps'=>array(
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
-			'application/x-mspowerpoint'
+			'application/x-mspowerpoint',
 		),
 		'ppsm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.slideshow.macroenabled.12',
-			'application/vnd.openxmlformats-officedocument.presentationml.slideshow'
+			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
 		),
 		'ppsx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
-			'application/zip'
+			'application/zip',
 		),
 		'ppt'=>array(
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
-			'application/x-mspowerpoint'
+			'application/x-mspowerpoint',
 		),
 		'pptm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.presentation.macroenabled.12',
-			'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
 		'ppttc'=>array(
-			'application/vnd.think-cell.ppttc+json'
+			'application/vnd.think-cell.ppttc+json',
 		),
 		'pptx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
-			'application/zip'
+			'application/zip',
 		),
 		'ppz'=>array(
 			'application/mspowerpoint',
 			'application/powerpoint',
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint',
-			'application/x-mspowerpoint'
+			'application/x-mspowerpoint',
 		),
 		'pqa'=>array(
 			'application/vnd.palm',
-			'application/x-palm-database'
+			'application/x-palm-database',
 		),
 		'prc'=>array(
 			'application/vnd.palm',
 			'application/x-mobipocket-ebook',
 			'application/x-palm-database',
-			'application/x-pilot'
+			'application/x-pilot',
 		),
 		'pre'=>array(
-			'application/vnd.lotus-freelance'
+			'application/vnd.lotus-freelance',
 		),
 		'preminet'=>array(
-			'application/vnd.preminet'
+			'application/vnd.preminet',
 		),
 		'prf'=>array(
-			'application/pics-rules'
+			'application/pics-rules',
 		),
 		'pro'=>array(
 			'text/plain',
-			'text/x-prolog'
+			'text/x-prolog',
 		),
 		'project'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'properties'=>array(
 			'text/plain',
 			'text/properties',
 			'text/x-java-properties',
-			'text/x-properties'
+			'text/x-properties',
 		),
 		'provx'=>array(
-			'application/provenance+xml'
+			'application/provenance+xml',
 		),
 		'prt'=>array(
-			'application/x-prt'
+			'application/x-prt',
 		),
 		'prz'=>array(
-			'application/vnd.lotus-freelance'
+			'application/vnd.lotus-freelance',
 		),
 		'ps'=>array(
 			'application/postscript',
-			'text/plain'
+			'text/plain',
 		),
 		'psb'=>array(
-			'application/vnd.3gpp.pic-bw-small'
+			'application/vnd.3gpp.pic-bw-small',
 		),
 		'psd'=>array(
 			'application/photoshop',
@@ -4853,355 +4853,356 @@ class aliases {
 			'image/psd',
 			'image/vnd.adobe.photoshop',
 			'image/x-photoshop',
-			'image/x-psd'
+			'image/x-psd',
 		),
 		'pseg3820'=>array(
-			'application/vnd.ibm.modcap'
+			'application/vnd.afpc.modca',
+			'application/vnd.ibm.modcap',
 		),
 		'psf'=>array(
 			'application/x-font-linux-psf',
-			'audio/x-psf'
+			'audio/x-psf',
 		),
 		'psflib'=>array(
 			'audio/x-psf',
-			'audio/x-psflib'
+			'audio/x-psflib',
 		),
 		'psfs'=>array(
-			'application/vnd.psfs'
+			'application/vnd.psfs',
 		),
 		'psid'=>array(
-			'audio/prs.sid'
+			'audio/prs.sid',
 		),
 		'pskcxml'=>array(
-			'application/pskc+xml'
+			'application/pskc+xml',
 		),
 		'pst'=>array(
-			'application/vnd.ms-outlook-pst'
+			'application/vnd.ms-outlook-pst',
 		),
 		'psw'=>array(
-			'application/x-pocket-word'
+			'application/x-pocket-word',
 		),
 		'pti'=>array(
-			'image/prs.pti'
+			'image/prs.pti',
 		),
 		'ptid'=>array(
-			'application/vnd.pvi.ptid1'
+			'application/vnd.pvi.ptid1',
 		),
 		'ptx'=>array(
-			'image/x-raw-pentax'
+			'image/x-raw-pentax',
 		),
 		'pub'=>array(
 			'application/vnd.ms-publisher',
 			'application/x-mspublisher',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'pvb'=>array(
-			'application/vnd.3gpp.pic-bw-var'
+			'application/vnd.3gpp.pic-bw-var',
 		),
 		'pw'=>array(
-			'application/x-pw'
+			'application/x-pw',
 		),
 		'pwn'=>array(
-			'application/vnd.3m.post-it-notes'
+			'application/vnd.3m.post-it-notes',
 		),
 		'pxn'=>array(
-			'image/x-raw-logitech'
+			'image/x-raw-logitech',
 		),
 		'py'=>array(
 			'application/x-executable',
 			'text/plain',
 			'text/x-python',
-			'text/x-python3'
+			'text/x-python3',
 		),
 		'py3'=>array(
 			'text/x-python',
-			'text/x-python3'
+			'text/x-python3',
 		),
 		'py3x'=>array(
 			'text/x-python',
-			'text/x-python3'
+			'text/x-python3',
 		),
 		'pya'=>array(
-			'audio/vnd.ms-playready.media.pya'
+			'audio/vnd.ms-playready.media.pya',
 		),
 		'pyc'=>array(
-			'application/x-python-bytecode'
+			'application/x-python-bytecode',
 		),
 		'pyo'=>array(
-			'application/x-python-bytecode'
+			'application/x-python-bytecode',
 		),
 		'pyv'=>array(
-			'video/vnd.ms-playready.media.pyv'
+			'video/vnd.ms-playready.media.pyv',
 		),
 		'pyx'=>array(
 			'application/x-executable',
-			'text/x-python'
+			'text/x-python',
 		),
 		'qam'=>array(
-			'application/vnd.epson.quickanime'
+			'application/vnd.epson.quickanime',
 		),
 		'qbo'=>array(
-			'application/vnd.intu.qbo'
+			'application/vnd.intu.qbo',
 		),
 		'qca'=>array(
-			'application/vnd.ericsson.quickcall'
+			'application/vnd.ericsson.quickcall',
 		),
 		'qcall'=>array(
-			'application/vnd.ericsson.quickcall'
+			'application/vnd.ericsson.quickcall',
 		),
 		'qfx'=>array(
-			'application/vnd.intu.qfx'
+			'application/vnd.intu.qfx',
 		),
 		'qif'=>array(
 			'application/x-qw',
-			'image/x-quicktime'
+			'image/x-quicktime',
 		),
 		'qml'=>array(
-			'text/x-qml'
+			'text/x-qml',
 		),
 		'qmlproject'=>array(
-			'text/x-qml'
+			'text/x-qml',
 		),
 		'qmltypes'=>array(
-			'text/x-qml'
+			'text/x-qml',
 		),
 		'qp'=>array(
-			'application/x-qpress'
+			'application/x-qpress',
 		),
 		'qps'=>array(
-			'application/vnd.publishare-delta-tree'
+			'application/vnd.publishare-delta-tree',
 		),
 		'qpw'=>array(
-			'application/x-quattro-pro'
+			'application/x-quattro-pro',
 		),
 		'qt'=>array(
 			'application/quicktime',
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'qti'=>array(
 			'application/x-qtiplot',
-			'text/plain'
+			'text/plain',
 		),
 		'qtif'=>array(
-			'image/x-quicktime'
+			'image/x-quicktime',
 		),
 		'qtl'=>array(
 			'application/x-quicktime-media-link',
 			'application/x-quicktimeplayer',
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'qtvr'=>array(
-			'video/quicktime'
+			'video/quicktime',
 		),
 		'qwd'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'qwt'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'qxb'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'qxd'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'qxl'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'qxt'=>array(
-			'application/vnd.quark.quarkxpress'
+			'application/vnd.quark.quarkxpress',
 		),
 		'r3d'=>array(
-			'image/x-raw-red'
+			'image/x-raw-red',
 		),
 		'ra'=>array(
 			'audio/vnd.m-realaudio',
 			'audio/vnd.rn-realaudio',
 			'audio/x-pn-realaudio',
-			'audio/x-realaudio'
+			'audio/x-realaudio',
 		),
 		'raf'=>array(
 			'image/x-dcraw',
 			'image/x-fuji-raf',
-			'image/x-raw-fuji'
+			'image/x-raw-fuji',
 		),
 		'ram'=>array(
 			'application/ram',
 			'audio/x-pn-realaudio',
-			'audio/x-realaudio'
+			'audio/x-realaudio',
 		),
 		'raml'=>array(
 			'application/raml+yaml',
-			'application/x-yaml'
+			'application/x-yaml',
 		),
 		'rapd'=>array(
-			'application/route-apd+xml'
+			'application/route-apd+xml',
 		),
 		'rar'=>array(
 			'application/vnd.rar',
 			'application/x-rar',
-			'application/x-rar-compressed'
+			'application/x-rar-compressed',
 		),
 		'ras'=>array(
-			'image/x-cmu-raster'
+			'image/x-cmu-raster',
 		),
 		'raw'=>array(
 			'image/x-dcraw',
 			'image/x-panasonic-raw',
 			'image/x-panasonic-rw',
-			'image/x-raw-panasonic'
+			'image/x-raw-panasonic',
 		),
 		'raw-disk-image'=>array(
-			'application/x-raw-disk-image'
+			'application/x-raw-disk-image',
 		),
 		'rax'=>array(
 			'audio/vnd.m-realaudio',
 			'audio/vnd.rn-realaudio',
-			'audio/x-pn-realaudio'
+			'audio/x-pn-realaudio',
 		),
 		'rb'=>array(
 			'application/x-executable',
 			'application/x-ruby',
 			'text/plain',
-			'text/x-ruby'
+			'text/x-ruby',
 		),
 		'rcprofile'=>array(
-			'application/vnd.ipunplugged.rcprofile'
+			'application/vnd.ipunplugged.rcprofile',
 		),
 		'rct'=>array(
-			'application/prs.nprend'
+			'application/prs.nprend',
 		),
 		'rdf'=>array(
 			'application/rdf+xml',
 			'application/xml',
-			'text/rdf'
+			'text/rdf',
 		),
 		'rdf-crypt'=>array(
-			'application/prs.rdf-xml-crypt'
+			'application/prs.rdf-xml-crypt',
 		),
 		'rdfs'=>array(
 			'application/rdf+xml',
 			'application/xml',
-			'text/rdf'
+			'text/rdf',
 		),
 		'rdz'=>array(
-			'application/vnd.data-vision.rdz'
+			'application/vnd.data-vision.rdz',
 		),
 		'reg'=>array(
 			'text/plain',
-			'text/x-ms-regedit'
+			'text/x-ms-regedit',
 		),
 		'rej'=>array(
 			'application/x-reject',
 			'text/plain',
-			'text/x-reject'
+			'text/x-reject',
 		),
 		'relo'=>array(
-			'application/p2p-overlay+xml'
+			'application/p2p-overlay+xml',
 		),
 		'rep'=>array(
 			'application/vnd.businessobjects',
-			'application/vnd.hcl-bireports'
+			'application/vnd.hcl-bireports',
 		),
 		'req'=>array(
-			'application/vnd.nervana'
+			'application/vnd.nervana',
 		),
 		'request'=>array(
-			'application/vnd.nervana'
+			'application/vnd.nervana',
 		),
 		'res'=>array(
-			'application/x-dtbresource+xml'
+			'application/x-dtbresource+xml',
 		),
 		'rest'=>array(
 			'text/plain',
-			'text/x-rst'
+			'text/x-rst',
 		),
 		'restx'=>array(
 			'text/plain',
-			'text/x-rst'
+			'text/x-rst',
 		),
 		'rexx'=>array(
 			'text/plain',
-			'text/x-rexx'
+			'text/x-rexx',
 		),
 		'rgb'=>array(
-			'image/x-rgb'
+			'image/x-rgb',
 		),
 		'rgbe'=>array(
-			'image/vnd.radiance'
+			'image/vnd.radiance',
 		),
 		'rif'=>array(
-			'application/reginfo+xml'
+			'application/reginfo+xml',
 		),
 		'rip'=>array(
-			'audio/vnd.rip'
+			'audio/vnd.rip',
 		),
 		'ris'=>array(
-			'application/x-research-info-systems'
+			'application/x-research-info-systems',
 		),
 		'rl'=>array(
-			'application/resource-lists+xml'
+			'application/resource-lists+xml',
 		),
 		'rlc'=>array(
-			'image/vnd.fujixerox.edmics-rlc'
+			'image/vnd.fujixerox.edmics-rlc',
 		),
 		'rld'=>array(
-			'application/resource-lists-diff+xml'
+			'application/resource-lists-diff+xml',
 		),
 		'rle'=>array(
-			'image/rle'
+			'image/rle',
 		),
 		'rm'=>array(
 			'application/vnd.rn-realmedia',
 			'application/vnd.rn-realmedia-vbr',
 			'audio/vnd.hns.audio',
-			'video/vnd.hns.video'
+			'video/vnd.hns.video',
 		),
 		'rmi'=>array(
-			'audio/midi'
+			'audio/midi',
 		),
 		'rmj'=>array(
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr'
+			'application/vnd.rn-realmedia-vbr',
 		),
 		'rmm'=>array(
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr'
+			'application/vnd.rn-realmedia-vbr',
 		),
 		'rmp'=>array(
-			'audio/x-pn-realaudio-plugin'
+			'audio/x-pn-realaudio-plugin',
 		),
 		'rms'=>array(
 			'application/vnd.jcp.javame.midlet-rms',
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr'
+			'application/vnd.rn-realmedia-vbr',
 		),
 		'rmvb'=>array(
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr'
+			'application/vnd.rn-realmedia-vbr',
 		),
 		'rmx'=>array(
 			'application/vnd.rn-realmedia',
-			'application/vnd.rn-realmedia-vbr'
+			'application/vnd.rn-realmedia-vbr',
 		),
 		'rnc'=>array(
 			'application/relax-ng-compact-syntax',
 			'application/x-rnc',
-			'text/plain'
+			'text/plain',
 		),
 		'rnd'=>array(
-			'application/prs.nprend'
+			'application/prs.nprend',
 		),
 		'rng'=>array(
 			'application/xml',
 			'text/plain',
-			'text/xml'
+			'text/xml',
 		),
 		'rnx'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'roa'=>array(
-			'application/rpki-roa'
+			'application/rpki-roa',
 		),
 		'roff'=>array(
 			'application/x-troff',
@@ -5210,835 +5211,835 @@ class aliases {
 			'application/x-troff-ms',
 			'text/plain',
 			'text/troff',
-			'text/x-troff'
+			'text/x-troff',
 		),
 		'roles'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'rp'=>array(
-			'image/vnd.rn-realpix'
+			'image/vnd.rn-realpix',
 		),
 		'rp9'=>array(
-			'application/vnd.cloanto.rp9'
+			'application/vnd.cloanto.rp9',
 		),
 		'rpm'=>array(
 			'application/x-redhat-package-manager',
-			'application/x-rpm'
+			'application/x-rpm',
 		),
 		'rpss'=>array(
-			'application/vnd.nokia.radio-presets'
+			'application/vnd.nokia.radio-presets',
 		),
 		'rpst'=>array(
-			'application/vnd.nokia.radio-preset'
+			'application/vnd.nokia.radio-preset',
 		),
 		'rq'=>array(
-			'application/sparql-query'
+			'application/sparql-query',
 		),
 		'rs'=>array(
 			'application/rls-services+xml',
 			'text/plain',
-			'text/rust'
+			'text/rust',
 		),
 		'rsd'=>array(
-			'application/rsd+xml'
+			'application/rsd+xml',
 		),
 		'rsheet'=>array(
-			'application/urc-ressheet+xml'
+			'application/urc-ressheet+xml',
 		),
 		'rsm'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'rss'=>array(
 			'application/rss+xml',
 			'application/xml',
-			'text/rss'
+			'text/rss',
 		),
 		'rst'=>array(
 			'text/plain',
 			'text/prs.fallenstein.rst',
-			'text/x-rst'
+			'text/x-rst',
 		),
 		'rt'=>array(
-			'text/vnd.rn-realtext'
+			'text/vnd.rn-realtext',
 		),
 		'rtf'=>array(
 			'application/rtf',
 			'text/plain',
-			'text/rtf'
+			'text/rtf',
 		),
 		'rtx'=>array(
 			'text/plain',
-			'text/richtext'
+			'text/richtext',
 		),
 		'run'=>array(
-			'application/x-makeself'
+			'application/x-makeself',
 		),
 		'rusd'=>array(
-			'application/route-usd+xml'
+			'application/route-usd+xml',
 		),
 		'rv'=>array(
 			'video/vnd.rn-realvideo',
-			'video/x-real-video'
+			'video/x-real-video',
 		),
 		'rvx'=>array(
 			'video/vnd.rn-realvideo',
-			'video/x-real-video'
+			'video/x-real-video',
 		),
 		'rw2'=>array(
 			'image/x-dcraw',
 			'image/x-panasonic-raw2',
 			'image/x-panasonic-rw2',
-			'image/x-raw-panasonic'
+			'image/x-raw-panasonic',
 		),
 		'rwz'=>array(
-			'image/x-raw-rawzor'
+			'image/x-raw-rawzor',
 		),
 		's'=>array(
-			'text/x-asm'
+			'text/x-asm',
 		),
 		's11'=>array(
-			'video/vnd.sealed.mpeg1'
+			'video/vnd.sealed.mpeg1',
 		),
 		's14'=>array(
-			'video/vnd.sealed.mpeg4'
+			'video/vnd.sealed.mpeg4',
 		),
 		's1a'=>array(
-			'application/vnd.sealedmedia.softseal-pdf'
+			'application/vnd.sealedmedia.softseal-pdf',
 		),
 		's1e'=>array(
-			'application/vnd.sealed-xls'
+			'application/vnd.sealed-xls',
 		),
 		's1g'=>array(
-			'image/vnd.sealedmedia.softseal-gif'
+			'image/vnd.sealedmedia.softseal-gif',
 		),
 		's1h'=>array(
-			'application/vnd.sealedmedia.softseal-html'
+			'application/vnd.sealedmedia.softseal-html',
 		),
 		's1j'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
+			'image/vnd.sealedmedia.softseal-jpg',
 		),
 		's1m'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
+			'audio/vnd.sealedmedia.softseal-mpeg',
 		),
 		's1n'=>array(
-			'image/vnd.sealed-png'
+			'image/vnd.sealed-png',
 		),
 		's1p'=>array(
-			'application/vnd.sealed-ppt'
+			'application/vnd.sealed-ppt',
 		),
 		's1q'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
+			'video/vnd.sealedmedia.softseal-mov',
 		),
 		's1w'=>array(
-			'application/vnd.sealed-doc'
+			'application/vnd.sealed-doc',
 		),
 		's3df'=>array(
-			'application/vnd.sealed.3df'
+			'application/vnd.sealed.3df',
 		),
 		's3m'=>array(
 			'audio/s3m',
-			'audio/x-s3m'
+			'audio/x-s3m',
 		),
 		's7m'=>array(
-			'application/x-sas-dmdb'
+			'application/x-sas-dmdb',
 		),
 		'sa7'=>array(
-			'application/x-sas-access'
+			'application/x-sas-access',
 		),
 		'sac'=>array(
-			'application/tamp-sequence-adjust-confirm'
+			'application/tamp-sequence-adjust-confirm',
 		),
 		'saf'=>array(
-			'application/vnd.yamaha.smaf-audio'
+			'application/vnd.yamaha.smaf-audio',
 		),
 		'sam'=>array(
-			'application/x-amipro'
+			'application/x-amipro',
 		),
 		'sami'=>array(
 			'application/x-sami',
-			'text/plain'
+			'text/plain',
 		),
 		'sap'=>array(
-			'application/x-thomson-sap-image'
+			'application/x-thomson-sap-image',
 		),
 		'sas'=>array(
 			'application/x-sas',
-			'text/plain'
+			'text/plain',
 		),
 		'sas7bacs'=>array(
-			'application/x-sas-access'
+			'application/x-sas-access',
 		),
 		'sas7baud'=>array(
-			'application/x-sas-audit'
+			'application/x-sas-audit',
 		),
 		'sas7bbak'=>array(
-			'application/x-sas-backup'
+			'application/x-sas-backup',
 		),
 		'sas7bcat'=>array(
-			'application/x-sas-catalog'
+			'application/x-sas-catalog',
 		),
 		'sas7bdat'=>array(
-			'application/x-sas-data'
+			'application/x-sas-data',
 		),
 		'sas7bdmd'=>array(
-			'application/x-sas-dmdb'
+			'application/x-sas-dmdb',
 		),
 		'sas7bfdb'=>array(
-			'application/x-sas-fdb'
+			'application/x-sas-fdb',
 		),
 		'sas7bitm'=>array(
-			'application/x-sas-itemstor'
+			'application/x-sas-itemstor',
 		),
 		'sas7bmdb'=>array(
-			'application/x-sas-mddb'
+			'application/x-sas-mddb',
 		),
 		'sas7bndx'=>array(
-			'application/x-sas-data-index'
+			'application/x-sas-data-index',
 		),
 		'sas7bpgm'=>array(
-			'application/x-sas-program-data'
+			'application/x-sas-program-data',
 		),
 		'sas7bput'=>array(
-			'application/x-sas-putility'
+			'application/x-sas-putility',
 		),
 		'sas7butl'=>array(
-			'application/x-sas-utility'
+			'application/x-sas-utility',
 		),
 		'sas7bvew'=>array(
-			'application/x-sas-view'
+			'application/x-sas-view',
 		),
 		'sass'=>array(
 			'text/plain',
-			'text/x-sass'
+			'text/x-sass',
 		),
 		'sav'=>array(
 			'application/x-spss-sav',
-			'application/x-spss-savefile'
+			'application/x-spss-savefile',
 		),
 		'sbml'=>array(
-			'application/sbml+xml'
+			'application/sbml+xml',
 		),
 		'sc'=>array(
-			'application/vnd.ibm.secure-container'
+			'application/vnd.ibm.secure-container',
 		),
 		'sc7'=>array(
-			'application/x-sas-catalog'
+			'application/x-sas-catalog',
 		),
 		'scala'=>array(
 			'text/plain',
-			'text/x-scala'
+			'text/x-scala',
 		),
 		'scd'=>array(
 			'application/vnd.scribus',
-			'application/x-msschedule'
+			'application/x-msschedule',
 		),
 		'scdgz'=>array(
-			'application/vnd.scribus'
+			'application/vnd.scribus',
 		),
 		'sce'=>array(
-			'application/vnd.etsi.asic-e+zip'
+			'application/vnd.etsi.asic-e+zip',
 		),
 		'schemas'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'scld'=>array(
-			'application/vnd.doremir.scorecloud-binary-document'
+			'application/vnd.doremir.scorecloud-binary-document',
 		),
 		'scm'=>array(
 			'application/vnd.lotus-screencam',
 			'text/plain',
-			'text/x-scheme'
+			'text/x-scheme',
 		),
 		'scope'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'scq'=>array(
-			'application/scvp-cv-request'
+			'application/scvp-cv-request',
 		),
 		'scs'=>array(
 			'application/scvp-cv-response',
-			'application/vnd.etsi.asic-s+zip'
+			'application/vnd.etsi.asic-s+zip',
 		),
 		'scsf'=>array(
-			'application/vnd.sealed.csf'
+			'application/vnd.sealed.csf',
 		),
 		'scss'=>array(
 			'text/plain',
-			'text/x-scss'
+			'text/x-scss',
 		),
 		'scurl'=>array(
-			'text/vnd.curl.scurl'
+			'text/vnd.curl.scurl',
 		),
 		'sd2'=>array(
-			'application/x-sas-data-v6'
+			'application/x-sas-data-v6',
 		),
 		'sd7'=>array(
-			'application/x-sas-data'
+			'application/x-sas-data',
 		),
 		'sda'=>array(
-			'application/vnd.stardivision.draw'
+			'application/vnd.stardivision.draw',
 		),
 		'sdc'=>array(
-			'application/vnd.stardivision.calc'
+			'application/vnd.stardivision.calc',
 		),
 		'sdd'=>array(
-			'application/vnd.stardivision.impress'
+			'application/vnd.stardivision.impress',
 		),
 		'sdf'=>array(
-			'application/vnd.kinar'
+			'application/vnd.kinar',
 		),
 		'sdkd'=>array(
-			'application/vnd.solent.sdkm+xml'
+			'application/vnd.solent.sdkm+xml',
 		),
 		'sdkm'=>array(
-			'application/vnd.solent.sdkm+xml'
+			'application/vnd.solent.sdkm+xml',
 		),
 		'sdo'=>array(
-			'application/vnd.sealed-doc'
+			'application/vnd.sealed-doc',
 		),
 		'sdoc'=>array(
-			'application/vnd.sealed-doc'
+			'application/vnd.sealed-doc',
 		),
 		'sdp'=>array(
 			'application/sdp',
 			'application/vnd.sdp',
 			'application/vnd.stardivision.impress',
 			'application/x-sdp',
-			'text/plain'
+			'text/plain',
 		),
 		'sds'=>array(
-			'application/vnd.stardivision.chart'
+			'application/vnd.stardivision.chart',
 		),
 		'sdw'=>array(
 			'application/vnd.stardivision.writer',
-			'application/vnd.stardivision.writer-global'
+			'application/vnd.stardivision.writer-global',
 		),
 		'sea'=>array(
-			'application/x-sea'
+			'application/x-sea',
 		),
 		'sed'=>array(
 			'text/plain',
-			'text/x-sed'
+			'text/x-sed',
 		),
 		'see'=>array(
-			'application/vnd.seemail'
+			'application/vnd.seemail',
 		),
 		'seed'=>array(
 			'application/vnd.fdsn.mseed',
-			'application/vnd.fdsn.seed'
+			'application/vnd.fdsn.seed',
 		),
 		'sem'=>array(
-			'application/vnd.sealed-eml'
+			'application/vnd.sealed-eml',
 		),
 		'sema'=>array(
-			'application/vnd.sema'
+			'application/vnd.sema',
 		),
 		'semd'=>array(
-			'application/vnd.semd'
+			'application/vnd.semd',
 		),
 		'semf'=>array(
-			'application/vnd.semf'
+			'application/vnd.semf',
 		),
 		'seml'=>array(
-			'application/vnd.sealed-eml'
+			'application/vnd.sealed-eml',
 		),
 		'ser'=>array(
-			'application/java-serialized-object'
+			'application/java-serialized-object',
 		),
 		'service'=>array(
 			'text/plain',
 			'text/x-dbus-service',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'setpay'=>array(
-			'application/set-payment-initiation'
+			'application/set-payment-initiation',
 		),
 		'setreg'=>array(
-			'application/set-registration-initiation'
+			'application/set-registration-initiation',
 		),
 		'sf7'=>array(
-			'application/x-sas-fdb'
+			'application/x-sas-fdb',
 		),
 		'sfc'=>array(
 			'application/vnd.nintendo.snes.rom',
-			'application/x-snes-rom'
+			'application/x-snes-rom',
 		),
 		'sfd'=>array(
-			'application/vnd.font-fontforge-sfd'
+			'application/vnd.font-fontforge-sfd',
 		),
 		'sfd-hdstx'=>array(
-			'application/vnd.hydrostatix.sof-data'
+			'application/vnd.hydrostatix.sof-data',
 		),
 		'sfdu'=>array(
 			'application/x-sfdu',
-			'text/plain'
+			'text/plain',
 		),
 		'sfs'=>array(
-			'application/vnd.spotfire.sfs'
+			'application/vnd.spotfire.sfs',
 		),
 		'sfv'=>array(
-			'text/x-sfv'
+			'text/x-sfv',
 		),
 		'sg'=>array(
-			'application/x-sg1000-rom'
+			'application/x-sg1000-rom',
 		),
 		'sgb'=>array(
-			'application/x-gameboy-rom'
+			'application/x-gameboy-rom',
 		),
 		'sgf'=>array(
 			'application/x-go-sgf',
-			'text/plain'
+			'text/plain',
 		),
 		'sgi'=>array(
 			'image/sgi',
 			'image/vnd.sealedmedia.softseal-gif',
-			'image/x-sgi'
+			'image/x-sgi',
 		),
 		'sgif'=>array(
-			'image/vnd.sealedmedia.softseal-gif'
+			'image/vnd.sealedmedia.softseal-gif',
 		),
 		'sgl'=>array(
 			'application/vnd.stardivision.writer',
-			'application/vnd.stardivision.writer-global'
+			'application/vnd.stardivision.writer-global',
 		),
 		'sgm'=>array(
 			'text/plain',
-			'text/sgml'
+			'text/sgml',
 		),
 		'sgml'=>array(
 			'text/plain',
-			'text/sgml'
+			'text/sgml',
 		),
 		'sh'=>array(
 			'application/x-executable',
 			'application/x-sh',
 			'application/x-shellscript',
 			'text/plain',
-			'text/x-sh'
+			'text/x-sh',
 		),
 		'shape'=>array(
 			'application/x-dia-shape',
-			'application/xml'
+			'application/xml',
 		),
 		'shar'=>array(
-			'application/x-shar'
+			'application/x-shar',
 		),
 		'shf'=>array(
-			'application/shf+xml'
+			'application/shf+xml',
 		),
 		'shn'=>array(
 			'application/x-shorten',
-			'audio/x-shorten'
+			'audio/x-shorten',
 		),
 		'shp'=>array(
-			'application/x-shapefile'
+			'application/x-shapefile',
 		),
 		'shtml'=>array(
-			'text/html'
+			'text/html',
 		),
 		'shw'=>array(
-			'application/x-corelpresentations'
+			'application/x-corelpresentations',
 		),
 		'si7'=>array(
-			'application/x-sas-data-index'
+			'application/x-sas-data-index',
 		),
 		'siag'=>array(
-			'application/x-siag'
+			'application/x-siag',
 		),
 		'sid'=>array(
 			'audio/prs.sid',
-			'image/x-mrsid-image'
+			'image/x-mrsid-image',
 		),
 		'sig'=>array(
 			'application/pgp-signature',
-			'text/plain'
+			'text/plain',
 		),
 		'sik'=>array(
-			'application/x-trash'
+			'application/x-trash',
 		),
 		'sil'=>array(
-			'audio/silk'
+			'audio/silk',
 		),
 		'silo'=>array(
-			'model/mesh'
+			'model/mesh',
 		),
 		'sis'=>array(
-			'application/vnd.symbian.install'
+			'application/vnd.symbian.install',
 		),
 		'sisx'=>array(
 			'application/vnd.symbian.install',
-			'x-epoc/x-sisx-app'
+			'x-epoc/x-sisx-app',
 		),
 		'sit'=>array(
 			'application/stuffit',
 			'application/x-sit',
-			'application/x-stuffit'
+			'application/x-stuffit',
 		),
 		'sitx'=>array(
-			'application/x-stuffitx'
+			'application/x-stuffitx',
 		),
 		'siv'=>array(
 			'application/sieve',
-			'application/xml'
+			'application/xml',
 		),
 		'sjp'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
+			'image/vnd.sealedmedia.softseal-jpg',
 		),
 		'sjpg'=>array(
-			'image/vnd.sealedmedia.softseal-jpg'
+			'image/vnd.sealedmedia.softseal-jpg',
 		),
 		'sk'=>array(
-			'image/x-skencil'
+			'image/x-skencil',
 		),
 		'sk1'=>array(
-			'image/x-skencil'
+			'image/x-skencil',
 		),
 		'skd'=>array(
 			'application/vnd.koan',
-			'application/x-koan'
+			'application/x-koan',
 		),
 		'skm'=>array(
 			'application/vnd.koan',
-			'application/x-koan'
+			'application/x-koan',
 		),
 		'skp'=>array(
 			'application/vnd.koan',
-			'application/x-koan'
+			'application/x-koan',
 		),
 		'skr'=>array(
 			'application/pgp-keys',
-			'text/plain'
+			'text/plain',
 		),
 		'skt'=>array(
 			'application/vnd.koan',
-			'application/x-koan'
+			'application/x-koan',
 		),
 		'sla'=>array(
-			'application/vnd.scribus'
+			'application/vnd.scribus',
 		),
 		'slagz'=>array(
-			'application/vnd.scribus'
+			'application/vnd.scribus',
 		),
 		'slaz'=>array(
-			'application/vnd.scribus'
+			'application/vnd.scribus',
 		),
 		'sldasm'=>array(
-			'application/sldworks'
+			'application/sldworks',
 		),
 		'slddrw'=>array(
-			'application/sldworks'
+			'application/sldworks',
 		),
 		'sldm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-powerpoint.slide.macroenabled.12',
-			'application/vnd.openxmlformats-officedocument.presentationml.slide'
+			'application/vnd.openxmlformats-officedocument.presentationml.slide',
 		),
 		'sldprt'=>array(
-			'application/sldworks'
+			'application/sldworks',
 		),
 		'sldx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.presentationml.slide',
-			'application/zip'
+			'application/zip',
 		),
 		'slice'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'slk'=>array(
 			'text/plain',
-			'text/spreadsheet'
+			'text/spreadsheet',
 		),
 		'sls'=>array(
-			'application/route-s-tsid+xml'
+			'application/route-s-tsid+xml',
 		),
 		'slt'=>array(
-			'application/vnd.epson.salt'
+			'application/vnd.epson.salt',
 		),
 		'sm'=>array(
-			'application/vnd.stepmania.stepchart'
+			'application/vnd.stepmania.stepchart',
 		),
 		'sm7'=>array(
-			'application/x-sas-mddb'
+			'application/x-sas-mddb',
 		),
 		'smaf'=>array(
 			'application/vnd.smaf',
-			'application/x-smaf'
+			'application/x-smaf',
 		),
 		'smc'=>array(
 			'application/vnd.nintendo.snes.rom',
-			'application/x-snes-rom'
+			'application/x-snes-rom',
 		),
 		'smd'=>array(
 			'application/vnd.stardivision.mail',
-			'application/x-genesis-rom'
+			'application/x-genesis-rom',
 		),
 		'smf'=>array(
-			'application/vnd.stardivision.math'
+			'application/vnd.stardivision.math',
 		),
 		'smh'=>array(
-			'application/vnd.sealed-mht'
+			'application/vnd.sealed-mht',
 		),
 		'smht'=>array(
-			'application/vnd.sealed-mht'
+			'application/vnd.sealed-mht',
 		),
 		'smi'=>array(
 			'application/smil',
 			'application/smil+xml',
 			'application/x-sami',
 			'application/xml',
-			'text/plain'
+			'text/plain',
 		),
 		'smil'=>array(
 			'application/smil',
 			'application/smil+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'sml'=>array(
 			'application/smil',
 			'application/smil+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'smo'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
+			'video/vnd.sealedmedia.softseal-mov',
 		),
 		'smov'=>array(
-			'video/vnd.sealedmedia.softseal-mov'
+			'video/vnd.sealedmedia.softseal-mov',
 		),
 		'smp'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
+			'audio/vnd.sealedmedia.softseal-mpeg',
 		),
 		'smp3'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg'
+			'audio/vnd.sealedmedia.softseal-mpeg',
 		),
 		'smpg'=>array(
 			'video/vnd.sealed.mpeg1',
-			'video/vnd.sealed.mpeg4'
+			'video/vnd.sealed.mpeg4',
 		),
 		'sms'=>array(
 			'application/vnd.3gpp.sms',
 			'application/vnd.3gpp2.sms',
-			'application/x-sms-rom'
+			'application/x-sms-rom',
 		),
 		'smv'=>array(
-			'video/x-smv'
+			'video/x-smv',
 		),
 		'smzip'=>array(
-			'application/vnd.stepmania.package'
+			'application/vnd.stepmania.package',
 		),
 		'snap'=>array(
 			'application/vnd.snap',
-			'application/vnd.squashfs'
+			'application/vnd.squashfs',
 		),
 		'snd'=>array(
-			'audio/basic'
+			'audio/basic',
 		),
 		'snf'=>array(
-			'application/x-font-snf'
+			'application/x-font-snf',
 		),
 		'so'=>array(
 			'application/octet-stream',
-			'application/x-sharedlib'
+			'application/x-sharedlib',
 		),
 		'socket'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'sp7'=>array(
-			'application/x-sas-putility'
+			'application/x-sas-putility',
 		),
 		'spc'=>array(
-			'application/x-pkcs7-certificates'
+			'application/x-pkcs7-certificates',
 		),
 		'spd'=>array(
 			'application/vnd.sealedmedia.softseal-pdf',
-			'application/x-font-speedo'
+			'application/x-font-speedo',
 		),
 		'spdf'=>array(
-			'application/vnd.sealedmedia.softseal-pdf'
+			'application/vnd.sealedmedia.softseal-pdf',
 		),
 		'spec'=>array(
 			'text/plain',
-			'text/x-rpm-spec'
+			'text/x-rpm-spec',
 		),
 		'spf'=>array(
-			'application/vnd.yamaha.smaf-phrase'
+			'application/vnd.yamaha.smaf-phrase',
 		),
 		'spl'=>array(
 			'application/futuresplash',
 			'application/vnd.adobe.flash.movie',
 			'application/x-futuresplash',
-			'application/x-shockwave-flash'
+			'application/x-shockwave-flash',
 		),
 		'spm'=>array(
 			'application/x-rpm',
-			'application/x-source-rpm'
+			'application/x-source-rpm',
 		),
 		'spn'=>array(
-			'image/vnd.sealed-png'
+			'image/vnd.sealed-png',
 		),
 		'spng'=>array(
-			'image/vnd.sealed-png'
+			'image/vnd.sealed-png',
 		),
 		'spo'=>array(
-			'text/vnd.in3d.spot'
+			'text/vnd.in3d.spot',
 		),
 		'spot'=>array(
-			'text/vnd.in3d.spot'
+			'text/vnd.in3d.spot',
 		),
 		'spp'=>array(
 			'application/scvp-vp-response',
-			'application/vnd.sealed-ppt'
+			'application/vnd.sealed-ppt',
 		),
 		'sppt'=>array(
-			'application/vnd.sealed-ppt'
+			'application/vnd.sealed-ppt',
 		),
 		'spq'=>array(
-			'application/scvp-vp-request'
+			'application/scvp-vp-request',
 		),
 		'spx'=>array(
 			'application/x-speex',
 			'audio/ogg',
 			'audio/speex',
-			'audio/x-speex'
+			'audio/x-speex',
 		),
 		'sql'=>array(
 			'application/sql',
 			'application/x-sql',
 			'text/plain',
-			'text/x-sql'
+			'text/x-sql',
 		),
 		'sqsh'=>array(
-			'application/vnd.squashfs'
+			'application/vnd.squashfs',
 		),
 		'sr'=>array(
-			'application/vnd.sigrok.session'
+			'application/vnd.sigrok.session',
 		),
 		'sr2'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
-			'image/x-sony-sr2'
+			'image/x-sony-sr2',
 		),
 		'sr7'=>array(
-			'application/x-sas-itemstor'
+			'application/x-sas-itemstor',
 		),
 		'src'=>array(
 			'application/x-wais-source',
-			'text/plain'
+			'text/plain',
 		),
 		'srf'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
-			'image/x-sony-srf'
+			'image/x-sony-srf',
 		),
 		'srl'=>array(
-			'application/sereal'
+			'application/sereal',
 		),
 		'srt'=>array(
 			'application/x-srt',
 			'application/x-subrip',
-			'text/plain'
+			'text/plain',
 		),
 		'sru'=>array(
-			'application/sru+xml'
+			'application/sru+xml',
 		),
 		'srx'=>array(
-			'application/sparql-results+xml'
+			'application/sparql-results+xml',
 		),
 		'ss'=>array(
 			'text/plain',
-			'text/x-scheme'
+			'text/x-scheme',
 		),
 		'ss7'=>array(
-			'application/x-sas-program-data'
+			'application/x-sas-program-data',
 		),
 		'ssa'=>array(
 			'text/plain',
-			'text/x-ssa'
+			'text/x-ssa',
 		),
 		'ssdl'=>array(
-			'application/ssdl+xml'
+			'application/ssdl+xml',
 		),
 		'sse'=>array(
-			'application/vnd.kodak-descriptor'
+			'application/vnd.kodak-descriptor',
 		),
 		'ssf'=>array(
-			'application/vnd.epson.ssf'
+			'application/vnd.epson.ssf',
 		),
 		'ssml'=>array(
-			'application/ssml+xml'
+			'application/ssml+xml',
 		),
 		'ssw'=>array(
-			'video/vnd.sealed-swf'
+			'video/vnd.sealed-swf',
 		),
 		'sswf'=>array(
-			'video/vnd.sealed-swf'
+			'video/vnd.sealed-swf',
 		),
 		'st'=>array(
 			'application/vnd.sailingtracker.track',
 			'text/plain',
-			'text/x-stsrc'
+			'text/x-stsrc',
 		),
 		'st7'=>array(
-			'application/x-sas-audit'
+			'application/x-sas-audit',
 		),
 		'stc'=>array(
 			'application/vnd.sun.xml.calc.template',
-			'application/zip'
+			'application/zip',
 		),
 		'std'=>array(
 			'application/vnd.sun.xml.draw.template',
-			'application/zip'
+			'application/zip',
 		),
 		'stf'=>array(
-			'application/vnd.wt.stf'
+			'application/vnd.wt.stf',
 		),
 		'sti'=>array(
 			'application/vnd.sun.xml.impress.template',
-			'application/zip'
+			'application/zip',
 		),
 		'stif'=>array(
-			'application/vnd.sealed-tiff'
+			'application/vnd.sealed-tiff',
 		),
 		'stk'=>array(
-			'application/hyperstudio'
+			'application/hyperstudio',
 		),
 		'stl'=>array(
 			'application/vnd.ms-pki.stl',
 			'model/stl',
 			'model/x.stl-ascii',
 			'model/x.stl-binary',
-			'text/plain'
+			'text/plain',
 		),
 		'stm'=>array(
 			'application/vnd.sealedmedia.softseal-html',
-			'audio/x-stm'
+			'audio/x-stm',
 		),
 		'stml'=>array(
-			'application/vnd.sealedmedia.softseal-html'
+			'application/vnd.sealedmedia.softseal-html',
 		),
 		'str'=>array(
-			'application/vnd.pg.format'
+			'application/vnd.pg.format',
 		),
 		'study-inter'=>array(
-			'application/vnd.vd-study'
+			'application/vnd.vd-study',
 		),
 		'stw'=>array(
 			'application/vnd.sun.xml.writer.template',
-			'application/zip'
+			'application/zip',
 		),
 		'stx'=>array(
-			'application/x-sas-transport'
+			'application/x-sas-transport',
 		),
 		'sty'=>array(
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'su7'=>array(
-			'application/x-sas-utility'
+			'application/x-sas-utility',
 		),
 		'sub'=>array(
 			'image/vnd.dvb.subtitle',
@@ -6046,234 +6047,234 @@ class aliases {
 			'text/vnd.dvb.subtitle',
 			'text/x-microdvd',
 			'text/x-mpsub',
-			'text/x-subviewer'
+			'text/x-subviewer',
 		),
 		'sun'=>array(
-			'image/x-sun-raster'
+			'image/x-sun-raster',
 		),
 		'sus'=>array(
-			'application/vnd.sus-calendar'
+			'application/vnd.sus-calendar',
 		),
 		'susp'=>array(
-			'application/vnd.sus-calendar'
+			'application/vnd.sus-calendar',
 		),
 		'sv'=>array(
 			'text/x-svsrc',
-			'text/x-verilog'
+			'text/x-verilog',
 		),
 		'sv4cpio'=>array(
-			'application/x-sv4cpio'
+			'application/x-sv4cpio',
 		),
 		'sv4crc'=>array(
-			'application/x-sv4crc'
+			'application/x-sv4crc',
 		),
 		'sv7'=>array(
-			'application/x-sas-view'
+			'application/x-sas-view',
 		),
 		'svc'=>array(
 			'application/vnd.dvb.service',
-			'application/vnd.dvbservice'
+			'application/vnd.dvbservice',
 		),
 		'svd'=>array(
-			'application/vnd.svd'
+			'application/vnd.svd',
 		),
 		'svg'=>array(
 			'application/xml',
-			'image/svg+xml'
+			'image/svg+xml',
 		),
 		'svgz'=>array(
 			'application/gzip',
 			'application/xml',
 			'image/svg+xml',
-			'image/svg+xml-compressed'
+			'image/svg+xml-compressed',
 		),
 		'svh'=>array(
 			'text/x-svhdr',
-			'text/x-verilog'
+			'text/x-verilog',
 		),
 		'swa'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'swap'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'swf'=>array(
 			'application/futuresplash',
 			'application/vnd.adobe.flash.movie',
-			'application/x-shockwave-flash'
+			'application/x-shockwave-flash',
 		),
 		'swi'=>array(
 			'application/vnd.arastra.swi',
-			'application/vnd.aristanetworks.swi'
+			'application/vnd.aristanetworks.swi',
 		),
 		'swm'=>array(
-			'application/x-ms-wim'
+			'application/x-ms-wim',
 		),
 		'sxc'=>array(
 			'application/vnd.sun.xml.calc',
-			'application/zip'
+			'application/zip',
 		),
 		'sxd'=>array(
 			'application/vnd.sun.xml.draw',
-			'application/zip'
+			'application/zip',
 		),
 		'sxg'=>array(
 			'application/vnd.sun.xml.writer.global',
-			'application/zip'
+			'application/zip',
 		),
 		'sxi'=>array(
 			'application/vnd.sun.xml.impress',
 			'application/vnd.vd-study',
-			'application/zip'
+			'application/zip',
 		),
 		'sxl'=>array(
-			'application/vnd.sealed-xls'
+			'application/vnd.sealed-xls',
 		),
 		'sxls'=>array(
-			'application/vnd.sealed-xls'
+			'application/vnd.sealed-xls',
 		),
 		'sxm'=>array(
 			'application/vnd.sun.xml.math',
-			'application/zip'
+			'application/zip',
 		),
 		'sxw'=>array(
 			'application/vnd.sun.xml.writer',
 			'application/x-vnd.sun.xml.writer',
-			'application/zip'
+			'application/zip',
 		),
 		'sylk'=>array(
 			'text/plain',
-			'text/spreadsheet'
+			'text/spreadsheet',
 		),
 		'sz'=>array(
-			'application/x-snappy-framed'
+			'application/x-snappy-framed',
 		),
 		't'=>array(
-			'text/troff'
+			'text/troff',
 		),
 		't2t'=>array(
 			'text/plain',
-			'text/x-txt2tags'
+			'text/x-txt2tags',
 		),
 		't3'=>array(
-			'application/x-t3vm-image'
+			'application/x-t3vm-image',
 		),
 		't38'=>array(
-			'image/t38'
+			'image/t38',
 		),
 		'taglet'=>array(
-			'application/vnd.mynfc'
+			'application/vnd.mynfc',
 		),
 		'tam'=>array(
-			'application/vnd.onepager'
+			'application/vnd.onepager',
 		),
 		'tamp'=>array(
-			'application/vnd.onepagertamp'
+			'application/vnd.onepagertamp',
 		),
 		'tamx'=>array(
-			'application/vnd.onepagertamx'
+			'application/vnd.onepagertamx',
 		),
 		'tao'=>array(
-			'application/vnd.tao.intent-module-archive'
+			'application/vnd.tao.intent-module-archive',
 		),
 		'tap'=>array(
-			'image/vnd.tencent.tap'
+			'image/vnd.tencent.tap',
 		),
 		'tar'=>array(
 			'application/x-gtar',
-			'application/x-tar'
+			'application/x-tar',
 		),
 		'target'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'tat'=>array(
-			'application/vnd.onepagertat'
+			'application/vnd.onepagertat',
 		),
 		'tatp'=>array(
-			'application/vnd.onepagertatp'
+			'application/vnd.onepagertatp',
 		),
 		'tatx'=>array(
-			'application/vnd.onepagertatx'
+			'application/vnd.onepagertatx',
 		),
 		'tau'=>array(
-			'application/tamp-apex-update'
+			'application/tamp-apex-update',
 		),
 		'taz'=>array(
 			'application/x-compress',
-			'application/x-tarz'
+			'application/x-tarz',
 		),
 		'tb2'=>array(
 			'application/x-bzip',
-			'application/x-bzip-compressed-tar'
+			'application/x-bzip-compressed-tar',
 		),
 		'tbz'=>array(
 			'application/x-bzip',
-			'application/x-bzip-compressed-tar'
+			'application/x-bzip-compressed-tar',
 		),
 		'tbz2'=>array(
 			'application/x-bzip',
 			'application/x-bzip-compressed-tar',
-			'application/x-bzip2'
+			'application/x-bzip2',
 		),
 		'tcap'=>array(
-			'application/vnd.3gpp2.tcap'
+			'application/vnd.3gpp2.tcap',
 		),
 		'tcl'=>array(
 			'application/x-tcl',
 			'text/plain',
-			'text/x-tcl'
+			'text/x-tcl',
 		),
 		'tcsh'=>array(
-			'application/x-csh'
+			'application/x-csh',
 		),
 		'tcu'=>array(
-			'application/tamp-community-update'
+			'application/tamp-community-update',
 		),
 		'teacher'=>array(
-			'application/vnd.smart.teacher'
+			'application/vnd.smart.teacher',
 		),
 		'tei'=>array(
-			'application/tei+xml'
+			'application/tei+xml',
 		),
 		'teicorpus'=>array(
-			'application/tei+xml'
+			'application/tei+xml',
 		),
 		'ter'=>array(
-			'application/tamp-error'
+			'application/tamp-error',
 		),
 		'tex'=>array(
 			'application/x-tex',
 			'text/plain',
-			'text/x-tex'
+			'text/x-tex',
 		),
 		'texi'=>array(
 			'application/x-texinfo',
 			'text/plain',
-			'text/x-texinfo'
+			'text/x-texinfo',
 		),
 		'texinfo'=>array(
 			'application/x-texinfo',
 			'text/plain',
-			'text/x-texinfo'
+			'text/x-texinfo',
 		),
 		'text'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'tfi'=>array(
-			'application/thraud+xml'
+			'application/thraud+xml',
 		),
 		'tfm'=>array(
-			'application/x-tex-tfm'
+			'application/x-tex-tfm',
 		),
 		'tfx'=>array(
-			'image/tiff-fx'
+			'image/tiff-fx',
 		),
 		'tga'=>array(
 			'image/x-icb',
 			'image/x-targa',
-			'image/x-tga'
+			'image/x-tga',
 		),
 		'tgz'=>array(
 			'application/gzip',
@@ -6283,84 +6284,84 @@ class aliases {
 			'application/x-gunzip',
 			'application/x-gzip',
 			'application/x-gzip-compressed',
-			'gzip/document'
+			'gzip/document',
 		),
 		'the'=>array(
-			'message/global-headers'
+			'message/global-headers',
 		),
 		'theme'=>array(
 			'application/x-desktop',
-			'application/x-theme'
+			'application/x-theme',
 		),
 		'themepack'=>array(
 			'application/vnd.ms-cab-compressed',
-			'application/x-windows-themepack'
+			'application/x-windows-themepack',
 		),
 		'thmx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-officetheme',
-			'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+			'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 		),
 		'tif'=>array(
-			'image/tiff'
+			'image/tiff',
 		),
 		'tiff'=>array(
-			'image/tiff'
+			'image/tiff',
 		),
 		'timer'=>array(
 			'text/plain',
-			'text/x-systemd-unit'
+			'text/x-systemd-unit',
 		),
 		'tk'=>array(
 			'application/x-tcl',
 			'text/plain',
-			'text/x-tcl'
+			'text/x-tcl',
 		),
 		'tlclient'=>array(
-			'application/vnd.cendio.thinlinc.clientconf'
+			'application/vnd.cendio.thinlinc.clientconf',
 		),
 		'tld'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'tlrz'=>array(
 			'application/x-lrzip',
-			'application/x-lrzip-compressed-tar'
+			'application/x-lrzip-compressed-tar',
 		),
 		'tlz'=>array(
 			'application/x-lzma',
-			'application/x-lzma-compressed-tar'
+			'application/x-lzma-compressed-tar',
 		),
 		'tmo'=>array(
-			'application/vnd.tmobile-livetv'
+			'application/vnd.tmobile-livetv',
 		),
 		'tnef'=>array(
 			'application/ms-tnef',
-			'application/vnd.ms-tnef'
+			'application/vnd.ms-tnef',
 		),
 		'tnf'=>array(
 			'application/ms-tnef',
-			'application/vnd.ms-tnef'
+			'application/vnd.ms-tnef',
 		),
 		'toast'=>array(
 			'application/x-iso9660-image',
-			'application/x-roxio-toast'
+			'application/x-roxio-toast',
 		),
 		'toc'=>array(
 			'application/x-cdrdao-toc',
-			'text/plain'
+			'text/plain',
 		),
 		'torrent'=>array(
-			'application/x-bittorrent'
+			'application/x-bittorrent',
 		),
 		'tpic'=>array(
 			'image/x-icb',
-			'image/x-tga'
+			'image/x-tga',
 		),
 		'tpl'=>array(
-			'application/vnd.groove-tool-template'
+			'application/vnd.groove-tool-template',
 		),
 		'tpt'=>array(
-			'application/vnd.trid.tpt'
+			'application/vnd.trid.tpt',
 		),
 		'tr'=>array(
 			'application/x-troff',
@@ -6369,376 +6370,376 @@ class aliases {
 			'application/x-troff-ms',
 			'text/plain',
 			'text/troff',
-			'text/x-troff'
+			'text/x-troff',
 		),
 		'tra'=>array(
-			'application/vnd.trueapp'
+			'application/vnd.trueapp',
 		),
 		'tree'=>array(
-			'application/vnd.rainstor.data'
+			'application/vnd.rainstor.data',
 		),
 		'trig'=>array(
 			'application/trig',
 			'application/x-trig',
-			'text/plain'
+			'text/plain',
 		),
 		'trm'=>array(
-			'application/x-msterminal'
+			'application/x-msterminal',
 		),
 		'ts'=>array(
 			'application/x-linguist',
 			'application/xml',
 			'text/vnd.qt.linguist',
 			'text/vnd.trolltech.linguist',
-			'video/mp2t'
+			'video/mp2t',
 		),
 		'tsa'=>array(
-			'application/tamp-sequence-adjust'
+			'application/tamp-sequence-adjust',
 		),
 		'tsd'=>array(
-			'application/timestamped-data'
+			'application/timestamped-data',
 		),
 		'tsq'=>array(
-			'application/tamp-status-query'
+			'application/tamp-status-query',
 		),
 		'tsr'=>array(
-			'application/tamp-status-response'
+			'application/tamp-status-response',
 		),
 		'tst'=>array(
-			'application/vnd.etsi.timestamp-token'
+			'application/vnd.etsi.timestamp-token',
 		),
 		'tsv'=>array(
 			'text/plain',
-			'text/tab-separated-values'
+			'text/tab-separated-values',
 		),
 		'tta'=>array(
 			'audio/tta',
-			'audio/x-tta'
+			'audio/x-tta',
 		),
 		'ttc'=>array(
 			'application/x-font-ttf',
-			'font/collection'
+			'font/collection',
 		),
 		'ttf'=>array(
 			'application/x-font-ttf',
-			'font/ttf'
+			'font/ttf',
 		),
 		'ttl'=>array(
 			'text/plain',
-			'text/turtle'
+			'text/turtle',
 		),
 		'ttml'=>array(
-			'application/ttml+xml'
+			'application/ttml+xml',
 		),
 		'ttx'=>array(
 			'application/x-font-ttx',
-			'application/xml'
+			'application/xml',
 		),
 		'tuc'=>array(
-			'application/tamp-update-confirm'
+			'application/tamp-update-confirm',
 		),
 		'tur'=>array(
-			'application/tamp-update'
+			'application/tamp-update',
 		),
 		'twd'=>array(
-			'application/vnd.simtech-mindmapper'
+			'application/vnd.simtech-mindmapper',
 		),
 		'twds'=>array(
-			'application/vnd.simtech-mindmapper'
+			'application/vnd.simtech-mindmapper',
 		),
 		'twig'=>array(
 			'text/plain',
-			'text/x-twig'
+			'text/x-twig',
 		),
 		'txd'=>array(
-			'application/vnd.genomatix.tuxedo'
+			'application/vnd.genomatix.tuxedo',
 		),
 		'txf'=>array(
-			'application/vnd.mobius.txf'
+			'application/vnd.mobius.txf',
 		),
 		'txt'=>array(
 			'text/plain',
 			'text/prs.fallenstein.rst',
-			'text/prs.prop.logic'
+			'text/prs.prop.logic',
 		),
 		'txz'=>array(
 			'application/x-xz',
-			'application/x-xz-compressed-tar'
+			'application/x-xz-compressed-tar',
 		),
 		'types'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'tzo'=>array(
 			'application/x-lzop',
-			'application/x-tzo'
+			'application/x-tzo',
 		),
 		'u32'=>array(
-			'application/x-authorware-bin'
+			'application/x-authorware-bin',
 		),
 		'uc2'=>array(
-			'application/x-uc2-compressed'
+			'application/x-uc2-compressed',
 		),
 		'udeb'=>array(
 			'application/vnd.debian.binary-package',
 			'application/x-archive',
 			'application/x-deb',
-			'application/x-debian-package'
+			'application/x-debian-package',
 		),
 		'ufd'=>array(
-			'application/vnd.ufdl'
+			'application/vnd.ufdl',
 		),
 		'ufdl'=>array(
-			'application/vnd.ufdl'
+			'application/vnd.ufdl',
 		),
 		'ufraw'=>array(
 			'application/x-ufraw',
-			'application/xml'
+			'application/xml',
 		),
 		'ui'=>array(
 			'application/x-designer',
 			'application/x-gtk-builder',
-			'application/xml'
+			'application/xml',
 		),
 		'uil'=>array(
 			'text/plain',
-			'text/x-uil'
+			'text/x-uil',
 		),
 		'ult'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'ulx'=>array(
-			'application/x-glulx'
+			'application/x-glulx',
 		),
 		'umj'=>array(
-			'application/vnd.umajin'
+			'application/vnd.umajin',
 		),
 		'unf'=>array(
-			'application/x-nes-rom'
+			'application/x-nes-rom',
 		),
 		'uni'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'unif'=>array(
-			'application/x-nes-rom'
+			'application/x-nes-rom',
 		),
 		'unityweb'=>array(
-			'application/vnd.unity'
+			'application/vnd.unity',
 		),
 		'uo'=>array(
-			'application/vnd.uoml+xml'
+			'application/vnd.uoml+xml',
 		),
 		'uoml'=>array(
-			'application/vnd.uoml+xml'
+			'application/vnd.uoml+xml',
 		),
 		'uri'=>array(
-			'text/uri-list'
+			'text/uri-list',
 		),
 		'uric'=>array(
-			'text/vnd.si.uricatalogue'
+			'text/vnd.si.uricatalogue',
 		),
 		'urim'=>array(
-			'application/vnd.uri-map'
+			'application/vnd.uri-map',
 		),
 		'uris'=>array(
-			'text/uri-list'
+			'text/uri-list',
 		),
 		'url'=>array(
-			'application/x-mswinurl'
+			'application/x-mswinurl',
 		),
 		'urls'=>array(
-			'text/uri-list'
+			'text/uri-list',
 		),
 		'ustar'=>array(
-			'application/x-ustar'
+			'application/x-ustar',
 		),
 		'utz'=>array(
-			'application/vnd.uiq.theme'
+			'application/vnd.uiq.theme',
 		),
 		'uu'=>array(
-			'text/x-uuencode'
+			'text/x-uuencode',
 		),
 		'uue'=>array(
 			'text/plain',
 			'text/x-uuencode',
-			'zz-application/zz-winassoc-uu'
+			'zz-application/zz-winassoc-uu',
 		),
 		'uva'=>array(
-			'audio/vnd.dece.audio'
+			'audio/vnd.dece.audio',
 		),
 		'uvd'=>array(
-			'application/vnd.dece.data'
+			'application/vnd.dece.data',
 		),
 		'uvf'=>array(
-			'application/vnd.dece.data'
+			'application/vnd.dece.data',
 		),
 		'uvg'=>array(
-			'image/vnd.dece.graphic'
+			'image/vnd.dece.graphic',
 		),
 		'uvh'=>array(
-			'video/vnd.dece.hd'
+			'video/vnd.dece.hd',
 		),
 		'uvi'=>array(
-			'image/vnd.dece.graphic'
+			'image/vnd.dece.graphic',
 		),
 		'uvm'=>array(
-			'video/vnd.dece.mobile'
+			'video/vnd.dece.mobile',
 		),
 		'uvp'=>array(
-			'video/vnd.dece.pd'
+			'video/vnd.dece.pd',
 		),
 		'uvs'=>array(
-			'video/vnd.dece.sd'
+			'video/vnd.dece.sd',
 		),
 		'uvt'=>array(
-			'application/vnd.dece.ttml+xml'
+			'application/vnd.dece.ttml+xml',
 		),
 		'uvu'=>array(
 			'video/vnd.dece-mp4',
 			'video/vnd.uvvu-mp4',
-			'video/vnd.uvvu.mp4'
+			'video/vnd.uvvu.mp4',
 		),
 		'uvv'=>array(
-			'video/vnd.dece.video'
+			'video/vnd.dece.video',
 		),
 		'uvva'=>array(
-			'audio/vnd.dece.audio'
+			'audio/vnd.dece.audio',
 		),
 		'uvvd'=>array(
-			'application/vnd.dece.data'
+			'application/vnd.dece.data',
 		),
 		'uvvf'=>array(
-			'application/vnd.dece.data'
+			'application/vnd.dece.data',
 		),
 		'uvvg'=>array(
-			'image/vnd.dece.graphic'
+			'image/vnd.dece.graphic',
 		),
 		'uvvh'=>array(
-			'video/vnd.dece.hd'
+			'video/vnd.dece.hd',
 		),
 		'uvvi'=>array(
-			'image/vnd.dece.graphic'
+			'image/vnd.dece.graphic',
 		),
 		'uvvm'=>array(
-			'video/vnd.dece.mobile'
+			'video/vnd.dece.mobile',
 		),
 		'uvvp'=>array(
-			'video/vnd.dece.pd'
+			'video/vnd.dece.pd',
 		),
 		'uvvs'=>array(
-			'video/vnd.dece.sd'
+			'video/vnd.dece.sd',
 		),
 		'uvvt'=>array(
-			'application/vnd.dece.ttml+xml'
+			'application/vnd.dece.ttml+xml',
 		),
 		'uvvu'=>array(
 			'video/vnd.dece-mp4',
 			'video/vnd.uvvu-mp4',
-			'video/vnd.uvvu.mp4'
+			'video/vnd.uvvu.mp4',
 		),
 		'uvvv'=>array(
-			'video/vnd.dece.video'
+			'video/vnd.dece.video',
 		),
 		'uvvx'=>array(
-			'application/vnd.dece.unspecified'
+			'application/vnd.dece.unspecified',
 		),
 		'uvvz'=>array(
-			'application/vnd.dece.zip'
+			'application/vnd.dece.zip',
 		),
 		'uvx'=>array(
-			'application/vnd.dece.unspecified'
+			'application/vnd.dece.unspecified',
 		),
 		'uvz'=>array(
-			'application/vnd.dece.zip'
+			'application/vnd.dece.zip',
 		),
 		'v64'=>array(
-			'application/x-n64-rom'
+			'application/x-n64-rom',
 		),
 		'vala'=>array(
 			'text/x-csrc',
-			'text/x-vala'
+			'text/x-vala',
 		),
 		'vapi'=>array(
 			'text/x-csrc',
-			'text/x-vala'
+			'text/x-vala',
 		),
 		'vb'=>array(
 			'application/x-virtual-boy-rom',
 			'text/x-vbasic',
-			'text/x-vbdotnet'
+			'text/x-vbdotnet',
 		),
 		'vbk'=>array(
-			'audio/vnd.nortel.vbk'
+			'audio/vnd.nortel.vbk',
 		),
 		'vbs'=>array(
 			'text/x-vbasic',
-			'text/x-vbscript'
+			'text/x-vbscript',
 		),
 		'vcard'=>array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
-			'text/x-vcard'
+			'text/x-vcard',
 		),
 		'vcd'=>array(
-			'application/x-cdlink'
+			'application/x-cdlink',
 		),
 		'vcf'=>array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
-			'text/x-vcard'
+			'text/x-vcard',
 		),
 		'vcg'=>array(
-			'application/vnd.groove-vcard'
+			'application/vnd.groove-vcard',
 		),
 		'vcj'=>array(
-			'application/voucher-cms+json'
+			'application/voucher-cms+json',
 		),
 		'vcs'=>array(
 			'application/ics',
 			'text/calendar',
 			'text/plain',
-			'text/x-vcalendar'
+			'text/x-vcalendar',
 		),
 		'vct'=>array(
 			'text/directory',
 			'text/plain',
 			'text/vcard',
-			'text/x-vcard'
+			'text/x-vcard',
 		),
 		'vcx'=>array(
-			'application/vnd.vcx'
+			'application/vnd.vcx',
 		),
 		'vda'=>array(
 			'image/x-icb',
 			'image/x-targa',
-			'image/x-tga'
+			'image/x-tga',
 		),
 		'vfr'=>array(
-			'application/vnd.tml'
+			'application/vnd.tml',
 		),
 		'vhd'=>array(
 			'text/plain',
-			'text/x-vhdl'
+			'text/x-vhdl',
 		),
 		'vhdl'=>array(
 			'text/plain',
-			'text/x-vhdl'
+			'text/x-vhdl',
 		),
 		'viaframe'=>array(
-			'application/vnd.tml'
+			'application/vnd.tml',
 		),
 		'vis'=>array(
 			'application/vnd.informix-visionary',
-			'application/vnd.visionary'
+			'application/vnd.visionary',
 		),
 		'viv'=>array(
 			'video/vivo',
-			'video/vnd.vivo'
+			'video/vnd.vivo',
 		),
 		'vivo'=>array(
 			'video/vivo',
-			'video/vnd.vivo'
+			'video/vnd.vivo',
 		),
 		'vlc'=>array(
 			'application/m3u',
@@ -6747,16 +6748,16 @@ class aliases {
 			'audio/x-m3u',
 			'audio/x-mp3-playlist',
 			'audio/x-mpegurl',
-			'text/plain'
+			'text/plain',
 		),
 		'vm'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'vmdk'=>array(
-			'application/x-vmdk'
+			'application/x-vmdk',
 		),
 		'vmt'=>array(
-			'application/vnd.valve.source.material'
+			'application/vnd.valve.source.material',
 		),
 		'vob'=>array(
 			'video/mpeg',
@@ -6764,142 +6765,142 @@ class aliases {
 			'video/x-mpeg',
 			'video/x-mpeg-system',
 			'video/x-mpeg2',
-			'video/x-ms-vob'
+			'video/x-ms-vob',
 		),
 		'voc'=>array(
-			'audio/x-voc'
+			'audio/x-voc',
 		),
 		'vor'=>array(
 			'application/vnd.stardivision.writer',
 			'application/vnd.stardivision.writer-global',
-			'application/x-staroffice-template'
+			'application/x-staroffice-template',
 		),
 		'vox'=>array(
-			'application/x-authorware-bin'
+			'application/x-authorware-bin',
 		),
 		'vpm'=>array(
-			'multipart/voice-message'
+			'multipart/voice-message',
 		),
 		'vrm'=>array(
 			'model/vrml',
-			'text/plain'
+			'text/plain',
 		),
 		'vrml'=>array(
 			'model/vrml',
-			'text/plain'
+			'text/plain',
 		),
 		'vsc'=>array(
 			'application/vnd.vidsoft.vidconference',
-			'application/vnd.vividence.scriptfile'
+			'application/vnd.vividence.scriptfile',
 		),
 		'vsd'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'vsdm'=>array(
 			'application/vnd.ms-visio.drawing.macroenabled.12',
 			'application/vnd.ms-visio.drawing.macroenabled.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vsdx'=>array(
 			'application/vnd.ms-visio.drawing',
 			'application/vnd.ms-visio.drawing.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vsf'=>array(
-			'application/vnd.vsf'
+			'application/vnd.vsf',
 		),
 		'vsl'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'vss'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'vssm'=>array(
 			'application/vnd.ms-visio.stencil.macroenabled.12',
 			'application/vnd.ms-visio.stencil.macroenabled.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vssx'=>array(
 			'application/vnd.ms-visio.stencil',
 			'application/vnd.ms-visio.stencil.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vst'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
 			'application/x-ole-storage',
 			'image/x-icb',
-			'image/x-tga'
+			'image/x-tga',
 		),
 		'vstm'=>array(
 			'application/vnd.ms-visio.template.macroenabled.12',
 			'application/vnd.ms-visio.template.macroenabled.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vstx'=>array(
 			'application/vnd.ms-visio.template',
 			'application/vnd.ms-visio.template.main+xml',
-			'application/zip'
+			'application/zip',
 		),
 		'vsw'=>array(
 			'application/vnd.ms-visio',
 			'application/vnd.visio',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'vtf'=>array(
-			'image/vnd.valve.source.texture'
+			'image/vnd.valve.source.texture',
 		),
 		'vtt'=>array(
 			'text/plain',
-			'text/vtt'
+			'text/vtt',
 		),
 		'vtu'=>array(
-			'model/vnd.vtu'
+			'model/vnd.vtu',
 		),
 		'vwx'=>array(
-			'application/vnd.vectorworks'
+			'application/vnd.vectorworks',
 		),
 		'vxm'=>array(
 			'application/ccxml+xml',
 			'application/pls+xml',
 			'application/srgs+xml',
 			'application/ssml+xml',
-			'application/voicexml+xml'
+			'application/voicexml+xml',
 		),
 		'vxml'=>array(
-			'application/voicexml+xml'
+			'application/voicexml+xml',
 		),
 		'w3d'=>array(
-			'application/x-director'
+			'application/x-director',
 		),
 		'w60'=>array(
-			'application/vnd.wordperfect'
+			'application/vnd.wordperfect',
 		),
 		'wad'=>array(
 			'application/x-doom',
 			'application/x-doom-wad',
-			'application/x-wii-wad'
+			'application/x-wii-wad',
 		),
 		'wadl'=>array(
-			'application/vnd.sun.wadl+xml'
+			'application/vnd.sun.wadl+xml',
 		),
 		'war'=>array(
 			'application/java-archive',
-			'application/x-tika-java-web-archive'
+			'application/x-tika-java-web-archive',
 		),
 		'warc'=>array(
-			'application/warc'
+			'application/warc',
 		),
 		'wav'=>array(
 			'audio/vnd.dts',
 			'audio/vnd.wave',
 			'audio/wav',
 			'audio/wave',
-			'audio/x-wav'
+			'audio/x-wav',
 		),
 		'wax'=>array(
 			'application/x-ms-asx',
@@ -6907,71 +6908,71 @@ class aliases {
 			'audio/x-ms-wax',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
-			'video/x-ms-wvx'
+			'video/x-ms-wvx',
 		),
 		'wb1'=>array(
 			'application/x-quattro-pro',
-			'application/x-quattropro'
+			'application/x-quattropro',
 		),
 		'wb2'=>array(
 			'application/x-quattro-pro',
-			'application/x-quattropro'
+			'application/x-quattropro',
 		),
 		'wb3'=>array(
 			'application/x-quattro-pro',
-			'application/x-quattropro'
+			'application/x-quattropro',
 		),
 		'wbmp'=>array(
 			'image/vnd-wap-wbmp',
-			'image/vnd.wap.wbmp'
+			'image/vnd.wap.wbmp',
 		),
 		'wbs'=>array(
-			'application/vnd.criticaltools.wbs+xml'
+			'application/vnd.criticaltools.wbs+xml',
 		),
 		'wbxml'=>array(
 			'application/vnd.wap-wbxml',
-			'application/vnd.wap.wbxml'
+			'application/vnd.wap.wbxml',
 		),
 		'wcm'=>array(
 			'application/vnd.ms-works',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'wdb'=>array(
 			'application/vnd.ms-works',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'wdp'=>array(
-			'image/vnd.ms-photo'
+			'image/vnd.ms-photo',
 		),
 		'weba'=>array(
-			'audio/webm'
+			'audio/webm',
 		),
 		'webarchive'=>array(
 			'application/x-bplist',
-			'application/x-webarchive'
+			'application/x-webarchive',
 		),
 		'webm'=>array(
 			'application/x-matroska',
-			'video/webm'
+			'video/webm',
 		),
 		'webp'=>array(
-			'image/webp'
+			'image/webp',
 		),
 		'wg'=>array(
-			'application/vnd.pmi.widget'
+			'application/vnd.pmi.widget',
 		),
 		'wgt'=>array(
-			'application/widget'
+			'application/widget',
 		),
 		'wif'=>array(
-			'application/watcherinfo+xml'
+			'application/watcherinfo+xml',
 		),
 		'wim'=>array(
-			'application/x-ms-wim'
+			'application/x-ms-wim',
 		),
 		'win'=>array(
 			'model/vnd.gdl',
-			'model/vnd.gs-gdl'
+			'model/vnd.gs-gdl',
 		),
 		'wk1'=>array(
 			'application/lotus123',
@@ -6979,7 +6980,7 @@ class aliases {
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
-			'zz-application/zz-winassoc-123'
+			'zz-application/zz-winassoc-123',
 		),
 		'wk3'=>array(
 			'application/lotus123',
@@ -6987,7 +6988,7 @@ class aliases {
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
-			'zz-application/zz-winassoc-123'
+			'zz-application/zz-winassoc-123',
 		),
 		'wk4'=>array(
 			'application/lotus123',
@@ -6995,10 +6996,10 @@ class aliases {
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
-			'zz-application/zz-winassoc-123'
+			'zz-application/zz-winassoc-123',
 		),
 		'wkdownload'=>array(
-			'application/x-partial-download'
+			'application/x-partial-download',
 		),
 		'wks'=>array(
 			'application/lotus123',
@@ -7008,22 +7009,22 @@ class aliases {
 			'application/x-123',
 			'application/x-lotus123',
 			'application/x-ole-storage',
-			'zz-application/zz-winassoc-123'
+			'zz-application/zz-winassoc-123',
 		),
 		'wm'=>array(
-			'video/x-ms-wm'
+			'video/x-ms-wm',
 		),
 		'wma'=>array(
 			'application/vnd.ms-asf',
 			'audio/wma',
 			'audio/x-ms-wma',
-			'video/x-ms-asf'
+			'video/x-ms-asf',
 		),
 		'wmc'=>array(
-			'application/vnd.wmc'
+			'application/vnd.wmc',
 		),
 		'wmd'=>array(
-			'application/x-ms-wmd'
+			'application/x-ms-wmd',
 		),
 		'wmf'=>array(
 			'application/wmf',
@@ -7031,313 +7032,313 @@ class aliases {
 			'application/x-wmf',
 			'image/wmf',
 			'image/x-win-metafile',
-			'image/x-wmf'
+			'image/x-wmf',
 		),
 		'wml'=>array(
 			'application/xml',
-			'text/vnd.wap.wml'
+			'text/vnd.wap.wml',
 		),
 		'wmlc'=>array(
-			'application/vnd.wap.wmlc'
+			'application/vnd.wap.wmlc',
 		),
 		'wmls'=>array(
-			'text/vnd.wap.wmlscript'
+			'text/vnd.wap.wmlscript',
 		),
 		'wmlsc'=>array(
-			'application/vnd.wap.wmlscriptc'
+			'application/vnd.wap.wmlscriptc',
 		),
 		'wmv'=>array(
 			'application/vnd.ms-asf',
 			'video/x-ms-asf',
-			'video/x-ms-wmv'
+			'video/x-ms-wmv',
 		),
 		'wmx'=>array(
 			'application/x-ms-asx',
 			'audio/x-ms-asx',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
-			'video/x-ms-wvx'
+			'video/x-ms-wvx',
 		),
 		'wmz'=>array(
 			'application/gzip',
 			'application/x-ms-wmz',
-			'application/x-msmetafile'
+			'application/x-msmetafile',
 		),
 		'woff'=>array(
 			'application/font-woff',
-			'font/woff'
+			'font/woff',
 		),
 		'woff2'=>array(
 			'font/woff',
-			'font/woff2'
+			'font/woff2',
 		),
 		'wp'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wp4'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wp5'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wp6'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wp61'=>array(
-			'application/vnd.wordperfect'
+			'application/vnd.wordperfect',
 		),
 		'wpd'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wpg'=>array(
-			'application/x-wpg'
+			'application/x-wpg',
 		),
 		'wpl'=>array(
-			'application/vnd.ms-wpl'
+			'application/vnd.ms-wpl',
 		),
 		'wpp'=>array(
 			'application/vnd.wordperfect',
 			'application/wordperfect',
-			'application/x-wordperfect'
+			'application/x-wordperfect',
 		),
 		'wps'=>array(
 			'application/vnd.ms-works',
-			'application/x-ole-storage'
+			'application/x-ole-storage',
 		),
 		'wpt'=>array(
-			'application/vnd.wordperfect'
+			'application/vnd.wordperfect',
 		),
 		'wqd'=>array(
-			'application/vnd.wqd'
+			'application/vnd.wqd',
 		),
 		'wri'=>array(
-			'application/x-mswrite'
+			'application/x-mswrite',
 		),
 		'wrl'=>array(
 			'model/vrml',
-			'text/plain'
+			'text/plain',
 		),
 		'ws'=>array(
-			'application/x-wonderswan-rom'
+			'application/x-wonderswan-rom',
 		),
 		'wsc'=>array(
 			'application/vnd.wfa.wsc',
 			'application/x-wonderswan-color-rom',
-			'message/vnd.wfa.wsc'
+			'message/vnd.wfa.wsc',
 		),
 		'wsdd'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'wsdl'=>array(
-			'application/wsdl+xml'
+			'application/wsdl+xml',
 		),
 		'wsgi'=>array(
 			'application/x-executable',
-			'text/x-python'
+			'text/x-python',
 		),
 		'wspolicy'=>array(
-			'application/wspolicy+xml'
+			'application/wspolicy+xml',
 		),
 		'wtb'=>array(
-			'application/vnd.webturbo'
+			'application/vnd.webturbo',
 		),
 		'wv'=>array(
 			'application/vnd.wv.csp+wbxml',
-			'audio/x-wavpack'
+			'audio/x-wavpack',
 		),
 		'wvc'=>array(
-			'audio/x-wavpack-correction'
+			'audio/x-wavpack-correction',
 		),
 		'wvp'=>array(
-			'audio/x-wavpack'
+			'audio/x-wavpack',
 		),
 		'wvx'=>array(
 			'application/x-ms-asx',
 			'audio/x-ms-asx',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
-			'video/x-ms-wvx'
+			'video/x-ms-wvx',
 		),
 		'wwf'=>array(
 			'application/pdf',
 			'application/wwf',
-			'application/x-wwf'
+			'application/x-wwf',
 		),
 		'x32'=>array(
-			'application/x-authorware-bin'
+			'application/x-authorware-bin',
 		),
 		'x3d'=>array(
 			'application/vnd.hzn-3d-crossword',
-			'model/x3d+xml'
+			'model/x3d+xml',
 		),
 		'x3db'=>array(
 			'model/x3d+binary',
-			'model/x3d+fastinfoset'
+			'model/x3d+fastinfoset',
 		),
 		'x3dbz'=>array(
-			'model/x3d+binary'
+			'model/x3d+binary',
 		),
 		'x3dv'=>array(
 			'model/x3d+vrml',
-			'model/x3d-vrml'
+			'model/x3d-vrml',
 		),
 		'x3dvz'=>array(
-			'model/x3d+vrml'
+			'model/x3d+vrml',
 		),
 		'x3dz'=>array(
-			'model/x3d+xml'
+			'model/x3d+xml',
 		),
 		'x3f'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sigma',
-			'image/x-sigma-x3f'
+			'image/x-sigma-x3f',
 		),
 		'x_b'=>array(
-			'model/vnd.parasolid.transmit-binary'
+			'model/vnd.parasolid.transmit-binary',
 		),
 		'x_t'=>array(
-			'model/vnd.parasolid.transmit-text'
+			'model/vnd.parasolid.transmit-text',
 		),
 		'xac'=>array(
-			'application/x-gnucash'
+			'application/x-gnucash',
 		),
 		'xaml'=>array(
-			'application/xaml+xml'
+			'application/xaml+xml',
 		),
 		'xap'=>array(
-			'application/x-silverlight-app'
+			'application/x-silverlight-app',
 		),
 		'xar'=>array(
 			'application/vnd.xara',
-			'application/x-xar'
+			'application/x-xar',
 		),
 		'xargs'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xav'=>array(
-			'application/xcap-att+xml'
+			'application/xcap-att+xml',
 		),
 		'xbap'=>array(
-			'application/x-ms-xbap'
+			'application/x-ms-xbap',
 		),
 		'xbd'=>array(
-			'application/vnd.fujixerox.docuworks.binder'
+			'application/vnd.fujixerox.docuworks.binder',
 		),
 		'xbel'=>array(
 			'application/x-xbel',
-			'application/xml'
+			'application/xml',
 		),
 		'xbl'=>array(
 			'application/xml',
 			'text/plain',
-			'text/xml'
+			'text/xml',
 		),
 		'xbm'=>array(
 			'image/x-xbitmap',
-			'text/x-c'
+			'text/x-c',
 		),
 		'xca'=>array(
-			'application/xcap-caps+xml'
+			'application/xcap-caps+xml',
 		),
 		'xcat'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xcf'=>array(
 			'image/x-xcf',
-			'image/xcf'
+			'image/xcf',
 		),
 		'xconf'=>array(
 			'text/plain',
-			'text/x-config'
+			'text/x-config',
 		),
 		'xcs'=>array(
-			'application/calendar+xml'
+			'application/calendar+xml',
 		),
 		'xct'=>array(
-			'application/vnd.fujixerox.docuworks.container'
+			'application/vnd.fujixerox.docuworks.container',
 		),
 		'xdd'=>array(
-			'application/bacnet-xdd+zip'
+			'application/bacnet-xdd+zip',
 		),
 		'xdf'=>array(
 			'application/mrb-consumer+xml',
 			'application/mrb-publish+xml',
-			'application/xcap-diff+xml'
+			'application/xcap-diff+xml',
 		),
 		'xdgapp'=>array(
 			'application/vnd.flatpak',
-			'application/vnd.xdgapp'
+			'application/vnd.xdgapp',
 		),
 		'xdm'=>array(
-			'application/vnd.syncml.dm+xml'
+			'application/vnd.syncml.dm+xml',
 		),
 		'xdp'=>array(
-			'application/vnd.adobe.xdp+xml'
+			'application/vnd.adobe.xdp+xml',
 		),
 		'xdssc'=>array(
-			'application/dssc+xml'
+			'application/dssc+xml',
 		),
 		'xdw'=>array(
-			'application/vnd.fujixerox.docuworks'
+			'application/vnd.fujixerox.docuworks',
 		),
 		'xegrm'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xel'=>array(
-			'application/xcap-el+xml'
+			'application/xcap-el+xml',
 		),
 		'xenc'=>array(
-			'application/xenc+xml'
+			'application/xenc+xml',
 		),
 		'xer'=>array(
 			'application/patch-ops-error+xml',
-			'application/xcap-error+xml'
+			'application/xcap-error+xml',
 		),
 		'xfd'=>array(
-			'application/vnd.xfdl'
+			'application/vnd.xfdl',
 		),
 		'xfdf'=>array(
-			'application/vnd.adobe.xfdf'
+			'application/vnd.adobe.xfdf',
 		),
 		'xfdl'=>array(
-			'application/vnd.xfdl'
+			'application/vnd.xfdl',
 		),
 		'xgrm'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xht'=>array(
 			'application/xhtml+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'xhtm'=>array(
-			'application/vnd.pwg-xhtml-print+xml'
+			'application/vnd.pwg-xhtml-print+xml',
 		),
 		'xhtml'=>array(
 			'application/vnd.pwg-xhtml-print+xml',
 			'application/xhtml+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'xhtml2'=>array(
-			'application/xhtml+xml'
+			'application/xhtml+xml',
 		),
 		'xhvml'=>array(
-			'application/xv+xml'
+			'application/xv+xml',
 		),
 		'xi'=>array(
-			'audio/x-xi'
+			'audio/x-xi',
 		),
 		'xif'=>array(
-			'image/vnd.xiff'
+			'image/vnd.xiff',
 		),
 		'xla'=>array(
 			'application/msexcel',
@@ -7345,13 +7346,13 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xlam'=>array(
 			'application/vnd.ms-excel.addin.macroenabled.12',
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-			'application/xml'
+			'application/xml',
 		),
 		'xlc'=>array(
 			'application/msexcel',
@@ -7359,7 +7360,7 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xld'=>array(
 			'application/msexcel',
@@ -7367,23 +7368,23 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xlex'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xlf'=>array(
 			'application/x-xliff',
 			'application/x-xliff+xml',
 			'application/xliff+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'xliff'=>array(
 			'application/x-xliff',
-			'application/xml'
+			'application/xml',
 		),
 		'xlim'=>array(
-			'application/vnd.xmpie.xlim'
+			'application/vnd.xmpie.xlim',
 		),
 		'xll'=>array(
 			'application/msexcel',
@@ -7391,7 +7392,7 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xlm'=>array(
 			'application/msexcel',
@@ -7399,10 +7400,10 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xlog'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xlr'=>array(
 			'application/vnd.ms-excel',
@@ -7410,7 +7411,7 @@ class aliases {
 			'application/vnd.ms-works',
 			'application/x-ole-storage',
 			'application/x-tika-msworks-spreadsheet',
-			'application/xml'
+			'application/xml',
 		),
 		'xls'=>array(
 			'application/msexcel',
@@ -7418,24 +7419,24 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xlsb'=>array(
 			'application/vnd.ms-excel.sheet.binary.macroenabled.12',
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-			'application/xml'
+			'application/xml',
 		),
 		'xlsm'=>array(
 			'application/vnd.ms-excel.sheet.macroenabled.12',
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-			'application/zip'
+			'application/zip',
 		),
 		'xlsx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-			'application/zip'
+			'application/zip',
 		),
 		'xlt'=>array(
 			'application/msexcel',
@@ -7443,20 +7444,20 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xltm'=>array(
 			'application/vnd.ms-excel.template.macroenabled.12',
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
-			'application/xml'
+			'application/xml',
 		),
 		'xltx'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml-template',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
-			'application/zip'
+			'application/zip',
 		),
 		'xlw'=>array(
 			'application/msexcel',
@@ -7464,27 +7465,27 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
-			'zz-application/zz-winassoc-xls'
+			'zz-application/zz-winassoc-xls',
 		),
 		'xm'=>array(
 			'audio/x-xm',
-			'audio/xm'
+			'audio/xm',
 		),
 		'xmap'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xmf'=>array(
 			'audio/mobile-xmf',
 			'audio/x-xmf',
-			'audio/xmf'
+			'audio/xmf',
 		),
 		'xmi'=>array(
 			'application/xml',
-			'text/x-xmi'
+			'text/x-xmi',
 		),
 		'xmind'=>array(
 			'application/x-xmind',
-			'application/zip'
+			'application/zip',
 		),
 		'xml'=>array(
 			'application/cea-2018+xml',
@@ -7605,252 +7606,252 @@ class aliases {
 			'text/vnd.iptc.newsml',
 			'text/vnd.iptc.nitf',
 			'text/xml',
-			'text/xml-external-parsed-entity'
+			'text/xml-external-parsed-entity',
 		),
 		'xmls'=>array(
-			'application/dskpp+xml'
+			'application/dskpp+xml',
 		),
 		'xmp'=>array(
 			'application/rdf+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'xns'=>array(
-			'application/xcap-ns+xml'
+			'application/xcap-ns+xml',
 		),
 		'xo'=>array(
-			'application/vnd.olpc-sugar'
+			'application/vnd.olpc-sugar',
 		),
 		'xodp'=>array(
-			'application/vnd.collabio.xodocuments.presentation'
+			'application/vnd.collabio.xodocuments.presentation',
 		),
 		'xods'=>array(
-			'application/vnd.collabio.xodocuments.spreadsheet'
+			'application/vnd.collabio.xodocuments.spreadsheet',
 		),
 		'xodt'=>array(
-			'application/vnd.collabio.xodocuments.document'
+			'application/vnd.collabio.xodocuments.document',
 		),
 		'xop'=>array(
-			'application/xop+xml'
+			'application/xop+xml',
 		),
 		'xotp'=>array(
-			'application/vnd.collabio.xodocuments.presentation-template'
+			'application/vnd.collabio.xodocuments.presentation-template',
 		),
 		'xots'=>array(
-			'application/vnd.collabio.xodocuments.spreadsheet-template'
+			'application/vnd.collabio.xodocuments.spreadsheet-template',
 		),
 		'xott'=>array(
-			'application/vnd.collabio.xodocuments.document-template'
+			'application/vnd.collabio.xodocuments.document-template',
 		),
 		'xpi'=>array(
 			'application/x-xpinstall',
-			'application/zip'
+			'application/zip',
 		),
 		'xpl'=>array(
-			'application/xproc+xml'
+			'application/xproc+xml',
 		),
 		'xpm'=>array(
 			'image/x-xpixmap',
-			'image/x-xpm'
+			'image/x-xpm',
 		),
 		'xport'=>array(
-			'application/x-sas-xport'
+			'application/x-sas-xport',
 		),
 		'xpr'=>array(
-			'application/vnd.is-xpr'
+			'application/vnd.is-xpr',
 		),
 		'xps'=>array(
 			'application/oxps',
 			'application/vnd.ms-xpsdocument',
 			'application/xps',
-			'application/zip'
+			'application/zip',
 		),
 		'xpt'=>array(
-			'application/x-sas-xport'
+			'application/x-sas-xport',
 		),
 		'xpw'=>array(
-			'application/vnd.intercon.formnet'
+			'application/vnd.intercon.formnet',
 		),
 		'xpx'=>array(
-			'application/vnd.intercon.formnet'
+			'application/vnd.intercon.formnet',
 		),
 		'xq'=>array(
 			'application/xquery',
-			'text/plain'
+			'text/plain',
 		),
 		'xquery'=>array(
 			'application/xquery',
-			'text/plain'
+			'text/plain',
 		),
 		'xroles'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xsamples'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xsd'=>array(
 			'application/x-xml',
 			'application/xml',
 			'text/plain',
-			'text/xml'
+			'text/xml',
 		),
 		'xsf'=>array(
-			'application/prs.xsf+xml'
+			'application/prs.xsf+xml',
 		),
 		'xsl'=>array(
 			'application/x-xml',
 			'application/xml',
 			'application/xslt+xml',
 			'text/plain',
-			'text/xml'
+			'text/xml',
 		),
 		'xslfo'=>array(
 			'application/xml',
 			'application/xslfo+xml',
 			'text/x-xslfo',
-			'text/xsl'
+			'text/xsl',
 		),
 		'xslt'=>array(
 			'application/xml',
 			'application/xslt+xml',
-			'text/xsl'
+			'text/xsl',
 		),
 		'xsm'=>array(
-			'application/vnd.syncml+xml'
+			'application/vnd.syncml+xml',
 		),
 		'xsp'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xspf'=>array(
 			'application/x-xspf+xml',
 			'application/xml',
-			'application/xspf+xml'
+			'application/xspf+xml',
 		),
 		'xtest'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xul'=>array(
 			'application/vnd.mozilla.xul+xml',
-			'application/xml'
+			'application/xml',
 		),
 		'xvm'=>array(
-			'application/xv+xml'
+			'application/xv+xml',
 		),
 		'xvml'=>array(
-			'application/xv+xml'
+			'application/xv+xml',
 		),
 		'xwd'=>array(
-			'image/x-xwindowdump'
+			'image/x-xwindowdump',
 		),
 		'xweb'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xwelcome'=>array(
-			'text/plain'
+			'text/plain',
 		),
 		'xyz'=>array(
-			'chemical/x-xyz'
+			'chemical/x-xyz',
 		),
 		'xyze'=>array(
-			'image/vnd.radiance'
+			'image/vnd.radiance',
 		),
 		'xz'=>array(
-			'application/x-xz'
+			'application/x-xz',
 		),
 		'yaml'=>array(
 			'application/x-yaml',
 			'text/plain',
 			'text/x-yaml',
-			'text/yaml'
+			'text/yaml',
 		),
 		'yang'=>array(
-			'application/yang'
+			'application/yang',
 		),
 		'yin'=>array(
-			'application/yin+xml'
+			'application/yin+xml',
 		),
 		'yme'=>array(
-			'application/vnd.yaoweme'
+			'application/vnd.yaoweme',
 		),
 		'yml'=>array(
 			'application/x-yaml',
 			'text/plain',
 			'text/x-yaml',
-			'text/yaml'
+			'text/yaml',
 		),
 		'yt'=>array(
-			'application/vnd.youtube.yt'
+			'application/vnd.youtube.yt',
 		),
 		'z1'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z2'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z3'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z4'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z5'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z6'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z64'=>array(
-			'application/x-n64-rom'
+			'application/x-n64-rom',
 		),
 		'z7'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'z8'=>array(
-			'application/x-zmachine'
+			'application/x-zmachine',
 		),
 		'zabw'=>array(
 			'application/x-abiword',
-			'application/xml'
+			'application/xml',
 		),
 		'zaz'=>array(
-			'application/vnd.zzazz.deck+xml'
+			'application/vnd.zzazz.deck+xml',
 		),
 		'zfc'=>array(
-			'application/vnd.filmit.zfc'
+			'application/vnd.filmit.zfc',
 		),
 		'zfo'=>array(
-			'application/vnd.software602.filler.form-xml-zip'
+			'application/vnd.software602.filler.form-xml-zip',
 		),
 		'zip'=>array(
 			'application/vnd.easykaraoke.cdgdownload',
 			'application/vnd.gov.sk.e-form+zip',
 			'application/x-zip',
 			'application/x-zip-compressed',
-			'application/zip'
+			'application/zip',
 		),
 		'zir'=>array(
-			'application/vnd.zul'
+			'application/vnd.zul',
 		),
 		'zirz'=>array(
-			'application/vnd.zul'
+			'application/vnd.zul',
 		),
 		'zmm'=>array(
-			'application/vnd.handheld-entertainment+xml'
+			'application/vnd.handheld-entertainment+xml',
 		),
 		'zoo'=>array(
-			'application/x-zoo'
+			'application/x-zoo',
 		),
 		'zrp'=>array(
-			'application/vnd.rapid'
+			'application/vnd.rapid',
 		),
 		'zsav'=>array(
 			'application/x-spss-sav',
-			'application/x-spss-savefile'
+			'application/x-spss-savefile',
 		),
 		'zstd'=>array(
-			'application/zstd'
+			'application/zstd',
 		),
 		'zz'=>array(
-			'application/zlib'
+			'application/zlib',
 		),
 		'123'=>array(
 			'application/lotus123',
@@ -7858,16 +7859,16 @@ class aliases {
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
-			'zz-application/zz-winassoc-123'
+			'zz-application/zz-winassoc-123',
 		),
 		'602'=>array(
-			'application/x-t602'
+			'application/x-t602',
 		),
 		'669'=>array(
-			'audio/x-mod'
+			'audio/x-mod',
 		),
 		'19051'=>array(
-			'application/vnd.ieee.1905'
-		)
+			'application/vnd.ieee.1905',
+		),
 	);
 }
