@@ -2,3 +2,6 @@
 /composer.lock
 /blob-mimes/
 /package-lock.json
+/build-old/
+/build/lib/vendor/
+/build/composer.lock

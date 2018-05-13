@@ -393,6 +393,9 @@ class aliases {
 			'application/x-arj',
 			'application/x-arj-compressed',
 		),
+		'artisan'=>array(
+			'application/vnd.artisan+json',
+		),
 		'arw'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
@@ -612,6 +615,7 @@ class aliases {
 			'text/plain',
 		),
 		'bin'=>array(
+			'application/gltf-buffer',
 			'application/octet-stream',
 			'application/x-saturn-rom',
 			'application/x-sega-cd-rom',
@@ -1455,6 +1459,9 @@ class aliases {
 			'text/plain',
 			'text/x-pascal',
 		),
+		'dpx'=>array(
+			'image/x-dpx',
+		),
 		'dra'=>array(
 			'audio/vnd.dra',
 		),
@@ -2143,6 +2150,12 @@ class aliases {
 		'glade'=>array(
 			'application/x-glade',
 			'application/xml',
+		),
+		'glbin'=>array(
+			'application/gltf-buffer',
+		),
+		'glbuf'=>array(
+			'application/gltf-buffer',
 		),
 		'gltf'=>array(
 			'model/gltf+json',
@@ -4510,6 +4523,9 @@ class aliases {
 			'application/pdf',
 			'application/x-pdf',
 			'image/pdf',
+		),
+		'pdx'=>array(
+			'application/pdx',
 		),
 		'pef'=>array(
 			'image/x-dcraw',

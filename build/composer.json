@@ -1,0 +1,36 @@
+{
+  "name": "blob-mimes-build",
+  "description": "Build blob-mimes package.",
+  "version": "0.1",
+  "type": "library",
+  "homepage": "https:\/\/blobfolio.com\/",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Josh Stoik",
+      "email": "josh@blobfolio.com",
+      "homepage": "https:\/\/blobfolio.com"
+    }
+  ],
+  "require": {
+    "php": ">= 7.0",
+    "bob": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https:\/\/github.com\/Blobfolio\/bob.git"
+    }
+  ],
+  "config": {
+    "vendor-dir": "lib\/vendor",
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "blobfolio\\dev\\":"lib\/dev"
+    },
+  "files": []
+  }
+}
