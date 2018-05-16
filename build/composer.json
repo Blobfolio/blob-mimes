@@ -3,7 +3,7 @@
   "description": "Build blob-mimes package.",
   "version": "0.1",
   "type": "library",
-  "homepage": "https:\/\/blobfolio.com\/",
+  "homepage": "https:\/\/github.com\/Blobfolio\/blob-mimes",
   "license": "WTFPL",
   "authors": [
     {
@@ -19,17 +19,21 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https:\/\/github.com\/Blobfolio\/bob.git"
+      "url": "ssh://git@blobfolio.com:3417/bob"
     }
   ],
   "config": {
     "vendor-dir": "lib\/vendor",
     "preferred-install": "dist"
   },
+   "scripts": {
+    "post-update-cmd": "blobfolio\\bob\\himself::install",
+    "post-install-cmd": "blobfolio\\bob\\himself::install"
+  },
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "blobfolio\\dev\\":"lib\/dev"
+      "blobfolio\\dev\\":"builders"
     },
   "files": []
   }

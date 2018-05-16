@@ -53,17 +53,25 @@
 
 namespace blobfolio\dev;
 
-use \blobfolio\bob\utility;
+use \blobfolio\bob\format;
+use \blobfolio\bob\io;
+use \blobfolio\bob\log;
 use \blobfolio\common\data;
 use \blobfolio\common\mb as v_mb;
 use \blobfolio\common\ref\mb as r_mb;
 use \blobfolio\common\ref\sanitize as r_sanitize;
 
-class mimes extends \blobfolio\bob\base\build {
-	const NAME = 'mimes';
+class mimes extends \blobfolio\bob\base\mike {
+	// Project Name.
+	const NAME = 'blob-mimes';
+	const DESCRIPTION = 'blob-mimes is a comprehensive MIME and file extension tool for PHP.';
+	const CONFIRMATION = '';
+	const SLUG = 'blob-mimes';
 
-	// Intl should catch this, but just in case...
-	const DOWNLOADS = array(
+	// Runtime requirements.
+	const REQUIRED_FUNCTIONS = array('simplexml_load_string');
+
+	const REQUIRED_DOWNLOADS = array(
 		'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types',
 		'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in',
 		'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types',
@@ -79,13 +87,27 @@ class mimes extends \blobfolio\bob\base\build {
 		'https://www.iana.org/assignments/media-types/video.csv',
 	);
 
-	const REQUIRED_FUNCTIONS = array('simplexml_load_string');
+	// Automatic setup.
+	const CLEAN_ON_SUCCESS = false;			// Delete tmp/bob when done.
+	const SHITLIST = null;					// Specific shitlist.
 
-	// We aren't using binaries or build steps.
-	const SKIP_BINARY_DEPENDENCIES = true;
-	const SKIP_BUILD = false;
-	const SKIP_FILE_DEPENDENCIES = true;
-	const SKIP_PACKAGE = true;
+	// Functions to run to complete the build, in order, grouped by
+	// heading.
+	const ACTIONS = array(
+		'Updating Data'=>array(
+			'build_iana_resources',
+			'build_iana',
+			'build_apache',
+			'build_nginx',
+			'build_freedesktop',
+			'build_tika',
+			'build_blobfolio',
+			'build_primary_mime',
+			'build_primary_ext',
+			'build_cleanup',
+			'release',
+		),
+	);
 
 	// IANA does not have a central dataset. We have to do a lot of
 	// parsing and downloading.
@@ -107,13 +129,6 @@ class mimes extends \blobfolio\bob\base\build {
 	const FREEDESKTOP_DATA = 'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in';
 	const NGINX_DATA = 'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types';
 	const TIKA_DATA = 'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml';
-
-	// Input/Output paths.
-	const BIN_OUT = BOB_ROOT_DIR . 'bin/';
-	const DATA_OUT = BOB_ROOT_DIR . 'lib/blobfolio/mimes/data.php';
-	const DATA_TEMPLATE = BOB_BUILD_DIR . 'skel/data.template';
-	const WP_OUT = BOB_ROOT_DIR . 'wp/lib/blobfolio/wp/bm/mime/aliases.php';
-	const WP_TEMPLATE = BOB_BUILD_DIR . 'skel/wp.template';
 
 	// Template for MxE entry.
 	const MIMES_BY_EXTENSION = array(
@@ -204,24 +219,24 @@ class mimes extends \blobfolio\bob\base\build {
 
 
 	// -----------------------------------------------------------------
-	// Build
+	// Data Sources
 	// -----------------------------------------------------------------
 
 	/**
-	 * Pre-Build Tasks
+	 * Additional IANA Sources
 	 *
 	 * @return void Nothing.
 	 */
-	protected static function pre_build_tasks() {
+	protected static function build_iana_resources() {
 		// We need to get more from IANA.
-		utility::log('Locating additional IANA resources…');
+		log::print('Locating additional IANA resources…');
 
 		// Parse each category.
 		$more = array();
 		foreach (static::IANA_CATEGORIES as $v) {
 			$url = static::IANA_BASE . "{$v}.csv";
-			$tmp = file_get_contents(static::$downloads[$url]);
-			$tmp = utility::doc_to_lines($tmp);
+			$tmp = io::get_url($url);
+			$tmp = format::lines_to_array($tmp);
 
 			$num = 0;
 			foreach ($tmp as $raw) {
@@ -237,69 +252,9 @@ class mimes extends \blobfolio\bob\base\build {
 			}
 		}
 
-		utility::log('Downloading ' . count($more) . ' additional files. Haha.');
+		log::print('Downloading ' . number_format(count($more), 0, '.', ',') . ' additional files. Haha.');
 
-		static::$iana_local = utility::get_remote($more);
-	}
-
-	/**
-	 * Build Tasks
-	 *
-	 * @return void Nothing.
-	 */
-	protected static function build_tasks() {
-		static::build_iana();
-		static::build_apache();
-		static::build_nginx();
-		static::build_freedesktop();
-		static::build_tika();
-		static::build_blobfolio();
-
-		static::build_primary_mime();
-		static::build_primary_ext();
-
-		static::build_cleanup();
-
-		// Save copies as JSON.
-		utility::log('Exporting JSON…');
-
-		file_put_contents(static::BIN_OUT . 'extensions_by_mime.json', json_encode(static::$exm));
-		file_put_contents(static::BIN_OUT . 'mimes_by_extension.json', json_encode(static::$mxe));
-
-		// Export the main data used by this library.
-		utility::log('Exporting library data…');
-
-		$content = file_get_contents(static::DATA_TEMPLATE);
-
-		$replacements = array(
-			'%GENERATED%'=>date('Y-m-d H:i:s'),
-			'%EXTENSIONS_BY_MIME%'=>utility::array_to_php(static::$exm, 2),
-			'%MIMES_BY_EXTENSION%'=>utility::array_to_php(static::$mxe, 2),
-		);
-
-		$content = str_replace(array_keys($replacements), array_values($replacements), $content);
-		file_put_contents(static::DATA_OUT, $content);
-
-		// Also generate aliases for the WordPress plugin.
-		utility::log('Exporting WP plugin data…');
-
-		$content = file_get_contents(static::WP_TEMPLATE);
-
-		// WordPress needs simpler data.
-		$data = array();
-		foreach (static::$mxe as $k=>$v) {
-			$data[$k] = $v['mime'];
-			sort($data[$k]);
-		}
-
-		$content = str_replace('%MIMES_BY_EXTENSION%', utility::array_to_php($data, 2), $content);
-		file_put_contents(static::WP_OUT, $content);
-
-		// Finally, report how many MIMEs and Extensions we found!
-		$count = number_format(count(static::$mxe), 0, '.', ',');
-		utility::log("Total file extensions: $count", 'success');
-		$count = number_format(count(static::$exm), 0, '.', ',');
-		utility::log("Total MIME types: $count", 'success');
+		static::$iana_local = io::download($more);
 	}
 
 	/**
@@ -310,7 +265,7 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_iana() {
-		utility::log('Parsing IANA data…');
+		log::print('Parsing IANA data…');
 
 		// We have to do some dirty RegExp parsing. These patterns take
 		// care of most of it.
@@ -438,10 +393,10 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_apache() {
-		utility::log('Parsing Apache data…');
+		log::print('Parsing Apache data…');
 
-		$content = file_get_contents(static::$downloads[static::APACHE_DATA]);
-		$content = utility::doc_to_lines($content);
+		$content = io::get_url(static::APACHE_DATA);
+		$content = format::lines_to_array($content);
 		foreach ($content as $line) {
 			// Skip comments.
 			if (0 === strpos($line, '#')) {
@@ -468,10 +423,10 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_nginx() {
-		utility::log('Parsing Nginx data…');
+		log::print('Parsing Nginx data…');
 
-		$content = file_get_contents(static::$downloads[static::NGINX_DATA]);
-		$content = utility::doc_to_lines($content);
+		$content = io::get_url(static::NGINX_DATA);
+		$content = format::lines_to_array($content);
 		foreach ($content as $line) {
 			// Skip comments and configs.
 			if (
@@ -503,9 +458,9 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_freedesktop() {
-		utility::log('Parsing Freedesktop.org data…');
+		log::print('Parsing Freedesktop.org data…');
 
-		$content = file_get_contents(static::$downloads[static::FREEDESKTOP_DATA]);
+		$content = io::get_url(static::FREEDESKTOP_DATA);
 		static::parse_xml_mimes($content, 'freedesktop.org');
 	}
 
@@ -515,9 +470,9 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_tika() {
-		utility::log('Parsing Tika data…');
+		log::print('Parsing Tika data…');
 
-		$content = file_get_contents(static::$downloads[static::TIKA_DATA]);
+		$content = io::get_url(static::TIKA_DATA);
 
 		// Tika uses the FD XML format, but their tika namespace
 		// crashes SimpleXML, so we have to pre-strip.
@@ -532,7 +487,7 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_blobfolio() {
-		utility::log('Parsing Blobfolio data…');
+		log::print('Parsing Blobfolio data…');
 
 		// Ours is the easiest.
 		foreach (static::MAGIC_LIST_BLOBFOLIO as $k=>$v) {
@@ -550,7 +505,7 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_primary_mime() {
-		utility::log('Calculating primary MIME entries…');
+		log::print('Calculating primary MIME entries…');
 
 		foreach (static::$mxe as $k=>$v) {
 			// In our magic list.
@@ -599,7 +554,7 @@ class mimes extends \blobfolio\bob\base\build {
 			));
 		}
 
-		utility::log('Sorting data…');
+		log::print('Sorting data…');
 		ksort(static::$mxe);
 	}
 
@@ -612,7 +567,7 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_primary_ext() {
-		utility::log('Calculating primary file extensions…');
+		log::print('Calculating primary file extensions…');
 
 		foreach (static::$exm as $k=>$v) {
 			// Extensions do not have aliases, so basically we're just
@@ -665,7 +620,7 @@ class mimes extends \blobfolio\bob\base\build {
 			});
 		}
 
-		utility::log('Sorting data…');
+		log::print('Sorting data…');
 		ksort(static::$exm);
 	}
 
@@ -675,7 +630,7 @@ class mimes extends \blobfolio\bob\base\build {
 	 * @return void Nothing.
 	 */
 	protected static function build_cleanup() {
-		utility::log('Tidying up data…');
+		log::print('Tidying up data…');
 
 		// We don't actually need all the data we've got.
 		foreach (static::$mxe as $k=>$v) {
@@ -697,7 +652,78 @@ class mimes extends \blobfolio\bob\base\build {
 		}
 	}
 
-	// ----------------------------------------------------------------- end build
+	// ----------------------------------------------------------------- end data
+
+
+
+	// -----------------------------------------------------------------
+	// Release
+	// -----------------------------------------------------------------
+
+	/**
+	 * Package Release!
+	 *
+	 * @return void Nothing.
+	 */
+	protected static function release() {
+		// Save copies as JSON.
+		log::print('Exporting JSON…');
+
+		// Define some paths.
+		$bin_out = dirname(BOB_ROOT_DIR) . '/bin/';
+		$data_out = dirname(BOB_ROOT_DIR) . '/lib/blobfolio/mimes/data.php';
+		$data_template = BOB_ROOT_DIR . 'skel/data.template';
+		$wp_out = dirname(BOB_ROOT_DIR) . '/wp/lib/blobfolio/wp/bm/mime/aliases.php';
+		$wp_template = BOB_ROOT_DIR . 'skel/wp.template';
+
+		file_put_contents("{$bin_out}extensions_by_mime.json", json_encode(static::$exm));
+		file_put_contents("{$bin_out}mimes_by_extension.json", json_encode(static::$mxe));
+
+		// Export the main data used by this library.
+		log::print('Exporting library data…');
+
+		$content = file_get_contents($data_template);
+
+		$replacements = array(
+			'%GENERATED%'=>date('Y-m-d H:i:s'),
+			'%EXTENSIONS_BY_MIME%'=>format::array_to_php(static::$exm, 2),
+			'%MIMES_BY_EXTENSION%'=>format::array_to_php(static::$mxe, 2),
+		);
+
+		$content = str_replace(
+			array_keys($replacements),
+			array_values($replacements),
+			$content
+		);
+		file_put_contents($data_out, $content);
+
+		// Also generate aliases for the WordPress plugin.
+		log::print('Exporting WP plugin data…');
+
+		$content = file_get_contents($wp_template);
+
+		// WordPress needs simpler data.
+		$data = array();
+		foreach (static::$mxe as $k=>$v) {
+			$data[$k] = $v['mime'];
+			sort($data[$k]);
+		}
+
+		$content = str_replace(
+			'%MIMES_BY_EXTENSION%',
+			format::array_to_php($data, 2),
+			$content
+		);
+		file_put_contents($wp_out, $content);
+
+		// Finally, report how many MIMEs and Extensions we found!
+		$count = number_format(count(static::$mxe), 0, '.', ',');
+		log::total($count, 'file extensions');
+		$count = number_format(count(static::$exm), 0, '.', ',');
+		log::total($count, 'MIME types');
+	}
+
+	// ----------------------------------------------------------------- end release
 
 
 
