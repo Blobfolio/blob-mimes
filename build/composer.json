@@ -1,5 +1,5 @@
 {
-  "name": "blob-mimes-build",
+  "name": "blob-mimes\/bob",
   "description": "Build blob-mimes package.",
   "version": "0.1",
   "type": "library",
@@ -14,14 +14,8 @@
   ],
   "require": {
     "php": ">= 7.0",
-    "bob": "dev-master"
+    "blobfolio\/bob": "dev-master"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "ssh://git@blobfolio.com:3417/bob"
-    }
-  ],
   "config": {
     "vendor-dir": "lib\/vendor",
     "preferred-install": "dist"
