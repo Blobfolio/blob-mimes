@@ -65,7 +65,14 @@ Nothing fancy!  You can use the built-in installer on the Plugins page or extrac
 
 To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugins), download, extract, and upload the `blob-mimes` folder to your mu-plugins directory via FTP. Please note: MU Plugins are removed from the usual update-checking process, so you will need to handle future updates manually.
 
+== Privacy Policy ==
+
+This plugin does not make use of or collect any "Personal Data".
+
 == Changelog ==
+
+= 0.8.2 =
+* [Misc] Update MIME database.
 
 = 0.8.1 =
 * [Fix] Core `wp-admin/includes/plugin.php` is not always loaded for CRON jobs.
@@ -80,87 +87,10 @@ To install this plugin as [Must-Use](https://codex.wordpress.org/Must_Use_Plugin
 = 0.7.6 =
 * [Misc] Update MIME database.
 
-= 0.7.5 =
-* [Misc] Update MIME database.
-
-= 0.7.4 =
-* [Misc] Update MIME database.
-
-= 0.7.3 =
-* [Misc] Update MIME database.
-
-= 0.7.2 =
-* [Misc] Add links to entry on Plugins page.
-
-= 0.7.1 =
-* [New] Improve display of contributor change notices and provide opt-out link.
-* [Misc] Update MIME database.
-
-= 0.7.0 =
-* [New] Display a warning on the Update and Plugins pages if a plugin's contributors have changed since the last update.
-* [Misc] Update MIME database.
-
-= 0.6.7 =
-* [Improved] Aliases are now checked for all allowed types.
-
-= 0.6.6 =
-* [Misc] Update MIME database.
-
-= 0.6.5 =
-* [Improved] File validation debug output.
-
-= 0.6.4 =
-* [Improved] Better "detection" for empty files.
-
-= 0.6.3 =
-* [Misc] Update MIME database.
-
-= 0.6.2 =
-* [Misc] Update MIME database.
-
-= 0.6.1 =
-* [Misc] Update MIME database.
-
-= 0.6.0 =
-* [Misc] Rebase to relicened `blob-mimes` source library.
-
-= 0.5.6 =
-* [Misc] Update MIME database.
-
-= 0.5.5 =
-* [Improved] Lighter-weight SVG type detection.
-* [Fixed] Suppress some filesystem warnings.
-
-= 0.5.4 =
-* [Change] Remove build from plugin version to match WP's new standard.
-* [Misc] Update MIME database.
-
-= 0.5.3-2 =
-* [Improved] Must-Use compatibility.
-
-= 0.5.3-0 =
-* [Misc] Update MIME database.
-
-= 0.5.2 =
-* [Misc] Spanish translation.
-
-= 0.5.1 =
-* [Misc] Update MIME database to improve `XLSM` detection.
-* [Improved] Cleaned file upload debugger.
-
-= 0.5.0 =
-* [New] SVG sanitizing support.
-* [Change] Updated MIME database.
-* [Change] Disentangle this plugin from the proposed patch #39963; that enhancement is a WONTFIX.
-
-= 0.1.3 =
-* [New] Upload debugging tool to help provide additional information about why a file is failing.
-
-= 0.1.2 =
-* [Improved] Rebuild database to catch additional occurrences of `application/CDFV2-xxx` 
-* [New] Integrate update support.
-
 == Upgrade Notice ==
+
+= 0.8.2 =
+The MIME database has been updated.
 
 = 0.8.1 =
 This release fixes an issue with CRON jobs on certain systems.
@@ -173,76 +103,3 @@ The MIME database has been updated.
 
 = 0.7.6 =
 The MIME database has been updated.
-
-= 0.7.5 =
-The MIME database has been updated.
-
-= 0.7.4 =
-The MIME database has been updated.
-
-= 0.7.3 =
-The MIME database has been updated.
-
-= 0.7.2 =
-This release adds quicklinks to the entry on the Plugins page.
-
-= 0.7.1 =
-The display of plugin contributor changes has been improved. The MIME database has also been updated.
-
-= 0.7.0 =
-A warning is now displayed on the Update and Plugins pages whenever a plugin's contributors have changed. This release also updates the MIME database.
-
-= 0.6.7 =
-This release improves file renaming by searching across all allowed extensions for a given MIME alias.
-
-= 0.6.6 =
-The MIME database has been updated.
-
-= 0.6.5 =
-This release improves the file validation debug output.
-
-= 0.6.4 =
-This release improves handling of empty files.
-
-= 0.6.3 =
-The MIME database has been updated.
-
-= 0.6.2 =
-The MIME database has been updated.
-
-= 0.6.1 =
-The MIME database has been updated.
-
-= 0.6.0 =
-The plugin has been rebased to the relicened `blob-mimes` source library. These changes exist in source code and have no outward effect.
-
-= 0.5.6 =
-The MIME database has been updated.
-
-= 0.5.5 =
-Minor performance and UX improvements.
-
-= 0.5.4 =
-The MIME database has been updated.
-
-= 0.5.3-2 =
-Improved Must-Use compatibility.
-
-= 0.5.3-0 =
-The MIME database has been updated.
-
-= 0.5.2 =
-The plugin is now available in Spanish.
-
-= 0.5.1 =
-The MIME database has been updated to improve `XLSM` detection and the file upload debug tool has been cleaned up.
-
-= 0.5.0 =
-This plugin is now independent of ticket #39963 (unfortunately in WONTFIX limbo), and so will refocus itself to provide broader upload-related security enhancements. Enjoy!
-
-= 0.1.3 =
-An upload debugging tool has been added to the `Tools` menu to provide more specific information about a file.
-
-= 0.1.2 =
-The database has been updated to catch additional occurrences of `application/CDFV2-xxx`.
-
