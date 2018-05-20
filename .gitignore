@@ -1,12 +1,12 @@
 **/*.git
+**/.DS_Store
 **/.sass-cache/
 **/composer.lock
 **/node_modules/
 **/package-lock.json
+**/secrets.json
+**/wp-config.php
 /blob-mimes/
-/build-old/
 /build/bob
-/build/composer.lock
 /build/lib/vendor/
-/build/src/
 /lib/vendor/
