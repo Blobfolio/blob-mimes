@@ -1,7 +1,12 @@
-/node_modules/
-/composer.lock
+**/*.git
+**/.sass-cache/
+**/composer.lock
+**/node_modules/
+**/package-lock.json
 /blob-mimes/
-/package-lock.json
 /build-old/
-/build/lib/vendor/
+/build/bob
 /build/composer.lock
+/build/lib/vendor/
+/build/src/
+/lib/vendor/
