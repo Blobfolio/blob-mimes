@@ -47,18 +47,11 @@ class mimes {
 	 * @param string $mime MIME type.
 	 * @return array MIME data.
 	 */
-	public static function get_mime($mime='') {
-		r_cast::string($mime, true);
-
-		// Lock UTF-8 Casting.
-		$lock = constants::$str_lock;
-		constants::$str_lock = true;
-
+	public static function get_mime(string $mime='') {
 		r_sanitize::mime($mime);
 
 		// Try the real MIME first.
 		if (isset(data::BY_MIME[$mime])) {
-			constants::$str_lock = false;
 			return data::BY_MIME[$mime];
 		}
 
@@ -66,12 +59,10 @@ class mimes {
 		$loose = array_diff(static::get_loose_mimes($mime), array($mime));
 		foreach ($loose as $v) {
 			if (isset(data::BY_MIME[$v])) {
-				constants::$str_lock = false;
 				return data::BY_MIME[$v];
 			}
 		}
 
-		constants::$str_lock = false;
 		return false;
 	}
 
@@ -94,17 +85,8 @@ class mimes {
 	 * @param string $ext File extension.
 	 * @return array Extension data.
 	 */
-	public static function get_extension($ext='') {
-		r_cast::string($ext, true);
-
-		// Lock UTF-8 Casting.
-		$lock = constants::$str_lock;
-		constants::$str_lock = true;
-
+	public static function get_extension(string $ext='') {
 		r_sanitize::file_extension($ext);
-
-		constants::$str_lock = false;
-
 		return isset(data::BY_EXT[$ext]) ? data::BY_EXT[$ext] : false;
 	}
 
@@ -116,18 +98,10 @@ class mimes {
 	 * @param bool $soft Soft pass not-found.
 	 * @return bool True.
 	 */
-	public static function check_ext_and_mime($ext='', $mime='', bool $soft=true) {
-		r_cast::string($ext, true);
-		r_cast::string($mime, true);
-
-		// Lock UTF-8 Casting.
-		$lock = constants::$str_lock;
-		constants::$str_lock = true;
-
+	public static function check_ext_and_mime(string $ext='', string $mime='', bool $soft=true) {
 		// Check the extension.
 		r_sanitize::file_extension($ext);
 		if (!$ext) {
-			constants::$str_lock = false;
 			return false;
 		}
 
@@ -138,17 +112,13 @@ class mimes {
 			(static::MIME_EMPTY === $mime) ||
 			($soft && (static::MIME_DEFAULT === $mime))
 		) {
-			constants::$str_lock = false;
 			return true;
 		}
 
 		// Soft pass on extension fail.
 		if (false === ($ext = static::get_extension($ext))) {
-			constants::$str_lock = false;
 			return $soft;
 		}
-
-		constants::$str_lock = false;
 
 		// Loose mime check.
 		$real = $ext['mime'];
@@ -223,10 +193,6 @@ class mimes {
 			r_cast::string($nice, true);
 		}
 
-		// Lock UTF-8 Casting.
-		$lock = constants::$str_lock;
-		constants::$str_lock = true;
-
 		$out = array(
 			'dirname'=>'',
 			'basename'=>'',
@@ -243,17 +209,16 @@ class mimes {
 			(false === strpos($path, '/')) &&
 			(false === strpos($path, '\\'))
 		) {
-			$out['extension'] = v_sanitize::file_extension($path);
+			$out['extension'] = v_sanitize::file_extension($path, true);
 			if (false !== ($ext = static::get_extension($path))) {
 				$out['mime'] = $ext['mime'][0];
 			}
 
-			constants::$str_lock = false;
 			return $out;
 		}
 
 		// Path is something path-like.
-		r_file::path($path, false);
+		r_file::path($path, false, true);
 		$out['path'] = $path;
 		$out = c_data::parse_args(pathinfo($path), $out);
 
@@ -263,7 +228,7 @@ class mimes {
 			$out['extension'] = isset($pathinfo['extension']) ? $pathinfo['extension'] : '';
 		}
 
-		r_sanitize::file_extension($out['extension']);
+		r_sanitize::file_extension($out['extension'], true);
 
 		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
@@ -331,11 +296,9 @@ class mimes {
 				}
 			}
 		} catch (\Throwable $e) {
-			constants::$str_lock = false;
 			return $out;
 		}
 
-		constants::$str_lock = false;
 		return $out;
 	}
 
