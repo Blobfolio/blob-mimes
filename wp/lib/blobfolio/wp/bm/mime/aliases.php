@@ -2353,6 +2353,18 @@ class aliases {
 		'he5'=>array(
 			'application/x-hdf',
 		),
+		'heic'=>array(
+			'image/heic',
+			'image/heic-sequence',
+			'image/heif',
+			'image/heif-sequence',
+		),
+		'heif'=>array(
+			'image/heic',
+			'image/heic-sequence',
+			'image/heif',
+			'image/heif-sequence',
+		),
 		'heldxml'=>array(
 			'application/held+xml',
 		),
@@ -4037,6 +4049,9 @@ class aliases {
 		'nim'=>array(
 			'video/vnd.nokia.interleaved-multimedia',
 		),
+		'nimn'=>array(
+			'application/vnd.nimn',
+		),
 		'nitf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
@@ -5560,6 +5575,30 @@ class aliases {
 		),
 		'seml'=>array(
 			'application/vnd.sealed-eml',
+		),
+		'senml'=>array(
+			'application/senml+json',
+		),
+		'senmlc'=>array(
+			'application/senml+cbor',
+		),
+		'senmle'=>array(
+			'application/senml-exi',
+		),
+		'senmlx'=>array(
+			'application/senml+xml',
+		),
+		'sensml'=>array(
+			'application/sensml+json',
+		),
+		'sensmlc'=>array(
+			'application/sensml+cbor',
+		),
+		'sensmle'=>array(
+			'application/sensml-exi',
+		),
+		'sensmlx'=>array(
+			'application/sensml+xml',
 		),
 		'ser'=>array(
 			'application/java-serialized-object',

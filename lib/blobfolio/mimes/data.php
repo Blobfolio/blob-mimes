@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-05-12 17:52:45.
+ * Built: 2018-06-01 14:16:42.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -2463,6 +2463,78 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'application/senml+cbor'=>array(
+			'mime'=>'application/senml+cbor',
+			'ext'=>array(
+				'senmlc',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/senml+json'=>array(
+			'mime'=>'application/senml+json',
+			'ext'=>array(
+				'senml',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/senml+xml'=>array(
+			'mime'=>'application/senml+xml',
+			'ext'=>array(
+				'senmlx',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/senml-exi'=>array(
+			'mime'=>'application/senml-exi',
+			'ext'=>array(
+				'senmle',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/sensml+cbor'=>array(
+			'mime'=>'application/sensml+cbor',
+			'ext'=>array(
+				'sensmlc',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/sensml+json'=>array(
+			'mime'=>'application/sensml+json',
+			'ext'=>array(
+				'sensml',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/sensml+xml'=>array(
+			'mime'=>'application/sensml+xml',
+			'ext'=>array(
+				'sensmlx',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/sensml-exi'=>array(
+			'mime'=>'application/sensml-exi',
+			'ext'=>array(
+				'sensmle',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/sereal'=>array(
@@ -6811,6 +6883,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.nimn'=>array(
+			'mime'=>'application/vnd.nimn',
+			'ext'=>array(
+				'nimn',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.nintendo.snes.rom'=>array(
@@ -16478,6 +16559,46 @@ class data {
 				'Nginx',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'image/heic'=>array(
+			'mime'=>'image/heic',
+			'ext'=>array(
+				'heic',
+				'heif',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
+		'image/heic-sequence'=>array(
+			'mime'=>'image/heic-sequence',
+			'ext'=>array(
+				'heic',
+				'heif',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
+		'image/heif'=>array(
+			'mime'=>'image/heif',
+			'ext'=>array(
+				'heic',
+				'heif',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
+		'image/heif-sequence'=>array(
+			'mime'=>'image/heif-sequence',
+			'ext'=>array(
+				'heic',
+				'heif',
+			),
+			'source'=>array(
+				'freedesktop.org',
 			),
 		),
 		'image/icns'=>array(
@@ -26283,6 +26404,24 @@ class data {
 				'application/x-hdf',
 			),
 		),
+		'heic'=>array(
+			'ext'=>'heic',
+			'mime'=>array(
+				'image/heif',
+				'image/heic',
+				'image/heic-sequence',
+				'image/heif-sequence',
+			),
+		),
+		'heif'=>array(
+			'ext'=>'heif',
+			'mime'=>array(
+				'image/heif',
+				'image/heic',
+				'image/heic-sequence',
+				'image/heif-sequence',
+			),
+		),
 		'heldxml'=>array(
 			'ext'=>'heldxml',
 			'mime'=>array(
@@ -29224,6 +29363,12 @@ class data {
 				'video/vnd.nokia.interleaved-multimedia',
 			),
 		),
+		'nimn'=>array(
+			'ext'=>'nimn',
+			'mime'=>array(
+				'application/vnd.nimn',
+			),
+		),
 		'nitf'=>array(
 			'ext'=>'nitf',
 			'mime'=>array(
@@ -31940,6 +32085,54 @@ class data {
 			'ext'=>'seml',
 			'mime'=>array(
 				'application/vnd.sealed-eml',
+			),
+		),
+		'senml'=>array(
+			'ext'=>'senml',
+			'mime'=>array(
+				'application/senml+json',
+			),
+		),
+		'senmlc'=>array(
+			'ext'=>'senmlc',
+			'mime'=>array(
+				'application/senml+cbor',
+			),
+		),
+		'senmle'=>array(
+			'ext'=>'senmle',
+			'mime'=>array(
+				'application/senml-exi',
+			),
+		),
+		'senmlx'=>array(
+			'ext'=>'senmlx',
+			'mime'=>array(
+				'application/senml+xml',
+			),
+		),
+		'sensml'=>array(
+			'ext'=>'sensml',
+			'mime'=>array(
+				'application/sensml+json',
+			),
+		),
+		'sensmlc'=>array(
+			'ext'=>'sensmlc',
+			'mime'=>array(
+				'application/sensml+cbor',
+			),
+		),
+		'sensmle'=>array(
+			'ext'=>'sensmle',
+			'mime'=>array(
+				'application/sensml-exi',
+			),
+		),
+		'sensmlx'=>array(
+			'ext'=>'sensmlx',
+			'mime'=>array(
+				'application/sensml+xml',
 			),
 		),
 		'ser'=>array(
