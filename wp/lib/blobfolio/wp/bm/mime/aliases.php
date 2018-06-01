@@ -253,6 +253,7 @@ class aliases {
 			'application/x-font-type1'
 		),
 		'afp'=>array(
+			'application/vnd.afpc.modca',
 			'application/vnd.ibm.modcap'
 		),
 		'ag'=>array(
@@ -391,6 +392,9 @@ class aliases {
 		'arj'=>array(
 			'application/x-arj',
 			'application/x-arj-compressed'
+		),
+		'artisan'=>array(
+			'application/vnd.artisan+json'
 		),
 		'arw'=>array(
 			'image/x-dcraw',
@@ -611,6 +615,7 @@ class aliases {
 			'text/plain'
 		),
 		'bin'=>array(
+			'application/gltf-buffer',
 			'application/octet-stream',
 			'application/x-saturn-rom',
 			'application/x-sega-cd-rom'
@@ -1454,6 +1459,9 @@ class aliases {
 			'text/plain',
 			'text/x-pascal'
 		),
+		'dpx'=>array(
+			'image/x-dpx'
+		),
 		'dra'=>array(
 			'audio/vnd.dra'
 		),
@@ -2143,6 +2151,12 @@ class aliases {
 			'application/x-glade',
 			'application/xml'
 		),
+		'glbin'=>array(
+			'application/gltf-buffer'
+		),
+		'glbuf'=>array(
+			'application/gltf-buffer'
+		),
 		'gltf'=>array(
 			'model/gltf+json'
 		),
@@ -2338,6 +2352,18 @@ class aliases {
 		),
 		'he5'=>array(
 			'application/x-hdf'
+		),
+		'heic'=>array(
+			'image/heic',
+			'image/heic-sequence',
+			'image/heif',
+			'image/heif-sequence'
+		),
+		'heif'=>array(
+			'image/heic',
+			'image/heic-sequence',
+			'image/heif',
+			'image/heif-sequence'
 		),
 		'heldxml'=>array(
 			'application/held+xml'
@@ -3130,9 +3156,11 @@ class aliases {
 			'text/plain'
 		),
 		'list3820'=>array(
+			'application/vnd.afpc.modca',
 			'application/vnd.ibm.modcap'
 		),
 		'listafp'=>array(
+			'application/vnd.afpc.modca',
 			'application/vnd.ibm.modcap'
 		),
 		'lmp'=>array(
@@ -4021,6 +4049,9 @@ class aliases {
 		'nim'=>array(
 			'video/vnd.nokia.interleaved-multimedia'
 		),
+		'nimn'=>array(
+			'application/vnd.nimn'
+		),
 		'nitf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
@@ -4856,6 +4887,7 @@ class aliases {
 			'image/x-psd'
 		),
 		'pseg3820'=>array(
+			'application/vnd.afpc.modca',
 			'application/vnd.ibm.modcap'
 		),
 		'psf'=>array(
@@ -5543,6 +5575,30 @@ class aliases {
 		),
 		'seml'=>array(
 			'application/vnd.sealed-eml'
+		),
+		'senml'=>array(
+			'application/senml+json'
+		),
+		'senmlc'=>array(
+			'application/senml+cbor'
+		),
+		'senmle'=>array(
+			'application/senml-exi'
+		),
+		'senmlx'=>array(
+			'application/senml+xml'
+		),
+		'sensml'=>array(
+			'application/sensml+json'
+		),
+		'sensmlc'=>array(
+			'application/sensml+cbor'
+		),
+		'sensmle'=>array(
+			'application/sensml-exi'
+		),
+		'sensmlx'=>array(
+			'application/sensml+xml'
 		),
 		'ser'=>array(
 			'application/java-serialized-object'
