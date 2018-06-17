@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-06-01 14:16:42.
+ * Built: 2018-06-16 20:57:03.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -897,7 +897,6 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
-				'Nginx',
 				'freedesktop.org',
 			),
 		),
@@ -932,17 +931,6 @@ class data {
 			'source'=>array(
 				'IANA',
 			),
-		),
-		'application/gltf-buffer'=>array(
-			'mime'=>'application/gltf-buffer',
-			'ext'=>array(
-				'bin',
-				'glbin',
-				'glbuf'
-			),
-			'source'=>array(
-				'IANA'
-			)
 		),
 		'application/gml+xml'=>array(
 			'mime'=>'application/gml+xml',
@@ -2548,78 +2536,6 @@ class data {
 				'IANA',
 			),
 		),
-		'application/senml+cbor'=>array(
-			'mime'=>'application/senml+cbor',
-			'ext'=>array(
-				'senmlc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/senml+json'=>array(
-			'mime'=>'application/senml+json',
-			'ext'=>array(
-				'senml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/senml+xml'=>array(
-			'mime'=>'application/senml+xml',
-			'ext'=>array(
-				'senmlx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/senml-exi'=>array(
-			'mime'=>'application/senml-exi',
-			'ext'=>array(
-				'senmle'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/sensml+cbor'=>array(
-			'mime'=>'application/sensml+cbor',
-			'ext'=>array(
-				'sensmlc'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/sensml+json'=>array(
-			'mime'=>'application/sensml+json',
-			'ext'=>array(
-				'sensml'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/sensml+xml'=>array(
-			'mime'=>'application/sensml+xml',
-			'ext'=>array(
-				'sensmlx'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
-		'application/sensml-exi'=>array(
-			'mime'=>'application/sensml-exi',
-			'ext'=>array(
-				'sensmle'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/sereal'=>array(
 			'mime'=>'application/sereal',
 			'ext'=>array(
@@ -3240,18 +3156,6 @@ class data {
 				'IANA',
 			),
 		),
-		'application/vnd.afpc.modca'=>array(
-			'mime'=>'application/vnd.afpc.modca',
-			'ext'=>array(
-				'pseg3820',
-				'list3820',
-				'listafp',
-				'afp'
-			),
-			'source'=>array(
-				'IANA'
-			)
-		),
 		'application/vnd.ahead.space'=>array(
 			'mime'=>'application/vnd.ahead.space',
 			'ext'=>array(
@@ -3507,15 +3411,6 @@ class data {
 			'source'=>array(
 				'IANA',
 			),
-		),
-		'application/vnd.artisan+json'=>array(
-			'mime'=>'application/vnd.artisan+json',
-			'ext'=>array(
-				'artisan'
-			),
-			'source'=>array(
-				'IANA'
-			)
 		),
 		'application/vnd.astraea-software.iota'=>array(
 			'mime'=>'application/vnd.astraea-software.iota',
@@ -6997,15 +6892,6 @@ class data {
 			'source'=>array(
 				'IANA',
 			),
-		),
-		'application/vnd.nimn'=>array(
-			'mime'=>'application/vnd.nimn',
-			'ext'=>array(
-				'nimn'
-			),
-			'source'=>array(
-				'IANA'
-			)
 		),
 		'application/vnd.nintendo.snes.rom'=>array(
 			'mime'=>'application/vnd.nintendo.snes.rom',
@@ -16546,6 +16432,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 				'freedesktop.org',
 			),
 		),
@@ -16557,6 +16444,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+				'Nginx',
 			),
 		),
 		'gzip/document'=>array(
@@ -16713,46 +16601,6 @@ class data {
 			'source'=>array(
 				'freedesktop.org',
 			),
-		),
-		'image/heic'=>array(
-			'mime'=>'image/heic',
-			'ext'=>array(
-				'heic',
-				'heif'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			)
-		),
-		'image/heic-sequence'=>array(
-			'mime'=>'image/heic-sequence',
-			'ext'=>array(
-				'heic',
-				'heif'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			)
-		),
-		'image/heif'=>array(
-			'mime'=>'image/heif',
-			'ext'=>array(
-				'heif',
-				'heic'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			)
-		),
-		'image/heif-sequence'=>array(
-			'mime'=>'image/heif-sequence',
-			'ext'=>array(
-				'heic',
-				'heif'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			)
 		),
 		'image/icns'=>array(
 			'mime'=>'image/icns',
@@ -17597,15 +17445,6 @@ class data {
 			'source'=>array(
 				'Tika',
 			),
-		),
-		'image/x-dpx'=>array(
-			'mime'=>'image/x-dpx',
-			'ext'=>array(
-				'dpx'
-			),
-			'source'=>array(
-				'Tika'
-			)
 		),
 		'image/x-dwg'=>array(
 			'mime'=>'image/x-dwg',
@@ -18777,6 +18616,15 @@ class data {
 				'IANA',
 			),
 		),
+		'model/vnd.usdz+zip'=>array(
+			'mime'=>'model/vnd.usdz+zip',
+			'ext'=>array(
+				'usdz',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'model/vnd.valve.source.compiled-map'=>array(
 			'mime'=>'model/vnd.valve.source.compiled-map',
 			'ext'=>array(
@@ -19716,6 +19564,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'text/vnd.gml'=>array(
+			'mime'=>'text/vnd.gml',
+			'ext'=>array(
+				'gml',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'text/vnd.graphviz'=>array(
@@ -20750,8 +20607,10 @@ class data {
 				'pm',
 				'al',
 				'perl',
+				'pod',
 			),
 			'source'=>array(
+				'freedesktop.org',
 				'Tika',
 			),
 		),
@@ -23022,17 +22881,6 @@ class data {
 				'application/vnd.artisan+json',
 			),
 		),
-		'artisan'=>array(
-			'ext'=>'artisan',
-			'mime'=>array(
-				'application/vnd.artisan+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.artisan+json'
-		),
 		'arw'=>array(
 			'ext'=>'arw',
 			'mime'=>array(
@@ -24936,17 +24784,6 @@ class data {
 				'image/x-dpx',
 			),
 		),
-		'dpx'=>array(
-			'ext'=>'dpx',
-			'mime'=>array(
-				'image/x-dpx'
-			),
-			'source'=>array(
-				'Tika'
-			),
-			'alias'=>array(),
-			'primary'=>'image/x-dpx'
-		),
 		'dra'=>array(
 			'ext'=>'dra',
 			'mime'=>array(
@@ -26227,28 +26064,6 @@ class data {
 				'application/gltf-buffer',
 			),
 		),
-		'glbin'=>array(
-			'ext'=>'glbin',
-			'mime'=>array(
-				'application/gltf-buffer'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/gltf-buffer'
-		),
-		'glbuf'=>array(
-			'ext'=>'glbuf',
-			'mime'=>array(
-				'application/gltf-buffer'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/gltf-buffer'
-		),
 		'gltf'=>array(
 			'ext'=>'gltf',
 			'mime'=>array(
@@ -26258,6 +26073,7 @@ class data {
 		'gml'=>array(
 			'ext'=>'gml',
 			'mime'=>array(
+				'text/vnd.gml',
 				'application/gml+xml',
 				'application/xml',
 			),
@@ -26627,41 +26443,6 @@ class data {
 				'image/heic-sequence',
 				'image/heif-sequence',
 			),
-		),
-		'heic'=>array(
-			'ext'=>'heic',
-			'mime'=>array(
-				'image/heif',
-				'image/heic',
-				'image/heic-sequence',
-				'image/heif-sequence'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			),
-			'alias'=>array(
-				'image/heic-sequence',
-				'image/heif-sequence'
-			),
-			'primary'=>'image/heic'
-		),
-		'heif'=>array(
-			'ext'=>'heif',
-			'mime'=>array(
-				'image/heif',
-				'image/heic',
-				'image/heic-sequence',
-				'image/heif-sequence'
-			),
-			'source'=>array(
-				'freedesktop.org'
-			),
-			'alias'=>array(
-				'image/heic',
-				'image/heic-sequence',
-				'image/heif-sequence'
-			),
-			'primary'=>'image/heif'
 		),
 		'heldxml'=>array(
 			'ext'=>'heldxml',
@@ -29610,17 +29391,6 @@ class data {
 				'application/vnd.nimn',
 			),
 		),
-		'nimn'=>array(
-			'ext'=>'nimn',
-			'mime'=>array(
-				'application/vnd.nimn'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/vnd.nimn'
-		),
 		'nitf'=>array(
 			'ext'=>'nitf',
 			'mime'=>array(
@@ -30787,6 +30557,7 @@ class data {
 				'application/x-perl',
 				'application/x-executable',
 				'text/plain',
+				'text/x-perl',
 			),
 		),
 		'pom'=>array(
@@ -32386,94 +32157,6 @@ class data {
 			'mime'=>array(
 				'application/sensml+xml',
 			),
-		),
-		'senml'=>array(
-			'ext'=>'senml',
-			'mime'=>array(
-				'application/senml+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/senml+json'
-		),
-		'senmlc'=>array(
-			'ext'=>'senmlc',
-			'mime'=>array(
-				'application/senml+cbor'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/senml+cbor'
-		),
-		'senmle'=>array(
-			'ext'=>'senmle',
-			'mime'=>array(
-				'application/senml-exi'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/senml-exi'
-		),
-		'senmlx'=>array(
-			'ext'=>'senmlx',
-			'mime'=>array(
-				'application/senml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/senml+xml'
-		),
-		'sensml'=>array(
-			'ext'=>'sensml',
-			'mime'=>array(
-				'application/sensml+json'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/sensml+json'
-		),
-		'sensmlc'=>array(
-			'ext'=>'sensmlc',
-			'mime'=>array(
-				'application/sensml+cbor'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/sensml+cbor'
-		),
-		'sensmle'=>array(
-			'ext'=>'sensmle',
-			'mime'=>array(
-				'application/sensml-exi'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/sensml-exi'
-		),
-		'sensmlx'=>array(
-			'ext'=>'sensmlx',
-			'mime'=>array(
-				'application/sensml+xml'
-			),
-			'source'=>array(
-				'IANA'
-			),
-			'alias'=>array(),
-			'primary'=>'application/sensml+xml'
 		),
 		'ser'=>array(
 			'ext'=>'ser',
@@ -34302,6 +33985,12 @@ class data {
 			'ext'=>'urls',
 			'mime'=>array(
 				'text/uri-list',
+			),
+		),
+		'usdz'=>array(
+			'ext'=>'usdz',
+			'mime'=>array(
+				'model/vnd.usdz+zip',
 			),
 		),
 		'ustar'=>array(

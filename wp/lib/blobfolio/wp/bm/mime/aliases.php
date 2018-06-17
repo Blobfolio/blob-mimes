@@ -396,9 +396,6 @@ class aliases {
 		'artisan'=>array(
 			'application/vnd.artisan+json',
 		),
-		'artisan'=>array(
-			'application/vnd.artisan+json'
-		),
 		'arw'=>array(
 			'image/x-dcraw',
 			'image/x-raw-sony',
@@ -1465,9 +1462,6 @@ class aliases {
 		'dpx'=>array(
 			'image/x-dpx',
 		),
-		'dpx'=>array(
-			'image/x-dpx'
-		),
 		'dra'=>array(
 			'audio/vnd.dra',
 		),
@@ -2163,18 +2157,13 @@ class aliases {
 		'glbuf'=>array(
 			'application/gltf-buffer',
 		),
-		'glbin'=>array(
-			'application/gltf-buffer'
-		),
-		'glbuf'=>array(
-			'application/gltf-buffer'
-		),
 		'gltf'=>array(
 			'model/gltf+json',
 		),
 		'gml'=>array(
 			'application/gml+xml',
 			'application/xml',
+			'text/vnd.gml',
 		),
 		'gmo'=>array(
 			'application/x-gettext-translation',
@@ -2376,18 +2365,6 @@ class aliases {
 			'image/heic-sequence',
 			'image/heif',
 			'image/heif-sequence',
-		),
-		'heic'=>array(
-			'image/heic',
-			'image/heic-sequence',
-			'image/heif',
-			'image/heif-sequence'
-		),
-		'heif'=>array(
-			'image/heic',
-			'image/heic-sequence',
-			'image/heif',
-			'image/heif-sequence'
 		),
 		'heldxml'=>array(
 			'application/held+xml',
@@ -4076,9 +4053,6 @@ class aliases {
 		'nimn'=>array(
 			'application/vnd.nimn',
 		),
-		'nimn'=>array(
-			'application/vnd.nimn'
-		),
 		'nitf'=>array(
 			'application/vnd.nitf',
 			'image/nitf',
@@ -4751,6 +4725,7 @@ class aliases {
 			'application/x-executable',
 			'application/x-perl',
 			'text/plain',
+			'text/x-perl',
 		),
 		'pom'=>array(
 			'text/plain',
@@ -5626,30 +5601,6 @@ class aliases {
 		),
 		'sensmlx'=>array(
 			'application/sensml+xml',
-		),
-		'senml'=>array(
-			'application/senml+json'
-		),
-		'senmlc'=>array(
-			'application/senml+cbor'
-		),
-		'senmle'=>array(
-			'application/senml-exi'
-		),
-		'senmlx'=>array(
-			'application/senml+xml'
-		),
-		'sensml'=>array(
-			'application/sensml+json'
-		),
-		'sensmlc'=>array(
-			'application/sensml+cbor'
-		),
-		'sensmle'=>array(
-			'application/sensml-exi'
-		),
-		'sensmlx'=>array(
-			'application/sensml+xml'
 		),
 		'ser'=>array(
 			'application/java-serialized-object',
@@ -6654,6 +6605,9 @@ class aliases {
 		),
 		'urls'=>array(
 			'text/uri-list',
+		),
+		'usdz'=>array(
+			'model/vnd.usdz+zip',
 		),
 		'ustar'=>array(
 			'application/x-ustar',
