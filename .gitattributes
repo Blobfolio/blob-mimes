@@ -3,6 +3,7 @@
 /.travis.yml export-ignore
 /build export-ignore
 /Gruntfile.js export-ignore
+/npm_scripts export-ignore
 /package.json export-ignore
 /phpunit.xml.dist export-ignore
 /README.md export-ignore
