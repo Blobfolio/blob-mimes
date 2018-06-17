@@ -781,8 +781,6 @@ class mimes extends \blobfolio\bob\base\mike {
 						$v = (string) $v;
 						if ('pattern' === $k) {
 							$v = ltrim($v, '.*');
-							if ($v === '4th') {
-							}
 							if (preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
 								$exts[] = $v;
 							}

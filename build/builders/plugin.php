@@ -36,8 +36,8 @@ class plugin extends \blobfolio\bob\base\mike_wp {
 	 */
 	protected static function get_shitlist() {
 		$shitlist = io::SHITLIST;
-		$shitlist [] = '#/bin$#';
-		$shitlist [] = '#/tests$#';
+		$shitlist[] = '#/bin$#';
+		$shitlist[] = '#/tests$#';
 		return $shitlist;
 	}
 
