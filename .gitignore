@@ -1,4 +1,12 @@
-/node_modules/
-/composer.lock
+**/*.git
+**/.DS_Store
+**/.sass-cache/
+**/composer.lock
+**/node_modules/
+**/package-lock.json
+**/secrets.json
+**/wp-config.php
 /blob-mimes/
-/package-lock.json
+/build/bob
+/build/lib/vendor/
+/lib/vendor/

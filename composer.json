@@ -7,7 +7,7 @@
     "extensions",
     "suffix"
   ],
-  "version": "1.3.2",
+  "version": "dev-7.0_Next",
   "type": "library",
   "homepage": "https:\/\/github.com\/Blobfolio\/blob-mimes",
   "license": "WTFPL",
@@ -19,7 +19,7 @@
     }
   ],
   "require": {
-    "php": ">= 5.6",
+    "php": ">= 7.0",
     "ext-filter": "*",
     "ext-dom": "*",
     "ext-mbstring": "*",
@@ -27,7 +27,7 @@
     "ext-bcmath": "*",
     "ext-hash": "*",
 
-    "blobfolio\/blob-common": "*"
+    "blobfolio\/blob-common": "dev-7.0_Next"
   },
   "require-dev": {
     "phpunit\/phpunit": "5.7.*"
