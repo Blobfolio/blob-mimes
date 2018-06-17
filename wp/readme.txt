@@ -71,6 +71,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.8.4 =
+* [Misc] Update MIME database.
+
 = 0.8.3 =
 * [Misc] Update MIME database.
 
@@ -84,10 +87,10 @@ This plugin does not make use of or collect any "Personal Data".
 * [Improved] Plugin contributor change monitoring is now handled more efficiently.
 * [Misc] Update MIME database.
 
-= 0.7.7 =
-* [Misc] Update MIME database.
-
 == Upgrade Notice ==
+
+= 0.8.4 =
+The MIME database has been updated.
 
 = 0.8.3 =
 The MIME database has been updated.
@@ -100,9 +103,3 @@ This release fixes an issue with CRON jobs on certain systems.
 
 = 0.8.0 =
 This release improves the efficiency of the plugin contributor monitoring functionality. The MIME database has also been updated.
-
-= 0.7.7 =
-The MIME database has been updated.
-
-= 0.7.6 =
-The MIME database has been updated.
