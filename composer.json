@@ -7,7 +7,7 @@
     "extensions",
     "suffix"
   ],
-  "version": "dev-7.0_Next",
+  "version": "8.0.0",
   "type": "library",
   "homepage": "https:\/\/github.com\/Blobfolio\/blob-mimes",
   "license": "WTFPL",
@@ -27,7 +27,7 @@
     "ext-bcmath": "*",
     "ext-hash": "*",
 
-    "blobfolio\/blob-common": "dev-7.0_Next"
+    "blobfolio\/blob-common": "*"
   },
   "require-dev": {
     "phpunit\/phpunit": "5.7.*"
