@@ -239,6 +239,7 @@ class aliases {
 		),
 		'adts'=>array(
 			'audio/aac',
+			'audio/x-aac',
 		),
 		'aep'=>array(
 			'application/vnd.adobe.aftereffects.project',
@@ -455,6 +456,8 @@ class aliases {
 			'text/plain',
 		),
 		'ass'=>array(
+			'audio/aac',
+			'audio/x-aac',
 			'text/plain',
 			'text/x-ssa',
 		),
@@ -1133,6 +1136,7 @@ class aliases {
 		),
 		'curl'=>array(
 			'application/vnd-curl',
+			'application/vnd.curl',
 			'text/vnd-curl',
 			'text/vnd.curl',
 		),
@@ -3977,6 +3981,7 @@ class aliases {
 			'audio/vnd.nokia.mobile-xmf',
 		),
 		'mxml'=>array(
+			'application/xhtml-voice+xml',
 			'application/xv+xml',
 		),
 		'mxs'=>array(
@@ -5027,6 +5032,9 @@ class aliases {
 		'qtvr'=>array(
 			'video/quicktime',
 		),
+		'qvd'=>array(
+			'application/vnd.theqvd',
+		),
 		'qwd'=>array(
 			'application/vnd.quark.quarkxpress',
 		),
@@ -5968,6 +5976,13 @@ class aliases {
 			'text/plain',
 			'text/x-sql',
 		),
+		'sqlite2'=>array(
+			'application/x-sqlite2',
+		),
+		'sqlite3'=>array(
+			'application/vnd.sqlite3',
+			'application/x-sqlite3',
+		),
 		'sqsh'=>array(
 			'application/vnd.squashfs',
 		),
@@ -6030,9 +6045,11 @@ class aliases {
 		),
 		'ssw'=>array(
 			'video/vnd.sealed-swf',
+			'video/vnd.sealed.swf',
 		),
 		'sswf'=>array(
 			'video/vnd.sealed-swf',
+			'video/vnd.sealed.swf',
 		),
 		'st'=>array(
 			'application/vnd.sailingtracker.track',
@@ -6068,7 +6085,6 @@ class aliases {
 			'model/stl',
 			'model/x.stl-ascii',
 			'model/x.stl-binary',
-			'text/plain',
 		),
 		'stm'=>array(
 			'application/vnd.sealedmedia.softseal-html',
@@ -7265,9 +7281,11 @@ class aliases {
 		),
 		'x_b'=>array(
 			'model/vnd.parasolid.transmit-binary',
+			'model/vnd.parasolid.transmit.binary',
 		),
 		'x_t'=>array(
 			'model/vnd.parasolid.transmit-text',
+			'model/vnd.parasolid.transmit.text',
 		),
 		'xac'=>array(
 			'application/x-gnucash',
@@ -7376,6 +7394,9 @@ class aliases {
 		'xgrm'=>array(
 			'text/plain',
 		),
+		'xhe'=>array(
+			'audio/usac',
+		),
 		'xht'=>array(
 			'application/xhtml+xml',
 			'application/xml',
@@ -7392,6 +7413,7 @@ class aliases {
 			'application/xhtml+xml',
 		),
 		'xhvml'=>array(
+			'application/xhtml-voice+xml',
 			'application/xv+xml',
 		),
 		'xi'=>array(
@@ -7441,6 +7463,7 @@ class aliases {
 		),
 		'xliff'=>array(
 			'application/x-xliff',
+			'application/xliff+xml',
 			'application/xml',
 		),
 		'xlim'=>array(
@@ -7790,13 +7813,16 @@ class aliases {
 			'text/plain',
 		),
 		'xul'=>array(
+			'application/vnd.mozilla.aul+xml',
 			'application/vnd.mozilla.xul+xml',
 			'application/xml',
 		),
 		'xvm'=>array(
+			'application/xhtml-voice+xml',
 			'application/xv+xml',
 		),
 		'xvml'=>array(
+			'application/xhtml-voice+xml',
 			'application/xv+xml',
 		),
 		'xwd'=>array(
@@ -7840,6 +7866,7 @@ class aliases {
 		),
 		'yt'=>array(
 			'application/vnd.youtube.yt',
+			'application/zip',
 		),
 		'z1'=>array(
 			'application/x-zmachine',

@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-06-16 20:57:03.
+ * Built: 2018-06-17 20:17:57.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -2015,6 +2015,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'application/pkix-attr-cert'=>array(
@@ -3038,6 +3039,7 @@ class data {
 				'acu',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Tika',
 			),
@@ -3284,6 +3286,7 @@ class data {
 				'fti',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Tika',
 			),
@@ -3771,6 +3774,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'application/vnd.commerce-battelle'=>array(
@@ -3926,6 +3930,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.curl'=>array(
+			'mime'=>'application/vnd.curl',
+			'ext'=>array(
+				'curl',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.curl.car'=>array(
@@ -6055,6 +6068,7 @@ class data {
 				'igx',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Tika',
 			),
@@ -6196,6 +6210,15 @@ class data {
 			'source'=>array(
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.mozilla.aul+xml'=>array(
+			'mime'=>'application/vnd.mozilla.aul+xml',
+			'ext'=>array(
+				'xul',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.mozilla.xul+xml'=>array(
@@ -7415,6 +7438,7 @@ class data {
 				'oxt',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika',
@@ -8962,6 +8986,15 @@ class data {
 				'Tika',
 			),
 		),
+		'application/vnd.sqlite3'=>array(
+			'mime'=>'application/vnd.sqlite3',
+			'ext'=>array(
+				'sqlite3',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
 		'application/vnd.squashfs'=>array(
 			'mime'=>'application/vnd.squashfs',
 			'ext'=>array(
@@ -9325,6 +9358,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'application/vnd.theqvd'=>array(
+			'mime'=>'application/vnd.theqvd',
+			'ext'=>array(
+				'qvd',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.think-cell.ppttc+json'=>array(
@@ -9920,6 +9962,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'application/vnd.zul'=>array(
@@ -13573,6 +13616,7 @@ class data {
 		'application/x-sqlite2'=>array(
 			'mime'=>'application/x-sqlite2',
 			'ext'=>array(
+				'sqlite2',
 				'kexi',
 			),
 			'source'=>array(
@@ -13582,6 +13626,7 @@ class data {
 		'application/x-sqlite3'=>array(
 			'mime'=>'application/x-sqlite3',
 			'ext'=>array(
+				'sqlite3',
 				'kexi',
 			),
 			'source'=>array(
@@ -14366,8 +14411,8 @@ class data {
 		'application/x-xliff'=>array(
 			'mime'=>'application/x-xliff',
 			'ext'=>array(
-				'xliff',
 				'xlf',
+				'xliff',
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -14610,13 +14655,27 @@ class data {
 				'Tika',
 			),
 		),
+		'application/xhtml-voice+xml'=>array(
+			'mime'=>'application/xhtml-voice+xml',
+			'ext'=>array(
+				'mxml',
+				'xhvml',
+				'xvml',
+				'xvm',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/xliff+xml'=>array(
 			'mime'=>'application/xliff+xml',
 			'ext'=>array(
 				'xlf',
+				'xliff',
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'application/xml'=>array(
@@ -14847,10 +14906,10 @@ class data {
 			'ext'=>array(
 				'zip',
 				'xlsm',
-				'otf',
 				'odb',
 				'odi',
 				'oxt',
+				'yt',
 				'cbz',
 				'jar',
 				'ora',
@@ -14876,9 +14935,9 @@ class data {
 				'mmas',
 				'ipa',
 				'xmind',
-				'odf',
+				'otf',
 				'otc',
-				'odc',
+				'odf',
 				'sxi',
 				'epub',
 				'vsdx',
@@ -14894,7 +14953,7 @@ class data {
 				'sxd',
 				'std',
 				'sti',
-				'ots',
+				'odc',
 				'sxm',
 				'sxw',
 				'sxg',
@@ -14908,6 +14967,7 @@ class data {
 				'odp',
 				'otp',
 				'ods',
+				'ots',
 				'explain',
 			),
 			'source'=>array(
@@ -14974,6 +15034,7 @@ class data {
 			'ext'=>array(
 				'adts',
 				'aac',
+				'ass',
 			),
 			'source'=>array(
 				'IANA',
@@ -15293,9 +15354,11 @@ class data {
 			'mime'=>'audio/usac',
 			'ext'=>array(
 				'loas',
+				'xhe',
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'audio/vnd.adobe.soundbooth'=>array(
@@ -15606,6 +15669,8 @@ class data {
 			'mime'=>'audio/x-aac',
 			'ext'=>array(
 				'aac',
+				'adts',
+				'ass',
 			),
 			'source'=>array(
 				'Apache',
@@ -18493,6 +18558,7 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'model/vnd-dwf'=>array(
@@ -18609,6 +18675,24 @@ class data {
 		),
 		'model/vnd.parasolid.transmit-text'=>array(
 			'mime'=>'model/vnd.parasolid.transmit-text',
+			'ext'=>array(
+				'x_t',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'model/vnd.parasolid.transmit.binary'=>array(
+			'mime'=>'model/vnd.parasolid.transmit.binary',
+			'ext'=>array(
+				'x_b',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'model/vnd.parasolid.transmit.text'=>array(
+			'mime'=>'model/vnd.parasolid.transmit.text',
 			'ext'=>array(
 				'x_t',
 			),
@@ -18967,7 +19051,7 @@ class data {
 				'roles',
 				'schemas',
 				'tld',
-				'vm',
+				'types',
 				'vsl',
 				'xargs',
 				'meta',
@@ -19008,13 +19092,12 @@ class data {
 				'jmx',
 				'junit',
 				'xweb',
-				'types',
+				'vm',
 				'def',
 				'conf',
 				'in',
 				'list',
-				'config',
-				'sfdu',
+				'cfg',
 				'xsl',
 				'as',
 				'ada',
@@ -19023,10 +19106,10 @@ class data {
 				'aj',
 				'asm',
 				'ifb',
+				'config',
 				'cs',
-				'cfg',
 				'xconf',
-				'sh',
+				'bash',
 				'haml',
 				'ac',
 				'ad',
@@ -19035,9 +19118,9 @@ class data {
 				'cnd',
 				'mdtext',
 				'itk',
-				'bash',
+				'sfdu',
 				'sas',
-				'sed',
+				'sh',
 				'it87',
 				'timer',
 				'xml',
@@ -19050,11 +19133,10 @@ class data {
 				'sdp',
 				'ica',
 				'ccmx',
-				'xquery',
+				'sed',
 				'trig',
 				'flatpakrepo',
 				'flatpakref',
-				'stl',
 				'gcode',
 				'bat',
 				'cmd',
@@ -19062,6 +19144,7 @@ class data {
 				'mpx',
 				'bibtex',
 				'xq',
+				'xquery',
 				'st',
 				'rb',
 				'clj',
@@ -19105,7 +19188,7 @@ class data {
 				'pm',
 				'pl',
 				'pp',
-				'less',
+				'swap',
 				'mli',
 				'n3',
 				'ocaml',
@@ -19116,9 +19199,9 @@ class data {
 				'm3',
 				'ml',
 				'lua',
-				'swap',
+				'less',
 				'target',
-				'scope',
+				'path',
 				'socket',
 				'ssa',
 				'm3u',
@@ -19218,7 +19301,7 @@ class data {
 				'cls',
 				'not',
 				'uil',
-				'path',
+				'scope',
 				'mount',
 				'device',
 				'automount',
@@ -19481,6 +19564,7 @@ class data {
 				'curl',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Tika',
 			),
@@ -21371,6 +21455,7 @@ class data {
 				'jpgm',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'Tika',
 			),
@@ -21532,8 +21617,8 @@ class data {
 		'video/vnd-mpegurl'=>array(
 			'mime'=>'video/vnd-mpegurl',
 			'ext'=>array(
-				'mxu',
 				'm4u',
+				'mxu',
 			),
 			'source'=>array(
 				'IANA',
@@ -21647,11 +21732,12 @@ class data {
 		'video/vnd.mpegurl'=>array(
 			'mime'=>'video/vnd.mpegurl',
 			'ext'=>array(
-				'm1u',
 				'mxu',
+				'm1u',
 				'm4u',
 			),
 			'source'=>array(
+				'IANA',
 				'Apache',
 				'freedesktop.org',
 				'Tika',
@@ -21721,6 +21807,16 @@ class data {
 			'ext'=>array(
 				's14',
 				'smpg',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'video/vnd.sealed.swf'=>array(
+			'mime'=>'video/vnd.sealed.swf',
+			'ext'=>array(
+				'sswf',
+				'ssw',
 			),
 			'source'=>array(
 				'IANA',
@@ -22534,8 +22630,8 @@ class data {
 		'acu'=>array(
 			'ext'=>'acu',
 			'mime'=>array(
-				'application/vnd-acucobol',
 				'application/vnd.acucobol',
+				'application/vnd-acucobol',
 			),
 		),
 		'acutc'=>array(
@@ -22597,6 +22693,7 @@ class data {
 			'ext'=>'adts',
 			'mime'=>array(
 				'audio/aac',
+				'audio/x-aac',
 			),
 		),
 		'aep'=>array(
@@ -22982,6 +23079,8 @@ class data {
 			'ext'=>'ass',
 			'mime'=>array(
 				'text/x-ssa',
+				'audio/aac',
+				'audio/x-aac',
 				'text/plain',
 			),
 		),
@@ -24212,6 +24311,7 @@ class data {
 			'mime'=>array(
 				'text/vnd.curl',
 				'application/vnd-curl',
+				'application/vnd.curl',
 				'text/vnd-curl',
 			),
 		),
@@ -26803,8 +26903,8 @@ class data {
 		'igx'=>array(
 			'ext'=>'igx',
 			'mime'=>array(
-				'application/vnd.micrografx-igx',
 				'application/vnd.micrografx.igx',
+				'application/vnd.micrografx-igx',
 			),
 		),
 		'ihtml'=>array(
@@ -29252,6 +29352,7 @@ class data {
 			'ext'=>'mxml',
 			'mime'=>array(
 				'application/xv+xml',
+				'application/xhtml-voice+xml',
 			),
 		),
 		'mxs'=>array(
@@ -29263,9 +29364,9 @@ class data {
 		'mxu'=>array(
 			'ext'=>'mxu',
 			'mime'=>array(
-				'video/vnd-mpegurl',
-				'text/plain',
 				'video/vnd.mpegurl',
+				'text/plain',
+				'video/vnd-mpegurl',
 				'video/x-mpegurl',
 			),
 		),
@@ -31091,6 +31192,12 @@ class data {
 				'video/quicktime',
 			),
 		),
+		'qvd'=>array(
+			'ext'=>'qvd',
+			'mime'=>array(
+				'application/vnd.theqvd',
+			),
+		),
 		'qwd'=>array(
 			'ext'=>'qwd',
 			'mime'=>array(
@@ -32827,6 +32934,19 @@ class data {
 				'text/x-sql',
 			),
 		),
+		'sqlite2'=>array(
+			'ext'=>'sqlite2',
+			'mime'=>array(
+				'application/x-sqlite2',
+			),
+		),
+		'sqlite3'=>array(
+			'ext'=>'sqlite3',
+			'mime'=>array(
+				'application/vnd.sqlite3',
+				'application/x-sqlite3',
+			),
+		),
 		'sqsh'=>array(
 			'ext'=>'sqsh',
 			'mime'=>array(
@@ -32942,12 +33062,14 @@ class data {
 			'ext'=>'ssw',
 			'mime'=>array(
 				'video/vnd.sealed-swf',
+				'video/vnd.sealed.swf',
 			),
 		),
 		'sswf'=>array(
 			'ext'=>'sswf',
 			'mime'=>array(
 				'video/vnd.sealed-swf',
+				'video/vnd.sealed.swf',
 			),
 		),
 		'st'=>array(
@@ -33010,7 +33132,6 @@ class data {
 				'application/vnd.ms-pki.stl',
 				'model/x.stl-ascii',
 				'model/x.stl-binary',
-				'text/plain',
 			),
 		),
 		'stm'=>array(
@@ -35140,12 +35261,14 @@ class data {
 			'ext'=>'x_b',
 			'mime'=>array(
 				'model/vnd.parasolid.transmit-binary',
+				'model/vnd.parasolid.transmit.binary',
 			),
 		),
 		'x_t'=>array(
 			'ext'=>'x_t',
 			'mime'=>array(
 				'model/vnd.parasolid.transmit-text',
+				'model/vnd.parasolid.transmit.text',
 			),
 		),
 		'xac'=>array(
@@ -35351,6 +35474,12 @@ class data {
 				'text/plain',
 			),
 		),
+		'xhe'=>array(
+			'ext'=>'xhe',
+			'mime'=>array(
+				'audio/usac',
+			),
+		),
 		'xht'=>array(
 			'ext'=>'xht',
 			'mime'=>array(
@@ -35382,6 +35511,7 @@ class data {
 			'ext'=>'xhvml',
 			'mime'=>array(
 				'application/xv+xml',
+				'application/xhtml-voice+xml',
 			),
 		),
 		'xi'=>array(
@@ -35456,6 +35586,7 @@ class data {
 		'xliff'=>array(
 			'ext'=>'xliff',
 			'mime'=>array(
+				'application/xliff+xml',
 				'application/x-xliff',
 				'application/xml',
 			),
@@ -35966,6 +36097,7 @@ class data {
 			'ext'=>'xul',
 			'mime'=>array(
 				'application/vnd.mozilla.xul+xml',
+				'application/vnd.mozilla.aul+xml',
 				'application/xml',
 			),
 		),
@@ -35973,12 +36105,14 @@ class data {
 			'ext'=>'xvm',
 			'mime'=>array(
 				'application/xv+xml',
+				'application/xhtml-voice+xml',
 			),
 		),
 		'xvml'=>array(
 			'ext'=>'xvml',
 			'mime'=>array(
 				'application/xv+xml',
+				'application/xhtml-voice+xml',
 			),
 		),
 		'xwd'=>array(
@@ -36057,6 +36191,7 @@ class data {
 			'ext'=>'yt',
 			'mime'=>array(
 				'application/vnd.youtube.yt',
+				'application/zip',
 			),
 		),
 		'z1'=>array(
