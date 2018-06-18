@@ -57,6 +57,7 @@ use \blobfolio\bob\format;
 use \blobfolio\bob\io;
 use \blobfolio\bob\log;
 use \blobfolio\common\data;
+use \blobfolio\common\file as v_file;
 use \blobfolio\common\mb as v_mb;
 use \blobfolio\common\ref\mb as r_mb;
 use \blobfolio\common\ref\sanitize as r_sanitize;
@@ -76,15 +77,6 @@ class mimes extends \blobfolio\bob\base\mike {
 		'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in',
 		'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types',
 		'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml',
-		'https://www.iana.org/assignments/media-types/application.csv',
-		'https://www.iana.org/assignments/media-types/audio.csv',
-		'https://www.iana.org/assignments/media-types/font.csv',
-		'https://www.iana.org/assignments/media-types/image.csv',
-		'https://www.iana.org/assignments/media-types/message.csv',
-		'https://www.iana.org/assignments/media-types/model.csv',
-		'https://www.iana.org/assignments/media-types/multipart.csv',
-		'https://www.iana.org/assignments/media-types/text.csv',
-		'https://www.iana.org/assignments/media-types/video.csv',
 	);
 
 	// Automatic setup.
@@ -109,9 +101,11 @@ class mimes extends \blobfolio\bob\base\mike {
 		),
 	);
 
-	// IANA does not have a central dataset. We have to do a lot of
-	// parsing and downloading.
+	// Unlike the other sources, IANA splits its data across thousands
+	// of different files with no programmatic consistency to formatting
+	// to help us out. Haha.
 	const IANA_BASE = 'https://www.iana.org/assignments/media-types/';
+	const IANA_RSYNC = 'rsync://rsync.iana.org/assignments/media-types/';
 	const IANA_CATEGORIES = array(
 		'application',
 		'audio',
@@ -228,33 +222,23 @@ class mimes extends \blobfolio\bob\base\mike {
 	 * @return void Nothing.
 	 */
 	protected static function build_iana_resources() {
-		// We need to get more from IANA.
-		log::print('Locating additional IANA resources…');
+		log::print('Downloading IANA data…');
 
-		// Parse each category.
-		$more = array();
-		foreach (static::IANA_CATEGORIES as $v) {
-			$url = static::IANA_BASE . "{$v}.csv";
-			$tmp = io::get_url($url);
-			$tmp = format::lines_to_array($tmp);
+		// Make a directory to hold the data.
+		static::$iana_local = io::make_dir();
 
-			$num = 0;
-			foreach ($tmp as $raw) {
-				$num++;
-
-				// Skip headers.
-				if ($num > 1) {
-					$line = str_getcsv($raw);
-					if (isset($line[1]) && $line[1]) {
-						$more[] = static::IANA_BASE . $line[1];
-					}
-				}
-			}
+		// We need to use rsync to fetch the files.
+		$cmd = io::get_command(
+			'rsync',
+			array(
+				'-avz',
+				escapeshellcmd(static::IANA_RSYNC),
+				escapeshellcmd(static::$iana_local),
+			)
+		);
+		if (!io::exec($cmd)) {
+			log::error("The data sync failed. Make sure \033[1mrsync\033[0m is installed.");
 		}
-
-		log::print('Downloading ' . number_format(count($more), 0, '.', ',') . ' additional files. Haha.');
-
-		static::$iana_local = io::download($more);
 	}
 
 	/**
@@ -276,115 +260,125 @@ class mimes extends \blobfolio\bob\base\mike {
 			'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui',
 		);
 
-		$base_length = strlen(static::IANA_BASE);
-
-		// Run through each of the million files!
-		foreach (static::$iana_local as $url=>$file) {
-			if (!$file) {
+		$base_length = strlen(static::$iana_local);
+		foreach (static::IANA_CATEGORIES as $category) {
+			$files = v_file::scandir(static::$iana_local . "$category/", true, false);
+			if (!isset($files[0])) {
 				continue;
 			}
 
-			// Parse out the MIME type from the URL.
-			$mime = substr($url, $base_length);
-			r_sanitize::mime($mime);
-			if (!$mime) {
-				continue;
-			}
+			log::print("Parsing IANA {$category}/ types…");
 
-			$content = file_get_contents($file);
-
-			// See if our patterns turn anything up.
-			foreach ($patterns as $pattern) {
-				preg_match($pattern, $content, $matches);
-				if (isset($matches[1])) {
-					static::save_pair($mime, $matches[1], 'IANA');
-				}
-			}
-
-			// Look for extensions too.
-			preg_match_all('/\s*File extension(\(s\))?\s*:\s*([\.,\da-z\h\-_]+)/ui', $content, $matches);
-			if (count($matches[2])) {
-				$raw = explode(',', $matches[2][0]);
-				r_mb::trim($raw);
-				r_mb::strtolower($raw);
-				$raw = array_values(array_filter($raw, 'strlen'));
-
-				// If there aren't any, we're done.
-				if (!count($raw)) {
+			foreach ($files as $file) {
+				// The MIME is the parent folder and file.
+				$mime = substr($file, $base_length);
+				r_sanitize::mime($mime);
+				if (!$mime) {
 					continue;
 				}
 
-				// First pass, clean up data.
-				foreach ($raw as $k=>$v) {
-					$raw[$k] = str_replace(array('.', '*'), '', $raw[$k]);
-					r_mb::trim($raw[$k]);
+				$content = file_get_contents($file);
 
-					// Split "or".
-					if (false !== strpos($raw[$k], ' or ')) {
-						$tmp = explode(' or ', $raw[$k]);
-						r_mb::trim($tmp);
-						$tmp = array_values(array_filter($tmp, 'strlen'));
-						if (count($tmp)) {
-							$raw[$k] = $tmp[0];
-							for ($x = 1; $x < count($tmp); ++$x) {
-								$raw[] = $tmp[$x];
+				// See if our patterns turn anything up.
+				foreach ($patterns as $pattern) {
+					preg_match($pattern, $content, $matches);
+					if (isset($matches[1])) {
+						static::save_pair($mime, $matches[1], 'IANA');
+					}
+				}
+
+				// Look for extensions too.
+				preg_match_all(
+					'/\s*File extension(\(s\))?\s*:\s*([\.,\da-z\h\-_]+)/ui',
+					$content,
+					$matches
+				);
+				if (count($matches[2])) {
+					$raw = explode(',', $matches[2][0]);
+					r_mb::trim($raw);
+					r_mb::strtolower($raw);
+					$raw = array_values(array_filter($raw, 'strlen'));
+
+					// If there aren't any, we're done.
+					if (!count($raw)) {
+						continue;
+					}
+
+					// First pass, clean up data.
+					foreach ($raw as $k=>$v) {
+						$raw[$k] = str_replace(array('.', '*'), '', $raw[$k]);
+						r_mb::trim($raw[$k]);
+
+						// Split "or".
+						if (false !== strpos($raw[$k], ' or ')) {
+							$tmp = explode(' or ', $raw[$k]);
+							r_mb::trim($tmp);
+							$tmp = array_values(array_filter($tmp, 'strlen'));
+							if (count($tmp)) {
+								$raw[$k] = $tmp[0];
+								for ($x = 1; $x < count($tmp); ++$x) {
+									$raw[] = $tmp[$x];
+								}
+							}
+						}
+
+						// Get rid of ugly data.
+						if (!preg_match('/^[\da-z\-_]{2,}$/', $raw[$k])) {
+							unset($raw[$k]);
+						}
+					}
+
+					// Remove non-entries.
+					$raw = array_diff(
+						$raw,
+						array(
+							'-none-',
+							'na',
+							'none',
+							'undefined',
+							'unknown',
+						)
+					);
+					if (!count($raw)) {
+						continue;
+					}
+
+					// Second pass, grab extensions!
+					$exts = array();
+					foreach ($raw as $ext) {
+						if (preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext)) {
+							r_sanitize::file_extension($ext);
+							if ($ext) {
+								$exts[] = $ext;
 							}
 						}
 					}
-
-					// Get rid of ugly data.
-					if (!preg_match('/^[\da-z\-_]{2,}$/', $raw[$k])) {
-						unset($raw[$k]);
-					}
-				}
-
-				// Remove non-entries.
-				$raw = array_diff(
-					$raw,
-					array(
-						'-none-',
-						'na',
-						'none',
-						'undefined',
-						'unknown',
-					)
-				);
-				if (!count($raw)) {
-					continue;
-				}
-
-				// Second pass, grab extensions!
-				$exts = array();
-				foreach ($raw as $ext) {
-					if (preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext)) {
-						r_sanitize::file_extension($ext);
-						if ($ext) {
-							$exts[] = $ext;
+					foreach ($exts as $ext) {
+						// Have we already used this IANA extension for
+						// something else? That kills its authority.
+						if (isset(static::$iana_used[$ext])) {
+							if (isset(static::$iana_override[$ext])) {
+								unset(static::$iana_override[$ext]);
+							}
 						}
-					}
-				}
-				foreach ($exts as $ext) {
-					// Have we already used this IANA extension for
-					// something else? That kills its authority.
-					if (isset(static::$iana_used[$ext])) {
-						if (isset(static::$iana_override[$ext])) {
-							unset(static::$iana_override[$ext]);
+						// Otherwise it might be nice.
+						else {
+							static::$iana_override[$ext] = $mime;
+							static::$iana_used[$ext] = true;
 						}
-					}
-					// Otherwise it might be nice.
-					else {
-						static::$iana_override[$ext] = $mime;
-						static::$iana_used[$ext] = true;
-					}
 
-					static::save_pair($mime, $ext, 'IANA');
+						static::save_pair($mime, $ext, 'IANA');
+					}
 				}
-			}
-		}
+			} // Each file.
+		} // Each category.
 
 		// Sort for later.
 		ksort(static::$iana_override);
 		ksort(static::$iana_used);
+
+		log::print('Cleaning up…');
+		v_file::rmdir(static::$iana_local);
 	}
 
 	/**
@@ -476,7 +470,11 @@ class mimes extends \blobfolio\bob\base\mike {
 
 		// Tika uses the FD XML format, but their tika namespace
 		// crashes SimpleXML, so we have to pre-strip.
-		$content = preg_replace('/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us', '', $content);
+		$content = preg_replace(
+			'/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us',
+			'',
+			$content
+		);
 
 		static::parse_xml_mimes($content, 'Tika');
 	}
