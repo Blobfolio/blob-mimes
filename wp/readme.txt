@@ -4,7 +4,7 @@ Donate link: https://blobfolio.com/donate.html
 Tags: mime, SVG, file validation, security plugin, wordpress security, malware, exploit, security, sanitizing, sanitization, file detection, upload security, secure, file uploads, infection, block hackers, protection
 Requires at least: 4.7.1
 Tested up to: 4.9
-Requires PHP: 5.4
+Requires PHP: 7.0
 Stable tag: trunk
 License: WTFPL
 License URI: http://www.wtfpl.net/
@@ -29,7 +29,7 @@ The main features include:
 == Requirements ==
 
  * WordPress 4.7.1 or later.
- * PHP 5.4 or later.
+ * PHP 7.0 or later.
  * DOMDocument extension is optional, but will improve SVG sanitizing.
 
 Please note: it is **not safe** to run WordPress atop a version of PHP that has reached its [End of Life](http://php.net/supported-versions.php). As of right now, that means your server should only be running **PHP 5.6 or newer**.
@@ -71,6 +71,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.8.5 =
+* [Misc] Update MIME database.
+
 = 0.8.4 =
 * [Misc] Update MIME database.
 
@@ -83,11 +86,12 @@ This plugin does not make use of or collect any "Personal Data".
 = 0.8.1 =
 * [Fix] Core `wp-admin/includes/plugin.php` is not always loaded for CRON jobs.
 
-= 0.8.0 =
-* [Improved] Plugin contributor change monitoring is now handled more efficiently.
 * [Misc] Update MIME database.
 
 == Upgrade Notice ==
+
+= 0.8.5 =
+The MIME database has been updated.
 
 = 0.8.4 =
 The MIME database has been updated.
@@ -100,6 +104,3 @@ The MIME database has been updated.
 
 = 0.8.1 =
 This release fixes an issue with CRON jobs on certain systems.
-
-= 0.8.0 =
-This release improves the efficiency of the plugin contributor monitoring functionality. The MIME database has also been updated.
