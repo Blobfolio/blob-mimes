@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-06-17 20:17:57.
+ * Built: 2018-07-01 19:37:50.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3480,6 +3480,15 @@ class data {
 				'IANA',
 			),
 		),
+		'application/vnd.banana-accounting'=>array(
+			'mime'=>'application/vnd.banana-accounting',
+			'ext'=>array(
+				'ac2',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.bekitzur-stech+json'=>array(
 			'mime'=>'application/vnd.bekitzur-stech+json',
 			'ext'=>array(
@@ -5823,6 +5832,15 @@ class data {
 			'source'=>array(
 				'IANA',
 				'Apache',
+			),
+		),
+		'application/vnd.leap+json'=>array(
+			'mime'=>'application/vnd.leap+json',
+			'ext'=>array(
+				'json',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.llamagraphics.life-balance.desktop'=>array(
@@ -11111,6 +11129,16 @@ class data {
 				'freedesktop.org',
 			),
 		),
+		'application/x-fd-file'=>array(
+			'mime'=>'application/x-fd-file',
+			'ext'=>array(
+				'fd',
+				'qd',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
 		'application/x-fds-disk'=>array(
 			'mime'=>'application/x-fds-disk',
 			'ext'=>array(
@@ -11641,6 +11669,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'application/x-hfe-file'=>array(
+			'mime'=>'application/x-hfe-file',
+			'ext'=>array(
+				'hfe',
+			),
+			'source'=>array(
+				'freedesktop.org',
 			),
 		),
 		'application/x-hfe-floppy-image'=>array(
@@ -13094,8 +13131,20 @@ class data {
 			'ext'=>array(
 				'raw-disk-image',
 				'img',
+				'fd',
+				'qd',
 				'iso',
 				'iso9660',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
+		'application/x-raw-floppy-disk-image'=>array(
+			'mime'=>'application/x-raw-floppy-disk-image',
+			'ext'=>array(
+				'fd',
+				'qd',
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -13173,6 +13222,15 @@ class data {
 			'ext'=>array(
 				'sami',
 				'smi',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
+		'application/x-sap-file'=>array(
+			'mime'=>'application/x-sap-file',
+			'ext'=>array(
+				'sap',
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -22602,6 +22660,12 @@ class data {
 				'text/plain',
 			),
 		),
+		'ac2'=>array(
+			'ext'=>'ac2',
+			'mime'=>array(
+				'application/vnd.banana-accounting',
+			),
+		),
 		'ac3'=>array(
 			'ext'=>'ac3',
 			'mime'=>array(
@@ -25522,6 +25586,14 @@ class data {
 				'application/vnd.isac.fcs',
 			),
 		),
+		'fd'=>array(
+			'ext'=>'fd',
+			'mime'=>array(
+				'application/x-raw-floppy-disk-image',
+				'application/x-fd-file',
+				'application/x-raw-disk-image',
+			),
+		),
 		'fdf'=>array(
 			'ext'=>'fdf',
 			'mime'=>array(
@@ -26560,6 +26632,7 @@ class data {
 			'ext'=>'hfe',
 			'mime'=>array(
 				'application/x-hfe-floppy-image',
+				'application/x-hfe-file',
 			),
 		),
 		'hh'=>array(
@@ -27488,6 +27561,7 @@ class data {
 				'application/vnd.ims.lti.v2.toolsettings+json',
 				'application/vnd.ims.lti.v2.toolsettings.simple+json',
 				'application/vnd.infotech.project',
+				'application/vnd.leap+json',
 				'application/vnd.mason+json',
 				'application/vnd.micro+json',
 				'application/vnd.miele+json',
@@ -31109,6 +31183,14 @@ class data {
 				'application/vnd.ericsson.quickcall',
 			),
 		),
+		'qd'=>array(
+			'ext'=>'qd',
+			'mime'=>array(
+				'application/x-raw-floppy-disk-image',
+				'application/x-fd-file',
+				'application/x-raw-disk-image',
+			),
+		),
 		'qfx'=>array(
 			'ext'=>'qfx',
 			'mime'=>array(
@@ -31868,6 +31950,7 @@ class data {
 			'ext'=>'sap',
 			'mime'=>array(
 				'application/x-thomson-sap-image',
+				'application/x-sap-file',
 			),
 		),
 		'sas'=>array(

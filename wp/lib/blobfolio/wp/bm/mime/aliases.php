@@ -189,6 +189,9 @@ class aliases {
 			'application/vnd.nokia.n-gage.ac+xml',
 			'text/plain',
 		),
+		'ac2'=>array(
+			'application/vnd.banana-accounting',
+		),
 		'ac3'=>array(
 			'audio/ac3',
 		),
@@ -1816,6 +1819,11 @@ class aliases {
 		'fcs'=>array(
 			'application/vnd.isac.fcs',
 		),
+		'fd'=>array(
+			'application/x-fd-file',
+			'application/x-raw-disk-image',
+			'application/x-raw-floppy-disk-image',
+		),
 		'fdf'=>array(
 			'application/vnd.fdf',
 		),
@@ -2377,6 +2385,7 @@ class aliases {
 			'application/x-erdas-hfa',
 		),
 		'hfe'=>array(
+			'application/x-hfe-file',
 			'application/x-hfe-floppy-image',
 		),
 		'hh'=>array(
@@ -2919,6 +2928,7 @@ class aliases {
 			'application/vnd.ims.lti.v2.toolsettings+json',
 			'application/vnd.ims.lti.v2.toolsettings.simple+json',
 			'application/vnd.infotech.project',
+			'application/vnd.leap+json',
 			'application/vnd.mason+json',
 			'application/vnd.micro+json',
 			'application/vnd.miele+json',
@@ -4988,6 +4998,11 @@ class aliases {
 		'qcall'=>array(
 			'application/vnd.ericsson.quickcall',
 		),
+		'qd'=>array(
+			'application/x-fd-file',
+			'application/x-raw-disk-image',
+			'application/x-raw-floppy-disk-image',
+		),
 		'qfx'=>array(
 			'application/vnd.intu.qfx',
 		),
@@ -5402,6 +5417,7 @@ class aliases {
 			'text/plain',
 		),
 		'sap'=>array(
+			'application/x-sap-file',
 			'application/x-thomson-sap-image',
 		),
 		'sas'=>array(
