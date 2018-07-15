@@ -2388,6 +2388,9 @@ class aliases {
 			'application/x-hfe-file',
 			'application/x-hfe-floppy-image',
 		),
+		'hgl'=>array(
+			'text/vnd.hgl',
+		),
 		'hh'=>array(
 			'text/plain',
 			'text/x-c',
@@ -2907,6 +2910,7 @@ class aliases {
 			'application/vnd.api+json',
 			'application/vnd.avalon+json',
 			'application/vnd.bekitzur-stech+json',
+			'application/vnd.byu.uapi+json',
 			'application/vnd.capasystems-pg+json',
 			'application/vnd.collection+json',
 			'application/vnd.collection.doc+json',
@@ -6093,6 +6097,9 @@ class aliases {
 		'stif'=>array(
 			'application/vnd.sealed-tiff',
 		),
+		'stix'=>array(
+			'application/stix+json',
+		),
 		'stk'=>array(
 			'application/hyperstudio',
 		),
@@ -7004,10 +7011,12 @@ class aliases {
 		),
 		'wb1'=>array(
 			'application/x-quattro-pro',
+			'application/x-quattro-proversion1+5',
 			'application/x-quattropro',
 		),
 		'wb2'=>array(
 			'application/x-quattro-pro',
+			'application/x-quattro-proversion6',
 			'application/x-quattropro',
 		),
 		'wb3'=>array(
@@ -7069,14 +7078,21 @@ class aliases {
 		'wk1'=>array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
+			'application/vnd.lotus-1-2-3version2',
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
 			'zz-application/zz-winassoc-123',
 		),
+		'wk2'=>array(
+			'application/vnd.lotus-1-2-3',
+			'application/vnd.lotus-1-2-3version2',
+			'application/x-123',
+		),
 		'wk3'=>array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
+			'application/vnd.lotus-1-2-3version3',
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
@@ -7085,6 +7101,7 @@ class aliases {
 		'wk4'=>array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
+			'application/vnd.lotus-1-2-3version4',
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',
@@ -7092,6 +7109,11 @@ class aliases {
 		),
 		'wkdownload'=>array(
 			'application/x-partial-download',
+		),
+		'wkq'=>array(
+			'application/x-quattro-pro',
+			'application/x-quattro-proversion1-4',
+			'application/x-quattro-proversion5',
 		),
 		'wks'=>array(
 			'application/lotus123',
@@ -7209,6 +7231,14 @@ class aliases {
 		),
 		'wpt'=>array(
 			'application/vnd.wordperfect',
+		),
+		'wq1'=>array(
+			'application/x-quattro-pro',
+			'application/x-quattro-proversion1-4',
+		),
+		'wq2'=>array(
+			'application/x-quattro-pro',
+			'application/x-quattro-proversion5',
 		),
 		'wqd'=>array(
 			'application/vnd.wqd',
@@ -7959,6 +7989,7 @@ class aliases {
 		'123'=>array(
 			'application/lotus123',
 			'application/vnd.lotus-1-2-3',
+			'application/vnd.lotus-1-2-3version97+9.x',
 			'application/wk1',
 			'application/x-123',
 			'application/x-lotus123',

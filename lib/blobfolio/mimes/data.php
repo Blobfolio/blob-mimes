@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-07-01 19:37:50.
+ * Built: 2018-07-15 09:24:02.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -2718,6 +2718,15 @@ class data {
 				'Tika',
 			),
 		),
+		'application/stix+json'=>array(
+			'mime'=>'application/stix+json',
+			'ext'=>array(
+				'stix',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/stuffit'=>array(
 			'mime'=>'application/stuffit',
 			'ext'=>array(
@@ -3547,6 +3556,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.byu.uapi+json'=>array(
+			'mime'=>'application/vnd.byu.uapi+json',
+			'ext'=>array(
+				'json',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.capasystems-pg+json'=>array(
@@ -5872,12 +5890,50 @@ class data {
 				'wk1',
 				'wk3',
 				'wk4',
+				'wk2',
 				'wks',
 			),
 			'source'=>array(
 				'IANA',
 				'Apache',
 				'freedesktop.org',
+				'Tika',
+			),
+		),
+		'application/vnd.lotus-1-2-3version2'=>array(
+			'mime'=>'application/vnd.lotus-1-2-3version2',
+			'ext'=>array(
+				'wk1',
+				'wk2',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/vnd.lotus-1-2-3version3'=>array(
+			'mime'=>'application/vnd.lotus-1-2-3version3',
+			'ext'=>array(
+				'wk3',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/vnd.lotus-1-2-3version4'=>array(
+			'mime'=>'application/vnd.lotus-1-2-3version4',
+			'ext'=>array(
+				'wk4',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/vnd.lotus-1-2-3version97+9.x'=>array(
+			'mime'=>'application/vnd.lotus-1-2-3version97+9.x',
+			'ext'=>array(
+				'123',
+			),
+			'source'=>array(
 				'Tika',
 			),
 		),
@@ -10150,9 +10206,11 @@ class data {
 				'wk3',
 				'wk4',
 				'wks',
+				'wk2',
 			),
 			'source'=>array(
 				'freedesktop.org',
+				'Tika',
 			),
 		),
 		'application/x-7z-compressed'=>array(
@@ -13057,10 +13115,51 @@ class data {
 		'application/x-quattro-pro'=>array(
 			'mime'=>'application/x-quattro-pro',
 			'ext'=>array(
+				'wq1',
+				'wq2',
+				'wkq',
 				'qpw',
 				'wb1',
 				'wb2',
 				'wb3',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/x-quattro-proversion1+5'=>array(
+			'mime'=>'application/x-quattro-proversion1+5',
+			'ext'=>array(
+				'wb1',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/x-quattro-proversion1-4'=>array(
+			'mime'=>'application/x-quattro-proversion1-4',
+			'ext'=>array(
+				'wq1',
+				'wkq',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/x-quattro-proversion5'=>array(
+			'mime'=>'application/x-quattro-proversion5',
+			'ext'=>array(
+				'wq2',
+				'wkq',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
+		'application/x-quattro-proversion6'=>array(
+			'mime'=>'application/x-quattro-proversion6',
+			'ext'=>array(
+				'wb2',
 			),
 			'source'=>array(
 				'Tika',
@@ -19727,6 +19826,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'text/vnd.hgl'=>array(
+			'mime'=>'text/vnd.hgl',
+			'ext'=>array(
+				'hgl',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'text/vnd.in3d.3dml'=>array(
@@ -26635,6 +26743,12 @@ class data {
 				'application/x-hfe-file',
 			),
 		),
+		'hgl'=>array(
+			'ext'=>'hgl',
+			'mime'=>array(
+				'text/vnd.hgl',
+			),
+		),
 		'hh'=>array(
 			'ext'=>'hh',
 			'mime'=>array(
@@ -27540,6 +27654,7 @@ class data {
 				'application/vnd.api+json',
 				'application/vnd.avalon+json',
 				'application/vnd.bekitzur-stech+json',
+				'application/vnd.byu.uapi+json',
 				'application/vnd.capasystems-pg+json',
 				'application/vnd.collection+json',
 				'application/vnd.collection.doc+json',
@@ -33202,6 +33317,12 @@ class data {
 				'application/vnd.sealed-tiff',
 			),
 		),
+		'stix'=>array(
+			'ext'=>'stix',
+			'mime'=>array(
+				'application/stix+json',
+			),
+		),
 		'stk'=>array(
 			'ext'=>'stk',
 			'mime'=>array(
@@ -34839,6 +34960,7 @@ class data {
 			'mime'=>array(
 				'application/x-quattropro',
 				'application/x-quattro-pro',
+				'application/x-quattro-proversion1+5',
 			),
 		),
 		'wb2'=>array(
@@ -34846,6 +34968,7 @@ class data {
 			'mime'=>array(
 				'application/x-quattropro',
 				'application/x-quattro-pro',
+				'application/x-quattro-proversion6',
 			),
 		),
 		'wb3'=>array(
@@ -34957,10 +35080,19 @@ class data {
 			'mime'=>array(
 				'application/vnd.lotus-1-2-3',
 				'application/lotus123',
+				'application/vnd.lotus-1-2-3version2',
 				'application/wk1',
 				'application/x-123',
 				'application/x-lotus123',
 				'zz-application/zz-winassoc-123',
+			),
+		),
+		'wk2'=>array(
+			'ext'=>'wk2',
+			'mime'=>array(
+				'application/vnd.lotus-1-2-3',
+				'application/vnd.lotus-1-2-3version2',
+				'application/x-123',
 			),
 		),
 		'wk3'=>array(
@@ -34968,6 +35100,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.lotus-1-2-3',
 				'application/lotus123',
+				'application/vnd.lotus-1-2-3version3',
 				'application/wk1',
 				'application/x-123',
 				'application/x-lotus123',
@@ -34979,6 +35112,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.lotus-1-2-3',
 				'application/lotus123',
+				'application/vnd.lotus-1-2-3version4',
 				'application/wk1',
 				'application/x-123',
 				'application/x-lotus123',
@@ -34989,6 +35123,14 @@ class data {
 			'ext'=>'wkdownload',
 			'mime'=>array(
 				'application/x-partial-download',
+			),
+		),
+		'wkq'=>array(
+			'ext'=>'wkq',
+			'mime'=>array(
+				'application/x-quattro-pro',
+				'application/x-quattro-proversion1-4',
+				'application/x-quattro-proversion5',
 			),
 		),
 		'wks'=>array(
@@ -35184,6 +35326,20 @@ class data {
 			'ext'=>'wpt',
 			'mime'=>array(
 				'application/vnd.wordperfect',
+			),
+		),
+		'wq1'=>array(
+			'ext'=>'wq1',
+			'mime'=>array(
+				'application/x-quattro-pro',
+				'application/x-quattro-proversion1-4',
+			),
+		),
+		'wq2'=>array(
+			'ext'=>'wq2',
+			'mime'=>array(
+				'application/x-quattro-pro',
+				'application/x-quattro-proversion5',
 			),
 		),
 		'wqd'=>array(
@@ -36420,6 +36576,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.lotus-1-2-3',
 				'application/lotus123',
+				'application/vnd.lotus-1-2-3version97+9.x',
 				'application/wk1',
 				'application/x-123',
 				'application/x-lotus123',
