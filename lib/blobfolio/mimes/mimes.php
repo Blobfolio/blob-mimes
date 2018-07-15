@@ -138,7 +138,7 @@ class mimes {
 	 * @param string $mime MIME.
 	 * @return array MIMEs.
 	 */
-	protected static function get_loose_mimes(string $mime) {
+	public static function get_loose_mimes(string $mime) {
 		r_sanitize::mime($mime);
 
 		$out = array();
