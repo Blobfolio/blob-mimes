@@ -28,6 +28,7 @@
  * Data Source: Nginx
  *
  * @see {http://hg.nginx.org/nginx/raw-file/default/conf/mime.types}
+ * @see {https://raw.githubusercontent.com/nginx/nginx/master/conf/mime.types}
  *
  * @copyright 2017 NGINX Inc.
  * @license https://opensource.org/licenses/BSD-2-Clause BSD
@@ -73,7 +74,7 @@ class mimes extends \blobfolio\bob\base\mike {
 	const REQUIRED_FUNCTIONS = array('simplexml_load_string');
 
 	const REQUIRED_DOWNLOADS = array(
-		'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types',
+		'https://raw.githubusercontent.com/nginx/nginx/master/conf/mime.types',
 		'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in',
 		'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types',
 		'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml',
@@ -121,7 +122,7 @@ class mimes extends \blobfolio\bob\base\mike {
 	// Other URLs.
 	const APACHE_DATA = 'https://raw.githubusercontent.com/apache/httpd/trunk/docs/conf/mime.types';
 	const FREEDESKTOP_DATA = 'https://cgit.freedesktop.org/xdg/shared-mime-info/plain/freedesktop.org.xml.in';
-	const NGINX_DATA = 'http://hg.nginx.org/nginx/raw-file/default/conf/mime.types';
+	const NGINX_DATA = 'https://raw.githubusercontent.com/nginx/nginx/master/conf/mime.types';
 	const TIKA_DATA = 'https://raw.githubusercontent.com/apache/tika/master/tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml';
 
 	// Template for MxE entry.
@@ -421,6 +422,7 @@ class mimes extends \blobfolio\bob\base\mike {
 
 		$content = io::get_url(static::NGINX_DATA);
 		$content = format::lines_to_array($content);
+
 		foreach ($content as $line) {
 			// Skip comments and configs.
 			if (
@@ -432,7 +434,7 @@ class mimes extends \blobfolio\bob\base\mike {
 			}
 
 			$line = rtrim($line, ';');
-			$line = preg_replace('/\s+/u', ' ', $line);
+			$line = trim(preg_replace('/\s+/u', ' ', $line));
 			$line = explode(' ', $line);
 			if (!isset($line[1])) {
 				continue;
@@ -676,6 +678,32 @@ class mimes extends \blobfolio\bob\base\mike {
 
 		file_put_contents("{$bin_out}extensions_by_mime.json", json_encode(static::$exm));
 		file_put_contents("{$bin_out}mimes_by_extension.json", json_encode(static::$mxe));
+
+		// And a combined version.
+		$content = array(
+			'extensions'=>array(),
+			'mimes'=>array(),
+		);
+		foreach (static::$exm as $k=>$v) {
+			$content['mimes'][$k] = $v['ext'];
+		}
+		foreach (static::$mxe as $k=>$v) {
+			$tmp = $v['mime'];
+
+			// Pre-calculate "loose" MIMEs.
+			foreach ($tmp as $v) {
+				$loose = \blobfolio\mimes\mimes::get_loose_mimes($v);
+				foreach ($loose as $v2) {
+					if (!in_array($v2, $tmp, true)) {
+						$tmp[] = $v2;
+					}
+				}
+			}
+
+			$content['extensions'][$k] = $tmp;
+		}
+		file_put_contents("{$bin_out}blob-mimes.json", json_encode($content));
+
 
 		// Export the main data used by this library.
 		log::print('Exporting library data…');
