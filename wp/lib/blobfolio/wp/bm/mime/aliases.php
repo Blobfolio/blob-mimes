@@ -206,7 +206,6 @@ class aliases {
 			'application/x-font-adobe-metric',
 		),
 		'acu'=>array(
-			'application/vnd-acucobol',
 			'application/vnd.acucobol',
 		),
 		'acutc'=>array(
@@ -510,6 +509,12 @@ class aliases {
 		'automount'=>array(
 			'text/plain',
 			'text/x-systemd-unit',
+		),
+		'avci'=>array(
+			'image/avci',
+		),
+		'avcs'=>array(
+			'image/avcs',
 		),
 		'avf'=>array(
 			'video/avi',
@@ -1138,9 +1143,7 @@ class aliases {
 			'image/x-win-bitmap',
 		),
 		'curl'=>array(
-			'application/vnd-curl',
 			'application/vnd.curl',
-			'text/vnd-curl',
 			'text/vnd.curl',
 		),
 		'cw'=>array(
@@ -1174,7 +1177,6 @@ class aliases {
 			'application/x-dar',
 		),
 		'dart'=>array(
-			'application/vnd-dart',
 			'application/vnd.dart',
 		),
 		'data'=>array(
@@ -1358,14 +1360,12 @@ class aliases {
 			'video/x-msvideo',
 		),
 		'djv'=>array(
-			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
 			'image/x.djvu',
 		),
 		'djvu'=>array(
-			'image/vnd-djvu',
 			'image/vnd.djvu',
 			'image/vnd.djvu+multipage',
 			'image/x-djvu',
@@ -1448,7 +1448,6 @@ class aliases {
 		),
 		'dotx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.wordprocessingml-template',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 			'application/zip',
 		),
@@ -1540,7 +1539,6 @@ class aliases {
 		),
 		'dwf'=>array(
 			'drawing/x-dwf',
-			'model/vnd-dwf',
 			'model/vnd.dwf',
 		),
 		'dwfx'=>array(
@@ -1567,7 +1565,7 @@ class aliases {
 			'application/vnd.spotfire.dxp',
 		),
 		'dxr'=>array(
-			'application/vnd-dxr',
+			'application/vnd.dxr',
 			'application/x-director',
 		),
 		'dzr'=>array(
@@ -2238,6 +2236,10 @@ class aliases {
 		'gra'=>array(
 			'application/x-graphite',
 		),
+		'gradle'=>array(
+			'text/x-gradle',
+			'text/x-groovy',
+		),
 		'gram'=>array(
 			'application/srgs',
 		),
@@ -2378,6 +2380,10 @@ class aliases {
 			'image/heif',
 			'image/heif-sequence',
 		),
+		'heifs'=>array(
+			'image/heic-sequence',
+			'image/heif-sequence',
+		),
 		'heldxml'=>array(
 			'application/held+xml',
 		),
@@ -2450,7 +2456,7 @@ class aliases {
 			'text/plain',
 		),
 		'html'=>array(
-			'application/vnd.dtg.local-html',
+			'application/vnd.dtg.local.html',
 			'text/html',
 			'text/plain',
 		),
@@ -2583,7 +2589,6 @@ class aliases {
 			'text/plain',
 		),
 		'igx'=>array(
-			'application/vnd.micrografx-igx',
 			'application/vnd.micrografx.igx',
 		),
 		'ihtml'=>array(
@@ -3368,7 +3373,6 @@ class aliases {
 		),
 		'm4u'=>array(
 			'text/plain',
-			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
@@ -4003,7 +4007,6 @@ class aliases {
 		),
 		'mxu'=>array(
 			'text/plain',
-			'video/vnd-mpegurl',
 			'video/vnd.mpegurl',
 			'video/x-mpegurl',
 		),
@@ -4772,7 +4775,6 @@ class aliases {
 		),
 		'potx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.presentationml-template',
 			'application/vnd.openxmlformats-officedocument.presentationml.template',
 			'application/zip',
 		),
@@ -5365,34 +5367,34 @@ class aliases {
 			'video/vnd.sealed.mpeg4',
 		),
 		's1a'=>array(
-			'application/vnd.sealedmedia.softseal-pdf',
+			'application/vnd.sealedmedia.softseal.pdf',
 		),
 		's1e'=>array(
-			'application/vnd.sealed-xls',
+			'application/vnd.sealed.xls',
 		),
 		's1g'=>array(
-			'image/vnd.sealedmedia.softseal-gif',
+			'image/vnd.sealedmedia.softseal.gif',
 		),
 		's1h'=>array(
-			'application/vnd.sealedmedia.softseal-html',
+			'application/vnd.sealedmedia.softseal.html',
 		),
 		's1j'=>array(
-			'image/vnd.sealedmedia.softseal-jpg',
+			'image/vnd.sealedmedia.softseal.jpg',
 		),
 		's1m'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg',
+			'audio/vnd.sealedmedia.softseal.mpeg',
 		),
 		's1n'=>array(
-			'image/vnd.sealed-png',
+			'image/vnd.sealed.png',
 		),
 		's1p'=>array(
-			'application/vnd.sealed-ppt',
+			'application/vnd.sealed.ppt',
 		),
 		's1q'=>array(
-			'video/vnd.sealedmedia.softseal-mov',
+			'video/vnd.sealedmedia.softseal.mov',
 		),
 		's1w'=>array(
-			'application/vnd.sealed-doc',
+			'application/vnd.sealed.doc',
 		),
 		's3df'=>array(
 			'application/vnd.sealed.3df',
@@ -5558,10 +5560,10 @@ class aliases {
 			'application/vnd.solent.sdkm+xml',
 		),
 		'sdo'=>array(
-			'application/vnd.sealed-doc',
+			'application/vnd.sealed.doc',
 		),
 		'sdoc'=>array(
-			'application/vnd.sealed-doc',
+			'application/vnd.sealed.doc',
 		),
 		'sdp'=>array(
 			'application/sdp',
@@ -5592,7 +5594,7 @@ class aliases {
 			'application/vnd.fdsn.seed',
 		),
 		'sem'=>array(
-			'application/vnd.sealed-eml',
+			'application/vnd.sealed.eml',
 		),
 		'sema'=>array(
 			'application/vnd.sema',
@@ -5604,7 +5606,7 @@ class aliases {
 			'application/vnd.semf',
 		),
 		'seml'=>array(
-			'application/vnd.sealed-eml',
+			'application/vnd.sealed.eml',
 		),
 		'senml'=>array(
 			'application/senml+json',
@@ -5679,11 +5681,11 @@ class aliases {
 		),
 		'sgi'=>array(
 			'image/sgi',
-			'image/vnd.sealedmedia.softseal-gif',
+			'image/vnd.sealedmedia.softseal.gif',
 			'image/x-sgi',
 		),
 		'sgif'=>array(
-			'image/vnd.sealedmedia.softseal-gif',
+			'image/vnd.sealedmedia.softseal.gif',
 		),
 		'sgl'=>array(
 			'application/vnd.stardivision.writer',
@@ -5770,10 +5772,10 @@ class aliases {
 			'application/xml',
 		),
 		'sjp'=>array(
-			'image/vnd.sealedmedia.softseal-jpg',
+			'image/vnd.sealedmedia.softseal.jpg',
 		),
 		'sjpg'=>array(
-			'image/vnd.sealedmedia.softseal-jpg',
+			'image/vnd.sealedmedia.softseal.jpg',
 		),
 		'sk'=>array(
 			'image/x-skencil',
@@ -5865,10 +5867,10 @@ class aliases {
 			'application/vnd.stardivision.math',
 		),
 		'smh'=>array(
-			'application/vnd.sealed-mht',
+			'application/vnd.sealed.mht',
 		),
 		'smht'=>array(
-			'application/vnd.sealed-mht',
+			'application/vnd.sealed.mht',
 		),
 		'smi'=>array(
 			'application/smil',
@@ -5888,16 +5890,16 @@ class aliases {
 			'application/xml',
 		),
 		'smo'=>array(
-			'video/vnd.sealedmedia.softseal-mov',
+			'video/vnd.sealedmedia.softseal.mov',
 		),
 		'smov'=>array(
-			'video/vnd.sealedmedia.softseal-mov',
+			'video/vnd.sealedmedia.softseal.mov',
 		),
 		'smp'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg',
+			'audio/vnd.sealedmedia.softseal.mpeg',
 		),
 		'smp3'=>array(
-			'audio/vnd.sealedmedia.softseal-mpeg',
+			'audio/vnd.sealedmedia.softseal.mpeg',
 		),
 		'smpg'=>array(
 			'video/vnd.sealed.mpeg1',
@@ -5939,11 +5941,11 @@ class aliases {
 			'application/x-pkcs7-certificates',
 		),
 		'spd'=>array(
-			'application/vnd.sealedmedia.softseal-pdf',
+			'application/vnd.sealedmedia.softseal.pdf',
 			'application/x-font-speedo',
 		),
 		'spdf'=>array(
-			'application/vnd.sealedmedia.softseal-pdf',
+			'application/vnd.sealedmedia.softseal.pdf',
 		),
 		'spec'=>array(
 			'text/plain',
@@ -5963,10 +5965,10 @@ class aliases {
 			'application/x-source-rpm',
 		),
 		'spn'=>array(
-			'image/vnd.sealed-png',
+			'image/vnd.sealed.png',
 		),
 		'spng'=>array(
-			'image/vnd.sealed-png',
+			'image/vnd.sealed.png',
 		),
 		'spo'=>array(
 			'text/vnd.in3d.spot',
@@ -5976,10 +5978,10 @@ class aliases {
 		),
 		'spp'=>array(
 			'application/scvp-vp-response',
-			'application/vnd.sealed-ppt',
+			'application/vnd.sealed.ppt',
 		),
 		'sppt'=>array(
-			'application/vnd.sealed-ppt',
+			'application/vnd.sealed.ppt',
 		),
 		'spq'=>array(
 			'application/scvp-vp-request',
@@ -6064,11 +6066,9 @@ class aliases {
 			'application/ssml+xml',
 		),
 		'ssw'=>array(
-			'video/vnd.sealed-swf',
 			'video/vnd.sealed.swf',
 		),
 		'sswf'=>array(
-			'video/vnd.sealed-swf',
 			'video/vnd.sealed.swf',
 		),
 		'st'=>array(
@@ -6095,7 +6095,7 @@ class aliases {
 			'application/zip',
 		),
 		'stif'=>array(
-			'application/vnd.sealed-tiff',
+			'application/vnd.sealed.tiff',
 		),
 		'stix'=>array(
 			'application/stix+json',
@@ -6110,11 +6110,11 @@ class aliases {
 			'model/x.stl-binary',
 		),
 		'stm'=>array(
-			'application/vnd.sealedmedia.softseal-html',
+			'application/vnd.sealedmedia.softseal.html',
 			'audio/x-stm',
 		),
 		'stml'=>array(
-			'application/vnd.sealedmedia.softseal-html',
+			'application/vnd.sealedmedia.softseal.html',
 		),
 		'str'=>array(
 			'application/vnd.pg.format',
@@ -6169,7 +6169,6 @@ class aliases {
 		),
 		'svc'=>array(
 			'application/vnd.dvb.service',
-			'application/vnd.dvbservice',
 		),
 		'svd'=>array(
 			'application/vnd.svd',
@@ -6225,10 +6224,10 @@ class aliases {
 			'application/zip',
 		),
 		'sxl'=>array(
-			'application/vnd.sealed-xls',
+			'application/vnd.sealed.xls',
 		),
 		'sxls'=>array(
-			'application/vnd.sealed-xls',
+			'application/vnd.sealed.xls',
 		),
 		'sxm'=>array(
 			'application/vnd.sun.xml.math',
@@ -6693,8 +6692,7 @@ class aliases {
 			'application/vnd.dece.ttml+xml',
 		),
 		'uvu'=>array(
-			'video/vnd.dece-mp4',
-			'video/vnd.uvvu-mp4',
+			'video/vnd.dece.mp4',
 			'video/vnd.uvvu.mp4',
 		),
 		'uvv'=>array(
@@ -6731,8 +6729,7 @@ class aliases {
 			'application/vnd.dece.ttml+xml',
 		),
 		'uvvu'=>array(
-			'video/vnd.dece-mp4',
-			'video/vnd.uvvu-mp4',
+			'video/vnd.dece.mp4',
 			'video/vnd.uvvu.mp4',
 		),
 		'uvvv'=>array(
@@ -7024,14 +7021,12 @@ class aliases {
 			'application/x-quattropro',
 		),
 		'wbmp'=>array(
-			'image/vnd-wap-wbmp',
 			'image/vnd.wap.wbmp',
 		),
 		'wbs'=>array(
 			'application/vnd.criticaltools.wbs+xml',
 		),
 		'wbxml'=>array(
-			'application/vnd.wap-wbxml',
 			'application/vnd.wap.wbxml',
 		),
 		'wcm'=>array(
@@ -7326,11 +7321,9 @@ class aliases {
 			'image/x-sigma-x3f',
 		),
 		'x_b'=>array(
-			'model/vnd.parasolid.transmit-binary',
 			'model/vnd.parasolid.transmit.binary',
 		),
 		'x_t'=>array(
-			'model/vnd.parasolid.transmit-text',
 			'model/vnd.parasolid.transmit.text',
 		),
 		'xac'=>array(
@@ -7583,7 +7576,6 @@ class aliases {
 		),
 		'xltx'=>array(
 			'application/vnd.ms-office',
-			'application/vnd.openxmlformats-officedocument.spreadsheetml-template',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 			'application/zip',
@@ -7979,6 +7971,9 @@ class aliases {
 		'zsav'=>array(
 			'application/x-spss-sav',
 			'application/x-spss-savefile',
+		),
+		'zst'=>array(
+			'application/zstd',
 		),
 		'zstd'=>array(
 			'application/zstd',
