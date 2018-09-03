@@ -191,6 +191,7 @@ class mimes extends \blobfolio\bob\base\mike {
 
 	// Primary MIME overrides.
 	const MAGIC_LIST_PRIMARY_MIME = array(
+		'html'=>'text/html',
 		'mid'=>'audio/midi',
 		'otf'=>'font/otf',
 		'pdf'=>'application/pdf',

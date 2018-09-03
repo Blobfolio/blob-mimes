@@ -2216,6 +2216,9 @@ class aliases {
 		'gph'=>array(
 			'application/vnd.flographit',
 		),
+		'gpkg'=>array(
+			'application/geopackage+sqlite3',
+		),
 		'gplt'=>array(
 			'application/x-gnuplot',
 			'text/plain',
@@ -2452,11 +2455,15 @@ class aliases {
 			'application/vnd.kenameaapp',
 		),
 		'htm'=>array(
+			'application/xhtml+xml',
+			'application/xml',
 			'text/html',
 			'text/plain',
 		),
 		'html'=>array(
 			'application/vnd.dtg.local.html',
+			'application/xhtml+xml',
+			'application/xml',
 			'text/html',
 			'text/plain',
 		),
@@ -3031,6 +3038,9 @@ class aliases {
 			'application/vnd.apple.keynote',
 			'application/x-iwork-keynote-sffkey',
 			'application/zip',
+		),
+		'keynote'=>array(
+			'application/vnd.apple.keynote',
 		),
 		'kfo'=>array(
 			'application/vnd.kde.kformula',

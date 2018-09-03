@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-08-01 22:49:24.
+ * Built: 2018-09-03 13:23:00.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -919,6 +919,15 @@ class data {
 			'source'=>array(
 				'IANA',
 				'freedesktop.org',
+			),
+		),
+		'application/geopackage+sqlite3'=>array(
+			'mime'=>'application/geopackage+sqlite3',
+			'ext'=>array(
+				'gpkg',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/gltf-buffer'=>array(
@@ -3321,9 +3330,11 @@ class data {
 		'application/vnd.apple.keynote'=>array(
 			'mime'=>'application/vnd.apple.keynote',
 			'ext'=>array(
+				'keynote',
 				'key',
 			),
 			'source'=>array(
+				'IANA',
 				'freedesktop.org',
 				'Tika',
 			),
@@ -3347,6 +3358,7 @@ class data {
 				'numbers',
 			),
 			'source'=>array(
+				'IANA',
 				'Tika',
 			),
 		),
@@ -3356,6 +3368,7 @@ class data {
 				'pages',
 			),
 			'source'=>array(
+				'IANA',
 				'Tika',
 			),
 		),
@@ -14726,9 +14739,11 @@ class data {
 		'application/xhtml+xml'=>array(
 			'mime'=>'application/xhtml+xml',
 			'ext'=>array(
-				'xhtml2',
 				'xht',
+				'xhtml2',
 				'xhtml',
+				'html',
+				'htm',
 			),
 			'source'=>array(
 				'Apache',
@@ -14769,24 +14784,24 @@ class data {
 				'xsd',
 				'rng',
 				'xlam',
-				'opml',
 				'atom',
 				'rss',
 				'owx',
 				'owl',
 				'rdfs',
-				'xmi',
 				'rdf',
+				'wml',
 				'docbook',
 				'dbk',
 				'svg',
 				'ufraw',
+				'htm',
+				'html',
 				'xht',
 				'xhtml',
-				'nzb',
-				'wml',
+				'opml',
 				'xslt',
-				'fo',
+				'xmi',
 				'xmp',
 				'dif',
 				'ppj',
@@ -14795,17 +14810,19 @@ class data {
 				'inx',
 				'nar',
 				'dot',
-				'xslfo',
+				'fo',
 				'iso19139',
 				'xul',
 				'gpx',
 				'kml',
 				'ent',
-				'jnlp',
 				'ts',
-				'ttx',
+				'xslfo',
+				'nzb',
 				'glade',
+				'jnlp',
 				'xlw',
+				'smi',
 				'smil',
 				'siv',
 				'xspf',
@@ -14813,7 +14830,7 @@ class data {
 				'metalink',
 				'mml',
 				'xlt',
-				'sml',
+				'kino',
 				'xlc',
 				'xla',
 				'xlm',
@@ -14821,26 +14838,26 @@ class data {
 				'dotm',
 				'docm',
 				'xltm',
-				'smi',
-				'kino',
+				'sml',
+				'xlf',
 				'xlsb',
-				'fods',
+				'xbel',
+				'ttx',
 				'shape',
 				'dia',
 				'fb2',
 				'ui',
 				'zabw',
 				'abw',
-				'xbel',
+				'fods',
+				'xliff',
 				'fodp',
-				'xlf',
 				'fodg',
 				'fodt',
 				'gml',
 				'doc',
 				'xld',
 				'xll',
-				'xliff',
 				'asx',
 			),
 			'source'=>array(
@@ -16968,9 +16985,9 @@ class data {
 		'image/pjpeg'=>array(
 			'mime'=>'image/pjpeg',
 			'ext'=>array(
+				'jpg',
 				'jpeg',
 				'jpe',
-				'jpg',
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -19013,9 +19030,9 @@ class data {
 		'text/html'=>array(
 			'mime'=>'text/html',
 			'ext'=>array(
-				'shtml',
-				'htm',
 				'html',
+				'htm',
+				'shtml',
 			),
 			'source'=>array(
 				'Apache',
@@ -26318,6 +26335,12 @@ class data {
 				'application/vnd.flographit',
 			),
 		),
+		'gpkg'=>array(
+			'ext'=>'gpkg',
+			'mime'=>array(
+				'application/geopackage+sqlite3',
+			),
+		),
 		'gplt'=>array(
 			'ext'=>'gplt',
 			'mime'=>array(
@@ -26749,14 +26772,18 @@ class data {
 			'ext'=>'htm',
 			'mime'=>array(
 				'text/html',
+				'application/xhtml+xml',
+				'application/xml',
 				'text/plain',
 			),
 		),
 		'html'=>array(
 			'ext'=>'html',
 			'mime'=>array(
-				'application/vnd.dtg.local.html',
 				'text/html',
+				'application/vnd.dtg.local.html',
+				'application/xhtml+xml',
+				'application/xml',
 				'text/plain',
 			),
 		),
@@ -27723,6 +27750,12 @@ class data {
 				'application/vnd.apple.iwork',
 				'application/vnd.apple.keynote',
 				'application/zip',
+			),
+		),
+		'keynote'=>array(
+			'ext'=>'keynote',
+			'mime'=>array(
+				'application/vnd.apple.keynote',
 			),
 		),
 		'kfo'=>array(
