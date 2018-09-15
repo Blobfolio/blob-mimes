@@ -1,4 +1,5 @@
 <?php
+// @codingStandardsIgnoreFile
 /**
  * Lord of the Files - Uninstall
  *
@@ -11,7 +12,7 @@
 /**
  * Do not execute this file directly.
  */
-if (!defined('WP_UNINSTALL_PLUGIN')) {
+if (! defined('WP_UNINSTALL_PLUGIN')) {
 	exit;
 }
 

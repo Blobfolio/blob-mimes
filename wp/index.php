@@ -1,4 +1,5 @@
 <?php
+// @codingStandardsIgnoreFile
 /**
  * Lord of the Files: Enhanced Upload Security
  *
@@ -26,7 +27,7 @@
 /**
  * Do not execute this file directly.
  */
-if (!defined('ABSPATH')) {
+if (! defined('ABSPATH')) {
 	exit;
 }
 
