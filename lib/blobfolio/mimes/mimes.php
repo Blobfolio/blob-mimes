@@ -209,7 +209,7 @@ class mimes {
 			(false === strpos($path, '/')) &&
 			(false === strpos($path, '\\'))
 		) {
-			$out['extension'] = v_sanitize::file_extension($path, true);
+			$out['extension'] = v_sanitize::file_extension($path);
 			if (false !== ($ext = static::get_extension($path))) {
 				$out['mime'] = $ext['mime'][0];
 			}
@@ -218,7 +218,7 @@ class mimes {
 		}
 
 		// Path is something path-like.
-		r_file::path($path, false, true);
+		r_file::path($path, false);
 		$out['path'] = $path;
 		$out = c_data::parse_args(pathinfo($path), $out);
 
@@ -228,7 +228,7 @@ class mimes {
 			$out['extension'] = isset($pathinfo['extension']) ? $pathinfo['extension'] : '';
 		}
 
-		r_sanitize::file_extension($out['extension'], true);
+		r_sanitize::file_extension($out['extension']);
 
 		// Pull the mimes from the extension.
 		if (false !== ($ext = static::get_extension($out['extension']))) {
