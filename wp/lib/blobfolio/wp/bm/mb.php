@@ -15,18 +15,18 @@ class mb {
 	 *
 	 * @param string  $haystack Haystack.
 	 * @param string  $needle Needle.
-	 * @param integer $offset Offset.
-	 * @return integer|bool  Return the first occurrence. False on error.
+	 * @param int $offset Offset.
+	 * @return int|bool  Return the first occurrence. False on error.
 	 */
 	public static function strpos($haystack, $needle, $offset=0) {
 		if (
-			(seems_utf8($haystack) || seems_utf8($needle)) &&
-			function_exists('mb_strpos')
+			(\seems_utf8($haystack) || \seems_utf8($needle)) &&
+			\function_exists('mb_strpos')
 		) {
-			return mb_strpos($haystack, $needle, $offset, 'UTF-8');
+			return \mb_strpos($haystack, $needle, $offset, 'UTF-8');
 		}
 
-		return strpos($haystack, $needle, $offset);
+		return \strpos($haystack, $needle, $offset);
 	}
 
 
@@ -35,18 +35,18 @@ class mb {
 	 *
 	 * @param string  $haystack Haystack.
 	 * @param string  $needle Needle.
-	 * @param integer $offset Offset.
-	 * @return integer|bool  Return the last occurrence. False on error.
+	 * @param int $offset Offset.
+	 * @return int|bool  Return the last occurrence. False on error.
 	 */
 	public static function strrpos($haystack, $needle, $offset=0) {
 		if (
-			(seems_utf8($haystack) || seems_utf8($needle)) &&
-			function_exists('mb_strrpos')
+			(\seems_utf8($haystack) || \seems_utf8($needle)) &&
+			\function_exists('mb_strrpos')
 		) {
-			return mb_strrpos($haystack, $needle, $offset, 'UTF-8');
+			return \mb_strrpos($haystack, $needle, $offset, 'UTF-8');
 		}
 
-		return strrpos($haystack, $needle, $offset);
+		return \strrpos($haystack, $needle, $offset);
 	}
 
 
@@ -57,11 +57,11 @@ class mb {
 	 * @return string  Return string in lower case.
 	 */
 	public static function strtolower($str) {
-		if (seems_utf8($str) && function_exists('mb_strtolower')) {
-			return mb_strtolower($str, 'UTF-8');
+		if (\seems_utf8($str) && \function_exists('mb_strtolower')) {
+			return \mb_strtolower($str, 'UTF-8');
 		}
 
-		return strtolower($str);
+		return \strtolower($str);
 	}
 
 
@@ -70,15 +70,15 @@ class mb {
 	 *
 	 * @param string  $str String.
 	 * @param string  $start From.
-	 * @param integer $length To.
+	 * @param int $length To.
 	 * @return string|bool  Return the substring. False on failure.
 	 */
 	public static function substr($str, $start = 0, $length = null) {
-		if (seems_utf8($str) && function_exists('mb_substr')) {
-			return mb_substr($str, $start, $length, 'UTF-8');
+		if (\seems_utf8($str) && \function_exists('mb_substr')) {
+			return \mb_substr($str, $start, $length, 'UTF-8');
 		}
 
-		return substr($str, $start, $length);
+		return \substr($str, $start, $length);
 	}
 
 }

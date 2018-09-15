@@ -6,8 +6,8 @@
  * @author  Blobfolio, LLC <hello@blobfolio.com>
  */
 
-use \blobfolio\wp\bm\svg\svg_dom;
-use \blobfolio\wp\bm\svg\svg_fallback;
+use blobfolio\wp\bm\svg\svg_dom;
+use blobfolio\wp\bm\svg\svg_fallback;
 
 /**
  * Test ::mime
@@ -26,7 +26,7 @@ class SVGTests extends WP_UnitTestCase {
 	 * @param string $svg SVG content.
 	 */
 	function test_sanitize_dom($svg) {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
@@ -49,7 +49,7 @@ class SVGTests extends WP_UnitTestCase {
 		$result = svg_dom::sanitize($svg);
 
 		foreach ($tests as $v) {
-			$this->assertEquals(false, strpos($result, $v));
+			$this->assertEquals(false, \strpos($result, $v));
 		}
 	}
 
@@ -80,7 +80,7 @@ class SVGTests extends WP_UnitTestCase {
 		$result = svg_fallback::sanitize($svg);
 
 		foreach ($tests as $v) {
-			$this->assertEquals(false, strpos($result, $v));
+			$this->assertEquals(false, \strpos($result, $v));
 		}
 	}
 
@@ -93,7 +93,7 @@ class SVGTests extends WP_UnitTestCase {
 	 * @param mixed $expected Excepted.
 	 */
 	function test_dimensions_dom($svg, $expected) {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
@@ -116,246 +116,246 @@ class SVGTests extends WP_UnitTestCase {
 	 * Sanitize: DOMDocument Allowed Domains
 	 */
 	function test_filter_blobmimes_svg_allowed_domains_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/monogram-inkscape.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/monogram-inkscape.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'purl.org'));
+		$this->assertEquals(true, !! \strpos($svg, 'purl.org'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_dom::sanitize($svg), 'purl.org'));
+		$this->assertEquals(false, !! \strpos(svg_dom::sanitize($svg), 'purl.org'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
-		$this->assertEquals(true, !!strpos(svg_dom::sanitize($svg), 'purl.org'));
-		remove_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
+		\add_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
+		$this->assertEquals(true, !! \strpos(svg_dom::sanitize($svg), 'purl.org'));
+		\remove_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
 	}
 
 	/**
 	 * Sanitize: Fallback Allowed Domains
 	 */
 	function test_filter_blobmimes_svg_allowed_domains_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/monogram-inkscape.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/monogram-inkscape.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'purl.org'));
+		$this->assertEquals(true, !! \strpos($svg, 'purl.org'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_fallback::sanitize($svg), 'purl.org'));
+		$this->assertEquals(false, !! \strpos(svg_fallback::sanitize($svg), 'purl.org'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
-		$this->assertEquals(true, !!strpos(svg_fallback::sanitize($svg), 'purl.org'));
-		remove_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
+		\add_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
+		$this->assertEquals(true, !! \strpos(svg_fallback::sanitize($svg), 'purl.org'));
+		\remove_filter('blobmimes_svg_allowed_domains', array($this, 'callback_filter_blobmimes_svg_allowed_domains'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Allowed Protocols
 	 */
 	function test_filter_blobmimes_svg_allowed_protocols_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'javascript:'));
+		$this->assertEquals(true, !! \strpos($svg, 'javascript:'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_dom::sanitize($svg), 'javascript:'));
+		$this->assertEquals(false, !! \strpos(svg_dom::sanitize($svg), 'javascript:'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
-		$this->assertEquals(true, !!strpos(svg_dom::sanitize($svg), 'javascript:'));
-		remove_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
+		\add_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
+		$this->assertEquals(true, !! \strpos(svg_dom::sanitize($svg), 'javascript:'));
+		\remove_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
 	}
 
 	/**
 	 * Sanitize: Fallback Allowed Protocols
 	 */
 	function test_filter_blobmimes_svg_allowed_protocols_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'javascript:'));
+		$this->assertEquals(true, !! \strpos($svg, 'javascript:'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_fallback::sanitize($svg), 'javascript:'));
+		$this->assertEquals(false, !! \strpos(svg_fallback::sanitize($svg), 'javascript:'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
-		$this->assertEquals(true, !!strpos(svg_fallback::sanitize($svg), 'javascript:'));
-		remove_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
+		\add_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
+		$this->assertEquals(true, !! \strpos(svg_fallback::sanitize($svg), 'javascript:'));
+		\remove_filter('blobmimes_svg_allowed_protocols', array($this, 'callback_filter_blobmimes_svg_allowed_protocols'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Allowed Tags
 	 */
 	function test_filter_blobmimes_svg_allowed_tags_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, '<script>'));
+		$this->assertEquals(true, !! \strpos($svg, '<script>'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_dom::sanitize($svg), 'java<script>cript:'));
+		$this->assertEquals(false, !! \strpos(svg_dom::sanitize($svg), 'java<script>cript:'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
-		$this->assertEquals(true, !!strpos(svg_dom::sanitize($svg), '<script>'));
-		remove_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
+		\add_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
+		$this->assertEquals(true, !! \strpos(svg_dom::sanitize($svg), '<script>'));
+		\remove_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
 	}
 
 	/**
 	 * Sanitize: Fallback Allowed Tags
 	 */
 	function test_filter_blobmimes_svg_allowed_tags_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, '<script>'));
+		$this->assertEquals(true, !! \strpos($svg, '<script>'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_fallback::sanitize($svg), '<script>'));
+		$this->assertEquals(false, !! \strpos(svg_fallback::sanitize($svg), '<script>'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
-		$this->assertEquals(true, !!strpos(svg_fallback::sanitize($svg), '<script>'));
-		remove_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
+		\add_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
+		$this->assertEquals(true, !! \strpos(svg_fallback::sanitize($svg), '<script>'));
+		\remove_filter('blobmimes_svg_allowed_tags', array($this, 'callback_filter_blobmimes_svg_allowed_tags'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Allowed Attributes
 	 */
 	function test_filter_blobmimes_svg_allowed_attributes_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'onload'));
+		$this->assertEquals(true, !! \strpos($svg, 'onload'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_dom::sanitize($svg), 'onload'));
+		$this->assertEquals(false, !! \strpos(svg_dom::sanitize($svg), 'onload'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
-		$this->assertEquals(true, !!strpos(svg_dom::sanitize($svg), 'onload'));
-		remove_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
+		\add_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
+		$this->assertEquals(true, !! \strpos(svg_dom::sanitize($svg), 'onload'));
+		\remove_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
 	}
 
 	/**
 	 * Sanitize: Fallback Allowed Attributes
 	 */
 	function test_filter_blobmimes_svg_allowed_attributes_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Original.
-		$this->assertEquals(true, !!strpos($svg, 'onload'));
+		$this->assertEquals(true, !! \strpos($svg, 'onload'));
 
 		// Default sanitize.
-		$this->assertEquals(false, !!strpos(svg_fallback::sanitize($svg), 'onload'));
+		$this->assertEquals(false, !! \strpos(svg_fallback::sanitize($svg), 'onload'));
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
-		$this->assertEquals(true, !!strpos(svg_fallback::sanitize($svg), 'onload'));
-		remove_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
+		\add_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
+		$this->assertEquals(true, !! \strpos(svg_fallback::sanitize($svg), 'onload'));
+		\remove_filter('blobmimes_svg_allowed_attributes', array($this, 'callback_filter_blobmimes_svg_allowed_attributes'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Pre-Sanitize
 	 */
 	function test_filter_blobmimes_svg_pre_sanitize_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
-		$this->assertNotEquals(false, strpos(svg_dom::sanitize($svg), 'presanitized'));
-		remove_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
+		\add_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
+		$this->assertNotEquals(false, \strpos(svg_dom::sanitize($svg), 'presanitized'));
+		\remove_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
 	}
 
 	/**
 	 * Sanitize: Fallback Pre-Sanitize
 	 */
 	function test_filter_blobmimes_svg_pre_sanitize_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
-		$this->assertNotEquals(false, strpos(svg_fallback::sanitize($svg), 'presanitized'));
-		remove_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
+		\add_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
+		$this->assertNotEquals(false, \strpos(svg_fallback::sanitize($svg), 'presanitized'));
+		\remove_filter('blobmimes_svg_pre_sanitize', array($this, 'callback_filter_blobmimes_svg_pre_sanitize'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Post-Sanitize
 	 */
 	function test_filter_blobmimes_svg_post_sanitize_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
+		\add_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
 		$this->assertEquals('postsanitized', svg_dom::sanitize($svg));
-		remove_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
+		\remove_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
 	}
 
 	/**
 	 * Sanitize: Fallback Post-Sanitize
 	 */
 	function test_filter_blobmimes_svg_post_sanitize_fallback() {
-		$svg = file_get_contents(dirname(__FILE__) . '/assets/enshrined.svg');
+		$svg = \file_get_contents(\dirname(__FILE__) . '/assets/enshrined.svg');
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
+		\add_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
 		$this->assertEquals('postsanitized', svg_fallback::sanitize($svg));
-		remove_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
+		\remove_filter('blobmimes_svg_post_sanitize', array($this, 'callback_filter_blobmimes_svg_post_sanitize'));
 	}
 
 	/**
 	 * Sanitize: DOMDocument Doctype
 	 */
 	function test_filter_blobmimes_svg_doctype_dom() {
-		if (!class_exists('DOMDocument') || !class_exists('DOMXPath')) {
+		if (! \class_exists('DOMDocument') || ! \class_exists('DOMXPath')) {
 			$this->markTestSkipped('DOM is not installed.');
 		}
 
-		$svg = dirname(__FILE__) . '/assets/enshrined.svg';
+		$svg = \dirname(__FILE__) . '/assets/enshrined.svg';
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
-		$this->assertNotEquals(false, strpos(svg_dom::sanitize($svg), 'xhtml-math-svg'));
-		$this->assertEquals(false, strpos(svg_dom::sanitize($svg, false), 'xhtml-math-svg'));
-		remove_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
+		\add_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
+		$this->assertNotEquals(false, \strpos(svg_dom::sanitize($svg), 'xhtml-math-svg'));
+		$this->assertEquals(false, \strpos(svg_dom::sanitize($svg, false), 'xhtml-math-svg'));
+		\remove_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
 	}
 
 	/**
 	 * Sanitize: Fallback Doctype
 	 */
 	function test_filter_blobmimes_svg_doctype_fallback() {
-		$svg = dirname(__FILE__) . '/assets/enshrined.svg';
+		$svg = \dirname(__FILE__) . '/assets/enshrined.svg';
 
 		// Filtered sanitize.
-		add_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
-		$this->assertNotEquals(false, strpos(svg_fallback::sanitize($svg), 'xhtml-math-svg'));
-		$this->assertEquals(false, strpos(svg_fallback::sanitize($svg, false), 'xhtml-math-svg'));
-		remove_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
+		\add_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
+		$this->assertNotEquals(false, \strpos(svg_fallback::sanitize($svg), 'xhtml-math-svg'));
+		$this->assertEquals(false, \strpos(svg_fallback::sanitize($svg, false), 'xhtml-math-svg'));
+		\remove_filter('blobmimes_svg_doctype', array($this, 'callback_filter_blobmimes_svg_doctype'));
 	}
 
 	// --------------------------------------------------------------------- end tests
@@ -372,11 +372,11 @@ class SVGTests extends WP_UnitTestCase {
 	 * @return array Tests.
 	 */
 	function data_sanitize() {
-		$dir = dirname(__FILE__) . '/assets/';
+		$dir = \dirname(__FILE__) . '/assets/';
 
 		return array(
 			array($dir . 'monogram.svg'),
-			array(file_get_contents($dir . 'monogram.svg')),
+			array(\file_get_contents($dir . 'monogram.svg')),
 			array($dir . 'enshrined.svg'),
 			array($dir . 'monogram-inkscape.svg'),
 			array($dir . 'pi.svg'),
@@ -390,7 +390,7 @@ class SVGTests extends WP_UnitTestCase {
 	 * @return array Tests.
 	 */
 	function data_dimensions() {
-		$dir = dirname(__FILE__) . '/assets/';
+		$dir = \dirname(__FILE__) . '/assets/';
 
 		return array(
 			array(
@@ -398,7 +398,7 @@ class SVGTests extends WP_UnitTestCase {
 				array('width'=>330.056, 'height'=>495.558),
 			),
 			array(
-				file_get_contents($dir . 'monogram.svg'),
+				\file_get_contents($dir . 'monogram.svg'),
 				array('width'=>330.056, 'height'=>495.558),
 			),
 		);
@@ -463,7 +463,7 @@ class SVGTests extends WP_UnitTestCase {
 	 * @return string SVG.
 	 */
 	function callback_filter_blobmimes_svg_pre_sanitize($svg) {
-		$svg = str_replace('<svg ', '<svg id="presanitized" ', $svg);
+		$svg = \str_replace('<svg ', '<svg id="presanitized" ', $svg);
 		return $svg;
 	}
 
