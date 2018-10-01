@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-09-03 13:23:00.
+ * Built: 2018-10-01 09:06:04.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -12366,6 +12366,7 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org',
+				'Tika',
 			),
 		),
 		'application/x-mobipocket-ebook'=>array(
@@ -18585,6 +18586,16 @@ class data {
 				'IANA',
 			),
 		),
+		'message/rfc2557'=>array(
+			'mime'=>'message/rfc2557',
+			'ext'=>array(
+				'mht',
+				'mhtml',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
 		'message/rfc822'=>array(
 			'mime'=>'message/rfc822',
 			'ext'=>array(
@@ -18899,6 +18910,7 @@ class data {
 			),
 			'source'=>array(
 				'freedesktop.org',
+				'Tika',
 			),
 		),
 		'multipart/voice-message'=>array(
@@ -28675,6 +28687,7 @@ class data {
 			'ext'=>'mht',
 			'mime'=>array(
 				'application/x-mimearchive',
+				'message/rfc2557',
 				'message/rfc822',
 				'multipart/related',
 			),
@@ -28683,6 +28696,7 @@ class data {
 			'ext'=>'mhtml',
 			'mime'=>array(
 				'application/x-mimearchive',
+				'message/rfc2557',
 				'message/rfc822',
 				'multipart/related',
 			),

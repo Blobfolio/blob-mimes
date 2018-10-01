@@ -3555,11 +3555,13 @@ class aliases {
 		),
 		'mht'=>array(
 			'application/x-mimearchive',
+			'message/rfc2557',
 			'message/rfc822',
 			'multipart/related',
 		),
 		'mhtml'=>array(
 			'application/x-mimearchive',
+			'message/rfc2557',
 			'message/rfc822',
 			'multipart/related',
 		),
