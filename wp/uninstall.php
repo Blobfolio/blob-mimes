@@ -1,5 +1,4 @@
 <?php
-// @codingStandardsIgnoreFile
 /**
  * Lord of the Files - Uninstall
  *
@@ -8,6 +7,8 @@
  * @package blob-mimes
  * @author  Blobfolio, LLC <hello@blobfolio.com>
  */
+
+// phpcs:disable SlevomatCodingStandard.Namespaces
 
 /**
  * Do not execute this file directly.

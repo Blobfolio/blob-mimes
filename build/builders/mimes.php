@@ -54,14 +54,13 @@
 
 namespace blobfolio\dev;
 
-use \blobfolio\bob\format;
-use \blobfolio\bob\io;
-use \blobfolio\bob\log;
-use \blobfolio\common\data;
-use \blobfolio\common\file as v_file;
-use \blobfolio\common\mb as v_mb;
-use \blobfolio\common\ref\mb as r_mb;
-use \blobfolio\common\ref\sanitize as r_sanitize;
+use blobfolio\bob\format;
+use blobfolio\bob\io;
+use blobfolio\bob\log;
+use blobfolio\common\data;
+use blobfolio\common\file as v_file;
+use blobfolio\common\ref\mb as r_mb;
+use blobfolio\common\ref\sanitize as r_sanitize;
 
 class mimes extends \blobfolio\bob\base\mike {
 	// Project Name.
@@ -234,11 +233,11 @@ class mimes extends \blobfolio\bob\base\mike {
 			'rsync',
 			array(
 				'-avz',
-				escapeshellcmd(static::IANA_RSYNC),
-				escapeshellcmd(static::$iana_local),
+				\escapeshellcmd(static::IANA_RSYNC),
+				\escapeshellcmd(static::$iana_local),
 			)
 		);
-		if (!io::exec($cmd)) {
+		if (! io::exec($cmd)) {
 			log::error("The data sync failed. Make sure \033[1mrsync\033[0m is installed.");
 		}
 	}
@@ -262,10 +261,10 @@ class mimes extends \blobfolio\bob\base\mike {
 			'/file extension\(s\):\v\s*\*?\.([\da-z\-_]{2,})/ui',
 		);
 
-		$base_length = strlen(static::$iana_local);
+		$base_length = \strlen(static::$iana_local);
 		foreach (static::IANA_CATEGORIES as $category) {
 			$files = v_file::scandir(static::$iana_local . "$category/", true, false);
-			if (!isset($files[0])) {
+			if (! isset($files[0])) {
 				continue;
 			}
 
@@ -273,65 +272,65 @@ class mimes extends \blobfolio\bob\base\mike {
 
 			foreach ($files as $file) {
 				// The MIME is the parent folder and file.
-				$mime = substr($file, $base_length);
+				$mime = \substr($file, $base_length);
 				r_sanitize::mime($mime);
-				if (!$mime) {
+				if (! $mime) {
 					continue;
 				}
 
-				$content = file_get_contents($file);
+				$content = \file_get_contents($file);
 
 				// See if our patterns turn anything up.
 				foreach ($patterns as $pattern) {
-					preg_match($pattern, $content, $matches);
+					\preg_match($pattern, $content, $matches);
 					if (isset($matches[1])) {
 						static::save_pair($mime, $matches[1], 'IANA');
 					}
 				}
 
 				// Look for extensions too.
-				preg_match_all(
+				\preg_match_all(
 					'/\s*File extension(\(s\))?\s*:\s*([\.,\da-z\h\-_]+)/ui',
 					$content,
 					$matches
 				);
-				if (count($matches[2])) {
-					$raw = explode(',', $matches[2][0]);
+				if (\count($matches[2])) {
+					$raw = \explode(',', $matches[2][0]);
 					r_mb::trim($raw);
 					r_mb::strtolower($raw);
-					$raw = array_values(array_filter($raw, 'strlen'));
+					$raw = \array_values(\array_filter($raw, 'strlen'));
 
 					// If there aren't any, we're done.
-					if (!count($raw)) {
+					if (! \count($raw)) {
 						continue;
 					}
 
 					// First pass, clean up data.
 					foreach ($raw as $k=>$v) {
-						$raw[$k] = str_replace(array('.', '*'), '', $raw[$k]);
+						$raw[$k] = \str_replace(array('.', '*'), '', $raw[$k]);
 						r_mb::trim($raw[$k]);
 
 						// Split "or".
-						if (false !== strpos($raw[$k], ' or ')) {
-							$tmp = explode(' or ', $raw[$k]);
+						if (false !== \strpos($raw[$k], ' or ')) {
+							$tmp = \explode(' or ', $raw[$k]);
 							r_mb::trim($tmp);
-							$tmp = array_values(array_filter($tmp, 'strlen'));
-							if (count($tmp)) {
+							$tmp = \array_values(\array_filter($tmp, 'strlen'));
+							if (\count($tmp)) {
 								$raw[$k] = $tmp[0];
-								for ($x = 1; $x < count($tmp); ++$x) {
+								for ($x = 1; $x < \count($tmp); ++$x) {
 									$raw[] = $tmp[$x];
 								}
 							}
 						}
 
 						// Get rid of ugly data.
-						if (!preg_match('/^[\da-z\-_]{2,}$/', $raw[$k])) {
+						if (! \preg_match('/^[\da-z\-_]{2,}$/', $raw[$k])) {
 							unset($raw[$k]);
 						}
 					}
 
 					// Remove non-entries.
-					$raw = array_diff(
+					$raw = \array_diff(
 						$raw,
 						array(
 							'-none-',
@@ -341,14 +340,14 @@ class mimes extends \blobfolio\bob\base\mike {
 							'unknown',
 						)
 					);
-					if (!count($raw)) {
+					if (! \count($raw)) {
 						continue;
 					}
 
 					// Second pass, grab extensions!
 					$exts = array();
 					foreach ($raw as $ext) {
-						if (preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext)) {
+						if (\preg_match('/^[\da-z]+[\da-z\-_]*[\da-z]+$/', $ext)) {
 							r_sanitize::file_extension($ext);
 							if ($ext) {
 								$exts[] = $ext;
@@ -376,8 +375,8 @@ class mimes extends \blobfolio\bob\base\mike {
 		} // Each category.
 
 		// Sort for later.
-		ksort(static::$iana_override);
-		ksort(static::$iana_used);
+		\ksort(static::$iana_override);
+		\ksort(static::$iana_used);
 
 		log::print('Cleaning up…');
 		v_file::rmdir(static::$iana_local);
@@ -395,13 +394,13 @@ class mimes extends \blobfolio\bob\base\mike {
 		$content = format::lines_to_array($content);
 		foreach ($content as $line) {
 			// Skip comments.
-			if (0 === strpos($line, '#')) {
+			if (0 === \strpos($line, '#')) {
 				continue;
 			}
 
-			$line = preg_replace('/\s+/u', ' ', $line);
-			$line = explode(' ', $line);
-			if (!isset($line[1])) {
+			$line = \preg_replace('/\s+/u', ' ', $line);
+			$line = \explode(' ', $line);
+			if (! isset($line[1])) {
 				continue;
 			}
 
@@ -427,17 +426,17 @@ class mimes extends \blobfolio\bob\base\mike {
 		foreach ($content as $line) {
 			// Skip comments and configs.
 			if (
-				(0 === strpos($line, '#')) ||
-				(false !== strpos($line, '{')) ||
-				(false !== strpos($line, '}'))
+				(0 === \strpos($line, '#')) ||
+				(false !== \strpos($line, '{')) ||
+				(false !== \strpos($line, '}'))
 			) {
 				continue;
 			}
 
-			$line = rtrim($line, ';');
-			$line = trim(preg_replace('/\s+/u', ' ', $line));
-			$line = explode(' ', $line);
-			if (!isset($line[1])) {
+			$line = \rtrim($line, ';');
+			$line = \trim(\preg_replace('/\s+/u', ' ', $line));
+			$line = \explode(' ', $line);
+			if (! isset($line[1])) {
 				continue;
 			}
 
@@ -473,7 +472,7 @@ class mimes extends \blobfolio\bob\base\mike {
 
 		// Tika uses the FD XML format, but their tika namespace
 		// crashes SimpleXML, so we have to pre-strip.
-		$content = preg_replace(
+		$content = \preg_replace(
 			'/<tika:(link|uti)>(.*)<\/tika:(link|uti)>/Us',
 			'',
 			$content
@@ -519,11 +518,11 @@ class mimes extends \blobfolio\bob\base\mike {
 			}
 			else {
 				// Prefer a Type/Ext direct hit.
-				$pattern = '#^(' . implode('|', static::IANA_CATEGORIES) . ')';
+				$pattern = '#^(' . \implode('|', static::IANA_CATEGORIES) . ')';
 				foreach ($v['mime'] as $mime) {
 					if (
-						(0 !== strpos($mime, 'application/')) &&
-						preg_match($pattern . preg_quote($k, '#') . '$#', $mime)
+						(0 !== \strpos($mime, 'application/')) &&
+						\preg_match($pattern . \preg_quote($k, '#') . '$#', $mime)
 					) {
 						static::$mxe[$k]['primary'] = $mime;
 						break;
@@ -532,31 +531,31 @@ class mimes extends \blobfolio\bob\base\mike {
 			}
 
 			// Nothing yet? Try consensus.
-			if (!static::$mxe[$k]['primary'] && isset(static::$consensus_ext[$k])) {
-				arsort(static::$consensus_ext[$k]);
-				$possible = array_keys(static::$consensus_ext[$k]);
-				static::$mxe[$k]['primary'] = array_shift($possible);
+			if (! static::$mxe[$k]['primary'] && isset(static::$consensus_ext[$k])) {
+				\arsort(static::$consensus_ext[$k]);
+				$possible = \array_keys(static::$consensus_ext[$k]);
+				static::$mxe[$k]['primary'] = \array_shift($possible);
 			}
 
 			// If we still don't have one, let's look for a MIME that
 			// isn't listed as an alias, or whatever we can. Haha.
-			if (!static::$mxe[$k]['primary']) {
-				$possible = array_diff($v['mime'], $v['alias']);
-				if (!count($possible)) {
+			if (! static::$mxe[$k]['primary']) {
+				$possible = \array_diff($v['mime'], $v['alias']);
+				if (! \count($possible)) {
 					$possible = $v['mime'];
 				}
 				static::$mxe[$k]['primary'] = data::array_pop_top($possible);
 			}
 
 			// Make sure primary isn't in the alias list.
-			static::$mxe[$k]['alias'] = array_values(array_diff(
+			static::$mxe[$k]['alias'] = \array_values(\array_diff(
 				$v['alias'],
 				array(static::$mxe[$k]['primary'])
 			));
 		}
 
 		log::print('Sorting data…');
-		ksort(static::$mxe);
+		\ksort(static::$mxe);
 	}
 
 	/**
@@ -573,7 +572,7 @@ class mimes extends \blobfolio\bob\base\mike {
 		foreach (static::$exm as $k=>$v) {
 			// Extensions do not have aliases, so basically we're just
 			// trying to sort by relevance.
-			usort(static::$exm[$k]['ext'], function($a, $b) use($k) {
+			\usort(static::$exm[$k]['ext'], function($a, $b) use($k) {
 				$ext1 = $a;
 				$ext2 = $b;
 
@@ -582,16 +581,16 @@ class mimes extends \blobfolio\bob\base\mike {
 					isset(static::$mxe[$a]) &&
 					($k === static::$mxe[$a]['primary']) &&
 					(
-						!isset(static::MAGIC_LIST_BLOBFOLIO[$a]) ||
-						!in_array($k, static::MAGIC_LIST_BLOBFOLIO[$a], true)
+						! isset(static::MAGIC_LIST_BLOBFOLIO[$a]) ||
+						! \in_array($k, static::MAGIC_LIST_BLOBFOLIO[$a], true)
 					)
 				);
 				$b = (
 					isset(static::$mxe[$b]) &&
 					($k === static::$mxe[$b]['primary']) &&
 					(
-						!isset(static::MAGIC_LIST_BLOBFOLIO[$b]) ||
-						!in_array($k, static::MAGIC_LIST_BLOBFOLIO[$b], true)
+						! isset(static::MAGIC_LIST_BLOBFOLIO[$b]) ||
+						! \in_array($k, static::MAGIC_LIST_BLOBFOLIO[$b], true)
 					)
 				);
 
@@ -600,13 +599,13 @@ class mimes extends \blobfolio\bob\base\mike {
 					// Prefer the extension that is part of the MIME
 					// type, provided they're both 3 letters long.
 					if (
-						(3 === strlen($ext1)) &&
-						(3 === strlen($ext2)) &&
-						(1 === substr_count($k, '/'))
+						(3 === \strlen($ext1)) &&
+						(3 === \strlen($ext2)) &&
+						(1 === \substr_count($k, '/'))
 					) {
-						list($type, $subtype) = explode('/', $k);
-						$a = (false !== strpos($subtype, $ext1));
-						$b = (false !== strpos($subtype, $ext2));
+						list($type, $subtype) = \explode('/', $k);
+						$a = (false !== \strpos($subtype, $ext1));
+						$b = (false !== \strpos($subtype, $ext2));
 
 						if ($a === $b) {
 							return 0;
@@ -622,7 +621,7 @@ class mimes extends \blobfolio\bob\base\mike {
 		}
 
 		log::print('Sorting data…');
-		ksort(static::$exm);
+		\ksort(static::$exm);
 	}
 
 	/**
@@ -640,15 +639,15 @@ class mimes extends \blobfolio\bob\base\mike {
 				'mime'=>array(),
 			);
 
-			$data = array_unique(array_merge($v['mime'], $v['alias']));
-			$data = array_diff($data, array($v['primary']));
+			$data = \array_unique(\array_merge($v['mime'], $v['alias']));
+			$data = \array_diff($data, array($v['primary']));
 			foreach ($data as $v2) {
 				$tmp['mime'][] = $v2;
 			}
-			sort($tmp['mime']);
+			\sort($tmp['mime']);
 
 			// Add the primary to the top.
-			array_unshift($tmp['mime'], $v['primary']);
+			\array_unshift($tmp['mime'], $v['primary']);
 			static::$mxe[$k] = $tmp;
 		}
 	}
@@ -671,14 +670,14 @@ class mimes extends \blobfolio\bob\base\mike {
 		log::print('Exporting JSON…');
 
 		// Define some paths.
-		$bin_out = dirname(BOB_ROOT_DIR) . '/bin/';
-		$data_out = dirname(BOB_ROOT_DIR) . '/lib/blobfolio/mimes/data.php';
-		$data_template = BOB_ROOT_DIR . 'skel/data.template';
-		$wp_out = dirname(BOB_ROOT_DIR) . '/wp/lib/blobfolio/wp/bm/mime/aliases.php';
-		$wp_template = BOB_ROOT_DIR . 'skel/wp.template';
+		$bin_out = \dirname(\BOB_ROOT_DIR) . '/bin/';
+		$data_out = \dirname(\BOB_ROOT_DIR) . '/lib/blobfolio/mimes/data.php';
+		$data_template = \BOB_ROOT_DIR . 'skel/data.template';
+		$wp_out = \dirname(\BOB_ROOT_DIR) . '/wp/lib/blobfolio/wp/bm/mime/aliases.php';
+		$wp_template = \BOB_ROOT_DIR . 'skel/wp.template';
 
-		file_put_contents("{$bin_out}extensions_by_mime.json", json_encode(static::$exm));
-		file_put_contents("{$bin_out}mimes_by_extension.json", json_encode(static::$mxe));
+		\file_put_contents("{$bin_out}extensions_by_mime.json", \json_encode(static::$exm));
+		\file_put_contents("{$bin_out}mimes_by_extension.json", \json_encode(static::$mxe));
 
 		// And a combined version.
 		$content = array(
@@ -695,7 +694,7 @@ class mimes extends \blobfolio\bob\base\mike {
 			foreach ($tmp as $v) {
 				$loose = \blobfolio\mimes\mimes::get_loose_mimes($v);
 				foreach ($loose as $v2) {
-					if (!in_array($v2, $tmp, true)) {
+					if (! \in_array($v2, $tmp, true)) {
 						$tmp[] = $v2;
 					}
 				}
@@ -703,50 +702,49 @@ class mimes extends \blobfolio\bob\base\mike {
 
 			$content['extensions'][$k] = $tmp;
 		}
-		file_put_contents("{$bin_out}blob-mimes.json", json_encode($content));
-
+		\file_put_contents("{$bin_out}blob-mimes.json", \json_encode($content));
 
 		// Export the main data used by this library.
 		log::print('Exporting library data…');
 
-		$content = file_get_contents($data_template);
+		$content = \file_get_contents($data_template);
 
 		$replacements = array(
-			'%GENERATED%'=>date('Y-m-d H:i:s'),
+			'%GENERATED%'=>\date('Y-m-d H:i:s'),
 			'%EXTENSIONS_BY_MIME%'=>format::array_to_php(static::$exm, 2),
 			'%MIMES_BY_EXTENSION%'=>format::array_to_php(static::$mxe, 2),
 		);
 
-		$content = str_replace(
-			array_keys($replacements),
-			array_values($replacements),
+		$content = \str_replace(
+			\array_keys($replacements),
+			\array_values($replacements),
 			$content
 		);
-		file_put_contents($data_out, $content);
+		\file_put_contents($data_out, $content);
 
 		// Also generate aliases for the WordPress plugin.
 		log::print('Exporting WP plugin data…');
 
-		$content = file_get_contents($wp_template);
+		$content = \file_get_contents($wp_template);
 
 		// WordPress needs simpler data.
 		$data = array();
 		foreach (static::$mxe as $k=>$v) {
 			$data[$k] = $v['mime'];
-			sort($data[$k]);
+			\sort($data[$k]);
 		}
 
-		$content = str_replace(
+		$content = \str_replace(
 			'%MIMES_BY_EXTENSION%',
 			format::array_to_php($data, 2),
 			$content
 		);
-		file_put_contents($wp_out, $content);
+		\file_put_contents($wp_out, $content);
 
 		// Finally, report how many MIMEs and Extensions we found!
-		$count = number_format(count(static::$mxe), 0, '.', ',');
+		$count = \number_format(\count(static::$mxe), 0, '.', ',');
 		log::total($count, 'file extensions');
-		$count = number_format(count(static::$exm), 0, '.', ',');
+		$count = \number_format(\count(static::$exm), 0, '.', ',');
 		log::total($count, 'MIME types');
 	}
 
@@ -767,7 +765,7 @@ class mimes extends \blobfolio\bob\base\mike {
 	 * @param string $source Source.
 	 */
 	protected static function parse_xml_mimes(string $xml, string $source) {
-		$xml = simplexml_load_string($xml);
+		$xml = \simplexml_load_string($xml);
 		foreach ($xml as $type) {
 			// First, get the MIME(s).
 			$mimes = array();
@@ -794,8 +792,8 @@ class mimes extends \blobfolio\bob\base\mike {
 			if (isset($type->{'sub-class-of'})) {
 				foreach ($type->{'sub-class-of'}->attributes() as $k=>$v) {
 					$v = (string) $v;
-					if (('type' === $k) && (false === strpos($v, '/x-tika'))) {
-						$mimes[strval($v)] = true;
+					if (('type' === $k) && (false === \strpos($v, '/x-tika'))) {
+						$mimes[\strval($v)] = true;
 					}
 				}
 			}
@@ -807,8 +805,8 @@ class mimes extends \blobfolio\bob\base\mike {
 					foreach ($glob->attributes() as $k=>$v) {
 						$v = (string) $v;
 						if ('pattern' === $k) {
-							$v = ltrim($v, '.*');
-							if (preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
+							$v = \ltrim($v, '.*');
+							if (\preg_match('/^[\da-z]+[\da-z\-\_]*[\da-z]+$/', $v)) {
 								$exts[] = $v;
 							}
 						}
@@ -817,7 +815,7 @@ class mimes extends \blobfolio\bob\base\mike {
 			}
 
 			// We have something!
-			if (count($exts) && count($mimes)) {
+			if (\count($exts) && \count($mimes)) {
 				foreach ($exts as $ext) {
 					foreach ($mimes as $mime=>$alias) {
 						static::save_pair($mime, $ext, $source, $alias);
@@ -841,55 +839,55 @@ class mimes extends \blobfolio\bob\base\mike {
 		r_sanitize::file_extension($ext);
 
 		// Ignore bad data.
-		if (!$ext || !$mime || !$source || ('unknown' === $ext)) {
+		if (! $ext || ! $mime || ! $source || ('unknown' === $ext)) {
 			return;
 		}
 
 		// Consensus building.
-		if (!$alias) {
-			if (!isset(static::$consensus_ext[$ext])) {
+		if (! $alias) {
+			if (! isset(static::$consensus_ext[$ext])) {
 				static::$consensus_ext[$ext] = array();
 			}
-			if (!isset(static::$consensus_ext[$ext][$mime])) {
+			if (! isset(static::$consensus_ext[$ext][$mime])) {
 				static::$consensus_ext[$ext][$mime] = 0;
 			}
 			++static::$consensus_ext[$ext][$mime];
 		}
 
 		// MIMEs by extension.
-		if (!isset(static::$mxe[$ext])) {
+		if (! isset(static::$mxe[$ext])) {
 			static::$mxe[$ext] = static::MIMES_BY_EXTENSION;
 			static::$mxe[$ext]['ext'] = $ext;
 		}
 
 		// Add to MIME list.
-		if (!in_array($mime, static::$mxe[$ext]['mime'], true)) {
+		if (! \in_array($mime, static::$mxe[$ext]['mime'], true)) {
 			static::$mxe[$ext]['mime'][] = $mime;
 		}
 
 		// Add to alias list.
-		if ($alias && !in_array($mime, static::$mxe[$ext]['alias'], true)) {
+		if ($alias && ! \in_array($mime, static::$mxe[$ext]['alias'], true)) {
 			static::$mxe[$ext]['alias'][] = $mime;
 		}
 
 		// Note the source.
-		if (!in_array($source, static::$mxe[$ext]['source'], true)) {
+		if (! \in_array($source, static::$mxe[$ext]['source'], true)) {
 			static::$mxe[$ext]['source'][] = $source;
 		}
 
 		// Extensions by MIME.
-		if (!isset(static::$exm[$mime])) {
+		if (! isset(static::$exm[$mime])) {
 			static::$exm[$mime] = static::EXTENSIONS_BY_MIME;
 			static::$exm[$mime]['mime'] = $mime;
 		}
 
 		// Add extension.
-		if (!in_array($ext, static::$exm[$mime]['ext'], true)) {
+		if (! \in_array($ext, static::$exm[$mime]['ext'], true)) {
 			static::$exm[$mime]['ext'][] = $ext;
 		}
 
 		// Add source.
-		if (!in_array($source, static::$exm[$mime]['source'], true)) {
+		if (! \in_array($source, static::$exm[$mime]['source'], true)) {
 			static::$exm[$mime]['source'][] = $source;
 		}
 
@@ -915,7 +913,7 @@ class mimes extends \blobfolio\bob\base\mike {
 
 		// Otherwise return partial matches.
 		foreach (static::MAGIC_LIST_BY_MIME as $k=>$v) {
-			if (0 === strpos($mime, $k)) {
+			if (0 === \strpos($mime, $k)) {
 				return $v;
 			}
 		}

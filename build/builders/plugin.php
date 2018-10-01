@@ -11,9 +11,7 @@
 
 namespace blobfolio\dev;
 
-use \blobfolio\bob\io;
-use \blobfolio\bob\log;
-use \blobfolio\common\file as v_file;
+use blobfolio\bob\io;
 
 class plugin extends \blobfolio\bob\base\mike_wp {
 	// Project Name.
@@ -49,7 +47,7 @@ class plugin extends \blobfolio\bob\base\mike_wp {
 	 * @return string Source.
 	 */
 	protected static function get_plugin_dir() {
-		return dirname(BOB_ROOT_DIR) . '/wp/';
+		return \dirname(\BOB_ROOT_DIR) . '/wp/';
 	}
 
 	/**
@@ -61,6 +59,6 @@ class plugin extends \blobfolio\bob\base\mike_wp {
 	 * @return string Source.
 	 */
 	protected static function get_release_path() {
-		return dirname(BOB_ROOT_DIR) . '/' . static::SLUG . '/';
+		return \dirname(\BOB_ROOT_DIR) . '/' . static::SLUG . '/';
 	}
 }

@@ -71,6 +71,10 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.8.6 =
+* [Misc] Update MIME database.
+* [Misc] Minor performance improvements.
+
 = 0.8.5 =
 * [Misc] Update MIME database.
 
@@ -81,15 +85,13 @@ This plugin does not make use of or collect any "Personal Data".
 * [Misc] Update MIME database.
 
 = 0.8.2 =
-* [Misc] Update MIME database.
-
-= 0.8.1 =
-* [Fix] Core `wp-admin/includes/plugin.php` is not always loaded for CRON jobs.
-
 * [Misc] Update MIME database.
 
 == Upgrade Notice ==
 
+= 0.8.6 =
+The MIME database has been updated.
+
 = 0.8.5 =
 The MIME database has been updated.
 
@@ -101,6 +103,3 @@ The MIME database has been updated.
 
 = 0.8.2 =
 The MIME database has been updated.
-
-= 0.8.1 =
-This release fixes an issue with CRON jobs on certain systems.

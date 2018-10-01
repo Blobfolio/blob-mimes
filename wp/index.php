@@ -1,5 +1,4 @@
 <?php
-// @codingStandardsIgnoreFile
 /**
  * Lord of the Files: Enhanced Upload Security
  *
@@ -23,6 +22,8 @@
  * License: WTFPL
  * License URI: http://www.wtfpl.net/
  */
+
+// phpcs:disable SlevomatCodingStandard.Namespaces
 
 /**
  * Do not execute this file directly.
@@ -70,7 +71,7 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 	 * @return void Nothing.
 	 */
 	function blobmimes_deactivate() {
-		require_once(trailingslashit(ABSPATH) . 'wp-admin/includes/plugin.php');
+		require_once trailingslashit(ABSPATH) . 'wp-admin/includes/plugin.php';
 		deactivate_plugins(plugin_basename(__FILE__));
 	}
 	add_action('admin_init', 'blobmimes_deactivate');
@@ -97,4 +98,4 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 
 
 // Everyone else gets the goods.
-require(BLOBMIMES_BASE_PATH . 'bootstrap.php');
+require BLOBMIMES_BASE_PATH . 'bootstrap.php';
