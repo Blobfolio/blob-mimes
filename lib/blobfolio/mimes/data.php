@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-10-01 09:06:04.
+ * Built: 2018-11-12 08:26:20.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1672,27 +1672,27 @@ class data {
 		'application/octet-stream'=>array(
 			'mime'=>'application/octet-stream',
 			'ext'=>array(
+				'img',
 				'lrf',
 				'mar',
 				'so',
+				'pkg',
 				'bpk',
 				'dump',
 				'elc',
 				'deploy',
 				'msp',
-				'img',
 				'bin',
-				'iso',
 				'lzh',
 				'lha',
 				'msm',
 				'msi',
 				'exe',
+				'iso',
 				'dmg',
 				'deb',
 				'dll',
 				'dms',
-				'pkg',
 				'distz',
 				'dist',
 				'explain',
@@ -3307,8 +3307,8 @@ class data {
 			'ext'=>array(
 				'dist',
 				'distz',
-				'pkg',
 				'mpkg',
+				'pkg',
 			),
 			'source'=>array(
 				'IANA',
@@ -4441,6 +4441,25 @@ class data {
 			'mime'=>'application/vnd.evolv.ecig.theme',
 			'ext'=>array(
 				'ecigtheme',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/vnd.exstream-empower+zip'=>array(
+			'mime'=>'application/vnd.exstream-empower+zip',
+			'ext'=>array(
+				'mpw',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/vnd.exstream-package'=>array(
+			'mime'=>'application/vnd.exstream-package',
+			'ext'=>array(
+				'pub',
+				'pkg',
 			),
 			'source'=>array(
 				'IANA',
@@ -29224,6 +29243,12 @@ class data {
 				'application/vnd.ms-project',
 			),
 		),
+		'mpw'=>array(
+			'ext'=>'mpw',
+			'mime'=>array(
+				'application/vnd.exstream-empower+zip',
+			),
+		),
 		'mpx'=>array(
 			'ext'=>'mpx',
 			'mime'=>array(
@@ -30642,8 +30667,9 @@ class data {
 		'pkg'=>array(
 			'ext'=>'pkg',
 			'mime'=>array(
-				'application/vnd.apple.installer+xml',
 				'application/octet-stream',
+				'application/vnd.apple.installer+xml',
+				'application/vnd.exstream-package',
 				'application/x-xar',
 			),
 		),
@@ -31134,8 +31160,9 @@ class data {
 		'pub'=>array(
 			'ext'=>'pub',
 			'mime'=>array(
-				'application/x-mspublisher',
+				'application/vnd.exstream-package',
 				'application/vnd.ms-publisher',
+				'application/x-mspublisher',
 				'application/x-ole-storage',
 			),
 		),

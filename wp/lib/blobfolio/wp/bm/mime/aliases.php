@@ -3869,6 +3869,9 @@ class aliases {
 		'mpt'=>array(
 			'application/vnd.ms-project',
 		),
+		'mpw'=>array(
+			'application/vnd.exstream-empower+zip',
+		),
 		'mpx'=>array(
 			'application/x-project',
 			'text/plain',
@@ -4675,6 +4678,7 @@ class aliases {
 		'pkg'=>array(
 			'application/octet-stream',
 			'application/vnd.apple.installer+xml',
+			'application/vnd.exstream-package',
 			'application/x-xar',
 		),
 		'pki'=>array(
@@ -4958,6 +4962,7 @@ class aliases {
 			'image/x-raw-pentax',
 		),
 		'pub'=>array(
+			'application/vnd.exstream-package',
 			'application/vnd.ms-publisher',
 			'application/x-mspublisher',
 			'application/x-ole-storage',
