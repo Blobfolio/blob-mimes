@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2018-11-12 08:26:20.
+ * Built: 2018-12-01 09:31:19.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1713,6 +1713,15 @@ class data {
 				'Apache',
 				'freedesktop.org',
 				'Tika',
+			),
+		),
+		'application/odm+xml'=>array(
+			'mime'=>'application/odm+xml',
+			'ext'=>array(
+				'xml',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/odx'=>array(
@@ -19869,6 +19878,15 @@ class data {
 				'freedesktop.org',
 			),
 		),
+		'text/vnd.senx.warpscript'=>array(
+			'mime'=>'text/vnd.senx.warpscript',
+			'ext'=>array(
+				'mc2',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'text/vnd.si.uricatalogue'=>array(
 			'mime'=>'text/vnd.si.uricatalogue',
 			'ext'=>array(
@@ -28536,6 +28554,12 @@ class data {
 				'application/vnd.medcalcdata',
 			),
 		),
+		'mc2'=>array(
+			'ext'=>'mc2',
+			'mime'=>array(
+				'text/vnd.senx.warpscript',
+			),
+		),
 		'mcd'=>array(
 			'ext'=>'mcd',
 			'mime'=>array(
@@ -35967,6 +35991,7 @@ class data {
 				'application/epp+xml',
 				'application/load-control+xml',
 				'application/media-policy-dataset+xml',
+				'application/odm+xml',
 				'application/pidf-diff+xml',
 				'application/prs.xsf+xml',
 				'application/reginfo+xml',

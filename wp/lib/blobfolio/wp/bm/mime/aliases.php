@@ -3459,6 +3459,9 @@ class aliases {
 		'mc1'=>array(
 			'application/vnd.medcalcdata',
 		),
+		'mc2'=>array(
+			'text/vnd.senx.warpscript',
+		),
 		'mcd'=>array(
 			'application/vnd.mcd',
 			'application/vnd.vectorworks',
@@ -7641,6 +7644,7 @@ class aliases {
 			'application/epp+xml',
 			'application/load-control+xml',
 			'application/media-policy-dataset+xml',
+			'application/odm+xml',
 			'application/pidf-diff+xml',
 			'application/prs.xsf+xml',
 			'application/reginfo+xml',
