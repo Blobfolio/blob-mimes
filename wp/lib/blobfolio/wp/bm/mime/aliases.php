@@ -2727,6 +2727,12 @@ class aliases {
 			'application/x-iso9660-image',
 			'application/x-raw-disk-image',
 		),
+		'istc'=>array(
+			'application/vnd.veryant.thin',
+		),
+		'isws'=>array(
+			'application/vnd.veryant.thin',
+		),
 		'it'=>array(
 			'audio/x-it',
 		),
@@ -3034,10 +3040,12 @@ class aliases {
 			'application/x-kexiproject-shortcut',
 		),
 		'key'=>array(
+			'application/pgp-keys',
 			'application/vnd.apple.iwork',
 			'application/vnd.apple.keynote',
 			'application/x-iwork-keynote-sffkey',
 			'application/zip',
+			'text/plain',
 		),
 		'keynote'=>array(
 			'application/vnd.apple.keynote',
@@ -3460,6 +3468,7 @@ class aliases {
 			'application/vnd.medcalcdata',
 		),
 		'mc2'=>array(
+			'text/plain',
 			'text/vnd.senx.warpscript',
 		),
 		'mcd'=>array(
@@ -6587,6 +6596,10 @@ class aliases {
 		'tzo'=>array(
 			'application/x-lzop',
 			'application/x-tzo',
+		),
+		'tzst'=>array(
+			'application/x-zstd-compressed-tar',
+			'application/zstd',
 		),
 		'u32'=>array(
 			'application/x-authorware-bin',
