@@ -32,7 +32,7 @@ The main features include:
  * PHP 7.0 or later.
  * DOMDocument extension is optional, but will improve SVG sanitizing.
 
-Please note: it is **not safe** to run WordPress atop a version of PHP that has reached its [End of Life](http://php.net/supported-versions.php). As of right now, that means your server should only be running **PHP 5.6 or newer**.
+Please note: it is **not safe** to run WordPress atop a version of PHP that has reached its [End of Life](http://php.net/supported-versions.php). As of right now, that means your server should only be running **PHP 7.2 or newer**.
 
 Future releases of this plugin might, out of necessity, drop support for old, unmaintained versions of PHP. To ensure you continue to receive plugin updates, bug fixes, and new features, just make sure PHP is kept up-to-date. :)
 
@@ -71,6 +71,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.8.8 =
+* [Misc] Update MIME database.
+
 = 0.8.7 =
 * [Misc] Update MIME database.
 
@@ -84,10 +87,10 @@ This plugin does not make use of or collect any "Personal Data".
 = 0.8.4 =
 * [Misc] Update MIME database.
 
-= 0.8.3 =
-* [Misc] Update MIME database.
-
 == Upgrade Notice ==
+
+= 0.8.8 =
+The MIME database has been updated.
 
 = 0.8.7 =
 The MIME database has been updated.
@@ -99,7 +102,4 @@ The MIME database has been updated.
 The MIME database has been updated.
 
 = 0.8.4 =
-The MIME database has been updated.
-
-= 0.8.3 =
 The MIME database has been updated.
