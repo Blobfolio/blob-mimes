@@ -641,9 +641,75 @@ class mimes extends \blobfolio\bob\base\mike {
 
 			$data = \array_unique(\array_merge($v['mime'], $v['alias']));
 			$data = \array_diff($data, array($v['primary']));
+
+			// A lot of file types are really just XML, JSON, and/or
+			// some other generic text thing that tend to be detected as
+			// text/plain, text/xml, etc. We'll add the generic types to
+			// each list as needed.
+			$xml_generic = false;
+			$json_generic = false;
+			$text_generic = false;
+
 			foreach ($data as $v2) {
 				$tmp['mime'][] = $v2;
+
+				// Generic XML?
+				if (
+					! $xml_generic &&
+					(
+						('application/xml' === $v2) ||
+						('text/xml' === $v2) ||
+						('+xml' === \substr($v2, -4))
+					)
+				) {
+					$xml_generic = true;
+					$text_generic = true;
+				}
+
+				// Generic JSON?
+				if (
+					! $json_generic &&
+					(
+						('application/json' === $v2) ||
+						('+json' === \substr($v2, -5))
+					)
+				) {
+					$json_generic = true;
+					$text_generic = true;
+				}
+
+				// Generic text?
+				if (! $text_generic && (0 === strpos($v2, 'text/'))) {
+					$text_generic = true;
+				}
 			}
+
+			// Add generic types.
+			$generic = array();
+
+			if ($xml_generic) {
+				$generic[] = 'text/xml';
+				$generic[] = 'application/xml';
+			}
+
+			if ($json_generic) {
+				$generic[] = 'text/json';
+				$generic[] = 'application/json';
+			}
+
+			if ($text_generic) {
+				$generic[] = 'text/plain';
+			}
+
+			foreach ($generic as $v2) {
+				if (
+					($v2 !== $v['primary']) &&
+					! \in_array($v2, $tmp['mime'], true)
+				) {
+					$tmp['mime'][] = $v2;
+				}
+			}
+
 			\sort($tmp['mime']);
 
 			// Add the primary to the top.

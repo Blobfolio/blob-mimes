@@ -183,11 +183,15 @@ class aliases {
 		'abw'=>array(
 			'application/x-abiword',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'ac'=>array(
 			'application/pkix-attr-cert',
 			'application/vnd.nokia.n-gage.ac+xml',
+			'application/xml',
 			'text/plain',
+			'text/xml',
 		),
 		'ac2'=>array(
 			'application/vnd.banana-accounting',
@@ -467,6 +471,8 @@ class aliases {
 			'application/x-ms-asx',
 			'application/xml',
 			'audio/x-ms-asx',
+			'text/plain',
+			'text/xml',
 			'video/x-ms-asf',
 			'video/x-ms-wax',
 			'video/x-ms-wmx',
@@ -484,6 +490,8 @@ class aliases {
 		'atom'=>array(
 			'application/atom+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'atomcat'=>array(
 			'application/atomcat+xml',
@@ -924,11 +932,13 @@ class aliases {
 		),
 		'cl'=>array(
 			'application/simple-filter+xml',
+			'application/xml',
 			'message/imdn+xml',
 			'text/plain',
 			'text/x-common-lisp',
 			'text/x-csrc',
 			'text/x-opencl-src',
+			'text/xml',
 		),
 		'cla'=>array(
 			'application/vnd.claymore',
@@ -1206,6 +1216,8 @@ class aliases {
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'dc'=>array(
 			'application/x-dc-rom',
@@ -1244,6 +1256,9 @@ class aliases {
 		'ddf'=>array(
 			'application/vnd.syncml.dmddf+wbxml',
 			'application/vnd.syncml.dmddf+xml',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'dds'=>array(
 			'image/x-dds',
@@ -1283,12 +1298,15 @@ class aliases {
 			'application/x-dgc-compressed',
 		),
 		'di'=>array(
+			'text/plain',
 			'text/x-csrc',
 			'text/x-dsrc',
 		),
 		'dia'=>array(
 			'application/x-dia-diagram',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'dib'=>array(
 			'image/bmp',
@@ -1304,6 +1322,8 @@ class aliases {
 		'dif'=>array(
 			'application/dif+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'diff'=>array(
 			'text/plain',
@@ -1339,14 +1359,23 @@ class aliases {
 		'dita'=>array(
 			'application/dita+xml',
 			'application/dita+xmlformattopic',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'ditamap'=>array(
 			'application/dita+xml',
 			'application/dita+xmlformatmap',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'ditaval'=>array(
 			'application/dita+xml',
 			'application/dita+xmlformatval',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'dive'=>array(
 			'application/vnd.patentdive',
@@ -1406,6 +1435,8 @@ class aliases {
 			'application/x-msword',
 			'application/x-ole-storage',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-doc',
 		),
 		'docbook'=>array(
@@ -1413,6 +1444,8 @@ class aliases {
 			'application/vnd.oasis.docbook+xml',
 			'application/x-docbook+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'docjson'=>array(
 			'application/vnd.document+json',
@@ -1422,6 +1455,8 @@ class aliases {
 			'application/vnd.ms-word.document.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'docx'=>array(
 			'application/vnd.ms-office',
@@ -1438,13 +1473,17 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.ms-word',
 			'application/xml',
+			'text/plain',
 			'text/vnd.graphviz',
+			'text/xml',
 		),
 		'dotm'=>array(
 			'application/vnd.ms-office',
 			'application/vnd.ms-word.template.macroenabled.12',
 			'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'dotx'=>array(
 			'application/vnd.ms-office',
@@ -1666,6 +1705,7 @@ class aliases {
 			'application/xml',
 			'application/xml-external-parsed-entity',
 			'text/plain',
+			'text/xml',
 			'text/xml-external-parsed-entity',
 		),
 		'entity'=>array(
@@ -1710,6 +1750,7 @@ class aliases {
 			'application/ecmascript',
 			'application/x-executable',
 			'text/ecmascript',
+			'text/plain',
 		),
 		'es3'=>array(
 			'application/vnd.eszigno3+xml',
@@ -1807,6 +1848,8 @@ class aliases {
 			'application/x-fictionbook',
 			'application/x-fictionbook+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'fbs'=>array(
 			'image/vnd.fastbidsheet',
@@ -1962,24 +2005,34 @@ class aliases {
 			'application/vnd.software602.filler.form+xml',
 			'application/xml',
 			'application/xslfo+xml',
+			'text/plain',
 			'text/x-xslfo',
+			'text/xml',
 			'text/xsl',
 		),
 		'fodg'=>array(
 			'application/vnd.oasis.opendocument.graphics-flat-xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'fodp'=>array(
 			'application/vnd.oasis.opendocument.presentation-flat-xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'fods'=>array(
 			'application/vnd.oasis.opendocument.spreadsheet-flat-xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'fodt'=>array(
 			'application/vnd.oasis.opendocument.text-flat-xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'for'=>array(
 			'text/plain',
@@ -1997,6 +2050,7 @@ class aliases {
 		'frm'=>array(
 			'application/vnd.ufdl',
 			'application/vnd.xfdl',
+			'text/plain',
 			'text/x-basic',
 			'text/x-vbasic',
 		),
@@ -2107,10 +2161,12 @@ class aliases {
 		'ged'=>array(
 			'application/x-gedcom',
 			'text/gedcom',
+			'text/plain',
 		),
 		'gedcom'=>array(
 			'application/x-gedcom',
 			'text/gedcom',
+			'text/plain',
 		),
 		'gem'=>array(
 			'application/x-gtar',
@@ -2129,6 +2185,8 @@ class aliases {
 			'application/geo+json',
 			'application/json',
 			'application/vnd.geo+json',
+			'text/json',
+			'text/plain',
 		),
 		'gex'=>array(
 			'application/vnd.geometry-explorer',
@@ -2160,6 +2218,8 @@ class aliases {
 		'glade'=>array(
 			'application/x-glade',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'glbin'=>array(
 			'application/gltf-buffer',
@@ -2173,7 +2233,9 @@ class aliases {
 		'gml'=>array(
 			'application/gml+xml',
 			'application/xml',
+			'text/plain',
 			'text/vnd.gml',
+			'text/xml',
 		),
 		'gmo'=>array(
 			'application/x-gettext-translation',
@@ -2229,6 +2291,8 @@ class aliases {
 			'application/x-gpx',
 			'application/x-gpx+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'gqf'=>array(
 			'application/vnd.grafeq',
@@ -2240,6 +2304,7 @@ class aliases {
 			'application/x-graphite',
 		),
 		'gradle'=>array(
+			'text/plain',
 			'text/x-gradle',
 			'text/x-groovy',
 		),
@@ -2304,6 +2369,7 @@ class aliases {
 		),
 		'gvp'=>array(
 			'text/google-video-pointer',
+			'text/plain',
 			'text/x-google-video-pointer',
 		),
 		'gxf'=>array(
@@ -2459,6 +2525,7 @@ class aliases {
 			'application/xml',
 			'text/html',
 			'text/plain',
+			'text/xml',
 		),
 		'html'=>array(
 			'application/vnd.dtg.local.html',
@@ -2466,6 +2533,7 @@ class aliases {
 			'application/xml',
 			'text/html',
 			'text/plain',
+			'text/xml',
 		),
 		'hvd'=>array(
 			'application/vnd.yamaha.hv-dic',
@@ -2545,6 +2613,7 @@ class aliases {
 			'image/x-ico',
 			'image/x-icon',
 			'text/ico',
+			'text/plain',
 		),
 		'ics'=>array(
 			'application/ics',
@@ -2672,6 +2741,8 @@ class aliases {
 		'inx'=>array(
 			'application/x-adobe-indesign-interchange',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'iota'=>array(
 			'application/vnd.astraea-software.iota',
@@ -2693,6 +2764,8 @@ class aliases {
 		'ipynb'=>array(
 			'application/json',
 			'application/x-ipynb+json',
+			'text/json',
+			'text/plain',
 		),
 		'irm'=>array(
 			'application/vnd.ibm.rights-management',
@@ -2721,6 +2794,8 @@ class aliases {
 		'iso19139'=>array(
 			'application/xml',
 			'text/iso19139+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'iso9660'=>array(
 			'application/x-cd-image',
@@ -2834,6 +2909,8 @@ class aliases {
 		'jnlp'=>array(
 			'application/x-java-jnlp-file',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'joda'=>array(
 			'application/vnd.joost.joda-archive',
@@ -2902,6 +2979,8 @@ class aliases {
 		'jrd'=>array(
 			'application/jrd+json',
 			'application/json',
+			'text/json',
+			'text/plain',
 		),
 		'js'=>array(
 			'application/ecmascript',
@@ -2916,6 +2995,7 @@ class aliases {
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
+			'text/plain',
 		),
 		'json'=>array(
 			'application/csvm+json',
@@ -2964,10 +3044,14 @@ class aliases {
 			'application/vnd.vel+json',
 			'application/vnd.xacml+json',
 			'application/webpush-options+json',
+			'text/json',
+			'text/plain',
 		),
 		'json-patch'=>array(
 			'application/json',
 			'application/json-patch+json',
+			'text/json',
+			'text/plain',
 		),
 		'jsonld'=>array(
 			'application/json',
@@ -2978,6 +3062,8 @@ class aliases {
 			'application/vnd.ims.lti.v2.toolproxy.id+json',
 			'application/vnd.ims.lti.v2.toolsettings+json',
 			'application/vnd.ims.lti.v2.toolsettings.simple+json',
+			'text/json',
+			'text/plain',
 		),
 		'jsonml'=>array(
 			'application/jsonml+json',
@@ -3064,10 +3150,14 @@ class aliases {
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'kml'=>array(
 			'application/vnd.google-earth.kml+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'kmz'=>array(
 			'application/vnd.google-earth.kmz',
@@ -3533,10 +3623,14 @@ class aliases {
 		'meta4'=>array(
 			'application/metalink4+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'metalink'=>array(
 			'application/metalink+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'mets'=>array(
 			'application/mets+xml',
@@ -3625,6 +3719,7 @@ class aliases {
 			'application/javascript',
 			'application/x-javascript',
 			'text/javascript',
+			'text/plain',
 		),
 		'mk'=>array(
 			'text/plain',
@@ -3695,6 +3790,8 @@ class aliases {
 			'application/mathml+xml',
 			'application/xml',
 			'text/mathml',
+			'text/plain',
+			'text/xml',
 		),
 		'mmmp'=>array(
 			'application/vnd.mindjet.mindmanager',
@@ -3744,6 +3841,7 @@ class aliases {
 			'application/mods+xml',
 		),
 		'mof'=>array(
+			'text/plain',
 			'text/x-csrc',
 			'text/x-mof',
 		),
@@ -3839,6 +3937,7 @@ class aliases {
 		),
 		'mpf'=>array(
 			'application/media-policy-dataset+xml',
+			'text/plain',
 			'text/vnd.ms-mediapackage',
 		),
 		'mpg'=>array(
@@ -4027,7 +4126,10 @@ class aliases {
 		),
 		'mxml'=>array(
 			'application/xhtml-voice+xml',
+			'application/xml',
 			'application/xv+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'mxs'=>array(
 			'application/vnd.triscape.mxs',
@@ -4050,6 +4152,8 @@ class aliases {
 		'nar'=>array(
 			'application/vnd.iptc.g2.newsmessage+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'nb'=>array(
 			'application/mathematica',
@@ -4084,6 +4188,7 @@ class aliases {
 			'application/x-nes-rom',
 		),
 		'nfo'=>array(
+			'text/plain',
 			'text/x-nfo',
 			'text/x-readme',
 		),
@@ -4165,6 +4270,8 @@ class aliases {
 		'nzb'=>array(
 			'application/x-nzb',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'oa2'=>array(
 			'application/vnd.fujitsu.oasys2',
@@ -4328,6 +4435,7 @@ class aliases {
 			'application/onenoteformatonetoc2',
 		),
 		'ooc'=>array(
+			'text/plain',
 			'text/x-csrc',
 			'text/x-ooc',
 		),
@@ -4336,8 +4444,10 @@ class aliases {
 		),
 		'opml'=>array(
 			'application/xml',
+			'text/plain',
 			'text/x-opml',
 			'text/x-opml+xml',
+			'text/xml',
 		),
 		'oprc'=>array(
 			'application/vnd.palm',
@@ -4431,11 +4541,15 @@ class aliases {
 		'owl'=>array(
 			'application/rdf+xml',
 			'application/xml',
+			'text/plain',
 			'text/rdf',
+			'text/xml',
 		),
 		'owx'=>array(
 			'application/owl+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'oxlicg'=>array(
 			'application/vnd.oxli.countgraph',
@@ -4598,6 +4712,7 @@ class aliases {
 			'image/x-raw-pentax',
 		),
 		'pem'=>array(
+			'application/pem-certificate-chain',
 			'application/x-x509-ca-cert',
 		),
 		'pen'=>array(
@@ -4692,6 +4807,9 @@ class aliases {
 			'application/vnd.apple.installer+xml',
 			'application/vnd.exstream-package',
 			'application/x-xar',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'pki'=>array(
 			'application/pkixcmp',
@@ -4828,6 +4946,8 @@ class aliases {
 		'ppj'=>array(
 			'application/xml',
 			'image/vnd.adobe.premiere',
+			'text/plain',
+			'text/xml',
 		),
 		'ppkg'=>array(
 			'application/vnd.xmpie.ppkg',
@@ -4998,10 +5118,12 @@ class aliases {
 			'text/x-python3',
 		),
 		'py3'=>array(
+			'text/plain',
 			'text/x-python',
 			'text/x-python3',
 		),
 		'py3x'=>array(
+			'text/plain',
 			'text/x-python',
 			'text/x-python3',
 		),
@@ -5166,7 +5288,9 @@ class aliases {
 		'rdf'=>array(
 			'application/rdf+xml',
 			'application/xml',
+			'text/plain',
 			'text/rdf',
+			'text/xml',
 		),
 		'rdf-crypt'=>array(
 			'application/prs.rdf-xml-crypt',
@@ -5174,7 +5298,9 @@ class aliases {
 		'rdfs'=>array(
 			'application/rdf+xml',
 			'application/xml',
+			'text/plain',
 			'text/rdf',
+			'text/xml',
 		),
 		'rdz'=>array(
 			'application/vnd.data-vision.rdz',
@@ -5344,7 +5470,9 @@ class aliases {
 		'rss'=>array(
 			'application/rss+xml',
 			'application/xml',
+			'text/plain',
 			'text/rss',
+			'text/xml',
 		),
 		'rst'=>array(
 			'text/plain',
@@ -5738,6 +5866,8 @@ class aliases {
 		'shape'=>array(
 			'application/x-dia-shape',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'shar'=>array(
 			'application/x-shar',
@@ -5799,6 +5929,8 @@ class aliases {
 		'siv'=>array(
 			'application/sieve',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'sjp'=>array(
 			'image/vnd.sealedmedia.softseal.jpg',
@@ -5907,16 +6039,21 @@ class aliases {
 			'application/x-sami',
 			'application/xml',
 			'text/plain',
+			'text/xml',
 		),
 		'smil'=>array(
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'sml'=>array(
 			'application/smil',
 			'application/smil+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'smo'=>array(
 			'video/vnd.sealedmedia.softseal.mov',
@@ -6184,6 +6321,7 @@ class aliases {
 			'application/vnd.sus-calendar',
 		),
 		'sv'=>array(
+			'text/plain',
 			'text/x-svsrc',
 			'text/x-verilog',
 		),
@@ -6205,14 +6343,19 @@ class aliases {
 		'svg'=>array(
 			'application/xml',
 			'image/svg+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'svgz'=>array(
 			'application/gzip',
 			'application/xml',
 			'image/svg+xml',
 			'image/svg+xml-compressed',
+			'text/plain',
+			'text/xml',
 		),
 		'svh'=>array(
+			'text/plain',
 			'text/x-svhdr',
 			'text/x-verilog',
 		),
@@ -6513,8 +6656,10 @@ class aliases {
 		'ts'=>array(
 			'application/x-linguist',
 			'application/xml',
+			'text/plain',
 			'text/vnd.qt.linguist',
 			'text/vnd.trolltech.linguist',
+			'text/xml',
 			'video/mp2t',
 		),
 		'tsa'=>array(
@@ -6558,6 +6703,8 @@ class aliases {
 		'ttx'=>array(
 			'application/x-font-ttx',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'tuc'=>array(
 			'application/tamp-update-confirm',
@@ -6622,11 +6769,15 @@ class aliases {
 		'ufraw'=>array(
 			'application/x-ufraw',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'ui'=>array(
 			'application/x-designer',
 			'application/x-gtk-builder',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'uil'=>array(
 			'text/plain',
@@ -6784,15 +6935,18 @@ class aliases {
 			'application/x-n64-rom',
 		),
 		'vala'=>array(
+			'text/plain',
 			'text/x-csrc',
 			'text/x-vala',
 		),
 		'vapi'=>array(
+			'text/plain',
 			'text/x-csrc',
 			'text/x-vala',
 		),
 		'vb'=>array(
 			'application/x-virtual-boy-rom',
+			'text/plain',
 			'text/x-vbasic',
 			'text/x-vbdotnet',
 		),
@@ -6800,6 +6954,7 @@ class aliases {
 			'audio/vnd.nortel.vbk',
 		),
 		'vbs'=>array(
+			'text/plain',
 			'text/x-vbasic',
 			'text/x-vbscript',
 		),
@@ -6999,6 +7154,9 @@ class aliases {
 			'application/srgs+xml',
 			'application/ssml+xml',
 			'application/voicexml+xml',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'vxml'=>array(
 			'application/voicexml+xml',
@@ -7178,7 +7336,9 @@ class aliases {
 		),
 		'wml'=>array(
 			'application/xml',
+			'text/plain',
 			'text/vnd.wap.wml',
+			'text/xml',
 		),
 		'wmlc'=>array(
 			'application/vnd.wap.wmlc',
@@ -7329,7 +7489,10 @@ class aliases {
 		),
 		'x3d'=>array(
 			'application/vnd.hzn-3d-crossword',
+			'application/xml',
 			'model/x3d+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'x3db'=>array(
 			'model/x3d+binary',
@@ -7387,6 +7550,8 @@ class aliases {
 		'xbel'=>array(
 			'application/x-xbel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xbl'=>array(
 			'application/xml',
@@ -7395,6 +7560,7 @@ class aliases {
 		),
 		'xbm'=>array(
 			'image/x-xbitmap',
+			'text/plain',
 			'text/x-c',
 		),
 		'xca'=>array(
@@ -7424,6 +7590,9 @@ class aliases {
 			'application/mrb-consumer+xml',
 			'application/mrb-publish+xml',
 			'application/xcap-diff+xml',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xdgapp'=>array(
 			'application/vnd.flatpak',
@@ -7453,6 +7622,9 @@ class aliases {
 		'xer'=>array(
 			'application/patch-ops-error+xml',
 			'application/xcap-error+xml',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xfd'=>array(
 			'application/vnd.xfdl',
@@ -7472,6 +7644,8 @@ class aliases {
 		'xht'=>array(
 			'application/xhtml+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xhtm'=>array(
 			'application/vnd.pwg-xhtml-print+xml',
@@ -7480,13 +7654,18 @@ class aliases {
 			'application/vnd.pwg-xhtml-print+xml',
 			'application/xhtml+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xhtml2'=>array(
 			'application/xhtml+xml',
 		),
 		'xhvml'=>array(
 			'application/xhtml-voice+xml',
+			'application/xml',
 			'application/xv+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xi'=>array(
 			'audio/x-xi',
@@ -7500,6 +7679,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlam'=>array(
@@ -7507,6 +7688,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xlc'=>array(
 			'application/msexcel',
@@ -7514,6 +7697,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xld'=>array(
@@ -7522,6 +7707,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlex'=>array(
@@ -7532,11 +7719,15 @@ class aliases {
 			'application/x-xliff+xml',
 			'application/xliff+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xliff'=>array(
 			'application/x-xliff',
 			'application/xliff+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xlim'=>array(
 			'application/vnd.xmpie.xlim',
@@ -7547,6 +7738,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlm'=>array(
@@ -7555,6 +7748,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlog'=>array(
@@ -7567,6 +7762,8 @@ class aliases {
 			'application/x-ole-storage',
 			'application/x-tika-msworks-spreadsheet',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xls'=>array(
 			'application/msexcel',
@@ -7574,6 +7771,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xlsb'=>array(
@@ -7581,6 +7780,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xlsm'=>array(
 			'application/vnd.ms-excel.sheet.macroenabled.12',
@@ -7599,6 +7800,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xltm'=>array(
@@ -7606,6 +7809,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xltx'=>array(
 			'application/vnd.ms-office',
@@ -7619,6 +7824,8 @@ class aliases {
 			'application/vnd.ms-office',
 			'application/x-msexcel',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 			'zz-application/zz-winassoc-xls',
 		),
 		'xm'=>array(
@@ -7635,7 +7842,9 @@ class aliases {
 		),
 		'xmi'=>array(
 			'application/xml',
+			'text/plain',
 			'text/x-xmi',
+			'text/xml',
 		),
 		'xmind'=>array(
 			'application/x-xmind',
@@ -7769,6 +7978,8 @@ class aliases {
 		'xmp'=>array(
 			'application/rdf+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xns'=>array(
 			'application/xcap-ns+xml',
@@ -7862,12 +8073,16 @@ class aliases {
 		'xslfo'=>array(
 			'application/xml',
 			'application/xslfo+xml',
+			'text/plain',
 			'text/x-xslfo',
+			'text/xml',
 			'text/xsl',
 		),
 		'xslt'=>array(
 			'application/xml',
 			'application/xslt+xml',
+			'text/plain',
+			'text/xml',
 			'text/xsl',
 		),
 		'xsm'=>array(
@@ -7880,6 +8095,8 @@ class aliases {
 			'application/x-xspf+xml',
 			'application/xml',
 			'application/xspf+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xtest'=>array(
 			'text/plain',
@@ -7888,14 +8105,22 @@ class aliases {
 			'application/vnd.mozilla.aul+xml',
 			'application/vnd.mozilla.xul+xml',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xvm'=>array(
 			'application/xhtml-voice+xml',
+			'application/xml',
 			'application/xv+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xvml'=>array(
 			'application/xhtml-voice+xml',
+			'application/xml',
 			'application/xv+xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xwd'=>array(
 			'image/x-xwindowdump',
@@ -7970,6 +8195,8 @@ class aliases {
 		'zabw'=>array(
 			'application/x-abiword',
 			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'zaz'=>array(
 			'application/vnd.zzazz.deck+xml',

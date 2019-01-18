@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-01-01 14:11:08.
+ * Built: 2019-01-18 08:55:26.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1882,6 +1882,15 @@ class data {
 			'mime'=>'application/pdx',
 			'ext'=>array(
 				'pdx',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/pem-certificate-chain'=>array(
+			'mime'=>'application/pem-certificate-chain',
+			'ext'=>array(
+				'pem',
 			),
 			'source'=>array(
 				'IANA',
@@ -14504,8 +14513,8 @@ class data {
 			'ext'=>array(
 				'der',
 				'crt',
-				'pem',
 				'cert',
+				'pem',
 			),
 			'source'=>array(
 				'Apache',
@@ -22731,6 +22740,8 @@ class data {
 			'mime'=>array(
 				'application/x-abiword',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ac'=>array(
@@ -22738,7 +22749,9 @@ class data {
 			'mime'=>array(
 				'application/pkix-attr-cert',
 				'application/vnd.nokia.n-gage.ac+xml',
+				'application/xml',
 				'text/plain',
+				'text/xml',
 			),
 		),
 		'ac2'=>array(
@@ -23235,6 +23248,8 @@ class data {
 				'application/x-ms-asx',
 				'application/xml',
 				'audio/x-ms-asx',
+				'text/plain',
+				'text/xml',
 				'video/x-ms-wax',
 				'video/x-ms-wmx',
 				'video/x-ms-wvx',
@@ -23263,6 +23278,8 @@ class data {
 			'mime'=>array(
 				'application/atom+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'atomcat'=>array(
@@ -24069,11 +24086,13 @@ class data {
 			'ext'=>'cl',
 			'mime'=>array(
 				'application/simple-filter+xml',
+				'application/xml',
 				'message/imdn+xml',
 				'text/plain',
 				'text/x-common-lisp',
 				'text/x-csrc',
 				'text/x-opencl-src',
+				'text/xml',
 			),
 		),
 		'cla'=>array(
@@ -24579,6 +24598,8 @@ class data {
 				'application/vnd.oasis.docbook+xml',
 				'application/x-docbook+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dc'=>array(
@@ -24650,6 +24671,9 @@ class data {
 			'mime'=>array(
 				'application/vnd.syncml.dmddf+wbxml',
 				'application/vnd.syncml.dmddf+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dds'=>array(
@@ -24723,6 +24747,7 @@ class data {
 			'ext'=>'di',
 			'mime'=>array(
 				'text/x-dsrc',
+				'text/plain',
 				'text/x-csrc',
 			),
 		),
@@ -24731,6 +24756,8 @@ class data {
 			'mime'=>array(
 				'application/x-dia-diagram',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dib'=>array(
@@ -24758,6 +24785,8 @@ class data {
 			'mime'=>array(
 				'application/dif+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'diff'=>array(
@@ -24823,6 +24852,9 @@ class data {
 			'mime'=>array(
 				'application/dita+xmlformattopic',
 				'application/dita+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ditamap'=>array(
@@ -24830,6 +24862,9 @@ class data {
 			'mime'=>array(
 				'application/dita+xmlformatmap',
 				'application/dita+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ditaval'=>array(
@@ -24837,6 +24872,9 @@ class data {
 			'mime'=>array(
 				'application/dita+xmlformatval',
 				'application/dita+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dive'=>array(
@@ -24932,6 +24970,8 @@ class data {
 				'application/x-msword',
 				'application/x-ole-storage',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-doc',
 			),
 		),
@@ -24942,6 +24982,8 @@ class data {
 				'application/docbook+xml',
 				'application/vnd.oasis.docbook+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'docjson'=>array(
@@ -24957,6 +24999,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'docx'=>array(
@@ -24982,7 +25026,9 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.ms-word',
 				'application/xml',
+				'text/plain',
 				'text/vnd.graphviz',
+				'text/xml',
 			),
 		),
 		'dotm'=>array(
@@ -24992,6 +25038,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.template',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dotx'=>array(
@@ -25396,6 +25444,7 @@ class data {
 				'application/vnd.nervana',
 				'application/xml',
 				'text/plain',
+				'text/xml',
 				'text/xml-external-parsed-entity',
 			),
 		),
@@ -25476,6 +25525,7 @@ class data {
 				'application/ecmascript',
 				'application/x-executable',
 				'text/ecmascript',
+				'text/plain',
 			),
 		),
 		'es3'=>array(
@@ -25651,6 +25701,8 @@ class data {
 				'application/x-fictionbook+xml',
 				'application/x-fictionbook',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'fbs'=>array(
@@ -25938,7 +25990,9 @@ class data {
 				'application/vnd.software602.filler.form+xml',
 				'application/xml',
 				'application/xslfo+xml',
+				'text/plain',
 				'text/x-xslfo',
+				'text/xml',
 				'text/xsl',
 			),
 		),
@@ -25947,6 +26001,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.oasis.opendocument.graphics-flat-xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'fodp'=>array(
@@ -25954,6 +26010,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.oasis.opendocument.presentation-flat-xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'fods'=>array(
@@ -25961,6 +26019,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.oasis.opendocument.spreadsheet-flat-xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'fodt'=>array(
@@ -25968,6 +26028,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.oasis.opendocument.text-flat-xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'for'=>array(
@@ -26000,6 +26062,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.ufdl',
 				'application/vnd.xfdl',
+				'text/plain',
 				'text/x-basic',
 				'text/x-vbasic',
 			),
@@ -26206,6 +26269,7 @@ class data {
 			'mime'=>array(
 				'application/x-gedcom',
 				'text/gedcom',
+				'text/plain',
 			),
 		),
 		'gedcom'=>array(
@@ -26213,6 +26277,7 @@ class data {
 			'mime'=>array(
 				'application/x-gedcom',
 				'text/gedcom',
+				'text/plain',
 			),
 		),
 		'gem'=>array(
@@ -26246,6 +26311,8 @@ class data {
 				'application/geo+json',
 				'application/json',
 				'application/vnd.geo+json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'gex'=>array(
@@ -26307,6 +26374,8 @@ class data {
 			'mime'=>array(
 				'application/x-glade',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'glbin'=>array(
@@ -26333,6 +26402,8 @@ class data {
 				'text/vnd.gml',
 				'application/gml+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'gmo'=>array(
@@ -26430,6 +26501,8 @@ class data {
 				'application/x-gpx',
 				'application/x-gpx+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'gqf'=>array(
@@ -26454,6 +26527,7 @@ class data {
 			'ext'=>'gradle',
 			'mime'=>array(
 				'text/x-gradle',
+				'text/plain',
 				'text/x-groovy',
 			),
 		),
@@ -26572,6 +26646,7 @@ class data {
 			'mime'=>array(
 				'text/x-google-video-pointer',
 				'text/google-video-pointer',
+				'text/plain',
 			),
 		),
 		'gxf'=>array(
@@ -26849,6 +26924,7 @@ class data {
 				'application/xhtml+xml',
 				'application/xml',
 				'text/plain',
+				'text/xml',
 			),
 		),
 		'html'=>array(
@@ -26859,6 +26935,7 @@ class data {
 				'application/xhtml+xml',
 				'application/xml',
 				'text/plain',
+				'text/xml',
 			),
 		),
 		'hvd'=>array(
@@ -26998,6 +27075,7 @@ class data {
 				'image/x-ico',
 				'image/x-icon',
 				'text/ico',
+				'text/plain',
 			),
 		),
 		'ics'=>array(
@@ -27230,6 +27308,8 @@ class data {
 			'mime'=>array(
 				'application/x-adobe-indesign-interchange',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'iota'=>array(
@@ -27269,6 +27349,8 @@ class data {
 			'mime'=>array(
 				'application/x-ipynb+json',
 				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'irm'=>array(
@@ -27312,6 +27394,8 @@ class data {
 			'mime'=>array(
 				'text/iso19139+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'iso9660'=>array(
@@ -27521,6 +27605,8 @@ class data {
 			'mime'=>array(
 				'application/x-java-jnlp-file',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'joda'=>array(
@@ -27631,6 +27717,8 @@ class data {
 			'mime'=>array(
 				'application/jrd+json',
 				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'js'=>array(
@@ -27651,6 +27739,7 @@ class data {
 				'application/ecmascript',
 				'application/x-javascript',
 				'text/javascript',
+				'text/plain',
 			),
 		),
 		'json'=>array(
@@ -27702,6 +27791,8 @@ class data {
 				'application/vnd.vel+json',
 				'application/vnd.xacml+json',
 				'application/webpush-options+json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'json-patch'=>array(
@@ -27709,6 +27800,8 @@ class data {
 			'mime'=>array(
 				'application/json-patch+json',
 				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'jsonld'=>array(
@@ -27722,6 +27815,8 @@ class data {
 				'application/vnd.ims.lti.v2.toolproxy.id+json',
 				'application/vnd.ims.lti.v2.toolsettings+json',
 				'application/vnd.ims.lti.v2.toolsettings.simple+json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'jsonml'=>array(
@@ -27871,6 +27966,8 @@ class data {
 				'application/smil+xml',
 				'application/smil',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'kml'=>array(
@@ -27878,6 +27975,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.google-earth.kml+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'kmz'=>array(
@@ -28706,6 +28805,8 @@ class data {
 			'mime'=>array(
 				'application/metalink4+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'metalink'=>array(
@@ -28713,6 +28814,8 @@ class data {
 			'mime'=>array(
 				'application/metalink+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mets'=>array(
@@ -28867,6 +28970,7 @@ class data {
 				'application/ecmascript',
 				'application/x-javascript',
 				'text/javascript',
+				'text/plain',
 			),
 		),
 		'mk'=>array(
@@ -28988,6 +29092,8 @@ class data {
 				'text/mathml',
 				'application/mathml+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mmmp'=>array(
@@ -29080,6 +29186,7 @@ class data {
 			'ext'=>'mof',
 			'mime'=>array(
 				'text/x-mof',
+				'text/plain',
 				'text/x-csrc',
 			),
 		),
@@ -29234,6 +29341,7 @@ class data {
 			'ext'=>'mpf',
 			'mime'=>array(
 				'application/media-policy-dataset+xml',
+				'text/plain',
 				'text/vnd.ms-mediapackage',
 			),
 		),
@@ -29576,6 +29684,9 @@ class data {
 			'mime'=>array(
 				'application/xv+xml',
 				'application/xhtml-voice+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mxs'=>array(
@@ -29616,6 +29727,8 @@ class data {
 			'mime'=>array(
 				'application/vnd.iptc.g2.newsmessage+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'nb'=>array(
@@ -29681,6 +29794,7 @@ class data {
 			'ext'=>'nfo',
 			'mime'=>array(
 				'text/x-nfo',
+				'text/plain',
 				'text/x-readme',
 			),
 		),
@@ -29827,6 +29941,8 @@ class data {
 			'mime'=>array(
 				'application/x-nzb',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'oa2'=>array(
@@ -30102,6 +30218,7 @@ class data {
 			'ext'=>'ooc',
 			'mime'=>array(
 				'text/x-ooc',
+				'text/plain',
 				'text/x-csrc',
 			),
 		),
@@ -30116,7 +30233,9 @@ class data {
 			'mime'=>array(
 				'text/x-opml',
 				'application/xml',
+				'text/plain',
 				'text/x-opml+xml',
+				'text/xml',
 			),
 		),
 		'oprc'=>array(
@@ -30276,7 +30395,9 @@ class data {
 			'mime'=>array(
 				'application/rdf+xml',
 				'application/xml',
+				'text/plain',
 				'text/rdf',
+				'text/xml',
 			),
 		),
 		'owx'=>array(
@@ -30284,6 +30405,8 @@ class data {
 			'mime'=>array(
 				'application/owl+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'oxlicg'=>array(
@@ -30575,6 +30698,7 @@ class data {
 		'pem'=>array(
 			'ext'=>'pem',
 			'mime'=>array(
+				'application/pem-certificate-chain',
 				'application/x-x509-ca-cert',
 			),
 		),
@@ -30735,6 +30859,9 @@ class data {
 				'application/vnd.apple.installer+xml',
 				'application/vnd.exstream-package',
 				'application/x-xar',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'pki'=>array(
@@ -30970,6 +31097,8 @@ class data {
 			'mime'=>array(
 				'image/vnd.adobe.premiere',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ppkg'=>array(
@@ -31267,6 +31396,7 @@ class data {
 			'ext'=>'py3',
 			'mime'=>array(
 				'text/x-python3',
+				'text/plain',
 				'text/x-python',
 			),
 		),
@@ -31274,6 +31404,7 @@ class data {
 			'ext'=>'py3x',
 			'mime'=>array(
 				'text/x-python3',
+				'text/plain',
 				'text/x-python',
 			),
 		),
@@ -31572,7 +31703,9 @@ class data {
 			'mime'=>array(
 				'application/rdf+xml',
 				'application/xml',
+				'text/plain',
 				'text/rdf',
+				'text/xml',
 			),
 		),
 		'rdf-crypt'=>array(
@@ -31586,7 +31719,9 @@ class data {
 			'mime'=>array(
 				'application/rdf+xml',
 				'application/xml',
+				'text/plain',
 				'text/rdf',
+				'text/xml',
 			),
 		),
 		'rdz'=>array(
@@ -31894,7 +32029,9 @@ class data {
 			'mime'=>array(
 				'application/rss+xml',
 				'application/xml',
+				'text/plain',
 				'text/rss',
+				'text/xml',
 			),
 		),
 		'rst'=>array(
@@ -32636,6 +32773,8 @@ class data {
 			'mime'=>array(
 				'application/x-dia-shape',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'shar'=>array(
@@ -32751,6 +32890,8 @@ class data {
 			'mime'=>array(
 				'application/sieve',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sjp'=>array(
@@ -32949,6 +33090,7 @@ class data {
 				'application/x-sami',
 				'application/xml',
 				'text/plain',
+				'text/xml',
 			),
 		),
 		'smil'=>array(
@@ -32957,6 +33099,8 @@ class data {
 				'application/smil',
 				'application/smil+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sml'=>array(
@@ -32965,6 +33109,8 @@ class data {
 				'application/smil',
 				'application/smil+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'smo'=>array(
@@ -33455,6 +33601,7 @@ class data {
 			'ext'=>'sv',
 			'mime'=>array(
 				'text/x-svsrc',
+				'text/plain',
 				'text/x-verilog',
 			),
 		),
@@ -33493,6 +33640,8 @@ class data {
 			'mime'=>array(
 				'image/svg+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'svgz'=>array(
@@ -33502,12 +33651,15 @@ class data {
 				'application/gzip',
 				'application/xml',
 				'image/svg+xml-compressed',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'svh'=>array(
 			'ext'=>'svh',
 			'mime'=>array(
 				'text/x-svhdr',
+				'text/plain',
 				'text/x-verilog',
 			),
 		),
@@ -34045,7 +34197,9 @@ class data {
 				'text/vnd.trolltech.linguist',
 				'application/x-linguist',
 				'application/xml',
+				'text/plain',
 				'text/vnd.qt.linguist',
+				'text/xml',
 				'video/mp2t',
 			),
 		),
@@ -34125,6 +34279,8 @@ class data {
 			'mime'=>array(
 				'application/x-font-ttx',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'tuc'=>array(
@@ -34243,6 +34399,8 @@ class data {
 			'mime'=>array(
 				'application/x-ufraw',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ui'=>array(
@@ -34251,6 +34409,8 @@ class data {
 				'application/x-designer',
 				'application/x-gtk-builder',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'uil'=>array(
@@ -34562,6 +34722,7 @@ class data {
 			'ext'=>'vala',
 			'mime'=>array(
 				'text/x-vala',
+				'text/plain',
 				'text/x-csrc',
 			),
 		),
@@ -34569,6 +34730,7 @@ class data {
 			'ext'=>'vapi',
 			'mime'=>array(
 				'text/x-vala',
+				'text/plain',
 				'text/x-csrc',
 			),
 		),
@@ -34576,6 +34738,7 @@ class data {
 			'ext'=>'vb',
 			'mime'=>array(
 				'application/x-virtual-boy-rom',
+				'text/plain',
 				'text/x-vbasic',
 				'text/x-vbdotnet',
 			),
@@ -34590,6 +34753,7 @@ class data {
 			'ext'=>'vbs',
 			'mime'=>array(
 				'text/x-vbscript',
+				'text/plain',
 				'text/x-vbasic',
 			),
 		),
@@ -34923,6 +35087,9 @@ class data {
 				'application/srgs+xml',
 				'application/ssml+xml',
 				'application/voicexml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vxml'=>array(
@@ -35223,6 +35390,8 @@ class data {
 			'mime'=>array(
 				'text/vnd.wap.wml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'wmlc'=>array(
@@ -35487,7 +35656,10 @@ class data {
 			'ext'=>'x3d',
 			'mime'=>array(
 				'application/vnd.hzn-3d-crossword',
+				'application/xml',
 				'model/x3d+xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'x3db'=>array(
@@ -35596,6 +35768,8 @@ class data {
 			'mime'=>array(
 				'application/x-xbel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xbl'=>array(
@@ -35610,6 +35784,7 @@ class data {
 			'ext'=>'xbm',
 			'mime'=>array(
 				'image/x-xbitmap',
+				'text/plain',
 				'text/x-c',
 			),
 		),
@@ -35663,6 +35838,9 @@ class data {
 				'application/xcap-diff+xml',
 				'application/mrb-consumer+xml',
 				'application/mrb-publish+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xdgapp'=>array(
@@ -35719,6 +35897,9 @@ class data {
 			'mime'=>array(
 				'application/patch-ops-error+xml',
 				'application/xcap-error+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xfd'=>array(
@@ -35756,6 +35937,8 @@ class data {
 			'mime'=>array(
 				'application/xhtml+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xhtm'=>array(
@@ -35770,6 +35953,8 @@ class data {
 				'application/vnd.pwg-xhtml-print+xml',
 				'application/xhtml+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xhtml2'=>array(
@@ -35783,6 +35968,9 @@ class data {
 			'mime'=>array(
 				'application/xv+xml',
 				'application/xhtml-voice+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xi'=>array(
@@ -35805,6 +35993,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35815,6 +36005,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xlc'=>array(
@@ -35825,6 +36017,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35836,6 +36030,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35852,6 +36048,8 @@ class data {
 				'application/x-xliff',
 				'application/x-xliff+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xliff'=>array(
@@ -35860,6 +36058,8 @@ class data {
 				'application/xliff+xml',
 				'application/x-xliff',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xlim'=>array(
@@ -35876,6 +36076,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35887,6 +36089,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35905,6 +36109,8 @@ class data {
 				'application/x-ole-storage',
 				'application/x-tika-msworks-spreadsheet',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xls'=>array(
@@ -35915,6 +36121,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35925,6 +36133,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xlsm'=>array(
@@ -35952,6 +36162,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -35962,6 +36174,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/vnd.openxmlformats-officedocument.spreadsheetml.template',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xltx'=>array(
@@ -35981,6 +36195,8 @@ class data {
 				'application/vnd.ms-office',
 				'application/x-msexcel',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'zz-application/zz-winassoc-xls',
 			),
 		),
@@ -36010,6 +36226,8 @@ class data {
 			'mime'=>array(
 				'text/x-xmi',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xmind'=>array(
@@ -36155,6 +36373,8 @@ class data {
 			'mime'=>array(
 				'application/rdf+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xns'=>array(
@@ -36327,6 +36547,8 @@ class data {
 				'text/x-xslfo',
 				'application/xml',
 				'application/xslfo+xml',
+				'text/plain',
+				'text/xml',
 				'text/xsl',
 			),
 		),
@@ -36335,6 +36557,8 @@ class data {
 			'mime'=>array(
 				'application/xslt+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 				'text/xsl',
 			),
 		),
@@ -36356,6 +36580,8 @@ class data {
 				'application/xspf+xml',
 				'application/x-xspf+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xtest'=>array(
@@ -36370,6 +36596,8 @@ class data {
 				'application/vnd.mozilla.xul+xml',
 				'application/vnd.mozilla.aul+xml',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xvm'=>array(
@@ -36377,6 +36605,9 @@ class data {
 			'mime'=>array(
 				'application/xv+xml',
 				'application/xhtml-voice+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xvml'=>array(
@@ -36384,6 +36615,9 @@ class data {
 			'mime'=>array(
 				'application/xv+xml',
 				'application/xhtml-voice+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xwd'=>array(
@@ -36524,6 +36758,8 @@ class data {
 			'mime'=>array(
 				'application/x-abiword',
 				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'zaz'=>array(
