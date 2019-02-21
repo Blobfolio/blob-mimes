@@ -253,20 +253,37 @@ class mime {
 				$real_mime = false;
 			}
 
-			// SVGs can be misidentified by fileinfo if they are missing the
-			// XML tag and/or DOCTYPE declarations. Most other applications
-			// don't have that problem, so let's override fileinfo if the
-			// file starts with an opening SVG tag.
-			if (
-				('image/svg+xml' === $checked['type']) &&
-				($real_mime !== $checked['type'])
-			) {
-				$tmp = @file_get_contents($file);
-				if (
-					is_string($tmp) &&
-					preg_match('/\s*<svg/iu', $tmp)
-				) {
-					$real_mime = 'image/svg+xml';
+			// We might need to run some type-specific checks to help
+			// fileinfo.
+			if ((false !== $real_mime) && ($real_mime !== $checked['type'])) {
+				switch ($checked['type']) {
+					// SVGs are often misidentified if they are missing
+					// the leading XML tag and/or DOCTYPE declarations.
+					case 'image/svg+xml':
+						$tmp = @file_get_contents($file);
+						if (
+							is_string($tmp) &&
+							preg_match('/\s*<svg/iu', $tmp)
+						) {
+							$real_mime = 'image/svg+xml';
+						}
+
+						break;
+
+					// JSON doesn't have much magic for fileinfo to work
+					// with.
+					case 'application/json':
+						if (function_exists('json_decode')) {
+							$tmp = @file_get_contents($file);
+							if (is_string($tmp) && $tmp) {
+								$tmp2 = @json_decode($tmp, true);
+								if (null !== $tmp2) {
+									$real_mime = 'application/json';
+								}
+							}
+						}
+
+						break;
 				}
 			}
 
@@ -288,6 +305,12 @@ class mime {
 		}// End content-based type checking.
 
 		// Filter.
-		return apply_filters('blobmimes_check_real_filetype', $checked, $file, $filename, $mimes);
+		return apply_filters(
+			'blobmimes_check_real_filetype',
+			$checked,
+			$file,
+			$filename,
+			$mimes
+		);
 	}
 }
