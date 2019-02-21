@@ -679,7 +679,7 @@ class mimes extends \blobfolio\bob\base\mike {
 				}
 
 				// Generic text?
-				if (! $text_generic && (0 === strpos($v2, 'text/'))) {
+				if (! $text_generic && (0 === \strpos($v2, 'text/'))) {
 					$text_generic = true;
 				}
 			}
