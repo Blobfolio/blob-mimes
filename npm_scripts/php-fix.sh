@@ -17,7 +17,7 @@ fi
 
 
 # This is just one command, but it is a bitch.
-./node_modules/blobfolio-phpcs/lib/vendor/bin/phpcbf --colors --standard=Blobfolio --encoding=utf8 --extensions=php --parallel=4 ./
+./node_modules/blobfolio-phpcs/lib/vendor/bin/phpcbf --colors --standard=Blobfolio --encoding=utf8 --extensions=php ./
 
 
 
