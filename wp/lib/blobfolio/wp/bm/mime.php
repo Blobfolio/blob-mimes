@@ -240,7 +240,7 @@ class mime {
 					finfo_close($finfo);
 
 					// Account for inconsistent return values.
-					if (!is_string($real_mime) || !strlen($real_mime)) {
+					if (!is_string($real_mime) || !$real_mime) {
 						$real_mime = false;
 					}
 					else {
@@ -253,42 +253,47 @@ class mime {
 				$real_mime = false;
 			}
 
-			// We might need to run some type-specific checks to help
-			// fileinfo.
+			// We might need to override fileinfo.
 			if ((false !== $real_mime) && ($real_mime !== $checked['type'])) {
-				switch ($checked['type']) {
-					// SVGs are often misidentified if they are missing
-					// the leading XML tag and/or DOCTYPE declarations.
-					case 'image/svg+xml':
-						$tmp = @file_get_contents($file);
-						if (
-							is_string($tmp) &&
-							preg_match('/\s*<svg/iu', $tmp)
-						) {
-							$real_mime = 'image/svg+xml';
+				// SVGs are often misidentified if they are missing the
+				// leading XML tag and/or DOCTYPE declarations.
+				if ('image/svg+xml' === $checked['type']) {
+					$tmp = @file_get_contents($file);
+					if (
+						is_string($tmp) &&
+						preg_match('/\s*<svg/iu', $tmp)
+					) {
+						$real_mime = 'image/svg+xml';
+					}
+				}
+
+				// JSON doesn't have much magic for fileinfo to work
+				// with, but we can assume if it parses, it's JSON.
+				elseif (
+					function_exists('json_decode') &&
+					static::check_alias($checked['ext'], 'application/json')
+				) {
+					$tmp = @file_get_contents($file);
+					if (is_string($tmp) && $tmp) {
+						$tmp2 = @json_decode($tmp, true);
+						if (null !== $tmp2) {
+							$real_mime = $checked['type'];
 						}
+					}
+				}
 
-						break;
-
-					// JSON doesn't have much magic for fileinfo to work
-					// with.
-					case 'application/json':
-						if (function_exists('json_decode')) {
-							$tmp = @file_get_contents($file);
-							if (is_string($tmp) && $tmp) {
-								$tmp2 = @json_decode($tmp, true);
-								if (null !== $tmp2) {
-									$real_mime = 'application/json';
-								}
-							}
-						}
-
-						break;
+				// It is easy to confuse XML with HTML, usually because
+				// a document is missing a leading XML tag.
+				elseif (
+					('text/html' === $real_mime) &&
+					static::check_alias($checked['ext'], 'text/xml')
+				) {
+					$real_mime = $checked['type'];
 				}
 			}
 
 			// Evaluate our real MIME.
-			if (false !== $real_mime) {
+			if ((false !== $real_mime) && ($real_mime !== $checked['type'])) {
 				if (!static::check_alias($checked['ext'], $real_mime)) {
 					// Maybe this type belongs to another allowed extension.
 					if (false !== $result = static::check_allowed_aliases($real_mime, $mimes)) {
