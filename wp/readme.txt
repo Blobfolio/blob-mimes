@@ -69,6 +69,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.9.1 =
+* [Misc] Update MIME database.
+
 = 0.9.0 =
 * [Improved] Better XML/JSON type matching.
 
@@ -82,11 +85,10 @@ This plugin does not make use of or collect any "Personal Data".
 = 0.8.7 =
 * [Misc] Update MIME database.
 
-= 0.8.6 =
-* [Misc] Update MIME database.
-* [Misc] Minor performance improvements.
-
 == Upgrade Notice ==
+
+= 0.9.1 =
+The MIME database has been updated.
 
 = 0.9.0 =
 This release further improves generic XML/JSON matching.
@@ -98,7 +100,4 @@ The MIME database has been updated, and generic XML/JSON matching has been impro
 The MIME database has been updated.
 
 = 0.8.7 =
-The MIME database has been updated.
-
-= 0.8.6 =
 The MIME database has been updated.
