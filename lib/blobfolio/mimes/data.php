@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-01-18 08:55:26.
+ * Built: 2019-04-02 10:48:41.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -192,6 +192,33 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/atsc-dwd+xml'=>array(
+			'mime'=>'application/atsc-dwd+xml',
+			'ext'=>array(
+				'dwd',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/atsc-held+xml'=>array(
+			'mime'=>'application/atsc-held+xml',
+			'ext'=>array(
+				'held',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/atsc-rsat+xml'=>array(
+			'mime'=>'application/atsc-rsat+xml',
+			'ext'=>array(
+				'rsat',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/atxml'=>array(
@@ -1478,6 +1505,15 @@ class data {
 			'mime'=>'application/mf4',
 			'ext'=>array(
 				'mf4',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/mmt-aei+xml'=>array(
+			'mime'=>'application/mmt-aei+xml',
+			'ext'=>array(
+				'maei',
 			),
 			'source'=>array(
 				'IANA',
@@ -16985,6 +17021,15 @@ class data {
 				'Blobfolio',
 			),
 		),
+		'image/jxr'=>array(
+			'mime'=>'image/jxr',
+			'ext'=>array(
+				'jxr',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'image/ktx'=>array(
 			'mime'=>'image/ktx',
 			'ext'=>array(
@@ -25211,6 +25256,12 @@ class data {
 				'application/x-dvi',
 			),
 		),
+		'dwd'=>array(
+			'ext'=>'dwd',
+			'mime'=>array(
+				'application/atsc-dwd+xml',
+			),
+		),
 		'dwf'=>array(
 			'ext'=>'dwf',
 			'mime'=>array(
@@ -26796,6 +26847,12 @@ class data {
 				'image/heif-sequence',
 			),
 		),
+		'held'=>array(
+			'ext'=>'held',
+			'mime'=>array(
+				'application/atsc-held+xml',
+			),
+		),
 		'heldxml'=>array(
 			'ext'=>'heldxml',
 			'mime'=>array(
@@ -27851,6 +27908,12 @@ class data {
 				'text/plain',
 			),
 		),
+		'jxr'=>array(
+			'ext'=>'jxr',
+			'mime'=>array(
+				'image/jxr',
+			),
+		),
 		'k25'=>array(
 			'ext'=>'k25',
 			'mime'=>array(
@@ -28593,6 +28656,12 @@ class data {
 			'ext'=>'mads',
 			'mime'=>array(
 				'application/mads+xml',
+			),
+		),
+		'maei'=>array(
+			'ext'=>'maei',
+			'mime'=>array(
+				'application/mmt-aei+xml',
 			),
 		),
 		'mag'=>array(
@@ -32003,6 +32072,12 @@ class data {
 				'application/rls-services+xml',
 				'text/plain',
 				'text/rust',
+			),
+		),
+		'rsat'=>array(
+			'ext'=>'rsat',
+			'mime'=>array(
+				'application/atsc-rsat+xml',
 			),
 		),
 		'rsd'=>array(

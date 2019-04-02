@@ -1576,6 +1576,9 @@ class aliases {
 		'dvi'=>array(
 			'application/x-dvi',
 		),
+		'dwd'=>array(
+			'application/atsc-dwd+xml',
+		),
 		'dwf'=>array(
 			'drawing/x-dwf',
 			'model/vnd.dwf',
@@ -2453,6 +2456,9 @@ class aliases {
 			'image/heic-sequence',
 			'image/heif-sequence',
 		),
+		'held'=>array(
+			'application/atsc-held+xml',
+		),
 		'heldxml'=>array(
 			'application/held+xml',
 		),
@@ -3082,6 +3088,9 @@ class aliases {
 		'jx'=>array(
 			'text/plain',
 		),
+		'jxr'=>array(
+			'image/jxr',
+		),
 		'k25'=>array(
 			'image/x-dcraw',
 			'image/x-kodak-k25',
@@ -3501,6 +3510,9 @@ class aliases {
 		),
 		'mads'=>array(
 			'application/mads+xml',
+		),
+		'maei'=>array(
+			'application/mmt-aei+xml',
 		),
 		'mag'=>array(
 			'application/vnd.ecowin.chart',
@@ -5456,6 +5468,9 @@ class aliases {
 			'application/rls-services+xml',
 			'text/plain',
 			'text/rust',
+		),
+		'rsat'=>array(
+			'application/atsc-rsat+xml',
 		),
 		'rsd'=>array(
 			'application/rsd+xml',
