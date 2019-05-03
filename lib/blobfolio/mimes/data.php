@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-04-02 10:48:41.
+ * Built: 2019-05-03 08:11:20.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -9672,6 +9672,15 @@ class data {
 				'IANA',
 			),
 		),
+		'application/vnd.ves.encrypted'=>array(
+			'mime'=>'application/vnd.ves.encrypted',
+			'ext'=>array(
+				'ves',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.vidsoft.vidconference'=>array(
 			'mime'=>'application/vnd.vidsoft.vidconference',
 			'ext'=>array(
@@ -16689,7 +16698,6 @@ class data {
 			'mime'=>'font/woff',
 			'ext'=>array(
 				'woff',
-				'woff2',
 			),
 			'source'=>array(
 				'IANA',
@@ -16707,6 +16715,7 @@ class data {
 				'IANA',
 				'Apache',
 				'Nginx',
+				'freedesktop.org',
 			),
 		),
 		'gzip/document'=>array(
@@ -34900,6 +34909,12 @@ class data {
 				'image/x-targa',
 			),
 		),
+		'ves'=>array(
+			'ext'=>'ves',
+			'mime'=>array(
+				'application/vnd.ves.encrypted',
+			),
+		),
 		'vfr'=>array(
 			'ext'=>'vfr',
 			'mime'=>array(
@@ -35524,7 +35539,6 @@ class data {
 			'ext'=>'woff2',
 			'mime'=>array(
 				'font/woff2',
-				'font/woff',
 			),
 		),
 		'wp'=>array(

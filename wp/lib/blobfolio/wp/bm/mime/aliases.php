@@ -7014,6 +7014,9 @@ class aliases {
 			'image/x-targa',
 			'image/x-tga',
 		),
+		'ves'=>array(
+			'application/vnd.ves.encrypted',
+		),
 		'vfr'=>array(
 			'application/vnd.tml',
 		),
@@ -7386,7 +7389,6 @@ class aliases {
 			'font/woff',
 		),
 		'woff2'=>array(
-			'font/woff',
 			'font/woff2',
 		),
 		'wp'=>array(
