@@ -3,7 +3,7 @@ Contributors: blobfolio
 Donate link: https://blobfolio.com/donate.html
 Tags: mime, SVG, file validation, security plugin, wordpress security, malware, exploit, security, sanitizing, sanitization, file detection, upload security, secure, file uploads, infection, block hackers, protection
 Requires at least: 4.7.1
-Tested up to: 5.1
+Tested up to: 5.2
 Requires PHP: 7.1
 Stable tag: trunk
 License: WTFPL
