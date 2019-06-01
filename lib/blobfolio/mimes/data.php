@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-05-03 08:11:20.
+ * Built: 2019-06-01 10:16:56.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -5689,6 +5689,15 @@ class data {
 				'Apache',
 			),
 		),
+		'application/vnd.iso11783-10+zip'=>array(
+			'mime'=>'application/vnd.iso11783-10+zip',
+			'ext'=>array(
+				'zip',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.jam'=>array(
 			'mime'=>'application/vnd.jam',
 			'ext'=>array(
@@ -5934,6 +5943,16 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.logipipe.circuit+zip'=>array(
+			'mime'=>'application/vnd.logipipe.circuit+zip',
+			'ext'=>array(
+				'lcs',
+				'lca',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.lotus-1-2-3'=>array(
@@ -16897,6 +16916,24 @@ class data {
 				'freedesktop.org',
 			),
 		),
+		'image/hej2k'=>array(
+			'mime'=>'image/hej2k',
+			'ext'=>array(
+				'hej2',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/hsj2'=>array(
+			'mime'=>'image/hsj2',
+			'ext'=>array(
+				'hsj2',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'image/icns'=>array(
 			'mime'=>'image/icns',
 			'ext'=>array(
@@ -17002,6 +17039,24 @@ class data {
 			'source'=>array(
 				'freedesktop.org',
 				'Blobfolio',
+			),
+		),
+		'image/jph'=>array(
+			'mime'=>'image/jph',
+			'ext'=>array(
+				'jph',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/jphc'=>array(
+			'mime'=>'image/jphc',
+			'ext'=>array(
+				'jhc',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'image/jpm'=>array(
@@ -22067,6 +22122,15 @@ class data {
 				'Tika',
 			),
 		),
+		'video/vnd.youtube.yt'=>array(
+			'mime'=>'video/vnd.youtube.yt',
+			'ext'=>array(
+				'yt',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'video/webm'=>array(
 			'mime'=>'video/webm',
 			'ext'=>array(
@@ -26856,6 +26920,12 @@ class data {
 				'image/heif-sequence',
 			),
 		),
+		'hej2'=>array(
+			'ext'=>'hej2',
+			'mime'=>array(
+				'image/hej2k',
+			),
+		),
 		'held'=>array(
 			'ext'=>'held',
 			'mime'=>array(
@@ -26962,6 +27032,12 @@ class data {
 			'mime'=>array(
 				'text/x-haskell',
 				'text/plain',
+			),
+		),
+		'hsj2'=>array(
+			'ext'=>'hsj2',
+			'mime'=>array(
+				'image/hsj2',
 			),
 		),
 		'htaccess'=>array(
@@ -27610,6 +27686,12 @@ class data {
 				'image/jpeg',
 			),
 		),
+		'jhc'=>array(
+			'ext'=>'jhc',
+			'mime'=>array(
+				'image/jphc',
+			),
+		),
 		'jif'=>array(
 			'ext'=>'jif',
 			'mime'=>array(
@@ -27751,6 +27833,12 @@ class data {
 			'ext'=>'jpgv',
 			'mime'=>array(
 				'video/jpeg',
+			),
+		),
+		'jph'=>array(
+			'ext'=>'jph',
+			'mime'=>array(
+				'image/jph',
 			),
 		),
 		'jpm'=>array(
@@ -28212,6 +28300,18 @@ class data {
 				'image/x-ilbm',
 				'application/x-iff',
 				'image/x-iff',
+			),
+		),
+		'lca'=>array(
+			'ext'=>'lca',
+			'mime'=>array(
+				'application/vnd.logipipe.circuit+zip',
+			),
+		),
+		'lcs'=>array(
+			'ext'=>'lcs',
+			'mime'=>array(
+				'application/vnd.logipipe.circuit+zip',
 			),
 		),
 		'ldif'=>array(
@@ -36786,6 +36886,7 @@ class data {
 			'mime'=>array(
 				'application/vnd.youtube.yt',
 				'application/zip',
+				'video/vnd.youtube.yt',
 			),
 		),
 		'z1'=>array(
@@ -36875,6 +36976,7 @@ class data {
 				'application/zip',
 				'application/vnd.easykaraoke.cdgdownload',
 				'application/vnd.gov.sk.e-form+zip',
+				'application/vnd.iso11783-10+zip',
 				'application/x-zip',
 				'application/x-zip-compressed',
 			),

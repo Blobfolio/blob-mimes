@@ -2456,6 +2456,9 @@ class aliases {
 			'image/heic-sequence',
 			'image/heif-sequence',
 		),
+		'hej2'=>array(
+			'image/hej2k',
+		),
 		'held'=>array(
 			'application/atsc-held+xml',
 		),
@@ -2515,6 +2518,9 @@ class aliases {
 		'hs'=>array(
 			'text/plain',
 			'text/x-haskell',
+		),
+		'hsj2'=>array(
+			'image/hsj2',
 		),
 		'htaccess'=>array(
 			'text/plain',
@@ -2883,6 +2889,9 @@ class aliases {
 		'jfif'=>array(
 			'image/jpeg',
 		),
+		'jhc'=>array(
+			'image/jphc',
+		),
 		'jif'=>array(
 			'image/jpeg',
 		),
@@ -2965,6 +2974,9 @@ class aliases {
 		),
 		'jpgv'=>array(
 			'video/jpeg',
+		),
+		'jph'=>array(
+			'image/jph',
 		),
 		'jpm'=>array(
 			'image/jpm',
@@ -3255,6 +3267,12 @@ class aliases {
 			'application/x-iff',
 			'image/x-iff',
 			'image/x-ilbm',
+		),
+		'lca'=>array(
+			'application/vnd.logipipe.circuit+zip',
+		),
+		'lcs'=>array(
+			'application/vnd.logipipe.circuit+zip',
 		),
 		'ldif'=>array(
 			'text/plain',
@@ -8181,6 +8199,7 @@ class aliases {
 		'yt'=>array(
 			'application/vnd.youtube.yt',
 			'application/zip',
+			'video/vnd.youtube.yt',
 		),
 		'z1'=>array(
 			'application/x-zmachine',
@@ -8227,6 +8246,7 @@ class aliases {
 		'zip'=>array(
 			'application/vnd.easykaraoke.cdgdownload',
 			'application/vnd.gov.sk.e-form+zip',
+			'application/vnd.iso11783-10+zip',
 			'application/x-zip',
 			'application/x-zip-compressed',
 			'application/zip',
