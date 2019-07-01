@@ -3103,6 +3103,12 @@ class aliases {
 		'jxr'=>array(
 			'image/jxr',
 		),
+		'jxra'=>array(
+			'image/jxra',
+		),
+		'jxrs'=>array(
+			'image/jxrs',
+		),
 		'k25'=>array(
 			'image/x-dcraw',
 			'image/x-kodak-k25',
@@ -4522,6 +4528,9 @@ class aliases {
 		),
 		'ost'=>array(
 			'application/vnd.ms-outlook-pst',
+		),
+		'ota'=>array(
+			'application/vnd.android.ota',
 		),
 		'otc'=>array(
 			'application/vnd.oasis.opendocument.chart-template',
@@ -6133,6 +6142,9 @@ class aliases {
 			'text/plain',
 			'text/x-systemd-unit',
 		),
+		'sos'=>array(
+			'text/vnd.sosi',
+		),
 		'sp7'=>array(
 			'application/x-sas-putility',
 		),
@@ -6263,6 +6275,9 @@ class aliases {
 		),
 		'ssml'=>array(
 			'application/ssml+xml',
+		),
+		'ssv'=>array(
+			'application/vnd.shade-save-file',
 		),
 		'ssw'=>array(
 			'video/vnd.sealed.swf',

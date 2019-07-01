@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-06-01 10:16:56.
+ * Built: 2019-07-01 10:44:01.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3281,6 +3281,15 @@ class data {
 			'mime'=>'application/vnd.amundsen.maze+xml',
 			'ext'=>array(
 				'xml',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/vnd.android.ota'=>array(
+			'mime'=>'application/vnd.android.ota',
+			'ext'=>array(
+				'ota',
 			),
 			'source'=>array(
 				'IANA',
@@ -8925,6 +8934,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.shade-save-file'=>array(
+			'mime'=>'application/vnd.shade-save-file',
+			'ext'=>array(
+				'ssv',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.shana.informed.formdata'=>array(
@@ -17094,6 +17112,24 @@ class data {
 				'IANA',
 			),
 		),
+		'image/jxra'=>array(
+			'mime'=>'image/jxra',
+			'ext'=>array(
+				'jxra',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/jxrs'=>array(
+			'mime'=>'image/jxrs',
+			'ext'=>array(
+				'jxrs',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'image/ktx'=>array(
 			'mime'=>'image/ktx',
 			'ext'=>array(
@@ -20034,6 +20070,15 @@ class data {
 			'mime'=>'text/vnd.si.uricatalogue',
 			'ext'=>array(
 				'uric',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'text/vnd.sosi'=>array(
+			'mime'=>'text/vnd.sosi',
+			'ext'=>array(
+				'sos',
 			),
 			'source'=>array(
 				'IANA',
@@ -28011,6 +28056,18 @@ class data {
 				'image/jxr',
 			),
 		),
+		'jxra'=>array(
+			'ext'=>'jxra',
+			'mime'=>array(
+				'image/jxra',
+			),
+		),
+		'jxrs'=>array(
+			'ext'=>'jxrs',
+			'mime'=>array(
+				'image/jxrs',
+			),
+		),
 		'k25'=>array(
 			'ext'=>'k25',
 			'mime'=>array(
@@ -30494,6 +30551,12 @@ class data {
 			'ext'=>'ost',
 			'mime'=>array(
 				'application/vnd.ms-outlook-pst',
+			),
+		),
+		'ota'=>array(
+			'ext'=>'ota',
+			'mime'=>array(
+				'application/vnd.android.ota',
 			),
 		),
 		'otc'=>array(
@@ -33381,6 +33444,12 @@ class data {
 				'text/plain',
 			),
 		),
+		'sos'=>array(
+			'ext'=>'sos',
+			'mime'=>array(
+				'text/vnd.sosi',
+			),
+		),
 		'sp7'=>array(
 			'ext'=>'sp7',
 			'mime'=>array(
@@ -33618,6 +33687,12 @@ class data {
 			'ext'=>'ssml',
 			'mime'=>array(
 				'application/ssml+xml',
+			),
+		),
+		'ssv'=>array(
+			'ext'=>'ssv',
+			'mime'=>array(
+				'application/vnd.shade-save-file',
 			),
 		),
 		'ssw'=>array(
