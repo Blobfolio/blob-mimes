@@ -3031,6 +3031,7 @@ class aliases {
 			'application/vnd.collection+json',
 			'application/vnd.collection.doc+json',
 			'application/vnd.collection.next+json',
+			'application/vnd.cryptii.pipe+json',
 			'application/vnd.datapackage+json',
 			'application/vnd.dataresource+json',
 			'application/vnd.drive+json',
@@ -3108,6 +3109,12 @@ class aliases {
 		),
 		'jxrs'=>array(
 			'image/jxrs',
+		),
+		'jxsi'=>array(
+			'image/jxsi',
+		),
+		'jxss'=>array(
+			'image/jxss',
 		),
 		'k25'=>array(
 			'image/x-dcraw',
@@ -3344,6 +3351,9 @@ class aliases {
 		'log'=>array(
 			'text/plain',
 			'text/x-log',
+		),
+		'loom'=>array(
+			'application/vnd.loom',
 		),
 		'lostsyncxml'=>array(
 			'application/lostsync+xml',
@@ -5873,6 +5883,9 @@ class aliases {
 		),
 		'sgb'=>array(
 			'application/x-gameboy-rom',
+		),
+		'sgd'=>array(
+			'application/x-genesis-rom',
 		),
 		'sgf'=>array(
 			'application/x-go-sgf',

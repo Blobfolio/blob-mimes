@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-07-01 10:44:01.
+ * Built: 2019-08-01 10:17:10.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3977,6 +3977,15 @@ class data {
 				'Tika',
 			),
 		),
+		'application/vnd.cryptii.pipe+json'=>array(
+			'mime'=>'application/vnd.cryptii.pipe+json',
+			'ext'=>array(
+				'json',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.ctc-posml'=>array(
 			'mime'=>'application/vnd.ctc-posml',
 			'ext'=>array(
@@ -5959,6 +5968,15 @@ class data {
 			'ext'=>array(
 				'lcs',
 				'lca',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/vnd.loom'=>array(
+			'mime'=>'application/vnd.loom',
+			'ext'=>array(
+				'loom',
 			),
 			'source'=>array(
 				'IANA',
@@ -11576,6 +11594,7 @@ class data {
 			'mime'=>'application/x-genesis-rom',
 			'ext'=>array(
 				'gen',
+				'sgd',
 				'smd',
 			),
 			'source'=>array(
@@ -17125,6 +17144,24 @@ class data {
 			'mime'=>'image/jxrs',
 			'ext'=>array(
 				'jxrs',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/jxsi'=>array(
+			'mime'=>'image/jxsi',
+			'ext'=>array(
+				'jxsi',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/jxss'=>array(
+			'mime'=>'image/jxss',
+			'ext'=>array(
+				'jxss',
 			),
 			'source'=>array(
 				'IANA',
@@ -27959,6 +27996,7 @@ class data {
 				'application/vnd.collection+json',
 				'application/vnd.collection.doc+json',
 				'application/vnd.collection.next+json',
+				'application/vnd.cryptii.pipe+json',
 				'application/vnd.datapackage+json',
 				'application/vnd.dataresource+json',
 				'application/vnd.drive+json',
@@ -28066,6 +28104,18 @@ class data {
 			'ext'=>'jxrs',
 			'mime'=>array(
 				'image/jxrs',
+			),
+		),
+		'jxsi'=>array(
+			'ext'=>'jxsi',
+			'mime'=>array(
+				'image/jxsi',
+			),
+		),
+		'jxss'=>array(
+			'ext'=>'jxss',
+			'mime'=>array(
+				'image/jxss',
 			),
 		),
 		'k25'=>array(
@@ -28488,6 +28538,12 @@ class data {
 			'mime'=>array(
 				'text/x-log',
 				'text/plain',
+			),
+		),
+		'loom'=>array(
+			'ext'=>'loom',
+			'mime'=>array(
+				'application/vnd.loom',
 			),
 		),
 		'lostsyncxml'=>array(
@@ -32961,6 +33017,12 @@ class data {
 			'ext'=>'sgb',
 			'mime'=>array(
 				'application/x-gameboy-rom',
+			),
+		),
+		'sgd'=>array(
+			'ext'=>'sgd',
+			'mime'=>array(
+				'application/x-genesis-rom',
 			),
 		),
 		'sgf'=>array(
