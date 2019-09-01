@@ -636,8 +636,6 @@ class aliases {
 		'bin'=>array(
 			'application/gltf-buffer',
 			'application/octet-stream',
-			'application/x-saturn-rom',
-			'application/x-sega-cd-rom',
 		),
 		'bkm'=>array(
 			'application/vnd.nervana',
@@ -677,6 +675,10 @@ class aliases {
 		'boz'=>array(
 			'application/x-bzip',
 			'application/x-bzip2',
+		),
+		'bpf'=>array(
+			'application/vnd.bpf',
+			'application/vnd.bpf3',
 		),
 		'bpg'=>array(
 			'image/x-bpg',
@@ -2334,6 +2336,7 @@ class aliases {
 		),
 		'groovy'=>array(
 			'text/plain',
+			'text/x-csrc',
 			'text/x-groovy',
 		),
 		'grv'=>array(
@@ -2350,6 +2353,11 @@ class aliases {
 			'application/postscript',
 			'application/x-font-ghostscript',
 			'application/x-font-type1',
+		),
+		'gsh'=>array(
+			'text/plain',
+			'text/x-csrc',
+			'text/x-groovy',
 		),
 		'gsm'=>array(
 			'audio/x-gsm',
@@ -2375,11 +2383,21 @@ class aliases {
 			'text/plain',
 			'text/x-google-video-pointer',
 		),
+		'gvy'=>array(
+			'text/plain',
+			'text/x-csrc',
+			'text/x-groovy',
+		),
 		'gxf'=>array(
 			'application/gxf',
 		),
 		'gxt'=>array(
 			'application/vnd.geonext',
+		),
+		'gy'=>array(
+			'text/plain',
+			'text/x-csrc',
+			'text/x-groovy',
 		),
 		'gz'=>array(
 			'application/gzip',
@@ -2406,6 +2424,8 @@ class aliases {
 			'application/x-hdf',
 		),
 		'h5'=>array(
+			'application/mipc',
+			'application/sipc',
 			'application/x-hdf',
 		),
 		'hal'=>array(
@@ -3258,6 +3278,9 @@ class aliases {
 			'application/x-shared-library-la',
 			'text/plain',
 		),
+		'las'=>array(
+			'application/vnd.las',
+		),
 		'lasjson'=>array(
 			'application/vnd.las.las+json',
 		),
@@ -3269,6 +3292,9 @@ class aliases {
 			'application/x-tex',
 			'text/plain',
 			'text/x-tex',
+		),
+		'laz'=>array(
+			'application/vnd.laszip',
 		),
 		'lbd'=>array(
 			'application/vnd.llamagraphics.life-balance.desktop',
@@ -6290,7 +6316,11 @@ class aliases {
 			'application/ssml+xml',
 		),
 		'ssv'=>array(
+			'application/vnd.crypto-shade-file',
 			'application/vnd.shade-save-file',
+		),
+		'ssvc'=>array(
+			'application/vnd.crypto-shade-file',
 		),
 		'ssw'=>array(
 			'video/vnd.sealed.swf',
