@@ -4,7 +4,7 @@ Donate link: https://blobfolio.com/donate.html
 Tags: mime, SVG, file validation, security plugin, wordpress security, malware, exploit, security, sanitizing, sanitization, file detection, upload security, secure, file uploads, infection, block hackers, protection
 Requires at least: 4.7.1
 Tested up to: 5.2
-Requires PHP: 7.1
+Requires PHP: 7.2
 Stable tag: trunk
 License: WTFPL
 License URI: http://www.wtfpl.net/
@@ -29,7 +29,7 @@ The main features include:
 == Requirements ==
 
  * WordPress 4.7.1 or later.
- * PHP 7.1 or later.
+ * PHP 7.2 or later.
  * DOMDocument extension is optional, but will improve SVG sanitizing.
 
 Please note: it is **not safe** to run WordPress atop a version of PHP that has reached its [End of Life](http://php.net/supported-versions.php). Future releases of this plugin might, out of necessity, drop support for old, unmaintained versions of PHP. To ensure you continue to receive plugin updates, bug fixes, and new features, just make sure PHP is kept up-to-date. :)
@@ -69,6 +69,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.9.6 =
+* [Misc] Update MIME database.
+
 = 0.9.5 =
 * [Misc] Update MIME database.
 
@@ -79,13 +82,13 @@ This plugin does not make use of or collect any "Personal Data".
 * [Misc] Update MIME database.
 
 = 0.9.2 =
-* [Misc] Update MIME database.
-
-= 0.9.1 =
 * [Misc] Update MIME database.
 
 == Upgrade Notice ==
 
+= 0.9.6 =
+The MIME database has been updated.
+
 = 0.9.5 =
 The MIME database has been updated.
 
@@ -96,7 +99,4 @@ The MIME database has been updated.
 The MIME database has been updated.
 
 = 0.9.2 =
-The MIME database has been updated.
-
-= 0.9.1 =
 The MIME database has been updated.

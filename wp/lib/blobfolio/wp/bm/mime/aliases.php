@@ -1966,6 +1966,9 @@ class aliases {
 			'application/vnd.flatpak.repo',
 			'text/plain',
 		),
+		'flb'=>array(
+			'application/vnd.ficlab.flb+zip',
+		),
 		'flc'=>array(
 			'video/fli',
 			'video/x-flc',
@@ -1979,6 +1982,9 @@ class aliases {
 		),
 		'flo'=>array(
 			'application/vnd.micrografx.flo',
+		),
+		'flt'=>array(
+			'text/vnd.ficlab.flt',
 		),
 		'flv'=>array(
 			'application/x-flash-video',
@@ -3129,6 +3135,12 @@ class aliases {
 		),
 		'jxrs'=>array(
 			'image/jxrs',
+		),
+		'jxs'=>array(
+			'image/jxs',
+		),
+		'jxsc'=>array(
+			'image/jxsc',
 		),
 		'jxsi'=>array(
 			'image/jxsi',
@@ -5230,6 +5242,12 @@ class aliases {
 		'qcall'=>array(
 			'application/vnd.ericsson.quickcall',
 		),
+		'qcow'=>array(
+			'application/x-qemu-disk',
+		),
+		'qcow2'=>array(
+			'application/x-qemu-disk',
+		),
 		'qd'=>array(
 			'application/x-fd-file',
 			'application/x-raw-disk-image',
@@ -6465,6 +6483,9 @@ class aliases {
 		'swi'=>array(
 			'application/vnd.arastra.swi',
 			'application/vnd.aristanetworks.swi',
+		),
+		'swidtag'=>array(
+			'application/swid+xml',
 		),
 		'swm'=>array(
 			'application/x-ms-wim',

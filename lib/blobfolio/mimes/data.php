@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-09-01 10:16:20.
+ * Built: 2019-10-01 09:53:04.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -2818,6 +2818,15 @@ class data {
 				'freedesktop.org',
 			),
 		),
+		'application/swid+xml'=>array(
+			'mime'=>'application/swid+xml',
+			'ext'=>array(
+				'swidtag',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/tamp-apex-update'=>array(
 			'mime'=>'application/tamp-apex-update',
 			'ext'=>array(
@@ -4649,6 +4658,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.ficlab.flb+zip'=>array(
+			'mime'=>'application/vnd.ficlab.flb+zip',
+			'ext'=>array(
+				'flb',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.filmit.zfc'=>array(
@@ -13246,6 +13264,16 @@ class data {
 				'freedesktop.org',
 			),
 		),
+		'application/x-qemu-disk'=>array(
+			'mime'=>'application/x-qemu-disk',
+			'ext'=>array(
+				'qcow2',
+				'qcow',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
 		'application/x-qpress'=>array(
 			'mime'=>'application/x-qpress',
 			'ext'=>array(
@@ -17212,6 +17240,24 @@ class data {
 				'IANA',
 			),
 		),
+		'image/jxs'=>array(
+			'mime'=>'image/jxs',
+			'ext'=>array(
+				'jxs',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'image/jxsc'=>array(
+			'mime'=>'image/jxsc',
+			'ext'=>array(
+				'jxsc',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'image/jxsi'=>array(
 			'mime'=>'image/jxsi',
 			'ext'=>array(
@@ -20013,6 +20059,15 @@ class data {
 			'mime'=>'text/vnd.esmertec.theme-descriptor',
 			'ext'=>array(
 				'jtd',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'text/vnd.ficlab.flt'=>array(
+			'mime'=>'text/vnd.ficlab.flt',
+			'ext'=>array(
+				'flt',
 			),
 			'source'=>array(
 				'IANA',
@@ -26195,6 +26250,12 @@ class data {
 				'text/plain',
 			),
 		),
+		'flb'=>array(
+			'ext'=>'flb',
+			'mime'=>array(
+				'application/vnd.ficlab.flb+zip',
+			),
+		),
 		'flc'=>array(
 			'ext'=>'flc',
 			'mime'=>array(
@@ -26216,6 +26277,12 @@ class data {
 			'ext'=>'flo',
 			'mime'=>array(
 				'application/vnd.micrografx.flo',
+			),
+		),
+		'flt'=>array(
+			'ext'=>'flt',
+			'mime'=>array(
+				'text/vnd.ficlab.flt',
 			),
 		),
 		'flv'=>array(
@@ -28206,6 +28273,18 @@ class data {
 			'ext'=>'jxrs',
 			'mime'=>array(
 				'image/jxrs',
+			),
+		),
+		'jxs'=>array(
+			'ext'=>'jxs',
+			'mime'=>array(
+				'image/jxs',
+			),
+		),
+		'jxsc'=>array(
+			'ext'=>'jxsc',
+			'mime'=>array(
+				'image/jxsc',
 			),
 		),
 		'jxsi'=>array(
@@ -31874,6 +31953,18 @@ class data {
 				'application/vnd.ericsson.quickcall',
 			),
 		),
+		'qcow'=>array(
+			'ext'=>'qcow',
+			'mime'=>array(
+				'application/x-qemu-disk',
+			),
+		),
+		'qcow2'=>array(
+			'ext'=>'qcow2',
+			'mime'=>array(
+				'application/x-qemu-disk',
+			),
+		),
 		'qd'=>array(
 			'ext'=>'qd',
 			'mime'=>array(
@@ -34131,6 +34222,12 @@ class data {
 			'mime'=>array(
 				'application/vnd.arastra.swi',
 				'application/vnd.aristanetworks.swi',
+			),
+		),
+		'swidtag'=>array(
+			'ext'=>'swidtag',
+			'mime'=>array(
+				'application/swid+xml',
 			),
 		),
 		'swm'=>array(
