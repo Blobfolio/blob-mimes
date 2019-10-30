@@ -69,6 +69,9 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.9.7 =
+* [Misc] Update MIME database.
+
 = 0.9.6 =
 * [Misc] Update MIME database.
 
@@ -79,13 +82,13 @@ This plugin does not make use of or collect any "Personal Data".
 * [Misc] Update MIME database.
 
 = 0.9.3 =
-* [Misc] Update MIME database.
-
-= 0.9.2 =
 * [Misc] Update MIME database.
 
 == Upgrade Notice ==
 
+= 0.9.7 =
+The MIME database has been updated.
+
 = 0.9.6 =
 The MIME database has been updated.
 
@@ -96,7 +99,4 @@ The MIME database has been updated.
 The MIME database has been updated.
 
 = 0.9.3 =
-The MIME database has been updated.
-
-= 0.9.2 =
 The MIME database has been updated.

@@ -581,6 +581,8 @@ class aliases {
 		),
 		'azw3'=>array(
 			'application/vnd.amazon.mobi8-ebook',
+			'application/x-mobi8-ebook',
+			'application/x-mobipocket-ebook',
 		),
 		'bak'=>array(
 			'application/x-trash',
@@ -712,10 +714,12 @@ class aliases {
 			'image/prs.btif',
 		),
 		'bz'=>array(
+			'application/bzip2',
 			'application/x-bzip',
 			'application/x-bzip2',
 		),
 		'bz2'=>array(
+			'application/bzip2',
 			'application/x-bzip',
 			'application/x-bzip2',
 		),
@@ -1166,6 +1170,7 @@ class aliases {
 		),
 		'cwk'=>array(
 			'application/x-appleworks',
+			'application/x-appleworks-document',
 		),
 		'cww'=>array(
 			'application/prs.cww',
@@ -3206,6 +3211,11 @@ class aliases {
 			'application/vnd.kde.kformula',
 			'application/x-kformula',
 		),
+		'kfx'=>array(
+			'application/vnd.amazon.mobi8-ebook',
+			'application/x-mobi8-ebook',
+			'application/x-mobipocket-ebook',
+		),
 		'kia'=>array(
 			'application/vnd.kidspiration',
 		),
@@ -4625,6 +4635,9 @@ class aliases {
 			'application/x-vnd.oasis.opendocument.text-template',
 			'application/zip',
 		),
+		'ovl'=>array(
+			'application/vnd.afpc.modca-overlay',
+		),
 		'owl'=>array(
 			'application/rdf+xml',
 			'application/xml',
@@ -5158,6 +5171,9 @@ class aliases {
 		),
 		'psfs'=>array(
 			'application/vnd.psfs',
+		),
+		'psg'=>array(
+			'application/vnd.afpc.modca-pagesegment',
 		),
 		'psid'=>array(
 			'audio/prs.sid',
@@ -7297,6 +7313,9 @@ class aliases {
 		'warc'=>array(
 			'application/warc',
 		),
+		'wasm'=>array(
+			'application/wasm',
+		),
 		'wav'=>array(
 			'audio/vnd.dts',
 			'audio/vnd.wave',
@@ -7838,6 +7857,7 @@ class aliases {
 		),
 		'xliff'=>array(
 			'application/x-xliff',
+			'application/x-xliff+xml',
 			'application/xliff+xml',
 			'application/xml',
 			'text/plain',
@@ -7941,6 +7961,10 @@ class aliases {
 			'text/plain',
 			'text/xml',
 			'zz-application/zz-winassoc-xls',
+		),
+		'xlz'=>array(
+			'application/x-xliff+zip',
+			'application/zip',
 		),
 		'xm'=>array(
 			'audio/x-xm',

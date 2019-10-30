@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-10-01 09:53:04.
+ * Built: 2019-10-30 12:38:52.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -283,6 +283,16 @@ class data {
 			),
 			'source'=>array(
 				'Tika',
+			),
+		),
+		'application/bzip2'=>array(
+			'mime'=>'application/bzip2',
+			'ext'=>array(
+				'bz2',
+				'bz',
+			),
+			'source'=>array(
+				'freedesktop.org',
 			),
 		),
 		'application/calendar+xml'=>array(
@@ -3222,6 +3232,24 @@ class data {
 				'IANA',
 			),
 		),
+		'application/vnd.afpc.modca-overlay'=>array(
+			'mime'=>'application/vnd.afpc.modca-overlay',
+			'ext'=>array(
+				'ovl',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/vnd.afpc.modca-pagesegment'=>array(
+			'mime'=>'application/vnd.afpc.modca-pagesegment',
+			'ext'=>array(
+				'psg',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.ahead.space'=>array(
 			'mime'=>'application/vnd.ahead.space',
 			'ext'=>array(
@@ -3277,9 +3305,11 @@ class data {
 			'mime'=>'application/vnd.amazon.mobi8-ebook',
 			'ext'=>array(
 				'azw3',
+				'kfx',
 			),
 			'source'=>array(
 				'IANA',
+				'freedesktop.org',
 			),
 		),
 		'application/vnd.americandynamics.acc'=>array(
@@ -10259,6 +10289,15 @@ class data {
 				'Tika',
 			),
 		),
+		'application/wasm'=>array(
+			'mime'=>'application/wasm',
+			'ext'=>array(
+				'wasm',
+			),
+			'source'=>array(
+				'Tika',
+			),
+		),
 		'application/watcherinfo+xml'=>array(
 			'mime'=>'application/watcherinfo+xml',
 			'ext'=>array(
@@ -10516,6 +10555,15 @@ class data {
 			),
 			'source'=>array(
 				'Tika',
+			),
+		),
+		'application/x-appleworks-document'=>array(
+			'mime'=>'application/x-appleworks-document',
+			'ext'=>array(
+				'cwk',
+			),
+			'source'=>array(
+				'freedesktop.org',
 			),
 		),
 		'application/x-applix-spreadsheet'=>array(
@@ -12600,11 +12648,23 @@ class data {
 				'Tika',
 			),
 		),
+		'application/x-mobi8-ebook'=>array(
+			'mime'=>'application/x-mobi8-ebook',
+			'ext'=>array(
+				'azw3',
+				'kfx',
+			),
+			'source'=>array(
+				'freedesktop.org',
+			),
+		),
 		'application/x-mobipocket-ebook'=>array(
 			'mime'=>'application/x-mobipocket-ebook',
 			'ext'=>array(
 				'mobi',
 				'prc',
+				'azw3',
+				'kfx',
 			),
 			'source'=>array(
 				'Apache',
@@ -14757,9 +14817,20 @@ class data {
 			'mime'=>'application/x-xliff+xml',
 			'ext'=>array(
 				'xlf',
+				'xliff',
 			),
 			'source'=>array(
 				'Apache',
+				'Tika',
+			),
+		),
+		'application/x-xliff+zip'=>array(
+			'mime'=>'application/x-xliff+zip',
+			'ext'=>array(
+				'xlz',
+			),
+			'source'=>array(
+				'Tika',
 			),
 		),
 		'application/x-xmind'=>array(
@@ -15268,8 +15339,8 @@ class data {
 				'pptx',
 				'sldx',
 				'ppsx',
-				'potx',
 				'xlsx',
+				'potx',
 				'xltx',
 				'key',
 				'bpm',
@@ -15283,9 +15354,10 @@ class data {
 				'mmas',
 				'ipa',
 				'xmind',
+				'xlz',
 				'otf',
-				'otc',
 				'odf',
+				'otc',
 				'sxi',
 				'epub',
 				'vsdx',
@@ -23763,6 +23835,8 @@ class data {
 			'ext'=>'azw3',
 			'mime'=>array(
 				'application/vnd.amazon.mobi8-ebook',
+				'application/x-mobi8-ebook',
+				'application/x-mobipocket-ebook',
 			),
 		),
 		'bak'=>array(
@@ -24012,6 +24086,7 @@ class data {
 			'ext'=>'bz',
 			'mime'=>array(
 				'application/x-bzip',
+				'application/bzip2',
 				'application/x-bzip2',
 			),
 		),
@@ -24019,6 +24094,7 @@ class data {
 			'ext'=>'bz2',
 			'mime'=>array(
 				'application/x-bzip2',
+				'application/bzip2',
 				'application/x-bzip',
 			),
 		),
@@ -24833,6 +24909,7 @@ class data {
 		'cwk'=>array(
 			'ext'=>'cwk',
 			'mime'=>array(
+				'application/x-appleworks-document',
 				'application/x-appleworks',
 			),
 		),
@@ -28396,6 +28473,14 @@ class data {
 				'application/x-kformula',
 			),
 		),
+		'kfx'=>array(
+			'ext'=>'kfx',
+			'mime'=>array(
+				'application/vnd.amazon.mobi8-ebook',
+				'application/x-mobi8-ebook',
+				'application/x-mobipocket-ebook',
+			),
+		),
 		'kia'=>array(
 			'ext'=>'kia',
 			'mime'=>array(
@@ -30880,6 +30965,12 @@ class data {
 				'application/zip',
 			),
 		),
+		'ovl'=>array(
+			'ext'=>'ovl',
+			'mime'=>array(
+				'application/vnd.afpc.modca-overlay',
+			),
+		),
 		'owl'=>array(
 			'ext'=>'owl',
 			'mime'=>array(
@@ -31796,6 +31887,12 @@ class data {
 			'ext'=>'psfs',
 			'mime'=>array(
 				'application/vnd.psfs',
+			),
+		),
+		'psg'=>array(
+			'ext'=>'psg',
+			'mime'=>array(
+				'application/vnd.afpc.modca-pagesegment',
 			),
 		),
 		'psid'=>array(
@@ -35682,6 +35779,12 @@ class data {
 				'application/warc',
 			),
 		),
+		'wasm'=>array(
+			'ext'=>'wasm',
+			'mime'=>array(
+				'application/wasm',
+			),
+		),
 		'wav'=>array(
 			'ext'=>'wav',
 			'mime'=>array(
@@ -36601,6 +36704,7 @@ class data {
 			'mime'=>array(
 				'application/xliff+xml',
 				'application/x-xliff',
+				'application/x-xliff+xml',
 				'application/xml',
 				'text/plain',
 				'text/xml',
@@ -36742,6 +36846,13 @@ class data {
 				'text/plain',
 				'text/xml',
 				'zz-application/zz-winassoc-xls',
+			),
+		),
+		'xlz'=>array(
+			'ext'=>'xlz',
+			'mime'=>array(
+				'application/x-xliff+zip',
+				'application/zip',
 			),
 		),
 		'xm'=>array(
