@@ -186,6 +186,12 @@ class mimes extends \blobfolio\bob\base\mike {
 			'image/jpeg2000-image',
 			'image/x-jpeg2000-image',
 		),
+		'mxl'=>array(
+			'application/vnd.recordare.musicxml',
+			'application/zip',
+			'application/x-zip-compressed',
+			'application/octet-stream',
+		),
 	);
 
 	// Primary MIME overrides.
@@ -640,7 +646,6 @@ class mimes extends \blobfolio\bob\base\mike {
 			);
 
 			$data = \array_unique(\array_merge($v['mime'], $v['alias']));
-			$data = \array_diff($data, array($v['primary']));
 
 			// A lot of file types are really just XML, JSON, and/or
 			// some other generic text thing that tend to be detected as
@@ -651,7 +656,10 @@ class mimes extends \blobfolio\bob\base\mike {
 			$text_generic = false;
 
 			foreach ($data as $v2) {
-				$tmp['mime'][] = $v2;
+				// We'll add the primary MIME later.
+				if ($v2 !== $v['primary']) {
+					$tmp['mime'][] = $v2;
+				}
 
 				// Generic XML?
 				if (

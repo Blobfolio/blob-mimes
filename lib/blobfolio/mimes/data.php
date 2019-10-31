@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-10-30 12:38:52.
+ * Built: 2019-10-31 09:54:50.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -1738,6 +1738,7 @@ class data {
 				'deploy',
 				'msp',
 				'bin',
+				'explain',
 				'lzh',
 				'lha',
 				'msm',
@@ -1750,7 +1751,7 @@ class data {
 				'dms',
 				'distz',
 				'dist',
-				'explain',
+				'mxl',
 			),
 			'source'=>array(
 				'Apache',
@@ -8796,6 +8797,7 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+				'Blobfolio',
 			),
 		),
 		'application/vnd.recordare.musicxml+xml'=>array(
@@ -14920,6 +14922,7 @@ class data {
 			'ext'=>array(
 				'zip',
 				'explain',
+				'mxl',
 			),
 			'source'=>array(
 				'freedesktop.org',
@@ -15325,7 +15328,6 @@ class data {
 			'ext'=>array(
 				'zip',
 				'xlsm',
-				'odb',
 				'odi',
 				'oxt',
 				'yt',
@@ -15339,9 +15341,9 @@ class data {
 				'pptx',
 				'sldx',
 				'ppsx',
-				'xlsx',
 				'potx',
 				'xltx',
+				'xlsx',
 				'key',
 				'bpm',
 				'asice',
@@ -15355,10 +15357,11 @@ class data {
 				'ipa',
 				'xmind',
 				'xlz',
-				'otf',
+				'explain',
+				'odb',
 				'odf',
-				'otc',
-				'sxi',
+				'otf',
+				'sti',
 				'epub',
 				'vsdx',
 				'vstx',
@@ -15372,9 +15375,9 @@ class data {
 				'stc',
 				'sxd',
 				'std',
-				'sti',
-				'odc',
+				'sxi',
 				'sxm',
+				'otc',
 				'sxw',
 				'sxg',
 				'stw',
@@ -15388,7 +15391,8 @@ class data {
 				'otp',
 				'ods',
 				'ots',
-				'explain',
+				'odc',
+				'mxl',
 			),
 			'source'=>array(
 				'Blobfolio',
@@ -22939,6 +22943,9 @@ class data {
 			'ext'=>'1km',
 			'mime'=>array(
 				'application/vnd.1000minds.decision-model+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'32x'=>array(
@@ -22951,6 +22958,7 @@ class data {
 			'ext'=>'3dml',
 			'mime'=>array(
 				'text/vnd.in3d.3dml',
+				'text/plain',
 			),
 		),
 		'3ds'=>array(
@@ -23419,6 +23427,7 @@ class data {
 			'ext'=>'anpa',
 			'mime'=>array(
 				'text/vnd.iptc.anpa',
+				'text/plain',
 			),
 		),
 		'anx'=>array(
@@ -23464,6 +23473,7 @@ class data {
 			'ext'=>'appcache',
 			'mime'=>array(
 				'text/cache-manifest',
+				'text/plain',
 			),
 		),
 		'appimage'=>array(
@@ -23503,6 +23513,9 @@ class data {
 			'ext'=>'apxml',
 			'mime'=>array(
 				'application/auth-policy+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ar'=>array(
@@ -23530,6 +23543,9 @@ class data {
 			'ext'=>'artisan',
 			'mime'=>array(
 				'application/vnd.artisan+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'arw'=>array(
@@ -23562,6 +23578,7 @@ class data {
 			'ext'=>'ascii',
 			'mime'=>array(
 				'text/vnd.ascii-art',
+				'text/plain',
 			),
 		),
 		'asciidoc'=>array(
@@ -23683,18 +23700,27 @@ class data {
 			'ext'=>'atomcat',
 			'mime'=>array(
 				'application/atomcat+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'atomdeleted'=>array(
 			'ext'=>'atomdeleted',
 			'mime'=>array(
 				'application/atomdeleted+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'atomsvc'=>array(
 			'ext'=>'atomsvc',
 			'mime'=>array(
 				'application/atomsvc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'atx'=>array(
@@ -23979,6 +24005,9 @@ class data {
 			'ext'=>'bmml',
 			'mime'=>array(
 				'application/vnd.balsamiq.bmml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'bmp'=>array(
@@ -24102,6 +24131,7 @@ class data {
 			'ext'=>'c',
 			'mime'=>array(
 				'text/x-c',
+				'text/plain',
 			),
 		),
 		'c11amc'=>array(
@@ -24260,12 +24290,16 @@ class data {
 			'ext'=>'ccc',
 			'mime'=>array(
 				'text/vnd.net2phone.commcenter.command',
+				'text/plain',
 			),
 		),
 		'ccmp'=>array(
 			'ext'=>'ccmp',
 			'mime'=>array(
 				'application/ccmp+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ccmx'=>array(
@@ -24291,6 +24325,9 @@ class data {
 			'ext'=>'ccxml',
 			'mime'=>array(
 				'application/ccxml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'cdbcmsg'=>array(
@@ -24309,6 +24346,9 @@ class data {
 			'ext'=>'cdfx',
 			'mime'=>array(
 				'application/cdfx+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'cdkey'=>array(
@@ -24370,6 +24410,9 @@ class data {
 			'ext'=>'cdxml',
 			'mime'=>array(
 				'application/vnd.chemdraw+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'cdy'=>array(
@@ -24588,6 +24631,9 @@ class data {
 			'ext'=>'clue',
 			'mime'=>array(
 				'application/clueinfo+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'cmake'=>array(
@@ -24717,6 +24763,9 @@ class data {
 			'ext'=>'cpl',
 			'mime'=>array(
 				'application/cpl+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'cpp'=>array(
@@ -24812,6 +24861,9 @@ class data {
 			'ext'=>'csl',
 			'mime'=>array(
 				'application/vnd.citationstyles.style+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'csml'=>array(
@@ -24892,6 +24944,7 @@ class data {
 			'mime'=>array(
 				'text/vnd.curl',
 				'application/vnd.curl',
+				'text/plain',
 			),
 		),
 		'cw'=>array(
@@ -24938,6 +24991,9 @@ class data {
 			'ext'=>'dae',
 			'mime'=>array(
 				'model/vnd.collada+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'daf'=>array(
@@ -24975,6 +25031,9 @@ class data {
 			'ext'=>'davmount',
 			'mime'=>array(
 				'application/davmount+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dbase'=>array(
@@ -25052,6 +25111,7 @@ class data {
 			'ext'=>'dcurl',
 			'mime'=>array(
 				'text/vnd.curl.dcurl',
+				'text/plain',
 			),
 		),
 		'dcx'=>array(
@@ -25065,6 +25125,9 @@ class data {
 			'ext'=>'dd2',
 			'mime'=>array(
 				'application/vnd.oma.dd2+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ddd'=>array(
@@ -25179,6 +25242,7 @@ class data {
 			'ext'=>'dic',
 			'mime'=>array(
 				'text/x-c',
+				'text/plain',
 			),
 		),
 		'dicomdir'=>array(
@@ -25239,6 +25303,9 @@ class data {
 			'mime'=>array(
 				'application/vnd.apple.installer+xml',
 				'application/octet-stream',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'distz'=>array(
@@ -25246,6 +25313,9 @@ class data {
 			'mime'=>array(
 				'application/vnd.apple.installer+xml',
 				'application/octet-stream',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dit'=>array(
@@ -25346,6 +25416,7 @@ class data {
 			'mime'=>array(
 				'text/vnd.dmclientscript',
 				'application/octet-stream',
+				'text/plain',
 			),
 		),
 		'dna'=>array(
@@ -25397,6 +25468,9 @@ class data {
 			'ext'=>'docjson',
 			'mime'=>array(
 				'application/vnd.document+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'docm'=>array(
@@ -25518,6 +25592,7 @@ class data {
 			'ext'=>'dsc',
 			'mime'=>array(
 				'text/prs.lines.tag',
+				'text/plain',
 			),
 		),
 		'dsl'=>array(
@@ -25555,6 +25630,9 @@ class data {
 			'ext'=>'dtb',
 			'mime'=>array(
 				'application/x-dtbook+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dtd'=>array(
@@ -25622,6 +25700,9 @@ class data {
 			'ext'=>'dwd',
 			'mime'=>array(
 				'application/atsc-dwd+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'dwf'=>array(
@@ -25821,12 +25902,18 @@ class data {
 			'ext'=>'emma',
 			'mime'=>array(
 				'application/emma+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'emotionml'=>array(
 			'ext'=>'emotionml',
 			'mime'=>array(
 				'application/emotionml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'emp'=>array(
@@ -25945,6 +26032,9 @@ class data {
 			'ext'=>'es3',
 			'mime'=>array(
 				'application/vnd.eszigno3+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'esa'=>array(
@@ -25969,6 +26059,9 @@ class data {
 			'ext'=>'et3',
 			'mime'=>array(
 				'application/vnd.eszigno3+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'etheme'=>array(
@@ -26061,6 +26154,7 @@ class data {
 			'ext'=>'f',
 			'mime'=>array(
 				'text/x-fortran',
+				'text/plain',
 			),
 		),
 		'f4a'=>array(
@@ -26360,6 +26454,7 @@ class data {
 			'ext'=>'flt',
 			'mime'=>array(
 				'text/vnd.ficlab.flt',
+				'text/plain',
 			),
 		),
 		'flv'=>array(
@@ -26382,12 +26477,14 @@ class data {
 			'ext'=>'flx',
 			'mime'=>array(
 				'text/vnd.fmi.flexstor',
+				'text/plain',
 			),
 		),
 		'fly'=>array(
 			'ext'=>'fly',
 			'mime'=>array(
 				'text/vnd.fly',
+				'text/plain',
 			),
 		),
 		'fm'=>array(
@@ -26611,8 +26708,11 @@ class data {
 			'ext'=>'g3',
 			'mime'=>array(
 				'application/vnd.geocube+xml',
+				'application/xml',
 				'image/fax-g3',
 				'image/g3fax',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'g3w'=>array(
@@ -26722,6 +26822,7 @@ class data {
 			'ext'=>'generally',
 			'mime'=>array(
 				'text/vnd.fmi.flexstor',
+				'text/plain',
 			),
 		),
 		'geo'=>array(
@@ -26819,6 +26920,9 @@ class data {
 			'ext'=>'gltf',
 			'mime'=>array(
 				'model/gltf+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'gml'=>array(
@@ -27016,6 +27120,9 @@ class data {
 			'ext'=>'grxml',
 			'mime'=>array(
 				'application/srgs+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'gs'=>array(
@@ -27127,6 +27234,7 @@ class data {
 			'ext'=>'h',
 			'mime'=>array(
 				'text/x-c',
+				'text/plain',
 			),
 		),
 		'h261'=>array(
@@ -27165,6 +27273,9 @@ class data {
 			'ext'=>'hal',
 			'mime'=>array(
 				'application/vnd.hal+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'haml'=>array(
@@ -27258,12 +27369,18 @@ class data {
 			'ext'=>'held',
 			'mime'=>array(
 				'application/atsc-held+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'heldxml'=>array(
 			'ext'=>'heldxml',
 			'mime'=>array(
 				'application/held+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'hfa'=>array(
@@ -27283,6 +27400,7 @@ class data {
 			'ext'=>'hgl',
 			'mime'=>array(
 				'text/vnd.hgl',
+				'text/plain',
 			),
 		),
 		'hh'=>array(
@@ -27621,12 +27739,18 @@ class data {
 			'ext'=>'ign',
 			'mime'=>array(
 				'application/vnd.coreos.ignition+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'ignition'=>array(
 			'ext'=>'ignition',
 			'mime'=>array(
 				'application/vnd.coreos.ignition+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'igs'=>array(
@@ -27674,6 +27798,7 @@ class data {
 				'text/x-imelody',
 				'audio/imelody',
 				'audio/x-imelody',
+				'text/plain',
 			),
 		),
 		'imf'=>array(
@@ -27726,6 +27851,7 @@ class data {
 				'text/x-imelody',
 				'audio/imelody',
 				'audio/x-imelody',
+				'text/plain',
 			),
 		),
 		'in'=>array(
@@ -27751,12 +27877,18 @@ class data {
 			'ext'=>'ink',
 			'mime'=>array(
 				'application/inkml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'inkml'=>array(
 			'ext'=>'inkml',
 			'mime'=>array(
 				'application/inkml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ins'=>array(
@@ -27833,6 +27965,9 @@ class data {
 			'ext'=>'irp',
 			'mime'=>array(
 				'application/vnd.irepository.package+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ism'=>array(
@@ -27919,6 +28054,9 @@ class data {
 			'ext'=>'its',
 			'mime'=>array(
 				'application/its+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ivp'=>array(
@@ -27949,6 +28087,7 @@ class data {
 			'ext'=>'jad',
 			'mime'=>array(
 				'text/vnd.sun.j2me.app-descriptor',
+				'text/plain',
 			),
 		),
 		'jam'=>array(
@@ -28306,6 +28445,9 @@ class data {
 			'ext'=>'jsonml',
 			'mime'=>array(
 				'application/jsonml+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'jsp'=>array(
@@ -28320,6 +28462,7 @@ class data {
 			'ext'=>'jtd',
 			'mime'=>array(
 				'text/vnd.esmertec.theme-descriptor',
+				'text/plain',
 			),
 		),
 		'junit'=>array(
@@ -28644,12 +28787,18 @@ class data {
 			'ext'=>'lasjson',
 			'mime'=>array(
 				'application/vnd.las.las+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'lasxml'=>array(
 			'ext'=>'lasxml',
 			'mime'=>array(
 				'application/vnd.las.las+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'latex'=>array(
@@ -28677,6 +28826,9 @@ class data {
 			'ext'=>'lbe',
 			'mime'=>array(
 				'application/vnd.llamagraphics.life-balance.exchange+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'lbm'=>array(
@@ -28729,6 +28881,9 @@ class data {
 			'ext'=>'lgr',
 			'mime'=>array(
 				'application/lgr+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'lha'=>array(
@@ -28757,6 +28912,9 @@ class data {
 			'ext'=>'link66',
 			'mime'=>array(
 				'application/vnd.route66.link66+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'lisp'=>array(
@@ -28828,12 +28986,18 @@ class data {
 			'ext'=>'lostsyncxml',
 			'mime'=>array(
 				'application/lostsync+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'lostxml'=>array(
 			'ext'=>'lostxml',
 			'mime'=>array(
 				'application/lost+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'lrf'=>array(
@@ -29156,12 +29320,18 @@ class data {
 			'ext'=>'mads',
 			'mime'=>array(
 				'application/mads+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'maei'=>array(
 			'ext'=>'maei',
 			'mime'=>array(
 				'application/mmt-aei+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mag'=>array(
@@ -29234,6 +29404,9 @@ class data {
 			'ext'=>'mathml',
 			'mime'=>array(
 				'application/mathml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mb'=>array(
@@ -29279,6 +29452,7 @@ class data {
 			'ext'=>'mcurl',
 			'mime'=>array(
 				'text/vnd.curl.mcurl',
+				'text/plain',
 			),
 		),
 		'md'=>array(
@@ -29391,6 +29565,9 @@ class data {
 			'ext'=>'mets',
 			'mime'=>array(
 				'application/mets+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mf'=>array(
@@ -29502,6 +29679,7 @@ class data {
 			'ext'=>'miz',
 			'mime'=>array(
 				'text/mizar',
+				'text/plain',
 			),
 		),
 		'mj2'=>array(
@@ -29749,6 +29927,9 @@ class data {
 			'ext'=>'mods',
 			'mime'=>array(
 				'application/mods+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mof'=>array(
@@ -29878,6 +30059,9 @@ class data {
 			'ext'=>'mpd',
 			'mime'=>array(
 				'application/dash+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mpdd'=>array(
@@ -29910,8 +30094,10 @@ class data {
 			'ext'=>'mpf',
 			'mime'=>array(
 				'application/media-policy-dataset+xml',
+				'application/xml',
 				'text/plain',
 				'text/vnd.ms-mediapackage',
+				'text/xml',
 			),
 		),
 		'mpg'=>array(
@@ -29945,6 +30131,9 @@ class data {
 			'ext'=>'mpkg',
 			'mime'=>array(
 				'application/vnd.apple.installer+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mpl'=>array(
@@ -30019,18 +30208,23 @@ class data {
 			'ext'=>'mrcx',
 			'mime'=>array(
 				'application/marcxml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mrl'=>array(
 			'ext'=>'mrl',
 			'mime'=>array(
 				'text/x-mrml',
+				'text/plain',
 			),
 		),
 		'mrml'=>array(
 			'ext'=>'mrml',
 			'mime'=>array(
 				'text/x-mrml',
+				'text/plain',
 			),
 		),
 		'mrw'=>array(
@@ -30063,6 +30257,9 @@ class data {
 			'ext'=>'mscml',
 			'mime'=>array(
 				'application/mediaservercontrol+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'msd'=>array(
@@ -30197,12 +30394,18 @@ class data {
 			'ext'=>'musd',
 			'mime'=>array(
 				'application/mmt-usd+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'musicxml'=>array(
 			'ext'=>'musicxml',
 			'mime'=>array(
 				'application/vnd.recordare.musicxml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'mvb'=>array(
@@ -30239,6 +30442,9 @@ class data {
 			'ext'=>'mxl',
 			'mime'=>array(
 				'application/vnd.recordare.musicxml',
+				'application/octet-stream',
+				'application/x-zip-compressed',
+				'application/zip',
 			),
 		),
 		'mxmf'=>array(
@@ -30325,6 +30531,9 @@ class data {
 			'ext'=>'ncx',
 			'mime'=>array(
 				'application/x-dtbncx+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ndc'=>array(
@@ -30462,6 +30671,7 @@ class data {
 				'application/x-troff-man',
 				'application/x-troff-me',
 				'application/x-troff-ms',
+				'text/plain',
 			),
 		),
 		'nrw'=>array(
@@ -30548,6 +30758,9 @@ class data {
 			'ext'=>'obgx',
 			'mime'=>array(
 				'application/vnd.openblox.game+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'obj'=>array(
@@ -30745,6 +30958,9 @@ class data {
 			'ext'=>'omdoc',
 			'mime'=>array(
 				'application/omdoc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'one'=>array(
@@ -30795,6 +31011,9 @@ class data {
 			'ext'=>'opf',
 			'mime'=>array(
 				'application/oebps-package+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'opml'=>array(
@@ -30873,12 +31092,18 @@ class data {
 			'ext'=>'osfpvg',
 			'mime'=>array(
 				'application/vnd.yamaha.openscoreformat.osfpvg+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'osm'=>array(
 			'ext'=>'osm',
 			'mime'=>array(
 				'application/vnd.openstreetmap.data+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ost'=>array(
@@ -31016,6 +31241,7 @@ class data {
 			'ext'=>'p',
 			'mime'=>array(
 				'text/x-pascal',
+				'text/plain',
 			),
 		),
 		'p10'=>array(
@@ -31520,8 +31746,11 @@ class data {
 			'mime'=>array(
 				'application/pls+xml',
 				'application/pls',
+				'application/xml',
 				'audio/scpls',
 				'audio/x-scpls',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'pm'=>array(
@@ -31743,6 +31972,9 @@ class data {
 			'ext'=>'ppttc',
 			'mime'=>array(
 				'application/vnd.think-cell.ppttc+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'pptx'=>array(
@@ -31823,6 +32055,9 @@ class data {
 			'ext'=>'provx',
 			'mime'=>array(
 				'application/provenance+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'prt'=>array(
@@ -31905,6 +32140,9 @@ class data {
 			'ext'=>'pskcxml',
 			'mime'=>array(
 				'application/pskc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'pst'=>array(
@@ -32024,6 +32262,7 @@ class data {
 			'mime'=>array(
 				'text/x-python',
 				'application/x-executable',
+				'text/plain',
 			),
 		),
 		'qam'=>array(
@@ -32087,18 +32326,21 @@ class data {
 			'ext'=>'qml',
 			'mime'=>array(
 				'text/x-qml',
+				'text/plain',
 			),
 		),
 		'qmlproject'=>array(
 			'ext'=>'qmlproject',
 			'mime'=>array(
 				'text/x-qml',
+				'text/plain',
 			),
 		),
 		'qmltypes'=>array(
 			'ext'=>'qmltypes',
 			'mime'=>array(
 				'text/x-qml',
+				'text/plain',
 			),
 		),
 		'qp'=>array(
@@ -32237,6 +32479,9 @@ class data {
 			'ext'=>'rapd',
 			'mime'=>array(
 				'application/route-apd+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rar'=>array(
@@ -32348,6 +32593,9 @@ class data {
 			'ext'=>'relo',
 			'mime'=>array(
 				'application/p2p-overlay+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rep'=>array(
@@ -32373,6 +32621,9 @@ class data {
 			'ext'=>'res',
 			'mime'=>array(
 				'application/x-dtbresource+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rest'=>array(
@@ -32412,6 +32663,9 @@ class data {
 			'ext'=>'rif',
 			'mime'=>array(
 				'application/reginfo+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rip'=>array(
@@ -32430,6 +32684,9 @@ class data {
 			'ext'=>'rl',
 			'mime'=>array(
 				'application/resource-lists+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rlc'=>array(
@@ -32442,6 +32699,9 @@ class data {
 			'ext'=>'rld',
 			'mime'=>array(
 				'application/resource-lists-diff+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rle'=>array(
@@ -32600,26 +32860,37 @@ class data {
 			'ext'=>'rs',
 			'mime'=>array(
 				'application/rls-services+xml',
+				'application/xml',
 				'text/plain',
 				'text/rust',
+				'text/xml',
 			),
 		),
 		'rsat'=>array(
 			'ext'=>'rsat',
 			'mime'=>array(
 				'application/atsc-rsat+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rsd'=>array(
 			'ext'=>'rsd',
 			'mime'=>array(
 				'application/rsd+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rsheet'=>array(
 			'ext'=>'rsheet',
 			'mime'=>array(
 				'application/urc-ressheet+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rsm'=>array(
@@ -32651,6 +32922,7 @@ class data {
 			'ext'=>'rt',
 			'mime'=>array(
 				'text/vnd.rn-realtext',
+				'text/plain',
 			),
 		),
 		'rtf'=>array(
@@ -32678,6 +32950,9 @@ class data {
 			'ext'=>'rusd',
 			'mime'=>array(
 				'application/route-usd+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'rv'=>array(
@@ -32713,6 +32988,7 @@ class data {
 			'ext'=>'s',
 			'mime'=>array(
 				'text/x-asm',
+				'text/plain',
 			),
 		),
 		's11'=>array(
@@ -32953,6 +33229,9 @@ class data {
 			'ext'=>'sbml',
 			'mime'=>array(
 				'application/sbml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sc'=>array(
@@ -33050,6 +33329,7 @@ class data {
 			'ext'=>'scurl',
 			'mime'=>array(
 				'text/vnd.curl.scurl',
+				'text/plain',
 			),
 		),
 		'sd2'=>array(
@@ -33092,12 +33372,18 @@ class data {
 			'ext'=>'sdkd',
 			'mime'=>array(
 				'application/vnd.solent.sdkm+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sdkm'=>array(
 			'ext'=>'sdkm',
 			'mime'=>array(
 				'application/vnd.solent.sdkm+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sdo'=>array(
@@ -33195,6 +33481,9 @@ class data {
 			'ext'=>'senml',
 			'mime'=>array(
 				'application/senml+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'senmlc'=>array(
@@ -33213,12 +33502,18 @@ class data {
 			'ext'=>'senmlx',
 			'mime'=>array(
 				'application/senml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sensml'=>array(
 			'ext'=>'sensml',
 			'mime'=>array(
 				'application/sensml+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'sensmlc'=>array(
@@ -33237,6 +33532,9 @@ class data {
 			'ext'=>'sensmlx',
 			'mime'=>array(
 				'application/sensml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ser'=>array(
@@ -33307,6 +33605,7 @@ class data {
 			'ext'=>'sfv',
 			'mime'=>array(
 				'text/x-sfv',
+				'text/plain',
 			),
 		),
 		'sg'=>array(
@@ -33398,6 +33697,9 @@ class data {
 			'ext'=>'shf',
 			'mime'=>array(
 				'application/shf+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'shn'=>array(
@@ -33417,6 +33719,7 @@ class data {
 			'ext'=>'shtml',
 			'mime'=>array(
 				'text/html',
+				'text/plain',
 			),
 		),
 		'shw'=>array(
@@ -33634,6 +33937,9 @@ class data {
 			'ext'=>'sls',
 			'mime'=>array(
 				'application/route-s-tsid+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'slt'=>array(
@@ -33812,6 +34118,7 @@ class data {
 			'ext'=>'sos',
 			'mime'=>array(
 				'text/vnd.sosi',
+				'text/plain',
 			),
 		),
 		'sp7'=>array(
@@ -33884,12 +34191,14 @@ class data {
 			'ext'=>'spo',
 			'mime'=>array(
 				'text/vnd.in3d.spot',
+				'text/plain',
 			),
 		),
 		'spot'=>array(
 			'ext'=>'spot',
 			'mime'=>array(
 				'text/vnd.in3d.spot',
+				'text/plain',
 			),
 		),
 		'spp'=>array(
@@ -34001,12 +34310,18 @@ class data {
 			'ext'=>'sru',
 			'mime'=>array(
 				'application/sru+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'srx'=>array(
 			'ext'=>'srx',
 			'mime'=>array(
 				'application/sparql-results+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ss'=>array(
@@ -34033,6 +34348,9 @@ class data {
 			'ext'=>'ssdl',
 			'mime'=>array(
 				'application/ssdl+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'sse'=>array(
@@ -34051,6 +34369,9 @@ class data {
 			'ext'=>'ssml',
 			'mime'=>array(
 				'application/ssml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ssv'=>array(
@@ -34129,6 +34450,9 @@ class data {
 			'ext'=>'stix',
 			'mime'=>array(
 				'application/stix+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'stk'=>array(
@@ -34325,6 +34649,9 @@ class data {
 			'ext'=>'swidtag',
 			'mime'=>array(
 				'application/swid+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'swm'=>array(
@@ -34406,6 +34733,7 @@ class data {
 			'ext'=>'t',
 			'mime'=>array(
 				'text/troff',
+				'text/plain',
 			),
 		),
 		't2t'=>array(
@@ -34566,12 +34894,18 @@ class data {
 			'ext'=>'tei',
 			'mime'=>array(
 				'application/tei+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'teicorpus'=>array(
 			'ext'=>'teicorpus',
 			'mime'=>array(
 				'application/tei+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ter'=>array(
@@ -34614,6 +34948,9 @@ class data {
 			'ext'=>'tfi',
 			'mime'=>array(
 				'application/thraud+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'tfm'=>array(
@@ -34908,6 +35245,9 @@ class data {
 			'ext'=>'ttml',
 			'mime'=>array(
 				'application/ttml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'ttx'=>array(
@@ -35102,24 +35442,32 @@ class data {
 			'ext'=>'uo',
 			'mime'=>array(
 				'application/vnd.uoml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'uoml'=>array(
 			'ext'=>'uoml',
 			'mime'=>array(
 				'application/vnd.uoml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'uri'=>array(
 			'ext'=>'uri',
 			'mime'=>array(
 				'text/uri-list',
+				'text/plain',
 			),
 		),
 		'uric'=>array(
 			'ext'=>'uric',
 			'mime'=>array(
 				'text/vnd.si.uricatalogue',
+				'text/plain',
 			),
 		),
 		'urim'=>array(
@@ -35132,6 +35480,7 @@ class data {
 			'ext'=>'uris',
 			'mime'=>array(
 				'text/uri-list',
+				'text/plain',
 			),
 		),
 		'url'=>array(
@@ -35144,6 +35493,7 @@ class data {
 			'ext'=>'urls',
 			'mime'=>array(
 				'text/uri-list',
+				'text/plain',
 			),
 		),
 		'usdz'=>array(
@@ -35168,6 +35518,7 @@ class data {
 			'ext'=>'uu',
 			'mime'=>array(
 				'text/x-uuencode',
+				'text/plain',
 			),
 		),
 		'uue'=>array(
@@ -35236,6 +35587,9 @@ class data {
 			'ext'=>'uvt',
 			'mime'=>array(
 				'application/vnd.dece.ttml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'uvu'=>array(
@@ -35309,6 +35663,9 @@ class data {
 			'ext'=>'uvvt',
 			'mime'=>array(
 				'application/vnd.dece.ttml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'uvvu'=>array(
@@ -35427,6 +35784,9 @@ class data {
 			'ext'=>'vcj',
 			'mime'=>array(
 				'application/voucher-cms+json',
+				'application/json',
+				'text/json',
+				'text/plain',
 			),
 		),
 		'vcs'=>array(
@@ -35615,7 +35975,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.drawing.macroenabled.main+xml',
 				'application/vnd.ms-visio.drawing.macroenabled.12',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vsdx'=>array(
@@ -35623,7 +35986,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.drawing.main+xml',
 				'application/vnd.ms-visio.drawing',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vsf'=>array(
@@ -35651,7 +36017,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.stencil.macroenabled.main+xml',
 				'application/vnd.ms-visio.stencil.macroenabled.12',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vssx'=>array(
@@ -35659,7 +36028,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.stencil.main+xml',
 				'application/vnd.ms-visio.stencil',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vst'=>array(
@@ -35677,7 +36049,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.template.macroenabled.main+xml',
 				'application/vnd.ms-visio.template.macroenabled.12',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vstx'=>array(
@@ -35685,7 +36060,10 @@ class data {
 			'mime'=>array(
 				'application/vnd.ms-visio.template.main+xml',
 				'application/vnd.ms-visio.template',
+				'application/xml',
 				'application/zip',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'vsw'=>array(
@@ -35738,6 +36116,9 @@ class data {
 			'ext'=>'vxml',
 			'mime'=>array(
 				'application/voicexml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'w3d'=>array(
@@ -35764,6 +36145,9 @@ class data {
 			'ext'=>'wadl',
 			'mime'=>array(
 				'application/vnd.sun.wadl+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'war'=>array(
@@ -35839,6 +36223,9 @@ class data {
 			'ext'=>'wbs',
 			'mime'=>array(
 				'application/vnd.criticaltools.wbs+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'wbxml'=>array(
@@ -35909,6 +36296,9 @@ class data {
 			'ext'=>'wif',
 			'mime'=>array(
 				'application/watcherinfo+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'wim'=>array(
@@ -36052,6 +36442,7 @@ class data {
 			'ext'=>'wmls',
 			'mime'=>array(
 				'text/vnd.wap.wmlscript',
+				'text/plain',
 			),
 		),
 		'wmlsc'=>array(
@@ -36235,6 +36626,9 @@ class data {
 			'ext'=>'wsdl',
 			'mime'=>array(
 				'application/wsdl+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'wsgi'=>array(
@@ -36242,12 +36636,16 @@ class data {
 			'mime'=>array(
 				'text/x-python',
 				'application/x-executable',
+				'text/plain',
 			),
 		),
 		'wspolicy'=>array(
 			'ext'=>'wspolicy',
 			'mime'=>array(
 				'application/wspolicy+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'wtb'=>array(
@@ -36339,6 +36737,9 @@ class data {
 			'ext'=>'x3dz',
 			'mime'=>array(
 				'model/x3d+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'x3f'=>array(
@@ -36371,6 +36772,9 @@ class data {
 			'ext'=>'xaml',
 			'mime'=>array(
 				'application/xaml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xap'=>array(
@@ -36396,6 +36800,9 @@ class data {
 			'ext'=>'xav',
 			'mime'=>array(
 				'application/xcap-att+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xbap'=>array(
@@ -36439,6 +36846,9 @@ class data {
 			'ext'=>'xca',
 			'mime'=>array(
 				'application/xcap-caps+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xcat'=>array(
@@ -36465,6 +36875,9 @@ class data {
 			'ext'=>'xcs',
 			'mime'=>array(
 				'application/calendar+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xct'=>array(
@@ -36501,18 +36914,27 @@ class data {
 			'ext'=>'xdm',
 			'mime'=>array(
 				'application/vnd.syncml.dm+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xdp'=>array(
 			'ext'=>'xdp',
 			'mime'=>array(
 				'application/vnd.adobe.xdp+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xdssc'=>array(
 			'ext'=>'xdssc',
 			'mime'=>array(
 				'application/dssc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xdw'=>array(
@@ -36531,12 +36953,18 @@ class data {
 			'ext'=>'xel',
 			'mime'=>array(
 				'application/xcap-el+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xenc'=>array(
 			'ext'=>'xenc',
 			'mime'=>array(
 				'application/xenc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xer'=>array(
@@ -36592,6 +37020,9 @@ class data {
 			'ext'=>'xhtm',
 			'mime'=>array(
 				'application/vnd.pwg-xhtml-print+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xhtml'=>array(
@@ -36608,6 +37039,9 @@ class data {
 			'ext'=>'xhtml2',
 			'mime'=>array(
 				'application/xhtml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xhvml'=>array(
@@ -37021,6 +37455,9 @@ class data {
 			'ext'=>'xmls',
 			'mime'=>array(
 				'application/dskpp+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xmp'=>array(
@@ -37036,6 +37473,9 @@ class data {
 			'ext'=>'xns',
 			'mime'=>array(
 				'application/xcap-ns+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xo'=>array(
@@ -37066,6 +37506,9 @@ class data {
 			'ext'=>'xop',
 			'mime'=>array(
 				'application/xop+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xotp'=>array(
@@ -37097,6 +37540,9 @@ class data {
 			'ext'=>'xpl',
 			'mime'=>array(
 				'application/xproc+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xpm'=>array(
@@ -37184,6 +37630,9 @@ class data {
 			'ext'=>'xsf',
 			'mime'=>array(
 				'application/prs.xsf+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xsl'=>array(
@@ -37221,6 +37670,9 @@ class data {
 			'ext'=>'xsm',
 			'mime'=>array(
 				'application/vnd.syncml+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xsp'=>array(
@@ -37330,6 +37782,9 @@ class data {
 			'ext'=>'yin',
 			'mime'=>array(
 				'application/yin+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'yme'=>array(
@@ -37422,6 +37877,9 @@ class data {
 			'ext'=>'zaz',
 			'mime'=>array(
 				'application/vnd.zzazz.deck+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'zfc'=>array(
@@ -37463,6 +37921,9 @@ class data {
 			'ext'=>'zmm',
 			'mime'=>array(
 				'application/vnd.handheld-entertainment+xml',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'zoo'=>array(

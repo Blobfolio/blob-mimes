@@ -239,6 +239,42 @@ class mime_tests extends \PHPUnit\Framework\TestCase {
 				),
 				null,
 			),
+			array(
+				static::ASSETS . 'BeetAnGeSample.musicxml',
+				array(
+					'dirname'=>\rtrim(static::ASSETS, '/'),
+					'basename'=>'BeetAnGeSample.musicxml',
+					'extension'=>'musicxml',
+					'filename'=>'BeetAnGeSample',
+					'path'=>static::ASSETS . 'BeetAnGeSample.musicxml',
+					'mime'=>'application/vnd.recordare.musicxml+xml',
+				),
+				null,
+			),
+			array(
+				static::ASSETS . 'BeetAnGeSample.mxl',
+				array(
+					'dirname'=>\rtrim(static::ASSETS, '/'),
+					'basename'=>'BeetAnGeSample.mxl',
+					'extension'=>'mxl',
+					'filename'=>'BeetAnGeSample',
+					'path'=>static::ASSETS . 'BeetAnGeSample.mxl',
+					'mime'=>'application/vnd.recordare.musicxml',
+				),
+				null,
+			),
+			array(
+				static::ASSETS . 'BeetAnGeSample.pdf',
+				array(
+					'dirname'=>\rtrim(static::ASSETS, '/'),
+					'basename'=>'BeetAnGeSample.pdf',
+					'extension'=>'pdf',
+					'filename'=>'BeetAnGeSample',
+					'path'=>static::ASSETS . 'BeetAnGeSample.pdf',
+					'mime'=>'application/pdf',
+				),
+				null,
+			),
 		);
 	}
 
