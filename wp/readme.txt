@@ -69,6 +69,10 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 0.9.8 =
+* [Misc] Improved handling of XML and JSON file formats.
+* [Misc] Correctly identify MXL files.
+
 = 0.9.7 =
 * [Misc] Update MIME database.
 
@@ -79,13 +83,13 @@ This plugin does not make use of or collect any "Personal Data".
 * [Misc] Update MIME database.
 
 = 0.9.4 =
-* [Misc] Update MIME database.
-
-= 0.9.3 =
 * [Misc] Update MIME database.
 
 == Upgrade Notice ==
 
+= 0.9.8 =
+This release improves the handling of XML and JSON file formats and adds detection for MXL files.
+
 = 0.9.7 =
 The MIME database has been updated.
 
@@ -96,7 +100,4 @@ The MIME database has been updated.
 The MIME database has been updated.
 
 = 0.9.4 =
-The MIME database has been updated.
-
-= 0.9.3 =
 The MIME database has been updated.
