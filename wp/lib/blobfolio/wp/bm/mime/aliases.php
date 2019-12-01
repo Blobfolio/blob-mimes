@@ -2439,6 +2439,12 @@ class aliases {
 		'grb2'=>array(
 			'application/x-grib',
 		),
+		'grd'=>array(
+			'application/json',
+			'application/vnd.gentics.grd+json',
+			'text/json',
+			'text/plain',
+		),
 		'gre'=>array(
 			'application/vnd.geometry-explorer',
 		),
@@ -2583,12 +2589,14 @@ class aliases {
 			'image/heic-sequence',
 			'image/heif',
 			'image/heif-sequence',
+			'image/hevc',
 		),
 		'heif'=>array(
 			'image/heic',
 			'image/heic-sequence',
 			'image/heif',
 			'image/heif-sequence',
+			'video/quicktime',
 		),
 		'heifs'=>array(
 			'image/heic-sequence',
@@ -3190,6 +3198,7 @@ class aliases {
 			'application/json',
 			'application/vnd.amadeus+json',
 			'application/vnd.api+json',
+			'application/vnd.aplextor.warrp+json',
 			'application/vnd.avalon+json',
 			'application/vnd.bekitzur-stech+json',
 			'application/vnd.byu.uapi+json',
@@ -8188,6 +8197,9 @@ class aliases {
 		),
 		'xfdf'=>array(
 			'application/vnd.adobe.xfdf',
+			'application/xml',
+			'text/plain',
+			'text/xml',
 		),
 		'xfdl'=>array(
 			'application/vnd.xfdl',

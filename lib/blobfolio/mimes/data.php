@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-10-31 09:54:50.
+ * Built: 2019-12-01 11:05:29.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -3415,6 +3415,15 @@ class data {
 				'IANA',
 			),
 		),
+		'application/vnd.aplextor.warrp+json'=>array(
+			'mime'=>'application/vnd.aplextor.warrp+json',
+			'ext'=>array(
+				'json',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
 		'application/vnd.appimage'=>array(
 			'mime'=>'application/vnd.appimage',
 			'ext'=>array(
@@ -4932,6 +4941,15 @@ class data {
 				'IANA',
 				'Apache',
 				'Tika',
+			),
+		),
+		'application/vnd.gentics.grd+json'=>array(
+			'mime'=>'application/vnd.gentics.grd+json',
+			'ext'=>array(
+				'grd',
+			),
+			'source'=>array(
+				'IANA',
 			),
 		),
 		'application/vnd.geo+json'=>array(
@@ -15102,18 +15120,19 @@ class data {
 			'mime'=>'application/xml',
 			'ext'=>array(
 				'xml',
-				'xsl',
 				'xbl',
+				'xsl',
 				'xsd',
 				'rng',
-				'xlam',
+				'wml',
+				'opml',
 				'atom',
 				'rss',
 				'owx',
 				'owl',
 				'rdfs',
+				'fo',
 				'rdf',
-				'wml',
 				'docbook',
 				'dbk',
 				'svg',
@@ -15121,29 +15140,29 @@ class data {
 				'htm',
 				'html',
 				'xht',
-				'xhtml',
-				'opml',
-				'xslt',
 				'xmi',
-				'xmp',
+				'xlam',
+				'xslfo',
+				'xdp',
 				'dif',
 				'ppj',
 				'svgz',
 				'xlr',
 				'inx',
 				'nar',
+				'xfdf',
+				'xmp',
+				'xslt',
 				'dot',
-				'fo',
 				'iso19139',
 				'xul',
 				'gpx',
 				'kml',
 				'ent',
-				'ts',
-				'xslfo',
 				'nzb',
-				'glade',
+				'xhtml',
 				'jnlp',
+				'ts',
 				'xlw',
 				'smi',
 				'smil',
@@ -15164,16 +15183,17 @@ class data {
 				'sml',
 				'xlf',
 				'xlsb',
-				'xbel',
+				'abw',
+				'glade',
 				'ttx',
 				'shape',
 				'dia',
 				'fb2',
 				'ui',
 				'zabw',
-				'abw',
-				'fods',
+				'xbel',
 				'xliff',
+				'fods',
 				'fodp',
 				'fodg',
 				'fodt',
@@ -17083,6 +17103,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'freedesktop.org',
+				'Tika',
 			),
 		),
 		'image/heic-sequence'=>array(
@@ -17106,6 +17127,7 @@ class data {
 			'source'=>array(
 				'IANA',
 				'freedesktop.org',
+				'Tika',
 			),
 		),
 		'image/heif-sequence'=>array(
@@ -17127,6 +17149,15 @@ class data {
 			),
 			'source'=>array(
 				'IANA',
+			),
+		),
+		'image/hevc'=>array(
+			'mime'=>'image/hevc',
+			'ext'=>array(
+				'heic',
+			),
+			'source'=>array(
+				'Tika',
 			),
 		),
 		'image/hsj2'=>array(
@@ -22162,6 +22193,7 @@ class data {
 				'moov',
 				'qtvr',
 				'qtl',
+				'heif',
 				'mp4',
 				'mp4v',
 				'mpg4',
@@ -27090,6 +27122,15 @@ class data {
 				'application/x-grib',
 			),
 		),
+		'grd'=>array(
+			'ext'=>'grd',
+			'mime'=>array(
+				'application/vnd.gentics.grd+json',
+				'application/json',
+				'text/json',
+				'text/plain',
+			),
+		),
 		'gre'=>array(
 			'ext'=>'gre',
 			'mime'=>array(
@@ -27341,6 +27382,7 @@ class data {
 				'image/heic',
 				'image/heic-sequence',
 				'image/heif-sequence',
+				'image/hevc',
 			),
 		),
 		'heif'=>array(
@@ -27350,6 +27392,7 @@ class data {
 				'image/heic',
 				'image/heic-sequence',
 				'image/heif-sequence',
+				'video/quicktime',
 			),
 		),
 		'heifs'=>array(
@@ -28374,6 +28417,7 @@ class data {
 				'application/jf2feed+json',
 				'application/vnd.amadeus+json',
 				'application/vnd.api+json',
+				'application/vnd.aplextor.warrp+json',
 				'application/vnd.avalon+json',
 				'application/vnd.bekitzur-stech+json',
 				'application/vnd.byu.uapi+json',
@@ -36987,6 +37031,9 @@ class data {
 			'ext'=>'xfdf',
 			'mime'=>array(
 				'application/vnd.adobe.xfdf',
+				'application/xml',
+				'text/plain',
+				'text/xml',
 			),
 		),
 		'xfdl'=>array(
