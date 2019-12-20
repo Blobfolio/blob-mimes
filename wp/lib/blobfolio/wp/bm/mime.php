@@ -297,8 +297,18 @@ class mime {
 				if (!static::check_alias($checked['ext'], $real_mime)) {
 					// Maybe this type belongs to another allowed extension.
 					if (false !== $result = static::check_allowed_aliases($real_mime, $mimes)) {
-						$checked['ext'] = $result['ext'];
-						$checked['type'] = $result['type'];
+						// We can replace the type and/or extension if
+						// we know of something better, *but* if both
+						// expected and magic results are related to MS
+						// Office, we should just trust the expected.
+						if (
+							! $result['ext'] ||
+							! self::check_alias($checked['ext'], 'application/vnd.ms-office') ||
+							! self::check_alias($result['ext'], 'application/vnd.ms-office')
+						) {
+							$checked['ext'] = $result['ext'];
+							$checked['type'] = $result['type'];
+						}
 					}
 					// Otherwise reject the results.
 					else {
