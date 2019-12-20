@@ -6,7 +6,7 @@
  * This class contains the MIME and file extension data that will be
  * used. It is automatically generated as part of the build process.
  *
- * Built: 2019-12-01 11:05:29.
+ * Built: 2019-12-20 09:41:54.
  *
  * @see {https://github.com/Blobfolio/blob-mimes/tree/master/build}
  *
@@ -424,6 +424,15 @@ class data {
 		),
 		'application/cea-2018+xml'=>array(
 			'mime'=>'application/cea-2018+xml',
+			'ext'=>array(
+				'xml',
+			),
+			'source'=>array(
+				'IANA',
+			),
+		),
+		'application/clue+xml'=>array(
+			'mime'=>'application/clue+xml',
 			'ext'=>array(
 				'xml',
 			),
@@ -37378,6 +37387,7 @@ class data {
 			'mime'=>array(
 				'application/xml',
 				'application/cea-2018+xml',
+				'application/clue+xml',
 				'application/conference-info+xml',
 				'application/cpl+xml',
 				'application/dialog-info+xml',

@@ -8432,6 +8432,7 @@ class aliases {
 		),
 		'xml'=>array(
 			'application/cea-2018+xml',
+			'application/clue+xml',
 			'application/conference-info+xml',
 			'application/cpl+xml',
 			'application/dialog-info+xml',
