@@ -12,6 +12,48 @@ namespace blobfolio\wp\bm;
 
 class mime {
 	/**
+	 * Extensions with Office Content.
+	 */
+	const OFFICE = array(
+		'doc',
+		'docm',
+		'docx',
+		'dot',
+		'dotm',
+		'dotx',
+		'pot',
+		'potm',
+		'potx',
+		'ppa',
+		'ppam',
+		'pps',
+		'ppsm',
+		'ppsx',
+		'ppt',
+		'pptm',
+		'pptx',
+		'ppz',
+		'sldm',
+		'sldx',
+		'thmx',
+		'xla',
+		'xlam',
+		'xlc',
+		'xld',
+		'xll',
+		'xlm',
+		'xlr',
+		'xls',
+		'xlsb',
+		'xlsm',
+		'xlsx',
+		'xlt',
+		'xltm',
+		'xltx',
+		'xlw',
+	);
+
+	/**
 	 * Return MIME aliases for a particular file extension.
 	 *
 	 * @see {https://www.iana.org/assignments/media-types}
@@ -184,6 +226,26 @@ class mime {
 	}
 
 	/**
+	 * Check Office Alias
+	 *
+	 * This will return true if the extension belongs to an MS Office
+	 * document type or false.
+	 *
+	 * @param string $ext File extension.
+	 * @return bool True/false.
+	 */
+	public static function check_office_alias($ext='') {
+		if (! is_string($ext) || ! $ext) {
+			return false;
+		}
+
+		$ext = trim(strtolower($ext));
+		$ext = ltrim($ext, '.');
+
+		return in_array($ext, static::OFFICE, true);
+	}
+
+	/**
 	 * Retrieve the "real" file type from the file.
 	 *
 	 * This extends `wp_check_filetype()` to additionally
@@ -303,8 +365,8 @@ class mime {
 						// Office, we should just trust the expected.
 						if (
 							! $result['ext'] ||
-							! self::check_alias($checked['ext'], 'application/vnd.ms-office') ||
-							! self::check_alias($result['ext'], 'application/vnd.ms-office')
+							! static::check_office_alias($checked['ext']) ||
+							! static::check_office_alias($result['ext'])
 						) {
 							$checked['ext'] = $result['ext'];
 							$checked['type'] = $result['type'];
