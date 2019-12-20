@@ -69,6 +69,10 @@ This plugin does not make use of or collect any "Personal Data".
 
 == Changelog ==
 
+= 1.0.0 =
+* [Misc] Improved handling of MS Office file formats.
+* [Misc] Update MIME database.
+
 = 0.9.9 =
 * [Misc] Update MIME database.
 
@@ -82,10 +86,10 @@ This plugin does not make use of or collect any "Personal Data".
 = 0.9.6 =
 * [Misc] Update MIME database.
 
-= 0.9.5 =
-* [Misc] Update MIME database.
-
 == Upgrade Notice ==
+
+= 1.0.0 =
+This release improves the handling of MS Office files.
 
 = 0.9.9 =
 The MIME database has been updated.
@@ -97,7 +101,4 @@ This release improves the handling of XML and JSON file formats and adds detecti
 The MIME database has been updated.
 
 = 0.9.6 =
-The MIME database has been updated.
-
-= 0.9.5 =
 The MIME database has been updated.
