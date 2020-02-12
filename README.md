@@ -1,8 +1,8 @@
 # blob-mimes
 
-A comprehensive MIME and file extension tool for PHP. Finally!
+**DEPRECATED**: This project is no longer actively maintained. Please see [Righteous MIMEs](https://github.com/Blobfolio/righteous-mimes) instead.
 
-[![Build Status](https://travis-ci.org/Blobfolio/blob-mimes.svg?branch=master)](https://travis-ci.org/Blobfolio/blob-mimes)
+A comprehensive MIME and file extension tool for PHP. Finally!
 
 &nbsp;
 

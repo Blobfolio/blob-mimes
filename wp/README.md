@@ -386,12 +386,6 @@ Returns the sanitized SVG code as a string or `FALSE` if it could not be salvage
 
 
 
-### Miscellaneous
-
-The full list of MIME aliases by file extension can be accessed via `mime\aliases::$data`.
-
-
-
 ## License
 
 Copyright © 2018 [Blobfolio, LLC](https://blobfolio.com) &lt;hello@blobfolio.com&gt;
