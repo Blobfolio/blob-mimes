@@ -182,8 +182,6 @@ __   __ _    _     ___  ___    _  _____  ___  ___   _  _
 					$this->errors[] = __('The file type is not allowed.', 'blob-mimes');
 				}
 			}
-
-			finfo_close($finfo);
 		}
 		// Skip it.
 		else {

@@ -252,7 +252,6 @@ class mimes {
 			) {
 				$finfo = \finfo_open(\FILEINFO_MIME_TYPE);
 				$magic_mime = v_sanitize::mime(\finfo_file($finfo, $path));
-				\finfo_close($finfo);
 
 				// SVGs can be misidentified by fileinfo if they are
 				// missing the XML tag and/or DOCTYPE declarations. Most

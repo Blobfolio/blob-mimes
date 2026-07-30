@@ -299,7 +299,6 @@ class mime {
 				) {
 					$finfo = finfo_open(FILEINFO_MIME_TYPE);
 					$real_mime = finfo_file($finfo, $file);
-					finfo_close($finfo);
 
 					// Account for inconsistent return values.
 					if (!is_string($real_mime) || !$real_mime) {
